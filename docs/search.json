@@ -1,0 +1,569 @@
+[
+  {
+    "objectID": "carbonate-gases/reference.html",
+    "href": "carbonate-gases/reference.html",
+    "title": "Carbonate model and reference sheet",
+    "section": "",
+    "text": "Use 25 °C, dilute freshwater, and concentrations in mol/L. Approximate activities by concentrations, with standard-state factors implicit in the numerical equilibrium expressions. Ignore ion pairs, organic acids, phosphate, borate, and other acid–base systems. These choices are unsuitable for seawater or concentrated solutions.\n\n\n\n\n\n\n\n\nQuantity\nTeaching value\nMeaning\n\n\n\n\n\\(pK_1\\)\n6.35\nFirst dissociation of the combined dissolved carbon dioxide pool\n\n\n\\(pK_2\\)\n10.33\nBicarbonate dissociation\n\n\n\\(K_w\\)\n\\(1.0\\times10^{-14}\\)\nNumerical water ion product in this concentration approximation\n\n\n\\(K_H\\)\n\\(0.034\\ \\mathrm{mol\\,L^{-1}\\,atm^{-1}}\\)\nDissolved carbon dioxide pool per gas partial pressure\n\n\n\\(K_{sp}\\), calcite\n\\(3.3\\times10^{-9}\\)\nNumerical free-ion concentration product at saturation in this approximation\n\n\n\nThese are rounded teaching constants, consistent with the carbonate, gas, and calcite entries in the USGS PHREEQC database. The database uses a thermodynamic activity convention; using its rounded values with concentrations is our dilute-water approximation. Constants change with temperature and solution conditions. Use the supplied values consistently rather than mixing constants from different conventions.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Model and reference sheet"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/reference.html#conditions-and-constants",
+    "href": "carbonate-gases/reference.html#conditions-and-constants",
+    "title": "Carbonate model and reference sheet",
+    "section": "",
+    "text": "Use 25 °C, dilute freshwater, and concentrations in mol/L. Approximate activities by concentrations, with standard-state factors implicit in the numerical equilibrium expressions. Ignore ion pairs, organic acids, phosphate, borate, and other acid–base systems. These choices are unsuitable for seawater or concentrated solutions.\n\n\n\n\n\n\n\n\nQuantity\nTeaching value\nMeaning\n\n\n\n\n\\(pK_1\\)\n6.35\nFirst dissociation of the combined dissolved carbon dioxide pool\n\n\n\\(pK_2\\)\n10.33\nBicarbonate dissociation\n\n\n\\(K_w\\)\n\\(1.0\\times10^{-14}\\)\nNumerical water ion product in this concentration approximation\n\n\n\\(K_H\\)\n\\(0.034\\ \\mathrm{mol\\,L^{-1}\\,atm^{-1}}\\)\nDissolved carbon dioxide pool per gas partial pressure\n\n\n\\(K_{sp}\\), calcite\n\\(3.3\\times10^{-9}\\)\nNumerical free-ion concentration product at saturation in this approximation\n\n\n\nThese are rounded teaching constants, consistent with the carbonate, gas, and calcite entries in the USGS PHREEQC database. The database uses a thermodynamic activity convention; using its rounded values with concentrations is our dilute-water approximation. Constants change with temperature and solution conditions. Use the supplied values consistently rather than mixing constants from different conventions.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Model and reference sheet"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/reference.html#species-and-equilibria",
+    "href": "carbonate-gases/reference.html#species-and-equilibria",
+    "title": "Carbonate model and reference sheet",
+    "section": "Species and equilibria",
+    "text": "Species and equilibria\nWrite \\(\\mathrm{CO_2^*}\\) for \\(\\mathrm{CO_2(aq)}+\\mathrm{H_2CO_3}\\). It is a combined pool, not the chemical formula of a single molecule. Most of this pool is dissolved molecular carbon dioxide under these conditions. The effective first dissociation incorporates hydration:\n\\[\\mathrm{CO_2^* + H_2O \\rightleftharpoons H^+ + HCO_3^-},\\qquad\nK_1=10^{-6.35}.\\]\n\\[\\mathrm{HCO_3^- \\rightleftharpoons H^+ + CO_3^{2-}},\\qquad\nK_2=10^{-10.33}.\\]\nIn the first expression, the water term represents the net reaction of dissolved carbon dioxide; the notation groups hydrated and unhydrated forms together.\nThe total dissolved inorganic carbon in this model is\n\\[C_T=[\\mathrm{CO_2^*}]+[\\mathrm{HCO_3^-}]+[\\mathrm{CO_3^{2-}}].\\]\nNo carbon leaves this sum merely because it changes species. Mineral reactions, gas exchange, or biological transformations can change the dissolved total.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Model and reference sheet"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/reference.html#ratios-and-fractions-at-a-supplied-ph",
+    "href": "carbonate-gases/reference.html#ratios-and-fractions-at-a-supplied-ph",
+    "title": "Carbonate model and reference sheet",
+    "section": "Ratios and fractions at a supplied pH",
+    "text": "Ratios and fractions at a supplied pH\nDividing the equilibrium expressions gives\n\\[r_1=\\frac{[\\mathrm{HCO_3^-}]}{[\\mathrm{CO_2^*}]}=\n10^{\\mathrm{pH}-6.35},\\qquad\nr_2=\\frac{[\\mathrm{CO_3^{2-}}]}{[\\mathrm{HCO_3^-}]}=\n10^{\\mathrm{pH}-10.33}.\\]\nThe proportions of the three species are \\(1:r_1:r_1r_2\\). Therefore\n\\[\\alpha_0=\\frac{1}{1+r_1+r_1r_2},\\quad\n\\alpha_1=\\frac{r_1}{1+r_1+r_1r_2},\\quad\n\\alpha_2=\\frac{r_1r_2}{1+r_1+r_1r_2}.\\]\nEach \\(\\alpha\\) is dimensionless and each concentration is \\(\\alpha_i C_T\\). The fractions sum to one. In this model the fractions depend on pH and the constants; \\(C_T\\) sets the concentration scale. A distribution curve supplies possible compositions at prescribed pH values. It does not solve for pH.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Model and reference sheet"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/reference.html#alkalinity-and-buffering",
+    "href": "carbonate-gases/reference.html#alkalinity-and-buffering",
+    "title": "Carbonate model and reference sheet",
+    "section": "Alkalinity and buffering",
+    "text": "Alkalinity and buffering\nThe carbonate-only total alkalinity is\n\\[A_T=[\\mathrm{HCO_3^-}]+2[\\mathrm{CO_3^{2-}}]\n+[\\mathrm{OH^-}]-[\\mathrm{H^+}],\\qquad\n[\\mathrm{OH^-}]=K_w/[\\mathrm{H^+}].\\]\nUse mol of charge equivalents per litre (eq/L); \\(1\\) meq/L is \\(10^{-3}\\) eq/L. Bicarbonate contributes one equivalent per mole, carbonate two. Real freshwater can have additional alkalinity contributions, so this expression must be checked before applying it to measurements. The USGS carbonate-speciation guidance explains the importance of other acid-neutralising species.\nAlkalinity describes an acid-neutralising balance relative to the carbon dioxide reference state. pH describes hydrogen-ion activity at the present state. Local buffer capacity describes the amount of acid or base required for a small pH change under specified conditions. These are related, but are different quantities.\nFor a strong-acid addition \\(q\\) eq/L with negligible dilution and no other reaction, \\(A_{T,\\mathrm{after}}=A_{T,\\mathrm{before}}-q\\). In a closed water with no mineral or biological reactions, \\(C_T\\) stays constant. Added acid redistributes carbon toward \\(\\mathrm{CO_2^*}\\). The final pH must satisfy both the carbon balance and the new alkalinity.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Model and reference sheet"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/reference.html#gas-and-mineral-boundaries",
+    "href": "carbonate-gases/reference.html#gas-and-mineral-boundaries",
+    "title": "Carbonate model and reference sheet",
+    "section": "Gas and mineral boundaries",
+    "text": "Gas and mineral boundaries\nFor water equilibrated with a large gas reservoir, use the specified convention\n\\[[\\mathrm{CO_2^*}]=K_H p_{\\mathrm{CO_2}}.\\]\nHere partial pressure is in atm. Applying this coefficient to total inorganic carbon would be incorrect. Gas uptake by itself changes \\(C_T\\) but conserves \\(A_T\\) in our model. At fixed alkalinity it generally lowers pH. Fixing gas pressure, pH, and \\(C_T\\) independently would usually overconstrain the model.\nFor calcite, \\(\\mathrm{CaCO_3(s)\\rightleftharpoons Ca^{2+}+CO_3^{2-}}\\). Use the free-ion concentrations to estimate\n\\[\\Omega=\\frac{[\\mathrm{Ca^{2+}}][\\mathrm{CO_3^{2-}}]}{K_{sp}}.\\]\n\\(\\Omega&lt;1\\) indicates undersaturation; dissolution is thermodynamically favoured if calcite is available. \\(\\Omega&gt;1\\) indicates supersaturation; precipitation can be favoured, but kinetics and nucleation can delay it. \\(\\Omega=1\\) is saturation. Dissolving one mole of calcite adds one mole to dissolved inorganic carbon and two equivalents to alkalinity. This process is excluded from the closed acid example.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Model and reference sheet"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/reference.html#what-each-example-holds-fixed",
+    "href": "carbonate-gases/reference.html#what-each-example-holds-fixed",
+    "title": "Carbonate model and reference sheet",
+    "section": "What each example holds fixed",
+    "text": "What each example holds fixed\n\n\n\n\n\n\n\n\nExample\nSpecified quantities\nWhat can change or be calculated\n\n\n\n\nDistribution plot\npH grid and temperature; optional \\(C_T\\)\nSpecies fractions, then concentrations if \\(C_T\\) is supplied\n\n\nClosed acid addition\nInitial pH and \\(C_T\\); acid dose; no gas/minerals\nNew alkalinity, species, and pH\n\n\nHenry calculation\nGas partial pressure and temperature; gas equilibrium\n\\([\\mathrm{CO_2^*}]\\); more information is needed for \\(C_T\\) and pH\n\n\nSaturation check\nFree calcium and carbonate at the current state\n\\(\\Omega\\); not a final precipitation amount or reaction rate",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Model and reference sheet"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/lec.html#same-ph-different-response",
+    "href": "carbonate-gases/lec.html#same-ph-different-response",
+    "title": "Carbonate species and alkalinity",
+    "section": "Same pH, different response",
+    "text": "Same pH, different response\nTwo constructed waters start at pH 7.50.\n\nWater A: total dissolved inorganic carbon = 1.00 mmol/L.\nWater B: total dissolved inorganic carbon = 0.100 mmol/L.\nEach receives 0.050 mmol/L of strong acid, with negligible dilution.\n\nWhich water changes more? What does pH alone leave out?\n\nThis is a closed-water thought experiment: no gas exchange, minerals, biological carbon transformations, or noncarbonate buffers. Background counterions provide electroneutrality; this is not a recipe for preparing a solution from CO2 alone.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: species and alkalinity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/lec.html#three-questions-for-this-lecture",
+    "href": "carbonate-gases/lec.html#three-questions-for-this-lecture",
+    "title": "Carbonate species and alkalinity",
+    "section": "Three questions for this lecture",
+    "text": "Three questions for this lecture\n\nWhich dissolved carbon species dominate at a given pH?\nHow do species fractions differ from concentrations?\nWhy do pH and alkalinity describe different aspects of water?\n\nUse 25 °C and the dilute freshwater approximation throughout.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: species and alkalinity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/lec.html#one-element-three-dissolved-pools",
+    "href": "carbonate-gases/lec.html#one-element-three-dissolved-pools",
+    "title": "Carbonate species and alkalinity",
+    "section": "One element, three dissolved pools",
+    "text": "One element, three dissolved pools\nC_T=[\\mathrm{CO_2^*}]+[\\mathrm{HCO_3^-}]+[\\mathrm{CO_3^{2-}}]\n\\mathrm{CO_2^*} groups dissolved carbon dioxide and carbonic acid.\nChanging species redistributes carbon. It does not itself remove dissolved carbon.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: species and alkalinity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/lec.html#carbonate-reactions-release-hydrogen-ions",
+    "href": "carbonate-gases/lec.html#carbonate-reactions-release-hydrogen-ions",
+    "title": "Carbonate species and alkalinity",
+    "section": "Carbonate reactions release hydrogen ions",
+    "text": "Carbonate reactions release hydrogen ions\n\\mathrm{CO_2^*+H_2O\\rightleftharpoons H^++HCO_3^-} \\mathrm{HCO_3^-\\rightleftharpoons H^++CO_3^{2-}}\nUse effective pK_1=6.35 and pK_2=10.33.\nAdding acid shifts both equilibria toward the left.\n\nCO2* is a combined analytical pool. The first displayed reaction is shorthand for dissolution/hydration followed by acid dissociation, not an elementary reaction. All constants and the model definition are on the reference sheet.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: species and alkalinity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/lec.html#from-an-equilibrium-expression-to-a-ratio",
+    "href": "carbonate-gases/lec.html#from-an-equilibrium-expression-to-a-ratio",
+    "title": "Carbonate species and alkalinity",
+    "section": "From an equilibrium expression to a ratio",
+    "text": "From an equilibrium expression to a ratio\nK_1=\\frac{[\\mathrm{H^+}][\\mathrm{HCO_3^-}]}{[\\mathrm{CO_2^*}]}\nSince [\\mathrm{H^+}]\\approx10^{-\\mathrm{pH}} mol/L,\n\\frac{[\\mathrm{HCO_3^-}]}{[\\mathrm{CO_2^*}]}=10^{\\mathrm{pH}-6.35}.\nAt pH 7.35 the ratio is 10. At pH 6.35 it is 1.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: species and alkalinity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/lec.html#include-the-second-dissociation",
+    "href": "carbonate-gases/lec.html#include-the-second-dissociation",
+    "title": "Carbonate species and alkalinity",
+    "section": "Include the second dissociation",
+    "text": "Include the second dissociation\nr_1=10^{\\mathrm{pH}-6.35},\\qquad r_2=10^{\\mathrm{pH}-10.33}\nThe three proportions are 1:r_1:r_1r_2.\nAt pH 8.35 they are approximately 1:100:1.047.\nDivide each by their sum to obtain fractions: 0.00980, 0.97994, 0.01026.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: species and alkalinity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/lec.html#read-the-distribution-diagram",
+    "href": "carbonate-gases/lec.html#read-the-distribution-diagram",
+    "title": "Carbonate species and alkalinity",
+    "section": "Read the distribution diagram",
+    "text": "Read the distribution diagram\n\n\n\nModel species fractions at prescribed pH values, 25 °C.\n\n\nWhich species dominates near pH 8? Where do adjacent fractions cross?\n\nAt each pKa the corresponding adjacent species are equal. Neither is exactly half of all carbon because the third species still exists. The horizontal axis is supplied pH, not acid dose or elapsed time.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: species and alkalinity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/lec.html#fractions-do-not-give-the-amount",
+    "href": "carbonate-gases/lec.html#fractions-do-not-give-the-amount",
+    "title": "Carbonate species and alkalinity",
+    "section": "Fractions do not give the amount",
+    "text": "Fractions do not give the amount\nAt pH 8.35, bicarbonate is about 0.980 of C_T.\n\nIf C_T=1.00 mmol/L, bicarbonate is about 0.980 mmol/L.\nIf C_T=0.100 mmol/L, bicarbonate is about 0.0980 mmol/L.\n\nThe fraction is the same. The acid-neutralising inventories differ.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: species and alkalinity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/lec.html#alkalinity-counts-charge-equivalents",
+    "href": "carbonate-gases/lec.html#alkalinity-counts-charge-equivalents",
+    "title": "Carbonate species and alkalinity",
+    "section": "Alkalinity counts charge equivalents",
+    "text": "Alkalinity counts charge equivalents\nA_T=[\\mathrm{HCO_3^-}]+2[\\mathrm{CO_3^{2-}}]\n+[\\mathrm{OH^-}]-[\\mathrm{H^+}]\nOne mole of bicarbonate contributes one equivalent; carbonate contributes two.\npH describes the current hydrogen-ion activity. Alkalinity describes an acid-neutralising balance. Buffer capacity describes resistance to a small pH change.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: species and alkalinity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/lec.html#acid-changes-the-balance",
+    "href": "carbonate-gases/lec.html#acid-changes-the-balance",
+    "title": "Carbonate species and alkalinity",
+    "section": "Acid changes the balance",
+    "text": "Acid changes the balance\n\\mathrm{HCO_3^-+H^+\\rightarrow CO_2^*+H_2O}\nFor a strong-acid input q eq/L:\nA_{T,\\mathrm{after}}=A_{T,\\mathrm{before}}-q.\nIn our closed example C_T stays fixed. pH must adjust to the new balance. Do not subtract an acid dose directly from a pH value.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: species and alkalinity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/lec.html#return-to-the-two-waters",
+    "href": "carbonate-gases/lec.html#return-to-the-two-waters",
+    "title": "Carbonate species and alkalinity",
+    "section": "Return to the two waters",
+    "text": "Return to the two waters\n\n\n\n\n\n\n\n\n\nConstructed water\nInitial alkalinity (meq/L)\nAfter acid (meq/L)\nFinal model pH\n\n\n\n\nA\n0.9356\n0.8856\n7.235\n\n\nB\n0.09382\n0.04382\n6.252\n\n\n\nThe same acid dose consumes a much larger fraction of B’s alkalinity. Final pH values solve the carbon and alkalinity balances together.\n\nStudents calculate the alkalinity changes and interpret the supplied final pHs. They are not required to implement a numerical equilibrium solver. The instructor verification script checks the final states. These are model results, not field data.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: species and alkalinity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/lec.html#explain-before-computing",
+    "href": "carbonate-gases/lec.html#explain-before-computing",
+    "title": "Carbonate species and alkalinity",
+    "section": "Explain before computing",
+    "text": "Explain before computing\n\nPredict how acid shifts species.\nCalculate one ratio and check its units.\nUse a diagram to see the whole pH range.\nState what is fixed before predicting a pH change.\n\nContinue with gas exchange and minerals and the exercise. Constants and model sources are on the reference sheet.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: species and alkalinity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/exercise.html",
+    "href": "carbonate-gases/exercise.html",
+    "title": "Carbonate chemistry exercises",
+    "section": "",
+    "text": "Use the model sheet throughout: 25 °C, dilute freshwater, \\(pK_1=6.35\\), \\(pK_2=10.33\\), and the supplied Henry and calcite constants. All waters and gas inputs below are constructed teaching examples.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Exercises and R activity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/exercise.html#predict-then-calculate-a-species-distribution",
+    "href": "carbonate-gases/exercise.html#predict-then-calculate-a-species-distribution",
+    "title": "Carbonate chemistry exercises",
+    "section": "1. Predict, then calculate a species distribution",
+    "text": "1. Predict, then calculate a species distribution\nA water has pH 8.35 and \\(C_T=1.00\\) mmol/L.\n\nPredict which of the three carbonate pools is largest.\nCalculate \\(r_1\\) and \\(r_2\\), then the fractions of all three pools.\nCalculate their concentrations in mmol/L and check the carbon balance.\nRepeat only the concentration step for \\(C_T=0.100\\) mmol/L at the same pH. Explain what changed and what did not.\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nThe proportions are \\(1:r_1:r_1r_2\\), so divide each by their sum. The ratio \\(r_2\\) compares carbonate with bicarbonate; it is not the carbonate fraction.\n\n\n\n\n\n\n\n\n\nWorked solution\n\n\n\n\n\nAt pH 8.35, \\(r_1=100\\) and \\(r_2=10^{-1.98}=0.0104713\\). The sum of the proportions is \\(102.0471\\).\n\n\n\nPool\nFraction\nConcentration for 1.00 mmol/L total\n\n\n\n\nCO₂*\n0.009799\n0.009799 mmol/L\n\n\nHCO₃⁻\n0.979939\n0.979939 mmol/L\n\n\nCO₃²⁻\n0.010261\n0.010261 mmol/L\n\n\n\nThe concentrations sum to 1.00 mmol/L within rounding. Bicarbonate dominates. For 0.100 mmol/L total, each concentration is one tenth as large; the fractions are unchanged. This result uses the same pH and dilute-solution constants.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Exercises and R activity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/exercise.html#same-ph-different-acid-response",
+    "href": "carbonate-gases/exercise.html#same-ph-different-acid-response",
+    "title": "Carbonate chemistry exercises",
+    "section": "2. Same pH, different acid response",
+    "text": "2. Same pH, different acid response\nTwo constructed waters start at pH 7.50. Water A has \\(C_T=1.00\\) mmol/L; water B has \\(C_T=0.100\\) mmol/L. At this pH the fractions are \\(\\alpha_0=0.066023\\), \\(\\alpha_1=0.932598\\), \\(\\alpha_2=0.001379\\).\n\nCalculate initial alkalinity from the carbonate-only expression. Include water ions: \\([\\mathrm{H^+}]=3.1623\\times10^{-8}\\) mol/L and \\([\\mathrm{OH^-}]=3.1623\\times10^{-7}\\) mol/L.\nAdd 0.0500 mmol/L of a strong monoprotic acid to each, with negligible dilution. Calculate each new alkalinity. No gas exchange, mineral reaction, or biological transformation occurs. What happens to \\(C_T\\)?\nA calculation satisfying both balances gives final pH values 7.235 for A and 6.252 for B. Explain the difference without assuming initial pH measures the acid-neutralising inventory.\nCan you obtain the final pH by subtracting 0.0500 from 7.50? Explain the units.\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nFirst put all concentrations in mol/L. Multiply the carbonate concentration by two in the alkalinity expression. A mole of monoprotic strong acid supplies one equivalent. To express eq/L as meq/L, multiply by 1000.\n\n\n\n\n\n\n\n\n\nWorked solution\n\n\n\n\n\nFor A, the bicarbonate and carbonate contribution is \\((0.932598+2\\times0.001379)\\times10^{-3}\\) eq/L. The water-ion term is \\(2.8461\\times10^{-7}\\) eq/L. The resulting initial alkalinities are approximately 0.9356 meq/L for A and 0.09382 meq/L for B.\nThe acid supplies 0.0500 meq/L. Final alkalinities are therefore 0.8856 and 0.04382 meq/L. Carbon stays dissolved in this closed model, so each \\(C_T\\) is conserved; a larger fraction becomes CO₂*.\nB loses about 53% of its initial alkalinity, compared with about 5.3% for A. Its larger pH fall is consistent with its smaller carbonate inventory. Alkalinity is not identical to local buffer capacity, but here the two waters have the same initial species fractions and different carbon amounts.\nA pH difference is logarithmic and dimensionless; an acid dose has amount-per-volume units. Direct subtraction cannot satisfy the chemical balances. A numerical solver is not required for this exercise.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Exercises and R activity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/exercise.html#use-henrys-law-for-the-correct-pool",
+    "href": "carbonate-gases/exercise.html#use-henrys-law-for-the-correct-pool",
+    "title": "Carbonate chemistry exercises",
+    "section": "3. Use Henry’s law for the correct pool",
+    "text": "3. Use Henry’s law for the correct pool\nA separate water equilibrates with a large gas reservoir having a supplied \\(p_{\\mathrm{CO_2}}=4.00\\times10^{-4}\\) atm. Use \\(K_H=0.034\\) mol L\\(^{-1}\\) atm\\(^{-1}\\).\n\nCalculate \\([\\mathrm{CO_2^*}]\\) and show the unit cancellation.\nIs that enough information to calculate pH or \\(C_T\\)?\nIf the equilibrated water is also specified to have pH 8.35, calculate \\(C_T\\).\nIn another water, CO₂ enters while no acid, mineral, or biological process acts. Explain why the alkalinity stays constant even though pH can decrease.\n\n\n\n\n\n\n\nWorked solution\n\n\n\n\n\n\\([\\mathrm{CO_2^*}]=0.034\\times4.00\\times10^{-4}=1.36\\times10^{-5}\\) mol/L = 13.6 µmol/L. The atm units cancel. This specifies the gas pool only. Another independent carbonate constraint is needed to calculate pH and total carbon.\nWith pH 8.35 supplied, \\(C_T=13.6(1+100+1.04713)\\) µmol/L, or approximately 1.388 mmol/L. Henry’s law alone did not give that total.\nDissociation of the added CO₂ produces hydrogen ion and bicarbonate together; their contributions cancel in alkalinity. Gas transfer adds carbon rather than strong-acid equivalents. At fixed alkalinity the pH generally falls as CO₂ enters. An imposed pH of 8.35 is a specified state, not the predicted endpoint of every water exposed to this gas.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Exercises and R activity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/exercise.html#check-calcite-saturation",
+    "href": "carbonate-gases/exercise.html#check-calcite-saturation",
+    "title": "Carbonate chemistry exercises",
+    "section": "4. Check calcite saturation",
+    "text": "4. Check calcite saturation\nTwo separate water states each have free calcium \\(5.00\\times10^{-4}\\) mol/L. Free carbonate is \\(1.00\\times10^{-6}\\) mol/L in state X and \\(1.00\\times10^{-5}\\) mol/L in state Y. Use \\(K_{sp}=3.3\\times10^{-9}\\).\nCalculate \\(\\Omega\\) for each. Identify which could dissolve available calcite and which could precipitate it. Can you infer a precipitation rate or final mass? Explain why replacing free calcium with dissolved total calcium might matter.\n\n\n\n\n\n\nWorked solution\n\n\n\n\n\nThe products are \\(5.00\\times10^{-10}\\) and \\(5.00\\times10^{-9}\\). Thus \\(\\Omega_X=0.152\\) and \\(\\Omega_Y=1.52\\). X is undersaturated and could dissolve calcite if it is present. Y is supersaturated, so precipitation is thermodynamically favoured, but may be delayed by kinetics or nucleation. Neither ratio gives a rate or final mass. Ion pairs and complexes can make free calcium smaller than total dissolved calcium.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Exercises and R activity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/exercise.html#plot-the-chemical-prediction-in-r",
+    "href": "carbonate-gases/exercise.html#plot-the-chemical-prediction-in-r",
+    "title": "Carbonate chemistry exercises",
+    "section": "5. Plot the chemical prediction in R",
+    "text": "5. Plot the chemical prediction in R\nThis task reuses objects, arithmetic, tables, and labelled plots from introductory computing. The small addition is a regular pH grid. No statistical fit is needed: these are predictions from equilibrium expressions.\nDownload speciation.R and report.Rmd into the same folder. Open that folder as your working project. The script needs ggplot2; rendering the report also needs rmarkdown, as in introductory computing. Open the script in the editor before running it.\n\nPredict and inspect\nBefore running the script, sketch the expected dominance near pH 4, 8, and 12. The script starts with these calculations:\npH &lt;- seq(4, 12, by = 0.05)\nr1 &lt;- 10^(pH - 6.35)\nr2 &lt;- 10^(pH - 10.33)\ndenominator &lt;- 1 + r1 + r1 * r2\nseq() creates regularly spaced values. Each vector operation evaluates the chemical expression at every pH value. ^ means a power. The script divides the three proportions by denominator and puts them in a table. Its remaining code arranges that table for the familiar ggplot() and geom_line() functions.\nRun from the folder holding both files:\nsource(\"speciation.R\")\nhead(speciation)\nspeciation_plot\nCompare the plot with the prediction and with the hand calculation in question 1.\n\n\n\nThree carbonate species fractions at prescribed pH, calculated from the supplied equilibrium model.\n\n\n\n\nCheck and explain\n\nIn the report template, select the pH 8.35 row and compare its fractions with your hand calculation. Explain any difference due to rounding.\nCheck that fractions stay between zero and one and sum to one.\nExplain what happens to concentrations if \\(C_T\\) doubles at each prescribed pH.\nExplain why moving along the horizontal axis does not simulate adding a specified dose of acid to a closed sample.\nReplace the template prompts with your prediction, calculation, chemical interpretation, and assumptions. Restart R, then Knit the saved report, or run rmarkdown::render(\"report.Rmd\") from its folder.\n\n\n\n\n\n\n\nWorked interpretation\n\n\n\n\n\nCO₂* dominates at low pH, bicarbonate in the middle, and carbonate at high pH. At pH 8.35, the model fractions agree with question 1. The sum is one to numerical precision, and every fraction lies between zero and one. Doubling \\(C_T\\) at fixed pH doubles the concentrations, while leaving these model fractions unchanged.\nThe horizontal axis supplies pH independently at each point. An acid-dose experiment must instead conserve carbon and satisfy the changed alkalinity. The curve alone does not supply that second constraint or predict a final pH. The model assumes equilibrium, 25 °C, and dilute freshwater; it omits ion pairing and other acid–base systems.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Exercises and R activity"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/exercise.html#explain-a-catchment-observation",
+    "href": "carbonate-gases/exercise.html#explain-a-catchment-observation",
+    "title": "Carbonate chemistry exercises",
+    "section": "6. Explain a catchment observation",
+    "text": "6. Explain a catchment observation\nA lake’s pH decreases after a disturbance. Suggest two chemically distinct processes from this unit that could cause a decrease, and identify additional measurements that would help distinguish them. State one limitation of interpreting only pH. Do not claim a cause from a single observation.\n\n\n\n\n\n\nWorked explanation\n\n\n\n\n\nStrong-acid input and net CO₂ uptake can both lower pH. In the isolated model, strong acid lowers alkalinity while CO₂ uptake conserves it and increases dissolved inorganic carbon. Paired pH, alkalinity, and inorganic-carbon or dissolved-CO₂ measurements would help assess these possibilities. Calcium and mineral context could reveal additional reactions. A real catchment can have several processes acting together; pH alone does not identify the cause or neutralising inventory.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Exercises and R activity"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Environmental Chemistry",
+    "section": "",
+    "text": "How do chemical reactions determine what happens to a substance in air, water, and soil? We connect molecular properties, equilibria, reaction rates, and partitioning to environmental transport and exposure.\n\n\n\n\n\n\nNote\n\n\n\nThe first teaching draft is available for carbonate and gas chemistry. The remaining topics are outlined for development.\n\n\nThe proposed sequence follows atmosphere, water, and the terrestrial environment, with particular attention to aquatic chemistry. See the content overview for the topics and chemical questions.\nCalculations begin with a small worked example. Selected exercises then reuse R for tables, plots, and reproducible explanations of chemical results.\nStart with carbonate and gas chemistry: short lectures, worked examples, exercises, and a species-distribution plot in R.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "overview.html",
+    "href": "overview.html",
+    "title": "Proposed content overview",
+    "section": "",
+    "text": "Follow a substance through environmental compartments. Practise concentration units, mass balances, and the distinction between equilibrium and reaction rate.",
+    "crumbs": [
+      "Home",
+      "Content overview"
+    ]
+  },
+  {
+    "objectID": "overview.html#chemical-foundations",
+    "href": "overview.html#chemical-foundations",
+    "title": "Proposed content overview",
+    "section": "",
+    "text": "Follow a substance through environmental compartments. Practise concentration units, mass balances, and the distinction between equilibrium and reaction rate.",
+    "crumbs": [
+      "Home",
+      "Content overview"
+    ]
+  },
+  {
+    "objectID": "overview.html#atmosphere",
+    "href": "overview.html#atmosphere",
+    "title": "Proposed content overview",
+    "section": "Atmosphere",
+    "text": "Atmosphere\nExplain ozone formation and removal, photochemical pollution, acid deposition, and the chemical roles of gases and particles in climate. Follow deposition into surface waters.",
+    "crumbs": [
+      "Home",
+      "Content overview"
+    ]
+  },
+  {
+    "objectID": "overview.html#water",
+    "href": "overview.html#water",
+    "title": "Proposed content overview",
+    "section": "Water",
+    "text": "Water\nUse acid–base equilibria, carbonate buffering, and gas exchange to explain water composition. The first draft of carbonate and gas chemistry includes lectures and practice. Relate organic matter, redox conditions, metal complexation, and surface reactions to speciation and mobility. Apply these ideas to nutrient cycling and water treatment.",
+    "crumbs": [
+      "Home",
+      "Content overview"
+    ]
+  },
+  {
+    "objectID": "overview.html#soils-and-contaminants",
+    "href": "overview.html#soils-and-contaminants",
+    "title": "Proposed content overview",
+    "section": "Soils and contaminants",
+    "text": "Soils and contaminants\nExplain retention and release in soils and sediments. Connect organic molecular properties to partitioning, persistence, and potential exposure. Use waste and leachate as applications of the same chemistry.",
+    "crumbs": [
+      "Home",
+      "Content overview"
+    ]
+  },
+  {
+    "objectID": "overview.html#connecting-the-systems",
+    "href": "overview.html#connecting-the-systems",
+    "title": "Proposed content overview",
+    "section": "Connecting the systems",
+    "text": "Connecting the systems\nTrace acid deposition through a catchment to a lake, or explain contaminant release when sediment conditions change. Support an explanation with reactions, a mass balance, and a clearly interpreted figure.",
+    "crumbs": [
+      "Home",
+      "Content overview"
+    ]
+  },
+  {
+    "objectID": "overview.html#working-reference",
+    "href": "overview.html#working-reference",
+    "title": "Proposed content overview",
+    "section": "Working reference",
+    "text": "Working reference\nGary W. vanLoon and Stephen J. Duffy, Environmental Chemistry: A Global Perspective, fourth edition, Oxford University Press, 2017, ISBN 9780198749974. Selected readings will follow the publisher’s chapter structure. This is the working reference for content development; assignment to this course is provisional.",
+    "crumbs": [
+      "Home",
+      "Content overview"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/gases-lec.html#what-changes-when-the-water-meets-air",
+    "href": "carbonate-gases/gases-lec.html#what-changes-when-the-water-meets-air",
+    "title": "Carbon dioxide exchange and carbonate minerals",
+    "section": "What changes when the water meets air?",
+    "text": "What changes when the water meets air?\nThe closed acid example held dissolved inorganic carbon fixed.\nGas exchange allows carbon to enter or leave. Does it change alkalinity in the same way as strong acid?",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: gases and minerals"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/gases-lec.html#specify-the-gas-equilibrium-convention",
+    "href": "carbonate-gases/gases-lec.html#specify-the-gas-equilibrium-convention",
+    "title": "Carbon dioxide exchange and carbonate minerals",
+    "section": "Specify the gas equilibrium convention",
+    "text": "Specify the gas equilibrium convention\n[\\mathrm{CO_2^*}]=K_Hp_{\\mathrm{CO_2}}\nHere K_H=0.034 mol L^{-1} atm^{-1} at 25 °C.\nPartial pressure in atm gives dissolved carbon dioxide in mol/L. A coefficient defined as pressure divided by concentration would require a different equation.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: gases and minerals"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/gases-lec.html#a-worked-henry-calculation",
+    "href": "carbonate-gases/gases-lec.html#a-worked-henry-calculation",
+    "title": "Carbon dioxide exchange and carbonate minerals",
+    "section": "A worked Henry calculation",
+    "text": "A worked Henry calculation\nTake a supplied gas pressure p_{\\mathrm{CO_2}}=4.00\\times10^{-4} atm.\n[\\mathrm{CO_2^*}]=0.034(4.00\\times10^{-4})=\n1.36\\times10^{-5}\\ \\mathrm{mol/L}=13.6\\ \\mathrm{\\mu mol/L}.\nThis is the carbon dioxide pool, not total inorganic carbon. The gas pressure is an exercise input, not a claim about today’s atmosphere.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: gases and minerals"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/gases-lec.html#from-the-gas-pool-to-total-carbon",
+    "href": "carbonate-gases/gases-lec.html#from-the-gas-pool-to-total-carbon",
+    "title": "Carbon dioxide exchange and carbonate minerals",
+    "section": "From the gas pool to total carbon",
+    "text": "From the gas pool to total carbon\nIf the equilibrated water is also specified to have pH 8.35,\nC_T=[\\mathrm{CO_2^*}](1+r_1+r_1r_2).\nUsing r_1=100 and r_2\\approx0.01047:\nC_T\\approx13.6(102.047)=1388\\ \\mathrm{\\mu mol/L}.\nThis describes a state with that pH and gas pressure. It does not predict the pH of arbitrary water exposed to the gas.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: gases and minerals"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/gases-lec.html#carbon-dioxide-uptake-and-acid-addition-differ",
+    "href": "carbonate-gases/gases-lec.html#carbon-dioxide-uptake-and-acid-addition-differ",
+    "title": "Carbon dioxide exchange and carbonate minerals",
+    "section": "Carbon dioxide uptake and acid addition differ",
+    "text": "Carbon dioxide uptake and acid addition differ\n\n\n\nProcess acting alone\nDissolved inorganic carbon\nAlkalinity\n\n\n\n\nCO₂ uptake\nIncreases\nConserved\n\n\nStrong acid added to closed water\nConserved\nDecreases\n\n\n\nBoth can lower pH. The constraints and chemical balances differ.\n\nThe statements exclude mineral reactions, biological transformations, and volume changes. CO2 creates H+ and bicarbonate together: their alkalinity contributions cancel. A finite headspace needs a gas-plus-water carbon balance rather than a fixed pressure assumption.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: gases and minerals"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/gases-lec.html#minerals-introduce-another-reaction",
+    "href": "carbonate-gases/gases-lec.html#minerals-introduce-another-reaction",
+    "title": "Carbon dioxide exchange and carbonate minerals",
+    "section": "Minerals introduce another reaction",
+    "text": "Minerals introduce another reaction\n\\mathrm{CaCO_3(s)\\rightleftharpoons Ca^{2+}+CO_3^{2-}}\nCalcite dissolution adds dissolved calcium and carbon. One mole dissolved adds two alkalinity equivalents.\nThe closed acid calculation excluded this possible source of neutralisation.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: gases and minerals"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/gases-lec.html#check-the-current-saturation-state",
+    "href": "carbonate-gases/gases-lec.html#check-the-current-saturation-state",
+    "title": "Carbon dioxide exchange and carbonate minerals",
+    "section": "Check the current saturation state",
+    "text": "Check the current saturation state\n\\Omega=\\frac{[\\mathrm{Ca^{2+}}][\\mathrm{CO_3^{2-}}]}{K_{sp}}\nUse free ions and K_{sp}=3.3\\times10^{-9} in our approximation.\n\n\\Omega&lt;1: undersaturated.\n\\Omega=1: saturated.\n\\Omega&gt;1: supersaturated.\n\nThe full thermodynamic expression uses activities.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: gases and minerals"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/gases-lec.html#a-worked-saturation-comparison",
+    "href": "carbonate-gases/gases-lec.html#a-worked-saturation-comparison",
+    "title": "Carbon dioxide exchange and carbonate minerals",
+    "section": "A worked saturation comparison",
+    "text": "A worked saturation comparison\nGiven free calcium = 5.00\\times10^{-4} mol/L:\n\n\n\nFree carbonate\nConcentration product\n\\Omega\n\n\n\n\n1.00\\times10^{-6} mol/L\n5.00\\times10^{-10}\n0.152\n\n\n1.00\\times10^{-5} mol/L\n5.00\\times10^{-9}\n1.52\n\n\n\nMore carbonate can change the saturation state. Supersaturation does not specify how fast precipitation occurs.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: gases and minerals"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/gases-lec.html#a-field-explanation-needs-the-boundaries",
+    "href": "carbonate-gases/gases-lec.html#a-field-explanation-needs-the-boundaries",
+    "title": "Carbon dioxide exchange and carbonate minerals",
+    "section": "A field explanation needs the boundaries",
+    "text": "A field explanation needs the boundaries\nA water can exchange gas, receive acid, dissolve minerals, and support biological carbon transformations at the same time.\nBefore calculating, identify which processes are included and what is fixed. Do not impose a fixed dissolved carbon total while also allowing unlimited gas exchange without a balancing constraint.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: gases and minerals"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/gases-lec.html#check-your-explanation",
+    "href": "carbonate-gases/gases-lec.html#check-your-explanation",
+    "title": "Carbon dioxide exchange and carbonate minerals",
+    "section": "Check your explanation",
+    "text": "Check your explanation\nWhy can CO₂ uptake lower pH while conserving alkalinity?\nWhy can a mineral saturation calculation indicate a possible reaction without predicting its rate or final amount?\nWork through the exercise. Constants, limitations, and sources are on the reference sheet.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Lecture: gases and minerals"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/notes.html",
+    "href": "carbonate-gases/notes.html",
+    "title": "Carbonate and gas chemistry",
+    "section": "",
+    "text": "Why can two waters with the same pH respond differently to an acid input? Carbonate equilibria connect dissolved carbon, acid neutralisation, gas exchange, and mineral stability. We will use a deliberately simple freshwater model to separate these effects.\nStart with carbonate species and alkalinity, then gas exchange and minerals. Work through the exercises, including a short R activity. The model and reference sheet supplies all constants and assumptions. The reading context is chapters 10–11 of vanLoon and Duffy, fourth edition; precise subsection assignments remain to be selected.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Start here"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/notes.html#what-you-should-be-able-to-do",
+    "href": "carbonate-gases/notes.html#what-you-should-be-able-to-do",
+    "title": "Carbonate and gas chemistry",
+    "section": "What you should be able to do",
+    "text": "What you should be able to do\n\nCalculate carbonate species ratios at a supplied pH and interpret a distribution diagram.\nDistinguish pH, total dissolved inorganic carbon, alkalinity, and buffer capacity.\nExplain why a strong-acid input and carbon dioxide uptake change water differently.\nApply a specified Henry coefficient and a simple calcite saturation test.\nUse a supplied R calculation to plot species fractions, check it against a hand calculation, and explain what the plot cannot predict.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Start here"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/notes.html#before-starting",
+    "href": "carbonate-gases/notes.html#before-starting",
+    "title": "Carbonate and gas chemistry",
+    "section": "Before starting",
+    "text": "Before starting\nYou need concentration units, an equilibrium expression, logarithms, and a balanced acid–base reaction. Recall that one millimole per litre is \\(10^{-3}\\) mol/L, and one micromole per litre is \\(10^{-6}\\) mol/L. Under our dilute-solution approximation, \\(\\mathrm{pH}=-\\log_{10}[\\mathrm{H^+}]\\) when the numerical concentration is in mol/L. Thus pH 7 corresponds to \\(10^{-7}\\) mol/L, and lowering pH by one means ten times more hydrogen ion. The exact pH definition uses activity.\nTry before reading further: does pH 8 tell you how many moles of acid a litre of water can neutralise? What additional information might you need?",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Start here"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/notes.html#a-catchment-connection",
+    "href": "carbonate-gases/notes.html#a-catchment-connection",
+    "title": "Carbonate and gas chemistry",
+    "section": "A catchment connection",
+    "text": "A catchment connection\nAcid deposition can change the acid input to a lake. Catchment minerals, soil exchange, organic acids, and biological activity also influence the water. Here we isolate carbonate chemistry first. All numerical waters are constructed teaching examples, not measurements from a real lake. The gas-exchange examples are separate boundary conditions, not an assumed continuation of the closed-water acid experiment.",
+    "crumbs": [
+      "Home",
+      "Carbonate and gases",
+      "Start here"
+    ]
+  }
+]

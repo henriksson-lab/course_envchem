@@ -1,0 +1,152 @@
+---
+title: "Carbonate species and alkalinity"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## Same pH, different response
+
+Two constructed waters start at pH 7.50.
+
+- Water A: total dissolved inorganic carbon = 1.00 mmol/L.
+- Water B: total dissolved inorganic carbon = 0.100 mmol/L.
+- Each receives 0.050 mmol/L of strong acid, with negligible dilution.
+
+Which water changes more? What does pH alone leave out?
+
+::: notes
+This is a closed-water thought experiment: no gas exchange, minerals, biological
+carbon transformations, or noncarbonate buffers. Background counterions provide
+electroneutrality; this is not a recipe for preparing a solution from CO2 alone.
+:::
+
+## Three questions for this lecture
+
+1. Which dissolved carbon species dominate at a given pH?
+2. How do species fractions differ from concentrations?
+3. Why do pH and alkalinity describe different aspects of water?
+
+Use 25 °C and the dilute freshwater approximation throughout.
+
+## One element, three dissolved pools
+
+$$C_T=[\mathrm{CO_2^*}]+[\mathrm{HCO_3^-}]+[\mathrm{CO_3^{2-}}]$$
+
+$\mathrm{CO_2^*}$ groups dissolved carbon dioxide and carbonic acid.
+
+Changing species redistributes carbon. It does not itself remove dissolved carbon.
+
+## Carbonate reactions release hydrogen ions
+
+$$\mathrm{CO_2^*+H_2O\rightleftharpoons H^++HCO_3^-}$$
+$$\mathrm{HCO_3^-\rightleftharpoons H^++CO_3^{2-}}$$
+
+Use effective $pK_1=6.35$ and $pK_2=10.33$.
+
+Adding acid shifts both equilibria toward the left.
+
+::: notes
+CO2* is a combined analytical pool. The first displayed reaction is shorthand
+for dissolution/hydration followed by acid dissociation, not an elementary reaction.
+All constants and the model definition are on the reference sheet.
+:::
+
+## From an equilibrium expression to a ratio
+
+$$K_1=\frac{[\mathrm{H^+}][\mathrm{HCO_3^-}]}{[\mathrm{CO_2^*}]}$$
+
+Since $[\mathrm{H^+}]\approx10^{-\mathrm{pH}}$ mol/L,
+
+$$\frac{[\mathrm{HCO_3^-}]}{[\mathrm{CO_2^*}]}=10^{\mathrm{pH}-6.35}.$$
+
+At pH 7.35 the ratio is 10. At pH 6.35 it is 1.
+
+## Include the second dissociation
+
+$$r_1=10^{\mathrm{pH}-6.35},\qquad r_2=10^{\mathrm{pH}-10.33}$$
+
+The three proportions are $1:r_1:r_1r_2$.
+
+At pH 8.35 they are approximately $1:100:1.047$.
+
+Divide each by their sum to obtain fractions:
+$0.00980$, $0.97994$, $0.01026$.
+
+## Read the distribution diagram
+
+![Model species fractions at prescribed pH values, 25 °C.](speciation.svg){height=430}
+
+Which species dominates near pH 8? Where do adjacent fractions cross?
+
+::: notes
+At each pKa the corresponding adjacent species are equal. Neither is exactly
+half of all carbon because the third species still exists. The horizontal axis
+is supplied pH, not acid dose or elapsed time.
+:::
+
+## Fractions do not give the amount
+
+At pH 8.35, bicarbonate is about 0.980 of $C_T$.
+
+- If $C_T=1.00$ mmol/L, bicarbonate is about 0.980 mmol/L.
+- If $C_T=0.100$ mmol/L, bicarbonate is about 0.0980 mmol/L.
+
+The fraction is the same. The acid-neutralising inventories differ.
+
+## Alkalinity counts charge equivalents
+
+$$A_T=[\mathrm{HCO_3^-}]+2[\mathrm{CO_3^{2-}}]
++[\mathrm{OH^-}]-[\mathrm{H^+}]$$
+
+One mole of bicarbonate contributes one equivalent; carbonate contributes two.
+
+pH describes the current hydrogen-ion activity. Alkalinity describes an
+acid-neutralising balance. Buffer capacity describes resistance to a small pH change.
+
+## Acid changes the balance
+
+$$\mathrm{HCO_3^-+H^+\rightarrow CO_2^*+H_2O}$$
+
+For a strong-acid input $q$ eq/L:
+
+$$A_{T,\mathrm{after}}=A_{T,\mathrm{before}}-q.$$
+
+In our closed example $C_T$ stays fixed. pH must adjust to the new balance.
+Do not subtract an acid dose directly from a pH value.
+
+## Return to the two waters
+
+| Constructed water | Initial alkalinity (meq/L) | After acid (meq/L) | Final model pH |
+| --- | ---: | ---: | ---: |
+| A | 0.9356 | 0.8856 | 7.235 |
+| B | 0.09382 | 0.04382 | 6.252 |
+
+The same acid dose consumes a much larger fraction of B's alkalinity.
+Final pH values solve the carbon and alkalinity balances together.
+
+::: notes
+Students calculate the alkalinity changes and interpret the supplied final pHs.
+They are not required to implement a numerical equilibrium solver. The instructor
+verification script checks the final states. These are model results, not field data.
+:::
+
+## Explain before computing
+
+- Predict how acid shifts species.
+- Calculate one ratio and check its units.
+- Use a diagram to see the whole pH range.
+- State what is fixed before predicting a pH change.
+
+Continue with [gas exchange and minerals](gases-lec.qmd) and the
+[exercise](exercise.qmd). Constants and model sources are on the
+[reference sheet](reference.qmd).

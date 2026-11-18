@@ -1,0 +1,29 @@
+---
+title: "Chemical question and exercise"
+---
+
+## Question
+
+Give the environmental setting and the chemical prediction to make.
+
+## Inputs and assumptions
+
+Supply concentrations, units, constants, temperature, and the model conditions.
+Identify whether the data are measured or simulated.
+
+## Predict and calculate
+
+Ask for a directional prediction, a small hand calculation, and a unit check.
+Use R only when a table, repeated calculation, or plot helps answer the question.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Point to the relevant reaction or balance and link any required function help.
+:::
+
+## Explain the result
+
+Request a chemical explanation and a statement of the model's limitations.
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Provide the calculation, checks, and interpretation when the exercise is written.
+:::

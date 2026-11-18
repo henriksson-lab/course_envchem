@@ -1,0 +1,55 @@
+---
+title: "Carbonate species at prescribed pH"
+output: html_document
+---
+
+## Chemical question
+
+How does prescribed pH affect carbonate species fractions in dilute freshwater
+at 25 °C? This is a constructed equilibrium model, not a measured acid-addition
+experiment. pH is supplied; we do not solve for it.
+
+```{r model}
+source("speciation.R")
+```
+
+## Prediction and hand check
+
+Before running the code, predict the dominant species at pH 8.35. Use
+$r_1=10^{8.35-6.35}$ and $r_2=10^{8.35-10.33}$ to calculate the bicarbonate
+fraction by hand. Replace this paragraph with your calculation and prediction.
+
+```{r hand-check}
+# The grid contains a row at pH 8.35; tolerate floating-point roundoff.
+speciation[abs(speciation$pH - 8.35) < 1e-8, ]
+```
+
+## Distribution diagram
+
+```{r diagram, fig.cap="Predicted equilibrium fractions at prescribed pH values. The curves are model predictions, not measurements.", fig.width=8, fig.height=4.5}
+speciation_plot
+```
+
+## Model checks
+
+```{r checks}
+fraction_sum <- with(speciation, alpha_CO2 + alpha_HCO3 + alpha_CO3)
+range(fraction_sum)
+range(speciation[, c("alpha_CO2", "alpha_HCO3", "alpha_CO3")])
+```
+
+Explain whether the fractions sum to one and lie between zero and one.
+
+## Chemical interpretation
+
+Replace this paragraph with your explanation: which species dominates at pH
+8.35, how do the curves change on lowering pH, and why can this figure alone
+not predict the final pH after adding acid? State the dilute-solution and
+constant-temperature assumptions. Explain why doubling total inorganic carbon
+at prescribed pH changes concentrations but leaves these fractions unchanged.
+
+## Reproducibility
+
+Keep this `.Rmd` beside `speciation.R`. In a fresh R session, render with
+`rmarkdown::render("report.Rmd")`, or use Knit in RStudio. No objects from a
+previous Console session should be needed.

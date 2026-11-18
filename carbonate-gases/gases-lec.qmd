@@ -1,0 +1,123 @@
+---
+title: "Carbon dioxide exchange and carbonate minerals"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## What changes when the water meets air?
+
+The closed acid example held dissolved inorganic carbon fixed.
+
+Gas exchange allows carbon to enter or leave. Does it change alkalinity in the
+same way as strong acid?
+
+## Specify the gas equilibrium convention
+
+$$[\mathrm{CO_2^*}]=K_Hp_{\mathrm{CO_2}}$$
+
+Here $K_H=0.034$ mol L$^{-1}$ atm$^{-1}$ at 25 °C.
+
+Partial pressure in atm gives dissolved carbon dioxide in mol/L.
+A coefficient defined as pressure divided by concentration would require a
+different equation.
+
+## A worked Henry calculation
+
+Take a supplied gas pressure $p_{\mathrm{CO_2}}=4.00\times10^{-4}$ atm.
+
+$$[\mathrm{CO_2^*}]=0.034(4.00\times10^{-4})=
+1.36\times10^{-5}\ \mathrm{mol/L}=13.6\ \mathrm{\mu mol/L}.$$
+
+This is the carbon dioxide pool, not total inorganic carbon.
+The gas pressure is an exercise input, not a claim about today's atmosphere.
+
+## From the gas pool to total carbon
+
+If the equilibrated water is also specified to have pH 8.35,
+
+$$C_T=[\mathrm{CO_2^*}](1+r_1+r_1r_2).$$
+
+Using $r_1=100$ and $r_2\approx0.01047$:
+
+$$C_T\approx13.6(102.047)=1388\ \mathrm{\mu mol/L}.$$
+
+This describes a state with that pH and gas pressure. It does not predict the
+pH of arbitrary water exposed to the gas.
+
+## Carbon dioxide uptake and acid addition differ
+
+| Process acting alone | Dissolved inorganic carbon | Alkalinity |
+| --- | --- | --- |
+| CO₂ uptake | Increases | Conserved |
+| Strong acid added to closed water | Conserved | Decreases |
+
+Both can lower pH. The constraints and chemical balances differ.
+
+::: notes
+The statements exclude mineral reactions, biological transformations, and volume
+changes. CO2 creates H+ and bicarbonate together: their alkalinity contributions
+cancel. A finite headspace needs a gas-plus-water carbon balance rather than a
+fixed pressure assumption.
+:::
+
+## Minerals introduce another reaction
+
+$$\mathrm{CaCO_3(s)\rightleftharpoons Ca^{2+}+CO_3^{2-}}$$
+
+Calcite dissolution adds dissolved calcium and carbon.
+One mole dissolved adds two alkalinity equivalents.
+
+The closed acid calculation excluded this possible source of neutralisation.
+
+## Check the current saturation state
+
+$$\Omega=\frac{[\mathrm{Ca^{2+}}][\mathrm{CO_3^{2-}}]}{K_{sp}}$$
+
+Use free ions and $K_{sp}=3.3\times10^{-9}$ in our approximation.
+
+- $\Omega<1$: undersaturated.
+- $\Omega=1$: saturated.
+- $\Omega>1$: supersaturated.
+
+The full thermodynamic expression uses activities.
+
+## A worked saturation comparison
+
+Given free calcium = $5.00\times10^{-4}$ mol/L:
+
+| Free carbonate | Concentration product | $\Omega$ |
+| --- | --- | ---: |
+| $1.00\times10^{-6}$ mol/L | $5.00\times10^{-10}$ | 0.152 |
+| $1.00\times10^{-5}$ mol/L | $5.00\times10^{-9}$ | 1.52 |
+
+More carbonate can change the saturation state.
+Supersaturation does not specify how fast precipitation occurs.
+
+## A field explanation needs the boundaries
+
+A water can exchange gas, receive acid, dissolve minerals, and support biological
+carbon transformations at the same time.
+
+Before calculating, identify which processes are included and what is fixed.
+Do not impose a fixed dissolved carbon total while also allowing unlimited gas
+exchange without a balancing constraint.
+
+## Check your explanation
+
+Why can CO₂ uptake lower pH while conserving alkalinity?
+
+Why can a mineral saturation calculation indicate a possible reaction without
+predicting its rate or final amount?
+
+Work through the [exercise](exercise.qmd). Constants, limitations, and sources
+are on the [reference sheet](reference.qmd).

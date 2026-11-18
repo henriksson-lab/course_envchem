@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - carbonate-gases/speciation.R
+    - carbonate-gases/report.Rmd
+  render:
+    - index.qmd
+    - overview.qmd
+    - "*/*.qmd"
+    - "!templates/"
+    - "!instructor/"
+
+website:
+  title: "Environmental Chemistry"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: overview.qmd
+        text: Content overview
+  sidebar:
+    style: docked
+    search: true
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: overview.qmd
+        text: Content overview
+      - section: "Carbonate and gases"
+        contents:
+          - href: carbonate-gases/notes.qmd
+            text: Start here
+          - href: carbonate-gases/lec.qmd
+            text: "Lecture: species and alkalinity"
+          - href: carbonate-gases/gases-lec.qmd
+            text: "Lecture: gases and minerals"
+          - href: carbonate-gases/exercise.qmd
+            text: Exercises and R activity
+          - href: carbonate-gases/reference.qmd
+            text: Model and reference sheet
+
+format:
+  html:
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    highlight-style: github
+    theme: cosmo
+    css: styles.css
+
+controls: true
+controls-layout: edges
+controls-back-arrows: visible

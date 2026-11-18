@@ -1,0 +1,125 @@
+---
+title: "Carbonate model and reference sheet"
+---
+
+## Conditions and constants
+
+Use 25 °C, dilute freshwater, and concentrations in mol/L. Approximate activities
+by concentrations, with standard-state factors implicit in the numerical equilibrium
+expressions. Ignore ion pairs, organic acids, phosphate, borate, and other acid–base
+systems. These choices are unsuitable for seawater or concentrated solutions.
+
+| Quantity | Teaching value | Meaning |
+| --- | --- | --- |
+| $pK_1$ | 6.35 | First dissociation of the combined dissolved carbon dioxide pool |
+| $pK_2$ | 10.33 | Bicarbonate dissociation |
+| $K_w$ | $1.0\times10^{-14}$ | Numerical water ion product in this concentration approximation |
+| $K_H$ | $0.034\ \mathrm{mol\,L^{-1}\,atm^{-1}}$ | Dissolved carbon dioxide pool per gas partial pressure |
+| $K_{sp}$, calcite | $3.3\times10^{-9}$ | Numerical free-ion concentration product at saturation in this approximation |
+
+These are rounded teaching constants, consistent with the carbonate, gas, and
+calcite entries in the [USGS PHREEQC database](https://github.com/usgs-coupled-subtrees/phreeqc3-database/blob/master/phreeqc.dat).
+The database uses a thermodynamic activity convention; using its rounded values
+with concentrations is our dilute-water approximation. Constants change with
+temperature and solution conditions. Use the supplied values consistently rather
+than mixing constants from different conventions.
+
+## Species and equilibria
+
+Write $\mathrm{CO_2^*}$ for $\mathrm{CO_2(aq)}+\mathrm{H_2CO_3}$.
+It is a combined pool, not the chemical formula of a single molecule.
+Most of this pool is dissolved molecular carbon dioxide under these conditions.
+The effective first dissociation incorporates hydration:
+
+$$\mathrm{CO_2^* + H_2O \rightleftharpoons H^+ + HCO_3^-},\qquad
+K_1=10^{-6.35}.$$
+
+$$\mathrm{HCO_3^- \rightleftharpoons H^+ + CO_3^{2-}},\qquad
+K_2=10^{-10.33}.$$
+
+In the first expression, the water term represents the net reaction of dissolved
+carbon dioxide; the notation groups hydrated and unhydrated forms together.
+
+The total dissolved inorganic carbon in this model is
+
+$$C_T=[\mathrm{CO_2^*}]+[\mathrm{HCO_3^-}]+[\mathrm{CO_3^{2-}}].$$
+
+No carbon leaves this sum merely because it changes species. Mineral reactions,
+gas exchange, or biological transformations can change the dissolved total.
+
+## Ratios and fractions at a supplied pH
+
+Dividing the equilibrium expressions gives
+
+$$r_1=\frac{[\mathrm{HCO_3^-}]}{[\mathrm{CO_2^*}]}=
+10^{\mathrm{pH}-6.35},\qquad
+r_2=\frac{[\mathrm{CO_3^{2-}}]}{[\mathrm{HCO_3^-}]}=
+10^{\mathrm{pH}-10.33}.$$
+
+The proportions of the three species are $1:r_1:r_1r_2$. Therefore
+
+$$\alpha_0=\frac{1}{1+r_1+r_1r_2},\quad
+\alpha_1=\frac{r_1}{1+r_1+r_1r_2},\quad
+\alpha_2=\frac{r_1r_2}{1+r_1+r_1r_2}.$$
+
+Each $\alpha$ is dimensionless and each concentration is $\alpha_i C_T$.
+The fractions sum to one. In this model the fractions depend on pH and the
+constants; $C_T$ sets the concentration scale. A distribution curve supplies
+possible compositions at prescribed pH values. It does not solve for pH.
+
+## Alkalinity and buffering
+
+The carbonate-only total alkalinity is
+
+$$A_T=[\mathrm{HCO_3^-}]+2[\mathrm{CO_3^{2-}}]
++[\mathrm{OH^-}]-[\mathrm{H^+}],\qquad
+[\mathrm{OH^-}]=K_w/[\mathrm{H^+}].$$
+
+Use mol of charge equivalents per litre (eq/L); $1$ meq/L is $10^{-3}$ eq/L.
+Bicarbonate contributes one equivalent per mole, carbonate two. Real freshwater
+can have additional alkalinity contributions, so this expression must be checked
+before applying it to measurements. The
+[USGS carbonate-speciation guidance](https://or.water.usgs.gov/alk/criteria.html)
+explains the importance of other acid-neutralising species.
+
+Alkalinity describes an acid-neutralising balance relative to the carbon dioxide
+reference state. pH describes hydrogen-ion activity at the present state. Local
+buffer capacity describes the amount of acid or base required for a small pH
+change under specified conditions. These are related, but are different quantities.
+
+For a strong-acid addition $q$ eq/L with negligible dilution and no other
+reaction, $A_{T,\mathrm{after}}=A_{T,\mathrm{before}}-q$.
+In a closed water with no mineral or biological reactions, $C_T$ stays constant.
+Added acid redistributes carbon toward $\mathrm{CO_2^*}$.
+The final pH must satisfy both the carbon balance and the new alkalinity.
+
+## Gas and mineral boundaries
+
+For water equilibrated with a large gas reservoir, use the specified convention
+
+$$[\mathrm{CO_2^*}]=K_H p_{\mathrm{CO_2}}.$$
+
+Here partial pressure is in atm. Applying this coefficient to total inorganic
+carbon would be incorrect. Gas uptake by itself changes $C_T$ but conserves
+$A_T$ in our model. At fixed alkalinity it generally lowers pH. Fixing gas
+pressure, pH, and $C_T$ independently would usually overconstrain the model.
+
+For calcite, $\mathrm{CaCO_3(s)\rightleftharpoons Ca^{2+}+CO_3^{2-}}$.
+Use the free-ion concentrations to estimate
+
+$$\Omega=\frac{[\mathrm{Ca^{2+}}][\mathrm{CO_3^{2-}}]}{K_{sp}}.$$
+
+$\Omega<1$ indicates undersaturation; dissolution is thermodynamically favoured
+if calcite is available. $\Omega>1$ indicates supersaturation; precipitation can
+be favoured, but kinetics and nucleation can delay it. $\Omega=1$ is saturation.
+Dissolving one mole of calcite adds one mole to dissolved inorganic carbon and
+two equivalents to alkalinity. This process is excluded from the closed acid example.
+
+## What each example holds fixed
+
+| Example | Specified quantities | What can change or be calculated |
+| --- | --- | --- |
+| Distribution plot | pH grid and temperature; optional $C_T$ | Species fractions, then concentrations if $C_T$ is supplied |
+| Closed acid addition | Initial pH and $C_T$; acid dose; no gas/minerals | New alkalinity, species, and pH |
+| Henry calculation | Gas partial pressure and temperature; gas equilibrium | $[\mathrm{CO_2^*}]$; more information is needed for $C_T$ and pH |
+| Saturation check | Free calcium and carbonate at the current state | $\Omega$; not a final precipitation amount or reaction rate |

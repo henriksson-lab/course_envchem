@@ -1,0 +1,46 @@
+---
+title: "Carbonate and gas chemistry"
+---
+
+Why can two waters with the same pH respond differently to an acid input?
+Carbonate equilibria connect dissolved carbon, acid neutralisation, gas exchange,
+and mineral stability. We will use a deliberately simple freshwater model to
+separate these effects.
+
+Start with [carbonate species and alkalinity](lec.qmd), then
+[gas exchange and minerals](gases-lec.qmd). Work through the
+[exercises](exercise.qmd), including a short R activity. The
+[model and reference sheet](reference.qmd) supplies all constants and assumptions.
+The reading context is chapters 10–11 of vanLoon and Duffy, fourth edition;
+precise subsection assignments remain to be selected.
+
+## What you should be able to do
+
+- Calculate carbonate species ratios at a supplied pH and interpret a distribution diagram.
+- Distinguish pH, total dissolved inorganic carbon, alkalinity, and buffer capacity.
+- Explain why a strong-acid input and carbon dioxide uptake change water differently.
+- Apply a specified Henry coefficient and a simple calcite saturation test.
+- Use a supplied R calculation to plot species fractions, check it against a hand
+  calculation, and explain what the plot cannot predict.
+
+## Before starting
+
+You need concentration units, an equilibrium expression, logarithms, and a
+balanced acid–base reaction. Recall that one millimole per litre is
+$10^{-3}$ mol/L, and one micromole per litre is $10^{-6}$ mol/L.
+Under our dilute-solution approximation,
+$\mathrm{pH}=-\log_{10}[\mathrm{H^+}]$ when the numerical concentration is in
+mol/L. Thus pH 7 corresponds to $10^{-7}$ mol/L, and lowering pH by one means
+ten times more hydrogen ion. The exact pH definition uses activity.
+
+Try before reading further: does pH 8 tell you how many moles of acid a litre
+of water can neutralise? What additional information might you need?
+
+## A catchment connection
+
+Acid deposition can change the acid input to a lake. Catchment minerals,
+soil exchange, organic acids, and biological activity also influence the water.
+Here we isolate carbonate chemistry first. All numerical waters are constructed
+teaching examples, not measurements from a real lake. The gas-exchange examples
+are separate boundary conditions, not an assumed continuation of the closed-water
+acid experiment.

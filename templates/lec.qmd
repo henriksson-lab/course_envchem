@@ -1,0 +1,33 @@
+---
+title: "Chemical topic"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    highlight-style: github
+    code-overflow: wrap
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## Environmental question
+
+State one chemical question and the observable change it explains.
+
+## Chemical model
+
+Introduce the reaction, quantities, units, and assumptions.
+
+## Worked example
+
+Calculate a small case and check its physical meaning.
+
+## Interpretation
+
+Explain the environmental consequence and where the model stops applying.
