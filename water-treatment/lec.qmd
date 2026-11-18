@@ -1,0 +1,73 @@
+---
+title: "Water pollution and treatment chemistry"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## Chemical question
+
+Which treatment process changes a pollutant’s chemical form, and which transfers it into a stream that still needs to be managed?
+
+## What to explain
+
+- Match a chemical form to an appropriate treatment mechanism.
+- Calculate sequential load transfers and distinguish transformation from removal.
+- Use reaction stoichiometry to explain oxygen and alkalinity requirements.
+
+## Start with the target form
+
+Identify the form before selecting a process.
+
+Particles → separation.
+
+Dissolved solutes → reaction, sorption, membranes, or suitable biological transformation.
+
+## Precipitation and sorption transfer material
+
+Fe³⁺ + 3 H₂O → Fe(OH)₃(s) + 3 H⁺.
+
+Coagulation/precipitation can consume alkalinity and create a solid residual.
+
+## Biological oxidation changes species
+
+Nitrification changes NH₄⁺ to NO₃⁻.
+
+Denitrification can export nitrogen as N₂.
+
+Track O₂, carbon donor, and alkalinity as well as nitrogen.
+
+## Sequential percentages multiply
+
+Remaining fraction = $(1-f_1)(1-f_2)$.
+
+Track water, sludge, gas, and products separately.
+
+## Disinfection and residuals
+
+Disinfection and chemical removal have different targets.
+
+Oxidation can form products rather than fully mineralise every compound.
+
+## Two treatment stages
+
+10.0 → 4.00 → **2.00 mg in water**.
+
+Solid residual: **8.00 mg**.
+
+Overall transfer = 80.0%, not 110%.
+
+## Check your explanation
+
+A water contains suspended clay, dissolved nitrate, and a neutral organic contaminant. Explain why filtration alone is not a complete treatment argument.
+
+Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).

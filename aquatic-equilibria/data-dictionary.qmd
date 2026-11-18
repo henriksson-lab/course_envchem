@@ -1,0 +1,44 @@
+---
+title: "Activity A data dictionary"
+---
+
+## Origin and scope
+
+These values are constructed teaching data. They are not measurements from a
+real site. Each row is one reported ion in one near-neutral sample. Three sample
+identities have six rows each. Samples A and C are designed to share the same
+correct composition, but C includes a known decimal transcription error.
+The identifiers A, B, and C are local to this activity and do not identify the
+separate carbonate-unit example waters. The six ions form the complete major-ion set for this approximation; tiny H⁺
+and OH⁻ terms and other species are omitted. No pH or metal speciation can be
+inferred from these six totals alone.
+
+## Original ion table
+
+| Column | Meaning | Units or allowed values |
+| --- | --- | --- |
+| `sample_id` | Constructed sample identifier | A, B, C |
+| `ion` | Reported ionic species | Ca, Mg, Na, HCO3, Cl, SO4 |
+| `concentration_mg_l` | Mass of the named ion per water volume | mg/L; HCO3 and SO4 are compound mass, not elemental C or S |
+| `molar_mass_g_mol` | Supplied rounded molar mass of the named ion | g/mol; numerical value also mg/mmol |
+| `charge` | Signed charge number | +2, +1, −1, or −2, as appropriate |
+
+`sample_id` plus `ion` uniquely identifies a row. Zero would denote a specified
+zero, while an unknown measurement would be `NA`; the supplied table has no
+missing values. Never replace unknowns with zero merely to complete a balance.
+
+## Correction record
+
+`corrections.csv` gives sample and ion, the original and corrected concentrations
+in mg/L, and a text evidence statement. The authoritative **constructed** lab
+record gives C sulfate as 19.212 mg/L rather than 1.9212. The record is additional
+information, not a value inferred solely from charge closure. Preserve the raw
+CSV and create a corrected in-memory copy.
+
+## Derived quantities
+
+Divide the mass concentration by the numerical molar mass to obtain mmol/L.
+Multiply by positive charge or negative charge magnitude to obtain positive or
+negative meq/L contributions. Sum each charge sign within sample. The signed
+imbalance is `100 * (cations - anions) / (cations + anions)` in percent.
+A and B are distinct constructed compositions; they are not replicate treatments.

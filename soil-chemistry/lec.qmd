@@ -1,0 +1,71 @@
+---
+title: "Soil chemistry and retention"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## Chemical question
+
+Why can two soils at the same pH differ in their response to acid or a contaminant input?
+
+## What to explain
+
+- Connect mineral and organic surfaces with exchange and buffering.
+- Calculate charge-based exchange inventories.
+- Explain why retention capacity does not determine transport by itself.
+
+## Several reacting phases
+
+Soil chemistry involves solids, water, gas, and organisms.
+
+Equal pH does not imply equal neutralising inventory or exchange capacity.
+
+## Cation exchange conserves charge
+
+2 XNa + Ca²⁺ ⇌ X₂Ca + 2 Na⁺.
+
+Two positive-charge equivalents exchange for two.
+
+Capacity and selectivity are different quantities.
+
+## Interpret exchange capacity
+
+1 cmolc/kg = 0.01 mol charge/kg.
+
+For Ca²⁺, divide charge equivalents by two to obtain moles Ca.
+
+Report the capacity measurement conditions.
+
+## Acid inputs meet a finite inventory
+
+Acid response involves exchange, protonation, and mineral dissolution.
+
+A neutralising inventory is finite; response depends on reaction rates and access.
+
+## Retention and preferential flow
+
+High CEC does not retain every chemical.
+
+Flow paths, redox, particles, and molecular properties can control export.
+
+## A charge-based inventory
+
+10.0 cmolc/kg × 0.01 × 0.200 kg = **0.0200 mol charge**.
+
+Half as Ca²⁺ → **0.00500 mol Ca**.
+
+## Check your explanation
+
+Two soils have equal pH but one is rich in organic matter and exchange-active clay while the other is coarse quartz sand. What would you measure before predicting their responses to an acid input?
+
+Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).

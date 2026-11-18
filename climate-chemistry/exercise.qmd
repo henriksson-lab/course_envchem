@@ -1,0 +1,55 @@
+---
+title: "Molecules, radiation, and climate exercises"
+---
+
+Use the [notes](notes.qmd). All numerical inputs below are constructed
+teaching examples; use the stated assumptions rather than looking up extra
+constants. Predict the direction of change before calculating.
+
+## 1. Compare wavelengths
+
+For the two teaching bands in the notes, calculate absorbed fractions. Can you conclude that the gas absorbs more total energy in the 10 µm band without knowing the incident spectrum?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Absorbed power depends on both absorption fraction and incident power.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+The fractions are **0.05** and **0.80** in the absorbing-only example. Total absorbed power also requires the incident energy in each band and their widths. Fractions alone cannot establish an integrated energy budget.
+:::
+
+## 2. An infrared-active mode
+
+Why is the statement “CO₂ is symmetric, so it cannot absorb infrared” incorrect? Contrast an active CO₂ mode with N₂ vibration.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Consider the changing dipole during vibration, not only the resting structure.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+The CO₂ asymmetric stretch and bending motions change dipole moment and can absorb infrared. Ordinary N₂ vibration does not create that changing molecular dipole. Other weak absorption mechanisms do not reverse this basic comparison.
+:::
+
+## 3. A constructed gas sink
+
+A fictitious gas has a fixed first-order loss coefficient k = 0.0200 day⁻¹. Calculate its lifetime, half-life, and remaining fraction after 50.0 days.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Use 1/k, ln(2)/k, and exp(−kt).
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Lifetime **50.0 days**; half-life **34.7 days**; remaining fraction **e⁻¹ = 0.368**. These describe the stated one-sink model, not CO₂ or a complete atmospheric transport system.
+:::
+
+## 4. Compare two emissions
+
+Two emitted gases have equal mass and different absorption bands and lifetimes. What information would you need to compare their climate effects?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Mass alone omits molecular number, radiation, chemistry, and timescale.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+You need molecular masses, spectroscopic absorption, atmospheric abundance and overlap, chemical removal, distribution, and a stated comparison time horizon. Aerosol or chemical indirect effects can also matter. Equal emitted mass does not imply equal forcing.
+:::

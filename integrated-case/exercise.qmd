@@ -1,0 +1,67 @@
+---
+title: "Connecting air, catchments, and water exercises"
+---
+
+Use the [notes](notes.qmd). All numerical inputs below are constructed
+teaching examples; use the stated assumptions rather than looking up extra
+constants. Predict the direction of change before calculating.
+
+## 1. Close the annual budget
+
+Calculate residual acidity and reference-adjusted alkalinity export for the base case. Report annual equivalents and meq/L.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Work in annual equivalents before converting to a flow-weighted concentration.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Residual acidity = **10000 eq/year**, or **0.0200 meq/L**. Alkalinity export = 50000 − 10000 = **40000 eq/year**, or **0.0800 meq/L**. No pH follows without additional constraints.
+:::
+
+## 2. Change water export
+
+Double water export to 1.00 × 10⁹ L/year, holding acid and neutralisation amounts fixed only for this sensitivity exercise. Find residual acid-equivalent concentration. Is it reasonable to assume all real catchment processes stay unchanged?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Divide the same annual residual by the new annual volume.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Residual concentration is **0.0100 meq/L**. In a real catchment, higher water flow could change weathering contact, retention, and transport. The fixed-flux sensitivity is an explicit mathematical assumption, not a universal hydrological response.
+:::
+
+## 3. Interpret sediment indicators
+
+Use the supplied oxygen, Fe, and phosphate-P comparison. State a balanced iron reduction half-reaction, explain possible P release, and name an alternative explanation.
+
+::: {.callout-tip collapse="true" title="Hint"}
+The iron-bearing carrier changes; phosphate need not undergo redox.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+FeOOH + 3 H⁺ + e⁻ → Fe²⁺ + 2 H₂O. Reduction/dissolution can release sorbed phosphate. Mixing with a separate Fe/P-rich porewater source, desorption changes, or other minerals could contribute. Measure Fe(II), porewater gradients, and phase inventories to distinguish them.
+:::
+
+## 4. A reproducible chemical argument
+
+Write a short report using activity C and the catchment/sediment evidence. Include one reaction, one hand-checked balance, one model figure, and an explanation of what is still uncertain.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Use the downloadable activity C report; distinguish invented observations from model outputs.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+A sound response reports the base-case 0.0200 meq/L acid residual, distinguishes annual export from closed-water pH, explains a plausible Fe–P mechanism without claiming proof, and labels the contaminant plot as a separate first-order model. It states fixed boundaries and proposes a discriminating measurement rather than treating model curves as field measurements.
+:::
+
+
+## Assemble the short report
+
+Use the [activity C report template](../organic-contaminants/fate-report.Rmd)
+and its [supporting files](../organic-contaminants/exercise.qmd#activity-c-a-fate-model-in-r).
+Keep the compound model and catchment/sediment arguments in clearly identified
+sections. Include the completed prediction, hand calculation, model checks,
+figure interpretation, catchment equivalent budget, and a redox hypothesis with
+a discriminating observation. A classmate should be able to render the report
+from the saved files and understand which numbers are inputs, predictions, or
+constructed observations.

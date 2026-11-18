@@ -1,0 +1,47 @@
+---
+title: "Soil chemistry and retention"
+---
+
+Why can two soils at the same pH differ in their response to acid or a contaminant input?
+
+Read these notes with the [lecture](lec.qmd), then complete the
+[exercises](exercise.qmd). Numerical examples are constructed teaching cases
+unless explicitly described otherwise.
+
+## Learning goals
+
+- Connect mineral and organic surfaces with exchange and buffering.
+- Calculate charge-based exchange inventories.
+- Explain why retention capacity does not determine transport by itself.
+
+## Several reacting phases
+
+Soil contains minerals, organic matter, water, gas, and organisms. Water composition reflects contact with those phases and the time available for reaction. Soil pH measures a state under a specified method; it does not inventory exchange sites or neutralising minerals. Texture, mineralogy, organic matter, and flow paths therefore matter even when two pH measurements are equal.
+
+## Cation exchange conserves charge
+
+A negatively charged exchange site can hold cations. A schematic exchange is $\mathrm{2XNa+Ca^{2+}\rightleftharpoons X_2Ca+2Na^+}$, with X denoting one negative site charge. Exchange transfers ions between water and sites without destroying the element. A divalent ion occupies two monovalent charge equivalents. Selectivity depends on the exchanger, ion activities, and competing ions.
+
+## Interpret exchange capacity
+
+Cation exchange capacity (CEC) is commonly reported as cmol of charge per kg dry soil, written cmolc/kg. One cmolc is 0.01 mol of charge equivalents. Permanent mineral charge and pH-dependent sites contribute differently, so method and pH matter. Base saturation expresses the fraction of exchange capacity occupied by specified base cations; it does not mean the solution has that same ion ratio.
+
+## Acid inputs meet a finite inventory
+
+Protons can displace cations, protonate organic and oxide sites, and dissolve minerals. A carbonate-bearing soil can consume acidity through mineral dissolution. An acid soil lacking carbonate may rely more on exchange, weathering, and aluminium chemistry. Some neutralisation reactions mobilise metals or change nutrient availability. A measured resistance to one short acid pulse does not guarantee indefinite protection under continued inputs.
+
+## Retention and preferential flow
+
+A soil with many potential sites may still transmit solute through fast pathways with limited solid contact. Waterlogged microsites can change redox and the stability of iron phases. Colloids may transport sorbed substances, while erosion moves the solids themselves. To explain movement, combine chemical partitioning with water flow, residence time, and particle transport. Avoid using CEC as a universal sorption coefficient for anions or neutral organic compounds.
+
+## Worked example
+
+A dry soil has CEC 10.0 cmolc/kg. In 0.200 kg, the exchange charge inventory is $10.0\times0.01\times0.200=\mathbf{0.0200}$ mol of charge. If half is occupied by Ca²⁺, calcium carries 0.0100 mol charge and corresponds to **0.00500 mol Ca**, not 0.0100 mol Ca. This capacity accounting is not a prediction that all that calcium immediately enters porewater.
+
+## Reading focus and further explanation
+
+Book: vanLoon and Duffy, fourth edition, chapter(s) 17–18. Focus on reacting soil phases, charge-based exchange, acid inventories, and transport limitations. Defer a detailed soil-classification survey.
+
+[FAO soil chemical properties](https://www.fao.org/soils-portal/data-hub/soil-classification/numerical-systems/chemical-properties/en/): The meaning of exchange capacity and the role of organic matter.
+
+[USDA CEC teaching note](https://www.nrcs.usda.gov/state-offices/illinois/soil-tech-note-15a-cation-exchange-capacity): Charge sites in clay and organic matter.

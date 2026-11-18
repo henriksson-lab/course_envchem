@@ -1,0 +1,71 @@
+---
+title: "Connecting air, catchments, and water"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## Chemical question
+
+Which linked chemical explanation survives the available balances, and which parts remain hypotheses?
+
+## What to explain
+
+- Combine deposition, neutralisation, and water export in one equivalent budget.
+- Use several indicators to assess a coupled sediment-redox explanation.
+- Write a reproducible chemical explanation that separates model predictions from observations.
+
+## The annual catchment budget
+
+Input 40000 − neutralisation 30000 = **10000 eq/year**.
+
+At 5 × 10⁸ L/year: **0.0200 meq/L** residual equivalent load.
+
+## An alkalinity comparison needs a reference
+
+Reference alkalinity 0.100 → **0.0800 meq/L** in the stated comparison.
+
+Annual export and a closed-sample pulse are different problems.
+
+## A separate sediment observation set
+
+| Indicator | Before | During depletion |
+| --- | ---: | ---: |
+| O₂, mg/L | 8.0 | 0.20 |
+| Filtered Fe, mg/L | 0.020 | 1.00 |
+| Phosphate-P, mg P/L | 0.010 | 0.200 |
+
+A pattern supports a hypothesis, not a unique causal proof.
+
+## Keep forms and units aligned
+
+Check species, element basis, phase, units, time, and boundary.
+
+Do not treat filtered Fe as free Fe²⁺ or pH as acid equivalents.
+
+## Build an explanation with a test
+
+Claim → chemical mechanism → numerical support → limitation → discriminating measurement.
+
+Use the model to make a testable prediction, not to label every correlation causal.
+
+## Compare alternative neutralisation
+
+Less neutralisation → residual **0.0400 meq/L**.
+
+Reference alkalinity export 50000 − 20000 = 30000 eq/year → **0.0600 meq/L**.
+
+## Check your explanation
+
+Write a short report using activity C and the catchment/sediment evidence. Include one reaction, one hand-checked balance, one model figure, and an explanation of what is still uncertain.
+
+Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).

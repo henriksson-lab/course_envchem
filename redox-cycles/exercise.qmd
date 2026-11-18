@@ -1,0 +1,55 @@
+---
+title: "Redox and environmental cycles exercises"
+---
+
+Use the [notes](notes.qmd). All numerical inputs below are constructed
+teaching examples; use the stated assumptions rather than looking up extra
+constants. Predict the direction of change before calculating.
+
+## 1. Nitrification acid demand
+
+Oxidise 0.100 mmol/L NH₄⁺ completely to nitrate using the supplied reaction. Find O₂ demand and H⁺ production.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Use the balanced coefficients 1:2:2.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+O₂ demand = **0.200 mmol/L** = **6.40 mg/L** using 32.0 mg/mmol. H⁺ production = **0.200 mmol/L**, corresponding to a **0.200 meq/L alkalinity decrease** in the stated net model.
+:::
+
+## 2. Denitrification donor
+
+Reduce 0.0800 mmol/L nitrate entirely to N₂ with the CH₂O model. Find organic carbon consumption and N₂ production.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Use five CH₂O and two N₂ for four nitrate.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Carbon consumption = **0.100 mmol C/L** = **1.20 mg C/L** using 12.0 mg/mmol. N₂ production = **0.0400 mmol/L**. The carbon demand excludes biomass and alternative sinks.
+:::
+
+## 3. Check a half-reaction
+
+Verify atoms and charge for FeOOH + 3 H⁺ + e⁻ → Fe²⁺ + 2 H₂O. What is reduced?
+
+::: {.callout-tip collapse="true" title="Hint"}
+FeOOH contains one hydrogen and two oxygens.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Both sides have 1 Fe, 2 O, and 4 H. Left charge is +3 − 1 = **+2**, matching right charge. Fe(III) gains one electron to become **Fe(II)**.
+:::
+
+## 4. An anoxic sediment observation
+
+Dissolved iron and phosphate rise while oxygen declines above a sediment. Give a coupled explanation and one reason it is not proven by correlation alone.
+
+::: {.callout-tip collapse="true" title="Hint"}
+The carrier phase can change oxidation state while phosphate retains its own oxidation state.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Organic-matter oxidation can consume O₂ and support reduction of Fe(III) solids; associated phosphate can be released. Mixing, other mineral changes, and independent sources could also produce patterns. Use Fe(II), solid-phase, porewater, and time/flux observations to test the explanation.
+:::

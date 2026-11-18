@@ -1,0 +1,55 @@
+---
+title: "Soil chemistry and retention exercises"
+---
+
+Use the [notes](notes.qmd). All numerical inputs below are constructed
+teaching examples; use the stated assumptions rather than looking up extra
+constants. Predict the direction of change before calculating.
+
+## 1. Exchange amount
+
+A 0.100 kg soil has CEC 20.0 cmolc/kg. If all sites were occupied by Mg²⁺, how many moles of Mg would occupy them?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Convert cmol of charge to mol of charge, then divide by two.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Total charge = 20.0 × 0.01 × 0.100 = **0.0200 mol charge**. Mg²⁺ amount = **0.0100 mol**. This is an idealised capacity state, not an aqueous concentration.
+:::
+
+## 2. Base saturation
+
+A soil has CEC 12.0 cmolc/kg and base-cation occupation 9.00 cmolc/kg. Calculate base saturation. Does the result specify soil-water pH?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Divide occupied base charge by total exchange charge.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Base saturation = **75.0%**. It does not uniquely set pH; mineralogy, exchange selectivity, solution composition, other acid–base reactions, and the measurement method matter.
+:::
+
+## 3. A carbonate inventory
+
+A soil contains 0.0100 mol accessible CaCO₃. For a specified complete neutralisation endpoint, take CaCO₃ + 2 H⁺ → Ca²⁺ + CO₂* + H₂O. How much acid can this inventory consume?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Use the two-equivalent coefficient for the stated endpoint.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+The stoichiometric inventory is **0.0200 mol H⁺ equivalents**. Real protection also depends on dissolution rate, accessibility, gas exchange, and the actual final state.
+:::
+
+## 4. Compare two soils
+
+Two soils have equal pH but one is rich in organic matter and exchange-active clay while the other is coarse quartz sand. What would you measure before predicting their responses to an acid input?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Measure inventories and pathways, not only pH.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Compare CEC under stated conditions, base saturation, carbonate and weatherable minerals, organic matter, water flow, and aluminium/iron chemistry. Equal pH is not evidence of equal buffering or solute retention.
+:::

@@ -2,14 +2,24 @@ project:
   type: website
   output-dir: docs
   resources:
+    - downloads/*.zip
+    - aquatic-equilibria/water-ions.csv
+    - aquatic-equilibria/corrections.csv
+    - aquatic-equilibria/water-analysis.R
+    - aquatic-equilibria/water-report.Rmd
     - carbonate-gases/speciation.R
     - carbonate-gases/report.Rmd
+    - organic-contaminants/compounds.csv
+    - organic-contaminants/fate.R
+    - organic-contaminants/fate-report.Rmd
   render:
     - index.qmd
     - overview.qmd
+    - glossary.qmd
     - "*/*.qmd"
     - "!templates/"
     - "!instructor/"
+    - "!tools/"
 
 website:
   title: "Environmental Chemistry"
@@ -18,27 +28,158 @@ website:
       - href: index.qmd
         text: Home
       - href: overview.qmd
-        text: Content overview
+        text: Course content
+      - href: glossary.qmd
+        text: Glossary
   sidebar:
     style: docked
     search: true
+    collapse-level: 1
     contents:
       - href: index.qmd
         text: Home
       - href: overview.qmd
-        text: Content overview
-      - section: "Carbonate and gases"
+        text: Course content
+      - href: glossary.qmd
+        text: Glossary
+      - section: "Foundations"
         contents:
-          - href: carbonate-gases/notes.qmd
-            text: Start here
-          - href: carbonate-gases/lec.qmd
-            text: "Lecture: species and alkalinity"
-          - href: carbonate-gases/gases-lec.qmd
-            text: "Lecture: gases and minerals"
-          - href: carbonate-gases/exercise.qmd
-            text: Exercises and R activity
-          - href: carbonate-gases/reference.qmd
-            text: Model and reference sheet
+          - section: "Environmental amounts and balances"
+            contents:
+              - href: environmental-systems/notes.qmd
+                text: "Notes and learning goals"
+              - href: environmental-systems/lec.qmd
+                text: "Lecture"
+              - href: environmental-systems/exercise.qmd
+                text: "Exercises and solutions"
+      - section: "Atmosphere"
+        contents:
+          - section: "Reactions in the atmosphere"
+            contents:
+              - href: atmospheric-reactions/notes.qmd
+                text: "Notes and learning goals"
+              - href: atmospheric-reactions/lec.qmd
+                text: "Lecture"
+              - href: atmospheric-reactions/exercise.qmd
+                text: "Exercises and solutions"
+          - section: "Atmospheric deposition and acidity"
+            contents:
+              - href: deposition/notes.qmd
+                text: "Notes and learning goals"
+              - href: deposition/lec.qmd
+                text: "Lecture"
+              - href: deposition/exercise.qmd
+                text: "Exercises and solutions"
+          - section: "Molecules, radiation, and climate"
+            contents:
+              - href: climate-chemistry/notes.qmd
+                text: "Notes and learning goals"
+              - href: climate-chemistry/lec.qmd
+                text: "Lecture"
+              - href: climate-chemistry/exercise.qmd
+                text: "Exercises and solutions"
+      - section: "Water"
+        contents:
+          - section: "Aquatic composition and equilibrium"
+            contents:
+              - href: aquatic-equilibria/notes.qmd
+                text: "Notes and learning goals"
+              - href: aquatic-equilibria/lec.qmd
+                text: "Lecture"
+              - href: aquatic-equilibria/exercise.qmd
+                text: "Exercises and solutions"
+              - href: aquatic-equilibria/data-dictionary.qmd
+                text: "Activity data dictionary"
+          - section: "Carbonate and gas chemistry"
+            contents:
+              - href: carbonate-gases/notes.qmd
+                text: "Notes and learning goals"
+              - href: carbonate-gases/lec.qmd
+                text: "Lecture"
+              - href: carbonate-gases/gases-lec.qmd
+                text: "Lecture: gases and minerals"
+              - href: carbonate-gases/exercise.qmd
+                text: "Exercises and solutions"
+              - href: carbonate-gases/reference.qmd
+                text: "Model reference"
+          - section: "Organic matter in water"
+            contents:
+              - href: aquatic-organic-matter/notes.qmd
+                text: "Notes and learning goals"
+              - href: aquatic-organic-matter/lec.qmd
+                text: "Lecture"
+              - href: aquatic-organic-matter/exercise.qmd
+                text: "Exercises and solutions"
+          - section: "Metal speciation and mobility"
+            contents:
+              - href: metals/notes.qmd
+                text: "Notes and learning goals"
+              - href: metals/lec.qmd
+                text: "Lecture"
+              - href: metals/exercise.qmd
+                text: "Exercises and solutions"
+          - section: "Colloids, surfaces, and sorption"
+            contents:
+              - href: surfaces/notes.qmd
+                text: "Notes and learning goals"
+              - href: surfaces/lec.qmd
+                text: "Lecture"
+              - href: surfaces/exercise.qmd
+                text: "Exercises and solutions"
+          - section: "Redox and environmental cycles"
+            contents:
+              - href: redox-cycles/notes.qmd
+                text: "Notes and learning goals"
+              - href: redox-cycles/lec.qmd
+                text: "Lecture"
+              - href: redox-cycles/exercise.qmd
+                text: "Exercises and solutions"
+          - section: "Water pollution and treatment chemistry"
+            contents:
+              - href: water-treatment/notes.qmd
+                text: "Notes and learning goals"
+              - href: water-treatment/lec.qmd
+                text: "Lecture"
+              - href: water-treatment/exercise.qmd
+                text: "Exercises and solutions"
+      - section: "Soils and contaminants"
+        contents:
+          - section: "Soil chemistry and retention"
+            contents:
+              - href: soil-chemistry/notes.qmd
+                text: "Notes and learning goals"
+              - href: soil-chemistry/lec.qmd
+                text: "Lecture"
+              - href: soil-chemistry/exercise.qmd
+                text: "Exercises and solutions"
+          - section: "Waste materials and leachate chemistry"
+            contents:
+              - href: waste-leachate/notes.qmd
+                text: "Notes and learning goals"
+              - href: waste-leachate/lec.qmd
+                text: "Lecture"
+              - href: waste-leachate/exercise.qmd
+                text: "Exercises and solutions"
+          - section: "Organic contaminants and environmental fate"
+            contents:
+              - href: organic-contaminants/notes.qmd
+                text: "Notes and learning goals"
+              - href: organic-contaminants/lec.qmd
+                text: "Lecture"
+              - href: organic-contaminants/exercise.qmd
+                text: "Exercises and solutions"
+              - href: organic-contaminants/data-dictionary.qmd
+                text: "Activity data dictionary"
+      - section: "Synthesis"
+        contents:
+          - section: "Connecting air, catchments, and water"
+            contents:
+              - href: integrated-case/notes.qmd
+                text: "Notes and learning goals"
+              - href: integrated-case/lec.qmd
+                text: "Lecture"
+              - href: integrated-case/exercise.qmd
+                text: "Exercises and solutions"
 
 format:
   html:

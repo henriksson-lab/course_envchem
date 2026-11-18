@@ -1,0 +1,55 @@
+---
+title: "Redox and environmental cycles"
+---
+
+When oxygen runs low, why can iron, nitrogen, sulfur, and phosphorus change together even though not every element changes oxidation state?
+
+Read these notes with the [lecture](lec.qmd), then complete the
+[exercises](exercise.qmd). Numerical examples are constructed teaching cases
+unless explicitly described otherwise.
+
+## Learning goals
+
+- Balance a redox reaction using electron transfer.
+- Interpret electron-acceptor evidence without assuming a universal sequence.
+- Connect iron-phase changes to associated phosphate release.
+
+## Electron donors and acceptors
+
+Organic matter can supply electrons as its carbon is oxidised. Electron acceptors such as O₂, nitrate, iron(III) solids, and sulfate are reduced. The oxidation and reduction half-reactions must transfer equal numbers of electrons. $\mathrm{CH_2O}$ is a useful carbon-oxidation bookkeeping form, not a claim that every substrate has that composition. Electron balance constrains possible stoichiometry; microbes and transport control the realised rate.
+
+## A nitrogen contrast
+
+Aerobic nitrification has net stoichiometry
+$$\mathrm{NH_4^++2O_2\rightarrow NO_3^-+2H^++H_2O}.$$
+Nitrogen is oxidised from −III to +V. In contrast, denitrification reduces nitrate to N₂; with a CH₂O donor one net form is
+$$\mathrm{4NO_3^-+5CH_2O+4H^+\rightarrow2N_2+5CO_2+7H_2O}.$$
+These net reactions omit biomass growth and intermediate pathways. Nitrification changes nitrogen form; denitrification can export nitrogen from water as gas.
+
+## Iron reduction changes a solid phase
+
+For goethite-like FeOOH, use the reduction half-reaction
+$$\mathrm{FeOOH(s)+3H^++e^-\rightarrow Fe^{2+}+2H_2O}.$$
+The iron(III) solid becomes dissolved iron(II) under this simplified representation. If phosphate was retained on that solid, dissolving or restructuring it can release phosphate without changing phosphorus from oxidation state +V. Other solids, sorption sites, or precipitation reactions may retain some released solute.
+
+## Sulfur and strongly reducing conditions
+
+Sulfate reduction can be written as
+$$\mathrm{SO_4^{2-}+9H^++8e^-\rightarrow HS^-+4H_2O}.$$
+Sulfide can react with metals to form low-solubility solids, changing mobility again. Reduced sulfur can later reoxidise if oxygen returns. Thus anoxia does not mean every metal becomes permanently dissolved, and reoxygenation does not simply reverse every process at the same speed.
+
+## Interpret a redox sequence
+
+A common conceptual progression is oxygen use, nitrate reduction, manganese/iron reduction, sulfate reduction, and methanogenesis. It is a guide to possible energy and availability constraints, not a universal timetable or a single set of pH-independent thresholds. Spatial microsites and transport allow processes to overlap. An electrode potential alone seldom identifies all active processes in a mixed natural sample; combine reactant loss with product formation and solid-phase evidence.
+
+## Worked example
+
+In the supplied CH₂O–nitrate reaction, each nitrate N goes from +V to 0 and gains five electrons. Four nitrate ions therefore accept 20 electrons. Carbon goes from 0 in CH₂O to +IV in CO₂ and loses four electrons; five CH₂O units donate 20. Both sides contain 4 N, 5 C, 14 H, and 17 O atoms and have net charge zero. The donor ratio is **1.25 mol CH₂O carbon per mol nitrate** in this model.
+
+## Reading focus and further explanation
+
+Book: vanLoon and Duffy, fourth edition, chapter(s) 10, 13, 15. Focus on balanced reactions and coupled carbon, nitrogen, iron, and sulfur examples. Read supplied redox evidence; defer full Eh–pH diagram construction.
+
+[USGS redox framework](https://pubs.usgs.gov/fs/2009/3041/pdf/FS09-3041.pdf): Electron-acceptor patterns and the need for several indicators.
+
+[USGS organic-contaminant geochemistry](https://water.usgs.gov/ogw/pubs/ofr0289/imc_organic.htm): How organic inputs couple microbial electron transfer with changing water chemistry.

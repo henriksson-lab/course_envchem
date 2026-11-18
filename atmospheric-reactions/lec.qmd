@@ -1,0 +1,76 @@
+---
+title: "Reactions in the atmosphere"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## Chemical question
+
+Why can ozone protect organisms in one atmospheric region and damage them near the ground? Explain the reactions and where they occur.
+
+## What to explain
+
+- Combine reaction steps and identify a regenerated catalyst.
+- Distinguish photolysis, reaction, and transport.
+- Explain why the basic NO–NO₂ cycle alone does not yield sustained net ozone production.
+
+## Light selects reactions
+
+Photolysis requires absorption.
+
+$$E=hc/\lambda$$
+
+Altitude changes the radiation field and the available reactants.
+
+## Make stratospheric ozone
+
+$$\mathrm{O_2}+h\nu\rightarrow2\mathrm{O}$$
+$$\mathrm{O+O_2+M\rightarrow O_3+M}$$
+
+M carries away excess energy and is not consumed.
+
+## A chlorine catalytic cycle
+
+Cl + O₃ → ClO + O₂
+
+ClO + O → Cl + O₂
+
+Net: **O₃ + O → 2 O₂**. Chlorine is regenerated.
+
+## Tropospheric cycling
+
+NO₂ + light → NO + O
+
+O + O₂ + M → O₃ + M
+
+NO + O₃ → NO₂ + O₂
+
+Peroxy chemistry provides an alternative NO-to-NO₂ pathway.
+
+## Rates and lifetime
+
+At fixed OH: $k'=k[OH]$, $\tau=1/k'$.
+
+State the concentration and rate units. Other sinks shorten total lifetime.
+
+## Cancel the intermediates
+
+One completed chlorine cycle consumes **one O₃ and one O**.
+
+The cycle count requires kinetics; it is not given by cancellation alone.
+
+## Check your explanation
+
+An ozone measurement rises at a surface station. Can you infer increased stratospheric ozone or identify a single emission source? Explain what else is needed.
+
+Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).

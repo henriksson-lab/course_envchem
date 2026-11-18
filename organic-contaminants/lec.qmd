@@ -1,0 +1,75 @@
+---
+title: "Organic contaminants and environmental fate"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## Chemical question
+
+Which molecular properties help explain where a contaminant goes, and why is disappearance from water not the same as chemical destruction?
+
+## What to explain
+
+- Relate ionisation and neutral partitioning to the stated environmental conditions.
+- Combine a two-phase balance with a supplied first-order parent-loss model.
+- Distinguish partitioning, persistence, exposure, and biological effect.
+
+## Structure affects phase preference
+
+Kow describes a phase preference under stated conditions.
+
+log Kow does not directly give persistence, toxicity, or an environmental concentration.
+
+## Ionisation changes the problem
+
+At pH two units above pKa, neutral HA is **1/101 ≈ 0.00990**.
+
+Neutral and charged forms need appropriate partition models.
+
+## Use organic-carbon normalisation cautiously
+
+$$K_d=f_{oc}K_{oc}$$
+
+Use a fraction, not a percentage number: 2% → 0.020.
+
+Check whether the neutral organic-carbon model applies.
+
+## A first-order parent-loss model
+
+Parent remaining fraction: $e^{-kt}$.
+
+Transformation does not guarantee complete mineralisation or harmless products.
+
+## State the coupled teaching model
+
+Teaching model:
+
+- Rapid, constant partitioning.
+- Same k for parent transformation in both phases.
+- No transfer across the outer boundary.
+
+Then $C_w(t)=M_0e^{-kt}/(V_w+K_dm_s)$.
+
+## Partition and transform
+
+After 20 days: total parent = **0.250 mg**.
+
+Water = **0.125 mg**; solid = **0.125 mg**.
+
+Aqueous concentration = **0.125 mg/L**.
+
+## Check your explanation
+
+Water parent concentration falls after sediment is added. What would distinguish sorption from transformation, and why does log Kow alone not answer the question?
+
+Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).

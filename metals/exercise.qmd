@@ -1,0 +1,55 @@
+---
+title: "Metal speciation and mobility exercises"
+---
+
+Use the [notes](notes.qmd). All numerical inputs below are constructed
+teaching examples; use the stated assumptions rather than looking up extra
+constants. Predict the direction of change before calculating.
+
+## 1. Reduce ligand
+
+Keep MT = 2.00 µmol/L and β = 1.00 × 10⁶ L/mol but prescribe free L = 1.00 × 10⁻⁶ mol/L. Calculate free and complexed M.
+
+::: {.callout-tip collapse="true" title="Hint"}
+The product β[L] is dimensionless.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+β[L] = 1.00. Free M = **1.00 µmol/L** and ML = **1.00 µmol/L**. Lower free ligand increases the free-metal fraction in this model.
+:::
+
+## 2. Check ligand excess
+
+A proposed calculation uses MT = 2.00 µmol/L, total LT = 0.500 µmol/L, and assumes 1.818 µmol/L of 1:1 ML. Why is it impossible?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Each complex consumes one ligand; check the ligand balance.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+The proposed complex amount exceeds all available ligand by more than threefold. ML cannot exceed **0.500 µmol/L**. At least 1.50 µmol/L metal remains outside ML; solve coupled balances for an exact distribution.
+:::
+
+## 3. Hydroxide saturation
+
+For fictitious M(OH)₂, take Ksp = 1.00 × 10⁻¹⁶ and prescribed [OH⁻] = 1.00 × 10⁻⁵ mol/L. Find saturated free M. A water has dissolved total 10.0 µmol/L and β[L] = 9.00. Is it saturated in the two-species model?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Calculate the free concentration before evaluating the product.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Free saturation concentration = **1.00 µmol/L**. The water has free M = 10.0/(1 + 9.00) = **1.00 µmol/L**, so it is saturated in the stated model. Using total metal directly would incorrectly imply a tenfold excess.
+:::
+
+## 4. Metal after acidification
+
+A filtered metal concentration rises as pH falls, but oxidation-state measurements stay unchanged. Name plausible chemical mechanisms and what would distinguish them.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Consider surfaces, minerals, and protonation before proposing redox.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Acid can desorb metal, dissolve a metal-bearing phase, or protonate a ligand and redistribute its binding. Measure free and total metal, ligand/organic matter, major ions, solids, and pH. Unchanged oxidation state is compatible with all these processes.
+:::

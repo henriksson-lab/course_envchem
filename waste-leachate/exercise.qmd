@@ -1,0 +1,55 @@
+---
+title: "Waste materials and leachate chemistry exercises"
+---
+
+Use the [notes](notes.qmd). All numerical inputs below are constructed
+teaching examples; use the stated assumptions rather than looking up extra
+constants. Predict the direction of change before calculating.
+
+## 1. Sum the reactions
+
+Combine the two pyrite/iron stages and show the final oxygen and water coefficients.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Add equations and cancel Fe²⁺.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+FeS₂ + **15/4 O₂ + 7/2 H₂O** → Fe(OH)₃ + 2 SO₄²⁻ + 4 H⁺. Fe, S, O, H, and charge balance. The product charge is −4 + 4 = 0.
+:::
+
+## 2. A shortfall
+
+The worked pyrite inventory reacts fully, but only 0.0150 mol accessible CaCO₃ is available. Calculate the residual acid equivalents for the stated endpoint.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Subtract two equivalents per mole of accessible calcite from the generated amount.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Acid generated = 0.0400 mol eq; neutralised = 0.0300 mol eq; residual = **0.0100 mol eq**. Final pH still requires a water volume and the remaining acid–base equilibria.
+:::
+
+## 3. Concentration versus load
+
+Discharge A is 10.0 L/s with dissolved Fe 2.00 mg/L. Discharge B is 40.0 L/s with Fe 1.00 mg/L. Which exports more iron?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Multiply each concentration by its own flow.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+A exports **20.0 mg/s**, B **40.0 mg/s**. B has lower concentration but twice the load. These are dissolved loads and do not include suspended iron solids.
+:::
+
+## 4. Long-term claim
+
+A treated waste initially gives neutral-pH water. What evidence is needed before concluding that future metal and acid release will stay low?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Consider remaining reactive inventories, access, rate, and stability.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Check remaining sulfide and neutralising minerals, oxygen/water access, weathering rates, pH/redox changes, flow, dissolved/solid inventories, and relevant-duration leach observations. One initial pH does not establish long-term stability.
+:::

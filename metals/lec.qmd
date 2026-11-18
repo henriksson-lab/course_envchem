@@ -1,0 +1,77 @@
+---
+title: "Metal speciation and mobility"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## Chemical question
+
+What does a dissolved metal total conceal, and how can complexation change solubility without changing the metal oxidation state?
+
+## What to explain
+
+- Use a one-ligand equilibrium with an explicit free-ligand approximation.
+- Distinguish complexation, hydrolysis, precipitation, and redox.
+- Check a free-ion solubility condition before interpreting a metal total.
+
+## Specify the species
+
+Metal total ≠ free metal ion.
+
+Coordination change ≠ necessarily redox.
+
+Name the oxidation state and the ligand where relevant.
+
+## A transparent binding model
+
+$$[M]=\frac{M_T}{1+\beta[L]_{free}}$$
+
+Only M and ML are included. Check ligand excess before replacing free ligand with a supplied value.
+
+## pH changes coordination
+
+Hydrolysis releases H⁺.
+
+pH also changes ligand protonation and surface binding.
+
+A mobility change can occur without redox.
+
+## Test mineral saturation with free ions
+
+$$[M^{2+}]_{sat}=K_{sp}/[OH^-]^2$$
+
+Complexed metal contributes to dissolved total but not directly to this free-ion product.
+
+## Mobility and exposure are separate questions
+
+Ask where the binding partner goes.
+
+Dissolved complex: possible mobile carrier.
+
+Solid binding: possible retention.
+
+Neither alone establishes biological effect.
+
+## One-ligand calculation
+
+β[L] = 10.0.
+
+Free M = 2.00/11 = **0.1818 µmol/L**.
+
+ML = **1.818 µmol/L**; total conserved.
+
+## Check your explanation
+
+A filtered metal concentration rises as pH falls, but oxidation-state measurements stay unchanged. Name plausible chemical mechanisms and what would distinguish them.
+
+Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).

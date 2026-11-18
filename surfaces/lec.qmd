@@ -1,0 +1,77 @@
+---
+title: "Colloids, surfaces, and sorption"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## Chemical question
+
+If a contaminant disappears from water, is it removed from the environmental system or transferred onto a mobile particle?
+
+## What to explain
+
+- Explain pH-dependent surface charge and specific binding.
+- Close a water–solid mass balance using a supplied Kd.
+- Distinguish sorption equilibrium, finite capacity, and colloidal transport.
+
+## A surface is chemically active
+
+Protonation changes surface charge.
+
+Specific bonding can matter in addition to electrostatics.
+
+Surface chemistry depends on mineral identity and pH.
+
+## Define a distribution coefficient
+
+$$q=K_dC_w$$
+
+mg/kg = (L/kg)(mg/L).
+
+Kd belongs to a specified solute–solid–water system.
+
+## Close the two-phase balance
+
+$$C_w=\frac{M_T}{V_w+K_dm_s}$$
+
+Check both aqueous and sorbed inventories; neither is a concentration alone.
+
+## Capacity and competition
+
+Linear Kd: a local approximation.
+
+Finite sites: capacity can be exhausted.
+
+Phosphate, organic ligands, and other ions can compete.
+
+## Particles may move
+
+Sorption is redistribution.
+
+Settling and exported solids can remove a water-column load.
+
+Mobile colloids can carry sorbed solutes downstream.
+
+## A two-phase bottle
+
+Kd ms = 1.00 L; aqueous C = **0.500 mg/L**.
+
+Water: **0.500 mg**; solid: **0.500 mg**.
+
+Mass balance closes at 1.00 mg.
+
+## Check your explanation
+
+A filtered sample loses metal while the unfiltered downstream sample does not. How could particles explain this observation?
+
+Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).

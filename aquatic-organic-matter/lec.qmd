@@ -1,0 +1,71 @@
+---
+title: "Organic matter in water"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## Chemical question
+
+How can two waters contain the same dissolved total metal while differing in free metal, light penetration, and oxygen demand?
+
+## What to explain
+
+- Distinguish organic carbon amount from its molecular composition and reactivity.
+- Explain metal binding and light attenuation without treating all organic matter as identical.
+- Calculate an idealised oxygen demand and state its limits.
+
+## Operational fractions
+
+DOC measures carbon in an operational fraction.
+
+It does not specify one molecule, one ligand, or one degradation rate.
+
+## Functional groups create reactivity
+
+Protonation changes binding sites.
+
+Metal–organic complexes can remain filtered while free metal decreases.
+
+Dissolved transport and free-ion exposure need separate interpretation.
+
+## Colour changes the light field
+
+Equal DOC can have different colour.
+
+Absorption changes light availability and photochemistry.
+
+A colour change does not prove carbon mineralisation.
+
+## Organic oxidation consumes oxygen
+
+For the CH₂O model, 1 mol C → 1 mol O₂ demand.
+
+Real organic matter has variable composition and accessibility.
+
+## Link to anoxia and sediment
+
+Organic substrate + restricted oxygen supply can promote anoxia.
+
+Changing iron phases can alter nutrient and metal retention.
+
+## An idealised oxygen demand
+
+3.00 mg C/L × (32.0/12.0) = **8.00 mg O₂/L**.
+
+State substrate composition, extent of oxidation, and timescale.
+
+## Check your explanation
+
+Water becomes darker while DOC changes little. What chemical explanations and measurements would you consider?
+
+Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).

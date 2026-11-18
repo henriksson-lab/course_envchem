@@ -1,0 +1,49 @@
+---
+title: "Organic matter in water"
+---
+
+How can two waters contain the same dissolved total metal while differing in free metal, light penetration, and oxygen demand?
+
+Read these notes with the [lecture](lec.qmd), then complete the
+[exercises](exercise.qmd). Numerical examples are constructed teaching cases
+unless explicitly described otherwise.
+
+## Learning goals
+
+- Distinguish organic carbon amount from its molecular composition and reactivity.
+- Explain metal binding and light attenuation without treating all organic matter as identical.
+- Calculate an idealised oxygen demand and state its limits.
+
+## Operational fractions
+
+Organic matter contains many molecules and particles with different sizes and functional groups. Dissolved organic carbon (DOC) is an operationally measured carbon amount after the specified separation; particulate organic carbon is associated with the retained fraction. Neither result gives a unique molecule, ligand concentration, or biodegradation rate. Record the filter and analytical method. Some colloidal material may appear in an operationally dissolved fraction.
+
+## Functional groups create reactivity
+
+Carboxyl, phenolic, and other binding groups can lose protons and bind metals. Their charge and availability change with pH. Binding can keep a metal in a filtered fraction while lowering its free-ion concentration. Organic matter can also promote colloidal transport. Greater DOC therefore does not automatically mean lower total dissolved metal or no metal exposure; kinetics, uptake routes, and ligand chemistry matter.
+
+## Colour changes the light field
+
+Chromophoric organic matter absorbs parts of the light spectrum. Darker water can reduce light penetration and alter where photochemical reactions occur. Not all DOC absorbs equally: colour per unit carbon varies with composition and processing. Absorbance is therefore a property measurement, not a direct universal conversion to DOC. Photochemical change can transform molecules without immediately removing all carbon from water.
+
+## Organic oxidation consumes oxygen
+
+Use $\mathrm{CH_2O}$ as a stoichiometric representation of a simple organic substrate:
+$$\mathrm{CH_2O+O_2\rightarrow CO_2+H_2O}.$$
+One mole of its carbon consumes one mole of O₂ in complete aerobic oxidation. This is a teaching carbon-oxidation model, not the molecular formula of all natural organic matter. Real demand depends on oxidation state, biodegradability, timescale, and other oxygen-consuming processes such as nitrification.
+
+## Link to anoxia and sediment
+
+When oxygen demand exceeds replenishment, oxygen can decline. Other electron acceptors may then support microbial oxidation. Reduction of iron-bearing solids can change sorption surfaces and release associated solutes. Reaeration, mixing, and photosynthesis can offset demand, so an organic-carbon increase is not itself a complete oxygen budget. Measure both the sources and sinks on an appropriate timescale.
+
+## Worked example
+
+Assume 3.00 mg C/L of an added CH₂O-like substrate is completely oxidised aerobically. With molar masses 12.0 g/mol for carbon and 32.0 g/mol for O₂, the demand is $3.00(32.0/12.0)=\mathbf{8.00}$ mg O₂/L. That is an ultimate stoichiometric demand for this substrate. It is not a measured five-day biochemical oxygen demand, nor a prediction that all of a lake's DOC is consumed immediately.
+
+## Reading focus and further explanation
+
+Book: vanLoon and Duffy, fourth edition, chapter(s) 12. Focus on organic-matter fractions, binding, light, and oxygen demand. Defer detailed structural characterisation and instrument methods.
+
+[USGS organic-matter processes](https://water.usgs.gov/ogw/pubs/ofr0289/jal_processes.htm): Adsorption, biodegradation, and chemical controls on organic-matter transport.
+
+[Canada copper chemistry](https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/federal-environmental-quality-guidelines-copper.html): How water chemistry and organic binding modify metal exposure; use the chemistry discussion, not regulatory thresholds.

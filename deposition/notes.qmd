@@ -1,0 +1,47 @@
+---
+title: "Atmospheric deposition and acidity"
+---
+
+How does an atmospheric emission become an acid input to a catchment, and why does rain pH alone not give the annual acid load?
+
+Read these notes with the [lecture](lec.qmd), then complete the
+[exercises](exercise.qmd). Numerical examples are constructed teaching cases
+unless explicitly described otherwise.
+
+## Learning goals
+
+- Trace oxidation and wet/dry transfer from air to a catchment.
+- Convert a deposition flux to amount and charge equivalents.
+- Distinguish free hydrogen ion, potential acidity, and net catchment response.
+
+## Oxidation creates new species
+
+Sulfur dioxide and nitrogen oxides are precursors, not simply bottles of sulfuric and nitric acid dispersed in air. Oxidation occurs through several gas and aqueous pathways. One useful nitrogen pathway is $\mathrm{NO_2+OH+M\rightarrow HNO_3+M}$. A net sulfur oxidation can be represented as $\mathrm{SO_2+\tfrac12O_2+H_2O\rightarrow H_2SO_4}$; this is bookkeeping, not an elementary rate law.
+
+## Wet and dry pathways
+
+Wet deposition transfers substances in rain, snow, fog, or cloud water. Dry deposition transfers gases and particles to surfaces without precipitation. Aerosols are suspended particles or droplets; some are emitted and others form by chemical reactions. A low rain concentration during a wet year can still correspond to a large wet flux. Dry deposition requires separate information and cannot be inferred just from a rain sample.
+
+## Count acid equivalents carefully
+
+In a stated complete neutralisation convention, HNO₃ supplies one equivalent per mole and H₂SO₄ supplies two. Actual deposited sulfate or nitrate need not arrive as free acid: accompanying cations, ammonium, and biological transformations matter. Ammonia can neutralise atmospheric acid; later nitrification of ammonium can generate acidity. Do not assign two free hydrogen ions to every measured sulfate regardless of its chemical form.
+
+## Connect flux to a receiving volume
+
+For a uniform flux $F$ mol m⁻² yr⁻¹ and catchment area $A$, the annual input is $FA$. Converting that input to an equivalent water concentration requires a receiving water volume and assumptions about retention, export, and mixing. In the recurring teaching catchment, use area $1.00\times10^6$ m² and annual water export $5.00\times10^8$ L. This defines an annual flow-weighted concentration, not a sudden dose to a closed lake.
+
+## Why catchments respond differently
+
+Weathering, mineral availability, soil exchange, plant uptake, and flow paths modify the relationship between atmospheric input and lake chemistry. pH describes the current hydrogen-ion activity; alkalinity describes an acid-neutralising balance. A buffered catchment can receive acid while showing a modest pH change. Measurements should therefore link atmospheric fluxes with water flow, alkalinity, and major ions rather than treating pH as a complete budget.
+
+## Worked example
+
+Assume the catchment receives $0.0200$ mol m⁻² yr⁻¹ of HNO₃ and $0.0100$ mol m⁻² yr⁻¹ of H₂SO₄, with full neutralisation of both protons in the stated accounting convention. The acid-equivalent flux is $0.0200+2(0.0100)=0.0400$ eq m⁻² yr⁻¹. Over $1.00\times10^6$ m², that is **40000 eq/year**. If an identified catchment neutralisation process consumes 30000 eq/year and no other acid terms act, the residual is **10000 eq/year**. Dividing by $5.00\times10^8$ L/year gives **0.0200 meq/L** of residual equivalent load. This budget is constructed; it does not predict pH without carbonate and other constraints.
+
+## Reading focus and further explanation
+
+Book: vanLoon and Duffy, fourth edition, chapter(s) 5–7, selected. Focus on acid formation and wet/dry fluxes. Use aerosols as reaction and transport phases; defer an indoor-pollutant catalogue.
+
+[EPA acid deposition](https://www.epa.gov/acidrain/what-acid-rain): Wet/dry transfer and precursor oxidation.
+
+[EPA effects of acid rain](https://www.epa.gov/acidrain/effects-acid-rain): Links between deposition, catchment buffering, and aquatic response.

@@ -1,0 +1,38 @@
+---
+title: "Chemical glossary"
+---
+
+Use these definitions with the model conditions in each unit. Similar words
+can describe different quantities; always check the phase and units.
+
+| Term | Meaning and explanation |
+| --- | --- |
+| Activity | Effective thermodynamic quantity relative to a standard state; [concentration approximation](aquatic-equilibria/notes.qmd#concentration-and-activity). |
+| Adsorption/sorption | Association with a surface or solid phase; [phase balance](surfaces/notes.qmd#define-a-distribution-coefficient). Sorption is the broader term used here. |
+| Aerosol | Suspended solid particles or liquid droplets in air; [deposition](deposition/notes.qmd#wet-and-dry-pathways). |
+| Alkalinity | An acid-neutralising balance in charge equivalents per volume; [carbonate expression](carbonate-gases/reference.qmd#alkalinity-and-buffering). |
+| Bioavailability | Availability of chemical forms to a biological uptake or interaction process; [speciation limits](metals/notes.qmd#mobility-and-exposure-are-separate-questions). It is not synonymous with a filtered total. |
+| Buffer capacity | Resistance to a small pH change under specified conditions; [distinction from alkalinity](carbonate-gases/reference.qmd#alkalinity-and-buffering). |
+| Cation exchange capacity | Exchange-site charge inventory per dry solid mass under stated conditions; [CEC](soil-chemistry/notes.qmd#interpret-exchange-capacity). |
+| Charge equivalent | Amount weighted by ionic charge magnitude; [charge balance](aquatic-equilibria/notes.qmd#charge-balance-is-a-constraint). |
+| Colloid | A small dispersed particle whose operational classification depends on method; [particle transport](surfaces/notes.qmd#particles-may-move). |
+| Complex | A coordinated metal–ligand species; [one-ligand model](metals/notes.qmd#a-transparent-binding-model). |
+| Concentration | Amount or mass per volume; [inventory distinction](environmental-systems/notes.qmd#define-the-quantity). |
+| Dissolved inorganic carbon | Carbon summed across the specified dissolved inorganic species; [carbonate model](carbonate-gases/reference.qmd#species-and-equilibria). |
+| Dissolved organic carbon | Organic carbon in a defined operational fraction; [DOC](aquatic-organic-matter/notes.qmd#operational-fractions). |
+| Flux/load | Amount transferred per area per time or amount per time, respectively, with the convention stated; [deposition budget](deposition/notes.qmd#connect-flux-to-a-receiving-volume). |
+| Free ion | Uncomplexed aqueous ion in the stated model; [metal total distinction](metals/notes.qmd#specify-the-species). |
+| Half-life | Time for half the tracked parent to transform under the specified kinetic model; [first-order equation](organic-contaminants/notes.qmd#a-first-order-parent-loss-model). |
+| Henry coefficient | A convention-dependent gas–water equilibrium coefficient; [units and pool](carbonate-gases/reference.qmd#gas-and-mineral-boundaries). |
+| Ionic strength | Half the sum of concentration times squared charge number; [nonideality](aquatic-equilibria/notes.qmd#concentration-and-activity). |
+| Kd | Solid-to-water distribution coefficient with the specified phase and concentration units; [linear model](surfaces/notes.qmd#define-a-distribution-coefficient). |
+| Koc | Organic-carbon-normalised sorption coefficient for an appropriate model; [conditional use](organic-contaminants/notes.qmd#use-organic-carbon-normalisation-cautiously). |
+| Kow | Octanol–water distribution of a specified molecular form; [property limitations](organic-contaminants/notes.qmd#structure-affects-phase-preference). |
+| Ligand | A binding partner coordinating a metal; [free and total ligand](metals/notes.qmd#a-transparent-binding-model). |
+| Mineral saturation | Comparison of the free-ion activity product with equilibrium; [calcite example](carbonate-gases/reference.qmd#gas-and-mineral-boundaries). |
+| Oxidation/reduction | Loss/gain of electrons; [balanced half-reactions](redox-cycles/notes.qmd#electron-donors-and-acceptors). |
+| pH | Negative base-ten logarithm of hydrogen-ion activity; [dilute approximation](carbonate-gases/notes.qmd#before-starting). |
+| Photolysis | Light-driven molecular change following absorption; [atmospheric chemistry](atmospheric-reactions/notes.qmd#light-selects-reactions). |
+| Speciation | Distribution among chemical forms under stated conditions; [ratios and fractions](carbonate-gases/reference.qmd#ratios-and-fractions-at-a-supplied-ph). |
+| Steady state | Zero net accumulation despite continuing processes; [balance](environmental-systems/notes.qmd#write-a-balance). |
+| Transformation | Change of chemical identity; [parent and product distinction](organic-contaminants/notes.qmd#a-first-order-parent-loss-model). |

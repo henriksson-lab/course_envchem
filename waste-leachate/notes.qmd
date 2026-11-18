@@ -1,0 +1,53 @@
+---
+title: "Waste materials and leachate chemistry"
+---
+
+Why can a waste material continue producing acidity after the initial dissolved acid has been washed away?
+
+Read these notes with the [lecture](lec.qmd), then complete the
+[exercises](exercise.qmd). Numerical examples are constructed teaching cases
+unless explicitly described otherwise.
+
+## Learning goals
+
+- Balance sulfide oxidation and subsequent iron hydrolysis.
+- Distinguish present pH from potential acid-generating inventory.
+- Close a neutralisation budget and track the residual solids.
+
+## Expose a reactive mineral
+
+Breaking and moving sulfide-bearing material changes access to oxygen and water. Pyrite oxidation can be represented by
+$$\mathrm{FeS_2+\tfrac72O_2+H_2O\rightarrow Fe^{2+}+2SO_4^{2-}+2H^+}.$$
+This first stage yields iron(II), sulfate, and acidity. Microbial and mineral-surface processes can affect rates. The presence of pyrite does not by itself give a discharge concentration without reaction extent, flow, and neutralisation terms.
+
+## Iron oxidation can release more acid
+
+Iron(II) can oxidise and precipitate as an idealised hydroxide:
+$$\mathrm{Fe^{2+}+\tfrac14O_2+\tfrac52H_2O\rightarrow Fe(OH)_3(s)+2H^+}.$$
+Adding this step to the initial pyrite oxidation gives four H⁺ equivalents per mole of pyrite for this endpoint. Real iron solids differ in hydration and crystallinity; the hydroxide notation is a teaching representation. Removing orange iron precipitate is not necessarily the end of acid generation.
+
+## Neutralisation is another reaction
+
+For the specified CO₂* endpoint,
+$$\mathrm{CaCO_3+2H^+\rightarrow Ca^{2+}+CO_2^*+H_2O}.$$
+An inventory of calcite can consume acidity, but access, surface coatings, and dissolution rate can limit the realised effect. At other solution conditions, bicarbonate can remain and alter the net stoichiometric accounting. Always state the endpoint rather than treating one acid-neutralisation coefficient as independent of the chemical state.
+
+## Present acidity and future generation
+
+A leachate pH is a snapshot. Remaining sulfide can continue oxidising; remaining minerals can continue neutralising. A high-flow period can dilute concentrations while exporting a large load. Assess acid generation, neutralisation inventories, and water flow together. Laboratory extraction conditions and duration should be reported because a short leach test may not represent long-term exposure.
+
+## Immobilisation can be reversible
+
+Iron precipitates can retain metals or phosphate, but changed pH or redox can destabilise the retention. A waste treatment that transfers contaminants into solids needs a statement about the conditions keeping those solids stable. The same logic applies beyond mine waste: organic wastes can impose oxygen demand, and mixed wastes can change pH, ligand concentrations, and redox. Leachate chemistry is controlled by reactions as well as original composition.
+
+## Worked example
+
+Assume 0.0100 mol FeS₂ oxidises completely to sulfate and Fe(OH)₃ as represented above. It generates **0.0400 mol acid equivalents** and **0.0200 mol sulfate**. Neutralising that acidity to the stated CO₂* endpoint needs 0.0200 mol CaCO₃, or **2.00 g** with supplied molar mass 100 g/mol. This is a stoichiometric comparison, not a field treatment dose: rates, mixing, other reactions, and residuals are omitted.
+
+## Reading focus and further explanation
+
+Book: vanLoon and Duffy, fourth edition, chapter(s) 19, selected. Focus on one sulfide-waste example, neutralisation, and phase stability. Use this chemistry to interpret other leachates; defer waste regulations and treatment design.
+
+[EPA mine-drainage chemistry](https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=20007H0I.TXT): Stoichiometric acid generation and the role of iron oxidation/precipitation.
+
+[BLM passive-treatment technical note](https://www.blm.gov/sites/blm.gov/files/documents/files/Library_BLMTechnicalNote409.pdf): How flow, neutralisation, and residual phases constrain treatment.

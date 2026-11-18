@@ -1,0 +1,47 @@
+---
+title: "Molecules, radiation, and climate"
+---
+
+Why does adding one gas affect outgoing radiation while adding another gas can have little direct infrared effect?
+
+Read these notes with the [lecture](lec.qmd), then complete the
+[exercises](exercise.qmd). Numerical examples are constructed teaching cases
+unless explicitly described otherwise.
+
+## Learning goals
+
+- Connect molecular absorption to changing dipole moment.
+- Distinguish spectral overlap, gas lifetime, and radiative influence.
+- Explain why atmospheric particles can have different effects from gases.
+
+## Absorption requires a matching transition
+
+A molecule interacts with infrared radiation when the radiation matches an allowed rotational/vibrational transition. A vibration is infrared active when it changes the molecular dipole moment. The symmetric molecule CO₂ has infrared-active bending and asymmetric stretching modes; being symmetric does not mean every vibration is inactive. Homonuclear diatomics such as N₂ and O₂ lack ordinary dipole-active vibrational absorption and are weak direct greenhouse absorbers under ordinary atmospheric conditions.
+
+## Earth emits at different wavelengths
+
+The warm surface emits strongly in the thermal infrared, whereas incoming sunlight is concentrated at shorter wavelengths. Absorbing and emitting gases alter how energy moves through the atmosphere and escapes to space. Absorption is wavelength dependent. The role of a gas depends on its bands, abundance, altitude, and overlap with other absorbers; one peak height is not a complete climate metric.
+
+## Read a deliberately simple spectrum
+
+Use the supplied teaching spectrum below as a diagram of the logic, not a measured gas spectrum. At 0.55 µm the model transmits 0.95 of the incident light; at 10 µm it transmits 0.20. For this absorbing-only example, the absorbed fractions are $1-T=0.05$ and $0.80$. Real atmospheres also scatter and emit. Comparing transmission without the incident energy spectrum cannot give total absorbed power.
+
+## Persistence has several timescales
+
+A first-order sink gives $C(t)=C_0e^{-kt}$, a lifetime $\tau=1/k$, and a half-life $t_{1/2}=\ln2/k$. These are useful for a single isolated loss process. Carbon dioxide exchanges with ocean and land reservoirs on several timescales, so one exponential atmospheric lifetime does not describe all of its response. A gas's chemical lifetime is also different from the time over which the climate system responds.
+
+## Particles absorb, scatter, and change clouds
+
+Aerosols can scatter sunlight, absorb radiation, and affect cloud droplet formation. Their effect depends on composition, size, location, and the surrounding surface or cloud. A reflecting particle and an absorbing particle need not have the same influence. Oxidation can convert emitted gases to particles, linking air-pollution chemistry with radiation. Do not assign every aerosol a universal cooling sign or a gas-like persistence.
+
+## Worked example
+
+For a constructed beam with 100 W/m² incident in one band, transmission 0.20 and no reflection imply 20 W/m² transmitted and **80 W/m² absorbed**. This is a single-band beam calculation. It is not an estimate of whole-Earth forcing, which requires spectral integration and atmospheric structure.
+
+## Reading focus and further explanation
+
+Book: vanLoon and Duffy, fourth edition, chapter(s) 8, selected. Focus on molecular absorption, spectral interpretation, and persistence. Defer global climate model calculations and current concentration or emission rankings.
+
+[NASA greenhouse mechanisms](https://science.nasa.gov/climate-change/causes/): Radiation and the role of greenhouse gases.
+
+[NASA aerosol and forcing explanation](https://science.nasa.gov/big-questions/what-are-the-primary-causes-of-the-earth-system-variability/): The distinction between radiation changes and different atmospheric influences.

@@ -1,0 +1,49 @@
+---
+title: "Water pollution and treatment chemistry"
+---
+
+Which treatment process changes a pollutant’s chemical form, and which transfers it into a stream that still needs to be managed?
+
+Read these notes with the [lecture](lec.qmd), then complete the
+[exercises](exercise.qmd). Numerical examples are constructed teaching cases
+unless explicitly described otherwise.
+
+## Learning goals
+
+- Match a chemical form to an appropriate treatment mechanism.
+- Calculate sequential load transfers and distinguish transformation from removal.
+- Use reaction stoichiometry to explain oxygen and alkalinity requirements.
+
+## Start with the target form
+
+Particles, dissolved ions, neutral organic molecules, and microorganisms behave differently. Settling or filtration can remove particles while leaving many dissolved species. Coagulation changes particle interactions and can capture some colloidal or associated dissolved material. Sorption transfers selected molecules to a solid. A treatment choice must specify the target, its form, and a receiving phase; one generic removal percentage cannot apply to all pollutants.
+
+## Precipitation and sorption transfer material
+
+Metal or phosphate precipitation depends on pH, free-ion activities, solid identity, and competing ligands. Coagulant hydrolysis can generate acidity; simplified $\mathrm{Fe^{3+}+3H_2O\rightarrow Fe(OH)_3(s)+3H^+}$ shows why alkalinity matters. The actual precipitate and net reaction depend on conditions. Settled sludge retains the transferred element and requires management. A fall in water concentration is not elemental destruction.
+
+## Biological oxidation changes species
+
+Aerobic organic oxidation consumes oxygen and produces inorganic carbon. Nitrification oxidises ammonium to nitrate, consumes oxygen, and generates acidity. Nitrate is still dissolved nitrogen. Denitrification can convert nitrate to N₂ when a suitable electron donor and conditions are present. These are chemical balances behind treatment functions, not a full reactor design or a promise of complete conversion in every plant.
+
+## Sequential percentages multiply
+
+A second treatment stage acts on the mass entering that stage, not the original mass unless specified. If stage one removes fraction $f_1$ and stage two removes $f_2$ of the remainder, water retains $M_0(1-f_1)(1-f_2)$. Keep separate balances for effluent, solids, gas, and transformed products. Adding percentage removals can exceed 100% and obscures where the material goes.
+
+## Disinfection and residuals
+
+Disinfection addresses viable microorganisms; it does not automatically remove chemical contaminants. Oxidants can react with organic matter and create transformation products, so target inactivation and chemical byproducts need separate evaluation. This course explains the mechanisms and balances; treatment protocols, dosing, and performance criteria require the actual system and its operating evidence.
+
+## Worked example
+
+Start with 10.0 mg of an element in a tracked water volume. Stage one transfers 60.0% to solids: 6.00 mg solid and 4.00 mg water. Stage two transfers 50.0% of the remaining water inventory: 2.00 mg more solid and **2.00 mg effluent**. Total transfer is **80.0%**, and 8.00 + 2.00 = 10.0 mg closes the element balance. This example assumes no gas or chemical-product stream.
+
+## Reading focus and further explanation
+
+Book: vanLoon and Duffy, fourth edition, chapter(s) 16. Focus on precipitation, coagulation, sorption, and balanced nutrient transformations. Defer plant engineering, dosing instructions, and a catalogue of disinfection technologies.
+
+[EPA wastewater nutrient overview](https://www.epa.gov/nutrientpollution/sources-and-solutions-wastewater): Why treatment goals distinguish nitrogen and phosphorus pathways.
+
+[USGS phosphorus chemistry](https://pubs.usgs.gov/fs/2012/3004/): The difference between adsorption, mineral formation, and transport.
+
+[EPA nutrient-control chemistry](https://www.epa.gov/sites/default/files/2019-08/documents/nutrient_control_design_manual.pdf): the net oxidation and alkalinity balances in chapter 4 support the reaction examples; reactor-design sections are beyond this unit.

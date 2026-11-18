@@ -1,0 +1,55 @@
+---
+title: "Organic matter in water exercises"
+---
+
+Use the [notes](notes.qmd). All numerical inputs below are constructed
+teaching examples; use the stated assumptions rather than looking up extra
+constants. Predict the direction of change before calculating.
+
+## 1. Two equal metal totals
+
+Waters A and B each contain 2.00 µmol/L dissolved total metal. Free metal is 0.500 µmol/L in A and 0.100 µmol/L in B. Assume only free and organically complexed forms. Find bound fractions.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Subtract free from total, then divide by total.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+A is **75.0% bound**; B is **95.0% bound**. The free-ion amounts differ by a factor of five despite identical totals. This simplified partition does not by itself give a toxicity endpoint.
+:::
+
+## 2. Oxygen inventory
+
+In a sealed litre of water, oxygen starts at 9.00 mg/L. Completely oxidise 2.00 mg C/L of CH₂O-like substrate, with no other oxygen terms. Calculate residual O₂.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Demand is carbon mass × 32/12.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Demand = **5.33 mg O₂/L**; residual = **3.67 mg/L**. The calculation assumes the complete aerobic oxidation can occur and ignores gas exchange and competing processes.
+:::
+
+## 3. Incomplete degradation
+
+Only 25% of a 4.00 mg C/L CH₂O-like pool is oxidised during an observation period. Calculate model oxygen consumption. Can you report it as the ultimate demand?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Apply the accessible fraction before the stoichiometric ratio.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Oxidised carbon = 1.00 mg C/L, so consumption is **2.67 mg O₂/L**. Complete oxidation of the entire pool would require 10.67 mg O₂/L. The period-specific consumption is not the ultimate demand.
+:::
+
+## 4. Interpret a dark-water change
+
+Water becomes darker while DOC changes little. What chemical explanations and measurements would you consider?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Carbon quantity and optical properties are different observables.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Changes in molecular composition, chromophoric groups, particle content, or iron-associated colour could alter absorption per unit carbon. Compare spectra/absorbance, DOC, filtration, iron, and pH. Do not infer a unique source, degradation rate, or toxicity from colour alone.
+:::

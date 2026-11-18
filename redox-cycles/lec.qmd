@@ -1,0 +1,73 @@
+---
+title: "Redox and environmental cycles"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## Chemical question
+
+When oxygen runs low, why can iron, nitrogen, sulfur, and phosphorus change together even though not every element changes oxidation state?
+
+## What to explain
+
+- Balance a redox reaction using electron transfer.
+- Interpret electron-acceptor evidence without assuming a universal sequence.
+- Connect iron-phase changes to associated phosphate release.
+
+## Electron donors and acceptors
+
+Donor is oxidised; acceptor is reduced.
+
+Electrons lost = electrons gained.
+
+Balance atoms and charge as well as oxidation states.
+
+## A nitrogen contrast
+
+Nitrification: NH₄⁺ → NO₃⁻; consumes oxygen, releases acid.
+
+Denitrification: NO₃⁻ → N₂; requires a donor and suitable conditions.
+
+## Iron reduction changes a solid phase
+
+FeOOH + 3 H⁺ + e⁻ → Fe²⁺ + 2 H₂O.
+
+A redox change of the carrier can mobilise phosphate without phosphorus redox.
+
+## Sulfur and strongly reducing conditions
+
+SO₄²⁻ + 9 H⁺ + 8 e⁻ → HS⁻ + 4 H₂O.
+
+Sulfide can immobilise some metals; later oxidation can change that retention.
+
+## Interpret a redox sequence
+
+Read multiple indicators:
+
+O₂ and nitrate decline; Fe²⁺ or sulfide may rise.
+
+Overlapping microsites and transport can obscure a simple ladder.
+
+## Balance denitrification
+
+4 nitrate N × 5 e⁻ gained = 20 e⁻.
+
+5 organic C × 4 e⁻ lost = 20 e⁻.
+
+Donor ratio: **1.25 mol C per mol nitrate**.
+
+## Check your explanation
+
+Dissolved iron and phosphate rise while oxygen declines above a sediment. Give a coupled explanation and one reason it is not proven by correlation alone.
+
+Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).

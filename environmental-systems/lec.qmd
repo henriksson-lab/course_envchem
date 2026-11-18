@@ -1,0 +1,73 @@
+---
+title: "Environmental amounts and balances"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## Chemical question
+
+If a pollutant concentration falls downstream, has the pollutant been destroyed? Follow the amount before proposing a reaction.
+
+## What to explain
+
+- Convert concentration to amount or load with explicit units.
+- Close a compartment balance and distinguish transfer from transformation.
+- Choose a system boundary and recognise when steady state is an assumption.
+
+## Define the quantity
+
+Inventory = concentration × volume.
+
+Load = concentration × flow.
+
+Always state whether mass is reported as an element or a compound.
+
+## Choose a boundary
+
+Water-only boundary: sorption is an output.
+
+Water + sediment boundary: sorption is internal transfer.
+
+Parent loss and elemental loss are different balances.
+
+## Write a balance
+
+$$dM/dt=I-O+P-R$$
+
+For a mixed outflow, $O=QC$.
+
+At steady state, $dM/dt=0$; inputs may still be substantial.
+
+## Separate mixing from reaction
+
+$$C_{mix}=\frac{C_1V_1+C_2V_2}{V_1+V_2}$$
+
+Use flows instead of volumes for a steady river junction.
+
+## A timescale is a model
+
+Hydraulic replacement scale: $\tau=V/Q$.
+
+It is different from reaction half-life. Both can affect observed persistence.
+
+## Mix a sample
+
+2.00 L × 3.00 mg/L + 1.00 L × 0.600 mg/L = 6.60 mg.
+
+Divide by 3.00 L: **2.20 mg/L**. The solute inventory is conserved.
+
+## Check your explanation
+
+A lake concentration falls while its volume rises. What measurements would distinguish dilution, export, and chemical transformation?
+
+Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).

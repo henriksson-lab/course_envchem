@@ -9,16 +9,21 @@ Working proposal, 19 November 2026. The programme context is a year-2,
 7.5 ECTS course. Programme organization, scheduling, staffing, and examination
 design are outside this plan.
 
-## First unit implemented
+## Complete first teaching draft
 
-The first teaching draft of `carbonate-gases/` contains two short lectures,
-a model reference sheet, six exercises with worked solutions, a scientific
-species-distribution figure, and activity B with downloadable R and R Markdown
-files. Hand calculations, carbonate balances, Henry calculations, saturation
-checks, and a fresh-session report render are covered by `make check`.
-Other units remain proposals. Book subsection selection and a student pilot
-remain open. This first unit establishes the depth and computing style for the
-aquatic spine.
+All 15 planned topic units are now implemented, with notes, learning goals,
+16 short lecture decks in total, and 62 numbered exercises with worked solutions.
+The aquatic units retain the main quantitative depth. Activities A, B, and C
+have portable student downloads, data/model dictionaries where needed, and
+R Markdown report templates. The glossary links definitions to their explanations.
+
+`make check` verifies the stated chemical models, selected numerical results,
+atom/charge balances, data corrections, and fresh-session report renders.
+`make render` packages the student activities, builds the site, and checks local
+links, fragment targets, published inputs, and exclusions. The teacher
+[coverage map](instructor/coverage.md) connects the proposed capabilities to
+practice. Exact textbook subsections, formal syllabus alignment, classroom
+pacing, and browser-based slide review remain instructor review items.
 
 ## Basis and scope
 
@@ -215,9 +220,12 @@ assumptions. A chemical derivation may be best explained without any code.
 
 The initial scaffold includes `index.qmd`, `overview.qmd`, authoring templates,
 and build files. `contentplan.md`, README, and templates are excluded from the
-student build. It now also contains the first carbonate-and-gases teaching unit.
+student build. It now contains all 15 topic units, the glossary, and three packaged computing activities.
 
-## Writing sequence and review points
+## Authoring sequence and remaining review
+
+The writing passes below have been completed for the first draft. The book and
+classroom review items remain open.
 
 1. **Set the chemical depth.** Check the proposed chapter selections against the
    actual book and available earlier course materials. Record precise readings
@@ -237,7 +245,7 @@ student build. It now also contains the first carbonate-and-gases teaching unit.
    render all reports from saved inputs. Pilot the first R task for recall
    demands and the chemistry exercises for time and conceptual difficulty.
 
-A first complete teaching draft has a bounded reading assignment for each unit,
+The complete first teaching draft has a bounded chapter/topic selection for each unit,
 worked chemical examples, practice with solutions, interpretable diagrams,
 three compact computing activities with documented data, and a functioning
 Quarto build. It does not require new computational methods to count as complete.

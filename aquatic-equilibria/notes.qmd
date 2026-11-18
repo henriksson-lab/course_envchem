@@ -1,0 +1,57 @@
+---
+title: "Aquatic composition and equilibrium"
+---
+
+Before interpreting a water analysis, can its reported concentrations satisfy charge balance, and which quantities belong in an equilibrium expression?
+
+Read these notes with the [lecture](lec.qmd), then complete the
+[exercises](exercise.qmd). Numerical examples are constructed teaching cases
+unless explicitly described otherwise.
+
+## Learning goals
+
+- Convert ionic concentrations to charge equivalents.
+- Distinguish analytical totals, free concentrations, and activities.
+- Use an equilibrium model without confusing thermodynamic possibility with reaction speed.
+
+## Water is a reaction medium
+
+Dissolved ions are hydrated; their interactions depend on charge, solution composition, and temperature. A formula in an analytical table may denote an element total, a specific ion, or a reporting convention. Read the method and units before calculating. A filtered metal result does not necessarily mean free metal ion; small complexes and some colloids can pass the chosen filter.
+
+## Charge balance is a constraint
+
+Bulk water must be electrically neutral. Sum positive and negative ionic charge equivalents, not masses:
+$$\Sigma_+=\sum_{z_i>0}z_ic_i,\qquad\Sigma_-=\sum_{z_i<0}|z_i|c_i.$$
+Using mmol/L gives meq/L. A calcium concentration of 0.500 mmol/L contributes 1.00 meq/L because calcium is divalent. A mismatch suggests omitted ions, unsuitable speciation, reporting errors, or analytical uncertainty; the water itself has not become macroscopically charged.
+
+## Concentration and activity
+
+Thermodynamic equilibrium constants use dimensionless activities. For an aqueous solute, write $a_i=\gamma_i c_i/c^\circ$, with $c^\circ=1$ mol/L and activity coefficient $\gamma_i$. In dilute teaching examples we take $\gamma_i\approx1$, making numerical concentrations convenient. Ionic strength $I=\tfrac12\sum c_i z_i^2$ weights squared charge; divalent ions can influence nonideality strongly. The dilute approximation should not be carried unexamined into seawater.
+
+## A simple acid distribution
+
+For $\mathrm{HA\rightleftharpoons H^++A^-}$ in the concentration approximation,
+$$\frac{[A^-]}{[HA]}=10^{\mathrm{pH}-pK_a}.$$
+If these are the only forms, the deprotonated fraction is $r/(1+r)$. At a prescribed pH one unit above the pKa, the ratio is ten and the fraction is $10/11$. The pH must come from a measurement or an additional balance; a distribution formula does not by itself solve for pH.
+
+## A small redox bridge
+
+Oxidation loses electrons and reduction gains them. For example, $\mathrm{Fe^{3+}+e^-\rightleftharpoons Fe^{2+}}$ changes oxidation state; binding a ligand without electron transfer does not. Both pH and redox can change metal speciation. An equilibrium prediction tells which state is favoured under specified conditions. Kinetics, access to reactants, and transport determine whether the state is reached in the sampling period.
+
+## Worked example
+
+A table reports Ca²⁺ = 0.500, Mg²⁺ = 0.250, Na⁺ = 0.500, HCO₃⁻ = 1.200, Cl⁻ = 0.400, and SO₄²⁻ = 0.200 mmol/L. Cations sum to $2(0.500)+2(0.250)+0.500=2.000$ meq/L. Anions sum to $1.200+0.400+2(0.200)=2.000$ meq/L. The signed imbalance is **0%**. This is an intentionally simplified near-neutral ion set; minor H⁺/OH⁻ and other species are omitted. Closure is a useful check, not proof that every concentration or species assignment is correct.
+
+## Reading focus and further explanation
+
+Book: vanLoon and Duffy, fourth edition, chapter(s) 9–10. Focus on composition, mass and charge balance, activity, and simple acid speciation. Use carbonate chemistry next for a coupled natural-water system.
+
+[Bureau of Reclamation ion balance](https://www.usbr.gov/mp/TFFIP/useful-unit-conversions.html): Charge-equivalent conversions and cation–anion comparison.
+
+[IUPAC activity](https://goldbook.iupac.org/terms/view/A00115): The thermodynamic activity concept.
+
+## Activity A: a water table in R
+
+The [water-table activity](exercise.qmd#activity-a-water-table-in-r) reuses
+CSV import, derived columns, grouping, and plotting from introductory computing.
+It compares the original table with a separately documented correction.

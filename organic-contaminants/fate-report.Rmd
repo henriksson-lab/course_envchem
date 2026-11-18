@@ -1,0 +1,60 @@
+---
+title: "Partitioning and parent transformation"
+output: html_document
+---
+
+## Chemical question and model
+
+How do sorption and half-life influence water-phase parent concentrations?
+U and V are fictitious neutral compounds with supplied constants, not measured
+contaminants. Both phases transform parent at the same k; partitioning equilibrates
+rapidly at constant Kd. The system has no outer-boundary transfer.
+
+```{r calculation}
+source("fate.R")
+compounds
+```
+
+## Prediction and hand check
+
+Replace this paragraph with your prediction, then calculate U's total parent,
+water inventory, and solid inventory at day 20 by hand.
+
+```{r check}
+fate |>
+  filter(time_days %in% c(0, 10, 20, 30)) |>
+  select(compound_id, time_days, total_parent_mg,
+         water_parent_mg, solid_parent_mg, water_mg_l)
+```
+
+## Model figure
+
+```{r plot, fig.width=8, fig.height=4.5, fig.cap="Predictions for fictitious U and V under a closed, rapidly equilibrating model. These are not environmental observations."}
+fate_plot
+```
+
+## Balance and interpretation
+
+```{r balance}
+max(abs(fate$water_parent_mg + fate$solid_parent_mg - fate$total_parent_mg))
+max(abs(fate$total_parent_mg + fate$transformed_parent_mg -
+          fate$initial_parent_mg))
+```
+
+Replace this paragraph with an explanation of why the two curves differ both
+at time zero and later. Distinguish parent transformation from movement into
+solids. Explain what would change if only dissolved parent transformed or if
+exchange were slow. State what the model leaves unknown about products and exposure.
+
+## Connected systems argument
+
+Use the integrated-case notes to add a separate catchment balance and a sediment
+redox explanation. State clearly that the catchment and sediment teaching cases
+are separate from these fictitious compound curves. Include one balanced
+reaction, numerical support, an alternative explanation, and a measurement
+that could distinguish it. Do not treat model predictions as field observations.
+
+## Reproducibility
+
+Keep this template beside `fate.R` and `compounds.csv`. Restart R and render
+with `rmarkdown::render("fate-report.Rmd")`, or use Knit in RStudio.

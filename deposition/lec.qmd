@@ -1,0 +1,73 @@
+---
+title: "Atmospheric deposition and acidity"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## Chemical question
+
+How does an atmospheric emission become an acid input to a catchment, and why does rain pH alone not give the annual acid load?
+
+## What to explain
+
+- Trace oxidation and wet/dry transfer from air to a catchment.
+- Convert a deposition flux to amount and charge equivalents.
+- Distinguish free hydrogen ion, potential acidity, and net catchment response.
+
+## Oxidation creates new species
+
+NO₂ + OH + M → HNO₃ + M
+
+Net sulfur oxidation: SO₂ + ½ O₂ + H₂O → H₂SO₄.
+
+A balanced net reaction does not specify the mechanism.
+
+## Wet and dry pathways
+
+Wet flux ≈ precipitation concentration × precipitation amount.
+
+Dry flux involves gases or particles reaching a surface without rain.
+
+## Count acid equivalents carefully
+
+For supplied fully neutralised acid doses:
+
+HNO₃: 1 eq/mol; H₂SO₄: 2 eq/mol.
+
+Sulfate concentration alone does not identify the acid dose.
+
+## Connect flux to a receiving volume
+
+Annual amount = flux × area.
+
+Annual flow-weighted equivalent concentration = exported equivalents / annual water export.
+
+## Why catchments respond differently
+
+Deposition → catchment reactions → water chemistry.
+
+Compare flux, water export, alkalinity, and major ions; pH alone cannot close the budget.
+
+## An annual teaching budget
+
+0.0200 + 2 × 0.0100 = 0.0400 eq m⁻² yr⁻¹.
+
+Across 10⁶ m²: **40000 eq/year**.
+
+After 30000 eq/year neutralisation: **0.0200 meq/L** in the annual export.
+
+## Check your explanation
+
+A rain sample contains sulfate. What additional evidence is needed before reporting a strong-acid dose from that result?
+
+Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).

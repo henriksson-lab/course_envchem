@@ -1,43 +1,58 @@
 ---
-title: "Proposed content overview"
+title: "Course content"
 ---
 
-## Chemical foundations
+The course follows chemical processes from air through water to soils and
+contaminants. Water chemistry receives the most quantitative depth. Each unit
+has notes, a short lecture, and exercises with worked solutions. Start with a
+chemical prediction, calculate a small case, and explain the result's limits.
 
-Follow a substance through environmental compartments. Practise concentration
-units, mass balances, and the distinction between equilibrium and reaction rate.
+## Topic sequence and reading
 
-## Atmosphere
+Chapter references are to vanLoon and Duffy, *Environmental Chemistry: A Global
+Perspective*, fourth edition (2017). The notes specify the topics to select
+within those chapters and what to defer; these are not whole-chapter reading
+requirements. Exact subsection and page assignments await book review.
 
-Explain ozone formation and removal, photochemical pollution, acid deposition,
-and the chemical roles of gases and particles in climate. Follow deposition
-into surface waters.
+| Unit | Book chapters | Chemical focus |
+| --- | --- | --- |
+| [1. Environmental amounts and balances](environmental-systems/notes.qmd) | 1 | Concentration, load, boundaries, and conservation. |
+| [2. Reactions in the atmosphere](atmospheric-reactions/notes.qmd) | 2–4 | Photolysis, ozone cycles, catalysts, and rates. |
+| [3. Atmospheric deposition and acidity](deposition/notes.qmd) | 5–7 | Oxidation, wet/dry transfer, and equivalent budgets. |
+| [4. Molecules, radiation, and climate](climate-chemistry/notes.qmd) | 8 | Infrared absorption, spectra, particles, and persistence. |
+| [5. Aquatic composition and equilibrium](aquatic-equilibria/notes.qmd) | 9–10 | Charge balance, activity, and simple speciation; activity A. |
+| [6. Carbonate and gas chemistry](carbonate-gases/notes.qmd) | 10–11 | Carbonate, alkalinity, gas exchange, calcite; activity B. |
+| [7. Organic matter in water](aquatic-organic-matter/notes.qmd) | 12 | Binding, colour, carbon, and oxygen demand. |
+| [8. Metal speciation and mobility](metals/notes.qmd) | 13 | Ligands, hydrolysis, free ions, and solubility. |
+| [9. Colloids, surfaces, and sorption](surfaces/notes.qmd) | 14 | Surface charge, partition balances, and mobility. |
+| [10. Redox and environmental cycles](redox-cycles/notes.qmd) | 10, 13, 15 | Electron balances, nitrogen, iron, sulfur, and phosphate. |
+| [11. Water pollution and treatment chemistry](water-treatment/notes.qmd) | 16 | Chemical transformations, separation, and residuals. |
+| [12. Soil chemistry and retention](soil-chemistry/notes.qmd) | 17–18 | Exchange charge, mineral inventories, and acid response. |
+| [13. Waste materials and leachate chemistry](waste-leachate/notes.qmd) | 19 | Sulfide oxidation, acidity, and neutralisation. |
+| [14. Organic contaminants and environmental fate](organic-contaminants/notes.qmd) | 20 | Ionisation, partitioning, parent loss; activity C. |
+| [15. Connecting air, catchments, and water](integrated-case/notes.qmd) | 21 and earlier | A chemical argument supported by budgets and evidence. |
 
-## Water
+## Three supporting computing activities
 
-Use acid–base equilibria, carbonate buffering, and gas exchange to explain water
-composition. The first draft of [carbonate and gas chemistry](carbonate-gases/notes.qmd)
-includes lectures and practice. Relate organic matter, redox conditions, metal complexation, and
-surface reactions to speciation and mobility. Apply these ideas to nutrient
-cycling and water treatment.
+Use the same R and R Markdown workflow as introductory computing. These
+activities support chemical interpretation; no new statistical methods are
+introduced. The site uses Quarto, while student reports remain `.Rmd` files.
 
-## Soils and contaminants
+| Activity | Files | Result |
+| --- | --- | --- |
+| [A: water analysis](aquatic-equilibria/exercise.qmd#activity-a-water-table-in-r) | [Download ZIP](downloads/water-analysis.zip) | An ion table, charge checks, and a documented correction |
+| [B: carbonate species](carbonate-gases/exercise.qmd#plot-the-chemical-prediction-in-r) | [Download ZIP](downloads/carbonate-speciation.zip) | A hand-checked distribution curve at prescribed pH |
+| [C: contaminant fate](organic-contaminants/exercise.qmd#activity-c-a-fate-model-in-r) | [Download ZIP](downloads/contaminant-fate.zip) | A two-phase parent balance and reproducible chemical explanation |
 
-Explain retention and release in soils and sediments. Connect organic molecular
-properties to partitioning, persistence, and potential exposure. Use waste and
-leachate as applications of the same chemistry.
+Extract an activity ZIP into its own folder, open that folder as the working
+project, and keep its report next to its script and data. Activities A and C
+use `readr`, `dplyr`, and `ggplot2`; B uses `ggplot2`. All reports use `rmarkdown`.
+Use the package installation workflow from introductory computing if needed.
+The scripts and data are also available individually from the activity pages.
 
-## Connecting the systems
+## Reading reference
 
-Trace acid deposition through a catchment to a lake, or explain contaminant
-release when sediment conditions change. Support an explanation with reactions,
-a mass balance, and a clearly interpreted figure.
-
-## Working reference
-
-Gary W. vanLoon and Stephen J. Duffy, *Environmental Chemistry: A Global
-Perspective*, fourth edition, Oxford University Press, 2017,
-ISBN 9780198749974. Selected readings will follow the
-[publisher's chapter structure](https://www.oup.com.au/books/higher-education/chemistry/9780198749974).
-This is the working reference for content development; assignment to this course
-is provisional.
+The [publisher's contents](https://www.oup.com.au/books/higher-education/chemistry/9780198749974)
+provide the book sequence. Sources linked in each unit support its chemical
+concepts; the supplied fictitious compounds and constructed datasets are
+identified explicitly. The course does not use invented results as field evidence.

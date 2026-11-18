@@ -1,0 +1,55 @@
+---
+title: "Environmental amounts and balances exercises"
+---
+
+Use the [notes](notes.qmd). All numerical inputs below are constructed
+teaching examples; use the stated assumptions rather than looking up extra
+constants. Predict the direction of change before calculating.
+
+## 1. Mixing without loss
+
+Mix 4.00 L at 2.00 mg/L with 1.00 L of solute-free water. Find the inventory and final concentration. What caused the decrease?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Balance mg first, then divide by the final volume.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+The initial and final inventory is **8.00 mg**. Final concentration is **1.60 mg/L**. Dilution lowers concentration without consuming solute.
+:::
+
+## 2. A river load
+
+A stream carries 0.200 m³/s at 0.500 mg/L. Calculate its solute load in g/s and kg/day. Use 1000 L/m³ and 86400 s/day.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Convert flow to L/s before multiplying.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+The flow is 200 L/s, giving 100 mg/s = **0.100 g/s**, or **8.64 kg/day**. This assumes the flow and concentration remain constant over the day.
+:::
+
+## 3. A two-phase bottle
+
+A sealed bottle initially contains 10.0 mg of parent compound in water. Later, water contains 4.0 mg and sediment contains 5.0 mg. Sampling removes nothing. What amount is unaccounted for? Can you identify its fate?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Sum the measured parent inventories across both phases.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Measured parent totals **9.0 mg**, leaving **1.0 mg** unaccounted for. Transformation, unmeasured bottle-wall retention, and analytical error are candidates. The balance alone does not establish mineralisation or elemental loss.
+:::
+
+## 4. Interpret the boundary
+
+A lake concentration falls while its volume rises. What measurements would distinguish dilution, export, and chemical transformation?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Track volumes, flows, phase inventories, and chemical identities.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Measure volume and total inventory, inlet/outlet loads, relevant solid-phase amounts, and plausible transformation products over a consistent period. A concentration series alone does not close the balance.
+:::

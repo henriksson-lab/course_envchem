@@ -1,0 +1,78 @@
+---
+title: "Aquatic composition and equilibrium"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## Chemical question
+
+Before interpreting a water analysis, can its reported concentrations satisfy charge balance, and which quantities belong in an equilibrium expression?
+
+## What to explain
+
+- Convert ionic concentrations to charge equivalents.
+- Distinguish analytical totals, free concentrations, and activities.
+- Use an equilibrium model without confusing thermodynamic possibility with reaction speed.
+
+## Water is a reaction medium
+
+Ask what the measurement includes:
+
+- An element total or a species?
+- Whole water or an operationally filtered fraction?
+- Mass of element or mass of compound?
+
+## Charge balance is a constraint
+
+0.500 mmol/L Ca²⁺ → 1.00 meq/L.
+
+Define charge imbalance:
+$$100\frac{\Sigma_+-\Sigma_-}{\Sigma_++\Sigma_-}.$$
+
+Use a consistent sign convention.
+
+## Concentration and activity
+
+$$a_i=\gamma_i c_i/c^\circ,\qquad I=\tfrac12\sum c_iz_i^2$$
+
+Activities enter equilibrium expressions. Concentrations are a stated approximation.
+
+## A simple acid distribution
+
+At pH = pKa + 1:
+
+$[A^-]/[HA]=10$, so the A⁻ fraction is **0.909**.
+
+Ratios are different from fractions.
+
+## A small redox bridge
+
+Oxidation state change requires electron transfer.
+
+Equilibrium → possible distribution under constraints.
+
+Kinetics → approach to that distribution.
+
+## Check a complete teaching ion set
+
+Cations: 1.000 + 0.500 + 0.500 = **2.000 meq/L**.
+
+Anions: 1.200 + 0.400 + 0.400 = **2.000 meq/L**.
+
+Balance closes; individual analyses still need quality checks.
+
+## Check your explanation
+
+An analysis has 2.00 meq/L cations and 1.64 meq/L anions. Calculate the signed imbalance. Should you change raw measurements until the table balances?
+
+Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).

@@ -1,0 +1,55 @@
+---
+title: "Colloids, surfaces, and sorption exercises"
+---
+
+Use the [notes](notes.qmd). All numerical inputs below are constructed
+teaching examples; use the stated assumptions rather than looking up extra
+constants. Predict the direction of change before calculating.
+
+## 1. Double the solid
+
+Repeat the worked example with 0.0200 kg solid, keeping all other inputs fixed. Find aqueous concentration and both inventories.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Use the full denominator, not a proportional guess.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Cw = 1/(1 + 100 × 0.0200) = **0.3333 mg/L**. Water holds **0.3333 mg**, solid **0.6667 mg**. The sorbed concentration is 33.33 mg/kg and the total remains 1.00 mg.
+:::
+
+## 2. A loading limit
+
+A solid has qmax = 20.0 mg/kg and dry mass 0.0100 kg. Can it bind 1.00 mg on those sites?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Multiply capacity by dry solid mass.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+The maximum site inventory is **0.200 mg**, so 1.00 mg cannot all bind there. More solid, other retention mechanisms, or a larger aqueous pool would be required.
+:::
+
+## 3. A desorption change
+
+A new pH changes Kd in the original bottle from 100 to 10.0 L/kg. At equilibrium with the same total mass and volume, what is Cw?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Changing Kd redistributes the fixed inventory.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Cw = 1/(1 + 10 × 0.0100) = **0.9091 mg/L**. Aqueous mass is 0.9091 mg and sorbed mass 0.09091 mg. Desorption raised the water concentration without adding total solute.
+:::
+
+## 4. Removal or transport?
+
+A filtered sample loses metal while the unfiltered downstream sample does not. How could particles explain this observation?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Compare operational fractions and whether particles settle or remain mobile.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Metal may bind to particles excluded by filtration while remaining in the moving water-plus-particle system. Measure particle loads, size fractions, flow, and phase inventories. A filtered concentration decrease alone does not establish destruction or permanent retention.
+:::

@@ -1,0 +1,57 @@
+---
+title: "Organic contaminants and environmental fate"
+---
+
+Which molecular properties help explain where a contaminant goes, and why is disappearance from water not the same as chemical destruction?
+
+Read these notes with the [lecture](lec.qmd), then complete the
+[exercises](exercise.qmd). Numerical examples are constructed teaching cases
+unless explicitly described otherwise.
+
+## Learning goals
+
+- Relate ionisation and neutral partitioning to the stated environmental conditions.
+- Combine a two-phase balance with a supplied first-order parent-loss model.
+- Distinguish partitioning, persistence, exposure, and biological effect.
+
+## Structure affects phase preference
+
+Nonpolar regions, hydrogen-bonding groups, size, and charge influence interactions with water and organic phases. The octanol–water coefficient $K_{ow}$ compares concentrations of a specified form at equilibrium in two phases; log Kow is its base-ten logarithm. It is not a half-life or a toxicity measurement. Hydrophobic neutral compounds may associate strongly with organic matter, but uptake, metabolism, and environment still affect exposure.
+
+## Ionisation changes the problem
+
+For a monoprotic organic acid HA, the neutral fraction is
+$$f_{HA}=\frac{1}{1+10^{\mathrm{pH}-pK_a}}.$$
+Rising pH shifts it toward A⁻. The neutral form and ion can have different sorption and uptake behaviour; a coefficient measured for neutral molecules may not describe the combined pool. Charged compounds can also bind strongly through ion exchange or specific interactions, so “ionised means no sorption” is not a valid general rule.
+
+## Use organic-carbon normalisation cautiously
+
+For a suitable neutral organic solute in an organic-carbon-dominated sorption regime, use the approximation $K_d=f_{oc}K_{oc}$, with organic-carbon fraction $f_{oc}$ in kg organic C per kg dry solid and $K_{oc}$ in L/kg organic C. This is a conditional approximation, not a rule for all ions, minerals, soot, or concentrations. Combining it with a water–solid mass balance predicts distribution only within those conditions.
+
+## A first-order parent-loss model
+
+With constant $k$ and no new parent input,
+$$M(t)=M_0e^{-kt},\qquad k=\ln2/t_{1/2}.$$
+Mass here tracks the parent compound. Products may remain and need not be harmless or fully mineralised. A measured water decline could also result from sorption, volatilisation, or export; it does not establish this transformation model without supporting evidence. Rate coefficients depend on conditions and the process represented.
+
+## State the coupled teaching model
+
+In activity C, a closed water–solid system equilibrates rapidly at fixed Kd. Parent transformation acts with the same specified first-order coefficient in both phases, so the total parent mass follows one exponential. Then $C_w(t)=M(t)/(V_w+K_dm_s)$. There is no volatilisation, inflow, or outflow. If only dissolved parent degraded or exchange were slow, this model would need a different kinetic balance.
+
+## Worked example
+
+For fictitious neutral compound U, take $M_0=1.00$ mg, $V_w=1.00$ L, $m_s=0.0100$ kg, $K_d=100$ L/kg, and half-life 10.0 days. Initially half the parent is in water and $C_w=0.500$ mg/L. After 20.0 days the total parent is 0.250 mg; water and solid each contain 0.125 mg, so $C_w=\mathbf{0.125}$ mg/L. The missing 0.750 mg parent has transformed under this stipulated model. It has not simply moved to the sorbed parent pool.
+
+## Reading focus and further explanation
+
+Book: vanLoon and Duffy, fourth edition, chapter(s) 20. Focus on property-to-process reasoning, ionisation, a phase balance, and one first-order model. Defer chemical catalogues and quantitative risk assessment.
+
+[EPA organic-carbon partition model](https://www3.epa.gov/ceampubl/learn2model/part-two/onsite/rsorb2_onsite.html): Definition of the foc–Koc approximation.
+
+[ATSDR fate and transport](https://atsdr-origin.cdc.gov/pha-guidance/conducting_scientific_evaluations/exposure_pathways/environmental_fate_and_transport.html): Why property-based predictions need environmental and pathway context.
+
+## Activity C: a reproducible fate explanation
+
+Use the [R activity](exercise.qmd#activity-c-a-fate-model-in-r) to compare two
+fictitious compounds, and carry its report into the integrated case. The
+[model input dictionary](data-dictionary.qmd) records the process assumptions.

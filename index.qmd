@@ -2,21 +2,33 @@
 title: "Environmental Chemistry"
 ---
 
-How do chemical reactions determine what happens to a substance in air, water,
-and soil? We connect molecular properties, equilibria, reaction rates, and
-partitioning to environmental transport and exposure.
+How do molecular properties and reactions determine what happens to substances
+in air, water, and soil? This course connects equilibrium, reaction rates,
+partitioning, and chemical balances to transport and potential exposure.
 
-::: {.callout-note}
-The first teaching draft is available for carbonate and gas chemistry.
-The remaining topics are outlined for development.
-:::
+Start with [environmental amounts and balances](environmental-systems/notes.qmd),
+or use the [course content](overview.qmd) to find a topic. The sequence follows
+atmosphere, water, soils, and contaminants, with particular depth in aquatic
+chemistry. The [glossary](glossary.qmd) links common terms to their explanations.
 
-The proposed sequence follows atmosphere, water, and the terrestrial environment,
-with particular attention to aquatic chemistry. See the
-[content overview](overview.qmd) for the topics and chemical questions.
+## Work through a unit
 
-Calculations begin with a small worked example. Selected exercises then reuse
-R for tables, plots, and reproducible explanations of chemical results.
+Read the chemical question and learning goals. Use the notes with the short
+lecture, then try the exercises before opening their hints and worked solutions.
+State units, assumptions, and the system boundary in every calculation. Explain
+what a numerical answer means chemically and what it cannot establish.
 
-Start with [carbonate and gas chemistry](carbonate-gases/notes.qmd): short
-lectures, worked examples, exercises, and a species-distribution plot in R.
+Three short R activities reuse table handling, plotting, and reproducible reports
+from introductory computing. Their [downloads](overview.qmd#three-supporting-computing-activities)
+include starting code and a report template. Hand calculations provide a check
+before the code is used.
+
+## Connect the chemical systems
+
+The recurring constructed catchment links deposition, soil reactions, and water
+alkalinity. A second constructed sediment case links oxygen depletion, iron,
+and phosphorus. The [integrated case](integrated-case/notes.qmd) brings these
+mechanisms and their evidence together in a short chemical argument.
+
+These materials form a first teaching draft. The working reference is vanLoon
+and Duffy, *Environmental Chemistry: A Global Perspective*, fourth edition.

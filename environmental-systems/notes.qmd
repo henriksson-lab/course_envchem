@@ -1,0 +1,47 @@
+---
+title: "Environmental amounts and balances"
+---
+
+If a pollutant concentration falls downstream, has the pollutant been destroyed? Follow the amount before proposing a reaction.
+
+Read these notes with the [lecture](lec.qmd), then complete the
+[exercises](exercise.qmd). Numerical examples are constructed teaching cases
+unless explicitly described otherwise.
+
+## Learning goals
+
+- Convert concentration to amount or load with explicit units.
+- Close a compartment balance and distinguish transfer from transformation.
+- Choose a system boundary and recognise when steady state is an assumption.
+
+## Define the quantity
+
+Concentration divides amount by volume; it is not an inventory. Mass concentration might be mg/L, amount concentration mol/L, and an inventory mg or mol. Use a molar mass only when converting between mass and chemical amount. A sample with lower concentration can contain more solute if its volume is larger. Specify whether a result is reported as the element or as a compound: mg N/L and mg nitrate/L are different quantities.
+
+## Choose a boundary
+
+A compartment is a specified volume such as a lake, a water sample, or the water plus sediment in a bottle. A flux crosses its boundary; a reaction can transform a species inside it. Write what lies inside the boundary before adding terms. Sorption removes a compound from water but does not remove it from a water-plus-sediment system. Transformation of a parent compound need not destroy its constituent elements.
+
+## Write a balance
+
+For the amount $M$ of a specified substance,
+$$\frac{dM}{dt}=\text{inputs}-\text{outputs}+\text{production}-\text{consumption}.$$
+Every term has amount/time units. For a well mixed constant-volume water body, an advective output is $QC$, where $Q$ is water flow and $C$ is outlet concentration. The inflow and outflow volumes must also balance if volume stays fixed. A steady state sets accumulation to zero; it does not imply that input and output processes have stopped.
+
+## Separate mixing from reaction
+
+When two waters mix without reaction or loss, add their inventories and divide by the combined volume. For flows at a junction, add loads and divide by total flow. This is a conservation prediction, not an equilibrium calculation. If the observed result differs, investigate sampling times, mixing, uncertainty, missing inputs, and chemical change. A concentration difference alone cannot isolate a reaction rate.
+
+## A timescale is a model
+
+The hydraulic replacement time is $V/Q$ for constant volume and flow. It estimates a water-replacement scale, not the age of every molecule or the chemical lifetime of every solute. Under a well mixed model, flushing an initially present conservative solute with clean water gives an exponential decline. A reactive solute also depends on transformation, sorption, and exchange with other compartments.
+
+## Worked example
+
+Mix 2.00 L at 3.00 mg/L with 1.00 L at 0.600 mg/L. The inventories are 6.00 and 0.600 mg. With additive volumes, no reaction, and no loss, the final inventory is 6.60 mg in 3.00 L, so the concentration is **2.20 mg/L**. It is lower than 3.00 mg/L because of dilution; none of the tracked solute was destroyed.
+
+## Reading focus and further explanation
+
+Book: vanLoon and Duffy, fourth edition, chapter(s) 1. Focus on environmental composition, sources, sinks, and chemical processes. Practise small balances; defer a general transport model.
+
+[USGS water chemistry](https://www.usgs.gov/special-topics/water-science-school/science/water-properties-information-topic): Background on water properties and chemical quantities.

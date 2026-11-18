@@ -1,0 +1,72 @@
+---
+title: "Molecules, radiation, and climate"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## Chemical question
+
+Why does adding one gas affect outgoing radiation while adding another gas can have little direct infrared effect?
+
+## What to explain
+
+- Connect molecular absorption to changing dipole moment.
+- Distinguish spectral overlap, gas lifetime, and radiative influence.
+- Explain why atmospheric particles can have different effects from gases.
+
+## Absorption requires a matching transition
+
+An infrared-active vibration changes dipole moment.
+
+CO₂ has active modes despite its equilibrium symmetry.
+
+Abundance alone does not determine absorption.
+
+## Earth emits at different wavelengths
+
+Incoming solar and outgoing terrestrial radiation occupy different spectral ranges.
+
+Band location and overlap matter, alongside amount and altitude.
+
+## Read a deliberately simple spectrum
+
+| Teaching wavelength | Transmission | Absorbed fraction |
+| --- | ---: | ---: |
+| 0.55 µm | 0.95 | 0.05 |
+| 10 µm | 0.20 | 0.80 |
+
+These are invented values, not a spectrum of a named gas.
+
+## Persistence has several timescales
+
+Single-sink model: $\tau=1/k$; $t_{1/2}=\ln2/k$.
+
+CO₂ does not have one universal single-exponential atmospheric lifetime.
+
+## Particles absorb, scatter, and change clouds
+
+Composition + size + location determine particle effects.
+
+Scattering, absorption, and cloud interactions are distinct pathways.
+
+## A model transmission calculation
+
+At T = 0.20, a 100 W/m² beam transmits **20** and absorbs **80 W/m²** if reflection is zero.
+
+The atmospheric radiative problem includes emission and many wavelengths.
+
+## Check your explanation
+
+Two emitted gases have equal mass and different absorption bands and lifetimes. What information would you need to compare their climate effects?
+
+Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).

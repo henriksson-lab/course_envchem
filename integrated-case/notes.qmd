@@ -1,0 +1,47 @@
+---
+title: "Connecting air, catchments, and water"
+---
+
+Which linked chemical explanation survives the available balances, and which parts remain hypotheses?
+
+Read these notes with the [lecture](lec.qmd), then complete the
+[exercises](exercise.qmd). Numerical examples are constructed teaching cases
+unless explicitly described otherwise.
+
+## Learning goals
+
+- Combine deposition, neutralisation, and water export in one equivalent budget.
+- Use several indicators to assess a coupled sediment-redox explanation.
+- Write a reproducible chemical explanation that separates model predictions from observations.
+
+## The annual catchment budget
+
+Reuse the constructed catchment: area $1.00\times10^6$ m², annual water export $5.00\times10^8$ L, and acid-equivalent input 40000 eq/year. A stipulated mineral/soil neutralisation term consumes 30000 eq/year. With no other acid terms in this teaching budget, residual export is 10000 eq/year or 0.0200 meq/L. Do not silently add unmeasured retention or biological terms to force agreement.
+
+## An alkalinity comparison needs a reference
+
+For an explicit comparison, suppose reference annual alkalinity export is 50000 eq/year under the same water export, and the added residual acidity decreases it by 10000 eq/year. Alkalinity then changes from 0.100 to 0.0800 meq/L. This does not fix pH: dissolved inorganic carbon, gas exchange, and other acid–base systems are still needed. An annual flow-weighted export is not the same boundary condition as the closed-water acid pulse in the carbonate unit.
+
+## A separate sediment observation set
+
+A second constructed comparison samples water immediately above sediment before and during oxygen depletion. O₂ changes from 8.0 to 0.20 mg/L; filtered Fe from 0.020 to 1.00 mg/L; filtered phosphate-P from 0.010 to 0.200 mg P/L. These are invented observations, not outputs of a fitted reaction model. They are consistent with reduction of an iron carrier phase and associated phosphate release, but do not identify that mechanism uniquely.
+
+## Keep forms and units aligned
+
+Phosphate-P is reported as elemental phosphorus mass, not phosphate-ion mass. Filtered Fe is not automatically free Fe²⁺. Annual acidity is an equivalent flux; pH is a present activity measure. Before combining evidence, state whether measurements refer to matching water masses, times, and operational fractions. A neat numerical correlation can be chemically meaningless if quantities or boundaries differ.
+
+## Build an explanation with a test
+
+An explanation should give the proposed reaction chain, a supporting balance or calculation, a prediction, and a measurement that could distinguish alternatives. For the catchment, compare neutralisation, alkalinity export, major ions, and flow. For sediment, test Fe(II), mineral phases, porewater gradients, and solute fluxes. Alternative sources and mixing belong in the interpretation when the available observations cannot rule them out.
+
+## Worked example
+
+If neutralisation were only 20000 instead of 30000 eq/year, the residual input would be 20000 eq/year = 0.0400 meq/L at the stated export. Under the same 50000 eq/year reference alkalinity, export would be 30000 eq/year = **0.0600 meq/L**. This is a sensitivity calculation: it shows which term controls the budget. It does not establish which catchment process changed or predict a unique pH.
+
+## Reading focus and further explanation
+
+Book: vanLoon and Duffy, fourth edition, chapter(s) 21 and earlier selections. Revisit the selected reaction and partition sections from earlier chapters. Use the final chapter for synthesis; defer broad policy surveys and new analytical methods.
+
+[USGS coupled organic-input chemistry](https://water.usgs.gov/ogw/pubs/ofr0289/imc_organic.htm): Coupled redox changes provide context for the sediment hypothesis.
+
+[EPA catchment response](https://www.epa.gov/acidrain/effects-acid-rain): Why deposition effects depend on environmental buffering.

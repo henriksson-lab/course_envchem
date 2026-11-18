@@ -1,0 +1,53 @@
+---
+title: "Reactions in the atmosphere"
+---
+
+Why can ozone protect organisms in one atmospheric region and damage them near the ground? Explain the reactions and where they occur.
+
+Read these notes with the [lecture](lec.qmd), then complete the
+[exercises](exercise.qmd). Numerical examples are constructed teaching cases
+unless explicitly described otherwise.
+
+## Learning goals
+
+- Combine reaction steps and identify a regenerated catalyst.
+- Distinguish photolysis, reaction, and transport.
+- Explain why the basic NO–NO₂ cycle alone does not yield sustained net ozone production.
+
+## Light selects reactions
+
+Photolysis uses absorbed light to break or change a molecule. Photon energy is $E=hc/\lambda$: shorter wavelengths carry more energy, but a reaction still requires absorption by the molecule. Light availability changes with altitude, clouds, and time. Ozone in the stratosphere absorbs ultraviolet radiation; at ground level it is an oxidising pollutant. The same formula does not mean the same environmental setting.
+
+## Make stratospheric ozone
+
+A simplified formation sequence is
+$$\mathrm{O_2}+h\nu\rightarrow2\mathrm{O},$$
+$$\mathrm{O+O_2+M\rightarrow O_3+M}.$$
+M is a collision partner that removes excess energy. Ozone also undergoes photolysis and reactions with atomic oxygen. Abundance reflects a production–loss balance plus transport; a fast turnover need not imply a small steady inventory.
+
+## A chlorine catalytic cycle
+
+Consider
+$$\mathrm{Cl+O_3\rightarrow ClO+O_2},$$
+$$\mathrm{ClO+O\rightarrow Cl+O_2}.$$
+Adding the steps cancels Cl and ClO and gives $\mathrm{O_3+O\rightarrow2O_2}$. Chlorine is regenerated and can repeat the sequence until another reaction interrupts it. This is a representative gas-phase cycle, not the full mechanism of the polar ozone hole; polar chemistry also involves particle surfaces and different catalytic cycles.
+
+## Tropospheric cycling
+
+In the basic photochemical cycle, NO₂ photolysis forms NO and O; the O atom forms O₃ with O₂ and a collision partner. But $\mathrm{NO+O_3\rightarrow NO_2+O_2}$ consumes that ozone. These steps alone form a cycle without sustained net production. Peroxy radicals from oxidation of volatile organic compounds or CO can instead convert NO to NO₂ without consuming ozone, allowing net ozone production in appropriate conditions.
+
+## Rates and lifetime
+
+For a loss reaction $X+\mathrm{OH}\rightarrow$ products, $R=k[X][\mathrm{OH}]$. If OH is treated as constant, the pseudo-first-order loss coefficient is $k'=k[\mathrm{OH}]$ and the chemical lifetime is $1/k'$. This approximation isolates one sink. Deposition, transport, changing sunlight, and competing reactions alter the observed atmospheric persistence. A catalyst is regenerated in a sequence, not present in unlimited amount or active forever.
+
+## Worked example
+
+Adding the two chlorine steps gives one ozone molecule and one atomic oxygen consumed for every two oxygen molecules produced. Cl and ClO cancel. Each completed cycle therefore removes one ozone molecule, but the number of cycles per chlorine atom depends on competing reactions and conditions. Stoichiometry by itself gives neither the cycle rate nor a global ozone loss.
+
+## Reading focus and further explanation
+
+Book: vanLoon and Duffy, fourth edition, chapter(s) 2–4. Focus on photolysis, one stratospheric catalytic cycle, and the NO–NO₂–ozone cycle. Defer exhaustive radical mechanisms and quantitative polar modelling.
+
+[NOAA ozone assessment](https://csl.noaa.gov/assessments/ozone/2022/twentyquestions/): Formation, catalytic destruction, and the role of atmospheric region.
+
+[NASA photochemical explanation](https://science.nasa.gov/earth/earth-observatory/chemistry-in-the-sunlight/): How nitrogen oxides and organic chemistry participate in ground-level ozone formation.

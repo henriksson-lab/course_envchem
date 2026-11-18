@@ -1,0 +1,55 @@
+---
+title: "Reactions in the atmosphere exercises"
+---
+
+Use the [notes](notes.qmd). All numerical inputs below are constructed
+teaching examples; use the stated assumptions rather than looking up extra
+constants. Predict the direction of change before calculating.
+
+## 1. Reaction bookkeeping
+
+Add the two chlorine steps in the notes. Identify the catalyst, the intermediate, and the net reaction.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Cancel species occurring on both sides of the summed equation.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+The net reaction is **O₃ + O → 2 O₂**. Cl is regenerated; ClO is the cycle intermediate. Neither appears in the net reaction.
+:::
+
+## 2. A supplied rate
+
+Take k = 1.0 × 10⁻¹² cm³ molecule⁻¹ s⁻¹ and constant OH = 1.0 × 10⁶ molecules/cm³. Calculate k′ and the lifetime in seconds and days. Use 86400 s/day.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Multiply k by OH; invert the resulting s⁻¹ value.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+k′ = **1.0 × 10⁻⁶ s⁻¹**. The lifetime is **1.0 × 10⁶ s**, about **11.6 days** for this one constant sink. It is an e-folding time, not a half-life.
+:::
+
+## 3. Does the cycle make net ozone?
+
+Sum the NO₂ photolysis, O₃ formation, and NO + O₃ reactions. Why can peroxy radicals change the outcome?
+
+::: {.callout-tip collapse="true" title="Hint"}
+The third body and all nitrogen/oxygen intermediates cancel.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+The basic cycle gives no net chemical change apart from energy conversion. A peroxy pathway can convert NO to NO₂ without using O₃, allowing the subsequent photolysis to contribute net ozone production.
+:::
+
+## 4. Location and evidence
+
+An ozone measurement rises at a surface station. Can you infer increased stratospheric ozone or identify a single emission source? Explain what else is needed.
+
+::: {.callout-tip collapse="true" title="Hint"}
+A measurement is local; production and transport both matter.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+No. Surface ozone depends on precursor chemistry, sunlight, deposition, mixing, and transported ozone. Altitude-resolved measurements, precursor observations, and meteorological information are needed. The molecular formula alone does not identify origin.
+:::

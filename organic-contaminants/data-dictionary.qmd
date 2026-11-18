@@ -1,0 +1,28 @@
+---
+title: "Activity C model inputs"
+---
+
+The CSV supplies **fictitious neutral compounds U and V** for a deterministic
+teaching model. It is not an experimental dataset. Constants are stipulated
+rather than estimated from observations. There are two independent cases,
+each starting with 1 mg parent; the compounds do not interact or compete.
+
+| Column | Meaning | Units |
+| --- | --- | --- |
+| `compound_id` | Fictitious identifier | U or V |
+| `kd_l_kg` | Fixed linear water–solid distribution coefficient | L/kg dry solid |
+| `half_life_days` | Parent transformation half-life, identical in both phases | days |
+| `initial_parent_mg` | Initial total parent mass across water and solid | mg |
+| `water_volume_l` | Fixed water volume | L |
+| `dry_solid_kg` | Fixed dry solid mass | kg |
+
+The script generates daily time values from 0 to 60 days. It calculates
+`k_per_day = log(2) / half_life_days`, the dimensionless remaining fraction,
+total parent mass in mg, water concentration in mg/L, solid concentration in
+mg/kg, both phase inventories in mg, and transformed-parent mass in mg.
+
+Rapid equilibrium with fixed Kd and the same transformation coefficient in
+both phases permit the simple total-parent exponential. There is no input,
+export, volatilisation, changing volume, or product tracking. A slower exchange
+or a phase-specific degradation coefficient needs a different model. Kd values
+here are supplied directly; no inference from Kow or Koc is performed.

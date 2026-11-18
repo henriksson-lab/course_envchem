@@ -1,0 +1,67 @@
+---
+title: "Waste materials and leachate chemistry"
+author: "Environmental Chemistry"
+format:
+  revealjs:
+    theme: [simple, ../theme.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    transition: none
+    history: false
+    incremental: false
+    menu: true
+    html-math-method: katex
+---
+
+## Chemical question
+
+Why can a waste material continue producing acidity after the initial dissolved acid has been washed away?
+
+## What to explain
+
+- Balance sulfide oxidation and subsequent iron hydrolysis.
+- Distinguish present pH from potential acid-generating inventory.
+- Close a neutralisation budget and track the residual solids.
+
+## Expose a reactive mineral
+
+FeS₂ + 3½ O₂ + H₂O → Fe²⁺ + 2 SO₄²⁻ + 2 H⁺.
+
+Exposure changes reaction access; stoichiometry alone does not give the rate.
+
+## Iron oxidation can release more acid
+
+Fe²⁺ oxidation + hydroxide formation → 2 more H⁺ per Fe.
+
+Combined endpoint: **4 acid equivalents per mole FeS₂**.
+
+## Neutralisation is another reaction
+
+At the CO₂* endpoint, 1 mol CaCO₃ consumes 2 acid equivalents.
+
+Inventory, accessibility, and rate all matter.
+
+## Present acidity and future generation
+
+Current pH ≠ future acid-generating inventory.
+
+Compare sulfide extent, neutralisation, and flow-weighted export.
+
+## Immobilisation can be reversible
+
+Retention depends on future pH and redox.
+
+Track contaminants in both water and residual solid phases.
+
+## A complete endpoint budget
+
+0.0100 mol pyrite → **0.0400 mol acid eq**.
+
+At 2 eq/mol calcite: **0.0200 mol**, or **2.00 g CaCO₃**.
+
+## Check your explanation
+
+A treated waste initially gives neutral-pH water. What evidence is needed before concluding that future metal and acid release will stay low?
+
+Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).

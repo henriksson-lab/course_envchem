@@ -1,0 +1,55 @@
+---
+title: "Water pollution and treatment chemistry exercises"
+---
+
+Use the [notes](notes.qmd). All numerical inputs below are constructed
+teaching examples; use the stated assumptions rather than looking up extra
+constants. Predict the direction of change before calculating.
+
+## 1. Another sequence
+
+Two stages each remove 30.0% of the entering water-phase mass. Start with 100 mg. Find final water mass and overall removal.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Multiply the two remaining fractions.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+100 × 0.700² = **49.0 mg** remains; **51.0%** is removed from the water. The element still resides in the specified residual stream unless transformed/exported elsewhere.
+:::
+
+## 2. Coagulant acidity
+
+Assume 0.0200 mmol/L Fe³⁺ undergoes the supplied hydroxide precipitation reaction completely. Calculate H⁺ generation and the equivalent alkalinity decrease.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Each mole Fe³⁺ produces three moles H⁺ in this representation.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+H⁺ = **0.0600 mmol/L**; alkalinity decreases by **0.0600 meq/L**. Other reactions and species must be included for a real dosing calculation.
+:::
+
+## 3. Track nitrogen
+
+A process changes 1.00 mmol/L NH₄⁺ into 1.00 mmol/L NO₃⁻, with no other nitrogen products. Has it removed nitrogen? What process could remove dissolved nitrogen as gas?
+
+::: {.callout-tip collapse="true" title="Hint"}
+Compare nitrogen atoms across forms.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+No: **1.00 mmol N/L** remains. Nitrification changes form. Denitrification to N₂ can export nitrogen from water, subject to the donor, conditions, and gas-transfer boundary.
+:::
+
+## 4. Choose and justify
+
+A water contains suspended clay, dissolved nitrate, and a neutral organic contaminant. Explain why filtration alone is not a complete treatment argument.
+
+::: {.callout-tip collapse="true" title="Hint"}
+Match particle size and chemical form to mechanism.
+:::
+
+::: {.callout-note collapse="true" title="Worked solution"}
+Filtration can capture some particles depending on the medium and size, but dissolved nitrate and a molecular organic solute generally require other suitable mechanisms. Consider nitrate transformation/separation and contaminant-specific sorption or destruction, then account for residuals and products. No operating prescription follows from this generic example.
+:::

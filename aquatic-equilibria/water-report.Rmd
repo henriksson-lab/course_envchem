@@ -1,0 +1,47 @@
+---
+title: "Check a water analysis before interpreting it"
+output: html_document
+---
+
+## Chemical question and provenance
+
+Can the supplied near-neutral ion tables satisfy charge balance? The data are
+constructed for teaching, including one documented transcription error. They
+are not field measurements. The six ions are the complete major-ion set for
+this simplified calculation; minor hydrogen and hydroxide ions are omitted.
+
+```{r analysis}
+source("water-analysis.R")
+raw_balance
+```
+
+## Hand check and data-quality decision
+
+Replace this paragraph with a hand calculation for sample A's calcium charge,
+and sample C's signed imbalance. Explain why a charge mismatch justifies an
+investigation rather than an arbitrary numerical correction.
+
+```{r correction}
+corrections
+corrected_balance
+```
+
+Explain the supplied correction evidence. The raw CSV is unchanged; the script
+creates a corrected copy. State why a balanced analysis does not prove all
+individual results correct.
+
+## Chemical comparison
+
+```{r comparison, fig.width=8, fig.height=4.5, fig.cap="Constructed ion concentrations after the evidence-supported correction. Samples A and C coincide."}
+water_plot
+```
+
+Replace this paragraph with a comparison of the two distinct water compositions.
+Does a larger ion concentration necessarily imply the same relative difference
+in charge contribution? Explain the role of ion valence.
+
+## Assumptions and reproducibility
+
+State the units, the near-neutral major-ion approximation, the correction source,
+and the lack of a universal imbalance acceptance threshold in this exercise.
+Keep all four activity files in one folder and render in a fresh R session.

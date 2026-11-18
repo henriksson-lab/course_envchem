@@ -1,48 +1,73 @@
 # Environmental Chemistry
 
-Content planning and a local Quarto scaffold for the 7.5 ECTS Environmental
-Chemistry course. The chemistry follows the working textbook, with an aquatic
-emphasis and modest reuse of introductory R skills.
+A complete first teaching draft for the planned 7.5 ECTS Environmental Chemistry
+course: chemistry-led explanations, an aquatic emphasis, and three modest R
+activities that reuse introductory computing skills. Programme organization,
+timetabling, and formal examination design remain outside scope.
 
-Start with [the proposed content plan](contentplan.md). It contains the scope,
-chapter map, chemical questions, exercise ideas, computing transfers, and writing
-sequence. This is a proposal, not a complete teaching draft or approved syllabus.
-Programme organization, timetabling, and examination design are outside scope.
+- [Rendered course home](docs/index.html)
+- [Course sequence and chapter map](overview.qmd)
+- [Content plan and scope](contentplan.md)
+- [Instructor notes](instructor/README.md)
+- [Capability and practice map](instructor/coverage.md)
 
-## First teaching unit
+## Material
 
-[Carbonate and gases](carbonate-gases/notes.qmd) now has two short lecture decks,
-a model reference sheet, six exercises with worked solutions, a checked species
-plot, and downloadable R code and an R Markdown report template. Other topic
-units remain planned. [Instructor notes](instructor/README.md) describe the
-chemical checks and remaining teaching review.
+All 15 planned units have notes, learning goals, short reveal.js lectures,
+worked examples, and exercises with collapsible hints and worked solutions.
+There are 16 lecture decks and 62 numbered exercises, plus the supporting
+activity instructions. A linked glossary and scientific model figures support
+the chemical explanations.
 
-## Scaffold
+The sequence follows the working book's atmosphere → water → terrestrial
+structure, with selected topics and depth boundaries stated per unit. The
+working reference is vanLoon and Duffy, *Environmental Chemistry: A Global
+Perspective*, fourth edition (2017). Chapter assignments are topic selections;
+exact subsection/page assignments and final syllabus alignment remain to review.
 
-Adapted from `/home/mahogny/github/course/quantbio-3MB00A`:
-Quarto website, `docs/` output, docked searchable sidebar, Cosmo HTML theme,
-lecture/exercise naming, reveal.js theme, and collapsible exercise hints.
-`theme.scss` is copied; `styles.css` retains the general sidebar rules and removes
-week-position styling. Configuration and Makefile are reduced for this course.
-The default build renders without staging files.
+The three activities cover water-ion tables and charge checks, carbonate species
+at prescribed pH, and a two-phase parent-transformation model. Student reports
+use R Markdown (`.Rmd`); the teaching website uses Quarto (`.qmd`). Each activity
+has starting code, chemical checks, and a portable ZIP. Constructed data,
+fictitious compounds, and model predictions are identified explicitly.
 
-The home page, proposed overview, and carbonate unit are rendered.
-`templates/` holds authoring templates excluded from rendering; copy a template
-into a topic folder when writing a real unit. Planning Markdown and instructor
-material are excluded. No Quantitative Biology lessons, demos, dependencies,
-Git metadata, or built outputs were copied.
+## Build and check
+
+Requires Quarto and Python 3 to build the site and package downloads. R plus
+`readr`, `dplyr`, `ggplot2`, and `rmarkdown` are needed for the activities and
+chemical/report checks. Pandoc is available through Quarto.
 
 ```bash
-make render    # build into docs/
-make check     # verify chemistry and render a fresh student report
+make check     # numerical chemistry, reaction balances, three fresh report renders
+make render    # package downloads, build docs/, check links/anchors and resources
 make preview   # local Quarto preview
-make clean     # remove generated docs/ and Quarto cache
+make downloads # rebuild the three student ZIPs without rendering
+make clean     # delete generated docs/ and Quarto cache
 ```
 
-Requires Quarto. The carbonate activity and `make check` also need R, ggplot2,
-and rmarkdown. The website reuses a generated SVG; its examples are displayed
-as code without executing student reports during the website build. The teaching
-website uses Quarto; student reports use R Markdown, as in
-`/home/mahogny/github/course/introcomputing`.
+If this restricted environment cannot write Quarto's default cache:
 
-Rendered HTML in `docs/` follows the source course's tracked-output convention.
+```bash
+XDG_CACHE_HOME=/tmp/envchem-quarto-cache make render
+```
+
+The website uses pre-generated figures and displays R examples without executing
+student reports during the site build. `make check` regenerates the scientific
+figures from their stated models; run it when changing those models. ZIPs use
+explicit student-input lists, so instructor notes and planning files cannot be
+included accidentally. `make render` checks that published downloads match sources.
+
+## Source and hosting conventions
+
+The scaffold is adapted from `/home/mahogny/github/course/quantbio-3MB00A`:
+Quarto, `docs/` output, searchable docked sidebar, Cosmo HTML styling, the copied
+reveal.js theme, and topic folders with `lec.qmd` and `exercise.qmd`.
+General sidebar rules are retained; week-position styling is removed.
+Advanced Quantitative Biology lessons, demos, dependencies, and Git metadata
+were not copied. The default build does not stage or commit.
+
+GitHub Pages serves `main` → `/docs` at
+<https://henriksson-lab.github.io/course_envchem/>. Rendered output is tracked.
+Planning Markdown, instructor material, tools, and authoring templates are
+excluded from the student build. Classroom and browser layout review remain
+open; this draft is not a claim of an approved final course syllabus.
