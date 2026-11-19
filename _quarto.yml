@@ -60,6 +60,8 @@ website:
                 href: environmental-systems/notes.qmd
               - text: "Exercise"
                 href: environmental-systems/exercise.qmd
+              - text: "Demo: lake approaching steady state"
+                href: environmental-systems/exercise.qmd#explore
           - section: "Reactions in the atmosphere"
             contents:
               - text: "Lecture (slides)"
@@ -68,6 +70,8 @@ website:
                 href: atmospheric-reactions/notes.qmd
               - text: "Exercise"
                 href: atmospheric-reactions/exercise.qmd
+              - text: "Demo: OH and lifetime"
+                href: atmospheric-reactions/exercise.qmd#explore
           - section: "Atmospheric deposition and acidity"
             contents:
               - text: "Lecture (slides)"
@@ -86,6 +90,8 @@ website:
                 href: climate-chemistry/notes.qmd
               - text: "Exercise"
                 href: climate-chemistry/exercise.qmd
+              - text: "Demo: how long a pulse stays in the air"
+                href: climate-chemistry/exercise.qmd#explore
       - section: "Week 2: Aquatic composition and carbonate chemistry"
         contents:
           - section: "Aquatic composition and equilibrium"
@@ -96,6 +102,8 @@ website:
                 href: aquatic-equilibria/notes.qmd
               - text: "Exercise"
                 href: aquatic-equilibria/exercise.qmd
+              - text: "Demo: charge balance and activity"
+                href: aquatic-equilibria/exercise.qmd#explore
               - text: "Activity data dictionary"
                 href: aquatic-equilibria/data-dictionary.qmd
           - section: "Carbonate and gas chemistry"
@@ -110,6 +118,8 @@ website:
                 href: carbonate-gases/exercise.qmd
               - text: "Demo: carbonate response to acid"
                 href: carbonate-gases/exercise.qmd#explore
+              - text: "Demo: degassing and calcite saturation"
+                href: carbonate-gases/exercise.qmd#explore-gases
               - text: "Model reference"
                 href: carbonate-gases/reference.qmd
           - section: "Organic matter in water"
@@ -120,6 +130,8 @@ website:
                 href: aquatic-organic-matter/notes.qmd
               - text: "Exercise"
                 href: aquatic-organic-matter/exercise.qmd
+              - text: "Demo: oxygen demand"
+                href: aquatic-organic-matter/exercise.qmd#explore
       - section: "Week 3: Metals, surfaces, redox, and treatment"
         contents:
           - section: "Metal speciation and mobility"
@@ -140,6 +152,8 @@ website:
                 href: surfaces/notes.qmd
               - text: "Exercise"
                 href: surfaces/exercise.qmd
+              - text: "Demo: sorption in a bottle"
+                href: surfaces/exercise.qmd#explore
           - section: "Redox and environmental cycles"
             contents:
               - text: "Lecture (slides)"
@@ -148,6 +162,8 @@ website:
                 href: redox-cycles/notes.qmd
               - text: "Exercise"
                 href: redox-cycles/exercise.qmd
+              - text: "Demo: the redox ladder"
+                href: redox-cycles/exercise.qmd#explore
           - section: "Water pollution and treatment chemistry"
             contents:
               - text: "Lecture (slides)"
@@ -156,6 +172,8 @@ website:
                 href: water-treatment/notes.qmd
               - text: "Exercise"
                 href: water-treatment/exercise.qmd
+              - text: "Demo: treatment stages"
+                href: water-treatment/exercise.qmd#explore
       - section: "Week 4: Soils, waste, and contaminants"
         contents:
           - section: "Soil chemistry and retention"
@@ -166,6 +184,8 @@ website:
                 href: soil-chemistry/notes.qmd
               - text: "Exercise"
                 href: soil-chemistry/exercise.qmd
+              - text: "Demo: soil acid reserves"
+                href: soil-chemistry/exercise.qmd#explore
           - section: "Waste materials and leachate chemistry"
             contents:
               - text: "Lecture (slides)"
@@ -174,6 +194,8 @@ website:
                 href: waste-leachate/notes.qmd
               - text: "Exercise"
                 href: waste-leachate/exercise.qmd
+              - text: "Demo: acid potential versus neutralisation"
+                href: waste-leachate/exercise.qmd#explore
           - section: "Organic contaminants and environmental fate"
             contents:
               - text: "Lecture (slides)"

@@ -330,6 +330,23 @@ This is exercise 4 and it closes the story. A rise in ground-level ozone is a lo
 These are the errors that appear most often for this topic. Go through them and ask students to give the correct statement in their own words. The first one is the theme of the whole lecture. The second and third concern the meaning of photolysis and of the third body. The fourth is about what an overall equation does and does not tell you; this matters for every mechanism in the course. The fifth is the tropospheric ozone point. The sixth is a units and definitions issue: lifetime and half-life differ by a factor of about 0.69. The last one explains why chlorine does not destroy all ozone.
 :::
 
+## Explore: OH and the lifetime of a gas {#explore}
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="lifetime" role="group" aria-label="OH-controlled lifetime of a gas">
+<p>Worked example: k = 1.0 × 10⁻¹², OH = 1.0 × 10⁶ molecules/cm³, lifetime 11.6 days, half-life 8.0 days.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/lifetime.js"></script>
+```
+
+[Change OH, the rate constant and an extra sink, and see how far the gas can travel.](exercise.qmd#explore)
+
+::: notes
+Start with the worked example and confirm the numbers from the "OH sets the pace" slide: k-prime one times ten to the minus six per second, lifetime 11.6 days, half-life 8.0 days. Ask students to predict before each click. Twice as much OH halves the lifetime, because only the product k times OH matters. Making the reaction a hundred times slower gives about three years, long enough to mix between the hemispheres, like the long-lived gases on the transport slide. Adding deposition shows that parallel sinks add their rate constants, so the lifetime becomes shorter than either sink alone would give. The exercise page has the model conditions and a hand check.
+:::
+
 ## Summary {.smaller}
 
 :::: {.columns}

@@ -51,3 +51,49 @@ Consider remaining reactive inventories, access, rate, and stability.
 ::: {.callout-note collapse="true" title="Worked solution"}
 Check remaining sulfide and neutralising minerals, oxygen/water access, weathering rates, pH/redox changes, flow, dissolved/solid inventories, and relevant-duration leach observations. One initial pH does not establish long-term stability.
 :::
+
+## Explore: acid potential versus neutralisation {#explore}
+
+Predict what happens to a heap that drains at neutral pH today if the same
+calcite can neutralise only one equivalent per mole instead of two. Does the
+acid potential change, or only how long the drainage stays neutral? Change one
+input at a time.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="acidbase" role="group" aria-label="Acid potential versus neutralisation in mine waste">
+<p>Reference case: one tonne of waste with 1 % pyrite has an acid potential of 333 eq H⁺. With 7.5 kg reachable CaCO₃ at the CO₂* endpoint (150 eq) and an oxidation rate of 0.02 per year, the calcite is used up after about 30 years and 183 eq of acid remain to drain out.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/acidbase.js"></script>
+```
+
+**E1.** Choose **Worked example**. Check the acid potential, the CaCO₃ needed
+and the year the calcite runs out by hand. Then double the oxidation rate.
+Which numbers change, and which stay fixed?
+
+**E2.** Compare **Near-neutral endpoint** and **Half the calcite coated**. Why
+do they give the same curves although the reasons are chemically different?
+
+**E3.** Choose **Calcite-rich heap**, then lower the reachable share of calcite
+until the drainage eventually turns acidic. Explain why a neutral leachate
+alone could not tell this heap apart from the worked example.
+
+### Model conditions and hand check
+
+The constructed case is one tonne of waste with 1.0 % FeS₂ by mass:
+`10 000 g / 120 g/mol = 83.3 mol FeS₂`. At 4 H⁺ per FeS₂ the acid potential is
+**333 eq/t**, with 167 mol sulfate. Neutralising it needs 333 / 2 = 167 mol
+CaCO₃ = **16.7 kg/t** at the CO₂\* endpoint, or 33.3 kg/t at the near-neutral
+endpoint. The waste holds 7.5 kg/t CaCO₃ = 75 mol, worth **150 eq/t** at the
+CO₂\* endpoint. Cumulative acid generated is `333 × (1 − e^(−0.02 t))`; it
+reaches 150 eq when `t = −ln(1 − 150/333) / 0.02 ≈ 30 years`. After all pyrite
+has reacted, **333 − 150 = 183 eq/t** of acid remain.
+
+Assumptions: pyrite oxidises completely to sulfate and Fe(OH)₃ (4 H⁺ per
+FeS₂), at a first-order rate chosen for illustration only. Calcite is the only
+neutraliser, and the reachable part reacts as fast as acid forms until it is
+used up; the rest never reacts. Each mole of CaCO₃ neutralises 2 eq (CO₂\*
+endpoint) or 1 eq (near-neutral, HCO₃⁻ stays in solution). Rates of calcite
+dissolution, oxygen supply, flow paths, other minerals and dilution are
+omitted. The curves are amounts per tonne, not concentrations or pH.

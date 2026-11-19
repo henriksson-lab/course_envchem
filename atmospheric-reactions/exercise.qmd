@@ -51,3 +51,47 @@ A measurement is local; production and transport both matter.
 ::: {.callout-note collapse="true" title="Worked solution"}
 No. Surface ozone depends on precursor chemistry, sunlight, deposition, mixing, and transported ozone. Altitude-resolved measurements, precursor observations, and meteorological information are needed. The molecular formula alone does not identify origin.
 :::
+
+## Explore: OH and the lifetime of a gas {#explore}
+
+Predict what happens to the lifetime of gas X if the OH concentration doubles.
+Then predict how far X can travel if its reaction with OH is 100 times slower.
+Change one input at a time and keep apart the rate constant, the lifetime, and
+the half-life.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="lifetime" role="group" aria-label="OH-controlled lifetime of a gas">
+<p>Reference case: k = 1.0 × 10⁻¹² cm³ molecule⁻¹ s⁻¹ and OH = 1.0 × 10⁶ molecules/cm³ give k′ = 1.0 × 10⁻⁶ s⁻¹, a lifetime of 1.0 × 10⁶ s (11.6 days) and a half-life of 8.0 days.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/lifetime.js"></script>
+```
+
+**E1.** Choose **Worked example**, then **Twice as much OH**. By what factor did
+k′, the lifetime and the half-life change? Check the new lifetime by hand.
+
+**E2.** Choose **Slow reaction**. Compare the lifetime with the transport times
+on the lecture slide. Why can a gas like this spread over the whole globe while
+the worked-example gas stays a regional problem?
+
+**E3.** Choose **Add deposition 0.1 per day**. Why is the new lifetime shorter
+than both 11.6 days and 10 days? Explain why the two loss rate constants are
+added, not the two lifetimes.
+
+### Model conditions and hand check
+
+For the worked example, k′ = k × [OH] = (1.0 × 10⁻¹²)(1.0 × 10⁶) =
+**1.0 × 10⁻⁶ s⁻¹**. The lifetime is 1/k′ = 1.0 × 10⁶ s, and dividing by
+86400 s/day gives **11.6 days**. The half-life is 0.693 × 11.6 = **8.0 days**.
+With twice as much OH, k′ = 2.0 × 10⁻⁶ s⁻¹ and the lifetime is **5.8 days**.
+With deposition added, the loss rate constants add:
+0.0864 + 0.100 = 0.186 per day, so the lifetime is 1/0.186 = **5.4 days**.
+
+OH is held at one constant value, taken as an average over day and night. The
+gas sits in one air parcel with no new emissions, so the amount left falls as
+e^(−t/τ). The other loss is a simple first-order process, such as deposition,
+given per day. The transport classes use the approximate times from the lecture:
+about a day to mix the lowest air layer, a few weeks to circle a hemisphere, and
+about a year to mix between hemispheres. Real OH varies with sunlight, season
+and place, and k depends on temperature.

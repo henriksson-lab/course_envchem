@@ -51,3 +51,42 @@ Match particle size and chemical form to mechanism.
 ::: {.callout-note collapse="true" title="Worked solution"}
 Filtration can capture some particles depending on the medium and size, but dissolved nitrate and a molecular organic solute generally require other suitable mechanisms. Consider nitrate transformation/separation and contaminant-specific sorption or destruction, then account for residuals and products. No operating prescription follows from this generic example.
 :::
+
+## Explore: where the phosphorus goes {#explore}
+
+Predict how much of 100 mg phosphorus reaches the effluent if three stages
+transfer 30 %, 40 % and 90 % of what enters each one. Is it 100 − 160 %? Then
+change one stage at a time and watch where the removed phosphorus ends up.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="treatment" role="group" aria-label="Sequential treatment stages and the phosphorus mass balance">
+<p>Reference case: 100 mg phosphorus through stages transferring 30 %, 40 % and 90 % of what enters each leaves 4.2 mg (4.2 %) in the effluent; 30.0 + 28.0 + 37.8 = 95.8 mg is in sludge.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/treatment.js"></script>
+```
+
+**E1.** Choose **Phosphorus plant**. Check the three sludge amounts and the
+effluent by hand, then show that the four parts add up to 100 mg. Why is the
+"added percentages" value impossible?
+
+**E2.** Choose **Exercise 1** and compare with your answer to exercise 1. Then
+set stage 3 to 50 %. Does a third stage of 50 % halve the overall removal, or
+the amount left in the water?
+
+**E3.** In the phosphorus plant, which single stage would you improve by 5
+percentage points to lower the effluent most? Try each one. Then explain why the
+sludge total rises by exactly the amount the effluent falls.
+
+### Model conditions and hand check
+
+Each stage transfers a fixed fraction of the mass that **enters it** to sludge;
+there is no gas or chemical-product stream, which suits phosphorus and metals but
+not nitrogen. The stage percentages are round constructed numbers, not data from
+a real plant. For the reference case, the fraction left is
+0.70 × 0.60 × 0.10 = 0.042, so **4.2 mg** of 100 mg reaches the effluent and
+**95.8 %** is transferred: 30.0 mg, 0.40 × 70.0 = 28.0 mg and
+0.90 × 42.0 = 37.8 mg to sludge. The notes' worked example (10.0 mg, 60.0 %
+then 50.0 %) gives 2.00 mg in the effluent and 80.0 % overall. Nothing is
+destroyed: the sludge still has to be managed.

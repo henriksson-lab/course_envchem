@@ -317,6 +317,23 @@ This is exercise 4. The pattern of a falling filtered concentration and a steady
 Go through the list and ask students for a counterexample from today for each. The first is the central idea of the lecture. The second reminds them that filtration is a method, not a definition of chemistry. The third and fourth are the most common calculation errors in the exercises. The fifth points to the next lecture. When iron oxides are reduced in sediments without oxygen, the solid dissolves and everything sorbed on it is released, even though no pH change or competition occurred. That is how the Baltic Sea's sediments release phosphate, and it is our next topic. The last mistake explains why phosphate binds so firmly to iron oxides.
 :::
 
+## Explore: the two-phase bottle {#explore}
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="sorption" role="group" aria-label="Water–solid distribution in a closed bottle">
+<p>Worked example: 1.00 mg, 1.00 L water, 0.0100 kg solid, K<sub>d</sub> = 100 L/kg gives 0.500 mg/L.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/sorption.js"></script>
+```
+
+[Double the solid, or let a pH change lower K~d~: where does the solute go?](exercise.qmd#explore)
+
+::: notes
+Start with the worked example and confirm the numbers from the "one bottle, three cases" slide. Before pressing Double the solid, ask the class to predict the new water concentration; many will say a quarter of a milligram per litre. The curve shows why it is a third: the water volume stays in the denominator. Then press the pH-change preset and point out that the solid gives solute back to the water although nothing was added. Drag the solid slider to zero to show that without a surface everything stays dissolved. Remind students that the model is linear and has no capacity limit. The exercise page has the hand check and the model conditions.
+:::
+
 ## Summary {.smaller}
 
 :::: {.columns}

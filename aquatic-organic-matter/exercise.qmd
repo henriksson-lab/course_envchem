@@ -51,3 +51,43 @@ Carbon quantity and optical properties are different observables.
 ::: {.callout-note collapse="true" title="Worked solution"}
 Changes in molecular composition, chromophoric groups, particle content, or iron-associated colour could alter absorption per unit carbon. Compare spectra/absorbance, DOC, filtration, iron, and pH. Do not infer a unique source, degradation rate, or toxicity from colour alone.
 :::
+
+## Explore: oxygen demand in a sealed bottle {#explore}
+
+Predict how much of the ultimate oxygen demand of 4.00 mg C/L is used in a
+5-day test, and whether 9.00 mg/L of oxygen is enough to oxidise all of it.
+Change one input at a time.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="oxygen" role="group" aria-label="Oxygen demand of organic carbon in a sealed bottle">
+<p>Reference case: 4.00 mg C/L has an ultimate demand of 10.67 mg O₂/L. With a rate of 0.10 per day, 4.20 mg O₂/L (39%) is used in 5 days, and a bottle starting at 9.00 mg/L runs out of oxygen on day 18.6.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/oxygen.js"></script>
+```
+
+**E1.** Choose **Exercise 2: sealed litre**. Check the ultimate demand and the
+oxygen left after complete oxidation against your answer to exercise 2.
+
+**E2.** Choose **Exercise 3: 5-day test**, then **Slow humic carbon**. The carbon
+amount and ultimate demand are the same. Why does the 5-day result differ so
+much, and what does that mean for a brown lake?
+
+**E3.** Reset, then move the measurement day until about 25% of the demand is used.
+Compare the oxygen used with your answer to exercise 3. Then move to day 40:
+why does the oxygen used stop at 9.00 mg/L instead of reaching 10.67?
+
+### Model conditions and hand check
+
+Ultimate demand = carbon × 32.0/12.0. For 3.00 mg C/L this gives **8.00 mg O₂/L**;
+for 2.00 mg C/L, **5.33 mg O₂/L**, leaving 9.00 − 5.33 = **3.67 mg/L**; for
+4.00 mg C/L, **10.67 mg O₂/L**. With a first-order rate of 0.10 per day, the
+oxygen used by day $t$ is $10.67\,(1-e^{-0.10t})$, which is 4.20 mg/L on day 5
+and reaches 25% (2.67 mg/L) after about 2.9 days.
+
+The organic matter is represented by CH₂O, so 1 mol C uses 1 mol O₂. The rate
+constant is a constructed round value, not a measured property of any water.
+The bottle is sealed and dark: no reaeration, no photosynthesis and no other
+oxygen users such as nitrification. When the oxygen is used up the aerobic
+model stops; reactions with other electron acceptors are not modelled.

@@ -104,3 +104,48 @@ constructed sample identities, not replicate experiments.
 :::
 
 ![Constructed ion concentrations after the documented correction; A and C coincide.](water-ions.svg)
+
+## Explore: charge balance and ionic strength {#explore}
+
+Predict what the charge balance shows if the sulfate entry is ten times too
+small, as in sample C. Then predict what adding sodium chloride does to the
+balance and to the activity of calcium. Change one input at a time.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="ionbalance" role="group" aria-label="Charge balance, ionic strength and activity of a water analysis">
+<p>Reference case: the worked ion table has 2.000 meq/L of cation charge and 2.000 meq/L of anion charge (0% imbalance), an ionic strength of 2.95 mmol/L, and activity coefficients of about 0.94 for single-charged and 0.79 for double-charged ions.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/ionbalance.js"></script>
+```
+
+**E1.** Choose **Worked example**, then **Sample C: sulfate error**. Check the
+anion total and the +9.89% imbalance by hand. Which other single change to the
+table could produce the same imbalance, and why can the balance alone not tell
+you which entry is wrong?
+
+**E2.** Reset, then raise the Ca²⁺ entry by 0.10 mmol/L. How much do the
+cation charge and the ionic strength change? Explain the factors 2 and 4 that
+appear.
+
+**E3.** Choose **Salty river** and then **Brackish**. Why does the charge
+balance stay at zero while the activity coefficients fall? For which ions is
+γ ≈ 1 first a poor approximation?
+
+### Model conditions and hand check
+
+The worked table (mmol/L) is Ca²⁺ 0.500, Mg²⁺ 0.250, Na⁺ 0.500, HCO₃⁻ 1.200,
+Cl⁻ 0.400 and SO₄²⁻ 0.200. Cations: 2(0.500) + 2(0.250) + 0.500 =
+**2.000 meq/L**; anions: 1.200 + 0.400 + 2(0.200) = **2.000 meq/L**. With
+sample C's sulfate, 1.9212 mg/L ÷ 96.06 mg/mmol = 0.0200 mmol/L, anions are
+1.640 meq/L and the imbalance is (2.000 − 1.640)/3.640 × 100 = **+9.89%**.
+The ionic strength of the worked table is
+½(0.5 × 4 + 0.25 × 4 + 0.5 + 1.2 + 0.4 + 0.2 × 4) = **2.95 mmol/L**.
+
+Only the Ca²⁺ and SO₄²⁻ entries and the added NaCl can be changed; the other
+entries stay at the worked values. Added NaCl brings equal amounts of Na⁺ and
+Cl⁻. H⁺, OH⁻ and minor ions are left out, and every ion is treated as free (no
+complexes). Activity coefficients are estimated with the Davies equation at
+25 °C, the same estimate as the lecture figure; it is not reliable much above
+an ionic strength of about 0.5 mol/L, so seawater is outside this model.

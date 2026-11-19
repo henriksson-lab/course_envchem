@@ -264,6 +264,23 @@ This is exercise 4. The general lesson is that a closed balance needs several ki
 These are the errors that appear most often in exercises and in real environmental reports. Ask students to explain in their own words why each statement is wrong. The first is the central lesson of the lecture. The second is an arithmetic error that only works when the volumes are equal. The third and fourth concern the meaning of words: steady state and residence time sound like they describe processes stopping or molecules waiting, but they describe balances. The fifth is about boundaries. The last is about units, and it causes real confusion when comparing data sets from different countries or laboratories.
 :::
 
+## Explore: a lake approaching steady state {#explore}
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="boxmodel" role="group" aria-label="Well-mixed lake approaching steady state">
+<p>The constructed lake: V/Q = 100 days; 1.0 kg/day gives a steady 100 kg (0.10 mg/L).</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/boxmodel.js"></script>
+```
+
+[Change the input, the flow and the reaction, and watch the lake's balance respond.](exercise.qmd#explore)
+
+::: notes
+Start with the worked example from the steady-state slide and read the balance table: at steady state input and outflow are both 1 kilogram per day and the change is zero. Ask students to predict before each click. Double the input: the steady level doubles, the time constant does not change. Double the flow instead: the steady level halves and the lake gets there twice as fast. Raise the volume: the steady concentration stays at input over flow, only the approach is slower. Then use the two flushing presets to connect to the flushing slide: about 37 percent left after one time constant, and the reaction adds to the flushing loss. The exercise page has the hand check and the model assumptions.
+:::
+
 ## Summary {.smaller}
 
 :::: {.columns}

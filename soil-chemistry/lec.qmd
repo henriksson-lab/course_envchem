@@ -349,6 +349,23 @@ This answers exercise 4 and closes the opening puzzle. Before predicting how a s
 Run through these as a quick self-test and ask students to explain each in their own words. The second is the most common calculation error in this unit, so ask for an example: 2.0 cmol of charge from aluminium corresponds to about 0.67 cmol of aluminium ions. The fourth is subtle. Exchange neutralises the water passing through, but the acidity has not disappeared. It now sits on the exchanger as hydrogen and aluminium ions, and the base cations have gone downstream with sulfate. The last one is the policy lesson from Hubbard Brook and from Swedish forest soils: a soil's apparent resistance can hide a declining reserve that recovers only slowly.
 :::
 
+## Explore: same pH, different reserves {#explore}
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="soilbuffer" role="group" aria-label="Soil acid-neutralising reserves: carbonate, exchangeable base cations and aluminium">
+<p>Soil B holds 14.2 cmolc/kg of exchangeable base cations, Soil A only 1.7. After 5.0 cmolc/kg of acid, Soil B still has 9.2 left; Soil A is buffering with aluminium.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/soilbuffer.js"></script>
+```
+
+[Compare the two soils and add carbonate.](exercise.qmd#explore)
+
+::: notes
+This is the inventory-depletion figure made interactive, using the two soils from the base saturation slide. Start with Soil B, then switch to Soil A at the same acid input: similar pH, but Soil A has already run out and aluminium is doing the buffering. Ask students to predict where the bases run out before pressing the preset. Then use the limed preset: each mole of CaCO3 adds two equivalents, and carbonate is spent first. Finally, raise CEC with fixed base cations to separate capacity from base saturation. Weathering, uptake and rates are left out, as in the figure. The exercise page has the model assumptions and a hand check.
+:::
+
 ## Summary {.smaller}
 
 :::: {.columns}

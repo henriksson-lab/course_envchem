@@ -182,6 +182,19 @@
     ]
   },
   {
+    "objectID": "water-treatment/exercise.html#explore",
+    "href": "water-treatment/exercise.html#explore",
+    "title": "Water pollution and treatment chemistry exercises",
+    "section": "Explore: where the phosphorus goes",
+    "text": "Explore: where the phosphorus goes\nPredict how much of 100 mg phosphorus reaches the effluent if three stages transfer 30 %, 40 % and 90 % of what enters each one. Is it 100 − 160 %? Then change one stage at a time and watch where the removed phosphorus ends up.\n\n\nReference case: 100 mg phosphorus through stages transferring 30 %, 40 % and 90 % of what enters each leaves 4.2 mg (4.2 %) in the effluent; 30.0 + 28.0 + 37.8 = 95.8 mg is in sludge.\n\n\n\nE1. Choose Phosphorus plant. Check the three sludge amounts and the effluent by hand, then show that the four parts add up to 100 mg. Why is the “added percentages” value impossible?\nE2. Choose Exercise 1 and compare with your answer to exercise 1. Then set stage 3 to 50 %. Does a third stage of 50 % halve the overall removal, or the amount left in the water?\nE3. In the phosphorus plant, which single stage would you improve by 5 percentage points to lower the effluent most? Try each one. Then explain why the sludge total rises by exactly the amount the effluent falls.\n\nModel conditions and hand check\nEach stage transfers a fixed fraction of the mass that enters it to sludge; there is no gas or chemical-product stream, which suits phosphorus and metals but not nitrogen. The stage percentages are round constructed numbers, not data from a real plant. For the reference case, the fraction left is 0.70 × 0.60 × 0.10 = 0.042, so 4.2 mg of 100 mg reaches the effluent and 95.8 % is transferred: 30.0 mg, 0.40 × 70.0 = 28.0 mg and 0.90 × 42.0 = 37.8 mg to sludge. The notes’ worked example (10.0 mg, 60.0 % then 50.0 %) gives 2.00 mg in the effluent and 80.0 % overall. Nothing is destroyed: the sludge still has to be managed.",
+    "crumbs": [
+      "Home",
+      "Week 3: Metals, surfaces, redox, and treatment",
+      "Water pollution and treatment chemistry",
+      "Exercise"
+    ]
+  },
+  {
     "objectID": "waste-leachate/lec.html#about-this-lecture",
     "href": "waste-leachate/lec.html#about-this-lecture",
     "title": "Waste materials and leachate chemistry",
@@ -442,6 +455,19 @@
     ]
   },
   {
+    "objectID": "waste-leachate/lec.html#explore",
+    "href": "waste-leachate/lec.html#explore",
+    "title": "Waste materials and leachate chemistry",
+    "section": "Explore: acid potential versus neutralisation",
+    "text": "Explore: acid potential versus neutralisation\n\n\nSame pH today, different futures: when does the calcite run out?\n\n\n\nSame pH today, different futures: when does the calcite run out?\n\nStart with the worked example: one tonne, 1 % pyrite, 333 equivalents of acid potential, 150 equivalents of calcite, calcite gone after about 30 years. This is the lag-time figure made adjustable. Then switch to the near-neutral endpoint and to half the calcite coated: both halve the reachable neutralisation and bring the acid drainage forward, for different chemical reasons. Change the oxidation rate and ask students what moves: only the timing, not the totals. Finish with the calcite-rich heap, then lower the reachable share until it fails. The exercise page has the assumptions, a hand check and a static reference for printing.",
+    "crumbs": [
+      "Home",
+      "Week 4: Soils, waste, and contaminants",
+      "Waste materials and leachate chemistry",
+      "Lecture (slides)"
+    ]
+  },
+  {
     "objectID": "waste-leachate/lec.html#summary",
     "href": "waste-leachate/lec.html#summary",
     "title": "Waste materials and leachate chemistry",
@@ -629,6 +655,19 @@
     "title": "Colloids, surfaces, and sorption exercises",
     "section": "4. Removal or transport?",
     "text": "4. Removal or transport?\nA filtered sample loses metal while the unfiltered downstream sample does not. How could particles explain this observation?\n\n\n\n\n\n\nHint\n\n\n\n\n\nCompare operational fractions and whether particles settle or remain mobile.\n\n\n\n\n\n\n\n\n\nWorked solution\n\n\n\n\n\nMetal may bind to particles excluded by filtration while remaining in the moving water-plus-particle system. Measure particle loads, size fractions, flow, and phase inventories. A filtered concentration decrease alone does not establish destruction or permanent retention.",
+    "crumbs": [
+      "Home",
+      "Week 3: Metals, surfaces, redox, and treatment",
+      "Colloids, surfaces, and sorption",
+      "Exercise"
+    ]
+  },
+  {
+    "objectID": "surfaces/exercise.html#explore",
+    "href": "surfaces/exercise.html#explore",
+    "title": "Colloids, surfaces, and sorption exercises",
+    "section": "Explore: the two-phase bottle",
+    "text": "Explore: the two-phase bottle\nPredict what happens to the water concentration if you double the solid while keeping the solute and water fixed. Then predict what a tenfold drop in Kd, for example after a pH change, does to the mass on the solid.\n\n\nReference case: 1.00 mg solute, 1.00 L water, 0.0100 kg solid and Kd = 100 L/kg give 0.500 mg/L in water and 0.500 mg on the solid.\n\n\n\nE1. Choose Worked example, then Double the solid. Check both water concentrations by hand with Cw = MT/(Vw + Kdms). Why is the second one a third, not a quarter?\nE2. Choose pH change: Kd falls to 10. How much solute moved from the solid back into the water? Was any solute added?\nE3. Reset, then find the solid mass at which exactly half the solute is sorbed for Kd = 20 L/kg. Explain your answer using the idea of an “extra volume” Kdms.\n\nModel conditions and hand check\nFor the worked example, Kdms = 100 × 0.0100 = 1.00 L, so Cw = 1.00/(1.00 + 1.00) = 0.500 mg/L. The water holds 0.500 mg, the solid 0.500 mg, and q = 50.0 mg/kg. With 0.0200 kg solid, Cw = 1/3.00 = 0.333 mg/L. With Kd = 10 L/kg, Cw = 1/1.10 = 0.909 mg/L.\nThe bottle is closed and at equilibrium. Sorption is linear (q = KdCw), so there is no capacity limit; a real solid holds at most qmax × ms. Kd is set by hand: the demo does not calculate how pH changes it. There is no degradation, loss to the walls, or competition from other solutes. The comparison curve uses a Kd ten times smaller than the current one.",
     "crumbs": [
       "Home",
       "Week 3: Metals, surfaces, redox, and treatment",
@@ -897,6 +936,19 @@
     ]
   },
   {
+    "objectID": "soil-chemistry/lec.html#explore",
+    "href": "soil-chemistry/lec.html#explore",
+    "title": "Soil chemistry and retention",
+    "section": "Explore: same pH, different reserves",
+    "text": "Explore: same pH, different reserves\n\n\nSoil B holds 14.2 cmolc/kg of exchangeable base cations, Soil A only 1.7. After 5.0 cmolc/kg of acid, Soil B still has 9.2 left; Soil A is buffering with aluminium.\n\n\n\nCompare the two soils and add carbonate.\n\nThis is the inventory-depletion figure made interactive, using the two soils from the base saturation slide. Start with Soil B, then switch to Soil A at the same acid input: similar pH, but Soil A has already run out and aluminium is doing the buffering. Ask students to predict where the bases run out before pressing the preset. Then use the limed preset: each mole of CaCO3 adds two equivalents, and carbonate is spent first. Finally, raise CEC with fixed base cations to separate capacity from base saturation. Weathering, uptake and rates are left out, as in the figure. The exercise page has the model assumptions and a hand check.",
+    "crumbs": [
+      "Home",
+      "Week 4: Soils, waste, and contaminants",
+      "Soil chemistry and retention",
+      "Lecture (slides)"
+    ]
+  },
+  {
     "objectID": "soil-chemistry/lec.html#summary",
     "href": "soil-chemistry/lec.html#summary",
     "title": "Soil chemistry and retention",
@@ -1084,6 +1136,19 @@
     "title": "Redox and environmental cycles exercises",
     "section": "4. An anoxic sediment observation",
     "text": "4. An anoxic sediment observation\nDissolved iron and phosphate rise while oxygen declines above a sediment. Give a coupled explanation and one reason it is not proven by correlation alone.\n\n\n\n\n\n\nHint\n\n\n\n\n\nThe carrier phase can change oxidation state while phosphate retains its own oxidation state.\n\n\n\n\n\n\n\n\n\nWorked solution\n\n\n\n\n\nOrganic-matter oxidation can consume O₂ and support reduction of Fe(III) solids; associated phosphate can be released. Mixing, other mineral changes, and independent sources could also produce patterns. Use Fe(II), solid-phase, porewater, and time/flux observations to test the explanation.",
+    "crumbs": [
+      "Home",
+      "Week 3: Metals, surfaces, redox, and treatment",
+      "Redox and environmental cycles",
+      "Exercise"
+    ]
+  },
+  {
+    "objectID": "redox-cycles/exercise.html#explore",
+    "href": "redox-cycles/exercise.html#explore",
+    "title": "Redox and environmental cycles exercises",
+    "section": "Explore: the electron-acceptor ladder",
+    "text": "Explore: the electron-acceptor ladder\nPredict the order in which oxygen, nitrate, iron(III) oxide and sulfate are used up as organic matter decomposes in a closed bottom water. When does phosphate first appear?\n\n\nReference case: 0.500 mmol C/L decomposed uses up 0.30 mmol/L O₂, 0.080 mmol/L nitrate and 0.20 mmol/L Fe(III) oxide, releasing 0.020 mmol/L phosphate and reducing 0.025 mmol/L sulfate.\n\n\n\nE1. Choose Denitrification worked example. Check the carbon used and the N₂ formed against exercise 2.\nE2. Choose Oxygen still present, then slowly raise the organic matter. At what amount of carbon is phosphate first released? Explain why the phosphate waits for oxygen and nitrate to run out, although phosphorus is never reduced.\nE3. In Baltic bottom water, why does 2.00 mmol/L sulfate last so much longer than 0.20 mmol/L iron oxide? Use both the amounts and the electrons per acceptor. Then choose Low-sulfate lake water: what forms once sulfate is gone?\n\nModel conditions and hand check\nEach CH₂O carbon gives 4 electrons when it is oxidised to CO₂. O₂ takes 4 electrons, nitrate (to N₂) 5, Fe(III) (to Fe²⁺) 1 and sulfate (to HS⁻) 8. So the carbon needed is 1 mol C per mol O₂, 1.25 per mol nitrate, 0.25 per mol Fe(III) and 2 per mol sulfate. In the reference case, oxygen uses 0.300 mmol C/L, nitrate 0.100, and the iron oxide 0.050, a total of 0.450 mmol C/L. The remaining 0.050 mmol C/L reduces 0.025 mmol/L sulfate. For exercise 2, 0.0800 mmol/L nitrate needs 0.100 mmol C/L (1.20 mg C/L) and gives 0.0400 mmol/L N₂.\nThe starting amounts are constructed, per litre of bottom water, with the reactive iron oxide at the sediment surface counted in the same litre. The phosphate held on the oxide is set at 0.1 mol P per mol Fe and is all released as the oxide is reduced; none is sorbed again. Acceptors are used strictly in order. Manganese oxides, biomass growth, intermediates such as nitrite, and FeS formation are left out. Organic matter left after sulfate is gone forms CO₂ and methane (2 CH₂O → CO₂ + CH₄). Real sediments overlap the steps in space and time.",
     "crumbs": [
       "Home",
       "Week 3: Metals, surfaces, redox, and treatment",
@@ -2318,6 +2383,19 @@
     ]
   },
   {
+    "objectID": "environmental-systems/exercise.html#explore",
+    "href": "environmental-systems/exercise.html#explore",
+    "title": "Environmental amounts and balances exercises",
+    "section": "Explore: a lake approaching steady state",
+    "text": "Explore: a lake approaching steady state\nPredict what happens to the steady-state inventory if the solute input doubles, and what happens if the water flow doubles instead. Then change one input at a time and compare the curve, the time constant and the balance table.\n\n\nReference case: V = 1.0 × 10⁶ m³ and Q = 1.0 × 10⁴ m³/day give V/Q = 100 days. An input of 1.0 kg/day gives a steady inventory of 100 kg (0.10 mg/L); after 100 days the lake holds 63 kg.\n\n\n\nE1. Choose Worked example. Read the balance table at steady state. Which fluxes are still running, and why does the inventory not change? Then choose Double the input and check the new steady inventory by hand.\nE2. Reset, then raise the lake volume to 4 million m³ while keeping the flow and input fixed. What happens to the steady concentration, and what happens to the time needed to get there? Explain both with V/Q.\nE3. Choose Flush with clean water, then Flushing plus reaction. How much of the 100 kg is left after one time constant in each case? Explain why seeing only the falling curve cannot tell you how much was flushing and how much was reaction.\n\nModel conditions and hand check\nThe constructed lake has V = 1.0 × 10⁶ m³, Q = 1.0 × 10⁴ m³/day in and out, and an input of 1.0 kg/day of a conservative solute, starting clean. The replacement time is V/Q = 10⁶ / 10⁴ = 100 days. At steady state output equals input, so Q × C = 1.0 kg/day and C = 1.0 / 10⁴ = 1.0 × 10⁻⁴ kg/m³ = 0.10 mg/L, an inventory of 100 kg. Starting from a clean lake, the inventory after one replacement time is 100 × (1 − e⁻¹) = 63 kg.\nWith a first-order reaction the two loss rates add: Q/V + k. For k = 0.010 per day this doubles the total loss rate, halving both the time constant (50 days) and the steady inventory (50 kg). Flushing 100 kg with clean water leaves 100 × e⁻¹ = 37 kg after 100 days by flushing alone, and 100 × e⁻² = 14 kg with the reaction added.\nThe lake is well mixed, so the outlet concentration equals the lake concentration. Volume, flow and input are constant, the inflow carries no other solute than the stated input, and the only reaction is first order. Sorption to sediment, exchange with air and seasonal changes in flow are not included.",
+    "crumbs": [
+      "Home",
+      "Week 1: Environmental balances and atmosphere",
+      "Environmental amounts and balances",
+      "Exercise"
+    ]
+  },
+  {
     "objectID": "deposition/lec.html#about-this-lecture",
     "href": "deposition/lec.html#about-this-lecture",
     "title": "Atmospheric deposition and acidity",
@@ -2773,6 +2851,19 @@
     ]
   },
   {
+    "objectID": "climate-chemistry/exercise.html#explore",
+    "href": "climate-chemistry/exercise.html#explore",
+    "title": "Molecules, radiation, and climate exercises",
+    "section": "Explore: how long a pulse stays in the air",
+    "text": "Explore: how long a pulse stays in the air\nPredict which has more left after 100 years: a CO₂ pulse or a pulse of a gas with one sink and a 12-year lifetime. Then move the time and the lifetime and compare the two curves.\n\n\nReference case: after 100 years about 0.41 of a CO₂ pulse is still in the air, compared with less than 0.001 for a gas with one sink and a 12-year lifetime.\n\n\n\nE1. Choose Lifetime 50, read at 50. Check the rate constant, half-life and fraction left by hand. Compare with exercise 3, which used days instead of years. Why are the numbers the same?\nE2. Choose After 20 years, then Lecture comparison and After 500 years. At which times does the CO₂ pulse have more left than the 12-year gas? Use the table to say which part of the CO₂ pulse is responsible.\nE3. Raise the one-sink lifetime until its curve is close to the CO₂ curve at 20 years. Then look at 500 years. Explain why no single lifetime can match the CO₂ curve at all times.\n\nModel conditions and hand check\nFor one first-order sink, fraction left = e^(−t/τ), k = 1/τ and half-life = 0.693 τ. With τ = 50 years and t = 50 years: k = 0.0200 per year, half-life 34.7 years, fraction left e⁻¹ = 0.368. The fraction depends only on t/τ, so exercise 3’s 50 days and 50 days give the same numbers.\nThe CO₂ curve is the impulse-response fit of Joos et al. (2013), used in the IPCC Fifth Assessment Report: 0.217 + 0.224 e^(−t/394.4) + 0.282 e^(−t/36.54) + 0.276 e^(−t/4.304), with t in years. It gives about 0.60 left after 20 years, 0.41 after 100 years and 0.28 after 500 years. The 12-year gas has e^(−100/12) = 0.0002 left after 100 years.\nThe fit describes one small pulse added to present-day air, as simulated by carbon-cycle models. Its four parts are fitted terms, not separate measured reservoirs, and the constant part is only constant over the centuries the fit covers; weathering and carbonate reactions remove it over many thousands of years. The one-sink gas is constructed for comparison: no transport, no change in sink strength and no chemical side effects.",
+    "crumbs": [
+      "Home",
+      "Week 1: Environmental balances and atmosphere",
+      "Molecules, radiation, and climate",
+      "Exercise"
+    ]
+  },
+  {
     "objectID": "carbonate-gases/notes.html",
     "href": "carbonate-gases/notes.html",
     "title": "Carbonate and gas chemistry",
@@ -3098,6 +3189,19 @@
     ]
   },
   {
+    "objectID": "carbonate-gases/gases-lec.html#explore-gases",
+    "href": "carbonate-gases/gases-lec.html#explore-gases",
+    "title": "Carbon dioxide exchange and carbonate minerals",
+    "section": "Explore: degassing and calcite saturation",
+    "text": "Explore: degassing and calcite saturation\n\n\nGroundwater from soil air (0.010 atm) degasses to the air: pH rises from 7.26 to 8.65 and Ω from about 1 to about 23.\n\n\n\nFollow groundwater from soil air to the open air at fixed alkalinity.\n\nStart with the groundwater preset, which reproduces the “groundwater meets the air” model slide: saturated with calcite under soil air. Then press the degassed preset and ask students what changed. CO2-star falls by a factor of 25, total carbon falls, alkalinity and calcium stay fixed, and pH and Omega rise. Then try the exercise 3 preset to check the Henry calculation, and the rain preset to recover pH 5.6. Ask what would happen to Omega in a soft granite water with low alkalinity and calcium. The exercise page has the assumptions and a hand check.",
+    "crumbs": [
+      "Home",
+      "Week 2: Aquatic composition and carbonate chemistry",
+      "Carbonate and gas chemistry",
+      "Lecture (slides): gases and minerals"
+    ]
+  },
+  {
     "objectID": "carbonate-gases/gases-lec.html#summary",
     "href": "carbonate-gases/gases-lec.html#summary",
     "title": "Carbon dioxide exchange and carbonate minerals",
@@ -3285,6 +3389,19 @@
     "title": "Reactions in the atmosphere exercises",
     "section": "4. Location and evidence",
     "text": "4. Location and evidence\nAn ozone measurement rises at a surface station. Can you infer increased stratospheric ozone or identify a single emission source? Explain what else is needed.\n\n\n\n\n\n\nHint\n\n\n\n\n\nA measurement is local; production and transport both matter.\n\n\n\n\n\n\n\n\n\nWorked solution\n\n\n\n\n\nNo. Surface ozone depends on precursor chemistry, sunlight, deposition, mixing, and transported ozone. Altitude-resolved measurements, precursor observations, and meteorological information are needed. The molecular formula alone does not identify origin.",
+    "crumbs": [
+      "Home",
+      "Week 1: Environmental balances and atmosphere",
+      "Reactions in the atmosphere",
+      "Exercise"
+    ]
+  },
+  {
+    "objectID": "atmospheric-reactions/exercise.html#explore",
+    "href": "atmospheric-reactions/exercise.html#explore",
+    "title": "Reactions in the atmosphere exercises",
+    "section": "Explore: OH and the lifetime of a gas",
+    "text": "Explore: OH and the lifetime of a gas\nPredict what happens to the lifetime of gas X if the OH concentration doubles. Then predict how far X can travel if its reaction with OH is 100 times slower. Change one input at a time and keep apart the rate constant, the lifetime, and the half-life.\n\n\nReference case: k = 1.0 × 10⁻¹² cm³ molecule⁻¹ s⁻¹ and OH = 1.0 × 10⁶ molecules/cm³ give k′ = 1.0 × 10⁻⁶ s⁻¹, a lifetime of 1.0 × 10⁶ s (11.6 days) and a half-life of 8.0 days.\n\n\n\nE1. Choose Worked example, then Twice as much OH. By what factor did k′, the lifetime and the half-life change? Check the new lifetime by hand.\nE2. Choose Slow reaction. Compare the lifetime with the transport times on the lecture slide. Why can a gas like this spread over the whole globe while the worked-example gas stays a regional problem?\nE3. Choose Add deposition 0.1 per day. Why is the new lifetime shorter than both 11.6 days and 10 days? Explain why the two loss rate constants are added, not the two lifetimes.\n\nModel conditions and hand check\nFor the worked example, k′ = k × [OH] = (1.0 × 10⁻¹²)(1.0 × 10⁶) = 1.0 × 10⁻⁶ s⁻¹. The lifetime is 1/k′ = 1.0 × 10⁶ s, and dividing by 86400 s/day gives 11.6 days. The half-life is 0.693 × 11.6 = 8.0 days. With twice as much OH, k′ = 2.0 × 10⁻⁶ s⁻¹ and the lifetime is 5.8 days. With deposition added, the loss rate constants add: 0.0864 + 0.100 = 0.186 per day, so the lifetime is 1/0.186 = 5.4 days.\nOH is held at one constant value, taken as an average over day and night. The gas sits in one air parcel with no new emissions, so the amount left falls as e^(−t/τ). The other loss is a simple first-order process, such as deposition, given per day. The transport classes use the approximate times from the lecture: about a day to mix the lowest air layer, a few weeks to circle a hemisphere, and about a year to mix between hemispheres. Real OH varies with sunlight, season and place, and k depends on temperature.",
     "crumbs": [
       "Home",
       "Week 1: Environmental balances and atmosphere",
@@ -3527,6 +3644,19 @@
     ]
   },
   {
+    "objectID": "aquatic-organic-matter/lec.html#explore",
+    "href": "aquatic-organic-matter/lec.html#explore",
+    "title": "Organic matter in water",
+    "section": "Explore: oxygen demand in a sealed bottle",
+    "text": "Explore: oxygen demand in a sealed bottle\n\n\n4.00 mg C/L has an ultimate demand of 10.67 mg O₂/L; at 0.10 per day, 4.20 mg O₂/L is used in 5 days.\n\n\n\nCompare the ultimate demand with what a 5-day test sees.\n\nStart with the exercise 3 preset: the curve is the constructed first-order decay from the “ultimate demand versus what you measure” slide. Point out that this pool needs more oxygen than a sealed bottle at 9 mg/L holds, so the oxygen runs out on day 18.6. Then compare the slow humic preset: same carbon, same ultimate demand, but a 5-day test sees almost nothing. Use the exercise 2 and worked example presets to check the stoichiometry. Ask students what a real lake has that the bottle lacks: reaeration and photosynthesis. The exercise page has the assumptions and a hand check.",
+    "crumbs": [
+      "Home",
+      "Week 2: Aquatic composition and carbonate chemistry",
+      "Organic matter in water",
+      "Lecture (slides)"
+    ]
+  },
+  {
     "objectID": "aquatic-organic-matter/lec.html#summary",
     "href": "aquatic-organic-matter/lec.html#summary",
     "title": "Organic matter in water",
@@ -3740,6 +3870,19 @@
     "title": "Aquatic composition and equilibrium exercises",
     "section": "Activity A: water table in R",
     "text": "Activity A: water table in R\nDownload these files into one project folder:\n\nwater-ions.csv, the constructed original table.\ncorrections.csv, the evidence for one correction.\nwater-analysis.R, the supplied calculation.\nwater-report.Rmd, the report template.\nData dictionary, which defines the quantities.\n\nBefore running R, calculate the calcium contribution for sample A by hand. 20.04 mg/L divided by 40.08 mg/mmol gives 0.500 mmol/L; its divalent charge contributes 1.00 meq/L. Predict whether sample C balances if its sulfate value is only one tenth of sample A’s while its other entries match A.\nRead the script in the editor. Then run from the activity folder:\nsource(\"water-analysis.R\")\nraw_balance\ncorrections\ncorrected_balance\nwater_plot\nThe script reuses read_csv(), mutate(), group_by(), summarise(), and ggplot(). Its new chemical operation is multiplying molar concentration by charge magnitude. if_else() separates positive and negative contributions without changing the raw table. The narrowly specified row replacement applies the supplied fictional lab record; you do not need to write a general data-cleaning program.\nExplain the original charge discrepancy, inspect the correction evidence, and compare the waters after correction. Complete the report prompts. Restart R and Knit water-report.Rmd, or use rmarkdown::render(\"water-report.Rmd\") from the same folder.\n\n\n\n\n\n\nExpected checks and interpretation\n\n\n\n\n\nRaw A has 2.00 meq/L cations and 2.00 meq/L anions; raw B has 0.500 of each. Raw C has 2.00 and 1.64, giving +9.89% imbalance. The supplied lab record corrects C sulfate from 1.9212 to 19.212 mg/L. After that documented correction, C matches A and all signed imbalances are zero to numerical precision.\nThe plot compares mmol/L, while the balance uses meq/L. Valence changes the conversion. The balance flags a mismatch; it does not identify the sulfate error without the extra record, nor prove all analyses correct after closure. There is no statistical treatment-group comparison here: A, B, and C are constructed sample identities, not replicate experiments.\n\n\n\n\n\n\nConstructed ion concentrations after the documented correction; A and C coincide.",
+    "crumbs": [
+      "Home",
+      "Week 2: Aquatic composition and carbonate chemistry",
+      "Aquatic composition and equilibrium",
+      "Exercise"
+    ]
+  },
+  {
+    "objectID": "aquatic-equilibria/exercise.html#explore",
+    "href": "aquatic-equilibria/exercise.html#explore",
+    "title": "Aquatic composition and equilibrium exercises",
+    "section": "Explore: charge balance and ionic strength",
+    "text": "Explore: charge balance and ionic strength\nPredict what the charge balance shows if the sulfate entry is ten times too small, as in sample C. Then predict what adding sodium chloride does to the balance and to the activity of calcium. Change one input at a time.\n\n\nReference case: the worked ion table has 2.000 meq/L of cation charge and 2.000 meq/L of anion charge (0% imbalance), an ionic strength of 2.95 mmol/L, and activity coefficients of about 0.94 for single-charged and 0.79 for double-charged ions.\n\n\n\nE1. Choose Worked example, then Sample C: sulfate error. Check the anion total and the +9.89% imbalance by hand. Which other single change to the table could produce the same imbalance, and why can the balance alone not tell you which entry is wrong?\nE2. Reset, then raise the Ca²⁺ entry by 0.10 mmol/L. How much do the cation charge and the ionic strength change? Explain the factors 2 and 4 that appear.\nE3. Choose Salty river and then Brackish. Why does the charge balance stay at zero while the activity coefficients fall? For which ions is γ ≈ 1 first a poor approximation?\n\nModel conditions and hand check\nThe worked table (mmol/L) is Ca²⁺ 0.500, Mg²⁺ 0.250, Na⁺ 0.500, HCO₃⁻ 1.200, Cl⁻ 0.400 and SO₄²⁻ 0.200. Cations: 2(0.500) + 2(0.250) + 0.500 = 2.000 meq/L; anions: 1.200 + 0.400 + 2(0.200) = 2.000 meq/L. With sample C’s sulfate, 1.9212 mg/L ÷ 96.06 mg/mmol = 0.0200 mmol/L, anions are 1.640 meq/L and the imbalance is (2.000 − 1.640)/3.640 × 100 = +9.89%. The ionic strength of the worked table is ½(0.5 × 4 + 0.25 × 4 + 0.5 + 1.2 + 0.4 + 0.2 × 4) = 2.95 mmol/L.\nOnly the Ca²⁺ and SO₄²⁻ entries and the added NaCl can be changed; the other entries stay at the worked values. Added NaCl brings equal amounts of Na⁺ and Cl⁻. H⁺, OH⁻ and minor ions are left out, and every ion is treated as free (no complexes). Activity coefficients are estimated with the Davies equation at 25 °C, the same estimate as the lecture figure; it is not reliable much above an ionic strength of about 0.5 mol/L, so seawater is outside this model.",
     "crumbs": [
       "Home",
       "Week 2: Aquatic composition and carbonate chemistry",
@@ -4141,6 +4284,19 @@
     ]
   },
   {
+    "objectID": "aquatic-equilibria/lec.html#explore",
+    "href": "aquatic-equilibria/lec.html#explore",
+    "title": "Aquatic composition and equilibrium",
+    "section": "Explore: charge balance and ionic strength",
+    "text": "Explore: charge balance and ionic strength\n\n\nWorked ion table: 2.000 meq/L cations and 2.000 meq/L anions; ionic strength 2.95 mmol/L; γ about 0.94 and 0.79.\n\n\n\nChange table entries and add salt; compare the charge balance with ionic strength and activity.\n\nBegin with the worked example: both charge totals are 2.000 milliequivalents per litre and the ionic strength is close to 0.003 mol per litre, as on the earlier slides. Then choose the sample C sulfate error and ask students why the imbalance is positive and what it does and does not tell us. Back at the worked example, add salt. Sodium chloride brings equal positive and negative charge, so the balance stays closed, but the ionic strength climbs and the activity coefficient of divalent ions falls to about 0.35 in brackish water. That is the Oder message: a table can balance perfectly and still be far outside the range where gamma equals one. The exercise page has the full ion table, the model conditions and a hand check.",
+    "crumbs": [
+      "Home",
+      "Week 2: Aquatic composition and carbonate chemistry",
+      "Aquatic composition and equilibrium",
+      "Lecture (slides)"
+    ]
+  },
+  {
     "objectID": "aquatic-equilibria/lec.html#summary",
     "href": "aquatic-equilibria/lec.html#summary",
     "title": "Aquatic composition and equilibrium",
@@ -4211,6 +4367,19 @@
     "title": "Organic matter in water exercises",
     "section": "4. Interpret a dark-water change",
     "text": "4. Interpret a dark-water change\nWater becomes darker while DOC changes little. What chemical explanations and measurements would you consider?\n\n\n\n\n\n\nHint\n\n\n\n\n\nCarbon quantity and optical properties are different observables.\n\n\n\n\n\n\n\n\n\nWorked solution\n\n\n\n\n\nChanges in molecular composition, chromophoric groups, particle content, or iron-associated colour could alter absorption per unit carbon. Compare spectra/absorbance, DOC, filtration, iron, and pH. Do not infer a unique source, degradation rate, or toxicity from colour alone.",
+    "crumbs": [
+      "Home",
+      "Week 2: Aquatic composition and carbonate chemistry",
+      "Organic matter in water",
+      "Exercise"
+    ]
+  },
+  {
+    "objectID": "aquatic-organic-matter/exercise.html#explore",
+    "href": "aquatic-organic-matter/exercise.html#explore",
+    "title": "Organic matter in water exercises",
+    "section": "Explore: oxygen demand in a sealed bottle",
+    "text": "Explore: oxygen demand in a sealed bottle\nPredict how much of the ultimate oxygen demand of 4.00 mg C/L is used in a 5-day test, and whether 9.00 mg/L of oxygen is enough to oxidise all of it. Change one input at a time.\n\n\nReference case: 4.00 mg C/L has an ultimate demand of 10.67 mg O₂/L. With a rate of 0.10 per day, 4.20 mg O₂/L (39%) is used in 5 days, and a bottle starting at 9.00 mg/L runs out of oxygen on day 18.6.\n\n\n\nE1. Choose Exercise 2: sealed litre. Check the ultimate demand and the oxygen left after complete oxidation against your answer to exercise 2.\nE2. Choose Exercise 3: 5-day test, then Slow humic carbon. The carbon amount and ultimate demand are the same. Why does the 5-day result differ so much, and what does that mean for a brown lake?\nE3. Reset, then move the measurement day until about 25% of the demand is used. Compare the oxygen used with your answer to exercise 3. Then move to day 40: why does the oxygen used stop at 9.00 mg/L instead of reaching 10.67?\n\nModel conditions and hand check\nUltimate demand = carbon × 32.0/12.0. For 3.00 mg C/L this gives 8.00 mg O₂/L; for 2.00 mg C/L, 5.33 mg O₂/L, leaving 9.00 − 5.33 = 3.67 mg/L; for 4.00 mg C/L, 10.67 mg O₂/L. With a first-order rate of 0.10 per day, the oxygen used by day \\(t\\) is \\(10.67\\,(1-e^{-0.10t})\\), which is 4.20 mg/L on day 5 and reaches 25% (2.67 mg/L) after about 2.9 days.\nThe organic matter is represented by CH₂O, so 1 mol C uses 1 mol O₂. The rate constant is a constructed round value, not a measured property of any water. The bottle is sealed and dark: no reaeration, no photosynthesis and no other oxygen users such as nitrification. When the oxygen is used up the aerobic model stops; reactions with other electron acceptors are not modelled.",
     "crumbs": [
       "Home",
       "Week 2: Aquatic composition and carbonate chemistry",
@@ -4583,6 +4752,19 @@
     ]
   },
   {
+    "objectID": "atmospheric-reactions/lec.html#explore",
+    "href": "atmospheric-reactions/lec.html#explore",
+    "title": "Reactions in the atmosphere",
+    "section": "Explore: OH and the lifetime of a gas",
+    "text": "Explore: OH and the lifetime of a gas\n\n\nWorked example: k = 1.0 × 10⁻¹², OH = 1.0 × 10⁶ molecules/cm³, lifetime 11.6 days, half-life 8.0 days.\n\n\n\nChange OH, the rate constant and an extra sink, and see how far the gas can travel.\n\nStart with the worked example and confirm the numbers from the “OH sets the pace” slide: k-prime one times ten to the minus six per second, lifetime 11.6 days, half-life 8.0 days. Ask students to predict before each click. Twice as much OH halves the lifetime, because only the product k times OH matters. Making the reaction a hundred times slower gives about three years, long enough to mix between the hemispheres, like the long-lived gases on the transport slide. Adding deposition shows that parallel sinks add their rate constants, so the lifetime becomes shorter than either sink alone would give. The exercise page has the model conditions and a hand check.",
+    "crumbs": [
+      "Home",
+      "Week 1: Environmental balances and atmosphere",
+      "Reactions in the atmosphere",
+      "Lecture (slides)"
+    ]
+  },
+  {
     "objectID": "atmospheric-reactions/lec.html#summary",
     "href": "atmospheric-reactions/lec.html#summary",
     "title": "Reactions in the atmosphere",
@@ -4692,6 +4874,19 @@
     "title": "Carbonate chemistry exercises",
     "section": "Explore: carbonate response to acid",
     "text": "Explore: carbonate response to acid\nPredict which of the two waters from exercise 2 has the larger pH decrease. Use the presets, then change only the carbon total or acid dose. Read the species fractions alongside the carbon and alkalinity balances.\n\n\nReference case: Water A finishes at model pH 7.235 and Water B at 6.252 after the same 0.050 meq/L acid input.\n\n\n\nE1. Compare Water A: more carbon with Water B: less carbon. Check that alkalinity falls by the same acid-equivalent dose in both. Explain why the pH changes differ.\nE2. Choose No acid added and vary only the carbon total. At fixed pH, which changes: species fractions, species concentrations, or alkalinity?\nE3. Choose Check pH 8.35 fractions. Compare the bicarbonate fraction with your hand calculation in exercise 1. Explain why the distribution curve alone does not specify the final pH after an acid dose.\n\nModel conditions and hand check\n\n\n\n\n\n\n\n\n\n\nConstructed water\nInitial pH\nFixed inorganic carbon\nAcid dose\nFinal model pH\n\n\n\n\nA\n7.50\n1.00 mmol/L\n0.050 meq/L\n7.235\n\n\nB\n7.50\n0.100 mmol/L\n0.050 meq/L\n6.252\n\n\n\nAt 25 °C, use pK₁ = 6.35, pK₂ = 10.33, and Kw = 10⁻¹⁴ in dilute freshwater. Activities are approximated by concentrations. Each acid addition holds the selected inorganic-carbon total fixed and lowers alkalinity by the dose. There is no gas exchange, mineral reaction, biological change, other buffer, or dilution. The curves use prescribed pH; the final-state marker also satisfies the changed alkalinity balance. Negative alkalinity is possible while every species concentration remains nonnegative.\nMore guided comparisons for week 2.",
+    "crumbs": [
+      "Home",
+      "Week 2: Aquatic composition and carbonate chemistry",
+      "Carbonate and gas chemistry",
+      "Exercise"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/exercise.html#explore-gases",
+    "href": "carbonate-gases/exercise.html#explore-gases",
+    "title": "Carbonate chemistry exercises",
+    "section": "Explore: degassing and calcite saturation",
+    "text": "Explore: degassing and calcite saturation\nPredict what happens to pH and to the calcite saturation Ω when groundwater that was in contact with soil air reaches the open air. Alkalinity and calcium stay fixed; only the CO₂ in the gas changes.\n\n\nReference case: with alkalinity 2.80 meq/L and Ca²⁺ 1.40 mmol/L, the water is at pH 7.26 and Ω ≈ 1.0 under soil air (0.010 atm), and at pH 8.65 and Ω ≈ 23.5 after equilibrating with 4.0 × 10⁻⁴ atm.\n\n\n\nE1. Choose Groundwater in soil air, then Same water degassed to air. Which quantities change and which stay fixed? Explain why Ω rises about twentyfold although no calcium was added.\nE2. Choose Exercise 3: pH 8.35 water. Check the dissolved CO₂* and the total inorganic carbon against your answers to exercise 3. What share of the carbon does Henry’s law describe?\nE3. Choose Rain: no alkalinity. Compare the pH with the clean-rain value from the lecture. Then raise the CO₂ in the gas: why does the pH fall, and why would adding the same amount of strong acid instead behave differently?\n\nModel conditions and hand check\n\n\n\n\n\n\n\n\n\n\n\nWater\nCO₂ in the gas (atm)\nAlkalinity (meq/L)\nCa²⁺ (mmol/L)\nModel pH\nΩ\n\n\n\n\nGroundwater in soil air\n0.010\n2.80\n1.40\n7.26\n1.02\n\n\nDegassed to air\n4.0 × 10⁻⁴\n2.80\n1.40\n8.65\n23.5\n\n\nExercise 3 water\n4.0 × 10⁻⁴\n1.39\n0.50\n8.35\n2.16\n\n\nRain\n4.0 × 10⁻⁴\n0\n—\n5.61\n—\n\n\n\nHand check: \\([\\mathrm{CO_2^*}]=0.034\\times4.0\\times10^{-4}=13.6\\) µmol/L whatever the alkalinity. For the exercise 3 water, \\(C_T=13.6(1+100+1.047)\\) µmol/L ≈ 1.388 mmol/L, and alkalinity is about \\(13.6(100+2\\times1.047)\\) µmol/L ≈ 1.39 meq/L, which is why that preset gives pH 8.35.\nAt 25 °C, use pK₁ = 6.35, pK₂ = 10.33, Kw = 10⁻¹⁴, KH = 0.034 mol L⁻¹ atm⁻¹ and Ksp = 3.3 × 10⁻⁹ in dilute freshwater, with concentrations in place of activities. The water is at equilibrium with the gas. Alkalinity is held fixed, so gas exchange changes only total inorganic carbon. Calcium is set separately and taken as the free ion (no ion pairs). No calcite dissolves or precipitates, so Ω above 1 shows only that calcite forming is favoured, not how fast or how much. Temperature effects are not modelled.",
     "crumbs": [
       "Home",
       "Week 2: Aquatic composition and carbonate chemistry",
@@ -5350,6 +5545,19 @@
     ]
   },
   {
+    "objectID": "climate-chemistry/lec.html#explore",
+    "href": "climate-chemistry/lec.html#explore",
+    "title": "Molecules, radiation, and climate",
+    "section": "Explore: how long a pulse stays in the air",
+    "text": "Explore: how long a pulse stays in the air\n\n\nAfter 100 years about 0.41 of a CO₂ pulse is still in the air; a 12-year gas has almost none left.\n\n\n\nCompare one first-order sink with the several timescales of CO₂.\n\nStart with the lecture comparison: the same curves as the CO2 impulse slide, read at 100 years. Then use the lifetime 50, read at 50 preset to repeat exercise 3; the fraction left depends only on time divided by lifetime, so years or days give the same 0.368. Move the time slider and point to the table: the fast part is gone within a decade or two, the medium part within a century or two, and about a fifth stays for centuries. Ask a student to find a single lifetime that matches CO2 at 20 years, then look at 500 years. It fails, which is the message: CO2 has no single lifetime because it is redistributed, not destroyed.",
+    "crumbs": [
+      "Home",
+      "Week 1: Environmental balances and atmosphere",
+      "Molecules, radiation, and climate",
+      "Lecture (slides)"
+    ]
+  },
+  {
     "objectID": "climate-chemistry/lec.html#summary",
     "href": "climate-chemistry/lec.html#summary",
     "title": "Molecules, radiation, and climate",
@@ -5771,6 +5979,19 @@
     "title": "Environmental amounts and balances",
     "section": "Common mistakes to avoid",
     "text": "Common mistakes to avoid\n\n“The concentration fell, so the pollutant was destroyed.” Check dilution and transfer first.\n“Average the concentrations.” Add amounts or loads; then divide by total volume or flow.\n“Steady state means no input.” It means input and output balance.\n“τ = V/Q is how long every molecule stays.” It is a replacement scale for the water, not a chemical lifetime.\n“Removed from the water” = “gone.” Name the boundary; sorption may be internal transfer.\n“mg/L nitrate equals mg/L N.” State the basis; they differ by a factor of about 4.4.\n\n\nThese are the errors that appear most often in exercises and in real environmental reports. Ask students to explain in their own words why each statement is wrong. The first is the central lesson of the lecture. The second is an arithmetic error that only works when the volumes are equal. The third and fourth concern the meaning of words: steady state and residence time sound like they describe processes stopping or molecules waiting, but they describe balances. The fifth is about boundaries. The last is about units, and it causes real confusion when comparing data sets from different countries or laboratories.",
+    "crumbs": [
+      "Home",
+      "Week 1: Environmental balances and atmosphere",
+      "Environmental amounts and balances",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "environmental-systems/lec.html#explore",
+    "href": "environmental-systems/lec.html#explore",
+    "title": "Environmental amounts and balances",
+    "section": "Explore: a lake approaching steady state",
+    "text": "Explore: a lake approaching steady state\n\n\nThe constructed lake: V/Q = 100 days; 1.0 kg/day gives a steady 100 kg (0.10 mg/L).\n\n\n\nChange the input, the flow and the reaction, and watch the lake’s balance respond.\n\nStart with the worked example from the steady-state slide and read the balance table: at steady state input and outflow are both 1 kilogram per day and the change is zero. Ask students to predict before each click. Double the input: the steady level doubles, the time constant does not change. Double the flow instead: the steady level halves and the lake gets there twice as fast. Raise the volume: the steady concentration stays at input over flow, only the approach is slower. Then use the two flushing presets to connect to the flushing slide: about 37 percent left after one time constant, and the reaction adds to the flushing loss. The exercise page has the hand check and the model assumptions.",
     "crumbs": [
       "Home",
       "Week 1: Environmental balances and atmosphere",
@@ -6787,6 +7008,19 @@
     ]
   },
   {
+    "objectID": "redox-cycles/lec.html#explore",
+    "href": "redox-cycles/lec.html#explore",
+    "title": "Redox and environmental cycles",
+    "section": "Explore: the electron-acceptor ladder",
+    "text": "Explore: the electron-acceptor ladder\n\n\nReference case: 0.500 mmol C/L decomposed uses up O₂, nitrate and the Fe(III) oxide, releasing 0.020 mmol/L phosphate.\n\n\n\nDecompose more organic matter: which acceptor goes next, and when does phosphate appear?\n\nStart with Oxygen still present and drag the organic matter slider slowly to the right. Ask students to call out which acceptor will be used next before it happens. The slope of each line comes from electron counting: oxygen takes four electrons, nitrate five, iron one, sulfate eight, while each carbon gives four. That is why the iron oxide disappears so quickly and sulfate lasts so long. Point out that phosphate is released only when the iron step starts, although phosphorus is never reduced. The Denitrification preset reproduces the 1.25 carbon per nitrate result. Low-sulfate lake water shows methane forming once sulfate is gone. Stress that the model runs the ladder strictly in order, while real sediments overlap the steps.",
+    "crumbs": [
+      "Home",
+      "Week 3: Metals, surfaces, redox, and treatment",
+      "Redox and environmental cycles",
+      "Lecture (slides)"
+    ]
+  },
+  {
     "objectID": "redox-cycles/lec.html#summary",
     "href": "redox-cycles/lec.html#summary",
     "title": "Redox and environmental cycles",
@@ -6857,6 +7091,19 @@
     "title": "Soil chemistry and retention exercises",
     "section": "4. Compare two soils",
     "text": "4. Compare two soils\nTwo soils have equal pH but one is rich in organic matter and exchange-active clay while the other is coarse quartz sand. What would you measure before predicting their responses to an acid input?\n\n\n\n\n\n\nHint\n\n\n\n\n\nMeasure inventories and pathways, not only pH.\n\n\n\n\n\n\n\n\n\nWorked solution\n\n\n\n\n\nCompare CEC under stated conditions, base saturation, carbonate and weatherable minerals, organic matter, water flow, and aluminium/iron chemistry. Equal pH is not evidence of equal buffering or solute retention.",
+    "crumbs": [
+      "Home",
+      "Week 4: Soils, waste, and contaminants",
+      "Soil chemistry and retention",
+      "Exercise"
+    ]
+  },
+  {
+    "objectID": "soil-chemistry/exercise.html#explore",
+    "href": "soil-chemistry/exercise.html#explore",
+    "title": "Soil chemistry and retention exercises",
+    "section": "Explore: same pH, different reserves",
+    "text": "Explore: same pH, different reserves\nPredict which soil is first to release aluminium when both receive 5.0 cmolc/kg of acid: Soil A (sandy podzol) or Soil B (clay loam), both at pH about 5. Then change one inventory at a time.\n\n\nReference case: Soil B (CEC 20.0, base cations 14.2 cmolc/kg, base saturation 71 %) after 5.0 cmolc/kg of acid keeps 9.2 cmolc/kg of base cations (46 %). Soil A (CEC 3.0, base cations 1.7 cmolc/kg) runs out after 1.7 cmolc/kg, so the remaining 3.3 cmolc/kg is buffered by aluminium.\n\n\n\nE1. Choose Soil B, then Soil A. For each, how much acid can be neutralised before aluminium takes over? Check the base saturation after 5.0 cmolc/kg of acid by hand.\nE2. Choose Exercise 2 and confirm your base saturation. Then raise CEC while keeping the base cations fixed. Which changes: base saturation, the reserve, or both?\nE3. Choose Soil A, limed. How many cmolc/kg does 2.0 cmol/kg of CaCO₃ add, and why is it twice the number of moles? Which reserve is used first in this model?\n\nModel conditions and hand check\nThe two soils are the constructed Soil A and Soil B from the lecture. Acid is counted in cmolc/kg and consumed in a fixed order: accessible CaCO₃ first (2 equivalents per mole, CaCO₃ + 2H⁺ → Ca²⁺ + CO₂* + H₂O), then exchangeable base cations (one equivalent of bases leaves per equivalent of acid), and then aluminium. CEC is held constant; the sites given up by base cations are taken by Al³⁺ and H⁺. Slow weathering, uptake by plants, rates, flow paths and pH are not modelled. For Soil B after 5.0 cmolc/kg: 14.2 − 5.0 = 9.2 cmolc/kg of base cations remain, and base saturation falls from 14.2/20.0 = 71 % to 9.2/20.0 = 46 %. If those 5.0 cmolc/kg left as Ca²⁺, that is 2.5 cmol Ca/kg. Soil A has only 1.7 cmolc/kg, so 3.3 cmolc/kg of the same acid is buffered by aluminium.",
     "crumbs": [
       "Home",
       "Week 4: Soils, waste, and contaminants",
@@ -7216,6 +7463,19 @@
     ]
   },
   {
+    "objectID": "surfaces/lec.html#explore",
+    "href": "surfaces/lec.html#explore",
+    "title": "Colloids, surfaces, and sorption",
+    "section": "Explore: the two-phase bottle",
+    "text": "Explore: the two-phase bottle\n\n\nWorked example: 1.00 mg, 1.00 L water, 0.0100 kg solid, Kd = 100 L/kg gives 0.500 mg/L.\n\n\n\nDouble the solid, or let a pH change lower Kd: where does the solute go?\n\nStart with the worked example and confirm the numbers from the “one bottle, three cases” slide. Before pressing Double the solid, ask the class to predict the new water concentration; many will say a quarter of a milligram per litre. The curve shows why it is a third: the water volume stays in the denominator. Then press the pH-change preset and point out that the solid gives solute back to the water although nothing was added. Drag the solid slider to zero to show that without a surface everything stays dissolved. Remind students that the model is linear and has no capacity limit. The exercise page has the hand check and the model conditions.",
+    "crumbs": [
+      "Home",
+      "Week 3: Metals, surfaces, redox, and treatment",
+      "Colloids, surfaces, and sorption",
+      "Lecture (slides)"
+    ]
+  },
+  {
     "objectID": "surfaces/lec.html#summary",
     "href": "surfaces/lec.html#summary",
     "title": "Colloids, surfaces, and sorption",
@@ -7286,6 +7546,19 @@
     "title": "Waste materials and leachate chemistry exercises",
     "section": "4. Long-term claim",
     "text": "4. Long-term claim\nA treated waste initially gives neutral-pH water. What evidence is needed before concluding that future metal and acid release will stay low?\n\n\n\n\n\n\nHint\n\n\n\n\n\nConsider remaining reactive inventories, access, rate, and stability.\n\n\n\n\n\n\n\n\n\nWorked solution\n\n\n\n\n\nCheck remaining sulfide and neutralising minerals, oxygen/water access, weathering rates, pH/redox changes, flow, dissolved/solid inventories, and relevant-duration leach observations. One initial pH does not establish long-term stability.",
+    "crumbs": [
+      "Home",
+      "Week 4: Soils, waste, and contaminants",
+      "Waste materials and leachate chemistry",
+      "Exercise"
+    ]
+  },
+  {
+    "objectID": "waste-leachate/exercise.html#explore",
+    "href": "waste-leachate/exercise.html#explore",
+    "title": "Waste materials and leachate chemistry exercises",
+    "section": "Explore: acid potential versus neutralisation",
+    "text": "Explore: acid potential versus neutralisation\nPredict what happens to a heap that drains at neutral pH today if the same calcite can neutralise only one equivalent per mole instead of two. Does the acid potential change, or only how long the drainage stays neutral? Change one input at a time.\n\n\nReference case: one tonne of waste with 1 % pyrite has an acid potential of 333 eq H⁺. With 7.5 kg reachable CaCO₃ at the CO₂* endpoint (150 eq) and an oxidation rate of 0.02 per year, the calcite is used up after about 30 years and 183 eq of acid remain to drain out.\n\n\n\nE1. Choose Worked example. Check the acid potential, the CaCO₃ needed and the year the calcite runs out by hand. Then double the oxidation rate. Which numbers change, and which stay fixed?\nE2. Compare Near-neutral endpoint and Half the calcite coated. Why do they give the same curves although the reasons are chemically different?\nE3. Choose Calcite-rich heap, then lower the reachable share of calcite until the drainage eventually turns acidic. Explain why a neutral leachate alone could not tell this heap apart from the worked example.\n\nModel conditions and hand check\nThe constructed case is one tonne of waste with 1.0 % FeS₂ by mass: 10 000 g / 120 g/mol = 83.3 mol FeS₂. At 4 H⁺ per FeS₂ the acid potential is 333 eq/t, with 167 mol sulfate. Neutralising it needs 333 / 2 = 167 mol CaCO₃ = 16.7 kg/t at the CO₂* endpoint, or 33.3 kg/t at the near-neutral endpoint. The waste holds 7.5 kg/t CaCO₃ = 75 mol, worth 150 eq/t at the CO₂* endpoint. Cumulative acid generated is 333 × (1 − e^(−0.02 t)); it reaches 150 eq when t = −ln(1 − 150/333) / 0.02 ≈ 30 years. After all pyrite has reacted, 333 − 150 = 183 eq/t of acid remain.\nAssumptions: pyrite oxidises completely to sulfate and Fe(OH)₃ (4 H⁺ per FeS₂), at a first-order rate chosen for illustration only. Calcite is the only neutraliser, and the reachable part reacts as fast as acid forms until it is used up; the rest never reacts. Each mole of CaCO₃ neutralises 2 eq (CO₂* endpoint) or 1 eq (near-neutral, HCO₃⁻ stays in solution). Rates of calcite dissolution, oxygen supply, flow paths, other minerals and dilution are omitted. The curves are amounts per tonne, not concentrations or pH.",
     "crumbs": [
       "Home",
       "Week 4: Soils, waste, and contaminants",
@@ -7637,6 +7910,19 @@
     "title": "Water pollution and treatment chemistry",
     "section": "Common mistakes to avoid",
     "text": "Common mistakes to avoid\n\n“Removal means destruction.” Most removal is transfer to sludge or gas.\n“Add the stage percentages.” Multiply the fractions remaining.\n“Nitrification removes nitrogen.” It changes NH₄⁺ to NO₃⁻; denitrification removes N as N₂.\n“Filtration treats everything.” Dissolved nitrate and neutral organic molecules pass a filter.\n“Disinfection cleans the water chemically.” It targets microbes and can form by-products.\n“A coagulant only affects particles.” It consumes alkalinity and changes pH.\n\n\nGo through the list and ask students to give the counterexample from today for each. The fourth is exercise 4. A water with suspended clay, dissolved nitrate and a neutral organic contaminant needs at least three mechanisms: filtration or coagulation for the clay, biological or other treatment for nitrate, and contaminant-specific sorption or destruction for the organic compound, each with its own residual stream. The last mistake is the Flint lesson in small form: any chemical added at a plant changes the water’s whole chemistry, not just the target. This course gives you the balances and mechanisms; real treatment design and dosing need the actual system and its operating data.",
+    "crumbs": [
+      "Home",
+      "Week 3: Metals, surfaces, redox, and treatment",
+      "Water pollution and treatment chemistry",
+      "Lecture (slides)"
+    ]
+  },
+  {
+    "objectID": "water-treatment/lec.html#explore",
+    "href": "water-treatment/lec.html#explore",
+    "title": "Water pollution and treatment chemistry",
+    "section": "Explore: where the phosphorus goes",
+    "text": "Explore: where the phosphorus goes\n\n\nThree stages transferring 30 %, 40 % and 90 % of what enters leave 4.2 % of the phosphorus in the effluent; 95.8 % is in sludge.\n\n\n\nFollow the phosphorus through three stages and close the balance.\n\nStart with the Phosphorus plant preset, the constructed plant from “Back to the phosphorus”, and confirm 30, 28, 37.8 and 4.2 milligrams. Point at the third metric: adding the percentages gives 160 percent, which is impossible. Then use the worked example and exercise 1 presets. Ask students to predict before each change: which stage should be improved by five percentage points to cut the effluent most? The last stage wins because the fraction it leaves is the smallest factor. Stress that every milligram taken out of the water appears in a sludge bar. The exercise page has the model assumptions and a hand check.",
     "crumbs": [
       "Home",
       "Week 3: Metals, surfaces, redox, and treatment",

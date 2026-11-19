@@ -308,6 +308,23 @@ Finish the mass-balance story. Because so many processes transfer material into 
 Go through the list and ask students to give the counterexample from today for each. The fourth is exercise 4. A water with suspended clay, dissolved nitrate and a neutral organic contaminant needs at least three mechanisms: filtration or coagulation for the clay, biological or other treatment for nitrate, and contaminant-specific sorption or destruction for the organic compound, each with its own residual stream. The last mistake is the Flint lesson in small form: any chemical added at a plant changes the water's whole chemistry, not just the target. This course gives you the balances and mechanisms; real treatment design and dosing need the actual system and its operating data.
 :::
 
+## Explore: where the phosphorus goes {#explore}
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="treatment" role="group" aria-label="Sequential treatment stages and the phosphorus mass balance">
+<p>Three stages transferring 30 %, 40 % and 90 % of what enters leave 4.2 % of the phosphorus in the effluent; 95.8 % is in sludge.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/treatment.js"></script>
+```
+
+[Follow the phosphorus through three stages and close the balance.](exercise.qmd#explore)
+
+::: notes
+Start with the Phosphorus plant preset, the constructed plant from "Back to the phosphorus", and confirm 30, 28, 37.8 and 4.2 milligrams. Point at the third metric: adding the percentages gives 160 percent, which is impossible. Then use the worked example and exercise 1 presets. Ask students to predict before each change: which stage should be improved by five percentage points to cut the effluent most? The last stage wins because the fraction it leaves is the smallest factor. Stress that every milligram taken out of the water appears in a sludge bar. The exercise page has the model assumptions and a hand check.
+:::
+
 ## Summary {.smaller}
 
 | Concept | Key fact |

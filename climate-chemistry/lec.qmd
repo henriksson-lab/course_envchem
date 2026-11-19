@@ -280,6 +280,23 @@ Return to the opening question and answer it in four steps, using only today's c
 These are the most frequent errors on this topic. Have students explain each correction in their own words. The first two are about the dipole rule and are the core chemistry of today. The third and fourth are about reading spectra correctly. The fifth is a frequent statement even in the media; the answer is that the airborne fraction of a CO2 pulse declines over several timescales, and a substantial part stays for many centuries. The sixth separates scattering from absorbing particles. The last one sums up exercise 4. Encourage students to use this list as a self-check before the week 1 exercises.
 :::
 
+## Explore: how long a pulse stays in the air {#explore}
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="co2pulse" role="group" aria-label="Pulse decay: one sink compared with carbon dioxide">
+<p>After 100 years about 0.41 of a CO₂ pulse is still in the air; a 12-year gas has almost none left.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/co2pulse.js"></script>
+```
+
+[Compare one first-order sink with the several timescales of CO₂.](exercise.qmd#explore)
+
+::: notes
+Start with the lecture comparison: the same curves as the CO2 impulse slide, read at 100 years. Then use the lifetime 50, read at 50 preset to repeat exercise 3; the fraction left depends only on time divided by lifetime, so years or days give the same 0.368. Move the time slider and point to the table: the fast part is gone within a decade or two, the medium part within a century or two, and about a fifth stays for centuries. Ask a student to find a single lifetime that matches CO2 at 20 years, then look at 500 years. It fails, which is the message: CO2 has no single lifetime because it is redistributed, not destroyed.
+:::
+
 ## Summary {.smaller}
 
 :::: {.columns}

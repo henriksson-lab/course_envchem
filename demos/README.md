@@ -1,6 +1,6 @@
 # Interactive chemistry demos
 
-Five offline browser demos are embedded directly in their corresponding
+One offline browser demo per lecture (16) is embedded directly in their corresponding
 exercise `#explore` sections and lecture decks, as in Quantitative Biology.
 The sidebar links directly to those exercise sections. The `interactives/`
 week pages remain as extra guided practice. The Quarto resource list copies only `*.js` and `demo.css` into
@@ -19,6 +19,17 @@ classic scripts so the demos also work when a rendered page is opened with
 - `carbonate.js`: fixed-carbon species and changed alkalinity after strong acid.
 - `metals.js`: imposed free ligand, binding-only distribution, saturation check.
 - `fate.js`: closed-system phase inventories and transformed-parent accounting.
+- `boxmodel.js`: well-mixed lake approaching steady state (environmental systems).
+- `lifetime.js`: OH-controlled atmospheric lifetime and half-life.
+- `co2pulse.js`: CO₂ pulse decay versus a one-sink gas (climate).
+- `ionbalance.js`: charge balance, ionic strength and activity coefficients.
+- `gases.js`: CO₂ degassing and calcite saturation (gases lecture).
+- `oxygen.js`: oxygen demand in a sealed bottle.
+- `sorption.js`: two-phase bottle with a linear Kd.
+- `redox.js`: electron-acceptor sequence as organic matter is oxidised.
+- `treatment.js`: sequential treatment stages and the mass balance.
+- `soilbuffer.js`: carbonate, exchange and aluminium acid reserves in soil.
+- `acidbase.js`: acid potential versus neutralising potential in mine waste.
 - `catchment.js`: annual acid budget, capped accessible neutralisation, reference
   alkalinity export, and flow-weighted equivalents.
 

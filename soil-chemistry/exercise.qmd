@@ -51,3 +51,44 @@ Measure inventories and pathways, not only pH.
 ::: {.callout-note collapse="true" title="Worked solution"}
 Compare CEC under stated conditions, base saturation, carbonate and weatherable minerals, organic matter, water flow, and aluminium/iron chemistry. Equal pH is not evidence of equal buffering or solute retention.
 :::
+
+## Explore: same pH, different reserves {#explore}
+
+Predict which soil is first to release aluminium when both receive
+5.0 cmol~c~/kg of acid: Soil A (sandy podzol) or Soil B (clay loam), both at
+pH about 5. Then change one inventory at a time.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="soilbuffer" role="group" aria-label="Soil acid-neutralising reserves: carbonate, exchangeable base cations and aluminium">
+<p>Reference case: Soil B (CEC 20.0, base cations 14.2 cmolc/kg, base saturation 71 %) after 5.0 cmolc/kg of acid keeps 9.2 cmolc/kg of base cations (46 %). Soil A (CEC 3.0, base cations 1.7 cmolc/kg) runs out after 1.7 cmolc/kg, so the remaining 3.3 cmolc/kg is buffered by aluminium.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/soilbuffer.js"></script>
+```
+
+**E1.** Choose **Soil B**, then **Soil A**. For each, how much acid can be
+neutralised before aluminium takes over? Check the base saturation after
+5.0 cmol~c~/kg of acid by hand.
+
+**E2.** Choose **Exercise 2** and confirm your base saturation. Then raise CEC
+while keeping the base cations fixed. Which changes: base saturation, the
+reserve, or both?
+
+**E3.** Choose **Soil A, limed**. How many cmol~c~/kg does 2.0 cmol/kg of CaCO₃
+add, and why is it twice the number of moles? Which reserve is used first in
+this model?
+
+### Model conditions and hand check
+
+The two soils are the constructed Soil A and Soil B from the lecture. Acid is
+counted in cmol~c~/kg and consumed in a fixed order: accessible CaCO₃ first
+(2 equivalents per mole, CaCO₃ + 2H⁺ → Ca²⁺ + CO₂\* + H₂O), then exchangeable
+base cations (one equivalent of bases leaves per equivalent of acid), and then
+aluminium. CEC is held constant; the sites given up by base cations are taken by
+Al³⁺ and H⁺. Slow weathering, uptake by plants, rates, flow paths and pH are not
+modelled. For Soil B after 5.0 cmol~c~/kg: 14.2 − 5.0 = **9.2 cmol~c~/kg** of
+base cations remain, and base saturation falls from 14.2/20.0 = 71 % to
+9.2/20.0 = **46 %**. If those 5.0 cmol~c~/kg left as Ca²⁺, that is
+**2.5 cmol Ca/kg**. Soil A has only 1.7 cmol~c~/kg, so **3.3 cmol~c~/kg** of
+the same acid is buffered by aluminium.

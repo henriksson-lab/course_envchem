@@ -398,6 +398,23 @@ Answers. One: the water is supersaturated, so carbon dioxide escapes; at constan
 Run through these quickly and ask for the reason behind each one. The second is the most important conceptual point of the lecture and is examined every year in some form. The third is the source of many contradictory calculations: in an open carbonate system, choosing two of gas pressure, pH, total carbon and alkalinity fixes the rest. The sixth reminds students that our constants are for 25 degrees; real waters are colder or hotter, and the direction of the temperature effect matters for kettles and for cold northern lakes. Ask students to add one more mistake from their own exercise work.
 :::
 
+## Explore: degassing and calcite saturation {#explore-gases}
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="gases" role="group" aria-label="CO₂ exchange and calcite saturation at fixed alkalinity">
+<p>Groundwater from soil air (0.010 atm) degasses to the air: pH rises from 7.26 to 8.65 and Ω from about 1 to about 23.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/gases.js"></script>
+```
+
+[Follow groundwater from soil air to the open air at fixed alkalinity.](exercise.qmd#explore-gases)
+
+::: notes
+Start with the groundwater preset, which reproduces the "groundwater meets the air" model slide: saturated with calcite under soil air. Then press the degassed preset and ask students what changed. CO2-star falls by a factor of 25, total carbon falls, alkalinity and calcium stay fixed, and pH and Omega rise. Then try the exercise 3 preset to check the Henry calculation, and the rain preset to recover pH 5.6. Ask what would happen to Omega in a soft granite water with low alkalinity and calcium. The exercise page has the assumptions and a hand check.
+:::
+
 ## Summary {.smaller}
 
 :::: {.columns}

@@ -51,3 +51,51 @@ Mass alone omits molecular number, radiation, chemistry, and timescale.
 ::: {.callout-note collapse="true" title="Worked solution"}
 You need molecular masses, spectroscopic absorption, atmospheric abundance and overlap, chemical removal, distribution, and a stated comparison time horizon. Aerosol or chemical indirect effects can also matter. Equal emitted mass does not imply equal forcing.
 :::
+
+## Explore: how long a pulse stays in the air {#explore}
+
+Predict which has more left after 100 years: a CO₂ pulse or a pulse of a gas
+with one sink and a 12-year lifetime. Then move the time and the lifetime and
+compare the two curves.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="co2pulse" role="group" aria-label="Pulse decay: one sink compared with carbon dioxide">
+<p>Reference case: after 100 years about 0.41 of a CO₂ pulse is still in the air, compared with less than 0.001 for a gas with one sink and a 12-year lifetime.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/co2pulse.js"></script>
+```
+
+**E1.** Choose **Lifetime 50, read at 50**. Check the rate constant, half-life
+and fraction left by hand. Compare with exercise 3, which used days instead of
+years. Why are the numbers the same?
+
+**E2.** Choose **After 20 years**, then **Lecture comparison** and **After 500
+years**. At which times does the CO₂ pulse have more left than the 12-year gas?
+Use the table to say which part of the CO₂ pulse is responsible.
+
+**E3.** Raise the one-sink lifetime until its curve is close to the CO₂ curve
+at 20 years. Then look at 500 years. Explain why no single lifetime can match
+the CO₂ curve at all times.
+
+### Model conditions and hand check
+
+For one first-order sink, `fraction left = e^(−t/τ)`, `k = 1/τ` and
+`half-life = 0.693 τ`. With τ = 50 years and t = 50 years: k = **0.0200 per
+year**, half-life **34.7 years**, fraction left `e⁻¹ =` **0.368**. The fraction
+depends only on t/τ, so exercise 3's 50 days and 50 days give the same numbers.
+
+The CO₂ curve is the impulse-response fit of Joos et al. (2013), used in the IPCC
+Fifth Assessment Report:
+`0.217 + 0.224 e^(−t/394.4) + 0.282 e^(−t/36.54) + 0.276 e^(−t/4.304)`, with t in
+years. It gives about **0.60** left after 20 years, **0.41** after 100 years and
+**0.28** after 500 years. The 12-year gas has `e^(−100/12) = 0.0002` left after
+100 years.
+
+The fit describes one small pulse added to present-day air, as simulated by
+carbon-cycle models. Its four parts are fitted terms, not separate measured
+reservoirs, and the constant part is only constant over the centuries the fit
+covers; weathering and carbonate reactions remove it over many thousands of
+years. The one-sink gas is constructed for comparison: no transport, no change
+in sink strength and no chemical side effects.

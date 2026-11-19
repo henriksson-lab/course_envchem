@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -204,6 +233,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Exercise</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../environmental-systems/exercise.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: lake approaching steady state</span></a>
+  </div>
+</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -231,6 +266,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../atmospheric-reactions/exercise.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exercise</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../atmospheric-reactions/exercise.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: OH and lifetime</span></a>
   </div>
 </li>
       </ul>
@@ -297,6 +338,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Exercise</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../climate-chemistry/exercise.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: how long a pulse stays in the air</span></a>
+  </div>
+</li>
       </ul>
   </li>
       </ul>
@@ -335,6 +382,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../aquatic-equilibria/exercise.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exercise</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../aquatic-equilibria/exercise.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: charge balance and activity</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -386,6 +439,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../carbonate-gases/exercise.html#explore-gases" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: degassing and calcite saturation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../carbonate-gases/reference.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Model reference</span></a>
   </div>
@@ -417,6 +476,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../aquatic-organic-matter/exercise.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Exercise</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../aquatic-organic-matter/exercise.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: oxygen demand</span></a>
   </div>
 </li>
       </ul>
@@ -494,6 +559,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Exercise</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../surfaces/exercise.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: sorption in a bottle</span></a>
+  </div>
+</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -523,6 +594,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Exercise</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../redox-cycles/exercise.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: the redox ladder</span></a>
+  </div>
+</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -550,6 +627,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../water-treatment/exercise.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exercise</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../water-treatment/exercise.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: treatment stages</span></a>
   </div>
 </li>
       </ul>
@@ -592,6 +675,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Exercise</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../soil-chemistry/exercise.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: soil acid reserves</span></a>
+  </div>
+</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -619,6 +708,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../waste-leachate/exercise.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exercise</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../waste-leachate/exercise.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: acid potential versus neutralisation</span></a>
   </div>
 </li>
       </ul>
@@ -726,6 +821,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#oxygen-inventory" id="toc-oxygen-inventory" class="nav-link" data-scroll-target="#oxygen-inventory">2. Oxygen inventory</a></li>
   <li><a href="#incomplete-degradation" id="toc-incomplete-degradation" class="nav-link" data-scroll-target="#incomplete-degradation">3. Incomplete degradation</a></li>
   <li><a href="#interpret-a-dark-water-change" id="toc-interpret-a-dark-water-change" class="nav-link" data-scroll-target="#interpret-a-dark-water-change">4. Interpret a dark-water change</a></li>
+  <li><a href="#explore" id="toc-explore" class="nav-link" data-scroll-target="#explore">Explore: oxygen demand in a sealed bottle</a>
+  <ul class="collapse">
+  <li><a href="#model-conditions-and-hand-check" id="toc-model-conditions-and-hand-check" class="nav-link" data-scroll-target="#model-conditions-and-hand-check">Model conditions and hand check</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -895,8 +994,26 @@ Worked solution
 </div>
 </div>
 </div>
+</section>
+<section id="explore" class="level2">
+<h2 class="anchored" data-anchor-id="explore">Explore: oxygen demand in a sealed bottle</h2>
+<p>Predict how much of the ultimate oxygen demand of 4.00 mg C/L is used in a 5-day test, and whether 9.00 mg/L of oxygen is enough to oxidise all of it. Change one input at a time.</p>
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="oxygen" role="group" aria-label="Oxygen demand of organic carbon in a sealed bottle">
+<p>Reference case: 4.00 mg C/L has an ultimate demand of 10.67 mg O₂/L. With a rate of 0.10 per day, 4.20 mg O₂/L (39%) is used in 5 days, and a bottle starting at 9.00 mg/L runs out of oxygen on day 18.6.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/oxygen.js"></script>
+<p><strong>E1.</strong> Choose <strong>Exercise 2: sealed litre</strong>. Check the ultimate demand and the oxygen left after complete oxidation against your answer to exercise 2.</p>
+<p><strong>E2.</strong> Choose <strong>Exercise 3: 5-day test</strong>, then <strong>Slow humic carbon</strong>. The carbon amount and ultimate demand are the same. Why does the 5-day result differ so much, and what does that mean for a brown lake?</p>
+<p><strong>E3.</strong> Reset, then move the measurement day until about 25% of the demand is used. Compare the oxygen used with your answer to exercise 3. Then move to day 40: why does the oxygen used stop at 9.00 mg/L instead of reaching 10.67?</p>
+<section id="model-conditions-and-hand-check" class="level3">
+<h3 class="anchored" data-anchor-id="model-conditions-and-hand-check">Model conditions and hand check</h3>
+<p>Ultimate demand = carbon × 32.0/12.0. For 3.00 mg C/L this gives <strong>8.00 mg O₂/L</strong>; for 2.00 mg C/L, <strong>5.33 mg O₂/L</strong>, leaving 9.00 − 5.33 = <strong>3.67 mg/L</strong>; for 4.00 mg C/L, <strong>10.67 mg O₂/L</strong>. With a first-order rate of 0.10 per day, the oxygen used by day <span class="math inline">\(t\)</span> is <span class="math inline">\(10.67\,(1-e^{-0.10t})\)</span>, which is 4.20 mg/L on day 5 and reaches 25% (2.67 mg/L) after about 2.9 days.</p>
+<p>The organic matter is represented by CH₂O, so 1 mol C uses 1 mol O₂. The rate constant is a constructed round value, not a measured property of any water. The bottle is sealed and dark: no reaeration, no photosynthesis and no other oxygen users such as nitrification. When the oxygen is used up the aerobic model stops; reactions with other electron acceptors are not modelled.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

@@ -51,3 +51,51 @@ Track volumes, flows, phase inventories, and chemical identities.
 ::: {.callout-note collapse="true" title="Worked solution"}
 Measure volume and total inventory, inlet/outlet loads, relevant solid-phase amounts, and plausible transformation products over a consistent period. A concentration series alone does not close the balance.
 :::
+
+## Explore: a lake approaching steady state {#explore}
+
+Predict what happens to the steady-state inventory if the solute input doubles,
+and what happens if the water flow doubles instead. Then change one input at a
+time and compare the curve, the time constant and the balance table.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="boxmodel" role="group" aria-label="Well-mixed lake approaching steady state">
+<p>Reference case: V = 1.0 × 10⁶ m³ and Q = 1.0 × 10⁴ m³/day give V/Q = 100 days. An input of 1.0 kg/day gives a steady inventory of 100 kg (0.10 mg/L); after 100 days the lake holds 63 kg.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/boxmodel.js"></script>
+```
+
+**E1.** Choose **Worked example**. Read the balance table at steady state. Which
+fluxes are still running, and why does the inventory not change? Then choose
+**Double the input** and check the new steady inventory by hand.
+
+**E2.** Reset, then raise the lake volume to 4 million m³ while keeping the flow
+and input fixed. What happens to the steady concentration, and what happens to
+the time needed to get there? Explain both with V/Q.
+
+**E3.** Choose **Flush with clean water**, then **Flushing plus reaction**. How
+much of the 100 kg is left after one time constant in each case? Explain why
+seeing only the falling curve cannot tell you how much was flushing and how much
+was reaction.
+
+### Model conditions and hand check
+
+The constructed lake has V = 1.0 × 10⁶ m³, Q = 1.0 × 10⁴ m³/day in and out, and
+an input of 1.0 kg/day of a conservative solute, starting clean. The replacement
+time is `V/Q = 10⁶ / 10⁴ = 100 days`. At steady state output equals input, so
+`Q × C = 1.0 kg/day` and `C = 1.0 / 10⁴ = 1.0 × 10⁻⁴ kg/m³ = 0.10 mg/L`, an
+inventory of **100 kg**. Starting from a clean lake, the inventory after one
+replacement time is `100 × (1 − e⁻¹) = 63 kg`.
+
+With a first-order reaction the two loss rates add: `Q/V + k`. For k = 0.010 per
+day this doubles the total loss rate, halving both the time constant (50 days)
+and the steady inventory (50 kg). Flushing 100 kg with clean water leaves
+`100 × e⁻¹ = 37 kg` after 100 days by flushing alone, and `100 × e⁻² = 14 kg`
+with the reaction added.
+
+The lake is well mixed, so the outlet concentration equals the lake
+concentration. Volume, flow and input are constant, the inflow carries no other
+solute than the stated input, and the only reaction is first order. Sorption to
+sediment, exchange with air and seasonal changes in flow are not included.

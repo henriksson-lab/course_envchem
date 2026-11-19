@@ -95,7 +95,7 @@
     const width = 760;
     const lines=titleLines(config.title,width-70), offset=(lines.length-1)*24;
     const height=370+offset;
-    const margin = {left: 83, right: 30, top: 48+offset, bottom: 74};
+    const margin = {left: 100, right: 30, top: 48+offset, bottom: 74};
     const pw = width-margin.left-margin.right, ph = height-margin.top-margin.bottom;
     const all = config.series.flatMap(series => series.points);
     const finite = all.filter(p => Number.isFinite(p.x) && Number.isFinite(p.y));
@@ -135,11 +135,12 @@
       if (!Number.isFinite(marker.x)||marker.x<xmin||marker.x>xmax) return;
       svg.append(svgElement('line',{x1:x(marker.x),x2:x(marker.x),y1:margin.top,y2:height-margin.bottom,
         stroke:'#333','stroke-width':1.5,'stroke-dasharray':index%2?'3 4':'7 4'}));
-      svg.append(svgElement('text',{x:x(marker.x),y:margin.top+18+index*23,
-        'text-anchor':marker.x>(xmin+xmax)/2?'end':'start',class:'chem-marker-label'},marker.label));
+      const right=marker.x>(xmin+xmax)/2;
+      svg.append(svgElement('text',{x:x(marker.x)+(right?-7:7),y:margin.top+18+index*23,
+        'text-anchor':right?'end':'start',class:'chem-marker-label'},marker.label));
     });
     svg.append(svgElement('text',{x:margin.left+pw/2,y:height-17,'text-anchor':'middle'},config.xLabel));
-    svg.append(svgElement('text',{transform:`translate(22 ${margin.top+ph/2}) rotate(-90)`,
+    svg.append(svgElement('text',{transform:`translate(18 ${margin.top+ph/2}) rotate(-90)`,
       'text-anchor':'middle'},config.yLabel));
     const legend=element('ul',undefined,'chem-demo-legend');
     config.series.forEach((series,index)=>{

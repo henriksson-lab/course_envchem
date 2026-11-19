@@ -386,6 +386,23 @@ Broaden the view so students see a method, not just a mine. Municipal landfills 
 Go through these as a self-test, and ask students to justify each correction with a reaction or a number from today. The first mistake is the most common in budget calculations, often because students stop at the first equation in a textbook. The second and the last are the most important for environmental decisions: both treat a present state as if it were permanent. Mention that the same structure of mistakes reappears in the next lecture on organic contaminants. There, disappearance of a compound from water is often mistaken for destruction, when it may simply have moved to another phase. Keeping track of inventories in all phases is the shared habit.
 :::
 
+## Explore: acid potential versus neutralisation {#explore}
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="acidbase" role="group" aria-label="Acid potential versus neutralisation in mine waste">
+<p>Same pH today, different futures: when does the calcite run out?</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/acidbase.js"></script>
+```
+
+[Same pH today, different futures: when does the calcite run out?](exercise.qmd#explore)
+
+::: notes
+Start with the worked example: one tonne, 1 % pyrite, 333 equivalents of acid potential, 150 equivalents of calcite, calcite gone after about 30 years. This is the lag-time figure made adjustable. Then switch to the near-neutral endpoint and to half the calcite coated: both halve the reachable neutralisation and bring the acid drainage forward, for different chemical reasons. Change the oxidation rate and ask students what moves: only the timing, not the totals. Finish with the calcite-rich heap, then lower the reachable share until it fails. The exercise page has the assumptions, a hand check and a static reference for printing.
+:::
+
 ## Summary {.smaller}
 
 :::: {.columns}

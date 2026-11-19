@@ -399,6 +399,23 @@ Return to the opening case and show that each tool of the lecture had a role. Th
 Go through the list and ask students to give a one-sentence reason for each. The first two are calculation errors that cost marks in every exam. The third and fourth are interpretation errors that also happen in professional work: reporting filtered metal as if it were the bioavailable free ion, and "cleaning" data until it looks right. The last three are conceptual. Students will meet the sixth one again in the carbonate lecture, where alkalinity provides the missing balance. Encourage students to use this list as a self-check while working through the exercises and the R activity.
 :::
 
+## Explore: charge balance and ionic strength {#explore}
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="ionbalance" role="group" aria-label="Charge balance, ionic strength and activity of a water analysis">
+<p>Worked ion table: 2.000 meq/L cations and 2.000 meq/L anions; ionic strength 2.95 mmol/L; γ about 0.94 and 0.79.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/ionbalance.js"></script>
+```
+
+[Change table entries and add salt; compare the charge balance with ionic strength and activity.](exercise.qmd#explore)
+
+::: notes
+Begin with the worked example: both charge totals are 2.000 milliequivalents per litre and the ionic strength is close to 0.003 mol per litre, as on the earlier slides. Then choose the sample C sulfate error and ask students why the imbalance is positive and what it does and does not tell us. Back at the worked example, add salt. Sodium chloride brings equal positive and negative charge, so the balance stays closed, but the ionic strength climbs and the activity coefficient of divalent ions falls to about 0.35 in brackish water. That is the Oder message: a table can balance perfectly and still be far outside the range where gamma equals one. The exercise page has the full ion table, the model conditions and a hand check.
+:::
+
 ## Summary {.smaller}
 
 :::: {.columns}

@@ -306,6 +306,23 @@ End the story with the management question. Major inflows are natural events. Wh
 These are the errors that appear most often in this unit. The first two are conceptual and come up every year in exams. Ask students to explain each in their own words with an example from the Baltic. The third and fifth are about evidence: the ladder makes predictions, but measurements decide. The fourth is procedural: a reaction can have balanced atoms and still violate the electron or charge balance, which signals an error. The last links to management. Reoxygenation helps, but it does not instantly restore the earlier state, because some changes, such as iron sulfide formation and burial, are slow to reverse.
 :::
 
+## Explore: the electron-acceptor ladder {#explore}
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="redox" role="group" aria-label="Electron acceptors used as organic matter decomposes">
+<p>Reference case: 0.500 mmol C/L decomposed uses up O₂, nitrate and the Fe(III) oxide, releasing 0.020 mmol/L phosphate.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/redox.js"></script>
+```
+
+[Decompose more organic matter: which acceptor goes next, and when does phosphate appear?](exercise.qmd#explore)
+
+::: notes
+Start with Oxygen still present and drag the organic matter slider slowly to the right. Ask students to call out which acceptor will be used next before it happens. The slope of each line comes from electron counting: oxygen takes four electrons, nitrate five, iron one, sulfate eight, while each carbon gives four. That is why the iron oxide disappears so quickly and sulfate lasts so long. Point out that phosphate is released only when the iron step starts, although phosphorus is never reduced. The Denitrification preset reproduces the 1.25 carbon per nitrate result. Low-sulfate lake water shows methane forming once sulfate is gone. Stress that the model runs the ladder strictly in order, while real sediments overlap the steps.
+:::
+
 ## Summary {.smaller}
 
 :::: {.columns}

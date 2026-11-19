@@ -51,3 +51,51 @@ The carrier phase can change oxidation state while phosphate retains its own oxi
 ::: {.callout-note collapse="true" title="Worked solution"}
 Organic-matter oxidation can consume O₂ and support reduction of Fe(III) solids; associated phosphate can be released. Mixing, other mineral changes, and independent sources could also produce patterns. Use Fe(II), solid-phase, porewater, and time/flux observations to test the explanation.
 :::
+
+## Explore: the electron-acceptor ladder {#explore}
+
+Predict the order in which oxygen, nitrate, iron(III) oxide and sulfate are
+used up as organic matter decomposes in a closed bottom water. When does
+phosphate first appear?
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="redox" role="group" aria-label="Electron acceptors used as organic matter decomposes">
+<p>Reference case: 0.500 mmol C/L decomposed uses up 0.30 mmol/L O₂, 0.080 mmol/L nitrate and 0.20 mmol/L Fe(III) oxide, releasing 0.020 mmol/L phosphate and reducing 0.025 mmol/L sulfate.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/redox.js"></script>
+```
+
+**E1.** Choose **Denitrification worked example**. Check the carbon used and
+the N₂ formed against exercise 2.
+
+**E2.** Choose **Oxygen still present**, then slowly raise the organic matter.
+At what amount of carbon is phosphate first released? Explain why the
+phosphate waits for oxygen and nitrate to run out, although phosphorus is
+never reduced.
+
+**E3.** In **Baltic bottom water**, why does 2.00 mmol/L sulfate last so much
+longer than 0.20 mmol/L iron oxide? Use both the amounts and the electrons per
+acceptor. Then choose **Low-sulfate lake water**: what forms once sulfate is
+gone?
+
+### Model conditions and hand check
+
+Each CH₂O carbon gives 4 electrons when it is oxidised to CO₂. O₂ takes 4
+electrons, nitrate (to N₂) 5, Fe(III) (to Fe²⁺) 1 and sulfate (to HS⁻) 8.
+So the carbon needed is 1 mol C per mol O₂, 1.25 per mol nitrate, 0.25 per
+mol Fe(III) and 2 per mol sulfate. In the reference case, oxygen uses
+**0.300 mmol C/L**, nitrate **0.100**, and the iron oxide **0.050**, a total
+of 0.450 mmol C/L. The remaining 0.050 mmol C/L reduces **0.025 mmol/L
+sulfate**. For exercise 2, 0.0800 mmol/L nitrate needs **0.100 mmol C/L**
+(1.20 mg C/L) and gives **0.0400 mmol/L N₂**.
+
+The starting amounts are constructed, per litre of bottom water, with the
+reactive iron oxide at the sediment surface counted in the same litre.
+The phosphate held on the oxide is set at 0.1 mol P per mol Fe and is all
+released as the oxide is reduced; none is sorbed again. Acceptors are used
+strictly in order. Manganese oxides, biomass growth, intermediates such as
+nitrite, and FeS formation are left out. Organic matter left after sulfate
+is gone forms CO₂ and methane (2 CH₂O → CO₂ + CH₄). Real sediments overlap
+the steps in space and time.
