@@ -50,8 +50,11 @@ class Browser:
         return result['result'].get('value')
 
     def open(self, name):
+        return self.open_url((ROOT/'docs'/'interactives'/name).as_uri())
+
+    def open_url(self, url):
         self.exceptions.clear()
-        self.call('Page.navigate', {'url': (ROOT/'docs'/'interactives'/name).as_uri()})
+        self.call('Page.navigate', {'url': url})
         deadline = time.monotonic() + 15
         while time.monotonic() < deadline:
             if self.evaluate("document.readyState === 'complete' && !!document.querySelector('[data-demo-mounted]')"):

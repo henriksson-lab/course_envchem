@@ -54,7 +54,42 @@ Counterions and subsequent transformations affect acidity.
 Measure or constrain acidity/alkalinity, major cations including ammonium, other anions, precipitation volume, and dry deposition as relevant. Sulfate may arrive partly as neutral salts. Nitrification, uptake, and catchment reactions can change the net acid budget.
 :::
 
-## Explore the weekly demo {#explore}
+## Explore: deposition and dilution {#explore}
 
-Predict the effect of doubling water export at the same acid input. Use the [week 1 interactive demo](../interactives/week1.qmd),
-then explain the result using this unit’s balances and assumptions.
+Predict what happens if annual water export doubles while deposition flux and
+catchment area stay fixed. Change one input at a time and distinguish flux,
+annual load, and the equivalent concentration.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="deposition" role="group" aria-label="Deposition, annual load, and dilution">
+<p>Reference case: 40000 eq/year of acid input gives 0.0800 meq/L before neutralisation at 500 million L/year water export.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/deposition.js"></script>
+```
+
+**E1.** Choose **Worked example**, then **Double water export**. Which annual
+amounts stay fixed? Check the equivalent concentration by hand.
+
+**E2.** Reset, then double catchment area while keeping water export fixed.
+Explain why this is a different comparison from doubling both area and water.
+
+**E3.** Set both acid inputs to zero. Explain why water volume cannot create
+an acid input.
+
+### Model conditions and hand check
+
+The constructed inputs are 20.0 mmol HNO₃ and 10.0 mmol H₂SO₄ per m² per year.
+At the stated full-neutralisation endpoint, their equivalent flux is
+`(20 + 2 × 10)/1000 = 0.0400 eq/m²/year`. Across 1.00 km² this gives
+**40000 eq/year**. Dividing by 500 million L/year gives **0.0800 meq/L**;
+doubling that water export gives **0.0400 meq/L** at the same annual load.
+
+These are supplied acid inputs, not sulfate or nitrate measurements treated as
+free acid. All input is assumed to reach the annual exported water, with no
+storage, neutralisation, or other sinks. This is an annual equivalent budget,
+not a closed-lake pulse or a pH prediction. Area and water export are independent
+controls only for the stated sensitivity comparison.
+
+[More guided comparisons for week 1](../interactives/week1.qmd).

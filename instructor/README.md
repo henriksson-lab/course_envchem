@@ -2,8 +2,8 @@
 
 All 15 planned units are implemented. Start with the
 [capability and practice map](coverage.md) and [content plan](../contentplan.md).
-There are 16 short lecture decks (14 decks of 9 content slides plus the original
-12-slide and 10-slide carbonate decks), 62 numbered exercises, three compact
+There are 16 short lecture decks, with five embedded interactive demo slides,
+62 numbered exercises, three compact
 R activities, a linked glossary, and scientific model figures.
 
 The course remains chemistry-led. General chemistry refreshers precede the
@@ -60,7 +60,9 @@ comparison, regression, or p-value is required in these activities.
 The five week pages in `interactives/` provide a working grouping, not an approved
 timetable. They cover deposition/dilution, closed-carbonate acid response,
 binding/free-ion saturation, phase inventories/parent transformation, and the
-annual catchment budget. The matching exercises, lectures, and notes link to them.
+annual catchment budget. Each model is also embedded directly in the matching exercise `#explore`
+section and lecture deck. The Quantitative Biology sidebar hierarchy, week
+colours, and direct orange Demo entries point into those exercise sections.
 Each has prediction prompts, a static worked reference, and model conditions.
 
 Use them to test a chemical prediction before students calculate or modify code.

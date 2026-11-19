@@ -103,7 +103,45 @@ a statistical comparison, or field evidence.
 
 ![Model water-phase parent predictions for fictitious U and V.](fate.svg)
 
-## Explore the weekly demo {#explore}
+## Explore: sorption and parent transformation {#explore}
 
-Change Kd alone and check which phase inventories change. Use the [week 4 interactive demo](../interactives/week4.qmd),
-then explain the result using this unit’s balances and assumptions.
+Predict which control changes the phase split and which changes total-parent
+half-life. Place the boundary around both water and solid before interpreting
+a falling water concentration.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="fate" role="group" aria-label="Parent compound in water, on solids, and transformed">
+<p>Reference U at day 20: 0.250 mg total parent remains, with 0.125 mg in water and 0.125 mg on solid.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/fate.js"></script>
+```
+
+**E1.** Choose **U at day 20**. Sum parent in water, parent on solid, and the
+transformed-parent accounting term. Where is the initial 1.00 mg accounted for?
+
+**E2.** Change only Kd at the selected time. Explain why this model changes the
+phase split while leaving total parent and its half-life unchanged.
+
+**E3.** Compare **U at day 30** with **V at day 30**. Separate the effects of
+partitioning and transformation rate rather than explaining the water curves
+with a single property.
+
+### Model conditions and hand check
+
+| Reference case | Total parent | Water parent concentration |
+| --- | ---: | ---: |
+| U, day 20 | 0.250 mg | 0.125 mg/L |
+| U, day 30 | 0.125 mg | 0.0625 mg/L |
+| V, day 30 | 0.500 mg | 0.4545 mg/L |
+
+The initial parent is 1.00 mg in 1.00 L water plus 0.0100 kg dry solid.
+U has Kd 100 L/kg and half-life 10 days; V has Kd 10 L/kg and half-life 30 days.
+Partitioning is rapid at fixed Kd. Parent transforms with the **same** first-order
+coefficient in both phases; there is no input, export, or volatilisation.
+The transformed-parent term records initial parent that changed identity, not
+measured product mass, proof of mineralisation, or a toxicity result. Slow
+exchange or transformation confined to one phase requires another kinetic model.
+
+[More guided comparisons for week 4](../interactives/week4.qmd).

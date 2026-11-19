@@ -71,3 +71,21 @@ Write a short report using activity C and the catchment/sediment evidence. Inclu
 Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).
 
 Explore the [week 5 demo](../interactives/week5.qmd), then explain the result chemically.
+
+## Explore: catchment acid budget {#explore}
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="catchment" role="group" aria-label="Catchment acid budget">
+<p>Compare less neutralisation with double water export. Which annual quantities change?</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/catchment.js"></script>
+```
+
+[Compare less neutralisation with double water export. Which annual quantities change?](exercise.qmd#explore)
+
+::: notes
+Use the reference presets, then change one variable. The complete exercise has
+model assumptions, a hand-check result, and a static reference for printing.
+:::

@@ -193,6 +193,11 @@
         input.setAttribute('aria-describedby',instance+'-'+control.key+'-value');
         output.id=instance+'-'+control.key+'-value';
         input.addEventListener('input',()=>{values[control.key]=constrain(input.value,control);refresh();});
+        // The source course returns slide navigation keys after a control is used.
+        // Article inputs retain normal focused keyboard interaction.
+        const releaseSlideFocus=()=>{if(root.closest('.reveal')) input.blur();};
+        input.addEventListener('pointerup',releaseSlideFocus);
+        input.addEventListener('change',releaseSlideFocus);
         inputs[control.key]=input;outputs[control.key]=output;
         wrapper.append(label,output,input);fieldset.append(wrapper);
       }
@@ -203,7 +208,7 @@
       view.explanation.setAttribute('aria-live','polite');view.explanation.setAttribute('aria-atomic','true');
       panel.append(view.chart,view.results,view.explanation);layout.append(fieldset,panel);
       const actions=element('div',undefined,'chem-demo-actions');
-      function button(label,action){const b=element('button',label);b.type='button';b.addEventListener('click',action);actions.append(b);}
+      function button(label,action){const b=element('button',label);b.type='button';b.addEventListener('click',()=>{action();if(root.closest('.reveal')) b.blur();});actions.append(b);}
       button('Reset',()=>{values={...defaults};refresh();});
       for (const preset of config.presets||[]) button(preset.label,()=>{
         values={...defaults};

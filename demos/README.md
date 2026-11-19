@@ -1,7 +1,9 @@
 # Interactive chemistry demos
 
-Five offline browser demos support the working weekly grouping in
-`interactives/`. The Quarto resource list copies only `*.js` and `demo.css` into
+Five offline browser demos are embedded directly in their corresponding
+exercise `#explore` sections and lecture decks, as in Quantitative Biology.
+The sidebar links directly to those exercise sections. The `interactives/`
+week pages remain as extra guided practice. The Quarto resource list copies only `*.js` and `demo.css` into
 `docs/demos/`; test and instructor files are not copied.
 
 This follows the source Quantitative Biology course's idea of small embedded
@@ -30,7 +32,7 @@ elements. Shared metrics/table and chart functions replace their target content.
 ## Embed
 
 Use a classic script and the shared stylesheet in an HTML block, following the
-weekly pages. Keep the static hand-check result in the Quarto source outside the
+exercise and weekly pages. Reveal-specific styles keep lecture embeds compact. Keep the static hand-check result in the Quarto source outside the
 interactive block. This provides context when scripts are unavailable and in
 print. Use a meaningful `aria-label` on the mount container. Do not add hover-only
 results or override keyboard shortcuts globally.

@@ -122,14 +122,21 @@ window.Quarto = {
     <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../overview.html"> 
-<span class="menu-text">Course content</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-course-info" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Course info</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-course-info">    
+        <li>
+    <a class="dropdown-item" href="../overview.html">
+ <span class="dropdown-text">Course content and reading</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../glossary.html"> 
-<span class="menu-text">Glossary</span></a>
+        <li>
+    <a class="dropdown-item" href="../glossary.html">
+ <span class="dropdown-text">Glossary</span></a>
   </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -141,7 +148,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Water</li><li class="breadcrumb-item"><a href="../carbonate-gases/notes.html">Carbonate and gas chemistry</a></li><li class="breadcrumb-item"><a href="../carbonate-gases/reference.html">Model reference</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Week 2: Aquatic composition and carbonate chemistry</li><li class="breadcrumb-item"><a href="../carbonate-gases/lec.html">Carbonate and gas chemistry</a></li><li class="breadcrumb-item"><a href="../carbonate-gases/reference.html">Model reference</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -167,74 +174,44 @@ window.Quarto = {
  <span class="menu-text">Home</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Course info</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../overview.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Course content</span></a>
+ <span class="menu-text">Course content and reading</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../glossary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Glossary</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
- <span class="menu-text">Weekly interactive demos</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interactives/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">All five weeks</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../interactives/week1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 1: deposition and dilution</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../interactives/week2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 2: carbonate response</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../interactives/week3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 3: metal binding</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../interactives/week4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 4: sorption and fate</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../interactives/week5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 5: catchment budget</span></a>
+ <span class="menu-text">Interactive demo guide</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Foundations</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Week 1: Environmental balances and atmosphere</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
@@ -246,39 +223,57 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../environmental-systems/notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and learning goals</span></a>
+  <a href="../environmental-systems/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../environmental-systems/lec.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture</span></a>
+  <a href="../environmental-systems/notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../environmental-systems/exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercises and solutions</span></a>
+ <span class="menu-text">Exercise</span></a>
   </div>
 </li>
       </ul>
   </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
+          <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
- <span class="menu-text">Atmosphere</span></a>
+ <span class="menu-text">Reactions in the atmosphere</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../atmospheric-reactions/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../atmospheric-reactions/notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../atmospheric-reactions/exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exercise</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
- <span class="menu-text">Reactions in the atmosphere</span></a>
+ <span class="menu-text">Atmospheric deposition and acidity</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -286,20 +281,26 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../atmospheric-reactions/notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and learning goals</span></a>
+  <a href="../deposition/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../atmospheric-reactions/lec.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture</span></a>
+  <a href="../deposition/notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../atmospheric-reactions/exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercises and solutions</span></a>
+  <a href="../deposition/exercise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exercise</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../deposition/exercise.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: deposition and dilution</span></a>
   </div>
 </li>
       </ul>
@@ -307,7 +308,7 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
- <span class="menu-text">Atmospheric deposition and acidity</span></a>
+ <span class="menu-text">Molecules, radiation, and climate</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -315,49 +316,20 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../deposition/notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and learning goals</span></a>
+  <a href="../climate-chemistry/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../deposition/lec.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../deposition/exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercises and solutions</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
- <span class="menu-text">Molecules, radiation, and climate</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../climate-chemistry/notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and learning goals</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../climate-chemistry/lec.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture</span></a>
+ <span class="menu-text">Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../climate-chemistry/exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercises and solutions</span></a>
+ <span class="menu-text">Exercise</span></a>
   </div>
 </li>
       </ul>
@@ -366,38 +338,38 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text">Water</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Week 2: Aquatic composition and carbonate chemistry</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
  <span class="menu-text">Aquatic composition and equilibrium</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../aquatic-equilibria/notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and learning goals</span></a>
+  <a href="../aquatic-equilibria/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../aquatic-equilibria/lec.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture</span></a>
+  <a href="../aquatic-equilibria/notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../aquatic-equilibria/exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercises and solutions</span></a>
+ <span class="menu-text">Exercise</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -410,35 +382,41 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
  <span class="menu-text">Carbonate and gas chemistry</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../carbonate-gases/notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and learning goals</span></a>
-  </div>
-</li>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../carbonate-gases/lec.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture</span></a>
+ <span class="menu-text">Lecture (slides)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../carbonate-gases/gases-lec.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture: gases and minerals</span></a>
+ <span class="menu-text">Lecture (slides): gases and minerals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../carbonate-gases/notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../carbonate-gases/exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercises and solutions</span></a>
+ <span class="menu-text">Exercise</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../carbonate-gases/exercise.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: carbonate response to acid</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -451,33 +429,44 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false">
  <span class="menu-text">Organic matter in water</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../aquatic-organic-matter/notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and learning goals</span></a>
+  <a href="../aquatic-organic-matter/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../aquatic-organic-matter/lec.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture</span></a>
+  <a href="../aquatic-organic-matter/notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../aquatic-organic-matter/exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercises and solutions</span></a>
+ <span class="menu-text">Exercise</span></a>
   </div>
 </li>
       </ul>
   </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
+ <span class="menu-text">Week 3: Metals, surfaces, redox, and treatment</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false">
@@ -489,20 +478,26 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../metals/notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and learning goals</span></a>
+  <a href="../metals/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../metals/lec.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture</span></a>
+  <a href="../metals/notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../metals/exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercises and solutions</span></a>
+ <span class="menu-text">Exercise</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../metals/exercise.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: metal binding and saturation</span></a>
   </div>
 </li>
       </ul>
@@ -518,20 +513,20 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../surfaces/notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and learning goals</span></a>
+  <a href="../surfaces/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../surfaces/lec.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture</span></a>
+  <a href="../surfaces/notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../surfaces/exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercises and solutions</span></a>
+ <span class="menu-text">Exercise</span></a>
   </div>
 </li>
       </ul>
@@ -547,20 +542,20 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../redox-cycles/notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and learning goals</span></a>
+  <a href="../redox-cycles/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../redox-cycles/lec.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture</span></a>
+  <a href="../redox-cycles/notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../redox-cycles/exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercises and solutions</span></a>
+ <span class="menu-text">Exercise</span></a>
   </div>
 </li>
       </ul>
@@ -576,20 +571,20 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../water-treatment/notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and learning goals</span></a>
+  <a href="../water-treatment/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../water-treatment/lec.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture</span></a>
+  <a href="../water-treatment/notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../water-treatment/exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercises and solutions</span></a>
+ <span class="menu-text">Exercise</span></a>
   </div>
 </li>
       </ul>
@@ -598,13 +593,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false">
- <span class="menu-text">Soils and contaminants</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true">
+ <span class="menu-text">Week 4: Soils, waste, and contaminants</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false">
@@ -616,20 +611,20 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../soil-chemistry/notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and learning goals</span></a>
+  <a href="../soil-chemistry/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../soil-chemistry/lec.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture</span></a>
+  <a href="../soil-chemistry/notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../soil-chemistry/exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercises and solutions</span></a>
+ <span class="menu-text">Exercise</span></a>
   </div>
 </li>
       </ul>
@@ -645,20 +640,20 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../waste-leachate/notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and learning goals</span></a>
+  <a href="../waste-leachate/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../waste-leachate/lec.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture</span></a>
+  <a href="../waste-leachate/notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../waste-leachate/exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercises and solutions</span></a>
+ <span class="menu-text">Exercise</span></a>
   </div>
 </li>
       </ul>
@@ -674,20 +669,26 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../organic-contaminants/notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and learning goals</span></a>
+  <a href="../organic-contaminants/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../organic-contaminants/lec.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture</span></a>
+  <a href="../organic-contaminants/notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../organic-contaminants/exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercises and solutions</span></a>
+ <span class="menu-text">Exercise</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../organic-contaminants/exercise.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: sorption and transformation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -702,13 +703,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false">
- <span class="menu-text">Synthesis</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="true">
+ <span class="menu-text">Week 5: Connected systems and synthesis</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false">
@@ -720,20 +721,26 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../integrated-case/notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notes and learning goals</span></a>
+  <a href="../integrated-case/lec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture (slides)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../integrated-case/lec.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture</span></a>
+  <a href="../integrated-case/notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../integrated-case/exercise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exercises and solutions</span></a>
+ <span class="menu-text">Exercise</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../integrated-case/exercise.html#explore" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Demo: catchment acid budget</span></a>
   </div>
 </li>
       </ul>
@@ -762,7 +769,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Water</li><li class="breadcrumb-item"><a href="../carbonate-gases/notes.html">Carbonate and gas chemistry</a></li><li class="breadcrumb-item"><a href="../carbonate-gases/reference.html">Model reference</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Week 2: Aquatic composition and carbonate chemistry</li><li class="breadcrumb-item"><a href="../carbonate-gases/lec.html">Carbonate and gas chemistry</a></li><li class="breadcrumb-item"><a href="../carbonate-gases/reference.html">Model reference</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Carbonate model and reference sheet</h1>
 </div>

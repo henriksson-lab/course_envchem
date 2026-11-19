@@ -67,6 +67,21 @@ def check():
         page = DOCS / "interactives" / f"week{week}.html"
         if not page.exists() or 'data-demo=' not in page.read_text():
             errors.append(f"Missing weekly interactive mount: {page.name}")
+    exercise_models = {
+        "deposition": "deposition", "carbonate-gases": "carbonate",
+        "metals": "metals", "organic-contaminants": "fate", "integrated-case": "catchment",
+    }
+    for folder, model in exercise_models.items():
+        exercise = DOCS / folder / "exercise.html"
+        lecture = DOCS / folder / "lec.html"
+        for page in (exercise, lecture):
+            text = page.read_text() if page.exists() else ""
+            if f'data-demo="{model}"' not in text or 'id="explore"' not in text:
+                errors.append(f"Missing embedded {model} demo at {page.relative_to(DOCS)}#explore")
+        target = f"{folder}/exercise.html#explore"
+        # The restored scaffold must expose the actual exercise demo in the menu.
+        if target not in (DOCS / "index.html").read_text():
+            errors.append(f"Missing sidebar demo link: {target}")
     for excluded in ("instructor", "tools", "templates", "contentplan.html", "README.html",
                      "demos/tests", "demos/README.md"):
         if (DOCS / excluded).exists():

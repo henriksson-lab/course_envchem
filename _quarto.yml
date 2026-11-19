@@ -30,173 +30,176 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: overview.qmd
-        text: Course content
-      - href: glossary.qmd
-        text: Glossary
+      - text: "Course info"
+        menu:
+          - text: Course content and reading
+            href: overview.qmd
+          - text: Glossary
+            href: glossary.qmd
   sidebar:
     style: docked
     search: true
-    collapse-level: 1
     contents:
-      - href: index.qmd
-        text: Home
-      - href: overview.qmd
-        text: Course content
-      - href: glossary.qmd
-        text: Glossary
-      - section: "Weekly interactive demos"
+      - text: Home
+        href: index.qmd
+      - section: "Course info"
         contents:
-          - href: interactives/index.qmd
-            text: "All five weeks"
-          - href: interactives/week1.qmd
-            text: "Week 1: deposition and dilution"
-          - href: interactives/week2.qmd
-            text: "Week 2: carbonate response"
-          - href: interactives/week3.qmd
-            text: "Week 3: metal binding"
-          - href: interactives/week4.qmd
-            text: "Week 4: sorption and fate"
-          - href: interactives/week5.qmd
-            text: "Week 5: catchment budget"
-      - section: "Foundations"
+          - text: Course content and reading
+            href: overview.qmd
+          - text: Glossary
+            href: glossary.qmd
+          - text: Interactive demo guide
+            href: interactives/index.qmd
+      # As in Quantitative Biology, the five week blocks occupy top-level
+      # positions 3–7. styles.css assigns their stripes and tinted headers.
+      - section: "Week 1: Environmental balances and atmosphere"
         contents:
           - section: "Environmental amounts and balances"
             contents:
-              - href: environmental-systems/notes.qmd
-                text: "Notes and learning goals"
-              - href: environmental-systems/lec.qmd
-                text: "Lecture"
-              - href: environmental-systems/exercise.qmd
-                text: "Exercises and solutions"
-      - section: "Atmosphere"
-        contents:
+              - text: "Lecture (slides)"
+                href: environmental-systems/lec.qmd
+              - text: "Notes"
+                href: environmental-systems/notes.qmd
+              - text: "Exercise"
+                href: environmental-systems/exercise.qmd
           - section: "Reactions in the atmosphere"
             contents:
-              - href: atmospheric-reactions/notes.qmd
-                text: "Notes and learning goals"
-              - href: atmospheric-reactions/lec.qmd
-                text: "Lecture"
-              - href: atmospheric-reactions/exercise.qmd
-                text: "Exercises and solutions"
+              - text: "Lecture (slides)"
+                href: atmospheric-reactions/lec.qmd
+              - text: "Notes"
+                href: atmospheric-reactions/notes.qmd
+              - text: "Exercise"
+                href: atmospheric-reactions/exercise.qmd
           - section: "Atmospheric deposition and acidity"
             contents:
-              - href: deposition/notes.qmd
-                text: "Notes and learning goals"
-              - href: deposition/lec.qmd
-                text: "Lecture"
-              - href: deposition/exercise.qmd
-                text: "Exercises and solutions"
+              - text: "Lecture (slides)"
+                href: deposition/lec.qmd
+              - text: "Notes"
+                href: deposition/notes.qmd
+              - text: "Exercise"
+                href: deposition/exercise.qmd
+              - text: "Demo: deposition and dilution"
+                href: deposition/exercise.qmd#explore
           - section: "Molecules, radiation, and climate"
             contents:
-              - href: climate-chemistry/notes.qmd
-                text: "Notes and learning goals"
-              - href: climate-chemistry/lec.qmd
-                text: "Lecture"
-              - href: climate-chemistry/exercise.qmd
-                text: "Exercises and solutions"
-      - section: "Water"
+              - text: "Lecture (slides)"
+                href: climate-chemistry/lec.qmd
+              - text: "Notes"
+                href: climate-chemistry/notes.qmd
+              - text: "Exercise"
+                href: climate-chemistry/exercise.qmd
+      - section: "Week 2: Aquatic composition and carbonate chemistry"
         contents:
           - section: "Aquatic composition and equilibrium"
             contents:
-              - href: aquatic-equilibria/notes.qmd
-                text: "Notes and learning goals"
-              - href: aquatic-equilibria/lec.qmd
-                text: "Lecture"
-              - href: aquatic-equilibria/exercise.qmd
-                text: "Exercises and solutions"
-              - href: aquatic-equilibria/data-dictionary.qmd
-                text: "Activity data dictionary"
+              - text: "Lecture (slides)"
+                href: aquatic-equilibria/lec.qmd
+              - text: "Notes"
+                href: aquatic-equilibria/notes.qmd
+              - text: "Exercise"
+                href: aquatic-equilibria/exercise.qmd
+              - text: "Activity data dictionary"
+                href: aquatic-equilibria/data-dictionary.qmd
           - section: "Carbonate and gas chemistry"
             contents:
-              - href: carbonate-gases/notes.qmd
-                text: "Notes and learning goals"
-              - href: carbonate-gases/lec.qmd
-                text: "Lecture"
-              - href: carbonate-gases/gases-lec.qmd
-                text: "Lecture: gases and minerals"
-              - href: carbonate-gases/exercise.qmd
-                text: "Exercises and solutions"
-              - href: carbonate-gases/reference.qmd
-                text: "Model reference"
+              - text: "Lecture (slides)"
+                href: carbonate-gases/lec.qmd
+              - text: "Lecture (slides): gases and minerals"
+                href: carbonate-gases/gases-lec.qmd
+              - text: "Notes"
+                href: carbonate-gases/notes.qmd
+              - text: "Exercise"
+                href: carbonate-gases/exercise.qmd
+              - text: "Demo: carbonate response to acid"
+                href: carbonate-gases/exercise.qmd#explore
+              - text: "Model reference"
+                href: carbonate-gases/reference.qmd
           - section: "Organic matter in water"
             contents:
-              - href: aquatic-organic-matter/notes.qmd
-                text: "Notes and learning goals"
-              - href: aquatic-organic-matter/lec.qmd
-                text: "Lecture"
-              - href: aquatic-organic-matter/exercise.qmd
-                text: "Exercises and solutions"
+              - text: "Lecture (slides)"
+                href: aquatic-organic-matter/lec.qmd
+              - text: "Notes"
+                href: aquatic-organic-matter/notes.qmd
+              - text: "Exercise"
+                href: aquatic-organic-matter/exercise.qmd
+      - section: "Week 3: Metals, surfaces, redox, and treatment"
+        contents:
           - section: "Metal speciation and mobility"
             contents:
-              - href: metals/notes.qmd
-                text: "Notes and learning goals"
-              - href: metals/lec.qmd
-                text: "Lecture"
-              - href: metals/exercise.qmd
-                text: "Exercises and solutions"
+              - text: "Lecture (slides)"
+                href: metals/lec.qmd
+              - text: "Notes"
+                href: metals/notes.qmd
+              - text: "Exercise"
+                href: metals/exercise.qmd
+              - text: "Demo: metal binding and saturation"
+                href: metals/exercise.qmd#explore
           - section: "Colloids, surfaces, and sorption"
             contents:
-              - href: surfaces/notes.qmd
-                text: "Notes and learning goals"
-              - href: surfaces/lec.qmd
-                text: "Lecture"
-              - href: surfaces/exercise.qmd
-                text: "Exercises and solutions"
+              - text: "Lecture (slides)"
+                href: surfaces/lec.qmd
+              - text: "Notes"
+                href: surfaces/notes.qmd
+              - text: "Exercise"
+                href: surfaces/exercise.qmd
           - section: "Redox and environmental cycles"
             contents:
-              - href: redox-cycles/notes.qmd
-                text: "Notes and learning goals"
-              - href: redox-cycles/lec.qmd
-                text: "Lecture"
-              - href: redox-cycles/exercise.qmd
-                text: "Exercises and solutions"
+              - text: "Lecture (slides)"
+                href: redox-cycles/lec.qmd
+              - text: "Notes"
+                href: redox-cycles/notes.qmd
+              - text: "Exercise"
+                href: redox-cycles/exercise.qmd
           - section: "Water pollution and treatment chemistry"
             contents:
-              - href: water-treatment/notes.qmd
-                text: "Notes and learning goals"
-              - href: water-treatment/lec.qmd
-                text: "Lecture"
-              - href: water-treatment/exercise.qmd
-                text: "Exercises and solutions"
-      - section: "Soils and contaminants"
+              - text: "Lecture (slides)"
+                href: water-treatment/lec.qmd
+              - text: "Notes"
+                href: water-treatment/notes.qmd
+              - text: "Exercise"
+                href: water-treatment/exercise.qmd
+      - section: "Week 4: Soils, waste, and contaminants"
         contents:
           - section: "Soil chemistry and retention"
             contents:
-              - href: soil-chemistry/notes.qmd
-                text: "Notes and learning goals"
-              - href: soil-chemistry/lec.qmd
-                text: "Lecture"
-              - href: soil-chemistry/exercise.qmd
-                text: "Exercises and solutions"
+              - text: "Lecture (slides)"
+                href: soil-chemistry/lec.qmd
+              - text: "Notes"
+                href: soil-chemistry/notes.qmd
+              - text: "Exercise"
+                href: soil-chemistry/exercise.qmd
           - section: "Waste materials and leachate chemistry"
             contents:
-              - href: waste-leachate/notes.qmd
-                text: "Notes and learning goals"
-              - href: waste-leachate/lec.qmd
-                text: "Lecture"
-              - href: waste-leachate/exercise.qmd
-                text: "Exercises and solutions"
+              - text: "Lecture (slides)"
+                href: waste-leachate/lec.qmd
+              - text: "Notes"
+                href: waste-leachate/notes.qmd
+              - text: "Exercise"
+                href: waste-leachate/exercise.qmd
           - section: "Organic contaminants and environmental fate"
             contents:
-              - href: organic-contaminants/notes.qmd
-                text: "Notes and learning goals"
-              - href: organic-contaminants/lec.qmd
-                text: "Lecture"
-              - href: organic-contaminants/exercise.qmd
-                text: "Exercises and solutions"
-              - href: organic-contaminants/data-dictionary.qmd
-                text: "Activity data dictionary"
-      - section: "Synthesis"
+              - text: "Lecture (slides)"
+                href: organic-contaminants/lec.qmd
+              - text: "Notes"
+                href: organic-contaminants/notes.qmd
+              - text: "Exercise"
+                href: organic-contaminants/exercise.qmd
+              - text: "Demo: sorption and transformation"
+                href: organic-contaminants/exercise.qmd#explore
+              - text: "Activity data dictionary"
+                href: organic-contaminants/data-dictionary.qmd
+      - section: "Week 5: Connected systems and synthesis"
         contents:
           - section: "Connecting air, catchments, and water"
             contents:
-              - href: integrated-case/notes.qmd
-                text: "Notes and learning goals"
-              - href: integrated-case/lec.qmd
-                text: "Lecture"
-              - href: integrated-case/exercise.qmd
-                text: "Exercises and solutions"
+              - text: "Lecture (slides)"
+                href: integrated-case/lec.qmd
+              - text: "Notes"
+                href: integrated-case/notes.qmd
+              - text: "Exercise"
+                href: integrated-case/exercise.qmd
+              - text: "Demo: catchment acid budget"
+                href: integrated-case/exercise.qmd#explore
 
 format:
   html:

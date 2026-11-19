@@ -71,7 +71,11 @@ isolated installed Chrome and `python3 tools/check_demos_browser.py` (requires
 The scaffold is adapted from `/home/mahogny/github/course/quantbio-3MB00A`:
 Quarto, `docs/` output, searchable docked sidebar, Cosmo HTML styling, the copied
 reveal.js theme, and topic folders with `lec.qmd` and `exercise.qmd`.
-General sidebar rules are retained; week-position styling is removed.
+The source sidebar hierarchy, default expansion behaviour, coloured week
+stripes/tints, and Course info dropdown are retained. Each week contains its
+topics and direct orange Demo links to embedded exercise sections. Exercise
+links use the source scaffold’s italic cue. The five demos are embedded in
+both exercises and lecture slides; standalone week pages remain as guided practice.
 Advanced Quantitative Biology lessons, demos, dependencies, and Git metadata
 were not copied. The default build does not stage or commit.
 

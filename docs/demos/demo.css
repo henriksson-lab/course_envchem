@@ -57,3 +57,75 @@
 @media print {
   .chem-demo { display: none; }
 }
+
+/* Match the source scaffold's compact lecture embeds. Article styling above
+   stays unchanged; the complete explanation/table is on the linked exercise. */
+@media screen {
+  .reveal .chem-demo {
+    margin: .2em 0;
+    padding: 8px 10px;
+    font-size: 18px;
+    line-height: 1.18;
+    text-align: left;
+  }
+  .reveal .chem-demo-layout {
+    grid-template-columns: 250px minmax(0, 1fr);
+    gap: 14px;
+    align-items: start;
+  }
+  .reveal .chem-demo-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px 10px;
+  }
+  .reveal .chem-demo-controls legend {
+    padding: 0 4px;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .reveal .chem-demo-control { margin: 0; }
+  .reveal .chem-demo-control label { font-size: 18px; line-height: 1.15; }
+  .reveal .chem-demo-control output { font-size: 18px; margin: 3px 0 0; }
+  .reveal .chem-demo-control input[type="range"] { min-height: 24px; margin: 0; }
+  .reveal .chem-demo-actions { gap: 6px; margin: 0 0 8px; }
+  .reveal .chem-demo-actions button {
+    min-height: 30px;
+    padding: 4px 9px;
+    font-size: 18px;
+    line-height: 1.15;
+  }
+  .reveal .chem-demo-chart { overflow: visible; }
+  .reveal .chem-demo-chart::after { display: none; }
+  .reveal .chem-demo-svg { min-width: 0; height: 320px; max-height: 320px; }
+  .reveal .chem-demo-svg text { font-size: 22px; }
+  .reveal .chem-demo-svg .chem-chart-title { font-size: 21px; }
+  .reveal .chem-demo-svg .chem-marker-label { font-size: 22px; }
+  .reveal .chem-demo[data-demo="deposition"] .chem-demo-svg text,
+  .reveal .chem-demo[data-demo="catchment"] .chem-demo-svg text { font-size: 20px; }
+  .reveal .chem-demo-legend {
+    display: flex;
+    width: auto;
+    gap: 4px 14px;
+    margin: 2px 0 6px;
+    font-size: 18px;
+    line-height: 1.15;
+  }
+  .reveal .chem-demo-legend li { margin: 0; }
+  .reveal .chem-demo-swatch { width: 28px; }
+  .reveal .chem-demo-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+    margin: 5px 0 0;
+  }
+  .reveal .chem-demo[data-demo="carbonate"] .chem-demo-metrics {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .reveal .chem-demo-metrics > div { padding: 5px 7px; }
+  .reveal .chem-demo-metrics dt { font-size: 17px; line-height: 1.15; }
+  .reveal .chem-demo-metrics dd { margin: 3px 0 0; font-size: 20px; line-height: 1.15; }
+  .reveal .chem-demo-unit { font-size: 17px; }
+  .reveal .chem-demo-explanation,
+  .reveal .chem-demo-table-wrap { display: none; }
+}

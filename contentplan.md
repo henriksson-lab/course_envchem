@@ -31,7 +31,9 @@ Five demos now support a working five-week grouping of the existing content:
 units 1–4 (deposition and dilution), 5–7 (closed-water carbonate response),
 8–11 (metal binding and saturation), 12–14 (partitioning and parent
 transformation), and 15 (the annual catchment budget). This is a study grouping,
-not a change to formal scheduling. Each week page has prediction questions,
+not a change to formal scheduling. Direct Demo entries sit beside the relevant lecture and exercise in the
+Quantitative Biology week-menu scaffold. Each corresponding exercise and
+lecture contains a real inline demo. Each standalone week page has prediction questions,
 reference presets, model conditions, and a static hand-check result.
 
 The browser demos are a way to explore the same chemical balances, separate

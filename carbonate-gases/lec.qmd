@@ -152,3 +152,21 @@ Continue with [gas exchange and minerals](gases-lec.qmd) and the
 [reference sheet](reference.qmd).
 
 Explore the [week 2 demo](../interactives/week2.qmd), then explain the result chemically.
+
+## Explore: carbonate response to acid {#explore}
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="carbonate" role="group" aria-label="Carbonate response to acid">
+<p>Compare Water A and Water B: same initial pH and acid dose, different carbon inventories.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/carbonate.js"></script>
+```
+
+[Compare Water A and Water B: same initial pH and acid dose, different carbon inventories.](exercise.qmd#explore)
+
+::: notes
+Use the reference presets, then change one variable. The complete exercise has
+model assumptions, a hand-check result, and a static reference for printing.
+:::

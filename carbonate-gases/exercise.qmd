@@ -208,7 +208,45 @@ could reveal additional reactions. A real catchment can have several processes
 acting together; pH alone does not identify the cause or neutralising inventory.
 :::
 
-## Explore the weekly demo {#explore}
+## Explore: carbonate response to acid {#explore}
 
-Compare Water A and Water B, then explain the conserved carbon and changed alkalinity. Use the [week 2 interactive demo](../interactives/week2.qmd),
-then explain the result using this unit’s balances and assumptions.
+Predict which of the two waters from exercise 2 has the larger pH decrease.
+Use the presets, then change only the carbon total or acid dose. Read the
+species fractions alongside the carbon and alkalinity balances.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="carbonate" role="group" aria-label="Closed-water carbonate response to strong acid">
+<p>Reference case: Water A finishes at model pH 7.235 and Water B at 6.252 after the same 0.050 meq/L acid input.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/carbonate.js"></script>
+```
+
+**E1.** Compare **Water A: more carbon** with **Water B: less carbon**. Check
+that alkalinity falls by the same acid-equivalent dose in both. Explain why
+the pH changes differ.
+
+**E2.** Choose **No acid added** and vary only the carbon total. At fixed pH,
+which changes: species fractions, species concentrations, or alkalinity?
+
+**E3.** Choose **Check pH 8.35 fractions**. Compare the bicarbonate fraction
+with your hand calculation in exercise 1. Explain why the distribution curve
+alone does not specify the final pH after an acid dose.
+
+### Model conditions and hand check
+
+| Constructed water | Initial pH | Fixed inorganic carbon | Acid dose | Final model pH |
+| --- | ---: | ---: | ---: | ---: |
+| A | 7.50 | 1.00 mmol/L | 0.050 meq/L | 7.235 |
+| B | 7.50 | 0.100 mmol/L | 0.050 meq/L | 6.252 |
+
+At 25 °C, use pK₁ = 6.35, pK₂ = 10.33, and Kw = 10⁻¹⁴ in dilute freshwater.
+Activities are approximated by concentrations. Each acid addition holds the
+selected inorganic-carbon total fixed and lowers alkalinity by the dose.
+There is no gas exchange, mineral reaction, biological change, other buffer,
+or dilution. The curves use prescribed pH; the final-state marker also satisfies
+the changed alkalinity balance. Negative alkalinity is possible while every
+species concentration remains nonnegative.
+
+[More guided comparisons for week 2](../interactives/week2.qmd).

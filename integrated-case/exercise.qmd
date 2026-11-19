@@ -66,7 +66,46 @@ a discriminating observation. A classmate should be able to render the report
 from the saved files and understand which numbers are inputs, predictions, or
 constructed observations.
 
-## Explore the weekly demo {#explore}
+## Explore: the annual catchment budget {#explore}
 
-Compare less neutralisation with double water export and distinguish their annual amounts. Use the [week 5 interactive demo](../interactives/week5.qmd),
-then explain the result using this unit’s balances and assumptions.
+Predict how less accessible neutralisation differs from more annual water export.
+Close the annual acid-equivalent balance before interpreting a concentration
+or trying to explain a pH observation.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="catchment" role="group" aria-label="Annual catchment acid input, neutralisation, and alkalinity budget">
+<p>Reference catchment: 40000 eq/year acid input minus 30000 eq/year neutralised leaves 10000 eq/year residual acid.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/catchment.js"></script>
+```
+
+**E1.** Choose **Worked catchment**. Show that annual acid actually neutralised
+plus residual acid equals acid input. Calculate the reference-adjusted alkalinity.
+
+**E2.** Compare **Less neutralisation** with **Double water export**. Identify
+which annual amounts change and which concentration changes are dilution alone.
+
+**E3.** Choose **Capacity exceeds input**, then **Exceed reference alkalinity**.
+Explain why unused capacity is not automatically credited as extra alkalinity,
+and why a negative alkalinity balance is not a negative solute concentration.
+
+### Model conditions and hand check
+
+| Quantity | Worked catchment | Less neutralisation |
+| --- | ---: | ---: |
+| Acid input | 40000 eq/year | 40000 eq/year |
+| Acid actually neutralised | 30000 eq/year | 20000 eq/year |
+| Residual acid | 10000 eq/year | 20000 eq/year |
+| Adjusted alkalinity export | 40000 eq/year | 30000 eq/year |
+| Adjusted alkalinity at 500 million L/year | 0.0800 meq/L | 0.0600 meq/L |
+
+The explicit reference alkalinity export is 50000 eq/year. In the worked case,
+residual acid is **0.0200 meq/L**. Accessible neutralisation capacity caps how
+much added acid can react; unused capacity is not an additional source in this
+reference comparison. Other annual terms stay fixed when one slider changes.
+This is an annual flow-weighted budget, not a dynamic lake or a closed-water
+pulse. Predicting pH also requires carbon, gas exchange, and acid–base constraints.
+
+[More guided comparisons for week 5](../interactives/week5.qmd).

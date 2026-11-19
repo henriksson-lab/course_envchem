@@ -54,7 +54,43 @@ Consider surfaces, minerals, and protonation before proposing redox.
 Acid can desorb metal, dissolve a metal-bearing phase, or protonate a ligand and redistribute its binding. Measure free and total metal, ligand/organic matter, major ions, solids, and pH. Unchanged oxidation state is compatible with all these processes.
 :::
 
-## Explore the weekly demo {#explore}
+## Explore: binding and free-ion saturation {#explore}
 
-Compare the exactly saturated case with the same total and no ligand. Use the [week 3 interactive demo](../interactives/week3.qmd),
-then explain the result using this unit’s balances and assumptions.
+Keep total dissolved metal fixed and predict how increasing prescribed free
+ligand changes free metal, complexed metal, and the hydroxide saturation product.
+Then vary pH without changing the stipulated binding constant.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="metals" role="group" aria-label="Metal binding and free-ion hydroxide saturation">
+<p>Reference binding case: 2.00 µmol/L total metal and 10.0 µmol/L free ligand give 0.1818 µmol/L free metal.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/metals.js"></script>
+```
+
+**E1.** Choose **Worked binding case**. Check that free and complexed amounts
+sum to the total, and recover the free fraction using `1/(1 + β[L]free)`.
+
+**E2.** Compare **Exactly saturated** with **Same total, no ligand**. Explain
+why the saturation ratio changes although total metal and pH stay fixed.
+
+**E3.** Reset and raise only pH. What changes in the hydroxide calculation?
+Which omitted chemical reactions could also change the binding split in real water?
+
+### Model conditions and hand check
+
+For the fictitious one-complex system, β = 10⁶ L/mol. At total metal 2.00 µmol/L
+and prescribed free ligand 10.0 µmol/L, β[L] is 10, giving **0.1818 µmol/L free**
+and **1.818 µmol/L complexed metal**. At pH 9.00, hydroxide is 10⁻⁵ mol/L;
+with Ksp = 10⁻¹⁶, saturated free metal is **1.00 µmol/L**. Total metal
+10.0 µmol/L and free ligand 9.00 µmol/L give that saturated state (Ω = 1).
+Removing ligand at the same total gives Ω = 10.
+
+Use dilute water at 25 °C with concentrations approximating activities.
+Free ligand is imposed by a reservoir; it is not total ligand. The plot describes
+a hypothetical binding-only state **before** precipitation or dissolution.
+It does not solve mineral reaction amounts or rates. Hydrolysis, competing
+ligands, ligand protonation, and biological effects are omitted.
+
+[More guided comparisons for week 3](../interactives/week3.qmd).

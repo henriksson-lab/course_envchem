@@ -77,3 +77,21 @@ A filtered metal concentration rises as pH falls, but oxidation-state measuremen
 Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).
 
 Explore the [week 3 demo](../interactives/week3.qmd), then explain the result chemically.
+
+## Explore: metal binding and saturation {#explore}
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="metals" role="group" aria-label="Metal binding and saturation">
+<p>Compare the exactly saturated case with the same total and no ligand.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/metals.js"></script>
+```
+
+[Compare the exactly saturated case with the same total and no ligand.](exercise.qmd#explore)
+
+::: notes
+Use the reference presets, then change one variable. The complete exercise has
+model assumptions, a hand-check result, and a static reference for printing.
+:::

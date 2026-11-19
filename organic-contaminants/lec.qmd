@@ -75,3 +75,21 @@ Water parent concentration falls after sediment is added. What would distinguish
 Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).
 
 Explore the [week 4 demo](../interactives/week4.qmd), then explain the result chemically.
+
+## Explore: sorption and parent transformation {#explore}
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="fate" role="group" aria-label="Sorption and parent transformation">
+<p>Change Kd alone. Does total-parent persistence change in this model?</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/fate.js"></script>
+```
+
+[Change Kd alone. Does total-parent persistence change in this model?](exercise.qmd#explore)
+
+::: notes
+Use the reference presets, then change one variable. The complete exercise has
+model assumptions, a hand-check result, and a static reference for printing.
+:::

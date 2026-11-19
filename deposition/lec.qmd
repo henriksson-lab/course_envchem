@@ -73,3 +73,21 @@ A rain sample contains sulfate. What additional evidence is needed before report
 Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).
 
 Explore the [week 1 demo](../interactives/week1.qmd), then explain the result chemically.
+
+## Explore: deposition and dilution {#explore}
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="deposition" role="group" aria-label="Deposition and dilution">
+<p>Double water export. Which changes: annual load or equivalent concentration?</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/deposition.js"></script>
+```
+
+[Double water export. Which changes: annual load or equivalent concentration?](exercise.qmd#explore)
+
+::: notes
+Use the reference presets, then change one variable. The complete exercise has
+model assumptions, a hand-check result, and a static reference for printing.
+:::
