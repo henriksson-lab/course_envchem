@@ -1,0 +1,54 @@
+---
+title: "Week 2 demo: carbonate response to acid"
+---
+
+Why can two waters at pH 7.50 respond so differently to the same acid dose?
+
+Use with [carbonate species and alkalinity](../carbonate-gases/lec.qmd), the [reference sheet](../carbonate-gases/reference.qmd), and [exercise 2](../carbonate-gases/exercise.qmd#same-ph-different-acid-response). This working week groups aquatic composition, carbonate, and organic matter.
+
+## Predict first
+
+Compare 1.00 and 0.100 mmol/L total inorganic carbon at the same initial pH. Predict which water has the larger pH decrease when 0.050 meq/L strong acid is added.
+
+## Explore the model
+
+Use the sliders or keyboard arrow keys while a slider is focused. Reset restores
+the starting values; reference-case buttons set all inputs for that case.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="carbonate" role="group" aria-label="Week 2 demo: carbonate response to acid">
+<p>The reference calculation below can be used while the controls load or when JavaScript is unavailable.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/carbonate.js"></script>
+```
+
+## Questions to try
+
+1. Choose **Water A: more carbon**, then **Water B: less carbon**. Record initial alkalinity, final alkalinity, and final pH. Relate the difference to the initial inventory rather than to a different starting pH.
+2. Choose **No acid added**, then move only the fixed carbon total. At the same pH, what changes: fractions, concentrations, or alkalinity?
+3. Choose **Check pH 8.35 fractions**. Check the bicarbonate fraction against the hand calculation in the carbonate exercise.
+4. Return to Water B and increase the acid dose. Watch the final-state marker and explain the redistribution toward CO₂*. Negative alkalinity is possible; it is not a negative concentration.
+
+## Hand check and static reference
+
+| Closed-water case | Initial carbon | Initial alkalinity | Acid added | Final model pH |
+| --- | ---: | ---: | ---: | ---: |
+| Water A | 1.00 mmol/L | 0.9356 meq/L | 0.050 meq/L | 7.235 |
+| Water B | 0.100 mmol/L | 0.09382 meq/L | 0.050 meq/L | 6.252 |
+
+At fixed total carbon, final alkalinity equals initial alkalinity minus acid dose.
+The final pH satisfies that alkalinity balance and the carbonate species balance.
+At prescribed pH 8.35, species fractions are approximately 0.009799 CO₂*,
+0.979939 HCO₃⁻, and 0.010261 CO₃²⁻.
+
+## Model conditions
+
+Use dilute freshwater at 25 °C, pK₁ = 6.35, pK₂ = 10.33, and Kw = 10⁻¹⁴ (the water ion product). Activities are approximated by concentrations. Each acid addition conserves the selected dissolved inorganic-carbon total; gas exchange, minerals, biological change, other buffers, and dilution are excluded. The distribution curves show fractions at prescribed pH; the final marker additionally satisfies the changed alkalinity balance. The internal numerical solution is a calculation aid, not a new student programming task.
+
+## Explain the result
+
+Explain why moving along a species curve is insufficient to simulate a specified acid addition unless the carbon and alkalinity constraints are also applied.
+
+[All weekly demos](index.qmd)

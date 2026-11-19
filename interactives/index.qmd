@@ -1,0 +1,27 @@
+---
+title: "Weekly interactive chemistry demos"
+---
+
+Change one chemical condition, predict the result, and check the balance.
+These five working study-week groupings follow the existing topic sequence;
+they are a guide to using the demos rather than a formal timetable.
+
+| Study week | Topics grouped for practice | Interactive question |
+| --- | --- | --- |
+| 1 | Foundations and atmosphere, units 1–4 | [How do deposition, area, and water export affect load and concentration?](week1.qmd) |
+| 2 | Aquatic composition, carbonate, and organic matter, units 5–7 | [Why do waters at the same initial pH respond differently to acid?](week2.qmd) |
+| 3 | Metals, surfaces, redox, and treatment, units 8–11 | [How do free ligand and pH change metal binding and saturation?](week3.qmd) |
+| 4 | Soils, waste, and organic contaminants, units 12–14 | [Where is parent compound accounted for during sorption and transformation?](week4.qmd) |
+| 5 | Connected systems and synthesis, unit 15 | [How do neutralisation and water export affect the annual catchment budget?](week5.qmd) |
+
+## How to use a demo
+
+Make a prediction before moving a control. Use a reference-case button to set
+all the inputs, then change one variable. Read both the visual result and the
+calculated values; explain which quantity stayed conserved and which changed.
+Reset restores the initial case. Keyboard arrow keys work when a slider is focused.
+
+Each page includes a hand calculation, questions to try, and a static reference
+that remains usable in print or without JavaScript. The demos run in the browser
+with no login, data upload, or R installation. They use the same constructed
+models as the course examples; adjustable inputs are not field measurements.

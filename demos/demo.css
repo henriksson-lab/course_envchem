@@ -1,0 +1,59 @@
+/* Shared course demo styles. Scoped so Quarto and lecture styles remain independent. */
+.chem-demo {
+  --demo-blue: #2468a0;
+  border: 1px solid #bdcbd7;
+  border-radius: .6rem;
+  padding: 1rem;
+  margin: 1.25rem 0;
+  background: #fff;
+  color: #172735;
+  font-size: 1rem;
+}
+.chem-demo-layout { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.chem-demo-controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 1rem; min-width: 0; margin: 0; padding: .85rem; border: 1px solid #d9e1e7; border-radius: .4rem; background: #f5f8fa; }
+.chem-demo-controls legend { float: none; width: auto; margin: 0; padding: 0 .25rem; font-size: 1rem; font-weight: 650; }
+.chem-demo-control { margin-bottom: .2rem; }
+.chem-demo-control:last-child { margin-bottom: .2rem; }
+.chem-demo-control label { display: block; line-height: 1.4; font-weight: 600; }
+.chem-demo-control output { display: block; margin: .2rem 0; font-variant-numeric: tabular-nums; color: #244e70; overflow-wrap: anywhere; }
+.chem-demo-control input[type="range"] { display: block; width: 100%; min-height: 2rem; margin: .1rem 0; accent-color: #2468a0; cursor: pointer; }
+.chem-demo-panel { min-width: 0; }
+.chem-demo-actions { display: flex; gap: .55rem; flex-wrap: wrap; margin-bottom: 1.15rem; }
+.chem-demo-actions button { font: inherit; padding: .45rem .8rem; min-height: 2.6rem; border: 1px solid #7392aa; border-radius: .3rem; color: #244e70; background: #f5f9fc; cursor: pointer; }
+.chem-demo-actions button:hover { background: #e6eff7; }
+.chem-demo-actions button:first-child { color: #fff; background: #2468a0; border-color: #2468a0; }
+.chem-demo input:focus-visible, .chem-demo button:focus-visible { outline: 3px solid #8b4eb8; outline-offset: 3px; }
+.chem-demo-svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chem-demo-svg text { font: 18px system-ui, sans-serif; fill: #172735; }
+.chem-demo-svg .chem-chart-title { font-weight: 650; font-size: 19px; }
+.chem-demo-svg .chem-grid { stroke: #dde5eb; stroke-width: 1; }
+.chem-demo-svg .chem-axis { stroke: #63788a; stroke-width: 1.3; fill: none; }
+.chem-demo-svg .chem-marker-label { font-size: 17px; paint-order: stroke; stroke: #fff; stroke-width: 5px; stroke-linejoin: round; }
+.chem-demo-legend { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; margin: .25rem 0 .8rem; padding: 0; list-style: none; }
+.chem-demo-legend li { display: inline-flex; align-items: center; gap: .4rem; margin: 0; }
+.chem-demo-swatch { width: 1.8rem; border-top-width: 3px; }
+.chem-demo-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: .7rem; margin: 1rem 0; }
+.chem-demo-metrics > div { background: #f0f5f8; border-radius: .35rem; padding: .7rem; }
+.chem-demo-metrics dt { font-size: .9rem; font-weight: 600; line-height: 1.4; }
+.chem-demo-metrics dd { margin: .3rem 0 0; font-size: 1.15rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+.chem-demo-unit { font-size: .9rem; font-weight: 400; }
+.chem-demo-explanation { border-left: 3px solid #2468a0; padding: .6rem .8rem; margin: 1rem 0 0; background: #f0f5f8; }
+.chem-demo-table-wrap { overflow-x: auto; }
+.chem-demo-table { width: 100%; font-variant-numeric: tabular-nums; font-size: .95rem; border-collapse: collapse; }
+.chem-demo-table caption { text-align: left; color: #172735; font-size: .95rem; padding: .5rem 0; }
+.chem-demo-table th, .chem-demo-table td { text-align: left; border-bottom: 1px solid #d9e1e7; padding: .4rem .5rem; }
+.chem-demo-table thead th { font-weight: 650; }
+@media (max-width: 900px) {
+  .chem-demo-layout { grid-template-columns: 1fr; }
+  .chem-demo-controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: .9rem; }
+  .chem-demo-control { margin-bottom: .2rem; }
+}
+@media (max-width: 560px) {
+  .chem-demo { padding: .65rem; }
+  .chem-demo-chart { overflow-x: auto; }
+  .chem-demo-svg { min-width: 580px; }
+  .chem-demo-chart::after { content: "Scroll the plot horizontally if needed. Calculated values are also shown below."; display: block; padding: .4rem 0; font-size: .875rem; }
+}
+@media print {
+  .chem-demo { display: none; }
+}

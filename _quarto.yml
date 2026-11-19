@@ -2,6 +2,8 @@ project:
   type: website
   output-dir: docs
   resources:
+    - demos/*.js
+    - demos/demo.css
     - downloads/*.zip
     - aquatic-equilibria/water-ions.csv
     - aquatic-equilibria/corrections.csv
@@ -20,6 +22,7 @@ project:
     - "!templates/"
     - "!instructor/"
     - "!tools/"
+    - "!demos/"
 
 website:
   title: "Environmental Chemistry"
@@ -42,6 +45,20 @@ website:
         text: Course content
       - href: glossary.qmd
         text: Glossary
+      - section: "Weekly interactive demos"
+        contents:
+          - href: interactives/index.qmd
+            text: "All five weeks"
+          - href: interactives/week1.qmd
+            text: "Week 1: deposition and dilution"
+          - href: interactives/week2.qmd
+            text: "Week 2: carbonate response"
+          - href: interactives/week3.qmd
+            text: "Week 3: metal binding"
+          - href: interactives/week4.qmd
+            text: "Week 4: sorption and fate"
+          - href: interactives/week5.qmd
+            text: "Week 5: catchment budget"
       - section: "Foundations"
         contents:
           - section: "Environmental amounts and balances"

@@ -1,0 +1,58 @@
+---
+title: "Week 5 demo: the connected catchment budget"
+---
+
+How do atmospheric acid input, accessible neutralisation, reference alkalinity, and water export combine in an annual budget?
+
+Use with the [integrated case](../integrated-case/notes.qmd) and its [exercises](../integrated-case/exercise.qmd). This working week revisits earlier reactions in a connected chemical explanation.
+
+## Predict first
+
+Predict how halving the water-equivalent alkalinity concentration differs from halving the annual alkalinity export. Which input changes can cause each?
+
+## Explore the model
+
+Use the sliders or keyboard arrow keys while a slider is focused. Reset restores
+the starting values; reference-case buttons set all inputs for that case.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="catchment" role="group" aria-label="Week 5 demo: the connected catchment budget">
+<p>The reference calculation below can be used while the controls load or when JavaScript is unavailable.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/catchment.js"></script>
+```
+
+## Questions to try
+
+1. Choose **Worked catchment**. Close the acid budget in annual equivalents before looking at concentrations.
+2. Choose **Less neutralisation**. Trace the effect on residual acidity and reference-adjusted alkalinity.
+3. Choose **Double water export**. Verify that annual acid and alkalinity amounts stay fixed while their flow-weighted concentrations halve.
+4. Choose **Capacity exceeds input**. Why is unused capacity not counted as newly generated alkalinity in this comparison?
+5. Choose **Exceed reference alkalinity**. Explain the signed negative alkalinity result without calling it a negative concentration or inferring a pH.
+
+## Hand check and static reference
+
+| Quantity | Worked catchment | Less neutralisation |
+| --- | ---: | ---: |
+| Acid input | 40000 eq/year | 40000 eq/year |
+| Acid actually neutralised | 30000 eq/year | 20000 eq/year |
+| Residual acid | 10000 eq/year | 20000 eq/year |
+| Reference alkalinity export | 50000 eq/year | 50000 eq/year |
+| Adjusted alkalinity export | 40000 eq/year | 30000 eq/year |
+| Adjusted alkalinity, at 500 million L/year | 0.0800 meq/L | 0.0600 meq/L |
+
+The base residual acidity is **0.0200 meq/L**. It differs from the week 1
+before-neutralisation value because this budget includes acid consumed in the
+catchment.
+
+## Model conditions
+
+This is a constructed **annual** equivalent budget, not a dynamic lake model. Accessible capacity caps how much of the added acid can react; unused capacity is not credited as extra alkalinity. Residual acidity is subtracted from an explicitly supplied reference annual alkalinity export. The other terms stay fixed when one slider changes. A real change in water flow could also alter weathering, transport, and retention. A pH prediction requires inorganic carbon, gas exchange, and appropriate acid–base constraints. Use the [closed-water demo](week2.qmd) for the separate pulse problem.
+
+## Explain the result
+
+What additional measurements would you need to connect this annual budget to a lake’s pH response and test whether neutralisation really changed?
+
+[All weekly demos](index.qmd)

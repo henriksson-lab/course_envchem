@@ -65,3 +65,8 @@ figure interpretation, catchment equivalent budget, and a redox hypothesis with
 a discriminating observation. A classmate should be able to render the report
 from the saved files and understand which numbers are inputs, predictions, or
 constructed observations.
+
+## Explore the weekly demo {#explore}
+
+Compare less neutralisation with double water export and distinguish their annual amounts. Use the [week 5 interactive demo](../interactives/week5.qmd),
+then explain the result using this unit’s balances and assumptions.

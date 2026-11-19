@@ -1,0 +1,54 @@
+---
+title: "Week 4 demo: sorption and parent transformation"
+---
+
+When parent concentration falls in water, how much has moved onto solids and how much has transformed?
+
+Use with [organic contaminants](../organic-contaminants/notes.qmd) and [activity C](../organic-contaminants/exercise.qmd#activity-c-a-fate-model-in-r). This working week groups soils, waste chemistry, and contaminant fate.
+
+## Predict first
+
+Predict which control changes the phase split and which changes the total-parent half-life. Keep the outer system boundary around both water and solid.
+
+## Explore the model
+
+Use the sliders or keyboard arrow keys while a slider is focused. Reset restores
+the starting values; reference-case buttons set all inputs for that case.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="fate" role="group" aria-label="Week 4 demo: sorption and parent transformation">
+<p>The reference calculation below can be used while the controls load or when JavaScript is unavailable.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/fate.js"></script>
+```
+
+## Questions to try
+
+1. Choose **U at day 20**. Sum parent in water and parent on solid, then add the transformed-parent accounting term. Compare with the initial 1.00 mg.
+2. Move only Kd. Observe the two parent phase amounts and check whether total parent changes at the selected time.
+3. Choose **U at day 30**, then **V at day 30**. Explain the difference in both phase preference and half-life.
+4. Choose **No sorption at time zero**. Verify the limiting case. Then move time to one half-life and check the remaining parent fraction.
+
+## Hand check and static reference
+
+| Reference case | Total parent remaining | Water parent concentration |
+| --- | ---: | ---: |
+| U: Kd 100 L/kg, half-life 10 days, day 20 | 0.250 mg | 0.125 mg/L |
+| U at day 30 | 0.125 mg | 0.0625 mg/L |
+| V: Kd 10 L/kg, half-life 30 days, day 30 | 0.500 mg | 0.4545 mg/L |
+
+The initial parent is 1.00 mg in 1.00 L water plus 0.0100 kg dry solid.
+For U, the phase split is one half in each phase. Two half-lives leave one
+quarter of the total parent, giving 0.125 mg in water and 0.125 mg on solid.
+
+## Model conditions
+
+These are fictitious neutral compounds under rapid equilibrium with constant Kd. Parent transformation has the **same** first-order coefficient in both phases, so the total parent follows `M = M₀ exp(−kt)` with `k = ln(2)/half-life`. At each time, `Cwater = M/(Vwater + Kd × msolid)`. There is no inflow, export, gas transfer, or new input. The transformed-parent curve records mass of initial parent that has changed identity; it is not measured product mass, proof of mineralisation, or a toxicity result. Phase-specific transformation or slow desorption requires another kinetic model.
+
+## Explain the result
+
+Under what change of model assumptions could stronger sorption affect the apparent parent persistence, rather than only the phase split?
+
+[All weekly demos](index.qmd)

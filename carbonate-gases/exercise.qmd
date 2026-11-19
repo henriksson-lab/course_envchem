@@ -207,3 +207,8 @@ measurements would help assess these possibilities. Calcium and mineral context
 could reveal additional reactions. A real catchment can have several processes
 acting together; pH alone does not identify the cause or neutralising inventory.
 :::
+
+## Explore the weekly demo {#explore}
+
+Compare Water A and Water B, then explain the conserved carbon and changed alkalinity. Use the [week 2 interactive demo](../interactives/week2.qmd),
+then explain the result using this unit’s balances and assumptions.

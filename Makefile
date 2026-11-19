@@ -1,4 +1,4 @@
-.PHONY: all render check downloads preview clean
+.PHONY: all render check check-demos downloads preview clean
 
 all: render
 
@@ -7,9 +7,12 @@ render: downloads
 	@touch docs/.nojekyll
 	python3 tools/check_site.py
 
-check:
+check: check-demos
 	Rscript --vanilla tools/check_carbonate.R
 	Rscript --vanilla tools/check_course.R
+
+check-demos:
+	node --test demos/tests/*.test.cjs
 
 downloads:
 	python3 tools/package_downloads.py

@@ -7,6 +7,7 @@ timetabling, and formal examination design remain outside scope.
 
 - [Rendered course home](docs/index.html)
 - [Course sequence and chapter map](overview.qmd)
+- [Five weekly interactive demos](interactives/index.qmd)
 - [Content plan and scope](contentplan.md)
 - [Instructor notes](instructor/README.md)
 - [Capability and practice map](instructor/coverage.md)
@@ -17,7 +18,9 @@ All 15 planned units have notes, learning goals, short reveal.js lectures,
 worked examples, and exercises with collapsible hints and worked solutions.
 There are 16 lecture decks and 62 numbered exercises, plus the supporting
 activity instructions. A linked glossary and scientific model figures support
-the chemical explanations.
+the chemical explanations. Five browser demos add sliders, reference presets,
+live chemical balances, and explanatory plots, with static hand checks.
+Their weekly grouping is a working study guide rather than a formal timetable.
 
 The sequence follows the working book's atmosphere → water → terrestrial
 structure, with selected topics and depth boundaries stated per unit. The
@@ -33,12 +36,13 @@ fictitious compounds, and model predictions are identified explicitly.
 
 ## Build and check
 
-Requires Quarto and Python 3 to build the site and package downloads. R plus
+Requires Quarto and Python 3 to build the site and package downloads. Node.js 18+ runs the demo checks. R plus
 `readr`, `dplyr`, `ggplot2`, and `rmarkdown` are needed for the activities and
 chemical/report checks. Pandoc is available through Quarto.
 
 ```bash
-make check     # numerical chemistry, reaction balances, three fresh report renders
+make check     # demo models, numerical chemistry, and three fresh report renders
+make check-demos # focused demo model and boundary checks
 make render    # package downloads, build docs/, check links/anchors and resources
 make preview   # local Quarto preview
 make downloads # rebuild the three student ZIPs without rendering
@@ -57,6 +61,11 @@ figures from their stated models; run it when changing those models. ZIPs use
 explicit student-input lists, so instructor notes and planning files cannot be
 included accidentally. `make render` checks that published downloads match sources.
 
+The demo scripts need no npm dependencies, external service, or build step.
+`demos/README.md` describes the embedding contract. Optional browser QA uses an
+isolated installed Chrome and `python3 tools/check_demos_browser.py` (requires
+`websocket-client`), exercising all controls with external requests blocked.
+
 ## Source and hosting conventions
 
 The scaffold is adapted from `/home/mahogny/github/course/quantbio-3MB00A`:
@@ -69,5 +78,5 @@ were not copied. The default build does not stage or commit.
 GitHub Pages serves `main` → `/docs` at
 <https://henriksson-lab.github.io/course_envchem/>. Rendered output is tracked.
 Planning Markdown, instructor material, tools, and authoring templates are
-excluded from the student build. Classroom and browser layout review remain
-open; this draft is not a claim of an approved final course syllabus.
+excluded from the student build. The weekly demos have had desktop/mobile browser interaction checks;
+classroom pacing and the wider course slide-layout review remain open; this draft is not a claim of an approved final course syllabus.

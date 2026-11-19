@@ -55,3 +55,7 @@ Book: vanLoon and Duffy, fourth edition, chapter(s) 20. Focus on property-to-pro
 Use the [R activity](exercise.qmd#activity-c-a-fate-model-in-r) to compare two
 fictitious compounds, and carry its report into the integrated case. The
 [model input dictionary](data-dictionary.qmd) records the process assumptions.
+
+## Interactive practice
+
+Try the [week 4 demo](../interactives/week4.qmd). Change Kd alone and check which phase inventories change.

@@ -75,3 +75,5 @@ ML = **1.818 µmol/L**; total conserved.
 A filtered metal concentration rises as pH falls, but oxidation-state measurements stay unchanged. Name plausible chemical mechanisms and what would distinguish them.
 
 Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).
+
+Explore the [week 3 demo](../interactives/week3.qmd), then explain the result chemically.

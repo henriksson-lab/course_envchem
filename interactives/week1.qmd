@@ -1,0 +1,56 @@
+---
+title: "Week 1 demo: deposition and dilution"
+---
+
+How can an acid-equivalent concentration fall while the annual acid load stays unchanged?
+
+Use after the [deposition exercises](../deposition/exercise.qmd), alongside [environmental amounts](../environmental-systems/notes.qmd). This working week groups foundations and the atmospheric units.
+
+## Predict first
+
+If annual water export doubles at the same acid flux and catchment area, predict which quantities change: flux, annual load, or flow-weighted equivalent concentration.
+
+## Explore the model
+
+Use the sliders or keyboard arrow keys while a slider is focused. Reset restores
+the starting values; reference-case buttons set all inputs for that case.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="deposition" role="group" aria-label="Week 1 demo: deposition and dilution">
+<p>The reference calculation below can be used while the controls load or when JavaScript is unavailable.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/deposition.js"></script>
+```
+
+## Questions to try
+
+1. Choose **Worked example**. Calculate the two acid contributions by hand. HNO₃ supplies one equivalent per mole; H₂SO₄ supplies two for the stated full-neutralisation convention.
+2. Choose **Double water export**. Explain why annual load is unchanged while equivalent concentration halves.
+3. Return to the worked example, then choose **Double catchment area**. The water export is held fixed only for this sensitivity exercise. Explain why this increases load and equivalent concentration.
+4. Set both acid inputs to zero. Verify that increasing water volume cannot create an acid input.
+
+## Hand check and static reference
+
+| Quantity | Worked example | Double water export |
+| --- | ---: | ---: |
+| HNO₃ contribution | 20000 eq/year | 20000 eq/year |
+| H₂SO₄ contribution | 20000 eq/year | 20000 eq/year |
+| Total acid load | 40000 eq/year | 40000 eq/year |
+| Before-neutralisation equivalent concentration | 0.0800 meq/L | 0.0400 meq/L |
+
+The input fluxes are 20.0 mmol HNO₃ and 10.0 mmol H₂SO₄ per m² per year.
+Area is 1.00 km² = 10⁶ m². Annual water export is initially 500 million L.
+The equivalent flux is `(20 + 2 × 10)/1000 = 0.0400 eq/m²/year`.
+Multiply by area, divide by annual export, then multiply eq/L by 1000 to obtain meq/L.
+
+## Model conditions
+
+The fluxes are **supplied acid inputs**, not sulfate or nitrate measurements assumed to be free acid. All stipulated input is assumed to be routed into the annual exported water, with no storage, other retention, or acid-equivalent sinks. This is the boundary condition that lets input load divided by annual water export represent a hypothetical outlet-equivalent concentration. Catchment neutralisation is excluded here; the [week 5 budget](week5.qmd) introduces it. These are annual flow-weighted quantities. They neither predict pH nor describe a sudden closed-lake acid pulse. Area and water export are independent controls in this deliberately isolated sensitivity model.
+
+## Explain the result
+
+Why is the week 1 value 0.0800 meq/L different from the residual acidity in the integrated catchment example? Identify the process omitted here.
+
+[All weekly demos](index.qmd)

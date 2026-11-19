@@ -888,7 +888,7 @@
     "href": "organic-contaminants/lec.html#check-your-explanation",
     "title": "Organic contaminants and environmental fate",
     "section": "Check your explanation",
-    "text": "Check your explanation\nWater parent concentration falls after sediment is added. What would distinguish sorption from transformation, and why does log Kow alone not answer the question?\nUse the notes and sources and worked exercises.",
+    "text": "Check your explanation\nWater parent concentration falls after sediment is added. What would distinguish sorption from transformation, and why does log Kow alone not answer the question?\nUse the notes and sources and worked exercises.\nExplore the week 4 demo, then explain the result chemically.",
     "crumbs": [
       "Home",
       "Soils and contaminants",
@@ -1018,12 +1018,264 @@
     "href": "metals/lec.html#check-your-explanation",
     "title": "Metal speciation and mobility",
     "section": "Check your explanation",
-    "text": "Check your explanation\nA filtered metal concentration rises as pH falls, but oxidation-state measurements stay unchanged. Name plausible chemical mechanisms and what would distinguish them.\nUse the notes and sources and worked exercises.",
+    "text": "Check your explanation\nA filtered metal concentration rises as pH falls, but oxidation-state measurements stay unchanged. Name plausible chemical mechanisms and what would distinguish them.\nUse the notes and sources and worked exercises.\nExplore the week 3 demo, then explain the result chemically.",
     "crumbs": [
       "Home",
       "Water",
       "Metal speciation and mobility",
       "Lecture"
+    ]
+  },
+  {
+    "objectID": "interactives/week5.html",
+    "href": "interactives/week5.html",
+    "title": "Week 5 demo: the connected catchment budget",
+    "section": "",
+    "text": "How do atmospheric acid input, accessible neutralisation, reference alkalinity, and water export combine in an annual budget?\nUse with the integrated case and its exercises. This working week revisits earlier reactions in a connected chemical explanation.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 5: catchment budget"
+    ]
+  },
+  {
+    "objectID": "interactives/week5.html#predict-first",
+    "href": "interactives/week5.html#predict-first",
+    "title": "Week 5 demo: the connected catchment budget",
+    "section": "Predict first",
+    "text": "Predict first\nPredict how halving the water-equivalent alkalinity concentration differs from halving the annual alkalinity export. Which input changes can cause each?",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 5: catchment budget"
+    ]
+  },
+  {
+    "objectID": "interactives/week5.html#explore-the-model",
+    "href": "interactives/week5.html#explore-the-model",
+    "title": "Week 5 demo: the connected catchment budget",
+    "section": "Explore the model",
+    "text": "Explore the model\nUse the sliders or keyboard arrow keys while a slider is focused. Reset restores the starting values; reference-case buttons set all inputs for that case.\n\n\nThe reference calculation below can be used while the controls load or when JavaScript is unavailable.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 5: catchment budget"
+    ]
+  },
+  {
+    "objectID": "interactives/week5.html#questions-to-try",
+    "href": "interactives/week5.html#questions-to-try",
+    "title": "Week 5 demo: the connected catchment budget",
+    "section": "Questions to try",
+    "text": "Questions to try\n\nChoose Worked catchment. Close the acid budget in annual equivalents before looking at concentrations.\nChoose Less neutralisation. Trace the effect on residual acidity and reference-adjusted alkalinity.\nChoose Double water export. Verify that annual acid and alkalinity amounts stay fixed while their flow-weighted concentrations halve.\nChoose Capacity exceeds input. Why is unused capacity not counted as newly generated alkalinity in this comparison?\nChoose Exceed reference alkalinity. Explain the signed negative alkalinity result without calling it a negative concentration or inferring a pH.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 5: catchment budget"
+    ]
+  },
+  {
+    "objectID": "interactives/week5.html#hand-check-and-static-reference",
+    "href": "interactives/week5.html#hand-check-and-static-reference",
+    "title": "Week 5 demo: the connected catchment budget",
+    "section": "Hand check and static reference",
+    "text": "Hand check and static reference\n\n\n\n\n\n\n\n\nQuantity\nWorked catchment\nLess neutralisation\n\n\n\n\nAcid input\n40000 eq/year\n40000 eq/year\n\n\nAcid actually neutralised\n30000 eq/year\n20000 eq/year\n\n\nResidual acid\n10000 eq/year\n20000 eq/year\n\n\nReference alkalinity export\n50000 eq/year\n50000 eq/year\n\n\nAdjusted alkalinity export\n40000 eq/year\n30000 eq/year\n\n\nAdjusted alkalinity, at 500 million L/year\n0.0800 meq/L\n0.0600 meq/L\n\n\n\nThe base residual acidity is 0.0200 meq/L. It differs from the week 1 before-neutralisation value because this budget includes acid consumed in the catchment.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 5: catchment budget"
+    ]
+  },
+  {
+    "objectID": "interactives/week5.html#model-conditions",
+    "href": "interactives/week5.html#model-conditions",
+    "title": "Week 5 demo: the connected catchment budget",
+    "section": "Model conditions",
+    "text": "Model conditions\nThis is a constructed annual equivalent budget, not a dynamic lake model. Accessible capacity caps how much of the added acid can react; unused capacity is not credited as extra alkalinity. Residual acidity is subtracted from an explicitly supplied reference annual alkalinity export. The other terms stay fixed when one slider changes. A real change in water flow could also alter weathering, transport, and retention. A pH prediction requires inorganic carbon, gas exchange, and appropriate acid–base constraints. Use the closed-water demo for the separate pulse problem.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 5: catchment budget"
+    ]
+  },
+  {
+    "objectID": "interactives/week5.html#explain-the-result",
+    "href": "interactives/week5.html#explain-the-result",
+    "title": "Week 5 demo: the connected catchment budget",
+    "section": "Explain the result",
+    "text": "Explain the result\nWhat additional measurements would you need to connect this annual budget to a lake’s pH response and test whether neutralisation really changed?\nAll weekly demos",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 5: catchment budget"
+    ]
+  },
+  {
+    "objectID": "interactives/week3.html",
+    "href": "interactives/week3.html",
+    "title": "Week 3 demo: metal binding and saturation",
+    "section": "",
+    "text": "Can two waters with the same dissolved metal total have different free-ion concentrations and saturation states?\nUse with metal speciation and its worked problems. This working week groups metals, interfaces, redox, and treatment.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 3: metal binding"
+    ]
+  },
+  {
+    "objectID": "interactives/week3.html#predict-first",
+    "href": "interactives/week3.html#predict-first",
+    "title": "Week 3 demo: metal binding and saturation",
+    "section": "Predict first",
+    "text": "Predict first\nKeep dissolved total metal fixed. Predict what increasing prescribed free ligand does to free metal, complexed metal, and the free-ion hydroxide saturation product.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 3: metal binding"
+    ]
+  },
+  {
+    "objectID": "interactives/week3.html#explore-the-model",
+    "href": "interactives/week3.html#explore-the-model",
+    "title": "Week 3 demo: metal binding and saturation",
+    "section": "Explore the model",
+    "text": "Explore the model\nUse the sliders or keyboard arrow keys while a slider is focused. Reset restores the starting values; reference-case buttons set all inputs for that case.\n\n\nThe reference calculation below can be used while the controls load or when JavaScript is unavailable.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 3: metal binding"
+    ]
+  },
+  {
+    "objectID": "interactives/week3.html#questions-to-try",
+    "href": "interactives/week3.html#questions-to-try",
+    "title": "Week 3 demo: metal binding and saturation",
+    "section": "Questions to try",
+    "text": "Questions to try\n\nChoose Worked binding case. Confirm that free plus complexed metal equals 2.00 µmol/L.\nChoose Exactly saturated. The selected state has 10.0 µmol/L total metal, 9.00 µmol/L free ligand, and pH 9.00. Check the free concentration and ion product.\nChoose Same total, no ligand. Explain why the free-ion product changes although total metal and pH stay fixed.\nReturn to the binding case and raise only pH. In this deliberately simple model the binding split does not change with pH, but hydroxide and the saturation threshold do. Which omitted processes could make a real metal behave differently?",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 3: metal binding"
+    ]
+  },
+  {
+    "objectID": "interactives/week3.html#hand-check-and-static-reference",
+    "href": "interactives/week3.html#hand-check-and-static-reference",
+    "title": "Week 3 demo: metal binding and saturation",
+    "section": "Hand check and static reference",
+    "text": "Hand check and static reference\nFor one complex, free M = total M / (1 + β[L]free), with β = 10⁶ L/mol. At total M = 2.00 µmol/L and free L = 10.0 µmol/L, β[L] is 10, giving 0.1818 µmol/L free M and 1.818 µmol/L complexed M.\nAt pH 9.00, hydroxide is 10⁻⁵ mol/L in the supplied approximation. With Ksp = 10⁻¹⁶, the saturation free-metal concentration is 1.00 µmol/L. At total M = 10.0 and free L = 9.00 µmol/L, that free concentration gives Ω = 1. Removing ligand at the same total gives Ω = 10.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 3: metal binding"
+    ]
+  },
+  {
+    "objectID": "interactives/week3.html#model-conditions",
+    "href": "interactives/week3.html#model-conditions",
+    "title": "Week 3 demo: metal binding and saturation",
+    "section": "Model conditions",
+    "text": "Model conditions\nThe fictitious metal has only free M²⁺ and one complex ML. Free ligand is imposed by a ligand reservoir; it is not an analytical total or a closed ligand inventory. pH is also prescribed, with Kw = 10⁻¹⁴ at 25 °C and concentrations approximating activities. The curves describe binding before any mineral reaction. A supersaturated state may favour precipitation, but the demo does not calculate precipitation, dissolution, rates, or a new equilibrium total. Hydrolysis, ligand protonation, competing ligands, and biological effects are omitted.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 3: metal binding"
+    ]
+  },
+  {
+    "objectID": "interactives/week3.html#explain-the-result",
+    "href": "interactives/week3.html#explain-the-result",
+    "title": "Week 3 demo: metal binding and saturation",
+    "section": "Explain the result",
+    "text": "Explain the result\nWhy would substituting dissolved total metal for free M²⁺ in the ion product give the wrong saturation check?\nAll weekly demos",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 3: metal binding"
+    ]
+  },
+  {
+    "objectID": "interactives/week1.html",
+    "href": "interactives/week1.html",
+    "title": "Week 1 demo: deposition and dilution",
+    "section": "",
+    "text": "How can an acid-equivalent concentration fall while the annual acid load stays unchanged?\nUse after the deposition exercises, alongside environmental amounts. This working week groups foundations and the atmospheric units.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 1: deposition and dilution"
+    ]
+  },
+  {
+    "objectID": "interactives/week1.html#predict-first",
+    "href": "interactives/week1.html#predict-first",
+    "title": "Week 1 demo: deposition and dilution",
+    "section": "Predict first",
+    "text": "Predict first\nIf annual water export doubles at the same acid flux and catchment area, predict which quantities change: flux, annual load, or flow-weighted equivalent concentration.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 1: deposition and dilution"
+    ]
+  },
+  {
+    "objectID": "interactives/week1.html#explore-the-model",
+    "href": "interactives/week1.html#explore-the-model",
+    "title": "Week 1 demo: deposition and dilution",
+    "section": "Explore the model",
+    "text": "Explore the model\nUse the sliders or keyboard arrow keys while a slider is focused. Reset restores the starting values; reference-case buttons set all inputs for that case.\n\n\nThe reference calculation below can be used while the controls load or when JavaScript is unavailable.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 1: deposition and dilution"
+    ]
+  },
+  {
+    "objectID": "interactives/week1.html#questions-to-try",
+    "href": "interactives/week1.html#questions-to-try",
+    "title": "Week 1 demo: deposition and dilution",
+    "section": "Questions to try",
+    "text": "Questions to try\n\nChoose Worked example. Calculate the two acid contributions by hand. HNO₃ supplies one equivalent per mole; H₂SO₄ supplies two for the stated full-neutralisation convention.\nChoose Double water export. Explain why annual load is unchanged while equivalent concentration halves.\nReturn to the worked example, then choose Double catchment area. The water export is held fixed only for this sensitivity exercise. Explain why this increases load and equivalent concentration.\nSet both acid inputs to zero. Verify that increasing water volume cannot create an acid input.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 1: deposition and dilution"
+    ]
+  },
+  {
+    "objectID": "interactives/week1.html#hand-check-and-static-reference",
+    "href": "interactives/week1.html#hand-check-and-static-reference",
+    "title": "Week 1 demo: deposition and dilution",
+    "section": "Hand check and static reference",
+    "text": "Hand check and static reference\n\n\n\n\n\n\n\n\nQuantity\nWorked example\nDouble water export\n\n\n\n\nHNO₃ contribution\n20000 eq/year\n20000 eq/year\n\n\nH₂SO₄ contribution\n20000 eq/year\n20000 eq/year\n\n\nTotal acid load\n40000 eq/year\n40000 eq/year\n\n\nBefore-neutralisation equivalent concentration\n0.0800 meq/L\n0.0400 meq/L\n\n\n\nThe input fluxes are 20.0 mmol HNO₃ and 10.0 mmol H₂SO₄ per m² per year. Area is 1.00 km² = 10⁶ m². Annual water export is initially 500 million L. The equivalent flux is (20 + 2 × 10)/1000 = 0.0400 eq/m²/year. Multiply by area, divide by annual export, then multiply eq/L by 1000 to obtain meq/L.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 1: deposition and dilution"
+    ]
+  },
+  {
+    "objectID": "interactives/week1.html#model-conditions",
+    "href": "interactives/week1.html#model-conditions",
+    "title": "Week 1 demo: deposition and dilution",
+    "section": "Model conditions",
+    "text": "Model conditions\nThe fluxes are supplied acid inputs, not sulfate or nitrate measurements assumed to be free acid. All stipulated input is assumed to be routed into the annual exported water, with no storage, other retention, or acid-equivalent sinks. This is the boundary condition that lets input load divided by annual water export represent a hypothetical outlet-equivalent concentration. Catchment neutralisation is excluded here; the week 5 budget introduces it. These are annual flow-weighted quantities. They neither predict pH nor describe a sudden closed-lake acid pulse. Area and water export are independent controls in this deliberately isolated sensitivity model.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 1: deposition and dilution"
+    ]
+  },
+  {
+    "objectID": "interactives/week1.html#explain-the-result",
+    "href": "interactives/week1.html#explain-the-result",
+    "title": "Week 1 demo: deposition and dilution",
+    "section": "Explain the result",
+    "text": "Explain the result\nWhy is the week 1 value 0.0800 meq/L different from the residual acidity in the integrated catchment example? Identify the process omitted here.\nAll weekly demos",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 1: deposition and dilution"
     ]
   },
   {
@@ -1144,6 +1396,19 @@
     ]
   },
   {
+    "objectID": "integrated-case/notes.html#interactive-practice",
+    "href": "integrated-case/notes.html#interactive-practice",
+    "title": "Connecting air, catchments, and water",
+    "section": "Interactive practice",
+    "text": "Interactive practice\nTry the week 5 demo. Compare less neutralisation with double water export and distinguish their annual amounts.",
+    "crumbs": [
+      "Home",
+      "Synthesis",
+      "Connecting air, catchments, and water",
+      "Notes and learning goals"
+    ]
+  },
+  {
     "objectID": "integrated-case/exercise.html",
     "href": "integrated-case/exercise.html",
     "title": "Connecting air, catchments, and water exercises",
@@ -1214,6 +1479,19 @@
     "title": "Connecting air, catchments, and water exercises",
     "section": "Assemble the short report",
     "text": "Assemble the short report\nUse the activity C report template and its supporting files. Keep the compound model and catchment/sediment arguments in clearly identified sections. Include the completed prediction, hand calculation, model checks, figure interpretation, catchment equivalent budget, and a redox hypothesis with a discriminating observation. A classmate should be able to render the report from the saved files and understand which numbers are inputs, predictions, or constructed observations.",
+    "crumbs": [
+      "Home",
+      "Synthesis",
+      "Connecting air, catchments, and water",
+      "Exercises and solutions"
+    ]
+  },
+  {
+    "objectID": "integrated-case/exercise.html#explore",
+    "href": "integrated-case/exercise.html#explore",
+    "title": "Connecting air, catchments, and water exercises",
+    "section": "Explore the weekly demo",
+    "text": "Explore the weekly demo\nCompare less neutralisation with double water export and distinguish their annual amounts. Use the week 5 interactive demo, then explain the result using this unit’s balances and assumptions.",
     "crumbs": [
       "Home",
       "Synthesis",
@@ -1456,6 +1734,19 @@
     ]
   },
   {
+    "objectID": "deposition/notes.html#interactive-practice",
+    "href": "deposition/notes.html#interactive-practice",
+    "title": "Atmospheric deposition and acidity",
+    "section": "Interactive practice",
+    "text": "Interactive practice\nTry the week 1 demo. Predict the effect of doubling water export at the same acid input.",
+    "crumbs": [
+      "Home",
+      "Atmosphere",
+      "Atmospheric deposition and acidity",
+      "Notes and learning goals"
+    ]
+  },
+  {
     "objectID": "deposition/exercise.html",
     "href": "deposition/exercise.html",
     "title": "Atmospheric deposition and acidity exercises",
@@ -1513,6 +1804,19 @@
     "title": "Atmospheric deposition and acidity exercises",
     "section": "4. A sulfate result",
     "text": "4. A sulfate result\nA rain sample contains sulfate. What additional evidence is needed before reporting a strong-acid dose from that result?\n\n\n\n\n\n\nHint\n\n\n\n\n\nCounterions and subsequent transformations affect acidity.\n\n\n\n\n\n\n\n\n\nWorked solution\n\n\n\n\n\nMeasure or constrain acidity/alkalinity, major cations including ammonium, other anions, precipitation volume, and dry deposition as relevant. Sulfate may arrive partly as neutral salts. Nitrification, uptake, and catchment reactions can change the net acid budget.",
+    "crumbs": [
+      "Home",
+      "Atmosphere",
+      "Atmospheric deposition and acidity",
+      "Exercises and solutions"
+    ]
+  },
+  {
+    "objectID": "deposition/exercise.html#explore",
+    "href": "deposition/exercise.html#explore",
+    "title": "Atmospheric deposition and acidity exercises",
+    "section": "Explore the weekly demo",
+    "text": "Explore the weekly demo\nPredict the effect of doubling water export at the same acid input. Use the week 1 interactive demo, then explain the result using this unit’s balances and assumptions.",
     "crumbs": [
       "Home",
       "Atmosphere",
@@ -1876,7 +2180,7 @@
     "href": "carbonate-gases/lec.html#explain-before-computing",
     "title": "Carbonate species and alkalinity",
     "section": "Explain before computing",
-    "text": "Explain before computing\n\nPredict how acid shifts species.\nCalculate one ratio and check its units.\nUse a diagram to see the whole pH range.\nState what is fixed before predicting a pH change.\n\nContinue with gas exchange and minerals and the exercise. Constants and model sources are on the reference sheet.",
+    "text": "Explain before computing\n\nPredict how acid shifts species.\nCalculate one ratio and check its units.\nUse a diagram to see the whole pH range.\nState what is fixed before predicting a pH change.\n\nContinue with gas exchange and minerals and the exercise. Constants and model sources are on the reference sheet.\nExplore the week 2 demo, then explain the result chemically.",
     "crumbs": [
       "Home",
       "Water",
@@ -1968,6 +2272,19 @@
     "title": "Carbonate chemistry exercises",
     "section": "6. Explain a catchment observation",
     "text": "6. Explain a catchment observation\nA lake’s pH decreases after a disturbance. Suggest two chemically distinct processes from this unit that could cause a decrease, and identify additional measurements that would help distinguish them. State one limitation of interpreting only pH. Do not claim a cause from a single observation.\n\n\n\n\n\n\nWorked explanation\n\n\n\n\n\nStrong-acid input and net CO₂ uptake can both lower pH. In the isolated model, strong acid lowers alkalinity while CO₂ uptake conserves it and increases dissolved inorganic carbon. Paired pH, alkalinity, and inorganic-carbon or dissolved-CO₂ measurements would help assess these possibilities. Calcium and mineral context could reveal additional reactions. A real catchment can have several processes acting together; pH alone does not identify the cause or neutralising inventory.",
+    "crumbs": [
+      "Home",
+      "Water",
+      "Carbonate and gas chemistry",
+      "Exercises and solutions"
+    ]
+  },
+  {
+    "objectID": "carbonate-gases/exercise.html#explore",
+    "href": "carbonate-gases/exercise.html#explore",
+    "title": "Carbonate chemistry exercises",
+    "section": "Explore the weekly demo",
+    "text": "Explore the weekly demo\nCompare Water A and Water B, then explain the conserved carbon and changed alkalinity. Use the week 2 interactive demo, then explain the result using this unit’s balances and assumptions.",
     "crumbs": [
       "Home",
       "Water",
@@ -2479,6 +2796,17 @@
     ]
   },
   {
+    "objectID": "overview.html#weekly-interactive-demos",
+    "href": "overview.html#weekly-interactive-demos",
+    "title": "Course content",
+    "section": "Weekly interactive demos",
+    "text": "Weekly interactive demos\nUse the five weekly demos to change chemical conditions and check the consequences before returning to a hand calculation. The working study-week grouping is atmosphere and balances; aquatic composition and carbonate; metals and surfaces; soils and contaminants; then synthesis. The pages link back to the relevant units and include static reference results.",
+    "crumbs": [
+      "Home",
+      "Course content"
+    ]
+  },
+  {
     "objectID": "overview.html#three-supporting-computing-activities",
     "href": "overview.html#three-supporting-computing-activities",
     "title": "Course content",
@@ -2516,6 +2844,16 @@
     "title": "Environmental Chemistry",
     "section": "Work through a unit",
     "text": "Work through a unit\nRead the chemical question and learning goals. Use the notes with the short lecture, then try the exercises before opening their hints and worked solutions. State units, assumptions, and the system boundary in every calculation. Explain what a numerical answer means chemically and what it cannot establish.\nThree short R activities reuse table handling, plotting, and reproducible reports from introductory computing. Their downloads include starting code and a report template. Hand calculations provide a check before the code is used.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#explore-chemical-predictions",
+    "href": "index.html#explore-chemical-predictions",
+    "title": "Environmental Chemistry",
+    "section": "Explore chemical predictions",
+    "text": "Explore chemical predictions\nThe weekly interactive demos let you vary deposition, carbon inventories, ligand conditions, sorption, transformation, and catchment neutralisation. Each has a hand-check reference and questions that connect the plot to a chemical balance.",
     "crumbs": [
       "Home"
     ]
@@ -3231,6 +3569,19 @@
     ]
   },
   {
+    "objectID": "carbonate-gases/notes.html#interactive-practice",
+    "href": "carbonate-gases/notes.html#interactive-practice",
+    "title": "Carbonate and gas chemistry",
+    "section": "Interactive practice",
+    "text": "Interactive practice\nTry the week 2 demo. Compare Water A and Water B, then explain the conserved carbon and changed alkalinity.",
+    "crumbs": [
+      "Home",
+      "Water",
+      "Carbonate and gas chemistry",
+      "Notes and learning goals"
+    ]
+  },
+  {
     "objectID": "climate-chemistry/exercise.html",
     "href": "climate-chemistry/exercise.html",
     "title": "Molecules, radiation, and climate exercises",
@@ -3521,7 +3872,7 @@
     "href": "deposition/lec.html#check-your-explanation",
     "title": "Atmospheric deposition and acidity",
     "section": "Check your explanation",
-    "text": "Check your explanation\nA rain sample contains sulfate. What additional evidence is needed before reporting a strong-acid dose from that result?\nUse the notes and sources and worked exercises.",
+    "text": "Check your explanation\nA rain sample contains sulfate. What additional evidence is needed before reporting a strong-acid dose from that result?\nUse the notes and sources and worked exercises.\nExplore the week 1 demo, then explain the result chemically.",
     "crumbs": [
       "Home",
       "Atmosphere",
@@ -3820,12 +4171,204 @@
     "href": "integrated-case/lec.html#check-your-explanation",
     "title": "Connecting air, catchments, and water",
     "section": "Check your explanation",
-    "text": "Check your explanation\nWrite a short report using activity C and the catchment/sediment evidence. Include one reaction, one hand-checked balance, one model figure, and an explanation of what is still uncertain.\nUse the notes and sources and worked exercises.",
+    "text": "Check your explanation\nWrite a short report using activity C and the catchment/sediment evidence. Include one reaction, one hand-checked balance, one model figure, and an explanation of what is still uncertain.\nUse the notes and sources and worked exercises.\nExplore the week 5 demo, then explain the result chemically.",
     "crumbs": [
       "Home",
       "Synthesis",
       "Connecting air, catchments, and water",
       "Lecture"
+    ]
+  },
+  {
+    "objectID": "interactives/index.html",
+    "href": "interactives/index.html",
+    "title": "Weekly interactive chemistry demos",
+    "section": "",
+    "text": "Change one chemical condition, predict the result, and check the balance. These five working study-week groupings follow the existing topic sequence; they are a guide to using the demos rather than a formal timetable.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "All five weeks"
+    ]
+  },
+  {
+    "objectID": "interactives/index.html#how-to-use-a-demo",
+    "href": "interactives/index.html#how-to-use-a-demo",
+    "title": "Weekly interactive chemistry demos",
+    "section": "How to use a demo",
+    "text": "How to use a demo\nMake a prediction before moving a control. Use a reference-case button to set all the inputs, then change one variable. Read both the visual result and the calculated values; explain which quantity stayed conserved and which changed. Reset restores the initial case. Keyboard arrow keys work when a slider is focused.\nEach page includes a hand calculation, questions to try, and a static reference that remains usable in print or without JavaScript. The demos run in the browser with no login, data upload, or R installation. They use the same constructed models as the course examples; adjustable inputs are not field measurements.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "All five weeks"
+    ]
+  },
+  {
+    "objectID": "interactives/week2.html",
+    "href": "interactives/week2.html",
+    "title": "Week 2 demo: carbonate response to acid",
+    "section": "",
+    "text": "Why can two waters at pH 7.50 respond so differently to the same acid dose?\nUse with carbonate species and alkalinity, the reference sheet, and exercise 2. This working week groups aquatic composition, carbonate, and organic matter.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 2: carbonate response"
+    ]
+  },
+  {
+    "objectID": "interactives/week2.html#predict-first",
+    "href": "interactives/week2.html#predict-first",
+    "title": "Week 2 demo: carbonate response to acid",
+    "section": "Predict first",
+    "text": "Predict first\nCompare 1.00 and 0.100 mmol/L total inorganic carbon at the same initial pH. Predict which water has the larger pH decrease when 0.050 meq/L strong acid is added.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 2: carbonate response"
+    ]
+  },
+  {
+    "objectID": "interactives/week2.html#explore-the-model",
+    "href": "interactives/week2.html#explore-the-model",
+    "title": "Week 2 demo: carbonate response to acid",
+    "section": "Explore the model",
+    "text": "Explore the model\nUse the sliders or keyboard arrow keys while a slider is focused. Reset restores the starting values; reference-case buttons set all inputs for that case.\n\n\nThe reference calculation below can be used while the controls load or when JavaScript is unavailable.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 2: carbonate response"
+    ]
+  },
+  {
+    "objectID": "interactives/week2.html#questions-to-try",
+    "href": "interactives/week2.html#questions-to-try",
+    "title": "Week 2 demo: carbonate response to acid",
+    "section": "Questions to try",
+    "text": "Questions to try\n\nChoose Water A: more carbon, then Water B: less carbon. Record initial alkalinity, final alkalinity, and final pH. Relate the difference to the initial inventory rather than to a different starting pH.\nChoose No acid added, then move only the fixed carbon total. At the same pH, what changes: fractions, concentrations, or alkalinity?\nChoose Check pH 8.35 fractions. Check the bicarbonate fraction against the hand calculation in the carbonate exercise.\nReturn to Water B and increase the acid dose. Watch the final-state marker and explain the redistribution toward CO₂*. Negative alkalinity is possible; it is not a negative concentration.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 2: carbonate response"
+    ]
+  },
+  {
+    "objectID": "interactives/week2.html#hand-check-and-static-reference",
+    "href": "interactives/week2.html#hand-check-and-static-reference",
+    "title": "Week 2 demo: carbonate response to acid",
+    "section": "Hand check and static reference",
+    "text": "Hand check and static reference\n\n\n\n\n\n\n\n\n\n\nClosed-water case\nInitial carbon\nInitial alkalinity\nAcid added\nFinal model pH\n\n\n\n\nWater A\n1.00 mmol/L\n0.9356 meq/L\n0.050 meq/L\n7.235\n\n\nWater B\n0.100 mmol/L\n0.09382 meq/L\n0.050 meq/L\n6.252\n\n\n\nAt fixed total carbon, final alkalinity equals initial alkalinity minus acid dose. The final pH satisfies that alkalinity balance and the carbonate species balance. At prescribed pH 8.35, species fractions are approximately 0.009799 CO₂*, 0.979939 HCO₃⁻, and 0.010261 CO₃²⁻.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 2: carbonate response"
+    ]
+  },
+  {
+    "objectID": "interactives/week2.html#model-conditions",
+    "href": "interactives/week2.html#model-conditions",
+    "title": "Week 2 demo: carbonate response to acid",
+    "section": "Model conditions",
+    "text": "Model conditions\nUse dilute freshwater at 25 °C, pK₁ = 6.35, pK₂ = 10.33, and Kw = 10⁻¹⁴ (the water ion product). Activities are approximated by concentrations. Each acid addition conserves the selected dissolved inorganic-carbon total; gas exchange, minerals, biological change, other buffers, and dilution are excluded. The distribution curves show fractions at prescribed pH; the final marker additionally satisfies the changed alkalinity balance. The internal numerical solution is a calculation aid, not a new student programming task.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 2: carbonate response"
+    ]
+  },
+  {
+    "objectID": "interactives/week2.html#explain-the-result",
+    "href": "interactives/week2.html#explain-the-result",
+    "title": "Week 2 demo: carbonate response to acid",
+    "section": "Explain the result",
+    "text": "Explain the result\nExplain why moving along a species curve is insufficient to simulate a specified acid addition unless the carbon and alkalinity constraints are also applied.\nAll weekly demos",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 2: carbonate response"
+    ]
+  },
+  {
+    "objectID": "interactives/week4.html",
+    "href": "interactives/week4.html",
+    "title": "Week 4 demo: sorption and parent transformation",
+    "section": "",
+    "text": "When parent concentration falls in water, how much has moved onto solids and how much has transformed?\nUse with organic contaminants and activity C. This working week groups soils, waste chemistry, and contaminant fate.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 4: sorption and fate"
+    ]
+  },
+  {
+    "objectID": "interactives/week4.html#predict-first",
+    "href": "interactives/week4.html#predict-first",
+    "title": "Week 4 demo: sorption and parent transformation",
+    "section": "Predict first",
+    "text": "Predict first\nPredict which control changes the phase split and which changes the total-parent half-life. Keep the outer system boundary around both water and solid.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 4: sorption and fate"
+    ]
+  },
+  {
+    "objectID": "interactives/week4.html#explore-the-model",
+    "href": "interactives/week4.html#explore-the-model",
+    "title": "Week 4 demo: sorption and parent transformation",
+    "section": "Explore the model",
+    "text": "Explore the model\nUse the sliders or keyboard arrow keys while a slider is focused. Reset restores the starting values; reference-case buttons set all inputs for that case.\n\n\nThe reference calculation below can be used while the controls load or when JavaScript is unavailable.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 4: sorption and fate"
+    ]
+  },
+  {
+    "objectID": "interactives/week4.html#questions-to-try",
+    "href": "interactives/week4.html#questions-to-try",
+    "title": "Week 4 demo: sorption and parent transformation",
+    "section": "Questions to try",
+    "text": "Questions to try\n\nChoose U at day 20. Sum parent in water and parent on solid, then add the transformed-parent accounting term. Compare with the initial 1.00 mg.\nMove only Kd. Observe the two parent phase amounts and check whether total parent changes at the selected time.\nChoose U at day 30, then V at day 30. Explain the difference in both phase preference and half-life.\nChoose No sorption at time zero. Verify the limiting case. Then move time to one half-life and check the remaining parent fraction.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 4: sorption and fate"
+    ]
+  },
+  {
+    "objectID": "interactives/week4.html#hand-check-and-static-reference",
+    "href": "interactives/week4.html#hand-check-and-static-reference",
+    "title": "Week 4 demo: sorption and parent transformation",
+    "section": "Hand check and static reference",
+    "text": "Hand check and static reference\n\n\n\nReference case\nTotal parent remaining\nWater parent concentration\n\n\n\n\nU: Kd 100 L/kg, half-life 10 days, day 20\n0.250 mg\n0.125 mg/L\n\n\nU at day 30\n0.125 mg\n0.0625 mg/L\n\n\nV: Kd 10 L/kg, half-life 30 days, day 30\n0.500 mg\n0.4545 mg/L\n\n\n\nThe initial parent is 1.00 mg in 1.00 L water plus 0.0100 kg dry solid. For U, the phase split is one half in each phase. Two half-lives leave one quarter of the total parent, giving 0.125 mg in water and 0.125 mg on solid.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 4: sorption and fate"
+    ]
+  },
+  {
+    "objectID": "interactives/week4.html#model-conditions",
+    "href": "interactives/week4.html#model-conditions",
+    "title": "Week 4 demo: sorption and parent transformation",
+    "section": "Model conditions",
+    "text": "Model conditions\nThese are fictitious neutral compounds under rapid equilibrium with constant Kd. Parent transformation has the same first-order coefficient in both phases, so the total parent follows M = M₀ exp(−kt) with k = ln(2)/half-life. At each time, Cwater = M/(Vwater + Kd × msolid). There is no inflow, export, gas transfer, or new input. The transformed-parent curve records mass of initial parent that has changed identity; it is not measured product mass, proof of mineralisation, or a toxicity result. Phase-specific transformation or slow desorption requires another kinetic model.",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 4: sorption and fate"
+    ]
+  },
+  {
+    "objectID": "interactives/week4.html#explain-the-result",
+    "href": "interactives/week4.html#explain-the-result",
+    "title": "Week 4 demo: sorption and parent transformation",
+    "section": "Explain the result",
+    "text": "Explain the result\nUnder what change of model assumptions could stronger sorption affect the apparent parent persistence, rather than only the phase split?\nAll weekly demos",
+    "crumbs": [
+      "Home",
+      "Weekly interactive demos",
+      "Week 4: sorption and fate"
     ]
   },
   {
@@ -3886,6 +4429,19 @@
     "title": "Metal speciation and mobility exercises",
     "section": "4. Metal after acidification",
     "text": "4. Metal after acidification\nA filtered metal concentration rises as pH falls, but oxidation-state measurements stay unchanged. Name plausible chemical mechanisms and what would distinguish them.\n\n\n\n\n\n\nHint\n\n\n\n\n\nConsider surfaces, minerals, and protonation before proposing redox.\n\n\n\n\n\n\n\n\n\nWorked solution\n\n\n\n\n\nAcid can desorb metal, dissolve a metal-bearing phase, or protonate a ligand and redistribute its binding. Measure free and total metal, ligand/organic matter, major ions, solids, and pH. Unchanged oxidation state is compatible with all these processes.",
+    "crumbs": [
+      "Home",
+      "Water",
+      "Metal speciation and mobility",
+      "Exercises and solutions"
+    ]
+  },
+  {
+    "objectID": "metals/exercise.html#explore",
+    "href": "metals/exercise.html#explore",
+    "title": "Metal speciation and mobility exercises",
+    "section": "Explore the weekly demo",
+    "text": "Explore the weekly demo\nCompare the exactly saturated case with the same total and no ligand. Use the week 3 interactive demo, then explain the result using this unit’s balances and assumptions.",
     "crumbs": [
       "Home",
       "Water",
@@ -4011,6 +4567,19 @@
     ]
   },
   {
+    "objectID": "metals/notes.html#interactive-practice",
+    "href": "metals/notes.html#interactive-practice",
+    "title": "Metal speciation and mobility",
+    "section": "Interactive practice",
+    "text": "Interactive practice\nTry the week 3 demo. Compare the exactly saturated case with the same total and no ligand.",
+    "crumbs": [
+      "Home",
+      "Water",
+      "Metal speciation and mobility",
+      "Notes and learning goals"
+    ]
+  },
+  {
     "objectID": "organic-contaminants/exercise.html",
     "href": "organic-contaminants/exercise.html",
     "title": "Organic contaminants and environmental fate exercises",
@@ -4081,6 +4650,19 @@
     "title": "Organic contaminants and environmental fate exercises",
     "section": "Activity C: a fate model in R",
     "text": "Activity C: a fate model in R\nDownload compounds.csv, fate.R, and fate-report.Rmd into one folder. Read the input dictionary. Reuse readr, dplyr, ggplot2, and the R Markdown workflow. The new mathematical operation is exp(), the inverse of the natural logarithm.\nThe script creates a regular daily table for the two cases and evaluates:\nremaining_fraction = exp(-k_per_day * time_days)\ntotal_parent_mg = initial_parent_mg * remaining_fraction\nwater_mg_l = total_parent_mg / (water_volume_l + kd_l_kg * dry_solid_kg)\nThese lines are expressions used inside mutate() in the supplied script. The starting mass is already distributed between phases at time zero. The coefficient k applies equally to parent in water and solids; this assumption is what lets total parent follow one exponential.\n\nPredict which compound has more parent in water initially. Calculate U’s day-20 state by hand before running the code.\nRun source(\"fate.R\"), inspect fate, and print fate_plot.\nCheck time zero, one half-life, and the sum of the two phase inventories.\nExplain why a smaller water concentration does not automatically mean a shorter half-life, less total parent, or lower biological risk.\nComplete the report, restart R, and Knit it from saved inputs. Use its final section to make the separate catchment and sediment arguments in the integrated case.\n\n\n\n\n\n\n\nExpected model results\n\n\n\n\n\nAt day zero, U has 0.500 mg/L water parent and V has 0.9091 mg/L, because their Kd values differ. At day 20, U has 0.250 mg total parent, split equally between phases, giving 0.125 mg/L water concentration. At day 30, U has 0.125 mg total and 0.0625 mg/L water concentration; V has 0.500 mg total and 0.4545 mg/L water concentration.\nThe two parent phase inventories sum to the declining total. Total parent plus the transformed-parent accounting term equals the initial mass. The latter term records loss of parent identity, not a measured product mass or proof of mineralisation. These are model predictions under supplied constants, not a fit, a statistical comparison, or field evidence.\n\n\n\n\n\n\nModel water-phase parent predictions for fictitious U and V.",
+    "crumbs": [
+      "Home",
+      "Soils and contaminants",
+      "Organic contaminants and environmental fate",
+      "Exercises and solutions"
+    ]
+  },
+  {
+    "objectID": "organic-contaminants/exercise.html#explore",
+    "href": "organic-contaminants/exercise.html#explore",
+    "title": "Organic contaminants and environmental fate exercises",
+    "section": "Explore the weekly demo",
+    "text": "Explore the weekly demo\nChange Kd alone and check which phase inventories change. Use the week 4 interactive demo, then explain the result using this unit’s balances and assumptions.",
     "crumbs": [
       "Home",
       "Soils and contaminants",
@@ -4211,6 +4793,19 @@
     "title": "Organic contaminants and environmental fate",
     "section": "Activity C: a reproducible fate explanation",
     "text": "Activity C: a reproducible fate explanation\nUse the R activity to compare two fictitious compounds, and carry its report into the integrated case. The model input dictionary records the process assumptions.",
+    "crumbs": [
+      "Home",
+      "Soils and contaminants",
+      "Organic contaminants and environmental fate",
+      "Notes and learning goals"
+    ]
+  },
+  {
+    "objectID": "organic-contaminants/notes.html#interactive-practice",
+    "href": "organic-contaminants/notes.html#interactive-practice",
+    "title": "Organic contaminants and environmental fate",
+    "section": "Interactive practice",
+    "text": "Interactive practice\nTry the week 4 demo. Change Kd alone and check which phase inventories change.",
     "crumbs": [
       "Home",
       "Soils and contaminants",

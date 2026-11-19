@@ -44,3 +44,7 @@ Here we isolate carbonate chemistry first. All numerical waters are constructed
 teaching examples, not measurements from a real lake. The gas-exchange examples
 are separate boundary conditions, not an assumed continuation of the closed-water
 acid experiment.
+
+## Interactive practice
+
+Try the [week 2 demo](../interactives/week2.qmd). Compare Water A and Water B, then explain the conserved carbon and changed alkalinity.

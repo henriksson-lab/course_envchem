@@ -150,3 +150,5 @@ verification script checks the final states. These are model results, not field 
 Continue with [gas exchange and minerals](gases-lec.qmd) and the
 [exercise](exercise.qmd). Constants and model sources are on the
 [reference sheet](reference.qmd).
+
+Explore the [week 2 demo](../interactives/week2.qmd), then explain the result chemically.

@@ -49,3 +49,7 @@ Book: vanLoon and Duffy, fourth edition, chapter(s) 13. Focus on coordination, h
 [IUPAC formation constants](https://goldbook.iupac.org/terms/view/F02485): Stepwise and overall metal–ligand formation conventions.
 
 [EPA metal bioavailability research](https://www.epa.gov/system/files/documents/2022-03/metals-crada-report.pdf): Why dissolved totals and chemical conditions do not define a single biological exposure.
+
+## Interactive practice
+
+Try the [week 3 demo](../interactives/week3.qmd). Compare the exactly saturated case with the same total and no ligand.

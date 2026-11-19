@@ -69,3 +69,5 @@ Reference alkalinity export 50000 − 20000 = 30000 eq/year → **0.0600 meq/L**
 Write a short report using activity C and the catchment/sediment evidence. Include one reaction, one hand-checked balance, one model figure, and an explanation of what is still uncertain.
 
 Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).
+
+Explore the [week 5 demo](../interactives/week5.qmd), then explain the result chemically.

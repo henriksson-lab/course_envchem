@@ -53,3 +53,8 @@ Consider surfaces, minerals, and protonation before proposing redox.
 ::: {.callout-note collapse="true" title="Worked solution"}
 Acid can desorb metal, dissolve a metal-bearing phase, or protonate a ligand and redistribute its binding. Measure free and total metal, ligand/organic matter, major ions, solids, and pH. Unchanged oxidation state is compatible with all these processes.
 :::
+
+## Explore the weekly demo {#explore}
+
+Compare the exactly saturated case with the same total and no ligand. Use the [week 3 interactive demo](../interactives/week3.qmd),
+then explain the result using this unit’s balances and assumptions.

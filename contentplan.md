@@ -25,6 +25,22 @@ links, fragment targets, published inputs, and exclusions. The teacher
 practice. Exact textbook subsections, formal syllabus alignment, classroom
 pacing, and browser-based slide review remain instructor review items.
 
+## Weekly interactive practice
+
+Five demos now support a working five-week grouping of the existing content:
+units 1–4 (deposition and dilution), 5–7 (closed-water carbonate response),
+8–11 (metal binding and saturation), 12–14 (partitioning and parent
+transformation), and 15 (the annual catchment budget). This is a study grouping,
+not a change to formal scheduling. Each week page has prediction questions,
+reference presets, model conditions, and a static hand-check result.
+
+The browser demos are a way to explore the same chemical balances, separate
+from student coding tasks. They do not add programming prerequisites or new
+statistical methods. Model scripts use no external libraries or network calls.
+`make check-demos` verifies numeric cases and conservation; browser QA checks
+mounting, presets, reset, native slider keyboard use, endpoint redraws, and
+mobile width with external requests blocked.
+
 ## Basis and scope
 
 The local [Environmental Chemistry dossier](../molbiol_program/courses/chemistry-2027-environmental-chemistry.md)

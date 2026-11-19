@@ -73,3 +73,5 @@ Aqueous concentration = **0.125 mg/L**.
 Water parent concentration falls after sediment is added. What would distinguish sorption from transformation, and why does log Kow alone not answer the question?
 
 Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).
+
+Explore the [week 4 demo](../interactives/week4.qmd), then explain the result chemically.

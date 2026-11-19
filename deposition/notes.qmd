@@ -45,3 +45,7 @@ Book: vanLoon and Duffy, fourth edition, chapter(s) 5–7, selected. Focus on ac
 [EPA acid deposition](https://www.epa.gov/acidrain/what-acid-rain): Wet/dry transfer and precursor oxidation.
 
 [EPA effects of acid rain](https://www.epa.gov/acidrain/effects-acid-rain): Links between deposition, catchment buffering, and aquatic response.
+
+## Interactive practice
+
+Try the [week 1 demo](../interactives/week1.qmd). Predict the effect of doubling water export at the same acid input.

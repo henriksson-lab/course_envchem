@@ -102,3 +102,8 @@ a statistical comparison, or field evidence.
 :::
 
 ![Model water-phase parent predictions for fictitious U and V.](fate.svg)
+
+## Explore the weekly demo {#explore}
+
+Change Kd alone and check which phase inventories change. Use the [week 4 interactive demo](../interactives/week4.qmd),
+then explain the result using this unit’s balances and assumptions.

@@ -71,3 +71,5 @@ After 30000 eq/year neutralisation: **0.0200 meq/L** in the annual export.
 A rain sample contains sulfate. What additional evidence is needed before reporting a strong-acid dose from that result?
 
 Use the [notes and sources](notes.qmd) and [worked exercises](exercise.qmd).
+
+Explore the [week 1 demo](../interactives/week1.qmd), then explain the result chemically.

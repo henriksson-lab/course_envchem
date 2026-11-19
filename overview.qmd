@@ -32,6 +32,14 @@ requirements. Exact subsection and page assignments await book review.
 | [14. Organic contaminants and environmental fate](organic-contaminants/notes.qmd) | 20 | Ionisation, partitioning, parent loss; activity C. |
 | [15. Connecting air, catchments, and water](integrated-case/notes.qmd) | 21 and earlier | A chemical argument supported by budgets and evidence. |
 
+## Weekly interactive demos
+
+Use the [five weekly demos](interactives/index.qmd) to change chemical conditions
+and check the consequences before returning to a hand calculation. The working
+study-week grouping is atmosphere and balances; aquatic composition and carbonate;
+metals and surfaces; soils and contaminants; then synthesis. The pages link back
+to the relevant units and include static reference results.
+
 ## Three supporting computing activities
 
 Use the same R and R Markdown workflow as introductory computing. These

@@ -1,0 +1,53 @@
+---
+title: "Week 3 demo: metal binding and saturation"
+---
+
+Can two waters with the same dissolved metal total have different free-ion concentrations and saturation states?
+
+Use with [metal speciation](../metals/notes.qmd) and its [worked problems](../metals/exercise.qmd). This working week groups metals, interfaces, redox, and treatment.
+
+## Predict first
+
+Keep dissolved total metal fixed. Predict what increasing prescribed free ligand does to free metal, complexed metal, and the free-ion hydroxide saturation product.
+
+## Explore the model
+
+Use the sliders or keyboard arrow keys while a slider is focused. Reset restores
+the starting values; reference-case buttons set all inputs for that case.
+
+```{=html}
+<link rel="stylesheet" href="../demos/demo.css">
+<div data-demo="metals" role="group" aria-label="Week 3 demo: metal binding and saturation">
+<p>The reference calculation below can be used while the controls load or when JavaScript is unavailable.</p>
+</div>
+<script src="../demos/core.js"></script>
+<script src="../demos/metals.js"></script>
+```
+
+## Questions to try
+
+1. Choose **Worked binding case**. Confirm that free plus complexed metal equals 2.00 µmol/L.
+2. Choose **Exactly saturated**. The selected state has 10.0 µmol/L total metal, 9.00 µmol/L free ligand, and pH 9.00. Check the free concentration and ion product.
+3. Choose **Same total, no ligand**. Explain why the free-ion product changes although total metal and pH stay fixed.
+4. Return to the binding case and raise only pH. In this deliberately simple model the binding split does not change with pH, but hydroxide and the saturation threshold do. Which omitted processes could make a real metal behave differently?
+
+## Hand check and static reference
+
+For one complex, `free M = total M / (1 + β[L]free)`, with β = 10⁶ L/mol.
+At total M = 2.00 µmol/L and free L = 10.0 µmol/L, β[L] is 10, giving
+**0.1818 µmol/L free M** and **1.818 µmol/L complexed M**.
+
+At pH 9.00, hydroxide is 10⁻⁵ mol/L in the supplied approximation.
+With Ksp = 10⁻¹⁶, the saturation free-metal concentration is **1.00 µmol/L**.
+At total M = 10.0 and free L = 9.00 µmol/L, that free concentration gives Ω = 1.
+Removing ligand at the same total gives Ω = 10.
+
+## Model conditions
+
+The fictitious metal has only free M²⁺ and one complex ML. **Free ligand** is imposed by a ligand reservoir; it is not an analytical total or a closed ligand inventory. pH is also prescribed, with Kw = 10⁻¹⁴ at 25 °C and concentrations approximating activities. The curves describe binding before any mineral reaction. A supersaturated state may favour precipitation, but the demo does not calculate precipitation, dissolution, rates, or a new equilibrium total. Hydrolysis, ligand protonation, competing ligands, and biological effects are omitted.
+
+## Explain the result
+
+Why would substituting dissolved total metal for free M²⁺ in the ion product give the wrong saturation check?
+
+[All weekly demos](index.qmd)

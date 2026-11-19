@@ -53,3 +53,8 @@ Counterions and subsequent transformations affect acidity.
 ::: {.callout-note collapse="true" title="Worked solution"}
 Measure or constrain acidity/alkalinity, major cations including ammonium, other anions, precipitation volume, and dry deposition as relevant. Sulfate may arrive partly as neutral salts. Nitrification, uptake, and catchment reactions can change the net acid budget.
 :::
+
+## Explore the weekly demo {#explore}
+
+Predict the effect of doubling water export at the same acid input. Use the [week 1 interactive demo](../interactives/week1.qmd),
+then explain the result using this unit’s balances and assumptions.

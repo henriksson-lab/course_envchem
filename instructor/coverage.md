@@ -19,3 +19,14 @@ The final case requires a balanced reaction, numerical support, a stated
 limitation, and a measurement that could distinguish alternatives. The draft
 introduces no additional statistical methods and requires no specialist
 speciation package or student-written equilibrium solver.
+
+
+## Interactive predictions across the working weeks
+
+| Week | Model | Chemical prediction to explain |
+| --- | --- | --- |
+| 1 | [Deposition](../interactives/week1.qmd) | Doubling water export changes concentration without changing annual load. |
+| 2 | [Carbonate](../interactives/week2.qmd) | Equal initial pH does not imply equal response to an acid-equivalent dose. |
+| 3 | [Metals](../interactives/week3.qmd) | Free ligand changes free metal; prescribed pH changes the hydroxide saturation threshold. |
+| 4 | [Fate](../interactives/week4.qmd) | Kd changes the phase split; the stipulated equal-phase loss coefficient fixes total-parent half-life. |
+| 5 | [Catchment](../interactives/week5.qmd) | Accessible neutralisation changes residual acid; annual water export changes its flow-weighted concentration. |

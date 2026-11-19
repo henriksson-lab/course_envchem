@@ -23,6 +23,13 @@ from introductory computing. Their [downloads](overview.qmd#three-supporting-com
 include starting code and a report template. Hand calculations provide a check
 before the code is used.
 
+## Explore chemical predictions
+
+The [weekly interactive demos](interactives/index.qmd) let you vary deposition,
+carbon inventories, ligand conditions, sorption, transformation, and catchment
+neutralisation. Each has a hand-check reference and questions that connect the
+plot to a chemical balance.
+
 ## Connect the chemical systems
 
 The recurring constructed catchment links deposition, soil reactions, and water

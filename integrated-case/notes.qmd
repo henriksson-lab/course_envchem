@@ -45,3 +45,7 @@ Book: vanLoon and Duffy, fourth edition, chapter(s) 21 and earlier selections. R
 [USGS coupled organic-input chemistry](https://water.usgs.gov/ogw/pubs/ofr0289/imc_organic.htm): Coupled redox changes provide context for the sediment hypothesis.
 
 [EPA catchment response](https://www.epa.gov/acidrain/effects-acid-rain): Why deposition effects depend on environmental buffering.
+
+## Interactive practice
+
+Try the [week 5 demo](../interactives/week5.qmd). Compare less neutralisation with double water export and distinguish their annual amounts.

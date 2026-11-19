@@ -55,6 +55,30 @@ The identifiers A/B/C in the water-ion activity are local to that dataset; they
 are not the separately constructed carbonate-unit waters. No replicate treatment
 comparison, regression, or p-value is required in these activities.
 
+## Weekly interactive demos
+
+The five week pages in `interactives/` provide a working grouping, not an approved
+timetable. They cover deposition/dilution, closed-carbonate acid response,
+binding/free-ion saturation, phase inventories/parent transformation, and the
+annual catchment budget. The matching exercises, lectures, and notes link to them.
+Each has prediction prompts, a static worked reference, and model conditions.
+
+Use them to test a chemical prediction before students calculate or modify code.
+Reset and each reference preset set all inputs; a subsequent single-slider
+change provides a controlled comparison. The sliders accept keyboard arrow keys
+when focused. Plot lines have distinct styles as well as colours; current
+calculated values and interpretations are available as text. Mobile plots scroll
+inside their own container, and print uses the static reference below the demo.
+
+The scripts are dependency-free browser code. Development checks require Node.js
+18+ (`make check-demos`, also included in `make check`). The optional Chrome QA
+helper `tools/check_demos_browser.py` requires `websocket-client` and a separately
+started temporary-profile Chrome on loopback port 9223. It loads rendered
+`file://` pages with external requests blocked and checks real controls,
+presets/reset, UI endpoint combinations, native keyboard operation, and mobile
+width. The site check verifies published demo assets match source and excludes
+tests and instructor material from the student output.
+
 ## Carbonate unit assumptions
 
 Use 25 °C, dilute freshwater, and the supplied rounded constants. CO₂* combines
@@ -101,8 +125,9 @@ environment use `XDG_CACHE_HOME=/tmp/envchem-quarto-cache make render`.
 Inspect the actual textbook to choose exact subsection/page assignments from the
 bounded chapter/topic selections. Reconcile proposed capabilities with the final
 approved syllabus. Pilot the first R task for recall demands and the exercises
-for pacing. Review lectures in a browser and in the teaching display; a full
-browser layout review and classroom pilot have not been completed.
+for pacing. The weekly demos have passed desktop/mobile browser interaction checks.
+Review the wider course lectures in the teaching display; a full slide-layout
+review and classroom pilot have not been completed.
 
 Practical interpretation tasks are calculations and supplied-data exercises.
 They do not replace laboratory protocols. Experimental procedures, equipment,

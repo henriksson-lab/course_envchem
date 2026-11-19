@@ -58,7 +58,17 @@ def check():
         deployed = DOCS / "downloads" / archive_path.name
         if not deployed.exists() or deployed.read_bytes() != archive_path.read_bytes():
             errors.append(f"{name}: missing/stale published ZIP")
-    for excluded in ("instructor", "tools", "templates", "contentplan.html", "README.html"):
+    demo_sources = [*sorted((ROOT / "demos").glob("*.js")), ROOT / "demos" / "demo.css"]
+    for source in demo_sources:
+        published = DOCS / "demos" / source.name
+        if not published.exists() or published.read_bytes() != source.read_bytes():
+            errors.append(f"Missing/stale published demo asset: {source.name}")
+    for week in range(1, 6):
+        page = DOCS / "interactives" / f"week{week}.html"
+        if not page.exists() or 'data-demo=' not in page.read_text():
+            errors.append(f"Missing weekly interactive mount: {page.name}")
+    for excluded in ("instructor", "tools", "templates", "contentplan.html", "README.html",
+                     "demos/tests", "demos/README.md"):
         if (DOCS / excluded).exists():
             errors.append(f"Internal content copied to docs: {excluded}")
     if not (DOCS / ".nojekyll").exists():
@@ -66,7 +76,7 @@ def check():
     if errors:
         raise SystemExit("\n".join(errors))
     print(f"Checked {len(pages)} HTML files, fragment targets, 3 portable archives, "
-          "published input copies, and internal-file exclusions.")
+          "published input copies, 5 weekly demos/assets, and internal-file exclusions.")
 
 
 if __name__ == "__main__":
