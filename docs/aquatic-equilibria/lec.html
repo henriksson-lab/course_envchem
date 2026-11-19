@@ -144,6 +144,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Aquatic composition and equilibrium</h1>
+  <p class="subtitle">Week 2 — Aquatic composition and carbonate chemistry</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -154,60 +155,585 @@ Environmental Chemistry
 </div>
 
 </section>
-<section id="chemical-question" class="slide level2">
-<h2>Chemical question</h2>
-<p>Before interpreting a water analysis, can its reported concentrations satisfy charge balance, and which quantities belong in an equilibrium expression?</p>
-</section>
-<section id="what-to-explain" class="slide level2">
-<h2>What to explain</h2>
+<section id="about-this-lecture" class="slide level2">
+<h2>About this lecture</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p>In August 2022, <strong>hundreds of tonnes of dead fish</strong> washed up along the Oder, the river between Poland and Germany. Investigators had to work out what was in the water. Their answer combined several factors: unusually <strong>salty</strong> water from industrial discharges, low flow, heat, and a bloom of a toxic alga that thrives in salty water.</p>
+<p>Every step of that investigation started from a <strong>water analysis</strong>: a table of numbers.</p>
+<p>Today you will learn to:</p>
 <ul>
-<li>Convert ionic concentrations to charge equivalents.</li>
-<li>Distinguish analytical totals, free concentrations, and activities.</li>
-<li>Use an equilibrium model without confusing thermodynamic possibility with reaction speed.</li>
+<li>read what each number <strong>means</strong> (total, species, filtered);</li>
+<li>check a table with <strong>charge balance</strong>;</li>
+<li>decide when <strong>activity</strong> matters, and split a <strong>weak acid</strong> at a given pH.</li>
 </ul>
+</div><div class="column" style="width:45%;">
+<p><img data-src="img/oder-fish-kill.jpg" style="width:100.0%"> <span class="credit">Dead fish on the Oder, August 2022. Photo: Hanno Böck, CC0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Open with the Oder disaster because it shows that water chemistry is not abstract. In the summer of 2022 a very large fish kill spread along the Oder. The official investigations pointed to a combination of causes rather than one poison: high salt content from discharges, low water levels, high temperatures, and a bloom of the golden alga Prymnesium parvum, which produces toxins and grows well in brackish water. So far in the course we have followed chemicals through the air and the climate system. From today we move into water. This first water lecture gives the tools for reading any water analysis. The next two lectures apply them to carbonate chemistry.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="water-is-a-reaction-medium" class="slide level2">
 <h2>Water is a reaction medium</h2>
-<p>Ask what the measurement includes:</p>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="fig/hydration.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:45%;">
+<p>Water molecules are <strong>polar</strong>: the oxygen end is slightly negative, the hydrogen ends slightly positive. That is why salts dissolve: each ion is wrapped in a <strong>hydration shell</strong> of oriented water molecules.</p>
+<p>A dissolved ion is therefore not alone. It interacts with water, with other ions and with any molecule that can bind it.</p>
+<p>So a water sample is a <strong>mixture of reacting species</strong>. Before we calculate anything, we need to know which of those species a laboratory number actually describes.</p>
+</div></div>
+<aside class="notes">
+<p>Start from the molecular picture. Sodium chloride dissolves because water’s partial charges stabilise the separated ions. Around a cation the water oxygens point inward; around an anion the hydrogens point inward. The sizes in the sketch are schematic. The important consequence for us is that dissolved substances react and interact. Calcium can pair with sulfate, iron can bind to organic molecules, carbon dioxide can react with water to form bicarbonate. A laboratory measurement rarely captures one of these forms on its own. That leads to the first practical question of the lecture: when a report says “iron, 0.3 milligrams per litre”, what exactly has been measured?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-does-one-number-in-a-water-table-mean" class="slide level2">
+<h2>What does one number in a water table mean?</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="fig/filter.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:40%;">
+<p>Ask three questions of every entry:</p>
+<ol type="1">
+<li>Is it an <strong>element total</strong> or one <strong>species</strong>?</li>
+<li><strong>Whole water</strong> or a <strong>filtered</strong> fraction? “Dissolved” usually means “passed a 0.45 µm filter”.</li>
+<li>Is the mass reported <strong>as the element</strong> (mg Fe/L) or <strong>as a compound</strong> (mg CaCO₃/L)?</li>
+</ol>
+<p>A filtered total can include complexes and small colloids, not only free ions.</p>
+</div></div>
+<aside class="notes">
+<p>Walk through the diagram from top to bottom. The whole sample contains free hydrated ions, ions bound to dissolved ligands, small colloids and larger particles. A filter is a method decision, not a law of nature: the particles stay behind, everything else passes and is analysed together. The laboratory then reports one number, usually the total of the element in the filtrate. That number is not the concentration of the free ion, which is often the form that matters for toxicity. The third question catches a frequent error: hardness and alkalinity are often reported as milligrams of calcium carbonate per litre, which is a different number from milligrams of calcium.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="mass-moles-and-charge" class="slide level2">
+<h2>Mass, moles and charge</h2>
+
+<img data-src="fig/unit-chain.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Laboratories report <strong>mg/L</strong>, but chemistry counts <strong>particles</strong> and <strong>charges</strong>. Divide by molar mass to get mmol/L. Multiply by the size of the charge to get <strong>milliequivalents (meq/L)</strong>.</p>
+<p>A calcium result of 40.08 mg/L is 1.000 mmol/L, but <strong>2.000 meq/L</strong>, because each Ca²⁺ carries two charges.</p>
+<aside class="notes">
+<p>This conversion is the first calculation on any ion table, and it is where many mistakes happen. A molar mass in grams per mole has the same number as milligrams per millimole, so dividing milligrams per litre by molar mass gives millimoles per litre directly. Milligrams of different ions cannot be added in any meaningful way, because a milligram of sodium contains far more ions than a milligram of sulfate. Equivalents count charge, so they can be added and compared across ions. Exercise one is exactly this calculation. Ask students to convert 22.99 milligrams per litre of sodium in their heads before showing the right-hand box.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="charge-must-balance" class="slide level2">
+<h2>Charge must balance</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p>Bulk water is <strong>electrically neutral</strong>. For each ion, multiply its concentration by the size of its charge. Then add up the cations and, separately, the anions. The two totals must be equal.</p>
+<p><strong>Worked example</strong> (mmol/L): Ca²⁺ 0.500, Mg²⁺ 0.250, Na⁺ 0.500; HCO₃⁻ 1.200, Cl⁻ 0.400, SO₄²⁻ 0.200.</p>
+<p>Cations: 1.000 + 0.500 + 0.500 = <strong>2.000 meq/L</strong>. Anions: 1.200 + 0.400 + 0.400 = <strong>2.000 meq/L</strong>.</p>
+</div><div class="column" style="width:55%;">
+<p><img data-src="fig/ion-balance-worked.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>Electroneutrality is one of the most reliable constraints in water chemistry. A litre of water cannot carry a measurable net charge: the electrostatic energy would be enormous. So every positive charge in the table must be matched by a negative charge. The worked example is the simplified ion set from the notes. Notice that the divalent ions count twice: 0.500 millimoles per litre of calcium supplies a full milliequivalent. Hydrogen and hydroxide ions are left out because at near-neutral pH they are tiny compared with the major ions. Ask students what the right-hand column would look like if somebody had forgotten to double the sulfate.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="when-the-balance-does-not-close" class="slide level2">
+<h2>When the balance does not close</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="fig/balance-check.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:45%;">
+<p>Three constructed samples from the R activity. A and B balance. Sample C does not:</p>
+<p><span class="math display">\text{imbalance}=\frac{\text{cations}-\text{anions}}{\text{cations}+\text{anions}}\times100</span></p>
+<p><span class="math display">=\frac{2.00-1.64}{3.64}\times100=+9.89\%</span></p>
+<p>A positive sign means anions are <strong>missing</strong>. The water itself is not charged. Something in the analysis or the table is wrong or incomplete.</p>
+</div></div>
+<aside class="notes">
+<p>Use a consistent sign convention; ours is cations minus anions, divided by the sum. A gap tells us that the table does not describe the water correctly. Possible reasons include an ion that was not measured, a unit or transcription error, a species assigned the wrong charge, or ordinary analytical uncertainty. Many laboratories have an acceptance range for this imbalance, but there is no universal threshold, and we do not use one here. Ask the class: sample C has positive imbalance, so is something too large among the cations or too small among the anions? Either is possible. The balance tells us that something is wrong, not what.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="find-the-cause-never-fudge-the-data" class="slide level2">
+<h2>Find the cause; never fudge the data</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><img data-src="img/water-sampling.png" style="width:100.0%"> <span class="credit">USGS hydrologist collecting a water-quality sample, Mississippi River at Baton Rouge. Photo: Scott Dennis/USGS, public domain, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:55%;">
+<p>In sample C, sulfate was entered as <strong>1.9212 mg/L</strong>. The laboratory record shows the decimal point was misplaced: the true value is <strong>19.212 mg/L</strong>.</p>
 <ul>
-<li>An element total or a species?</li>
-<li>Whole water or an operationally filtered fraction?</li>
-<li>Mass of element or mass of compound?</li>
+<li>1.9212 mg/L → 0.040 meq/L</li>
+<li>19.212 mg/L → 0.400 meq/L</li>
 </ul>
+<p>The missing 0.36 meq/L is exactly the gap. After the <strong>documented</strong> correction all three samples balance.</p>
+<p><strong>Never adjust raw numbers until a table balances.</strong> Keep the original, record the evidence, then correct.</p>
+</div></div>
+<aside class="notes">
+<p>This is a constructed laboratory record, used in the R activity. The point is professional practice. A charge balance can flag a problem but it cannot tell you which number is wrong. Here a separate record identifies a transcription error, and the corrected value closes the gap exactly. Without that record, you would report the imbalance and investigate, not invent a value. The R script keeps the original table and applies the correction as a separate, documented step, which is how real data handling should work. Closure after correction is a consistency check. It does not prove every number in the table is right, because two errors could cancel.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="charge-balance-is-a-constraint" class="slide level2">
-<h2>Charge balance is a constraint</h2>
-<p>0.500 mmol/L Ca²⁺ → 1.00 meq/L.</p>
-<p>Define charge imbalance: <span class="math display">100\frac{\Sigma_+-\Sigma_-}{\Sigma_++\Sigma_-}.</span></p>
-<p>Use a consistent sign convention.</p>
+<section id="same-ions-different-waters" class="slide level2">
+<h2>Same ions, different waters</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<p><img data-src="water-ions.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:42%;">
+<p>After the correction, sample C coincides with A. Sample B is a much more dilute water: every ion is lower.</p>
+<p>The plot shows <strong>mmol/L</strong>, the number of ions. The charge balance used <strong>meq/L</strong>. For divalent Ca²⁺, Mg²⁺ and SO₄²⁻ the two differ by a factor of two.</p>
+<p>Comparing waters is easier once the table has been checked. A salty river like the Oder in 2022 would stand out immediately in Na⁺ and Cl⁻.</p>
+</div></div>
+<aside class="notes">
+<p>This is the plot from the R activity. Students should recognise that the visual comparison is only trustworthy after the table has passed its checks: before the correction, sample C appeared to have almost no sulfate. Remind them which unit is on the axis. When they write the report, they need to state whether they are comparing amounts of ions or amounts of charge. The link back to the Oder is qualitative. In a salt-polluted river the sodium and chloride entries would be many times higher than in an ordinary river. That leads to the next question: when water becomes salty, do our simple concentration calculations still hold?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="concentration-and-activity" class="slide level2">
-<h2>Concentration and activity</h2>
-<p><span class="math display">a_i=\gamma_i c_i/c^\circ,\qquad I=\tfrac12\sum c_iz_i^2</span></p>
-<p>Activities enter equilibrium expressions. Concentrations are a stated approximation.</p>
+<section id="ions-feel-each-other" class="slide level2">
+<h2>Ions feel each other</h2>
+<div class="columns">
+<div class="column" style="width:56%;">
+<p><img data-src="fig/ion-atmosphere.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:44%;">
+<p>In dilute water each ion acts almost on its own. In salty water, each ion is surrounded by a slight excess of <strong>opposite charge</strong>, an <strong>ionic atmosphere</strong>. That shielding makes the ion behave as if it were <strong>less concentrated</strong>.</p>
+<p>Equilibrium constants are therefore written with <strong>activities</strong>:</p>
+<p><span class="math display">a_i=\gamma_i\,c_i/c^\circ</span></p>
+<p>γ is the activity coefficient; c° = 1 mol/L. When γ ≈ 1, activity ≈ concentration.</p>
+</div></div>
+<aside class="notes">
+<p>Give the physical picture before the formula. An ion surrounded by other ions is partly screened from its surroundings, so it is less able to react or to escape than its concentration suggests. The activity coefficient measures this effect. Thermodynamic equilibrium constants, such as acid constants and solubility products, are strictly defined with activities. In our dilute teaching examples we use concentrations, which amounts to assuming gamma is one. That is an approximation, and students need to know when it is acceptable. The positions of the ions in the sketch are schematic: the real atmosphere is a small statistical excess of opposite charge, not a fixed shell.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="a-simple-acid-distribution" class="slide level2">
-<h2>A simple acid distribution</h2>
-<p>At pH = pKa + 1:</p>
-<p><span class="math inline">[A^-]/[HA]=10</span>, so the A⁻ fraction is <strong>0.909</strong>.</p>
-<p>Ratios are different from fractions.</p>
+<section id="ionic-strength-measures-how-crowded-the-water-is" class="slide level2">
+<h2>Ionic strength measures how crowded the water is</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p><span class="math display">I=\tfrac12\left(c_1z_1^2+c_2z_2^2+c_3z_3^2+\dots\right)</span></p>
+<p>one term for every ion in the water.</p>
+<p>The charge is <strong>squared</strong>, so divalent ions count four times as much per mole.</p>
+<p><strong>Worked example:</strong> 1.00 mmol/L Ca²⁺ and 2.00 mmol/L Cl⁻:</p>
+<p>I = ½ (1.00 × 4 + 2.00 × 1) = <strong>3.00 mmol/L</strong> = 0.00300 mol/L.</p>
+<p>This is <strong>not</strong> the total concentration (3.00 mmol/L of ions is a coincidence here) and not the mass of salt.</p>
+</div><div class="column" style="width:52%;">
+<p><img data-src="fig/ionic-strength.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>Ionic strength is the single number that summarises how strongly the ions in a solution interact. Squaring the charge reflects that electrostatic effects grow strongly with charge. Work the example from exercise three slowly. The calcium contributes four millimoles per litre to the sum, the chloride two, and half of six is three. Point out the coincidence: here the ionic strength happens to equal the total ion concentration in number, but that is not true in general. For a sulfate salt it would not be. The worked ion table from earlier in the lecture has an ionic strength close to 0.003 mol per litre as well, which is typical for a moderately hard freshwater.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="a-small-redox-bridge" class="slide level2">
-<h2>A small redox bridge</h2>
-<p>Oxidation state change requires electron transfer.</p>
-<p>Equilibrium → possible distribution under constraints.</p>
-<p>Kinetics → approach to that distribution.</p>
+<section id="how-big-is-the-activity-correction" class="slide level2">
+<h2>How big is the activity correction?</h2>
+
+<img data-src="fig/activity-coefficients.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Estimated with the Davies equation. At I = 0.003 a <strong>monovalent</strong> ion has γ ≈ 0.94 and a <strong>divalent</strong> ion γ ≈ 0.79. In brackish water such as the central Baltic, divalent ions fall to roughly γ ≈ 0.35. <strong>Freshwater calculations tolerate γ ≈ 1; salty water does not.</strong></p>
+<aside class="notes">
+<p>The curves come from the Davies equation, a standard estimate for dilute to moderately salty water. Its details are not examinable; the message is. In a soft lake the correction for single-charged ions is a few percent, small compared with other uncertainties in a teaching model. Divalent ions are already about twenty percent off in a moderately hard water. In brackish or salt-polluted water the correction becomes large, and seawater needs dedicated models and constants. That is why this course states the dilute-freshwater approximation every time we use it, and why constants from freshwater must never be carried unexamined into seawater or into a salt-polluted river like the Oder in 2022.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="check-a-complete-teaching-ion-set" class="slide level2">
-<h2>Check a complete teaching ion set</h2>
-<p>Cations: 1.000 + 0.500 + 0.500 = <strong>2.000 meq/L</strong>.</p>
-<p>Anions: 1.200 + 0.400 + 0.400 = <strong>2.000 meq/L</strong>.</p>
-<p>Balance closes; individual analyses still need quality checks.</p>
+<section id="a-simple-acid-the-ratio-rule" class="slide level2">
+<h2>A simple acid: the ratio rule</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p>For a weak acid <span class="math inline">\mathrm{HA\rightleftharpoons H^++A^-}</span>:</p>
+<p><span class="math display">\frac{[\mathrm{A^-}]}{[\mathrm{HA}]}=10^{\,\mathrm{pH}-pK_a}</span></p>
+<ul>
+<li>pH = pK<sub>a</sub>: ratio 1, half each</li>
+<li>pH = pK<sub>a</sub> + 1: ratio 10, A⁻ fraction <strong>10/11 = 0.909</strong></li>
+<li>pH = pK<sub>a</sub> − 1: ratio 0.1, A⁻ fraction 0.091</li>
+</ul>
+<p>The fraction of A⁻ is <span class="math inline">r/(1+r)</span>, with <span class="math inline">r</span> the ratio.</p>
+</div><div class="column" style="width:52%;">
+<p><img data-src="fig/acid-distribution.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>This is the second tool of the lecture and it returns in almost every later unit. Taking the logarithm of the acid equilibrium expression gives the ratio rule: every pH unit above the pKa multiplies the ratio of base to acid form by ten. A ratio is not a fraction. At one unit above the pKa, the ratio is ten to one, so the fraction of A-minus is ten parts out of eleven, or 0.909, not 0.9 and not ten. The curve is the same calculation repeated at many prescribed pH values. The horizontal axis is a pH that we choose. Nothing in this formula predicts what the pH of a water will be.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="check-your-explanation" class="slide level2">
-<h2>Check your explanation</h2>
-<p>An analysis has 2.00 meq/L cations and 1.64 meq/L anions. Calculate the signed imbalance. Should you change raw measurements until the table balances?</p>
-<p>Use the <a href="../aquatic-equilibria/notes.html">notes and sources</a> and <a href="../aquatic-equilibria/exercise.html">worked exercises</a>.</p>
+<section id="worked-example-splitting-a-total" class="slide level2">
+<h2>Worked example: splitting a total</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p>A fictitious acid HA has pK<sub>a</sub> = 5.00. The total HA + A⁻ is 0.200 mmol/L. The pH is measured as 6.00.</p>
+<ol type="1">
+<li>Ratio: <span class="math inline">r=10^{6.00-5.00}=10</span></li>
+<li>Split the total 1 : 10, that is into 11 parts</li>
+<li>HA = 0.200/11 = <strong>0.01818 mmol/L</strong></li>
+<li>A⁻ = 0.200 × 10/11 = <strong>0.1818 mmol/L</strong></li>
+</ol>
+<p>Check: 0.01818 + 0.1818 = 0.200.</p>
+<p>The <strong>pH was given</strong>. A distribution formula does not produce a pH; that needs a measurement or another balance.</p>
+</div><div class="column" style="width:48%;">
+<p><img data-src="fig/acid-split.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>This is exercise two. Take students through the steps in order and insist on the check that the parts add back to the total. Common slips are to use the ratio as if it were the fraction, or to give A-minus as 0.18 and HA as 0.02 without noticing that the total is then wrong in the third figure. Stress the final sentence. A student who is asked “what is the pH of this water” cannot answer from the pKa and total alone. In the next lecture, alkalinity provides the extra balance that does determine pH in carbonate waters.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-the-split-matters-ammonia-and-fish" class="slide level2">
+<h2>Why the split matters: ammonia and fish</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p><img data-src="fig/ammonia-fraction.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:48%;">
+<p>Ammonium is a weak acid:</p>
+<p><span class="math display">\mathrm{NH_4^+\rightleftharpoons NH_3+H^+},\quad pK_a\approx9.25\ (25\ ^\circ\mathrm{C})</span></p>
+<p>The <strong>uncharged NH₃</strong> passes easily through fish gills and is the main toxic form. The ion NH₄⁺ is far less harmful.</p>
+<p>Same total ammonia, but NH₃ rises <strong>tenfold per pH unit</strong>: about 1% at pH 7.25, 9% at pH 8.25. Water-quality limits for ammonia therefore depend on pH and temperature.</p>
+</div></div>
+<aside class="notes">
+<p>This is the reason environmental chemists care about weak-acid splits. The total ammonia in a river comes from wastewater, agriculture and decay. Its toxicity depends on how much is in the neutral form, which can cross biological membranes. The ratio rule tells us directly that each pH unit changes the toxic fraction tenfold. In productive, warm rivers, daytime photosynthesis removes carbon dioxide and can raise pH, increasing the neutral fraction at the warmest time of day. Temperature also shifts the pKa. The same total ammonia result can therefore be harmless in one water and toxic in another, which is why guidelines are tabulated against pH and temperature.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="check-yourself" class="slide level2">
+<h2>Check yourself</h2>
+<div class="checkbox">
+<ol type="1">
+<li>Convert 24.31 mg/L Mg²⁺ (molar mass 24.31 g/mol) to mmol/L and meq/L.</li>
+<li>A table gives 1.50 meq/L cations and 1.50 meq/L anions. Does that prove every value is correct?</li>
+<li>Which has the larger ionic strength: 1 mmol/L NaCl or 1 mmol/L MgSO₄?</li>
+<li>An acid has pK<sub>a</sub> 4.00. At pH 6.00, what fraction is in the A⁻ form?</li>
+<li>“Dissolved iron is 0.30 mg/L, so the free Fe³⁺ is 0.30 mg/L.” What is wrong?</li>
+</ol>
+</div>
+<aside class="notes">
+<p>Answers. One: 1.000 millimoles per litre and 2.000 milliequivalents per litre. Two: no. Closure is a consistency check; compensating errors or a missing pair of ions could still be hidden. Three: magnesium sulfate. Sodium chloride gives one millimole per litre, magnesium sulfate gives one half of four plus four, which is four millimoles per litre. Four: the ratio is one hundred, so the fraction is one hundred out of one hundred and one, about 0.990. Five: the filtered result is an element total that includes complexes and colloids, and free ferric iron is extremely low at natural pH. Give students two minutes before revealing answers.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-different-kind-of-change-redox" class="slide level2">
+<h2>A different kind of change: redox</h2>
+
+<img data-src="fig/redox-vs-binding.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>In a <strong>redox</strong> reaction an electron moves and an <strong>oxidation state</strong> changes: Fe²⁺ → Fe³⁺. In <strong>complexation</strong> a ligand binds but no electron moves: Fe³⁺ stays +3. Both change the free-ion concentration, for different reasons. Both pH and redox conditions control metal speciation.</p>
+<aside class="notes">
+<p>Up to now everything was acid–base or simple counting. A short bridge to redox, which is developed fully in week four. Make the distinction sharp. Oxidation is loss of electrons, reduction is gain. Iron(II) becoming iron(III) is oxidation, and it needs an electron acceptor such as dissolved oxygen. Binding to a ligand changes how the iron exists in solution, but the iron keeps its oxidation state. Students often call any change in a metal’s form “oxidation”. Ask them to classify three examples: copper binding to organic matter, ferrous iron meeting oxygen, and calcium pairing with sulfate. Only the second is redox.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="redox-you-can-see-iron-in-a-stream" class="slide level2">
+<h2>Redox you can see: iron in a stream</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/ochre-stream.jpg" style="width:72.0%"> <span class="credit">Ochre stream, Wooldale, West Yorkshire, England. Photo: Humphrey Bolton, CC BY-SA 2.0, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:50%;">
+<p>Groundwater without oxygen can carry dissolved <strong>Fe²⁺</strong>, which is colourless. When it emerges and meets air:</p>
+<p><span class="math display">\mathrm{4Fe^{2+}+O_2+10H_2O\rightarrow4Fe(OH)_3(s)+8H^+}</span></p>
+<p>Iron(III) is almost insoluble near neutral pH, so an <strong>orange-brown oxide</strong> coats the stream bed.</p>
+<p>The reaction also releases H⁺: oxidising iron is an <strong>acid source</strong>, which matters for mine drainage in week 3.</p>
+</div></div>
+<aside class="notes">
+<p>This is a very common sight in old mining areas and in wetlands. The groundwater feeding such streams has lost its oxygen underground, so iron is present in the soluble ferrous form. At the surface oxygen arrives, iron is oxidised, and ferric hydroxide precipitates as the orange deposit called ochre. Balance the equation with the class if time allows: four irons each lose one electron, one oxygen molecule accepts four. The hydrogen ions on the right show that iron oxidation and precipitation acidify the water. We will meet this reaction again in acid mine drainage and in water treatment, where it is used deliberately to remove iron.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="favoured-is-not-the-same-as-fast" class="slide level2">
+<h2>Favoured is not the same as fast</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="fig/favoured-vs-fast.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:45%;">
+<p><strong>Equilibrium</strong> tells you which state is favoured under given conditions. <strong>Kinetics</strong> tells you how fast it is reached.</p>
+<ul>
+<li>Organic matter and O₂ react strongly downhill, yet leaves survive in a lake for months: the barrier is high without microbes.</li>
+<li>Fe²⁺ oxidation by O₂ is fast near neutral pH but very slow in acidic water.</li>
+</ul>
+<p>An equilibrium model predicts the <strong>destination</strong>, not the <strong>travel time</strong>.</p>
+</div></div>
+<aside class="notes">
+<p>This is one of the most important habits of mind in environmental chemistry. A thermodynamic calculation, including every equilibrium calculation in this course, tells us which direction a reaction can go and where it would end. It does not tell us how long it takes. Many environmentally important systems are far from equilibrium because the reactions are slow or need a catalyst, often microbes. The iron example is well known: at pH around seven, ferrous iron exposed to air oxidises within minutes to hours, but in strongly acidic water it can persist for a long time. When a field observation disagrees with an equilibrium prediction, ask first whether there was enough time.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="back-to-the-oder-reading-the-analysis" class="slide level2">
+<h2>Back to the Oder: reading the analysis</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="fig/analysis-questions.svg" style="width:88.0%"></p>
+</div><div class="column" style="width:45%;">
+<p>Investigators worked through questions like these:</p>
+<ul>
+<li><strong>What was measured?</strong> Conductivity, major ions, oxygen, pH, nutrients, algae.</li>
+<li><strong>Charge and salt:</strong> high Na⁺ and Cl⁻ meant high ionic strength. Freshwater constants and γ ≈ 1 no longer apply.</li>
+<li><strong>Speciation:</strong> pH and temperature control toxic forms such as NH₃.</li>
+<li><strong>Rates:</strong> a bloom developed over weeks of low, warm flow.</li>
+</ul>
+<p>No single number explained the fish kill. A <strong>checked, interpreted</strong> analysis did.</p>
+</div></div>
+<aside class="notes">
+<p>Return to the opening case and show that each tool of the lecture had a role. The six steps on the left are a checklist students can use on any water analysis, including in the exercises. We do not quote specific measured values from the Oder because they varied along the river and in time; the qualitative chain is well established. The salt, the alga and the hot, low-flow conditions acted together. This is a good example of why environmental chemistry rarely finds one cause. The chemistry tells you which explanations are consistent with the data and which measurements would separate them.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="common-mistakes-to-avoid" class="slide level2">
+<h2>Common mistakes to avoid</h2>
+<ul>
+<li><strong>Adding mg/L of different ions.</strong> Convert to meq/L before comparing charge.</li>
+<li><strong>Forgetting the charge.</strong> 1 mmol/L Ca²⁺ is 2 meq/L, and its charge counts four times in ionic strength.</li>
+<li><strong>“Dissolved” means free ion.</strong> A filtered total includes complexes and colloids.</li>
+<li><strong>Forcing a balance.</strong> Investigate an imbalance; correct only with evidence.</li>
+<li><strong>Ratio equals fraction.</strong> A ratio of 10 is a fraction of 10/11.</li>
+<li><strong>A distribution formula gives pH.</strong> The pH must be measured or found from another balance.</li>
+<li><strong>Equilibrium means it happens.</strong> It tells you the direction, not the speed.</li>
+</ul>
+<aside class="notes">
+<p>Go through the list and ask students to give a one-sentence reason for each. The first two are calculation errors that cost marks in every exam. The third and fourth are interpretation errors that also happen in professional work: reporting filtered metal as if it were the bioavailable free ion, and “cleaning” data until it looks right. The last three are conceptual. Students will meet the sixth one again in the carbonate lecture, where alkalinity provides the missing balance. Encourage students to use this list as a self-check while working through the exercises and the R activity.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Key fact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A water-table entry</td>
+<td>element total or species; filtered or whole; reported as element or compound</td>
+</tr>
+<tr class="even">
+<td>Units</td>
+<td>mg/L ÷ molar mass = mmol/L; × |charge| = meq/L</td>
+</tr>
+<tr class="odd">
+<td>Charge balance</td>
+<td>total cation charge = total anion charge (meq/L); an imbalance flags errors or missing ions</td>
+</tr>
+<tr class="even">
+<td>Data practice</td>
+<td>keep raw values; correct only with documented evidence</td>
+</tr>
+<tr class="odd">
+<td>Ionic strength</td>
+<td>I = ½ (c₁z₁² + c₂z₂² + …); divalent ions weigh four times</td>
+</tr>
+<tr class="even">
+<td>Activity</td>
+<td>a = γc; γ ≈ 1 only in dilute water; salty water needs a correction</td>
+</tr>
+<tr class="odd">
+<td>Weak acid</td>
+<td>[A⁻]/[HA] = 10^(pH − pK<sub>a</sub>); fraction = r/(1 + r)</td>
+</tr>
+<tr class="even">
+<td>Ammonia</td>
+<td>NH₃ (toxic form) rises tenfold per pH unit below pK<sub>a</sub> ≈ 9.25</td>
+</tr>
+<tr class="odd">
+<td>Redox</td>
+<td>electron transfer changes oxidation state; binding does not</td>
+</tr>
+<tr class="even">
+<td>Equilibrium vs kinetics</td>
+<td>direction and end point versus speed</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Next:</strong> <a href="../carbonate-gases/lec.html">Carbonate species and alkalinity</a>. Why did acid rain kill fish in some Swedish lakes but not others? Then the <a href="../aquatic-equilibria/exercise.html">exercises</a> and the <a href="../aquatic-equilibria/notes.html">notes</a>.</p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="img/acid-rain-woods.jpg" style="width:100.0%"> <span class="credit">Forest damaged by acid deposition, Jizera Mountains, Czech Republic. Photo: Lovecz, public domain, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Recap with the chain of questions. What was measured. Convert to charge. Check the balance. Decide whether activity matters. Split weak acids at the measured pH. Ask whether a predicted state is reached fast enough to matter. The next lecture applies charge balance and the acid ratio rule to the most important acid–base system in natural water, dissolved carbon dioxide, bicarbonate and carbonate. The teaser photo is from the acid rain period in central Europe. The next lecture explains why lakes receiving the same acid rain could respond so differently, and alkalinity, a quantity built directly on today’s charge balance, is the answer.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 
 
 </section>

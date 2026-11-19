@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="360" viewBox="0 0 940 360" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: neutral hydrophobic molecules partition into the organic-matter coating of particles. Kd = foc x Koc: only the organic fraction of the solid counts. -->
+  <style>.t{font-size:17px;fill:#1b2a3a}</style>
+  <rect x="20" y="20" width="440" height="320" rx="14" fill="#d6e6f2"/>
+  <text x="40" y="50" font-size="16" fill="#2468A0">water</text>
+  <!-- particle with organic coating patches -->
+  <circle cx="240" cy="190" r="110" fill="#c9a66b"/>
+  <path d="M150,125 A110,110 0 0 1 300,95 L285,120 A82,82 0 0 0 170,140 Z" fill="#5b4636"/>
+  <path d="M345,215 A110,110 0 0 1 270,295 L262,268 A82,82 0 0 0 320,208 Z" fill="#5b4636"/>
+  <text x="240" y="196" font-size="17" fill="#1b2a3a" text-anchor="middle">mineral grain</text>
+  <text x="240" y="218" font-size="14" fill="#1b2a3a" text-anchor="middle">(little affinity)</text>
+  <g fill="#AD4825">
+    <circle cx="190" cy="118" r="6"/><circle cx="215" cy="108" r="6"/><circle cx="245" cy="104" r="6"/><circle cx="272" cy="106" r="6"/>
+    <circle cx="330" cy="235" r="6"/><circle cx="310" cy="262" r="6"/><circle cx="285" cy="280" r="6"/>
+    <circle cx="80" cy="280" r="6"/><circle cx="410" cy="90" r="6"/>
+  </g>
+  <text x="340" y="70" font-size="15" fill="#5b4636" font-weight="bold">organic coating</text>
+  <line x1="355" y1="76" x2="292" y2="100" stroke="#5b4636" stroke-width="1.5"/>
+  <!-- right: equation -->
+  <text x="500" y="70" font-size="24" fill="#1b2a3a">K<tspan font-size="16" baseline-shift="sub">d</tspan> = f<tspan font-size="16" baseline-shift="sub">oc</tspan> × K<tspan font-size="16" baseline-shift="sub">oc</tspan></text>
+  <text class="t" x="500" y="110"><tspan font-weight="bold">f</tspan><tspan font-weight="bold" font-size="12" baseline-shift="sub">oc</tspan>: kg organic C per kg dry solid</text>
+  <text class="t" x="500" y="135"><tspan font-weight="bold">K</tspan><tspan font-weight="bold" font-size="12" baseline-shift="sub">oc</tspan>: L/kg organic C (compound property)</text>
+  <rect x="490" y="160" width="430" height="110" rx="10" fill="#f6efe0"/>
+  <text class="t" x="510" y="190"><tspan font-weight="bold">Exercise 1:</tspan> f<tspan font-size="12" baseline-shift="sub">oc</tspan> = 0.0200, K<tspan font-size="12" baseline-shift="sub">oc</tspan> = 5000</text>
+  <text class="t" x="510" y="218">K<tspan font-size="12" baseline-shift="sub">d</tspan> = 0.0200 × 5000 = <tspan font-weight="bold">100 L/kg</tspan></text>
+  <text class="t" x="510" y="246">Typing "2.00" (percent) gives 10 000: 100× too high.</text>
+  <text class="t" x="500" y="305">Use only for <tspan font-weight="bold">neutral</tspan> compounds where organic</text>
+  <text class="t" x="500" y="328">matter dominates sorption.</text>
+</svg>

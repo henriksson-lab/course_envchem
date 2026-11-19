@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="380" viewBox="0 0 940 380" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: organic matter is a size continuum; "dissolved" and "particulate" are defined by the filter used (commonly about 0.45 micrometres), not by nature. -->
+  <style>.t{font-size:17px;fill:#1b2a3a} .b{font-size:22px;font-weight:bold} .s{font-size:15px;fill:#6b7785}</style>
+  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#e9dcc8"/><stop offset="1" stop-color="#7a5230"/></linearGradient></defs>
+  <rect x="60" y="60" width="820" height="40" rx="8" fill="url(#g)"/>
+  <text class="s" x="60" y="40">size (log scale) →</text>
+  <rect x="60" y="200" width="820" height="2" fill="#1b2a3a"/>
+  <line x1="106" y1="200" x2="106" y2="214" stroke="#6b7785"/><text class="s" x="106" y="182" text-anchor="middle">1 nm</text><line x1="261" y1="200" x2="261" y2="214" stroke="#6b7785"/><text class="s" x="261" y="182" text-anchor="middle">10 nm</text><line x1="416" y1="200" x2="416" y2="214" stroke="#6b7785"/><text class="s" x="416" y="182" text-anchor="middle">100 nm</text><line x1="571" y1="200" x2="571" y2="214" stroke="#6b7785"/><text class="s" x="571" y="182" text-anchor="middle">1 µm</text><line x1="725" y1="200" x2="725" y2="214" stroke="#6b7785"/><text class="s" x="725" y="182" text-anchor="middle">10 µm</text><line x1="880" y1="200" x2="880" y2="214" stroke="#6b7785"/><text class="s" x="880" y="182" text-anchor="middle">100 µm</text>
+  <line x1="106" y1="190" x2="106" y2="210" stroke="#1b2a3a" stroke-width="2"/><text class="t" x="84" y="245" text-anchor="middle">small acids,</text><text class="t" x="84" y="268" text-anchor="middle">sugars</text><line x1="180" y1="190" x2="180" y2="210" stroke="#1b2a3a" stroke-width="2"/><text class="t" x="210" y="245" text-anchor="middle">humic and</text><text class="t" x="210" y="268" text-anchor="middle">fulvic acids</text><line x1="369" y1="190" x2="369" y2="210" stroke="#1b2a3a" stroke-width="2"/><text class="t" x="369" y="245" text-anchor="middle">colloids, Fe–organic</text><text class="t" x="369" y="268" text-anchor="middle">aggregates</text><line x1="571" y1="190" x2="571" y2="210" stroke="#1b2a3a" stroke-width="2"/><text class="t" x="571" y="245" text-anchor="middle">bacteria</text><text class="t" x="571" y="268" text-anchor="middle"></text><line x1="772" y1="190" x2="772" y2="210" stroke="#1b2a3a" stroke-width="2"/><text class="t" x="772" y="245" text-anchor="middle">algae, leaf</text><text class="t" x="772" y="268" text-anchor="middle">fragments</text>
+  <line x1="517" y1="50" x2="517" y2="300" stroke="#c0392b" stroke-width="4" stroke-dasharray="10 6"/>
+  <text x="525" y="130" font-size="17" fill="#c0392b" font-weight="bold">filter, e.g. 0.45 µm</text>
+  <text class="b" x="288" y="335" text-anchor="middle" style="fill:#2468A0">passes: DOC ("dissolved")</text>
+  <text class="b" x="698" y="335" text-anchor="middle" style="fill:#7a5230">retained: POC</text>
+  <text class="s" x="288" y="362" text-anchor="middle">measured as carbon, after removing inorganic carbon</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: stratified Baltic water column: halocline blocks oxygen supply to deep water -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <rect x="40" y="40" width="600" height="110" rx="0" fill="#cfe3f1" stroke="none" stroke-width="2"/>
+  <rect x="40" y="150" width="600" height="30" rx="0" fill="#9fc0da" stroke="none" stroke-width="2"/>
+  <rect x="40" y="180" width="600" height="170" rx="0" fill="#7fa6c6" stroke="none" stroke-width="2"/>
+  <path d="M40,350 L640,350 L640,400 L40,400 Z" stroke="none" stroke-width="0" fill="#b59a6e"/>
+  <circle cx="110" cy="105" r="6" fill="#25713E" stroke="none" stroke-width="2"/>
+  <line x1="110" y1="125" x2="110" y2="330" stroke="#25713E" stroke-width="1.5" stroke-dasharray="3 6"/>
+  <circle cx="165" cy="115" r="6" fill="#25713E" stroke="none" stroke-width="2"/>
+  <line x1="165" y1="135" x2="165" y2="330" stroke="#25713E" stroke-width="1.5" stroke-dasharray="3 6"/>
+  <circle cx="220" cy="125" r="6" fill="#25713E" stroke="none" stroke-width="2"/>
+  <line x1="220" y1="145" x2="220" y2="330" stroke="#25713E" stroke-width="1.5" stroke-dasharray="3 6"/>
+  <circle cx="275" cy="105" r="6" fill="#25713E" stroke="none" stroke-width="2"/>
+  <line x1="275" y1="125" x2="275" y2="330" stroke="#25713E" stroke-width="1.5" stroke-dasharray="3 6"/>
+  <circle cx="330" cy="115" r="6" fill="#25713E" stroke="none" stroke-width="2"/>
+  <line x1="330" y1="135" x2="330" y2="330" stroke="#25713E" stroke-width="1.5" stroke-dasharray="3 6"/>
+  <circle cx="385" cy="125" r="6" fill="#25713E" stroke="none" stroke-width="2"/>
+  <line x1="385" y1="145" x2="385" y2="330" stroke="#25713E" stroke-width="1.5" stroke-dasharray="3 6"/>
+  <circle cx="440" cy="105" r="6" fill="#25713E" stroke="none" stroke-width="2"/>
+  <line x1="440" y1="125" x2="440" y2="330" stroke="#25713E" stroke-width="1.5" stroke-dasharray="3 6"/>
+  <circle cx="495" cy="115" r="6" fill="#25713E" stroke="none" stroke-width="2"/>
+  <line x1="495" y1="135" x2="495" y2="330" stroke="#25713E" stroke-width="1.5" stroke-dasharray="3 6"/>
+  <circle cx="550" cy="125" r="6" fill="#25713E" stroke="none" stroke-width="2"/>
+  <line x1="550" y1="145" x2="550" y2="330" stroke="#25713E" stroke-width="1.5" stroke-dasharray="3 6"/>
+  <text x="60" y="70" font-size="17" fill="#1b2a3a" text-anchor="start" font-weight="normal" >surface layer: brackish, mixed by wind, O₂ from air and algae</text>
+  <text x="60" y="171" font-size="16" fill="white" text-anchor="start" font-weight="bold" >halocline: salinity jumps, mixing is blocked</text>
+  <text x="60" y="210" font-size="17" fill="white" text-anchor="start" font-weight="normal" >deep water: salty, dense, cut off from the air</text>
+  <text x="60" y="385" font-size="17" fill="#1b2a3a" text-anchor="start" font-weight="bold" >sediment</text>
+  <text x="420" y="240" font-size="10" fill="#1b2a3a" text-anchor="start" font-weight="normal" ></text>
+  <text x="430" y="260.0" font-size="16" fill="white" text-anchor="start" font-weight="normal" >dead algae sink and</text>
+  <text x="430" y="280.0" font-size="16" fill="white" text-anchor="start" font-weight="normal" >decay: respiration</text>
+  <text x="430" y="300.0" font-size="16" fill="white" text-anchor="start" font-weight="normal" >uses up O₂</text>
+  <path d="M60,330 Q200,300 300,330" stroke="#c0392b" stroke-width="3" fill="none" marker-end="url(#arrR)"/>
+  <text x="70" y="318" font-size="10" fill="#1b2a3a" text-anchor="start" font-weight="normal" ></text>
+  <text x="60" y="300" font-size="15" fill="white" text-anchor="start" font-weight="normal" >North Sea inflow (rare)</text>
+  <line x1="700" y1="40" x2="700" y2="400" stroke="#1b2a3a" stroke-width="2"/>
+  <line x1="700" y1="40" x2="960" y2="40" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="830" y="30" font-size="17" fill="#2468A0" text-anchor="middle" font-weight="bold" >O₂ →</text>
+  <path d="M930,50 L925,145 C900,170 760,175 735,200 L705,260 L702,345" stroke="#2468A0" stroke-width="4" fill="none"/>
+  <text x="735" y="300" font-size="15" fill="#c0392b" text-anchor="start" font-weight="normal" >hypoxic or</text>
+  <text x="735" y="320" font-size="15" fill="#c0392b" text-anchor="start" font-weight="bold" >anoxic</text>
+  <text x="830" y="425" font-size="15" fill="#6b7785" text-anchor="middle" font-weight="normal" >depth ↓</text>
+</svg>

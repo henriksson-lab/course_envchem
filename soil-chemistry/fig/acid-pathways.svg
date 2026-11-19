@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="460" viewBox="0 0 940 460" font-family="Helvetica, Arial, sans-serif">
+  <!-- Mechanism: acid (H+ with SO4 2-) entering soil is consumed by carbonate dissolution, cation exchange or Al-mineral dissolution; the released cation leaves with the mobile anion in drainage. -->
+  <defs>
+    <marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker>
+  </defs>
+  <style>
+    .hd{font-size:19px;font-weight:bold;fill:#1b2a3a}
+    .t{font-size:16px;fill:#1b2a3a}
+    .eq{font-size:17px;fill:#1b2a3a}
+    .s{font-size:15px;fill:#6b7785}
+  </style>
+  <!-- input -->
+  <rect x="320" y="12" width="300" height="52" rx="10" fill="#fbe3df" stroke="#c0392b" stroke-width="2"/>
+  <text x="470" y="44" font-size="19" font-weight="bold" fill="#c0392b" text-anchor="middle">2 H⁺ + SO₄²⁻ (deposition)</text>
+  <line x1="400" y1="66" x2="160" y2="112" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <line x1="470" y1="66" x2="470" y2="112" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <line x1="540" y1="66" x2="780" y2="112" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <!-- three boxes -->
+  <rect x="20" y="118" width="290" height="190" rx="12" fill="#d6e6f2" stroke="#2468A0" stroke-width="2"/>
+  <text class="hd" x="40" y="146">A. Carbonate dissolves</text>
+  <text class="eq" x="40" y="180">CaCO₃ + 2H⁺ →</text>
+  <text class="eq" x="60" y="204">Ca²⁺ + CO₂ + H₂O</text>
+  <text class="t" x="40" y="238">Fast, if carbonate is present</text>
+  <text class="t" x="40" y="260">and accessible. Inventory is</text>
+  <text class="t" x="40" y="282">consumed, not regenerated.</text>
+
+  <rect x="325" y="118" width="290" height="190" rx="12" fill="#f6efe0" stroke="#b8860b" stroke-width="2"/>
+  <text class="hd" x="345" y="146">B. Cation exchange</text>
+  <text class="eq" x="345" y="180">X₂Ca + 2H⁺ →</text>
+  <text class="eq" x="365" y="204">2XH + Ca²⁺</text>
+  <text class="t" x="345" y="238">Fast and reversible. pH barely</text>
+  <text class="t" x="345" y="260">moves, but base saturation</text>
+  <text class="t" x="345" y="282">falls with every equivalent.</text>
+
+  <rect x="630" y="118" width="290" height="190" rx="12" fill="#fbe3df" stroke="#c0392b" stroke-width="2"/>
+  <text class="hd" x="650" y="146">C. Aluminium dissolves</text>
+  <text class="eq" x="650" y="180">Al(OH)₃ + 3H⁺ →</text>
+  <text class="eq" x="670" y="204">Al³⁺ + 3H₂O</text>
+  <text class="t" x="650" y="238">Neutralises acid, but releases</text>
+  <text class="t" x="650" y="260">Al³⁺: toxic to fish gills and</text>
+  <text class="t" x="650" y="282">plant roots. Dominates below ≈ 4.5.</text>
+
+  <!-- drainage -->
+  <line x1="165" y1="312" x2="400" y2="368" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <line x1="470" y1="312" x2="470" y2="362" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <line x1="775" y1="312" x2="540" y2="368" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <rect x="190" y="370" width="560" height="78" rx="12" fill="#2468A0"/>
+  <text x="470" y="400" font-size="18" font-weight="bold" fill="#fff" text-anchor="middle">Drainage water: cation + SO₄²⁻</text>
+  <text x="470" y="428" font-size="16" fill="#fff" text-anchor="middle">Cations can only leave with a mobile anion (charge balance).</text>
+</svg>

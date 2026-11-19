@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: chlorine catalytic cycle. Cl is regenerated; net O3 + O -> 2 O2. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+    <marker id="arb" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#2468A0"/></marker>
+    <marker id="arg" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#25713E"/></marker>
+    <marker id="aro" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#b8860b"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .sp{font-size:26px;font-weight:bold;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <circle cx="370" cy="200" r="130" fill="none" stroke="#c9d1da" stroke-width="2"/>
+  <text class="sp" x="240" y="210" fill="#25713E" font-size="34">Cl</text>
+  <text class="sp" x="500" y="210" fill="#AD4825" font-size="34">ClO</text>
+  <path d="M265,160 C300,85 440,85 475,160" fill="none" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <path d="M475,245 C440,320 300,320 265,245" fill="none" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <text class="lc" x="370" y="62" font-size="20">Cl + O₃ → ClO + O₂</text>
+  <text class="lc" x="370" y="362" font-size="20">ClO + O → Cl + O₂</text>
+  <text x="370" y="140" text-anchor="middle" font-size="17" fill="#6a4c93">O₃ in</text>
+  <text x="370" y="272" text-anchor="middle" font-size="17" fill="#6a4c93">O in</text>
+  <rect x="640" y="90" width="320" height="230" rx="14" fill="#f6efe0" stroke="#b8860b" stroke-width="2"/>
+  <text class="h" x="800" y="125">Add the two steps</text>
+  <text class="lc" x="800" y="165">Cl and ClO appear on</text>
+  <text class="lc" x="800" y="189">both sides: cancel them</text>
+  <text class="h" x="800" y="240" font-size="26">O₃ + O → 2 O₂</text>
+  <text class="lc" x="800" y="285" fill="#25713E" font-weight="bold">Cl comes back: a catalyst</text>
+  <text class="n" x="370" y="405">One trip round the loop destroys one O₃ (and one O). Then Cl goes round again.</text>
+</svg>

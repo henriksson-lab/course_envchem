@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="470" viewBox="0 0 980 470" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: where dissolved inorganic carbon comes from, and which part this lecture treats. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/>
+    </marker>
+  </defs>
+  <style>
+    .zone{font-size:20px;font-weight:bold;fill:#1b2a3a;opacity:.75}
+    .sp{font-size:26px;font-weight:bold}
+    .lbl{font-size:17px;fill:#1b2a3a}
+    .note{font-size:16px;fill:#6b7785;font-style:italic}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <!-- zones -->
+  <rect x="0" y="0" width="980" height="110" fill="#eef4fa"/>
+  <rect x="0" y="110" width="980" height="250" fill="#d6e6f2"/>
+  <rect x="0" y="360" width="980" height="110" fill="#e6dccb"/>
+  <path d="M0,110 Q60,100 120,110 T240,110 T360,110 T480,110 T600,110 T720,110 T840,110 T980,110" fill="none" stroke="#2468A0" stroke-width="2"/>
+  <text class="zone" x="18" y="32">AIR</text>
+  <text class="zone" x="18" y="140">WATER</text>
+  <text class="zone" x="18" y="390">ROCK / SEDIMENT</text>
+
+  <!-- gas -->
+  <text class="sp" x="190" y="68" fill="#2468A0" text-anchor="middle">CO₂(g)</text>
+  <line class="ln" x1="182" y1="82" x2="182" y2="205" marker-end="url(#ar)"/>
+  <line class="ln" x1="200" y1="205" x2="200" y2="82" marker-end="url(#ar)"/>
+  <text class="lbl" x="215" y="150">gas exchange</text>
+
+  <!-- today box -->
+  <rect x="120" y="195" width="720" height="110" rx="14" fill="#ffffff" fill-opacity=".55" stroke="#b8860b" stroke-width="3" stroke-dasharray="9 6"/>
+  <text x="830" y="188" text-anchor="end" font-size="17" font-weight="bold" fill="#b8860b">LAST LECTURE: inside the box</text>
+  <text class="sp" x="190" y="262" fill="#2468A0" text-anchor="middle">CO₂*</text>
+  <text class="sp" x="480" y="262" fill="#25713E" text-anchor="middle">HCO₃⁻</text>
+  <text class="sp" x="770" y="262" fill="#AD4825" text-anchor="middle">CO₃²⁻</text>
+  <line class="ln" x1="250" y1="244" x2="410" y2="244" marker-end="url(#ar)"/>
+  <line class="ln" x1="410" y1="262" x2="250" y2="262" marker-end="url(#ar)"/>
+  <text class="lbl" x="330" y="290" text-anchor="middle">− H⁺ / + H⁺</text>
+  <line class="ln" x1="550" y1="244" x2="700" y2="244" marker-end="url(#ar)"/>
+  <line class="ln" x1="700" y1="262" x2="550" y2="262" marker-end="url(#ar)"/>
+  <text class="lbl" x="625" y="290" text-anchor="middle">− H⁺ / + H⁺</text>
+
+  <!-- organisms -->
+  <text class="lbl" x="880" y="140" text-anchor="middle">respiration adds,</text>
+  <text class="lbl" x="880" y="160" text-anchor="middle">photosynthesis removes</text>
+  <path class="ln" d="M775,165 C600,150 330,150 232,228" marker-end="url(#ar)" stroke-dasharray="5 5"/>
+
+  <!-- mineral -->
+  <text class="sp" x="770" y="425" fill="#7a5a2b" text-anchor="middle">CaCO₃(s)</text>
+  <text class="lbl" x="770" y="450" text-anchor="middle">calcite, limestone</text>
+  <line class="ln" x1="760" y1="398" x2="760" y2="275" marker-end="url(#ar)"/>
+  <line class="ln" x1="780" y1="275" x2="780" y2="398" marker-end="url(#ar)"/>
+  <text class="lbl" x="600" y="340" text-anchor="middle">dissolution / precipitation</text>
+
+  <text class="note" x="18" y="345">TODAY: gas exchange and minerals</text>
+</svg>

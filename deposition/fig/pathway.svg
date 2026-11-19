@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="430" viewBox="0 0 980 430" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: emission, transport, oxidation, wet and dry deposition, catchment response. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+    <marker id="arb" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#2468A0"/></marker>
+    <marker id="arg" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#25713E"/></marker>
+    <marker id="aro" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#b8860b"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .sp{font-size:26px;font-weight:bold;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <rect x="0" y="0" width="980" height="290" fill="#eef4fa"/>
+  <rect x="0" y="290" width="980" height="140" fill="#cfe3c4"/>
+  <ellipse cx="850" cy="340" rx="125" ry="32" fill="#9cc3e6"/>
+  <rect x="50" y="170" width="34" height="120" fill="#6b7785"/><rect x="95" y="215" width="80" height="75" fill="#9aa5b1"/>
+  <path d="M67,165 C60,120 100,100 140,90" fill="none" stroke="#9aa5b1" stroke-width="18" stroke-linecap="round" opacity=".7"/>
+  <text class="lc" x="110" y="320" font-weight="bold">emission</text>
+  <text class="lc" x="110" y="345">SO₂ and NOₓ</text>
+  <text class="lc" x="110" y="368" font-size="15">power plants, ships, traffic</text>
+  <line x1="170" y1="90" x2="330" y2="90" stroke="#1b2a3a" stroke-width="4" stroke-dasharray="12 7" marker-end="url(#ar)"/>
+  <text class="lc" x="250" y="70">wind: hundreds to</text><text class="lc" x="250" y="125">thousands of km</text>
+  <rect x="345" y="45" width="250" height="120" rx="16" fill="#ffffff" stroke="#AD4825" stroke-width="3"/>
+  <text class="h" x="470" y="78" fill="#AD4825">oxidation</text>
+  <text class="lc" x="470" y="108">OH in the gas phase,</text>
+  <text class="lc" x="470" y="132">H₂O₂ in cloud droplets</text>
+  <text class="lc" x="470" y="156" font-weight="bold">→ H₂SO₄, HNO₃</text>
+  <ellipse cx="760" cy="80" rx="110" ry="45" fill="#d0d6dd"/>
+  <line class="ln" x1="600" y1="100" x2="645" y2="90" marker-end="url(#ar)"/>
+  <g stroke="#2468A0" stroke-width="3">
+    <line x1="720" y1="130" x2="710" y2="160"/><line x1="750" y1="135" x2="740" y2="165"/><line x1="780" y1="130" x2="770" y2="160"/>
+    <line x1="735" y1="185" x2="725" y2="215"/><line x1="765" y1="190" x2="755" y2="220"/><line x1="795" y1="185" x2="785" y2="215"/>
+  </g>
+  <text class="h" x="890" y="170" fill="#2468A0">wet</text><text class="lc" x="890" y="195" font-size="16">rain, snow, fog</text>
+  <g fill="#AD4825"><circle cx="560" cy="200" r="5"/><circle cx="585" cy="225" r="5"/><circle cx="545" cy="250" r="5"/><circle cx="600" cy="262" r="5"/></g>
+  <line x1="575" y1="190" x2="575" y2="280" stroke="#AD4825" stroke-width="2.5" stroke-dasharray="5 5" marker-end="url(#arr)"/>
+  <text class="h" x="480" y="225" fill="#AD4825">dry</text><text class="lc" x="470" y="250" font-size="16">gases, particles</text>
+  <text class="lc" x="560" y="410" font-weight="bold">catchment soils react ...</text>
+  <text class="lc" x="850" y="410" font-weight="bold">... then the lake</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="430" viewBox="0 0 980 430" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: an operational 'dissolved' metal total contains many species -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <path d="M60,70 L240,70 L170,190 L170,250 L130,250 L130,190 Z" stroke="#1b2a3a" stroke-width="3" fill="#d6e6f2"/>
+  <line x1="95" y1="128" x2="205" y2="128" stroke="#b8860b" stroke-width="4" stroke-dasharray="3 3"/>
+  <text x="222" y="140" font-size="16" fill="#b8860b" text-anchor="start" font-weight="normal" >filter, 0.45 µm</text>
+  <circle cx="90" cy="92" r="9" fill="#8a5a2b" stroke="none" stroke-width="2"/>
+  <circle cx="130" cy="100" r="9" fill="#8a5a2b" stroke="none" stroke-width="2"/>
+  <circle cx="175" cy="88" r="9" fill="#8a5a2b" stroke="none" stroke-width="2"/>
+  <circle cx="210" cy="98" r="9" fill="#8a5a2b" stroke="none" stroke-width="2"/>
+  <circle cx="150" cy="115" r="9" fill="#8a5a2b" stroke="none" stroke-width="2"/>
+  <text x="150" y="55" font-size="16" fill="#8a5a2b" text-anchor="middle" font-weight="normal" >particles retained</text>
+  <path d="M150,255 L150,300" stroke="#2468A0" stroke-width="3" fill="none" marker-end="url(#arrB)"/>
+  <rect x="70" y="305" width="160" height="90" rx="6" fill="#d6e6f2" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="150" y="340.0" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >filtrate:</text>
+  <text x="150" y="362.5" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >"dissolved M"</text>
+  <path d="M245,350 C300,350 300,230 345,230" stroke="#1b2a3a" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+  <text x="330" y="50" font-size="20" fill="#1b2a3a" text-anchor="start" font-weight="bold" >One number in the lab report hides several forms:</text>
+  <rect x="350" y="67" width="600" height="54" rx="8" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <circle cx="385" cy="95" r="13" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <circle cx="385" cy="95" r="20" fill="none" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="425" y="92" font-size="19" fill="#c0392b" text-anchor="start" font-weight="bold" >free aqua ion</text>
+  <text x="425" y="114" font-size="16" fill="#1b2a3a" text-anchor="start" font-weight="normal" >M²⁺(aq), i.e. [M(H₂O)₆]²⁺</text>
+  <rect x="350" y="131" width="600" height="54" rx="8" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <circle cx="381" cy="159" r="13" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <circle cx="399" cy="151" r="7" fill="#AD4825" stroke="none" stroke-width="2"/>
+  <text x="425" y="156" font-size="19" fill="#AD4825" text-anchor="start" font-weight="bold" >hydroxo complexes</text>
+  <text x="425" y="178" font-size="16" fill="#1b2a3a" text-anchor="start" font-weight="normal" >MOH⁺, M(OH)₂(aq) …</text>
+  <rect x="350" y="195" width="600" height="54" rx="8" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <circle cx="381" cy="223" r="13" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <circle cx="400" cy="225" r="9" fill="#b8860b" stroke="none" stroke-width="2"/>
+  <text x="425" y="220" font-size="19" fill="#b8860b" text-anchor="start" font-weight="bold" >inorganic complexes</text>
+  <text x="425" y="242" font-size="16" fill="#1b2a3a" text-anchor="start" font-weight="normal" >MCl⁺, MSO₄(aq), MCO₃(aq), AlF²⁺ …</text>
+  <rect x="350" y="259" width="600" height="54" rx="8" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <path d="M360,295 q8,-22 16,0 t16,0 t16,0" stroke="#8a5a2b" stroke-width="5" fill="none"/>
+  <circle cx="385" cy="281" r="10" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <text x="425" y="284" font-size="19" fill="#8a5a2b" text-anchor="start" font-weight="bold" >organic complexes</text>
+  <text x="425" y="306" font-size="16" fill="#1b2a3a" text-anchor="start" font-weight="normal" >M bound to dissolved organic matter</text>
+  <rect x="350" y="323" width="600" height="54" rx="8" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <circle cx="377" cy="345" r="6" fill="#6b7785" stroke="none" stroke-width="2"/>
+  <circle cx="391" cy="344" r="6" fill="#6b7785" stroke="none" stroke-width="2"/>
+  <circle cx="384" cy="357" r="6" fill="#6b7785" stroke="none" stroke-width="2"/>
+  <circle cx="397" cy="356" r="6" fill="#6b7785" stroke="none" stroke-width="2"/>
+  <circle cx="373" cy="358" r="6" fill="#6b7785" stroke="none" stroke-width="2"/>
+  <circle cx="387" cy="350" r="5" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <text x="425" y="348" font-size="19" fill="#1b2a3a" text-anchor="start" font-weight="bold" >small colloids</text>
+  <text x="425" y="370" font-size="16" fill="#1b2a3a" text-anchor="start" font-weight="normal" >nanoparticles that pass the filter</text>
+</svg>

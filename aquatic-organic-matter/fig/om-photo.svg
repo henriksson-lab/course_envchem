@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: sunlight absorbed by coloured dissolved organic matter (CDOM) breaks chromophores. Products: paler (bleached) organic matter, small organic molecules that microbes use readily, and some CO2. Most carbon stays dissolved; colour falls faster than DOC. -->
+  <defs><marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker></defs>
+  <style>.t{font-size:18px;fill:#1b2a3a} .b{font-size:21px;font-weight:bold;fill:#1b2a3a} .s{font-size:15px;fill:#6b7785}</style>
+  <circle cx="90" cy="70" r="40" fill="#f2c94c"/>
+  <g stroke="#e0a800" stroke-width="4"><line x1="140" y1="95" x2="230" y2="150"/><line x1="125" y1="115" x2="205" y2="175"/></g>
+  <text class="s" x="150" y="80">UV and blue light</text>
+  <rect x="200" y="140" width="190" height="120" rx="14" fill="#7a5230"/>
+  <text x="295" y="192" font-size="21" font-weight="bold" fill="#fff" text-anchor="middle">coloured DOM</text>
+  <text x="295" y="220" font-size="17" fill="#fff" text-anchor="middle">absorbs light</text>
+  <line x1="400" y1="200" x2="470" y2="200" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <rect x="480" y="40" width="400" height="80" rx="12" fill="#e9dcc8"/>
+  <text class="b" x="496" y="72">paler organic matter</text><text class="t" x="496" y="100">colour lost ("bleaching"), carbon still there</text>
+  <rect x="480" y="150" width="400" height="80" rx="12" fill="#e3efe6"/>
+  <text class="b" x="496" y="182">small organic molecules</text><text class="t" x="496" y="210">easier food for bacteria</text>
+  <rect x="480" y="260" width="400" height="80" rx="12" fill="#d6e6f2"/>
+  <text class="b" x="496" y="292">some CO₂ and CO</text><text class="t" x="496" y="320">carbon leaves organic form</text>
+  <text class="s" x="20" y="300">Colour usually falls faster than DOC:</text>
+  <text class="s" x="20" y="322">a paler water has not</text><text class="s" x="20" y="344">necessarily lost its carbon.</text>
+</svg>

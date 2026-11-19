@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="500" viewBox="0 0 980 500" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: CFC path from ground to stratosphere, photolysis, reservoirs, polar activation. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+    <marker id="arb" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#2468A0"/></marker>
+    <marker id="arg" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#25713E"/></marker>
+    <marker id="aro" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#b8860b"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .sp{font-size:26px;font-weight:bold;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <rect x="0" y="0" width="980" height="250" fill="#e8dff5"/>
+  <rect x="0" y="250" width="980" height="190" fill="#d6e6f2"/>
+  <rect x="0" y="440" width="980" height="60" fill="#cfe3c4"/>
+  <text class="l" x="15" y="30" font-weight="bold" fill="#6a4c93">STRATOSPHERE</text>
+  <text class="l" x="15" y="275" font-weight="bold" fill="#2468A0">TROPOSPHERE</text>
+  <text class="l" x="15" y="478" font-weight="bold">GROUND</text>
+  <text class="lc" x="400" y="478">CFCs released: spray cans, fridges, foams</text>
+  <line x1="200" y1="450" x2="200" y2="230" stroke="#1b2a3a" stroke-width="4" stroke-dasharray="10 6" marker-end="url(#ar)"/>
+  <text class="l" x="220" y="330">no reaction with OH,</text>
+  <text class="l" x="220" y="352">not washed out by rain:</text>
+  <text class="l" x="220" y="374" font-weight="bold">survives for decades, rises slowly</text>
+  <path d="M120,70 q10,-12 20,0 t20,0 t20,0" fill="none" stroke="#6a4c93" stroke-width="3" marker-end="url(#ar)"/>
+  <text x="105" y="58" font-size="16" fill="#6a4c93">hard UV</text>
+  <text class="lc" x="225" y="120" font-size="20">CFCl₃ + light → CFCl₂ + <tspan fill="#25713E" font-weight="bold">Cl</tspan></text>
+  <line class="ln" x1="370" y1="112" x2="470" y2="112" marker-end="url(#ar)"/>
+  <rect x="465" y="70" width="250" height="85" rx="12" fill="#ffffff" stroke="#25713E" stroke-width="2"/>
+  <text class="h" x="590" y="102" fill="#25713E">Cl ⇄ ClO</text>
+  <text class="lc" x="590" y="132" font-size="15">destroys O₃ (catalytic cycle)</text>
+  <line class="ln" x1="585" y1="158" x2="585" y2="190" marker-end="url(#ar)"/>
+  <line class="ln" x1="610" y1="190" x2="610" y2="158" marker-end="url(#ar)"/>
+  <rect x="480" y="195" width="210" height="45" rx="10" fill="#ffffff" stroke="#6b7785" stroke-width="2"/>
+  <text class="lc" x="585" y="224" font-size="17">reservoirs: HCl, ClONO₂</text>
+  <rect x="735" y="40" width="235" height="200" rx="12" fill="#f6efe0" stroke="#b8860b" stroke-width="2"/>
+  <text class="h" x="847" y="70">Polar winter</text>
+  <text class="lc" x="847" y="100" font-size="16">very cold: polar</text>
+  <text class="lc" x="847" y="120" font-size="16">stratospheric clouds</text>
+  <text class="lc" x="847" y="145" font-size="16">particle surfaces turn</text>
+  <text class="lc" x="847" y="165" font-size="16">reservoirs into Cl₂</text>
+  <text class="lc" x="847" y="195" font-size="16">spring sunlight: Cl₂ → 2 Cl</text>
+  <text class="lc" x="847" y="222" font-size="17" font-weight="bold" fill="#AD4825">→ ozone hole</text>
+  <line x1="692" y1="217" x2="731" y2="200" stroke="#b8860b" stroke-width="3" marker-end="url(#aro)"/>
+</svg>

@@ -11,3 +11,14 @@ Credit lines are also shown on the slides. Images were downscaled; no other chan
 | forest-liming.jpg | [Kalkning.jpg](https://commons.wikimedia.org/wiki/File:Kalkning.jpg) | Bulver | CC BY-SA 3.0 |
 | kettle-limescale.jpg | [Limescale from the Kettle.jpg](https://commons.wikimedia.org/wiki/File:Limescale_from_the_Kettle.jpg) | Alexander Davronov | CC BY-SA 4.0 |
 | pteropod-dissolving.jpg | [A pteropod shell is shown dissolving over time.jpg](https://commons.wikimedia.org/wiki/File:A_pteropod_shell_is_shown_dissolving_over_time.jpg) | NOAA | Public domain |
+
+## Added for the gas exchange and minerals lecture (gases-lec.qmd)
+
+| File | Source | Author | Licence |
+| --- | --- | --- | --- |
+| rain.jpg | [3039 flaque et ronds dans l'eau.jpg](https://commons.wikimedia.org/wiki/File:3039_flaque_et_ronds_dans_l%27eau.jpg) | Jean-Marie Vugnon | CC BY-SA 4.0 |
+| boreal-lake.jpg | [Lake view. Reivo nature reserve. Norrbotten. Sweden. 02.jpg](https://commons.wikimedia.org/wiki/File:Lake_view._Reivo_nature_reserve._Norrbotten._Sweden._02.jpg) | GeorgeInsjon | CC BY-SA 4.0 |
+| plitvice-tufa.jpg | [Tufa in Plitvice.jpg](https://commons.wikimedia.org/wiki/File:Tufa_in_Plitvice.jpg) | Alessandro Caproni | CC BY 2.0 |
+| cave-stalactites.jpg | [Stalactite cave Mallorca 1.jpg](https://commons.wikimedia.org/wiki/File:Stalactite_cave_Mallorca_1.jpg) | Killarnee | CC BY-SA 4.0 |
+| coccolithophore-bloom.jpg | [Hardangerfjord bloom 2020.jpg](https://commons.wikimedia.org/wiki/File:Hardangerfjord_bloom_2020.jpg) | NASA (Terra MODIS) | Public domain |
+| brown-water.jpg | [Korkeakoskenjoki 2020.jpg](https://commons.wikimedia.org/wiki/File:Korkeakoskenjoki_2020.jpg) | Anna Reponen | CC BY 4.0 |

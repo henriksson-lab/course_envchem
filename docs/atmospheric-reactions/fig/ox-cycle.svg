@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: Chapman cycle. Fast interconversion of O and O3 inside an odd-oxygen pool, slow production and loss. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+    <marker id="arb" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#2468A0"/></marker>
+    <marker id="arg" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#25713E"/></marker>
+    <marker id="aro" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#b8860b"/></marker>
+      <marker id="big-ar" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#1b2a3a"/></marker><marker id="big-arr" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#AD4825"/></marker><marker id="big-arb" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#2468A0"/></marker><marker id="big-arg" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#25713E"/></marker><marker id="big-aro" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#b8860b"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .sp{font-size:26px;font-weight:bold;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <rect x="270" y="70" width="440" height="270" rx="20" fill="#eef4fa" stroke="#6a4c93" stroke-width="3" stroke-dasharray="10 6"/>
+  <text class="h" x="490" y="100" fill="#6a4c93">"odd oxygen" pool: O + O₃</text>
+  <text class="sp" x="360" y="225" fill="#AD4825">O</text>
+  <text class="sp" x="620" y="225" fill="#6a4c93">O₃</text>
+  <path class="ln" d="M385,195 C450,150 530,150 595,195" marker-end="url(#ar)"/>
+  <path class="ln" d="M595,240 C530,285 450,285 385,240" marker-end="url(#ar)"/>
+  <text class="lc" x="490" y="150">O + O₂ + M → O₃ + M</text>
+  <text class="lc" x="490" y="305">O₃ + light → O₂ + O</text>
+  <text class="n" x="490" y="330">fast, back and forth: absorbs UV, no net loss</text>
+  <line x1="40" y1="215" x2="330" y2="215" stroke="#25713E" stroke-width="5" marker-end="url(#big-arg)"/>
+  <text class="h" x="135" y="180" fill="#25713E">source (slow)</text>
+  <text class="lc" x="135" y="250">O₂ + light → 2 O</text>
+  <line x1="650" y1="215" x2="940" y2="215" stroke="#AD4825" stroke-width="5" marker-end="url(#big-arr)"/>
+  <text class="h" x="840" y="180" fill="#AD4825">sink (slow)</text>
+  <text class="lc" x="840" y="250">O + O₃ → 2 O₂</text>
+  <text class="n" x="490" y="395">Same bookkeeping as a lake: inventory set by source, sink and transport.</text>
+</svg>

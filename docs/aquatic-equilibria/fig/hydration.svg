@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: hydration shells. Water's partially negative oxygen faces a cation; its partially positive hydrogens face an anion. -->
+  <defs>
+    <g id="wO"><circle cx="0" cy="0" r="12" fill="#c0392b"/><circle cx="14" cy="-10" r="7.5" fill="#dfe4ea" stroke="#6b7785"/><circle cx="14" cy="10" r="7.5" fill="#dfe4ea" stroke="#6b7785"/></g>
+    <g id="wH"><circle cx="0" cy="0" r="12" fill="#c0392b"/><circle cx="-14" cy="-10" r="7.5" fill="#dfe4ea" stroke="#6b7785"/><circle cx="-14" cy="10" r="7.5" fill="#dfe4ea" stroke="#6b7785"/></g>
+  </defs>
+  <style>.t{font-size:20px;fill:#1b2a3a;text-anchor:middle} .b{font-size:24px;font-weight:bold;fill:#1b2a3a;text-anchor:middle} .s{font-size:16px;fill:#6b7785}</style>
+  <text class="b" x="225" y="34">Cation: oxygen faces in</text>
+  <circle cx="225" cy="200" r="54" fill="#d6e6f2" opacity="0.6"/>
+  <use href="#wO" transform="translate(225,200) rotate(30.0) translate(64,0)"/>
+    <use href="#wO" transform="translate(225,200) rotate(90.0) translate(64,0)"/>
+    <use href="#wO" transform="translate(225,200) rotate(150.0) translate(64,0)"/>
+    <use href="#wO" transform="translate(225,200) rotate(210.0) translate(64,0)"/>
+    <use href="#wO" transform="translate(225,200) rotate(270.0) translate(64,0)"/>
+    <use href="#wO" transform="translate(225,200) rotate(330.0) translate(64,0)"/>
+  <circle cx="225" cy="200" r="26" fill="#8e9aaf"/><text x="225" y="208" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle">Na⁺</text>
+  <text class="t" x="225" y="320">water's δ− oxygen is attracted</text>
+  <text class="t" x="225" y="346">to the positive ion</text>
+  <text class="b" x="660" y="34">Anion: hydrogens face in</text>
+  <use href="#wH" transform="translate(660,200) rotate(0.0) translate(74,0)"/>
+    <use href="#wH" transform="translate(660,200) rotate(60.0) translate(74,0)"/>
+    <use href="#wH" transform="translate(660,200) rotate(120.0) translate(74,0)"/>
+    <use href="#wH" transform="translate(660,200) rotate(180.0) translate(74,0)"/>
+    <use href="#wH" transform="translate(660,200) rotate(240.0) translate(74,0)"/>
+    <use href="#wH" transform="translate(660,200) rotate(300.0) translate(74,0)"/>
+  <circle cx="660" cy="200" r="36" fill="#d9b26f"/><text x="660" y="208" font-size="22" font-weight="bold" fill="#1b2a3a" text-anchor="middle">Cl⁻</text>
+  <text class="t" x="660" y="320">water's δ+ hydrogens are attracted</text>
+  <text class="t" x="660" y="346">to the negative ion</text>
+  <circle cx="330" cy="395" r="10" fill="#c0392b"/><text class="s" x="346" y="401">O (δ−)</text>
+  <circle cx="440" cy="395" r="7" fill="#dfe4ea" stroke="#6b7785"/><text class="s" x="454" y="401">H (δ+)</text>
+  <text class="s" x="530" y="401">sizes schematic</text>
+</svg>

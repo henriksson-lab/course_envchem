@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="380" viewBox="0 0 940 380" font-family="Helvetica, Arial, sans-serif">
+  <!-- Mechanism: Fe(III) hydroxide surfaces bind metals and phosphate/arsenate. Lower pH desorbs cations; reducing conditions dissolve the Fe(III) solid itself and release everything bound. -->
+  <defs>
+    <marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker>
+    <g id="zn"><circle r="14" fill="#2468A0"/><text y="5" font-size="12" text-anchor="middle" fill="#fff" font-weight="bold">Zn²⁺</text></g>
+    <g id="cu"><circle r="14" fill="#25713E"/><text y="5" font-size="12" text-anchor="middle" fill="#fff" font-weight="bold">Cu²⁺</text></g>
+    <g id="as"><circle r="14" fill="#6b4c9a"/><text y="5" font-size="12" text-anchor="middle" fill="#fff" font-weight="bold">As</text></g>
+  </defs>
+  <style>
+    .hd{font-size:20px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .t{font-size:16px;fill:#1b2a3a;text-anchor:middle}
+  </style>
+  <!-- centre: loaded particle -->
+  <text class="hd" x="470" y="30">Metals held on Fe(OH)₃</text>
+  <circle cx="470" cy="135" r="70" fill="#c8693a"/>
+  <text x="470" y="141" font-size="18" fill="#fff" text-anchor="middle" font-weight="bold">Fe(OH)₃</text>
+  <use href="#zn" x="410" y="75"/><use href="#cu" x="530" y="75"/><use href="#as" x="540" y="190"/><use href="#zn" x="400" y="195"/><use href="#cu" x="470" y="215"/>
+  <text class="t" x="470" y="245" fill="#6b7785">retained: water looks clean</text>
+  <!-- left: acidification -->
+  <line x1="390" y1="160" x2="230" y2="250" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <rect x="20" y="255" width="380" height="110" rx="12" fill="#fbe3df" stroke="#c0392b" stroke-width="2"/>
+  <text class="hd" x="210" y="283">pH falls</text>
+  <text class="t" x="210" y="310">H⁺ competes for surface sites:</text>
+  <text class="t" x="210" y="333">Zn²⁺, Cu²⁺ desorb into the water.</text>
+  <text class="t" x="210" y="356">The solid remains.</text>
+  <!-- right: reduction -->
+  <line x1="550" y1="160" x2="710" y2="250" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <rect x="540" y="255" width="380" height="110" rx="12" fill="#e6e1ef" stroke="#6b4c9a" stroke-width="2"/>
+  <text class="hd" x="730" y="283">O₂ runs out (reducing)</text>
+  <text class="t" x="730" y="310">Fe(III) is reduced to dissolved Fe²⁺:</text>
+  <text class="t" x="730" y="333">the carrier itself dissolves and</text>
+  <text class="t" x="730" y="356">releases everything it held.</text>
+</svg>

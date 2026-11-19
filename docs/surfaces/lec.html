@@ -144,6 +144,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Colloids, surfaces, and sorption</h1>
+  <p class="subtitle">Week 3 — Metals, surfaces, redox, and treatment</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -154,57 +155,509 @@ Environmental Chemistry
 </div>
 
 </section>
-<section id="chemical-question" class="slide level2">
-<h2>Chemical question</h2>
-<p>If a contaminant disappears from water, is it removed from the environmental system or transferred onto a mobile particle?</p>
-</section>
-<section id="what-to-explain" class="slide level2">
-<h2>What to explain</h2>
+<section id="about-this-lecture" class="slide level2">
+<h2>About this lecture</h2>
+<div class="columns">
+<div class="column" style="width:56%;">
+<p>In August 2015, a clean-up crew at the abandoned <strong>Gold King Mine</strong> in Colorado accidentally released about 3 million gallons (roughly 11 000 m³) of acidic, metal-rich mine water. The <strong>Animas River turned orange</strong> for many kilometres. Within days the colour had moved downstream and faded.</p>
+<p>The water looked clean again. <strong>But where had the metals gone?</strong></p>
+<p>Today you will learn to:</p>
 <ul>
-<li>Explain pH-dependent surface charge and specific binding.</li>
-<li>Close a water–solid mass balance using a supplied Kd.</li>
-<li>Distinguish sorption equilibrium, finite capacity, and colloidal transport.</li>
+<li>explain why mineral surfaces carry <strong>pH-dependent charge</strong>;</li>
+<li>close a <strong>water–solid mass balance</strong> with K<sub>d</sub>;</li>
+<li>recognise <strong>finite capacity</strong> and competition;</li>
+<li>ask whether particles <strong>retain</strong> a contaminant or <strong>carry</strong> it.</li>
 </ul>
+<p>Last lecture: iron and aluminium hydrolyse and precipitate. Today: what their solids do.</p>
+</div><div class="column" style="width:44%;">
+<p><img data-src="img/animas-spill.jpg" style="width:100.0%"> <span class="credit">The Animas River between Silverton and Durango, within a day of the Gold King Mine release, August 2015. Photo: Riverhugger, CC BY-SA 4.0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Open with the image. The Gold King Mine release is one of the best-documented mine-water spills, because it happened during an EPA operation and was monitored intensively. The orange colour is iron(III) oxyhydroxide, the solid that forms when acidic iron-rich water is diluted and its pH rises, exactly the hydrolysis we discussed in the metals lecture. Within days the plume passed and the river looked normal. That is the puzzle for today. Metals do not disappear. If they are no longer in the water, they are somewhere else: on particles, in the river bed, or further downstream. To answer where, we need the chemistry of surfaces.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="a-surface-is-chemically-active" class="slide level2">
-<h2>A surface is chemically active</h2>
-<p>Protonation changes surface charge.</p>
-<p>Specific bonding can matter in addition to electrostatics.</p>
-<p>Surface chemistry depends on mineral identity and pH.</p>
+<section id="removed-or-only-moved" class="slide level2">
+<h2>Removed, or only moved?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>After the plume passed, <strong>dissolved</strong> metal concentrations at Durango fell back towards earlier levels within days to weeks.</p>
+<p>Much of the metal load had travelled <strong>attached to iron oxyhydroxide particles</strong>. Many of those particles settled on the river bed and in reservoirs downstream.</p>
+<p>So a water sample can look clean while the system still holds the metal.</p>
+<p><strong>Question for this lecture:</strong> when a contaminant leaves the water, has it been removed, or has it only moved onto a surface that may move again?</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="img/animas-sampling.jpg" style="width:100.0%"> <span class="credit">Water monitoring in the Animas River at Durango, Colorado, 14 August 2015. Photo: Eric Vance, US EPA, public domain, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>This slide states the main question. Monitoring after the spill showed that concentrations in the water fell quickly as the plume passed, while much of the metal had been carried on particles. Those particles settled along the river and in downstream reservoirs. Later reports discussed whether high spring flows could stir up those deposits again. We do not need the details of the monitoring programme. The chemical lesson is general. Sorption and settling transfer a contaminant from water to solid. The total in the system is unchanged. Whether that is good news depends on whether the solid stays put. Ask students what they would need to measure to tell the difference, and keep their answers for the end of the lecture.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="define-a-distribution-coefficient" class="slide level2">
-<h2>Define a distribution coefficient</h2>
-<p><span class="math display">q=K_dC_w</span></p>
-<p>mg/kg = (L/kg)(mg/L).</p>
-<p>Kd belongs to a specified solute–solid–water system.</p>
+<section id="from-dissolved-to-particulate-a-continuum" class="slide level2">
+<h2>From dissolved to particulate: a continuum</h2>
+
+<img data-src="fig/size-continuum.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%"><p>There is no sharp line between dissolved and particulate. <strong>Colloids</strong>, about 1 nm to 1 µm across, stay suspended for a long time. A 0.45 µm filter cuts through the colloid range, so “dissolved” includes some colloids and “particulate” includes others.</p>
+<aside class="notes">
+<p>Show the scale. Ions and small molecules are below a nanometre. Humic molecules, iron oxide nanoparticles and clay platelets fill the colloid range. Bacteria, silt and sand are larger. The filter used to define dissolved sits inside this continuum at 0.45 micrometres. That number is a convention, not a natural boundary. Colloids matter because they are small enough that gravity hardly settles them, but large enough to carry many binding sites. A metal on a colloid can pass a filter and be reported as dissolved, or be retained and reported as particulate, depending on the colloid’s size. This is why a filtered result must always be read together with the method.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="small-particles-have-enormous-surfaces" class="slide level2">
+<h2>Small particles have enormous surfaces</h2>
+
+<img data-src="fig/surface-area.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:74.0%"><p>For a sphere, the surface per gram scales as <strong>1/diameter</strong>. A gram of 10 nm particles has about <strong>10 000 times</strong> the surface of a gram of fine sand. Fresh iron oxyhydroxides are made of such tiny crystals, so a few grams carry hundreds of square metres of reactive surface.</p>
+<aside class="notes">
+<p>This is geometry, not chemistry. The figure uses smooth spheres of mineral density 2.65 grams per cubic centimetre, so the numbers are idealised. Each factor of ten smaller in diameter gives ten times more surface per gram. Real clays and fresh iron oxyhydroxides have even more surface than spheres of the same size, because they are platy or porous; freshly precipitated ferrihydrite is commonly reported at a few hundred square metres per gram. The point for environmental chemistry: binding happens at surfaces, so the fine fraction of a sediment or soil does most of the binding even when it is a small fraction of the mass. The orange floc in the Animas was exactly this kind of high-surface material.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="oxide-surfaces-gain-and-lose-protons" class="slide level2">
+<h2>Oxide surfaces gain and lose protons</h2>
+
+<img data-src="fig/oxide-surface.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:86.0%"><p><span class="math display">\mathrm{&gt;SOH+H^+\rightleftharpoons&gt;SOH_2^+}\qquad\mathrm{&gt;SOH\rightleftharpoons&gt;SO^-+H^+}</span></p>
+<p>Here <strong>&gt;S</strong> means a surface metal atom, such as Fe at the edge of an oxide. At low pH the surface is <strong>positive</strong>; at high pH it is <strong>negative</strong>.</p>
+<aside class="notes">
+<p>At the surface of an oxide, the metal atoms cannot complete their coordination with the solid, so they bind hydroxyl groups from water. These surface hydroxyls are amphoteric: they can take up a proton or give one away, just like the bound water of a hydrolysing metal ion in the last lecture. The notation with the greater-than sign means “attached to the solid surface”. Be clear that S stands for a surface site, not for sulfur. At low pH most groups are protonated and the surface is positive. At high pH most have lost a proton and the surface is negative. In between, the positive and negative groups balance.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="surface-charge-depends-on-ph" class="slide level2">
+<h2>Surface charge depends on pH</h2>
+<div class="columns">
+<div class="column" style="width:56%;">
+<p><img data-src="fig/surface-charge.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:44%;">
+<p>At one pH the positive and negative sites balance: the <strong>point of zero charge</strong>. For iron oxides it typically lies roughly between pH 7 and 9.</p>
+<ul>
+<li>Below it: positive surface, attracts <strong>anions</strong> such as phosphate and arsenate.</li>
+<li>Above it: negative surface, attracts <strong>cations</strong> such as Cu²⁺ and Pb²⁺.</li>
+</ul>
+<p>Most natural waters sit near or below this pH, so iron oxides are good at holding <strong>phosphate</strong>.</p>
+</div></div>
+<aside class="notes">
+<p>The curve is a constructed two-constant model with zero charge at pH 8, typical of iron oxides. Read it from left to right. Strongly positive at low pH, zero near 8, negative at high pH. The point of zero charge differs between minerals: silica is negative over almost the whole natural range, while iron and aluminium oxides are positive in many acidic and neutral waters. Use this to predict electrostatic attraction. Phosphate, an anion, is attracted to iron oxides in ordinary waters. Metal cations are attracted more strongly as pH rises. Keep in mind that charge is only part of the story; the next slides add specific bonding.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="sorption-edges-cations-and-anions-behave-oppositely" class="slide level2">
+<h2>Sorption edges: cations and anions behave oppositely</h2>
+
+<img data-src="fig/sorption-edges.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:68.0%"><p>Metal cations bind more as pH <strong>rises</strong>; oxyanions bind more as pH <strong>falls</strong>. Each change happens over one or two pH units, a <strong>sorption edge</strong>. Acid can therefore release metals from oxides, while rising pH can release phosphate.</p>
+<aside class="notes">
+<p>These are constructed curves with the typical shapes seen in laboratory experiments with iron oxides. The fraction of a metal cation such as lead that is sorbed rises steeply over a narrow pH range. The fraction of an oxyanion such as phosphate or arsenate falls at high pH. This explains two field observations. First, acidification releases metals from particles, which was one of the mechanisms in the last lecture’s exercise. Second, when the pH of lake water rises during intense photosynthesis, phosphate can be released from sediment particles. Note that the cation edge lies below the zero-charge pH: specific bonding lets cations bind even where the surface is not yet negative.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="clays-permanent-charge-and-cation-exchange" class="slide level2">
+<h2>Clays: permanent charge and cation exchange</h2>
+
+<img data-src="fig/clay-exchange.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>In clay minerals, some Si⁴⁺ and Al³⁺ in the crystal is replaced by ions of lower charge. The layers keep a <strong>negative charge that does not depend on pH</strong>. It is balanced by cations such as Ca²⁺, Na⁺ and K⁺, which can be <strong>exchanged</strong> for others.</p>
+<aside class="notes">
+<p>Clays add a second kind of surface charge. During formation, some silicon is replaced by aluminium and some aluminium by magnesium in the crystal lattice. Each replacement leaves one unit of negative charge in the layer. That charge is permanent: it does not depend on pH, unlike the oxide surfaces we just saw. Cations sit between the layers and on the outer surfaces to balance it, and they are held mainly electrostatically, so other cations can replace them. The exchange is charge for charge: one calcium replaces two sodium. This cation exchange capacity is central in soil chemistry, which we meet in week 4. It also explains why clay-rich sediments hold metal cations.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="more-than-charge-inner-sphere-binding" class="slide level2">
+<h2>More than charge: inner-sphere binding</h2>
+
+<img data-src="fig/inner-outer.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:86.0%"><p><strong>Outer-sphere</strong> ions keep their water shell and are held by charge alone; they exchange easily. <strong>Inner-sphere</strong> complexes form a direct bond with surface oxygen, by ligand exchange. They are much stronger and can form even on a surface of the same charge.</p>
+<aside class="notes">
+<p>Electrostatics is the first approximation. The second is chemistry. An outer-sphere ion, such as sodium, stays fully hydrated and sits near the surface because of opposite charge. Change the ionic strength and it leaves. An inner-sphere complex is a real coordination bond: the sorbing ion replaces a surface hydroxyl or water and bonds directly to the surface metal through oxygen. Phosphate on iron oxide is the classic case, often sharing two surface oxygens. Copper and lead also bind inner-sphere. This is why phosphate binds strongly, why it competes with arsenate for the same sites, and why sorption edges for cations appear below the zero-charge pH. Specific binding is the link between surface chemistry and coordination chemistry.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-number-for-sorption-the-distribution-coefficient" class="slide level2">
+<h2>A number for sorption: the distribution coefficient</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>For low concentrations, sorbed and dissolved amounts are often roughly proportional:</p>
+<p><span class="math display">q=K_d\,C_w</span></p>
+<ul>
+<li>q: sorbed per dry solid (mg/kg)</li>
+<li>C<sub>w</sub>: in water (mg/L)</li>
+<li>K<sub>d</sub>: distribution coefficient (L/kg)</li>
+</ul>
+<p>K<sub>d</sub> belongs to <strong>one system</strong>: this solute, this solid, this water, this pH. It is not a molecular constant.</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="fig/bottle.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>After the mechanisms we need a number we can calculate with. The distribution coefficient is the simplest one: the ratio of sorbed concentration to dissolved concentration at equilibrium. Check the units carefully: milligrams per kilogram divided by milligrams per litre gives litres per kilogram. A large Kd means the solute strongly prefers the solid. The warning is important. Kd measured for lead on one sediment at pH 7 tells you little about lead on another sediment at pH 5, because the edges we just saw move it by orders of magnitude. Use a Kd only for the conditions it was measured under, and only at low concentrations where the relationship is linear.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="close-the-two-phase-balance" class="slide level2">
 <h2>Close the two-phase balance</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>In a closed bottle, all the solute is either in water or on solid:</p>
+<p><span class="math display">M_T=C_wV_w+q\,m_s=C_w(V_w+K_dm_s)</span></p>
 <p><span class="math display">C_w=\frac{M_T}{V_w+K_dm_s}</span></p>
-<p>Check both aqueous and sorbed inventories; neither is a concentration alone.</p>
+<p>Both terms in the denominator are in <strong>litres</strong>. K<sub>d</sub>m<sub>s</sub> acts like an extra volume the solute can spread into. The sorbed fraction is K<sub>d</sub>m<sub>s</sub>/(V<sub>w</sub> + K<sub>d</sub>m<sub>s</sub>).</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="fig/partition-curve.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>Derive the equation with the class. Total mass equals mass in water plus mass on solid. Substitute the Kd relation for q, factor out the water concentration, and divide. A useful picture: Kd times solid mass has units of litres, so the solid behaves like an extra, invisible volume of water. If that extra volume equals the real water volume, half the solute is sorbed. The curve shows how the water concentration falls as solid is added, for two Kd values. Note that it is not linear: doubling the solid does not halve the concentration. The model assumes equilibrium, a closed bottle, and no degradation or loss to the walls.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="capacity-and-competition" class="slide level2">
-<h2>Capacity and competition</h2>
-<p>Linear Kd: a local approximation.</p>
-<p>Finite sites: capacity can be exhausted.</p>
-<p>Phosphate, organic ligands, and other ions can compete.</p>
+<section id="worked-example-one-bottle-three-cases" class="slide level2">
+<h2>Worked example: one bottle, three cases</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>1.00 mg solute, 1.00 L water, 0.0100 kg dry solid, K<sub>d</sub> = 100 L/kg.</p>
+<ul>
+<li>K<sub>d</sub>m<sub>s</sub> = <strong>1.00 L</strong>, so C<sub>w</sub> = 1.00/2.00 = <strong>0.500 mg/L</strong></li>
+<li>water 0.500 mg; solid 0.500 mg; q = 50.0 mg/kg</li>
+</ul>
+<p>Double the solid: C<sub>w</sub> = 1/3.00 = <strong>0.333 mg/L</strong>, solid 0.667 mg.</p>
+<p>pH change lowers K<sub>d</sub> to 10: C<sub>w</sub> = 1/1.10 = <strong>0.909 mg/L</strong>. Desorption, with no new solute added.</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="fig/inventory-bars.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>Work the first case slowly. Kd times solid mass is 100 times 0.01, so one litre. The denominator is two litres, giving half a milligram per litre in water. Multiply back to masses and check that they sum to one milligram. The sorbed concentration is 50 milligrams per kilogram. The other two bars are exercises 1 and 3. Doubling the solid does not halve the water concentration; it reduces it to one third. A tenfold drop in Kd, for example after a pH change, pushes 91 percent of the solute back into the water. The water concentration nearly doubled although nothing was added. That is how a contaminated sediment can become a source.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="particles-may-move" class="slide level2">
-<h2>Particles may move</h2>
-<p>Sorption is redistribution.</p>
-<p>Settling and exported solids can remove a water-column load.</p>
-<p>Mobile colloids can carry sorbed solutes downstream.</p>
+<section id="check-yourself" class="slide level2">
+<h2>Check yourself</h2>
+<div class="checkbox">
+<p>Use the two-phase balance and the surface-charge picture.</p>
+<ol type="1">
+<li>2.00 mg solute, 1.00 L water, 0.0500 kg solid, K<sub>d</sub> = 20 L/kg. What is C<sub>w</sub>, and what fraction is sorbed?</li>
+<li>Is an iron oxide surface at pH 5 more likely to hold phosphate or Cu²⁺ by charge alone?</li>
+<li>A sediment is acidified. Predict what happens to sorbed lead.</li>
+<li>Why can’t a K<sub>d</sub> measured at pH 7 simply be used at pH 5?</li>
+</ol>
+</div>
+<aside class="notes">
+<p>Answers. One: Kd times solid mass is one litre, so Cw is 2.00 divided by 2.00, one milligram per litre, and half is sorbed. Two: phosphate. At pH 5 the iron oxide surface is positive, below its zero-charge point, so it attracts anions. Three: lead sorption falls as pH falls, across the cation edge, so lead is released to the water. Four: Kd is not a constant. It depends on pH through surface charge and the sorption edge, and could change by orders of magnitude between pH 7 and 5. Use question four to lead into the limits of the linear model.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="a-two-phase-bottle" class="slide level2">
-<h2>A two-phase bottle</h2>
-<p>Kd ms = 1.00 L; aqueous C = <strong>0.500 mg/L</strong>.</p>
-<p>Water: <strong>0.500 mg</strong>; solid: <strong>0.500 mg</strong>.</p>
-<p>Mass balance closes at 1.00 mg.</p>
+<section id="surfaces-fill-up" class="slide level2">
+<h2>Surfaces fill up</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="fig/isotherms.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:50%;">
+<p>A linear K<sub>d</sub> has no limit. Real surfaces have a <strong>finite number of sites</strong>. The Langmuir model levels off at a capacity q<sub>max</sub>:</p>
+<p><span class="math display">q=\frac{q_{max}\,b\,C_w}{1+b\,C_w}</span></p>
+<p>Example: q<sub>max</sub> = 20.0 mg/kg on 0.0100 kg of solid gives at most <strong>0.200 mg</strong> sorbed. That solid cannot hold 1.00 mg, whatever K<sub>d</sub> says.</p>
+<p>Other solutes <strong>compete</strong> for the same sites: phosphate and arsenate, for example.</p>
+</div></div>
+<aside class="notes">
+<p>This is exercise 2. The linear model was fine at low concentrations, but it predicts that a surface can hold unlimited amounts if the water concentration keeps rising. The Langmuir model adds a ceiling. At low concentration it behaves like Kd equal to qmax times b, here 100 litres per kilogram, the same start as the dashed line. At high concentration it approaches qmax. Multiply the capacity by the solid mass to get the most the solid can hold: 0.2 milligrams. Competition matters too. Phosphate and arsenate bind to the same iron oxide sites, so adding phosphate fertiliser can release arsenic. A Kd measured at low loading or without competitors can overestimate retention.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="check-your-explanation" class="slide level2">
-<h2>Check your explanation</h2>
-<p>A filtered sample loses metal while the unfiltered downstream sample does not. How could particles explain this observation?</p>
-<p>Use the <a href="../surfaces/notes.html">notes and sources</a> and <a href="../surfaces/exercise.html">worked exercises</a>.</p>
+<section id="particles-move" class="slide level2">
+<h2>Particles move</h2>
+
+<img data-src="fig/river-fate.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:88.0%"><p>Sorption moves a contaminant from water to a solid. What happens next depends on the solid. Particles that <strong>settle</strong> can retain metal in the bed. <strong>Floods</strong> can stir the bed up again. <strong>Colloids</strong> stay suspended and can carry sorbed metal far downstream.</p>
+<aside class="notes">
+<p>Now connect the chemistry to transport. Sorption on a large, settling particle removes metal from the flowing water, but deposits it in the bed sediment, where it can stay for years. A flood or a dredging operation can resuspend the bed and return the particles to the water. Sorption on colloids does the opposite of retention: the colloid moves with the water, so the sorbed metal travels too, sometimes faster than a dissolved solute that interacts with the stationary bed. To claim removal, you must name the destination of the solid and say how long it stays there. A falling water concentration alone is not enough.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="back-to-the-animas" class="slide level2">
+<h2>Back to the Animas</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/cement-creek.jpg" style="width:100.0%"> <span class="credit">Where Cement Creek joins the Animas River, November 2015. The stones are coated with orange iron oxyhydroxide. Photo: US EPA, public domain, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:50%;">
+<p>Now we can answer the opening question.</p>
+<ul>
+<li>As the acidic mine water mixed with river water, its pH rose and <strong>iron precipitated</strong> as fine oxyhydroxide.</li>
+<li>Those particles had large surfaces that <strong>sorbed</strong> other metals.</li>
+<li>Many particles <strong>settled</strong> along the bed and in reservoirs. The metals were moved, not destroyed.</li>
+<li>High flows can <strong>resuspend</strong> them.</li>
+</ul>
+<p>This creek carried mine drainage long before 2015. The spill was a sudden pulse in a chronic problem.</p>
+</div></div>
+<aside class="notes">
+<p>Close the loop. The release was acidic water rich in iron and other metals. Dilution raised the pH, iron hydrolysed and precipitated, and the fresh oxyhydroxide had the large, reactive surface that we calculated earlier. Other metals sorbed onto it, and much of the metal load then travelled and settled with those particles. That explains why the water cleared quickly while metal remained in the river system. The photo shows Cement Creek, which receives drainage from several old mines, including Gold King, and has been orange for decades. The spill drew attention, but the chronic inputs from many abandoned mines in the area are the larger, long-term load. Monitoring the bed and floods matters as much as monitoring the water.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-filtered-sample-loses-metal" class="slide level2">
+<h2>A filtered sample loses metal</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p><img data-src="fig/filtered-total.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:52%;">
+<p>Constructed data: downstream, the <strong>filtered</strong> metal falls from 8.0 to 2.0 µg/L, but the <strong>unfiltered</strong> total hardly changes.</p>
+<p>The metal did not vanish. It moved onto particles that the filter held back, while they still travel with the river.</p>
+<p>To decide between <strong>retention</strong> and <strong>transport</strong>, measure:</p>
+<ul>
+<li>particle load and size fractions;</li>
+<li>flow, to turn concentrations into loads;</li>
+<li>metal in bed sediment over time.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>This is exercise 4. The pattern of a falling filtered concentration and a steady total concentration is a fingerprint of sorption onto suspended particles. In terms of the bottle model, the water-phase concentration dropped because more solid surface became available, perhaps from a tributary or from fresh precipitation. But unless the particles settle, the metal leaves the reach with the water just as before. The numbers here are constructed for teaching. Ask students what would change in the figure if the particles settled before the downstream station. The answer: the total bar would drop too, and the bed sediment would gain metal. Only measurements of the solids can show that.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="common-mistakes-to-avoid" class="slide level2">
+<h2>Common mistakes to avoid</h2>
+<ul>
+<li><strong>“Lower concentration in the water means removal.”</strong> Check where the solute went.</li>
+<li><strong>“Dissolved means below 0.45 µm, so it is truly dissolved.”</strong> Colloids pass filters too.</li>
+<li><strong>“K<sub>d</sub> is a constant of the chemical.”</strong> It belongs to one solid, one water, one pH.</li>
+<li><strong>“Doubling the solid halves the concentration.”</strong> Use the full denominator, V<sub>w</sub> + K<sub>d</sub>m<sub>s</sub>.</li>
+<li><strong>“Sorption is forever.”</strong> pH, competition and redox can release it.</li>
+<li><strong>“Surfaces only attract opposite charges.”</strong> Inner-sphere binding is chemical, not only electrostatic.</li>
+</ul>
+<aside class="notes">
+<p>Go through the list and ask students for a counterexample from today for each. The first is the central idea of the lecture. The second reminds them that filtration is a method, not a definition of chemistry. The third and fourth are the most common calculation errors in the exercises. The fifth points to the next lecture. When iron oxides are reduced in sediments without oxygen, the solid dissolves and everything sorbed on it is released, even though no pH change or competition occurred. That is how the Baltic Sea’s sediments release phosphate, and it is our next topic. The last mistake explains why phosphate binds so firmly to iron oxides.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Key fact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Colloids</td>
+<td>about 1 nm–1 µm; the 0.45 µm filter cuts through them</td>
+</tr>
+<tr class="even">
+<td>Surface area</td>
+<td>per gram scales as 1/diameter; fine particles dominate binding</td>
+</tr>
+<tr class="odd">
+<td>Oxide surfaces</td>
+<td>&gt;SOH gains or loses H⁺; positive at low pH, negative at high pH</td>
+</tr>
+<tr class="even">
+<td>Zero charge</td>
+<td>iron oxides roughly pH 7–9; attract anions below, cations above</td>
+</tr>
+<tr class="odd">
+<td>Sorption edges</td>
+<td>cations bind more as pH rises; oxyanions as pH falls</td>
+</tr>
+<tr class="even">
+<td>Clays</td>
+<td>permanent negative charge; exchangeable cations</td>
+</tr>
+<tr class="odd">
+<td>Inner-sphere</td>
+<td>direct bond by ligand exchange; strong and specific</td>
+</tr>
+<tr class="even">
+<td>Distribution coefficient</td>
+<td>q = K<sub>d</sub>C<sub>w</sub> (L/kg); valid for one system</td>
+</tr>
+<tr class="odd">
+<td>Two-phase balance</td>
+<td>C<sub>w</sub> = M<sub>T</sub>/(V<sub>w</sub> + K<sub>d</sub>m<sub>s</sub>); total conserved</td>
+</tr>
+<tr class="even">
+<td>Capacity</td>
+<td>sites are finite: at most q<sub>max</sub> × m<sub>s</sub></td>
+</tr>
+<tr class="odd">
+<td>Transport</td>
+<td>settling retains, floods resuspend, colloids carry</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Next:</strong> <a href="../redox-cycles/lec.html">Redox and environmental cycles</a>. What happens to iron oxides, and the phosphate they hold, when oxygen runs out? Then the <a href="../surfaces/exercise.html">exercises</a> and the <a href="../surfaces/notes.html">notes</a>.</p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="img/baltic-bloom.jpg" style="width:100.0%"> <span class="credit">Phytoplankton bloom swirling in the Baltic Sea, July 2025, seen by a Landsat satellite. Image: NASA Earth Observatory (Michala Garrison), public domain, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>The table is the revision sheet. Run through the chain once more. Small particles have large surfaces. Surfaces carry charge that depends on pH, plus specific binding sites. A distribution coefficient summarises the result for one system, and a mass balance tells you how much is in the water and how much on the solid. Capacity and competition set limits. Finally, sorbed material is only as immobile as the particle that carries it. The teaser image shows cyanobacteria blooms in the Baltic Sea. Their fuel includes phosphate released from bottom sediments when iron oxides dissolve under low oxygen. That is redox chemistry, and it is the next lecture.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 
 
 </section>

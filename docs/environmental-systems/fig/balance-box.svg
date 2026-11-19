@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: a compartment balance with inputs, outputs, production and consumption. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+      <marker id="big-ar" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#1b2a3a"/></marker><marker id="big-arr" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#AD4825"/></marker><marker id="big-arb" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#2468A0"/></marker><marker id="big-arg" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#25713E"/></marker><marker id="big-aro" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#b8860b"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <rect x="320" y="60" width="340" height="230" rx="16" fill="#d6e6f2" stroke="#b8860b" stroke-width="4" stroke-dasharray="12 7"/>
+  <text class="h" x="490" y="100">compartment</text>
+  <text class="h" x="490" y="132" font-size="26">amount M</text>
+  <text class="lc" x="490" y="200" fill="#25713E" font-weight="bold">+ P  formed by reaction</text>
+  <text class="lc" x="490" y="240" fill="#AD4825" font-weight="bold">− R  transformed away</text>
+  <line x1="120" y1="175" x2="310" y2="175" stroke="#1b2a3a" stroke-width="5" marker-end="url(#big-ar)"/>
+  <text class="h" x="160" y="140">inputs I</text>
+  <text class="n" x="160" y="215">inflow load,</text><text class="n" x="160" y="237">deposition, discharge</text>
+  <line x1="670" y1="175" x2="860" y2="175" stroke="#1b2a3a" stroke-width="5" marker-end="url(#big-ar)"/>
+  <text class="h" x="800" y="140">outputs O</text>
+  <text class="n" x="800" y="215">outflow Q × C,</text><text class="n" x="800" y="237">volatilisation, burial</text>
+  <text class="t" x="490" y="345" text-anchor="middle" font-size="30">change in M per time = I − O + P − R</text>
+  <text class="n" x="490" y="385">Every term has units of amount per time, for example kg/day.</text>
+</svg>

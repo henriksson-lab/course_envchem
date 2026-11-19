@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="400" viewBox="0 0 980 400" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: loads add at a river junction; concentrations do not. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <path d="M0,110 L520,110 L980,190 L980,290 L520,210 L0,210 Z" fill="#d6e6f2"/>
+  <path d="M380,400 L470,400 L560,215 L470,205 Z" fill="#d6e6f2"/>
+  <text class="h" x="180" y="60">main river</text>
+  <text class="lc" x="180" y="150">Q = 40 m³/s,  C = 0.50 mg/L</text>
+  <text class="lc" x="180" y="185" font-weight="bold">load = 20 g/s</text>
+  <text class="h" x="250" y="300">tributary</text>
+  <text class="lc" x="250" y="330">Q = 10 m³/s,  C = 2.00 mg/L</text>
+  <text class="lc" x="250" y="362" font-weight="bold">load = 20 g/s</text>
+  <line class="ln" x1="440" y1="385" x2="490" y2="265" marker-end="url(#ar)"/>
+  <line class="ln" x1="380" y1="135" x2="470" y2="135" marker-end="url(#ar)"/>
+  <text class="h" x="790" y="120">below the junction</text>
+  <text class="lc" x="790" y="250">Q = 50 m³/s,  load = 40 g/s</text>
+  <rect x="640" y="300" width="300" height="72" rx="10" fill="#f6efe0" stroke="#b8860b" stroke-width="2"/>
+  <text class="lc" x="790" y="330">C = 40 g/s ÷ 50 m³/s</text>
+  <text class="h" x="790" y="360">= 0.80 mg/L</text>
+  <text class="n" x="790" y="155">1 mg/L = 1 g/m³, so m³/s × g/m³ = g/s</text>
+</svg>

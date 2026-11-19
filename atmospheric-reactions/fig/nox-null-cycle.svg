@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="460" viewBox="0 0 980 460" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: the basic NO-NO2-O3 photochemical cycle has no net chemical change. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+    <marker id="arb" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#2468A0"/></marker>
+    <marker id="arg" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#25713E"/></marker>
+    <marker id="aro" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#b8860b"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .sp{font-size:26px;font-weight:bold;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <text class="sp" x="200" y="120" fill="#25713E">NO₂</text>
+  <text class="sp" x="560" y="120" fill="#2468A0">NO + O</text>
+  <text class="sp" x="380" y="330" fill="#6a4c93">O₃</text>
+  <line class="ln" x1="255" y1="110" x2="490" y2="110" marker-end="url(#ar)"/>
+  <text class="lc" x="372" y="90">1  NO₂ + light (λ &lt; ~400 nm) → NO + O</text>
+  <path class="ln" d="M545,140 C520,240 470,300 420,315" marker-end="url(#ar)"/>
+  <text class="l" x="520" y="250">2  O + O₂ + M → O₃ + M</text>
+  <path class="ln" d="M345,310 C280,280 220,210 205,145" marker-end="url(#ar)"/>
+  <text class="l" x="20" y="250">3  NO + O₃ → NO₂ + O₂</text>
+  <rect x="700" y="285" width="260" height="160" rx="14" fill="#f6efe0" stroke="#b8860b" stroke-width="2"/>
+  <text class="h" x="830" y="320">Add 1 + 2 + 3</text>
+  <text class="lc" x="830" y="360">everything cancels</text>
+  <text class="h" x="830" y="400" fill="#AD4825">net: no new O₃</text>
+  <text class="lc" x="830" y="428" font-size="16">(only light turned to heat)</text>
+  <text class="n" x="330" y="440">The O₃ made in step 2 is used up again in step 3: a "null cycle".</text>
+</svg>

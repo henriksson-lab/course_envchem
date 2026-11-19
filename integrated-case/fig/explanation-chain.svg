@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="300" viewBox="0 0 940 300" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: the anatomy of a chemical explanation: claim, reaction, balance, prediction, discriminating test, stated limits. -->
+  <defs>
+    <marker id="ar" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,5 L0,10 Z" fill="#1b2a3a"/></marker>
+  </defs>
+  <style>
+    .n{font-size:17px;font-weight:bold;fill:#fff;text-anchor:middle}
+    .t{font-size:14px;fill:#1b2a3a;text-anchor:middle}
+  </style>
+  <g>
+    <rect x="10" y="30" width="140" height="70" rx="10" fill="#1b2a3a"/><text class="n" x="80" y="72">1 Claim</text>
+    <rect x="167" y="30" width="140" height="70" rx="10" fill="#2468A0"/><text class="n" x="237" y="72">2 Reaction</text>
+    <rect x="324" y="30" width="140" height="70" rx="10" fill="#25713E"/><text class="n" x="394" y="72">3 Balance</text>
+    <rect x="481" y="30" width="140" height="70" rx="10" fill="#b8860b"/><text class="n" x="551" y="72">4 Prediction</text>
+    <rect x="638" y="30" width="140" height="70" rx="10" fill="#AD4825"/><text class="n" x="708" y="72">5 Test</text>
+    <rect x="795" y="30" width="135" height="70" rx="10" fill="#6b7785"/><text class="n" x="862" y="72">6 Limits</text>
+  </g>
+  <g stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)">
+    <line x1="151" y1="65" x2="165" y2="65"/><line x1="308" y1="65" x2="322" y2="65"/><line x1="465" y1="65" x2="479" y2="65"/><line x1="622" y1="65" x2="636" y2="65"/><line x1="779" y1="65" x2="793" y2="65"/>
+  </g>
+  <text class="t" x="80" y="130">lake alkalinity is</text><text class="t" x="80" y="150">lower because soils</text><text class="t" x="80" y="170">neutralise less acid</text>
+  <text class="t" x="237" y="130">X₂Ca + 2H⁺ →</text><text class="t" x="237" y="150">2XH + Ca²⁺;</text><text class="t" x="237" y="170">base cations leave</text><text class="t" x="237" y="190">with SO₄²⁻</text>
+  <text class="t" x="394" y="130">40 000 − 20 000</text><text class="t" x="394" y="150">= 20 000 eq/year</text><text class="t" x="394" y="170">→ alkalinity</text><text class="t" x="394" y="190">0.0600 meq/L</text>
+  <text class="t" x="551" y="130">Ca²⁺ + Mg²⁺ export</text><text class="t" x="551" y="150">falls while SO₄²⁻</text><text class="t" x="551" y="170">export stays the same</text>
+  <text class="t" x="708" y="130">measure major ions</text><text class="t" x="708" y="150">and flow; soil base</text><text class="t" x="708" y="170">saturation trend</text>
+  <text class="t" x="862" y="130">annual budget,</text><text class="t" x="862" y="150">no pH without C<tspan font-size="10" baseline-shift="sub">T</tspan></text><text class="t" x="862" y="170">and CO₂; other</text><text class="t" x="862" y="190">terms assumed fixed</text>
+  <rect x="10" y="225" width="920" height="60" rx="10" fill="#f6efe0"/>
+  <text x="470" y="262" font-size="17" fill="#1b2a3a" text-anchor="middle">An explanation is strong when step 5 could have proved it <tspan font-weight="bold">wrong</tspan>, and it was not.</text>
+</svg>

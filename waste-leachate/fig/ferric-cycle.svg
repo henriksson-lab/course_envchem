@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="420" viewBox="0 0 940 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- Mechanism: at low pH, dissolved Fe3+ oxidises pyrite; iron-oxidising microbes regenerate Fe3+ from Fe2+ using O2, so the cycle accelerates acid production. -->
+  <defs>
+    <marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker>
+  </defs>
+  <style>
+    .b{font-size:22px;font-weight:bold;text-anchor:middle}
+    .t{font-size:17px;fill:#1b2a3a}
+  </style>
+  <circle cx="230" cy="90" r="55" fill="#c8693a"/><text class="b" x="230" y="98" fill="#fff">Fe³⁺</text>
+  <circle cx="230" cy="310" r="55" fill="#cfe3d4" stroke="#25713E" stroke-width="2"/><text class="b" x="230" y="318" fill="#25713E">Fe²⁺</text>
+  <!-- left arc: microbes regenerate -->
+  <path d="M175,300 C80,250 80,150 175,100" stroke="#1b2a3a" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+  <text class="t" x="20" y="190" font-weight="bold">microbes</text>
+  <text class="t" x="20" y="212">+ O₂, fast</text>
+  <text class="t" x="20" y="234">at pH &lt; 4</text>
+  <!-- right arc: pyrite oxidised -->
+  <path d="M285,100 C380,150 380,250 285,300" stroke="#1b2a3a" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+  <rect x="340" y="175" width="80" height="50" fill="#d4b13a" stroke="#6b5a12" stroke-width="2"/>
+  <text x="380" y="207" font-size="19" font-weight="bold" fill="#1b2a3a" text-anchor="middle">FeS₂</text>
+  <text class="t" x="20" y="405">Fe³⁺ oxidises the pyrite grain directly: no O₂ is needed at the grain surface.</text>
+  <!-- equation block -->
+  <rect x="520" y="60" width="400" height="280" rx="12" fill="#f6efe0"/>
+  <text class="t" x="540" y="95" font-weight="bold">Pyrite oxidised by ferric iron:</text>
+  <text class="t" x="540" y="125">FeS₂ + 14 Fe³⁺ + 8 H₂O →</text>
+  <text class="t" x="570" y="150">15 Fe²⁺ + 2 SO₄²⁻ + 16 H⁺</text>
+  <text class="t" x="540" y="195">Fe³⁺ stays dissolved only at low pH.</text>
+  <text class="t" x="540" y="222">Once drainage is strongly acidic, the</text>
+  <text class="t" x="540" y="249">cycle speeds up and is hard to stop:</text>
+  <text class="t" x="540" y="276"><tspan font-weight="bold">acid makes conditions for more acid.</tspan></text>
+  <text class="t" x="540" y="318" fill="#6b7785">Overall stoichiometry is unchanged.</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="360" viewBox="0 0 980 360" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: a protective scale separates lead pipe from water; corrosive water without inhibitor dissolves it and releases lead -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <text x="250" y="30" font-size="21" fill="#25713E" text-anchor="middle" font-weight="bold" >With corrosion control</text>
+  <rect x="20" y="60" width="460" height="40" rx="0" fill="#8c939c" stroke="none" stroke-width="2"/>
+  <text x="250" y="86" font-size="16" fill="white" text-anchor="middle" font-weight="bold" >lead pipe wall</text>
+  <rect x="20" y="100" width="460" height="22" rx="0" fill="#d9cbb0" stroke="none" stroke-width="2"/>
+  <text x="250" y="117" font-size="14" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >stable lead carbonate / phosphate scale</text>
+  <rect x="20" y="122" width="460" height="160" rx="0" fill="#d6e6f2" stroke="none" stroke-width="2"/>
+  <text x="40" y="170.0" font-size="17" fill="#1b2a3a" text-anchor="start" font-weight="normal" >orthophosphate added at the plant</text>
+  <text x="40" y="191.25" font-size="17" fill="#1b2a3a" text-anchor="start" font-weight="normal" >keeps the scale stable</text>
+  <text x="40" y="212.5" font-size="17" fill="#1b2a3a" text-anchor="start" font-weight="normal" >→ little lead in the tap water</text>
+  <text x="740" y="30" font-size="21" fill="#c0392b" text-anchor="middle" font-weight="bold" >Without it</text>
+  <rect x="510" y="60" width="460" height="40" rx="0" fill="#8c939c" stroke="none" stroke-width="2"/>
+  <text x="740" y="86" font-size="16" fill="white" text-anchor="middle" font-weight="bold" >lead pipe wall</text>
+  <rect x="510" y="100" width="460" height="8" rx="0" fill="#d9cbb0" stroke="none" stroke-width="2"/>
+  <rect x="510" y="108" width="460" height="174" rx="0" fill="#d6e6f2" stroke="none" stroke-width="2"/>
+  <circle cx="550" cy="150" r="6" fill="#55606d" stroke="none" stroke-width="2"/>
+  <circle cx="592" cy="180" r="6" fill="#55606d" stroke="none" stroke-width="2"/>
+  <circle cx="634" cy="210" r="6" fill="#55606d" stroke="none" stroke-width="2"/>
+  <circle cx="676" cy="150" r="6" fill="#55606d" stroke="none" stroke-width="2"/>
+  <circle cx="718" cy="180" r="6" fill="#55606d" stroke="none" stroke-width="2"/>
+  <circle cx="760" cy="210" r="6" fill="#55606d" stroke="none" stroke-width="2"/>
+  <circle cx="802" cy="150" r="6" fill="#55606d" stroke="none" stroke-width="2"/>
+  <circle cx="844" cy="180" r="6" fill="#55606d" stroke="none" stroke-width="2"/>
+  <circle cx="886" cy="210" r="6" fill="#55606d" stroke="none" stroke-width="2"/>
+  <circle cx="928" cy="150" r="6" fill="#55606d" stroke="none" stroke-width="2"/>
+  <rect x="580" y="120" width="14" height="10" rx="0" fill="#d9cbb0" stroke="#8c939c" stroke-width="1"/>
+  <rect x="680" y="160" width="14" height="10" rx="0" fill="#d9cbb0" stroke="#8c939c" stroke-width="1"/>
+  <rect x="780" y="120" width="14" height="10" rx="0" fill="#d9cbb0" stroke="#8c939c" stroke-width="1"/>
+  <rect x="880" y="160" width="14" height="10" rx="0" fill="#d9cbb0" stroke="#8c939c" stroke-width="1"/>
+  <text x="530" y="240.0" font-size="17" fill="#1b2a3a" text-anchor="start" font-weight="normal" >no inhibitor, more corrosive water:</text>
+  <text x="530" y="261.25" font-size="17" fill="#1b2a3a" text-anchor="start" font-weight="normal" >scale dissolves and flakes; Pb²⁺ and particles</text>
+  <circle cx="530" cy="330" r="6" fill="#55606d" stroke="none" stroke-width="2"/>
+  <text x="545" y="336" font-size="15" fill="#1b2a3a" text-anchor="start" font-weight="normal" >dissolved lead</text>
+</svg>

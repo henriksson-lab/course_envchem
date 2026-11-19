@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: a municipal wastewater plant: water line with sludge and gas outputs -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <rect x="20" y="150" width="110" height="90" rx="8" fill="#f4f6f8" stroke="#6b7785" stroke-width="3"/>
+  <text x="75.0" y="190" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >screens,</text>
+  <text x="75.0" y="212" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >grit</text>
+  <rect x="150" y="150" width="120" height="90" rx="8" fill="#f4f6f8" stroke="#8a6a3f" stroke-width="3"/>
+  <text x="210.0" y="190" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >primary</text>
+  <text x="210.0" y="212" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >settling</text>
+  <rect x="300" y="150" width="110" height="90" rx="8" fill="#f4f6f8" stroke="#2468A0" stroke-width="3"/>
+  <text x="355.0" y="190" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >anoxic</text>
+  <text x="355.0" y="212" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >tank</text>
+  <rect x="425" y="150" width="120" height="90" rx="8" fill="#f4f6f8" stroke="#25713E" stroke-width="3"/>
+  <text x="485.0" y="190" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >aerated</text>
+  <text x="485.0" y="212" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >tank</text>
+  <rect x="570" y="150" width="120" height="90" rx="8" fill="#f4f6f8" stroke="#8a6a3f" stroke-width="3"/>
+  <text x="630.0" y="190" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >secondary</text>
+  <text x="630.0" y="212" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >settling</text>
+  <rect x="715" y="150" width="130" height="90" rx="8" fill="#f4f6f8" stroke="#c27c3a" stroke-width="3"/>
+  <text x="780.0" y="190" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >Fe³⁺ dosing,</text>
+  <text x="780.0" y="212" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >filtration</text>
+  <line x1="132" y1="195" x2="146" y2="195" stroke="#2468A0" stroke-width="3" marker-end="url(#arrB)"/>
+  <line x1="272" y1="195" x2="296" y2="195" stroke="#2468A0" stroke-width="3" marker-end="url(#arrB)"/>
+  <line x1="412" y1="195" x2="421" y2="195" stroke="#2468A0" stroke-width="3" marker-end="url(#arrB)"/>
+  <line x1="547" y1="195" x2="566" y2="195" stroke="#2468A0" stroke-width="3" marker-end="url(#arrB)"/>
+  <line x1="692" y1="195" x2="711" y2="195" stroke="#2468A0" stroke-width="3" marker-end="url(#arrB)"/>
+  <text x="10" y="140" font-size="10" fill="#1b2a3a" text-anchor="start" font-weight="normal" ></text>
+  <line x1="845" y1="195" x2="985" y2="195" stroke="#2468A0" stroke-width="3" marker-end="url(#arrB)"/>
+  <text x="915" y="185" font-size="15" fill="#2468A0" text-anchor="middle" font-weight="bold" >to the sea</text>
+  <path d="M5,195 L18,195" stroke="#2468A0" stroke-width="3" fill="none"/>
+  <text x="10" y="130" font-size="15" fill="#2468A0" text-anchor="start" font-weight="normal" >raw wastewater</text>
+  <path d="M485,150 C485,95 360,95 360,148" stroke="#25713E" stroke-width="2.5" fill="none" marker-end="url(#arrG)"/>
+  <text x="422" y="88" font-size="14" fill="#25713E" text-anchor="middle" font-weight="normal" >nitrate-rich recycle</text>
+  <path d="M320,148 L320,60" stroke="#6b7785" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+  <text x="320" y="50" font-size="17" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >N₂</text>
+  <path d="M525,148 L525,60" stroke="#6b7785" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+  <text x="525" y="50" font-size="17" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >CO₂</text>
+  <path d="M210,242 L210,320" stroke="#8a6a3f" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+  <path d="M630,242 L630,320" stroke="#8a6a3f" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+  <path d="M780,242 L780,320" stroke="#8a6a3f" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+  <path d="M600,242 C600,300 470,300 330,245" stroke="#8a6a3f" stroke-width="2" fill="none" marker-end="url(#arr)" stroke-dasharray="5 4"/>
+  <text x="470" y="300" font-size="13" fill="#8a6a3f" text-anchor="middle" font-weight="normal" >return sludge (microbes)</text>
+  <rect x="110" y="325" width="780" height="45" rx="8" fill="#efe6d8" stroke="#8a6a3f" stroke-width="2"/>
+  <text x="500" y="354" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >sludge: most of the P, metals and some N  →  digester  →  biogas + biosolids</text>
+  <text x="500" y="410" font-size="14" fill="#6b7785" text-anchor="middle" font-weight="normal" >Simplified layout; real plants differ in order and detail.</text>
+</svg>

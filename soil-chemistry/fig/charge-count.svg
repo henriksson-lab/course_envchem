@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="330" viewBox="0 0 940 330" font-family="Helvetica, Arial, sans-serif">
+  <!-- Worked example: 0.200 kg soil, CEC 10.0 cmolc/kg = 20 mmol charge = 20 sites of 1 mmol charge. Half occupied by Ca: 10 mmol charge = 5 mmol Ca. -->
+  <style>
+    .t{font-size:17px;fill:#1b2a3a}
+    .b{font-size:18px;font-weight:bold;fill:#1b2a3a}
+  </style>
+  <text class="b" x="30" y="30">0.200 kg soil × 10.0 cmol<tspan font-size="13" baseline-shift="sub">c</tspan>/kg = 2.00 cmol<tspan font-size="13" baseline-shift="sub">c</tspan> = 20.0 mmol of negative charge</text>
+  <text class="t" x="30" y="56" fill="#6b7785">each box below = 1 mmol of exchange charge</text>
+  <g stroke="#AD4825" stroke-width="2" fill="#c9a66b">
+    <rect x="30" y="150" width="880" height="40"/>
+  </g>
+  <!-- 20 sites, each 44 px -->
+  <g font-size="20" font-weight="bold" fill="#c0392b" text-anchor="middle">
+    <text x="52" y="178">−</text><text x="96" y="178">−</text><text x="140" y="178">−</text><text x="184" y="178">−</text><text x="228" y="178">−</text>
+    <text x="272" y="178">−</text><text x="316" y="178">−</text><text x="360" y="178">−</text><text x="404" y="178">−</text><text x="448" y="178">−</text>
+    <text x="492" y="178">−</text><text x="536" y="178">−</text><text x="580" y="178">−</text><text x="624" y="178">−</text><text x="668" y="178">−</text>
+    <text x="712" y="178">−</text><text x="756" y="178">−</text><text x="800" y="178">−</text><text x="844" y="178">−</text><text x="888" y="178">−</text>
+  </g>
+  <g stroke="#AD4825" stroke-width="1">
+    <line x1="74" y1="150" x2="74" y2="190"/><line x1="118" y1="150" x2="118" y2="190"/><line x1="162" y1="150" x2="162" y2="190"/><line x1="206" y1="150" x2="206" y2="190"/>
+    <line x1="250" y1="150" x2="250" y2="190"/><line x1="294" y1="150" x2="294" y2="190"/><line x1="338" y1="150" x2="338" y2="190"/><line x1="382" y1="150" x2="382" y2="190"/>
+    <line x1="426" y1="150" x2="426" y2="190"/><line x1="470" y1="150" x2="470" y2="190"/><line x1="514" y1="150" x2="514" y2="190"/><line x1="558" y1="150" x2="558" y2="190"/>
+    <line x1="602" y1="150" x2="602" y2="190"/><line x1="646" y1="150" x2="646" y2="190"/><line x1="690" y1="150" x2="690" y2="190"/><line x1="734" y1="150" x2="734" y2="190"/>
+    <line x1="778" y1="150" x2="778" y2="190"/><line x1="822" y1="150" x2="822" y2="190"/><line x1="866" y1="150" x2="866" y2="190"/>
+  </g>
+  <!-- 5 Ca spanning pairs of sites (first 10 sites) -->
+  <g fill="#2468A0">
+    <ellipse cx="74" cy="122" rx="40" ry="22"/><ellipse cx="162" cy="122" rx="40" ry="22"/><ellipse cx="250" cy="122" rx="40" ry="22"/>
+    <ellipse cx="338" cy="122" rx="40" ry="22"/><ellipse cx="426" cy="122" rx="40" ry="22"/>
+  </g>
+  <g font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">
+    <text x="74" y="128">Ca²⁺</text><text x="162" y="128">Ca²⁺</text><text x="250" y="128">Ca²⁺</text><text x="338" y="128">Ca²⁺</text><text x="426" y="128">Ca²⁺</text>
+  </g>
+  <!-- other cations on remaining 10 -->
+  <g fill="#a9b4c2">
+    <circle cx="492" cy="125" r="17"/><circle cx="536" cy="125" r="17"/><circle cx="580" cy="125" r="17"/><circle cx="624" cy="125" r="17"/><circle cx="668" cy="125" r="17"/>
+    <circle cx="712" cy="125" r="17"/><circle cx="756" cy="125" r="17"/><circle cx="800" cy="125" r="17"/><circle cx="844" cy="125" r="17"/><circle cx="888" cy="125" r="17"/>
+  </g>
+  <text x="690" y="88" font-size="16" fill="#6b7785" text-anchor="middle">other cations (Mg²⁺, K⁺, Na⁺, H⁺, Al³⁺ …)</text>
+  <!-- brace -->
+  <path d="M30,205 L30,215 L470,215 L470,205" fill="none" stroke="#2468A0" stroke-width="2.5"/>
+  <text class="t" x="250" y="245" text-anchor="middle"><tspan font-weight="bold">10 mmol of charge</tspan> held by Ca²⁺</text>
+  <text class="t" x="250" y="270" text-anchor="middle">= <tspan font-weight="bold">5 Ca²⁺ units</tspan>: 0.0100 mol charge = <tspan font-weight="bold">0.00500 mol Ca</tspan></text>
+  <rect x="520" y="230" width="390" height="80" rx="10" fill="#f6efe0"/>
+  <text class="t" x="540" y="260">mol charge = cmol<tspan font-size="13" baseline-shift="sub">c</tspan>/kg × 0.01 × kg</text>
+  <text class="t" x="540" y="288">mol ion = mol charge ÷ ion charge</text>
+</svg>

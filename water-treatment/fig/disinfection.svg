@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="330" viewBox="0 0 980 330" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: chlorine inactivates microbes but also reacts with natural organic matter to form by-products -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <rect x="20" y="110" width="180" height="90" rx="10" fill="#e8f3e8" stroke="#25713E" stroke-width="3"/>
+  <text x="110" y="150" font-size="21" fill="#25713E" text-anchor="middle" font-weight="bold" >chlorine</text>
+  <text x="110" y="178" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >(HOCl, OCl⁻)</text>
+  <path d="M205,140 C280,100 330,80 400,75" stroke="#1b2a3a" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+  <path d="M205,170 C280,210 330,230 400,245" stroke="#1b2a3a" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+  <rect x="410" y="30" width="260" height="90" rx="10" fill="#f4f6f8" stroke="#2468A0" stroke-width="2"/>
+  <text x="540" y="65" font-size="19" fill="#2468A0" text-anchor="middle" font-weight="bold" >microorganisms</text>
+  <text x="540" y="95" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >inactivated: the goal</text>
+  <rect x="410" y="200" width="260" height="90" rx="10" fill="#f4f6f8" stroke="#8a5a2b" stroke-width="2"/>
+  <text x="540" y="235" font-size="19" fill="#8a5a2b" text-anchor="middle" font-weight="bold" >natural organic matter</text>
+  <text x="540" y="265" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >also reacts</text>
+  <line x1="675" y1="245" x2="740" y2="245" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="745" y="200" width="220" height="90" rx="10" fill="#fbeee6" stroke="#c0392b" stroke-width="2"/>
+  <text x="855" y="235" font-size="19" fill="#c0392b" text-anchor="middle" font-weight="bold" >by-products</text>
+  <text x="855" y="265" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >e.g. trihalomethanes</text>
+  <text x="490" y="320" font-size="17" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >Remove organic matter before disinfecting, and check by-products separately.</text>
+</svg>

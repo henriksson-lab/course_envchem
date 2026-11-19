@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="400" viewBox="0 0 940 400" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: one observation (Fe and P rise as O2 falls) is consistent with several explanations; each predicts a different discriminating measurement. -->
+  <defs>
+    <marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker>
+  </defs>
+  <style>
+    .hd{font-size:18px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .t{font-size:15px;fill:#1b2a3a;text-anchor:middle}
+    .test{font-size:15px;fill:#25713E;text-anchor:middle}
+  </style>
+  <rect x="270" y="15" width="400" height="66" rx="12" fill="#1b2a3a"/>
+  <text x="470" y="44" font-size="18" font-weight="bold" fill="#fff" text-anchor="middle">Observation: O₂ ↓, filtered Fe ↑, PO₄-P ↑</text>
+  <text x="470" y="68" font-size="15" fill="#fff" text-anchor="middle">consistent with … but which?</text>
+  <g stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)">
+    <line x1="350" y1="85" x2="160" y2="125"/><line x1="470" y1="85" x2="470" y2="125"/><line x1="590" y1="85" x2="780" y2="125"/>
+  </g>
+  <rect x="20" y="130" width="280" height="250" rx="12" fill="#e6e1ef" stroke="#6b4c9a" stroke-width="2"/>
+  <text class="hd" x="160" y="160">A. Fe(III) reduction</text>
+  <text class="t" x="160" y="185">carrier dissolves,</text>
+  <text class="t" x="160" y="205">sorbed P released</text>
+  <text class="t" x="160" y="250" font-weight="bold">Test:</text>
+  <text class="test" x="160" y="273">dissolved Fe is Fe(II);</text>
+  <text class="test" x="160" y="295">porewater Fe and P peak</text>
+  <text class="test" x="160" y="317">just below the surface;</text>
+  <text class="test" x="160" y="339">solid Fe(III)-bound P falls</text>
+
+  <rect x="330" y="130" width="280" height="250" rx="12" fill="#f6efe0" stroke="#b8860b" stroke-width="2"/>
+  <text class="hd" x="470" y="160">B. Mixing</text>
+  <text class="t" x="470" y="185">a separate Fe- and P-rich</text>
+  <text class="t" x="470" y="205">water mass moved in</text>
+  <text class="t" x="470" y="250" font-weight="bold">Test:</text>
+  <text class="test" x="470" y="273">conservative tracers</text>
+  <text class="test" x="470" y="295">(Cl⁻, temperature,</text>
+  <text class="test" x="470" y="317">conductivity) change</text>
+  <text class="test" x="470" y="339">at the same time</text>
+
+  <rect x="640" y="130" width="280" height="250" rx="12" fill="#d8ecdc" stroke="#25713E" stroke-width="2"/>
+  <text class="hd" x="780" y="160">C. Organic matter</text>
+  <text class="t" x="780" y="185">decomposition releases</text>
+  <text class="t" x="780" y="205">P from biomass</text>
+  <text class="t" x="780" y="250" font-weight="bold">Test:</text>
+  <text class="test" x="780" y="273">P rise matches NH₄⁺</text>
+  <text class="test" x="780" y="295">and CO₂ production;</text>
+  <text class="test" x="780" y="317">P rises even where</text>
+  <text class="test" x="780" y="339">Fe stays low</text>
+</svg>

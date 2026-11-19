@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="330" viewBox="0 0 980 330" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: what you need to compare the climate effect of two emitted gases. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+    <marker id="arb" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#2468A0"/></marker>
+    <marker id="arg" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#25713E"/></marker>
+    <marker id="aro" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#b8860b"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .sp{font-size:26px;font-weight:bold;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <rect x="20" y="70" width="170" height="110" rx="14" fill="#f6efe0" stroke="#b8860b" stroke-width="2.5"/>
+  <text class="h" x="105" y="115">equal mass</text><text class="lc" x="105" y="148" font-size="16">kg emitted</text>
+  <line class="ln" x1="192" y1="125" x2="210" y2="125" marker-end="url(#ar)"/>
+  <rect x="212" y="70" width="170" height="110" rx="14" fill="#eef4fa" stroke="#2468A0" stroke-width="2.5"/>
+  <text class="h" x="297" y="115">molecules</text><text class="lc" x="297" y="148" font-size="16">÷ molar mass</text>
+  <line class="ln" x1="384" y1="125" x2="402" y2="125" marker-end="url(#ar)"/>
+  <rect x="404" y="70" width="170" height="110" rx="14" fill="#eef4fa" stroke="#2468A0" stroke-width="2.5"/>
+  <text class="h" x="489" y="115">absorption</text><text class="lc" x="489" y="148" font-size="16">bands, overlap</text>
+  <line class="ln" x1="576" y1="125" x2="594" y2="125" marker-end="url(#ar)"/>
+  <rect x="596" y="70" width="170" height="110" rx="14" fill="#eef4fa" stroke="#2468A0" stroke-width="2.5"/>
+  <text class="h" x="681" y="115">lifetime</text><text class="lc" x="681" y="148" font-size="16">how long it stays</text>
+  <line class="ln" x1="768" y1="125" x2="786" y2="125" marker-end="url(#ar)"/>
+  <rect x="788" y="70" width="170" height="110" rx="14" fill="#eef4fa" stroke="#2468A0" stroke-width="2.5"/>
+  <text class="h" x="873" y="115">time horizon</text><text class="lc" x="873" y="148" font-size="16">20 or 100 years?</text>
+  <text class="t" x="490" y="40" text-anchor="middle">From "same mass emitted" to "same climate effect"?</text>
+  <text class="lc" x="490" y="230">1 kg CH₄ holds about 2.7 times as many molecules as 1 kg CO₂ (16 vs 44 g/mol).</text>
+  <text class="lc" x="490" y="262">A gas absorbing in the window adds more than one absorbing where H₂O already does.</text>
+  <text class="lc" x="490" y="294">A short-lived gas matters most over short horizons; CO₂ keeps acting for centuries.</text>
+</svg>

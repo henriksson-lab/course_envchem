@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-073ca42b956148f7f9761d97a475d639.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -128,6 +144,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Redox and environmental cycles</h1>
+  <p class="subtitle">Week 3 — Metals, surfaces, redox, and treatment</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -138,55 +155,525 @@ Environmental Chemistry
 </div>
 
 </section>
-<section id="chemical-question" class="slide level2">
-<h2>Chemical question</h2>
-<p>When oxygen runs low, why can iron, nitrogen, sulfur, and phosphorus change together even though not every element changes oxidation state?</p>
-</section>
-<section id="what-to-explain" class="slide level2">
-<h2>What to explain</h2>
+<section id="about-this-lecture" class="slide level2">
+<h2>About this lecture</h2>
+<div class="columns">
+<div class="column" style="width:56%;">
+<p>Every summer, <strong>cyanobacteria blooms</strong> swirl across the Baltic Sea. Below them, the deep water of the central Baltic holds one of the <strong>largest areas of oxygen-free bottom water</strong> made by human activity anywhere in the world.</p>
+<p>Cutting nutrient inputs from land has helped, but slowly. One reason: the sea floor itself <strong>releases phosphate</strong> when oxygen disappears.</p>
+<p>Today you will learn to:</p>
 <ul>
-<li>Balance a redox reaction using electron transfer.</li>
-<li>Interpret electron-acceptor evidence without assuming a universal sequence.</li>
-<li>Connect iron-phase changes to associated phosphate release.</li>
+<li><strong>balance redox reactions</strong> by counting electrons;</li>
+<li>use the <strong>sequence of electron acceptors</strong> as a guide, not a timetable;</li>
+<li>explain how <strong>iron reduction releases phosphate</strong> without any phosphorus redox.</li>
 </ul>
+<p>Last lecture: phosphate binds to iron oxides. Today: what happens when those oxides dissolve.</p>
+</div><div class="column" style="width:44%;">
+<p><img data-src="img/baltic-bloom.jpg" style="width:100.0%"> <span class="credit">Phytoplankton bloom swirling in the Baltic Sea, July 2025, seen by a Landsat satellite. Image: NASA Earth Observatory (Michala Garrison), public domain, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Open with the satellite image. The swirls are cyanobacteria, which bloom in late summer in the Baltic Proper and Gulf of Finland. Their growth depends strongly on phosphate, because many of them can fix nitrogen gas. Under the bloom is a less visible problem: large areas of deep water with little or no oxygen. Since the 1980s the riparian countries have reduced nutrient loads, especially phosphorus from wastewater. Yet the sea has responded slowly. A large part of the explanation is chemistry at the sediment surface, where iron, phosphorus, sulfur and carbon are linked by electron transfer. The last lecture showed phosphate binding to iron oxides. Today we see what happens to that binding when the iron is reduced.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="electron-donors-and-acceptors" class="slide level2">
-<h2>Electron donors and acceptors</h2>
-<p>Donor is oxidised; acceptor is reduced.</p>
-<p>Electrons lost = electrons gained.</p>
-<p>Balance atoms and charge as well as oxidation states.</p>
+<section id="why-the-deep-baltic-runs-out-of-oxygen" class="slide level2">
+<h2>Why the deep Baltic runs out of oxygen</h2>
+
+<img data-src="fig/stratification.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:82.0%"><p>Fresh river water floats on top of salty water from the North Sea. A <strong>halocline</strong> separates them and blocks mixing. Organic matter sinks through it and decays, <strong>using oxygen</strong> that cannot be replaced from the air. Salty inflows that refresh the deep water are rare.</p>
+<aside class="notes">
+<p>Explain the physics first, because it sets up the chemistry. The Baltic is brackish: rivers supply fresh water at the surface, and denser salt water enters only through the narrow Danish straits. The density difference creates a sharp salinity jump, the halocline, at a depth of very roughly 60 to 80 metres in the central Baltic. Wind mixes the surface layer, but not across the halocline. Below it, oxygen is consumed by bacteria decomposing sinking algae and is only replaced when a large inflow of salty, oxygen-rich North Sea water pushes into the deep basins. Such major inflows happen irregularly, sometimes with gaps of a decade. Between them, the deep water gradually loses its oxygen.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="a-nitrogen-contrast" class="slide level2">
-<h2>A nitrogen contrast</h2>
-<p>Nitrification: NH₄⁺ → NO₃⁻; consumes oxygen, releases acid.</p>
-<p>Denitrification: NO₃⁻ → N₂; requires a donor and suitable conditions.</p>
+<section id="what-happens-when-the-oxygen-is-gone" class="slide level2">
+<h2>What happens when the oxygen is gone?</h2>
+
+<img data-src="fig/bottom-water-series.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%"><p>In a cut-off bottom water, chemistry changes in a <strong>typical order</strong>: first oxygen falls, then nitrate, then dissolved iron and <strong>phosphate</strong> rise, and finally <strong>hydrogen sulfide</strong> appears. Nobody added phosphate. <strong>Why this order, and where does the phosphate come from?</strong></p>
+<aside class="notes">
+<p>This figure is constructed, with relative units, to show the typical order rather than real data from a particular station. Read it left to right. Oxygen declines first. Once it is low, nitrate declines. Then dissolved iron(II) and phosphate rise together. Later, hydrogen sulfide appears, and dissolved iron falls again. Ask students to note two puzzles. First, why does each substance wait for the one before it? Second, phosphate has no reason to change oxidation state, so why does it rise at the same time as iron? The rest of the lecture answers both. Remind them that real basins overlap these stages, because of mixing and patchy sediments.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="iron-reduction-changes-a-solid-phase" class="slide level2">
-<h2>Iron reduction changes a solid phase</h2>
-<p>FeOOH + 3 H⁺ + e⁻ → Fe²⁺ + 2 H₂O.</p>
-<p>A redox change of the carrier can mobilise phosphate without phosphorus redox.</p>
+<section id="redox-is-electron-bookkeeping" class="slide level2">
+<h2>Redox is electron bookkeeping</h2>
+
+<img data-src="fig/electron-transfer.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:72.0%"><p>Every redox reaction pairs an <strong>electron donor</strong>, which is oxidised, with an <strong>electron acceptor</strong>, which is reduced. <strong>Electrons lost = electrons gained.</strong> CH₂O is a bookkeeping formula for organic matter, with carbon at oxidation state 0.</p>
+<aside class="notes">
+<p>Start with the familiar reaction, aerobic respiration, split into two half-reactions. In the first, organic carbon goes from oxidation state zero to plus four in carbon dioxide and releases four electrons. In the second, oxygen accepts those four electrons, each oxygen atom going from zero to minus two. When the half-reactions are added, the electrons cancel. This is the rule for every redox reaction: the donor’s loss equals the acceptor’s gain. CH2O is not a real molecule in sediments. It is a convenient formula with the average oxidation state of carbon in carbohydrates. Microbes carry out these reactions to gain energy; chemistry tells us which are possible and in what proportions, not how fast they go.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="sulfur-and-strongly-reducing-conditions" class="slide level2">
-<h2>Sulfur and strongly reducing conditions</h2>
-<p>SO₄²⁻ + 9 H⁺ + 8 e⁻ → HS⁻ + 4 H₂O.</p>
-<p>Sulfide can immobilise some metals; later oxidation can change that retention.</p>
+<section id="oxidation-states-you-will-need" class="slide level2">
+<h2>Oxidation states you will need</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Element</th>
+<th>Species</th>
+<th style="text-align: right;">Oxidation state</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>C</td>
+<td>CH₂O / CO₂ / CH₄</td>
+<td style="text-align: right;">0 / +IV / −IV</td>
+</tr>
+<tr class="even">
+<td>N</td>
+<td>NH₄⁺ / N₂ / NO₃⁻</td>
+<td style="text-align: right;">−III / 0 / +V</td>
+</tr>
+<tr class="odd">
+<td>Fe</td>
+<td>Fe²⁺ / FeOOH</td>
+<td style="text-align: right;">+II / +III</td>
+</tr>
+<tr class="even">
+<td>S</td>
+<td>HS⁻ / SO₄²⁻</td>
+<td style="text-align: right;">−II / +VI</td>
+</tr>
+<tr class="odd">
+<td>P</td>
+<td>PO₄³⁻</td>
+<td style="text-align: right;">+V (stays)</td>
+</tr>
+<tr class="even">
+<td>O</td>
+<td>O₂ / H₂O</td>
+<td style="text-align: right;">0 / −II</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="width:50%;">
+<p>Rules: H is +I, O is −II (except in O₂), and the states add up to the charge of the species.</p>
+<p>Example, nitrate: N + 3(−II) = −1, so <strong>N = +V</strong>.</p>
+<p>Each change of one unit is <strong>one electron</strong> per atom.</p>
+<p>Notice phosphorus. In natural waters it stays at <strong>+V</strong>. If phosphate moves during a redox change, something <strong>else</strong> was reduced.</p>
+</div></div>
+<aside class="notes">
+<p>This is a refresher slide, to be used as a reference during the rest of the lecture. Work one example aloud, nitrate: three oxygens at minus two give minus six, the ion has charge minus one, so nitrogen must be plus five. Ask students to do sulfate themselves. The table already holds the key to the second puzzle from the time series. Phosphorus stays at plus five in phosphate. Phosphate rose when oxygen disappeared, but phosphorus itself was not reduced. So the phosphate must have been released from something that was. That something is iron, as we will see. Keep the table visible when balancing reactions later.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="interpret-a-redox-sequence" class="slide level2">
-<h2>Interpret a redox sequence</h2>
-<p>Read multiple indicators:</p>
-<p>O₂ and nitrate decline; Fe²⁺ or sulfide may rise.</p>
-<p>Overlapping microsites and transport can obscure a simple ladder.</p>
+<section id="when-oxygen-runs-out-the-redox-ladder" class="slide level2">
+<h2>When oxygen runs out: the redox ladder</h2>
+
+<img data-src="fig/redox-ladder.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><p>Microbes use the acceptor that gives the most energy first. As it runs low, the next one takes over. That explains the order in the bottom-water series. It is a <strong>guide, not a timetable</strong>: steps overlap in space and time.</p>
+<aside class="notes">
+<p>This is the central concept of the lecture. Organic matter is the common electron donor. Several acceptors can take its electrons, and they yield different amounts of energy to the microbes. Oxygen gives the most, then nitrate, then manganese and iron oxides, then sulfate, and finally carbon dioxide itself in methanogenesis. Microbes that use a higher-energy acceptor tend to outcompete the others while it lasts. Each step also leaves evidence: what disappears and what appears. Stress the caveat in the notes. The thresholds depend on pH, on which minerals are present, and on local conditions. Different processes run side by side in neighbouring microsites. Use the ladder to make predictions, then check them with measurements.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="balance-denitrification" class="slide level2">
-<h2>Balance denitrification</h2>
-<p>4 nitrate N × 5 e⁻ gained = 20 e⁻.</p>
-<p>5 organic C × 4 e⁻ lost = 20 e⁻.</p>
-<p>Donor ratio: <strong>1.25 mol C per mol nitrate</strong>.</p>
+<section id="the-ladder-in-the-mud" class="slide level2">
+<h2>The ladder in the mud</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="fig/porewater.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:50%;">
+<p>In a sediment, the ladder is laid out <strong>in depth</strong>. Oxygen often disappears within millimetres. Below it, nitrate, then dissolved manganese and iron, then sulfide and methane.</p>
+<p>The steps overlap and their depths change with season and with how much organic matter arrives.</p>
+<p>When the bottom water itself loses its oxygen, the upper rungs vanish and <strong>iron reduction reaches the sediment surface</strong>.</p>
+</div></div>
+<aside class="notes">
+<p>The time series showed the ladder in time; a sediment shows it in space. These profiles are constructed, but the order is typical of lake and coastal sediments. Oxygen diffusing from the water is consumed so fast that it often penetrates only a few millimetres. Nitrate is consumed just below. Manganese and iron(II) appear deeper, where their oxides are being reduced, and sulfide and methane deeper still. Peaks occur because dissolved products diffuse up and are re-oxidised where the acceptor above is still present. The crucial point for the Baltic: as long as the bottom water has oxygen, a thin layer of iron(III) oxide stays at the sediment surface. When oxygen vanishes, the iron-reduction zone moves up to the surface.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="check-your-explanation" class="slide level2">
-<h2>Check your explanation</h2>
-<p>Dissolved iron and phosphate rise while oxygen declines above a sediment. Give a coupled explanation and one reason it is not proven by correlation alone.</p>
-<p>Use the <a href="../redox-cycles/notes.html">notes and sources</a> and <a href="../redox-cycles/exercise.html">worked exercises</a>.</p>
+<section id="you-can-see-the-ladder-in-a-jar" class="slide level2">
+<h2>You can see the ladder in a jar</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><img data-src="img/winogradsky-purple.jpg" style="width:100.0%"> <span class="credit">Upper part of a Winogradsky column: purple sulfur bacteria in bands above dark, sulfide-rich mud. Photo: kOchstudiO, public domain, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:55%;">
+<p>A <strong>Winogradsky column</strong> is a sealed tube of pond mud with a little added carbon and sulfate, left in the light for weeks.</p>
+<p>Oxygen enters only at the top, so microbes sort themselves into layers:</p>
+<ul>
+<li>the top stays oxic;</li>
+<li>in the middle, coloured bands of bacteria live on sulfide rising from below;</li>
+<li>the bottom turns <strong>black</strong> with iron sulfide formed by sulfate reduction.</li>
+</ul>
+<p>The same zones exist in every sediment, compressed into a few centimetres.</p>
+</div></div>
+<aside class="notes">
+<p>This classroom experiment is a good way to make the ladder visible. Students can set it up in a lab session. Mud, a source of organic carbon such as shredded paper, and a sulfate source such as gypsum or egg yolk are packed into a tube and left near a window. Over weeks, oxygen is used up everywhere except near the top. Sulfate reducers at the bottom produce sulfide, which reacts with iron to form black iron sulfide. Purple and green sulfur bacteria grow in bands where light and sulfide meet. The exact colours vary from column to column, which is itself a lesson: the sequence is robust, the details are local.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="nitrogen-one-element-many-oxidation-states" class="slide level2">
+<h2>Nitrogen: one element, many oxidation states</h2>
+
+<img data-src="fig/nitrogen-states.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:76.0%"><p><span class="math display">\mathrm{NH_4^++2O_2\rightarrow NO_3^-+2H^++H_2O}</span></p>
+<p>Nitrification uses oxygen and <strong>releases acid</strong>. For 0.100 mmol/L NH₄⁺: 0.200 mmol/L O₂ (<strong>6.40 mg/L</strong>) and 0.200 mmol/L H⁺, so alkalinity falls by <strong>0.200 meq/L</strong>. Nitrogen changes form but <strong>stays in the water</strong>.</p>
+<aside class="notes">
+<p>Nitrogen spans eight units of oxidation state, from minus three in ammonium to plus five in nitrate. Nitrification, carried out by bacteria and archaea, oxidises ammonium to nitrate with oxygen. Check the balance with the class: eight electrons lost per nitrogen, and two O2 molecules accept eight electrons. The calculation is exercise 1. Two moles of oxygen per mole of ammonium is a large oxygen demand, about six and a half milligrams per litre for a modest ammonium concentration. The two protons consume alkalinity, as in the carbonate lecture. Most importantly, nitrification does not remove nitrogen from the water. Only the reverse direction, down the ladder to nitrogen gas, does that.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="balancing-denitrification" class="slide level2">
+<h2>Balancing denitrification</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p><span class="math display">\mathrm{4NO_3^-+5CH_2O+4H^+\rightarrow2N_2+5CO_2+7H_2O}</span></p>
+<ol type="1">
+<li>N: +V → 0, gains <strong>5 e⁻</strong> each; 4 NO₃⁻ accept <strong>20 e⁻</strong>.</li>
+<li>C: 0 → +IV, loses <strong>4 e⁻</strong> each; 5 CH₂O donate <strong>20 e⁻</strong>.</li>
+<li>Atoms: 4 N, 5 C, 14 H, 17 O on each side. Charge: 0 = 0.</li>
+</ol>
+<p>Donor ratio: <strong>1.25 mol C per mol nitrate</strong>. For 0.0800 mmol/L nitrate: 0.100 mmol/L C (<strong>1.20 mg C/L</strong>) and 0.0400 mmol/L N₂.</p>
+</div><div class="column" style="width:48%;">
+<p><img data-src="fig/electron-budget.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>Balance by electrons first, then atoms, then charge. Each nitrogen falls from plus five to zero and gains five electrons. Each carbon rises from zero to plus four and loses four. The smallest whole numbers that make the electrons match are four nitrates and five CH2O, twenty electrons each way, which the bar chart shows. Then fill in protons and water to balance hydrogen and oxygen, and check the charge: minus four plus four on the left, zero on the right. The ratio of 1.25 carbon per nitrate is exercise 2. This net reaction ignores growth of new biomass and intermediates such as nitrite. Denitrification needs low oxygen, nitrate and an electron donor. It is how sediments, wetlands and treatment plants remove nitrogen as gas.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="check-yourself" class="slide level2">
+<h2>Check yourself</h2>
+<div class="checkbox">
+<p>Use oxidation states and electron counting.</p>
+<ol type="1">
+<li>What is the oxidation state of S in SO₄²⁻, and of Fe in FeOOH?</li>
+<li>How many electrons does one Fe(III) gain when FeOOH becomes Fe²⁺? How many does one sulfate gain when it becomes HS⁻?</li>
+<li>Oxidise 0.050 mmol/L NH₄⁺ fully to nitrate. How much O₂ is used?</li>
+<li>True or false: “Phosphate rose in anoxic bottom water, so phosphorus was reduced.”</li>
+</ol>
+</div>
+<aside class="notes">
+<p>Answers. One: sulfur is plus six, because four oxygens give minus eight and the ion is minus two. Iron in FeOOH is plus three. Two: one electron for iron, from plus three to plus two. Eight for sulfur, from plus six to minus two. That is why sulfate reduction needs much more organic matter per sulfur than iron reduction does per iron. Three: two oxygen per ammonium, so 0.100 millimoles per litre, or 3.2 milligrams per litre. Four is false. Phosphorus stays at plus five. Its release must come from a change in something it was attached to. The next slides show what.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="iron-a-solid-that-dissolves-when-reduced" class="slide level2">
+<h2>Iron: a solid that dissolves when reduced</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/iron-seep.jpg" style="width:100.0%"> <span class="credit">Iron-rich mine water emerging from underground coats a slope with orange iron(III) oxide, Great Allegheny Passage, Pennsylvania. Photo: daveynin, CC BY 2.0, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\mathrm{FeOOH(s)+3H^++e^-\rightarrow Fe^{2+}+2H_2O}</span></p>
+<p>Check: 1 Fe, 2 O, 4 H on each side; charge +2 = +2. Fe(III) gains <strong>one electron</strong>.</p>
+<p>Fe(III) oxides are almost insoluble at natural pH. Fe²⁺ is soluble. So reduction turns a <strong>solid into a solute</strong>.</p>
+<p>The reverse happens wherever Fe²⁺-rich water meets air: orange Fe(III) oxide precipitates.</p>
+</div></div>
+<aside class="notes">
+<p>This is exercise 3. Verify the half-reaction with the class: iron, oxygen and hydrogen balance, and the charges are plus three minus one on the left and plus two on the right. What makes iron special in environmental chemistry is the solubility contrast between its two oxidation states. Iron(III) forms oxyhydroxides that are practically insoluble at the pH of most natural waters, as we saw in the metals and surfaces lectures. Iron(II) stays dissolved. So reducing iron dissolves the solid. The photo shows the opposite direction: groundwater rich in dissolved iron(II) reaches the surface, meets oxygen, and the iron is oxidised and precipitates as orange oxide. The same switch runs at the sea floor.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="phosphate-rides-on-iron" class="slide level2">
+<h2>Phosphate rides on iron</h2>
+
+<img data-src="fig/iron-phosphate.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:88.0%"><p>With oxygen, a thin <strong>Fe(III) oxide layer</strong> at the sediment surface sorbs phosphate moving up from decaying matter. Without oxygen, the iron is <strong>reduced</strong>, the layer dissolves, and Fe²⁺ and phosphate both escape. Phosphorus stays +V: its <strong>carrier</strong> changed oxidation state.</p>
+<aside class="notes">
+<p>This is the answer to the second puzzle. In the surfaces lecture we saw that iron oxides hold phosphate strongly by inner-sphere binding. While the bottom water has oxygen, the iron(III) layer at the sediment surface acts as a lid: phosphate released by decomposition deeper in the sediment is caught as it diffuses up. When the bottom water becomes anoxic, iron reduction reaches the surface, the oxide dissolves, and the phosphate held on it is released along with iron(II). Phosphorus never changes its oxidation state. This is why Fe and phosphate rise together in the time series. The release from sediments is called internal loading, as opposed to the external load from rivers and wastewater.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="sulfur-the-bottom-of-the-ladder" class="slide level2">
+<h2>Sulfur: the bottom of the ladder</h2>
+
+<img data-src="fig/sulfide-iron.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><p>With oxygen, nitrate and iron oxides used up, microbes reduce <strong>sulfate</strong>, abundant in seawater. Toxic H₂S builds up in the deepest Baltic basins. Sulfide also binds iron as black <strong>FeS</strong>, so when oxygen returns, less iron is free to recapture phosphate.</p>
+<aside class="notes">
+<p>Seawater, even the brackish Baltic, contains much sulfate, so once the higher acceptors are exhausted, sulfate reduction becomes a major pathway. Check the half-reaction: sulfur goes from plus six to minus two, eight electrons. Hydrogen sulfide is toxic to animals, and in the deep basins of the central Baltic it has accumulated at times to form true dead zones. Sulfide also reacts with iron(II) to form insoluble iron sulfides, which make anoxic mud black. That has a long-lasting effect. Iron locked up as sulfide is no longer available to form a new oxide layer when oxygen returns, so the sediment’s ability to trap phosphate is weakened. Reoxygenation does not simply reverse anoxia.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="reading-redox-evidence" class="slide level2">
+<h2>Reading redox evidence</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p>Observation: dissolved Fe and phosphate rise while O₂ declines above a sediment.</p>
+<p><strong>Coupled explanation:</strong> organic matter uses up O₂, then Fe(III) oxides are reduced, releasing Fe²⁺ and the phosphate they held.</p>
+<p><strong>Why correlation is not proof:</strong> mixing with another water mass, other minerals dissolving, or a new phosphate source could give the same pattern.</p>
+<p><strong>Tests:</strong> Fe(II) measured directly, solid-phase iron and phosphorus in the sediment, porewater profiles, and fluxes over time.</p>
+</div><div class="column" style="width:45%;">
+<p><img data-src="fig/porewater.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>This is exercise 4, and the skill is reasoning from evidence. The coupled explanation is the one we built today, and it is often right. But a good scientist asks what else could produce the same pattern. A different, phosphate-rich water mass could have mixed in. Calcium phosphate minerals could dissolve. Fresh organic matter could release phosphate as it decomposes. To test the iron explanation, measure iron(II) itself, look for loss of iron(III) and of iron-bound phosphorus in the surface sediment, and use porewater profiles like this one to calculate fluxes across the sediment surface. A single electrode reading of redox potential is rarely enough to identify which processes are active in a natural sample.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="back-to-the-baltic-a-self-reinforcing-loop" class="slide level2">
+<h2>Back to the Baltic: a self-reinforcing loop</h2>
+
+<img data-src="fig/vicious-circle.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:64.0%"><p>More phosphate feeds more blooms, more sinking organic matter, more oxygen loss, and more phosphate release. That is why <strong>internal loading</strong> can keep the Baltic eutrophic long after external loads are cut.</p>
+<aside class="notes">
+<p>Now put the pieces together into the loop that is often called the Baltic’s vicious circle. Phosphate in the surface water feeds blooms, especially of nitrogen-fixing cyanobacteria, which need phosphorus but can take nitrogen from the air. The blooms sink and decompose below the halocline, using oxygen. Anoxic sediments release iron-bound phosphate. Some of that phosphate is mixed back up to the surface and fuels the next bloom. Each step is chemistry we have covered this week: speciation, surfaces, redox. The external load from land and wastewater sets the overall level, and reducing it is the only lasting solution, but the internal loop explains the long delay in the sea’s response.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="can-the-loop-be-broken" class="slide level2">
+<h2>Can the loop be broken?</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><strong>Inflows</strong> of oxygen-rich North Sea water, like the large one in December 2014, can ventilate the deep basins for a while. Iron oxide re-forms and traps some phosphate. But the effect fades, and sulfide-bound iron is not fully restored.</p>
+<p><strong>Cutting external loads</strong> is the lasting solution. Since the 1980s, better wastewater treatment around the Baltic has removed much of the phosphorus that rivers and cities once delivered.</p>
+<p>How treatment plants do that, and where the phosphorus ends up, is the next lecture.</p>
+</div><div class="column" style="width:45%;">
+<p><img data-src="img/baltic-modis.jpg" style="width:100.0%"> <span class="credit">Summer bloom around Gotland in the central Baltic Sea, July 2018. Image: Jeff Schmaltz, NASA (MODIS), public domain, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>End the story with the management question. Major inflows are natural events. When salty, oxygen-rich water reaches the deep basins, the upper rungs of the ladder return, iron is re-oxidised and some phosphate is trapped again. Studies after the 2014 inflow showed that the improvement was partial and temporary. The deep water lost its oxygen again within a few years in many areas, and iron tied up as sulfide could not all return to the cycle. The more reliable lever is the external load. Phosphorus removal at wastewater treatment plants has been one of the main measures. The satellite image shows the scale of the problem: blooms covering much of the central Baltic around Gotland in a single summer.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="common-mistakes-to-avoid" class="slide level2">
+<h2>Common mistakes to avoid</h2>
+<ul>
+<li><strong>“Phosphate was released, so phosphorus was reduced.”</strong> P stays +V; its iron carrier was reduced.</li>
+<li><strong>“Nitrification removes nitrogen.”</strong> It changes NH₄⁺ to NO₃⁻; only denitrification sends N to the air.</li>
+<li><strong>“The redox ladder is a fixed timetable.”</strong> It is a guide; steps overlap.</li>
+<li><strong>“Balance atoms and you are done.”</strong> Check electrons and charge too.</li>
+<li><strong>“One redox-potential reading identifies the process.”</strong> Use several indicators.</li>
+<li><strong>“Adding oxygen reverses everything.”</strong> Sulfide-bound iron and slow reactions leave a legacy.</li>
+</ul>
+<aside class="notes">
+<p>These are the errors that appear most often in this unit. The first two are conceptual and come up every year in exams. Ask students to explain each in their own words with an example from the Baltic. The third and fifth are about evidence: the ladder makes predictions, but measurements decide. The fourth is procedural: a reaction can have balanced atoms and still violate the electron or charge balance, which signals an error. The last links to management. Reoxygenation helps, but it does not instantly restore the earlier state, because some changes, such as iron sulfide formation and burial, are slow to reverse.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Key fact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Redox</td>
+<td>donor is oxidised, acceptor is reduced; electrons lost = gained</td>
+</tr>
+<tr class="even">
+<td>Balancing</td>
+<td>electrons first, then atoms, then charge</td>
+</tr>
+<tr class="odd">
+<td>Redox ladder</td>
+<td>O₂ → NO₃⁻ → Mn(IV) → Fe(III) → SO₄²⁻ → CO₂; a guide, not a timetable</td>
+</tr>
+<tr class="even">
+<td>Sediments</td>
+<td>the ladder in depth; O₂ often gone within millimetres</td>
+</tr>
+<tr class="odd">
+<td>Nitrification</td>
+<td>NH₄⁺ + 2O₂ → NO₃⁻ + 2H⁺ + H₂O; uses O₂, consumes alkalinity</td>
+</tr>
+<tr class="even">
+<td>Denitrification</td>
+<td>1.25 mol CH₂O-C per mol NO₃⁻; N leaves as N₂</td>
+</tr>
+<tr class="odd">
+<td>Iron</td>
+<td>FeOOH + 3H⁺ + e⁻ → Fe²⁺ + 2H₂O; solid becomes solute</td>
+</tr>
+<tr class="even">
+<td>Phosphate</td>
+<td>released with the iron carrier; P stays +V</td>
+</tr>
+<tr class="odd">
+<td>Sulfur</td>
+<td>SO₄²⁻ → HS⁻ (8 e⁻); FeS locks up iron</td>
+</tr>
+<tr class="even">
+<td>Baltic</td>
+<td>stratification + blooms + internal loading form a loop</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Next:</strong> <a href="../water-treatment/lec.html">Water pollution and treatment chemistry</a>. How do we take nitrogen and phosphorus out of wastewater, and where do they go? Then the <a href="../redox-cycles/exercise.html">exercises</a> and the <a href="../redox-cycles/notes.html">notes</a>.</p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="img/aeration-tank.jpg" style="width:100.0%"> <span class="credit">Surface aerator in the aeration tank of an activated sludge plant. Photo: Marcos von Sperling, CC BY-SA 4.0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>The table is the revision sheet. Recite the chain: organic matter supplies electrons; acceptors are used roughly in order of energy yield; each step leaves evidence. Nitrogen can be converted to nitrate with oxygen, or removed as gas without it. Iron reduction dissolves iron oxides and releases the phosphate they held, which is the key to internal loading in the Baltic. Sulfate reduction produces sulfide, which is toxic and binds iron. The teaser photo shows an aeration tank in a wastewater treatment plant. There, engineers run the same reactions on purpose, switching oxygen on and off to make microbes nitrify and denitrify. That is the next lecture.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 
 
 </section>

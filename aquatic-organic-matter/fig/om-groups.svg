@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: a schematic (not real) fragment of humic material with carboxyl and phenolic groups. Carboxyl groups lose H+ at natural pH and the negative sites can bind a metal ion such as Cu2+. -->
+  <defs><marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker></defs>
+  <style>.t{font-size:18px;fill:#1b2a3a} .b{font-size:21px;font-weight:bold;fill:#1b2a3a} .s{font-size:15px;fill:#6b7785} .a{font-size:20px;fill:#1b2a3a;font-weight:bold}</style>
+  <text class="b" x="30" y="32">Low pH: groups carry H⁺</text>
+  <g stroke="#1b2a3a" stroke-width="3" fill="none">
+    <polygon points="150,120 185,140 185,180 150,200 115,180 115,140"/>
+    <polygon points="185,180 220,160 255,180 255,220 220,240 185,220"/>
+    <line x1="150" y1="120" x2="150" y2="85"/><line x1="255" y1="220" x2="290" y2="240"/>
+    <line x1="115" y1="180" x2="80" y2="200"/><line x1="220" y1="240" x2="220" y2="275"/>
+    <path d="M255,180 L290,160 L325,180 L360,160"/>
+  </g>
+  <text class="a" x="118" y="75">COOH</text>
+  <text class="a" x="292" y="258">COOH</text>
+  <text class="a" x="40" y="215">OH</text>
+  <text class="a" x="200" y="300">COOH</text>
+  <text class="a" x="362" y="160">…</text>
+  <text class="s" x="30" y="340">schematic fragment: real humic matter is a</text>
+  <text class="s" x="30" y="360">mixture of many molecules, not one formula</text>
+  <line x1="420" y1="180" x2="520" y2="180" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <text class="t" x="425" y="165">pH rises</text>
+  <text class="t" x="425" y="210">H⁺ released</text>
+  <text class="b" x="540" y="32">Natural pH: negative sites bind metals</text>
+  <g stroke="#1b2a3a" stroke-width="3" fill="none">
+    <polygon points="660,120 695,140 695,180 660,200 625,180 625,140"/>
+    <polygon points="695,180 730,160 765,180 765,220 730,240 695,220"/>
+    <line x1="660" y1="120" x2="660" y2="85"/><line x1="765" y1="220" x2="800" y2="240"/>
+    <line x1="625" y1="180" x2="590" y2="200"/><line x1="730" y1="240" x2="730" y2="275"/>
+    <path d="M765,180 L800,160 L835,180 L870,160"/>
+  </g>
+  <text class="a" x="628" y="75" style="fill:#2468A0">COO⁻</text>
+  <text class="a" x="800" y="258" style="fill:#2468A0">COO⁻</text>
+  <text class="a" x="550" y="215">OH</text>
+  <text class="a" x="706" y="300" style="fill:#2468A0">COO⁻</text>
+  <circle cx="812" cy="302" r="22" fill="#AD4825"/><text x="812" y="308" font-size="17" font-weight="bold" fill="#fff" text-anchor="middle">Cu²⁺</text>
+  <text class="t" x="540" y="350">two neighbouring groups hold one Cu²⁺:</text>
+  <text class="t" x="540" y="374">the copper stays in the filtrate, but is</text>
+  <text class="t" x="540" y="398"><tspan font-weight="bold">no longer a free ion</tspan></text>
+</svg>

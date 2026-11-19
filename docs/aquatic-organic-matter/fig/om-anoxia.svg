@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="420" viewBox="0 0 940 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: in a stratified lake the bottom water is cut off from the air. Sinking organic matter is oxidised and consumes O2; when O2 is gone, microbes use other electron acceptors in a typical order. -->
+  <style>.t{font-size:18px;fill:#1b2a3a} .b{font-size:21px;font-weight:bold;fill:#1b2a3a} .s{font-size:15px;fill:#6b7785}</style>
+  <rect x="20" y="40" width="520" height="120" fill="#d6e6f2"/>
+  <rect x="20" y="160" width="520" height="170" fill="#b9c8d4"/>
+  <rect x="20" y="330" width="520" height="70" fill="#6b4a2b" fill-opacity="0.7"/>
+  <line x1="20" y1="160" x2="540" y2="160" stroke="#1b2a3a" stroke-width="2" stroke-dasharray="8 6"/>
+  <text class="b" x="36" y="72">Surface water: O₂ from air and algae</text>
+  <text class="s" x="330" y="152">thermocline: little mixing</text>
+  <text class="b" x="36" y="200">Bottom water</text>
+  <text class="t" x="36" y="228">organic matter sinks and is oxidised:</text>
+  <text class="t" x="36" y="254">CH₂O + O₂ → CO₂ + H₂O</text>
+  <text class="t" x="36" y="282">O₂ is used up and not replaced</text>
+  <text class="b" x="36" y="372" style="fill:#fff">Sediment</text>
+  <g fill="#25713E"><circle cx="420" cy="100" r="6"/><circle cx="450" cy="120" r="5"/><circle cx="480" cy="105" r="6"/></g>
+  <g fill="#7a5230"><circle cx="430" cy="190" r="4"/><circle cx="460" cy="230" r="4"/><circle cx="490" cy="270" r="4"/><circle cx="445" cy="300" r="4"/></g>
+  <text class="b" x="590" y="50">When O₂ runs out, microbes use</text>
+  <rect x="590" y="70" width="340" height="50" rx="8" fill="#2468A0" fill-opacity="0.15"/><text x="606" y="101" font-size="20" font-weight="bold" fill="#2468A0">O₂</text><text x="735" y="101" font-size="14" fill="#1b2a3a">used first</text><rect x="590" y="132" width="340" height="50" rx="8" fill="#25713E" fill-opacity="0.15"/><text x="606" y="163" font-size="20" font-weight="bold" fill="#25713E">NO₃⁻</text><text x="735" y="163" font-size="14" fill="#1b2a3a"></text><rect x="590" y="194" width="340" height="50" rx="8" fill="#8e6bb0" fill-opacity="0.15"/><text x="606" y="225" font-size="20" font-weight="bold" fill="#8e6bb0">Mn(IV) oxides</text><text x="735" y="225" font-size="14" fill="#1b2a3a"></text><rect x="590" y="256" width="340" height="50" rx="8" fill="#AD4825" fill-opacity="0.15"/><text x="606" y="287" font-size="20" font-weight="bold" fill="#AD4825">Fe(III) oxides</text><text x="735" y="287" font-size="14" fill="#1b2a3a">dissolve; Fe²⁺, P released</text><rect x="590" y="318" width="340" height="50" rx="8" fill="#b8860b" fill-opacity="0.15"/><text x="606" y="349" font-size="20" font-weight="bold" fill="#b8860b">SO₄²⁻</text><text x="735" y="349" font-size="14" fill="#1b2a3a">→ H₂S, rotten-egg smell</text>
+  <text class="s" x="590" y="400">typical order, top to bottom</text>
+</svg>

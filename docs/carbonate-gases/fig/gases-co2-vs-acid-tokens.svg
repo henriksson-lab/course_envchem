@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: the same starting water receives 3 CO2 or 3 H+ (strong acid). CO2 raises carbon at constant alkalinity; acid lowers alkalinity at constant carbon. Both lower the HCO3-/CO2* ratio and so lower pH. -->
+  <defs>
+    <g id="b"><circle r="15" fill="#25713E"/><text y="5" font-size="12" text-anchor="middle" fill="#fff" font-weight="bold">−</text></g>
+    <g id="c"><circle r="15" fill="#2468A0"/></g>
+  </defs>
+  <style>.hd{font-size:22px;font-weight:bold;fill:#1b2a3a;text-anchor:middle} .ct{font-size:18px;fill:#1b2a3a;text-anchor:middle} .k{font-size:17px;fill:#1b2a3a;text-anchor:middle}</style>
+  <text class="hd" x="150" y="30">Start</text>
+  <rect x="10" y="45" width="280" height="200" rx="12" fill="#d6e6f2" stroke="#1b2a3a" stroke-width="2"/><use href="#b" x="50" y="75"/><use href="#b" x="115" y="75"/><use href="#b" x="180" y="75"/><use href="#b" x="245" y="75"/><use href="#b" x="50" y="123"/><use href="#b" x="115" y="123"/><use href="#b" x="180" y="123"/><use href="#b" x="245" y="123"/><use href="#b" x="50" y="171"/><use href="#b" x="115" y="171"/><use href="#c" x="180" y="171"/><use href="#c" x="245" y="171"/>
+  <text class="ct" x="150" y="275">10 HCO₃⁻ + 2 CO₂*</text>
+  <text class="hd" x="485" y="30">+ 3 CO₂ from the air</text>
+  <rect x="345" y="45" width="280" height="200" rx="12" fill="#d6e6f2" stroke="#1b2a3a" stroke-width="2"/><use href="#b" x="385" y="75"/><use href="#b" x="450" y="75"/><use href="#b" x="515" y="75"/><use href="#b" x="580" y="75"/><use href="#b" x="385" y="123"/><use href="#b" x="450" y="123"/><use href="#b" x="515" y="123"/><use href="#b" x="580" y="123"/><use href="#b" x="385" y="171"/><use href="#b" x="450" y="171"/><use href="#c" x="515" y="171"/><use href="#c" x="580" y="171"/><use href="#c" x="385" y="219"/><use href="#c" x="450" y="219"/><use href="#c" x="515" y="219"/>
+  <text class="ct" x="485" y="275">10 HCO₃⁻ + 5 CO₂*</text>
+  <text class="hd" x="820" y="30">+ 3 H⁺ (strong acid)</text>
+  <rect x="680" y="45" width="280" height="200" rx="12" fill="#d6e6f2" stroke="#1b2a3a" stroke-width="2"/><use href="#b" x="720" y="75"/><use href="#b" x="785" y="75"/><use href="#b" x="850" y="75"/><use href="#b" x="915" y="75"/><use href="#b" x="720" y="123"/><use href="#b" x="785" y="123"/><use href="#b" x="850" y="123"/><use href="#c" x="915" y="123"/><use href="#c" x="720" y="171"/><use href="#c" x="785" y="171"/><use href="#c" x="850" y="171"/><use href="#c" x="915" y="171"/>
+  <text class="ct" x="820" y="275">7 HCO₃⁻ + 5 CO₂*</text>
+  <rect x="345" y="295" width="280" height="110" rx="10" fill="#e3efe6"/>
+  <text class="k" x="485" y="325"><tspan font-weight="bold">Carbon:</tspan> 12 → 15 (up)</text>
+  <text class="k" x="485" y="352"><tspan font-weight="bold">Alkalinity:</tspan> 10 → 10 (same)</text>
+  <text class="k" x="485" y="379">HCO₃⁻ : CO₂* = 10 : 5</text>
+  <rect x="680" y="295" width="280" height="110" rx="10" fill="#f6e3df"/>
+  <text class="k" x="820" y="325"><tspan font-weight="bold">Carbon:</tspan> 12 → 12 (same)</text>
+  <text class="k" x="820" y="352"><tspan font-weight="bold">Alkalinity:</tspan> 10 → 7 (down)</text>
+  <text class="k" x="820" y="379">HCO₃⁻ : CO₂* = 7 : 5</text>
+  <rect x="10" y="295" width="280" height="110" rx="10" fill="#eef1f5"/>
+  <text class="k" x="150" y="325"><tspan font-weight="bold">Carbon:</tspan> 12</text>
+  <text class="k" x="150" y="352"><tspan font-weight="bold">Alkalinity:</tspan> 10</text>
+  <text class="k" x="150" y="379">HCO₃⁻ : CO₂* = 10 : 2</text>
+</svg>

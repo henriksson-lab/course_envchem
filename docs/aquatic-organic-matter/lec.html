@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-073ca42b956148f7f9761d97a475d639.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -128,6 +144,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Organic matter in water</h1>
+  <p class="subtitle">Week 2 — Aquatic composition and carbonate chemistry</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -138,54 +155,511 @@ Environmental Chemistry
 </div>
 
 </section>
-<section id="chemical-question" class="slide level2">
-<h2>Chemical question</h2>
-<p>How can two waters contain the same dissolved total metal while differing in free metal, light penetration, and oxygen demand?</p>
-</section>
-<section id="what-to-explain" class="slide level2">
-<h2>What to explain</h2>
+<section id="about-this-lecture" class="slide level2">
+<h2>About this lecture</h2>
+<div class="columns">
+<div class="column" style="width:56%;">
+<p>Over recent decades, <strong>many lakes and rivers in Sweden and the rest of northern Europe have become browner</strong>. Researchers call it <em>brownification</em>. Water utilities notice it first: browner raw water needs more treatment before it can be drunk.</p>
+<p>The colour comes from <strong>dissolved organic matter</strong> washed in from forest soils and peat.</p>
+<p>Today you will learn to:</p>
 <ul>
-<li>Distinguish organic carbon amount from its molecular composition and reactivity.</li>
-<li>Explain metal binding and light attenuation without treating all organic matter as identical.</li>
-<li>Calculate an idealised oxygen demand and state its limits.</li>
+<li>read what <strong>DOC</strong> measures, and what it does not;</li>
+<li>explain how organic acids <strong>bind protons and metals</strong>;</li>
+<li>connect <strong>colour</strong> to light in the water;</li>
+<li>calculate an idealised <strong>oxygen demand</strong> and say when water runs out of oxygen.</li>
 </ul>
+</div><div class="column" style="width:44%;">
+<p><img data-src="img/brown-water.jpg" style="width:70.0%"> <span class="credit">Brown, humic river water, Korkeakoskenjoki, Finland. Photo: Anna Reponen, CC BY 4.0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Open with brownification because it is happening in the students’ own landscape. Long-term monitoring across Scandinavia, Finland and the UK has shown rising water colour and dissolved organic carbon in many lakes and rivers since the 1980s and 1990s. Several causes have been proposed, and we return to them at the end. Last lecture we followed inorganic carbon between air, water and calcite. Organic carbon is the other large pool of carbon in fresh water, and in boreal lakes it is often larger than the inorganic pool. It also explains a fact from last time: many northern lakes are supersaturated with carbon dioxide, partly because organic matter from land is decomposed in the water.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="operational-fractions" class="slide level2">
-<h2>Operational fractions</h2>
-<p>DOC measures carbon in an operational fraction.</p>
-<p>It does not specify one molecule, one ligand, or one degradation rate.</p>
+<section id="where-the-organic-matter-comes-from" class="slide level2">
+<h2>Where the organic matter comes from</h2>
+
+<img data-src="fig/om-sources.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Most dissolved organic matter in a <strong>boreal lake</strong> comes <strong>from land</strong>: decaying leaves, roots, soil humus and peat. It is coloured and rich in organic acids. A smaller part is <strong>made in the lake</strong> by algae and plants. That part is paler and is eaten quickly by bacteria.</p>
+<aside class="notes">
+<p>Two broad sources. Material from the catchment is called terrestrial or allochthonous; material produced in the lake is aquatic or autochthonous. You do not need the Greek words, but students may meet them in reading. Catchments with a lot of peat and coniferous forest deliver the most coloured water, especially during snowmelt and autumn rain, when water flows through the upper, organic-rich soil layers. Algal organic matter matters more in nutrient-rich lakes and in the sea. Wastewater and farm runoff add organic matter too, often easily degradable. The point for today is that “organic matter” is a mixture whose properties depend on where it came from.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="functional-groups-create-reactivity" class="slide level2">
-<h2>Functional groups create reactivity</h2>
-<p>Protonation changes binding sites.</p>
-<p>Metal–organic complexes can remain filtered while free metal decreases.</p>
-<p>Dissolved transport and free-ion exposure need separate interpretation.</p>
+<section id="not-one-molecule-a-size-continuum" class="slide level2">
+<h2>Not one molecule: a size continuum</h2>
+
+<img data-src="fig/om-size.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:82.0%"><p>Natural organic matter ranges from small acids to large particles. <strong>DOC</strong> (dissolved organic carbon) is the carbon in whatever passes the chosen filter; <strong>POC</strong> is what stays behind. DOC gives an <strong>amount of carbon</strong>, in mg C/L. It does not give a structure, a charge or a degradation rate.</p>
+<aside class="notes">
+<p>This is the same lesson as the filter slide in the first water lecture, applied to carbon. Organic matter spans many orders of magnitude in size, from small acids such as acetate through humic and fulvic acids to colloids, cells and fragments. The boundary between dissolved and particulate is the filter we choose, often around 0.45 micrometres. To measure DOC, the filtered sample is acidified to remove inorganic carbon, then the organic carbon is oxidised and measured as carbon dioxide. The result counts carbon atoms only. Two waters with the same DOC can differ in colour, acidity, metal binding and how fast bacteria consume them. Always report the filter and method with a DOC value.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="colour-changes-the-light-field" class="slide level2">
-<h2>Colour changes the light field</h2>
-<p>Equal DOC can have different colour.</p>
-<p>Absorption changes light availability and photochemistry.</p>
-<p>A colour change does not prove carbon mineralisation.</p>
+<section id="organic-acids-carry-charge" class="slide level2">
+<h2>Organic acids carry charge</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p>Humic substances carry <strong>carboxyl</strong> (–COOH) and <strong>phenolic</strong> (–OH) groups. Both are weak acids, so the ratio rule from the first water lecture applies:</p>
+<p><span class="math display">\frac{[\mathrm{R\text{-}COO^-}]}{[\mathrm{R\text{-}COOH}]}=10^{\,\mathrm{pH}-pK_a}</span></p>
+<p>At natural pH most <strong>carboxyl</strong> groups have lost H⁺; most <strong>phenolic</strong> groups have not.</p>
+<p>So brown water contains many <strong>organic anions</strong>. They supply H⁺, which is why many humic lakes are <strong>naturally acidic</strong>, and they count in the charge balance.</p>
+</div><div class="column" style="width:52%;">
+<p><img data-src="fig/om-group-charge.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>Link straight back to the weak-acid split. The pKa values are illustrative: real humic material has a broad spread of sites, roughly from three to five for carboxyl and nine to ten or more for phenolic groups. Above about pH 5 most carboxyl groups are negatively charged. This has two consequences. First, these organic acids release hydrogen ions, and many brown lakes in Sweden have a natural pH between about 5 and 6 even without acid rain. Distinguishing natural organic acidity from anthropogenic acidification was a real practical problem during the acid rain period. Second, organic anions appear in the charge balance and can make a carbonate-only alkalinity calculation misleading.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="organic-oxidation-consumes-oxygen" class="slide level2">
-<h2>Organic oxidation consumes oxygen</h2>
-<p>For the CH₂O model, 1 mol C → 1 mol O₂ demand.</p>
-<p>Real organic matter has variable composition and accessibility.</p>
+<section id="negative-sites-bind-metals" class="slide level2">
+<h2>Negative sites bind metals</h2>
+
+<img data-src="fig/om-groups.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Neighbouring negative groups can hold a metal ion such as <strong>Cu²⁺</strong>, Pb²⁺ or Al³⁺ in a <strong>complex</strong>. The metal stays in the filtered, “dissolved” fraction, but it is <strong>no longer a free ion</strong>. No electron moves: this is binding, not redox.</p>
+<aside class="notes">
+<p>The fragment is schematic. Real humic matter is a mixture, not a single molecule, and you should never present a structural formula for it as if it were known. What matters is the arrangement of acid groups. Two or more groups on the same molecule can grip a metal ion from several sides, which makes the complex strong. Copper, lead, mercury and aluminium bind particularly strongly. The connection to the first water lecture is the filter diagram: complexes pass the filter and are counted in dissolved metal. They are not counted in the free-ion concentration. And remember the redox slide: binding changes the metal’s form without changing its oxidation state.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="link-to-anoxia-and-sediment" class="slide level2">
-<h2>Link to anoxia and sediment</h2>
-<p>Organic substrate + restricted oxygen supply can promote anoxia.</p>
-<p>Changing iron phases can alter nutrient and metal retention.</p>
+<section id="same-total-different-free-metal" class="slide level2">
+<h2>Same total, different free metal</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="fig/om-bound-metal.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:50%;">
+<p>Waters A and B both contain <strong>2.00 µmol/L</strong> dissolved metal. Free metal is 0.500 in A and 0.100 µmol/L in B.</p>
+<ul>
+<li>Bound in A: (2.00 − 0.500)/2.00 = <strong>75.0%</strong></li>
+<li>Bound in B: (2.00 − 0.100)/2.00 = <strong>95.0%</strong></li>
+</ul>
+<p>The free ion differs <strong>fivefold</strong> with identical totals. The free ion is often the best single guide to what organisms take up, so several regulators, including in the EU, adjust metal limits for DOC and pH.</p>
+</div></div>
+<aside class="notes">
+<p>This is exercise one. The arithmetic is trivial; the interpretation is the point. A total dissolved metal measurement would rank these two waters as identical. The free metal ion, which interacts most directly with uptake sites on gills and cell surfaces, is five times higher in A. That is why environmental quality standards for metals such as copper, nickel and lead are increasingly expressed in terms of bioavailability, adjusted for dissolved organic carbon, pH and hardness. Keep the claim modest: binding to organic matter generally lowers free-ion exposure, but organic matter can also carry metals further downstream as complexes. The metals lecture next week builds on this.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="an-idealised-oxygen-demand" class="slide level2">
-<h2>An idealised oxygen demand</h2>
-<p>3.00 mg C/L × (32.0/12.0) = <strong>8.00 mg O₂/L</strong>.</p>
-<p>State substrate composition, extent of oxidation, and timescale.</p>
+<section id="colour-brown-water-absorbs-blue-light" class="slide level2">
+<h2>Colour: brown water absorbs blue light</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p><img data-src="fig/om-absorbance.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:48%;">
+<p>Coloured organic matter absorbs strongly in the <strong>ultraviolet</strong> and <strong>blue</strong>, and less towards red. Water that removes blue and passes yellow-red looks <strong>brown</strong>.</p>
+<p>Absorption falls roughly <strong>exponentially</strong> with wavelength. How steeply, and how much absorption per gram of carbon, depends on the source of the material.</p>
+<p>The two constructed waters have <strong>the same DOC</strong> but differ fourfold in colour. Colour is a <strong>property</strong>, not a direct measure of carbon.</p>
+</div></div>
+<aside class="notes">
+<p>The curves are constructed, with round parameters of typical size. Point out the shape: very high absorption in the ultraviolet, falling steadily into the visible. Ultraviolet absorption at 254 nanometres or absorption at 420 nanometres are common routine measures of colour. Organic matter from peat and forest soils is rich in aromatic structures and absorbs strongly per unit carbon; algal material absorbs much less. So an absorbance measurement and a DOC measurement answer different questions. They are often correlated within one water body, but the ratio varies between waters and over time. Students should not convert colour into DOC with a universal factor.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="check-your-explanation" class="slide level2">
-<h2>Check your explanation</h2>
-<p>Water becomes darker while DOC changes little. What chemical explanations and measurements would you consider?</p>
-<p>Use the <a href="../aquatic-organic-matter/notes.html">notes and sources</a> and <a href="../aquatic-organic-matter/exercise.html">worked exercises</a>.</p>
+<section id="less-light-shallower-life" class="slide level2">
+<h2>Less light, shallower life</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p><img data-src="fig/om-light-depth.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:48%;">
+<p>Light decreases exponentially with depth:</p>
+<p><span class="math display">I(z)=I_0\,e^{-K_d z}</span></p>
+<p>The attenuation coefficient K<sub>d</sub> grows with colour. Plants and algae need roughly <strong>1%</strong> of surface light.</p>
+<ul>
+<li>clear lake, K<sub>d</sub> = 0.3 /m: 1% at <strong>15 m</strong></li>
+<li>brown lake, K<sub>d</sub> = 3 /m: 1% at <strong>1.5 m</strong></li>
+</ul>
+<p>Browning squeezes photosynthesis into a thin surface layer and lets less UV reach the water below.</p>
+</div></div>
+<aside class="notes">
+<p>The three lakes are constructed with round values, but the range is realistic between clear and very humic waters. The depth of one percent light is the logarithm of one hundred divided by Kd, about 4.6 divided by Kd. A tenfold increase in attenuation makes the lit layer ten times thinner. Consequences follow. Bottom plants and algae lose their light. The surface layer warms faster and the lake stratifies more strongly. Less ultraviolet penetrates, which protects some organisms but also reduces the natural disinfection of pathogens by sunlight. In a browning lake all these change together, which is why limnologists treat colour as a master variable.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="measuring-colour-in-the-field" class="slide level2">
+<h2>Measuring colour in the field</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p><img data-src="img/secchi-disk.jpg" style="width:100.0%"> <span class="credit">Secchi disk, Cochiti Lake, New Mexico, USA. Photo: U.S. Army Corps of Engineers, public domain, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:52%;">
+<p>A <strong>Secchi disk</strong> is lowered until it disappears. The depth is a simple measure of clarity, used in lake monitoring for over a century.</p>
+<p>But clarity mixes several causes. Water can darken while DOC stays nearly constant, if:</p>
+<ul>
+<li>the organic matter changes <strong>composition</strong> (more aromatic, more coloured);</li>
+<li><strong>iron</strong> increases: Fe(III) adds colour of its own and binds to organic matter;</li>
+<li><strong>particles</strong> increase.</li>
+</ul>
+<p>Measure absorbance, DOC, iron and particles <strong>separately</strong> before choosing an explanation.</p>
+</div></div>
+<aside class="notes">
+<p>This connects to exercise four. A darkening water is an observation, not an explanation. In southern Sweden, studies of rivers have found that rising iron concentrations explain a substantial part of the colour increase, alongside the increase in organic matter itself. Whether iron or organic matter dominates differs between catchments. The practical lesson is to measure the candidate causes independently: absorbance spectra, DOC, total and filtered iron, and turbidity or suspended solids. Do not infer a source, a degradation rate or a toxicity from colour alone. The Secchi disk is cheap and robust, and long Secchi records are among the data that first revealed brownification.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="sunlight-changes-organic-matter" class="slide level2">
+<h2>Sunlight changes organic matter</h2>
+
+<img data-src="fig/om-photo.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><p>Light absorbed by coloured organic matter breaks its light-absorbing groups. The water becomes <strong>paler</strong>, small molecules form that bacteria use readily, and <strong>some</strong> carbon is released as CO₂. A loss of colour therefore <strong>does not prove</strong> a loss of carbon.</p>
+<aside class="notes">
+<p>Photochemistry is the flip side of colour: whatever absorbs light can be changed by it. Bleaching removes colour faster than it removes carbon, so in a sunlit surface layer colour can fall while DOC hardly changes. Part of the organic matter is broken into small molecules such as low molecular weight acids, which bacteria then consume, and a smaller part is converted directly to carbon dioxide and carbon monoxide. Rates depend on sunlight, depth and the type of organic matter. Keep this qualitative. The take-home is the inverse of the previous slide: a change in colour and a change in carbon are separate observations and need separate measurements.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="organic-matter-consumes-oxygen" class="slide level2">
+<h2>Organic matter consumes oxygen</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Use CH₂O as a stand-in for simple organic matter:</p>
+<p><span class="math display">\mathrm{CH_2O+O_2\rightarrow CO_2+H_2O}</span></p>
+<p><strong>1 mol C uses 1 mol O₂</strong>, so 12.0 g C uses 32.0 g O₂.</p>
+<p><strong>Worked example:</strong> complete aerobic oxidation of 3.00 mg C/L:</p>
+<p>3.00 × 32.0/12.0 = <strong>8.00 mg O₂/L</strong></p>
+<p>That is close to <strong>all</strong> the oxygen water holds: about 9 mg/L at 20 °C.</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="fig/om-oxygen-budget.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>The reaction is the reverse of photosynthesis and is how bacteria get energy from organic matter. CH2O is a stoichiometric teaching formula, not the formula of humic substances, which are more reduced or more oxidised depending on their origin. With it, one carbon needs one oxygen molecule, and the mass ratio is thirty-two over twelve, about 2.67. The worked example from the notes shows the scale of the problem: a few milligrams of organic carbon per litre can in principle consume nearly all the dissolved oxygen. The chart is exercise two: a sealed litre at 9 milligrams per litre, with two milligrams of carbon, ends with 3.67.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="ultimate-demand-versus-what-you-measure" class="slide level2">
+<h2>Ultimate demand versus what you measure</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="fig/om-demand-time.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:45%;">
+<p>The 8.00 mg/L is an <strong>ultimate, stoichiometric</strong> demand. It assumes complete oxidation.</p>
+<p>Real organic matter degrades at different speeds. If only 25% of 4.00 mg C/L is oxidised during an observation period:</p>
+<ul>
+<li>consumed: 1.00 mg C → <strong>2.67 mg O₂/L</strong></li>
+<li>complete oxidation would need <strong>10.67 mg O₂/L</strong></li>
+</ul>
+<p>A 5-day test (BOD₅) measures the <strong>early</strong> part of the curve, not the ultimate demand.</p>
+</div></div>
+<aside class="notes">
+<p>This is exercise three. The curve is a constructed first-order decay with a round rate constant, chosen to make the shape visible. The difference between what has happened so far and what could happen eventually is important in practice. The standard biochemical oxygen demand test runs for five days in the dark at twenty degrees, and it measures only the readily degradable part. Humic organic matter from peat degrades much more slowly than algal material or sewage. So a brown lake can carry a large ultimate demand that a five-day test hardly sees. Also remember other oxygen consumers, such as nitrification of ammonium, which add to the demand.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="when-demand-outruns-supply" class="slide level2">
+<h2>When demand outruns supply</h2>
+
+<img data-src="fig/om-anoxia.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>In summer many lakes <strong>stratify</strong>: warm surface water floats on cold bottom water. The bottom water is cut off from the air, but organic matter keeps sinking into it. Oxygen falls, and microbes then use <strong>other electron acceptors</strong>: nitrate, manganese and iron oxides, and finally sulfate.</p>
+<aside class="notes">
+<p>An oxygen budget needs sources as well as sinks. In the surface layer oxygen is resupplied from the air and by photosynthesis. Below the thermocline, neither works well, while sinking organic matter and the sediment keep consuming oxygen. When oxygen is gone, microbes use the next available electron acceptor, in the order shown, which is the order of decreasing energy yield; week four covers it in detail. Two consequences matter here. Iron(III) oxides dissolve, releasing iron and the phosphate that was attached to them. Sulfate reduction produces hydrogen sulfide, which is toxic. Browning can strengthen stratification and add organic matter, both of which favour low oxygen.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-large-scale-case-the-baltic-sea" class="slide level2">
+<h2>A large-scale case: the Baltic Sea</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="img/baltic-bloom.jpg" style="width:100.0%"> <span class="credit">Cyanobacteria bloom in the Baltic Sea, July 2025 (Landsat). NASA Earth Observatory, public domain, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:45%;">
+<p>The Baltic has some of the <strong>largest low-oxygen bottom areas</strong> of any sea. Salty, dense water at depth is renewed only occasionally.</p>
+<p>Nutrients feed algal and cyanobacterial <strong>blooms</strong>. When the organic matter sinks and decays it consumes oxygen. Without oxygen, iron oxides in the sediment dissolve and <strong>release phosphate</strong>, which feeds the next bloom.</p>
+<p>The same chemistry as a stratified lake, on a regional scale.</p>
+</div></div>
+<aside class="notes">
+<p>The satellite image shows a summer cyanobacteria bloom swirling in the Baltic. The Baltic Sea is permanently stratified by salinity, with brackish water above and saltier water below, and the deep water is renewed only when occasional inflows of North Sea water arrive. Decades of nutrient input from agriculture and wastewater increased the production of organic matter, and its decay consumes oxygen in the deep basins. The release of phosphate from anoxic sediments, often called internal loading, is a feedback that keeps blooms going even after external inputs fall. Keep the numbers out of it; the mechanism is the point, and it is exactly the mechanism on the previous slide.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="check-yourself" class="slide level2">
+<h2>Check yourself</h2>
+<div class="checkbox">
+<ol type="1">
+<li>Two waters both have 6 mg/L DOC. Name three properties that could still differ.</li>
+<li>Why can a humic lake have pH 5.5 without any acid rain?</li>
+<li>Total dissolved copper is unchanged, but DOC doubles. What would you expect for free Cu²⁺?</li>
+<li>Complete oxidation of 1.50 mg C/L of CH₂O-like substrate needs how much O₂?</li>
+<li>Water becomes paler over a sunny summer. Has its DOC necessarily fallen?</li>
+</ol>
+</div>
+<aside class="notes">
+<p>Answers. One: colour or absorbance, acidity and charge, metal binding capacity, degradation rate, molecular size. Any three. Two: the organic matter itself contains carboxylic acids that release hydrogen ions. Three: more binding sites usually means more copper bound and less free copper, but the size of the effect depends on the binding chemistry and on pH, and some binding sites may already be occupied by other metals. Four: 1.50 times 32 over 12 gives 4.00 milligrams per litre. Five: no. Photobleaching removes colour faster than carbon. Measure DOC directly before concluding anything about carbon loss.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="back-to-browning-why-and-so-what" class="slide level2">
+<h2>Back to browning: why, and so what?</h2>
+
+<img data-src="fig/om-browning.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Several drivers act <strong>together</strong>, and their importance differs between catchments. Recovery from acid rain is one of the best supported: as sulfate deposition fell, soil organic matter became <strong>more soluble</strong>. Each consequence on the right uses a chemical idea from today.</p>
+<aside class="notes">
+<p>Return to the opening case. Research in Europe and North America has linked rising DOC to falling sulfate deposition: with less strong acid and less ionic strength in soil water, organic matter is more soluble and is washed out more easily. Climate also matters, through wetter autumns, milder winters and longer growing seasons, as do land use, including the expansion of spruce forests and ditching of peatlands, and rising iron. Read the consequences with the class and name the chemistry each uses: light absorption, oxygen stoichiometry, metal binding. This is an example of an environmental change produced by recovery from an earlier problem, a theme that returns later in the course.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="browning-and-drinking-water" class="slide level2">
+<h2>Browning and drinking water</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/bolmen.jpg" style="width:100.0%"> <span class="credit">Lake Bolmen at Piksborg, Småland. Photo: Eddie001, public domain, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Bolmen</strong> in Småland supplies drinking water to a large part of Skåne. Lakes like it are watched closely for colour and DOC.</p>
+<p>More organic matter means:</p>
+<ul>
+<li>more <strong>coagulant</strong> to remove colour and DOC;</li>
+<li>organic matter that reacts with <strong>chlorine</strong> to form unwanted <strong>disinfection by-products</strong>;</li>
+<li>organic matter left in pipes feeds <strong>bacterial regrowth</strong>.</li>
+</ul>
+<p>So browning is a chemistry problem for <strong>water treatment</strong>, the topic of a later unit.</p>
+</div></div>
+<aside class="notes">
+<p>Bolmen, in southern Småland, is the raw-water source for a regional supplier that serves many municipalities in Skåne through a long tunnel. Treatment plants that take water from brown lakes have had to adapt their processes as colour has risen. The chemistry links directly to today: coagulation removes humic material partly through its charged acid groups; chlorine reacts with aromatic structures to form trihalomethanes and other by-products, which are regulated; and easily degradable DOC left after treatment can support bacterial growth in the distribution network. The water treatment unit later in the course develops these processes. The photo is an ordinary view of the lake.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="common-mistakes-to-avoid" class="slide level2">
+<h2>Common mistakes to avoid</h2>
+<ul>
+<li><strong>“DOC is a substance.”</strong> It is the carbon in an operationally filtered fraction.</li>
+<li><strong>“Brown means more carbon.”</strong> Colour per unit carbon varies; iron adds colour.</li>
+<li><strong>“Dissolved metal is free metal.”</strong> Organic complexes pass the filter.</li>
+<li><strong>“More DOC means less dissolved metal.”</strong> It often means <strong>more</strong> dissolved but less <strong>free</strong> metal.</li>
+<li><strong>“CH₂O is the formula of humus.”</strong> It is a stoichiometric stand-in.</li>
+<li><strong>“BOD₅ is the total demand.”</strong> It measures the early, fast part.</li>
+<li><strong>“Paler water has lost carbon.”</strong> Photobleaching removes colour first.</li>
+</ul>
+<aside class="notes">
+<p>These are the interpretation errors that come up most often, in exams and in real reports. Ask students to explain the fourth one. Organic matter can keep metals in solution as complexes and carry them downstream, so total dissolved metal can increase with DOC, while the free ion decreases. That is not a contradiction: it is the difference between total and species from the first water lecture. Remind students that every number in this lecture is either a constructed teaching example or a round illustrative value, and that the exercises state their assumptions explicitly. They should do the same in their own answers.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Key fact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sources</td>
+<td>boreal lakes: mostly from land (coloured); some from algae (pale)</td>
+</tr>
+<tr class="even">
+<td>DOC</td>
+<td>carbon passing a stated filter; amount, not structure or reactivity</td>
+</tr>
+<tr class="odd">
+<td>Acid groups</td>
+<td>carboxyl mostly ionised at natural pH; humic lakes can be naturally acidic</td>
+</tr>
+<tr class="even">
+<td>Metal binding</td>
+<td>complexes stay “dissolved”; free ion falls; total is not free</td>
+</tr>
+<tr class="odd">
+<td>Colour</td>
+<td>absorbs UV and blue; colour per unit C varies; iron adds colour</td>
+</tr>
+<tr class="even">
+<td>Light</td>
+<td>I = I₀ e^(−K<sub>d</sub>z); 1% light at about 4.6/K<sub>d</sub></td>
+</tr>
+<tr class="odd">
+<td>Photochemistry</td>
+<td>bleaching removes colour faster than carbon</td>
+</tr>
+<tr class="even">
+<td>Oxygen demand</td>
+<td>CH₂O + O₂: 1 mol O₂ per mol C; 2.67 g O₂ per g C</td>
+</tr>
+<tr class="odd">
+<td>Ultimate vs measured</td>
+<td>complete oxidation versus what happens in the test period</td>
+</tr>
+<tr class="even">
+<td>Anoxia</td>
+<td>stratification + organic matter → low O₂ → Fe, P and H₂S released</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Next:</strong> Week 3, <a href="../metals/lec.html">Metal speciation and mobility</a>. Why does a Spanish river run red? Then the <a href="../aquatic-organic-matter/exercise.html">exercises</a> and the <a href="../aquatic-organic-matter/notes.html">notes</a>.</p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="img/rio-tinto.jpg" style="width:100.0%"> <span class="credit">Iron-rich, acidic water of the Río Tinto, Spain. Photo: Carol Stoker, NASA, public domain, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Recap the three roles of organic matter. As an acid it carries charge and binds metals. As a pigment it controls light. As a fuel it consumes oxygen and can drive water to anoxia, with consequences for iron, phosphorus and sulfide. All three are behind the browning of northern waters. Week three starts with metals, and builds directly on today’s distinction between total, complexed and free metal, and on the redox chemistry of iron. The teaser photo is the Río Tinto in southern Spain, coloured by iron from centuries of mining and very acidic. Next week explains how acidity, redox and binding control which metals stay dissolved and which precipitate.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 
 
 </section>

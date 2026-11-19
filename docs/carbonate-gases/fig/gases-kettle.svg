@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: why hard water scales a kettle. Heating drives CO2 out; at constant alkalinity carbonate ion rises until calcite is supersaturated and precipitates on the heating surface. -->
+  <defs><marker id="ar" markerWidth="12" markerHeight="12" refX="6" refY="10" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,0 L6,11 Z" fill="#1b2a3a" transform="rotate(-90 6 6)"/></marker></defs>
+  <!-- kettle -->
+  <path d="M60,140 L260,140 L280,380 L40,380 Z" fill="#d6e6f2" stroke="#1b2a3a" stroke-width="4"/>
+  <path d="M60,140 Q160,110 260,140" fill="none" stroke="#1b2a3a" stroke-width="4"/>
+  <path d="M260,170 Q310,160 300,250 L276,330" fill="none" stroke="#1b2a3a" stroke-width="4"/>
+  <path d="M40,200 L15,170" stroke="#1b2a3a" stroke-width="4"/>
+  <rect x="60" y="345" width="200" height="14" rx="6" fill="#7f8c8d"/>
+  <rect x="62" y="335" width="196" height="10" rx="4" fill="#efe6d2" stroke="#b8a888"/>
+  <text x="160" y="405" font-size="16" fill="#6b7785" text-anchor="middle">element with CaCO₃ scale</text>
+  <g fill="none" stroke="#2468A0" stroke-width="2"><circle cx="100" cy="300" r="7"/><circle cx="130" cy="250" r="9"/><circle cx="180" cy="290" r="6"/><circle cx="210" cy="220" r="8"/><circle cx="150" cy="190" r="7"/><circle cx="105" cy="210" r="6"/></g>
+  <text x="160" y="100" font-size="17" fill="#1b2a3a" text-anchor="middle">CO₂ escapes</text>
+  <path d="M130,85 q-10,-20 0,-40 M160,80 q-10,-20 0,-40 M190,85 q-10,-20 0,-40" stroke="#6b7785" stroke-width="2" fill="none"/>
+  <rect x="330" y="20" width="560" height="84" rx="12" fill="#f4f7fa" stroke="#c0392b" stroke-width="3"/><text x="350" y="70" font-size="24" font-weight="bold" fill="#c0392b">Heat</text><text x="510" y="56" font-size="18" fill="#1b2a3a">CO₂ is less soluble in hot water;</text><text x="510" y="82" font-size="18" fill="#1b2a3a">bubbles carry it out</text><path d="M392,106 L408,106 L400,119 Z" fill="#1b2a3a"/><rect x="330" y="120" width="560" height="84" rx="12" fill="#f4f7fa" stroke="#2468A0" stroke-width="3"/><text x="350" y="170" font-size="24" font-weight="bold" fill="#2468A0">CO₂* falls</text><text x="510" y="156" font-size="18" fill="#1b2a3a">bicarbonate re-forms the lost CO₂:</text><text x="510" y="182" font-size="18" fill="#1b2a3a">2 HCO₃⁻ → CO₃²⁻ + CO₂ + H₂O</text><path d="M392,206 L408,206 L400,219 Z" fill="#1b2a3a"/><rect x="330" y="220" width="560" height="84" rx="12" fill="#f4f7fa" stroke="#25713E" stroke-width="3"/><text x="350" y="270" font-size="24" font-weight="bold" fill="#25713E">CO₃²⁻ rises</text><text x="510" y="256" font-size="18" fill="#1b2a3a">alkalinity is unchanged, so pH rises</text><text x="510" y="282" font-size="18" fill="#1b2a3a">and carbonate ion builds up</text><path d="M392,306 L408,306 L400,319 Z" fill="#1b2a3a"/><rect x="330" y="320" width="560" height="84" rx="12" fill="#f4f7fa" stroke="#AD4825" stroke-width="3"/><text x="350" y="370" font-size="24" font-weight="bold" fill="#AD4825">Ω > 1</text><text x="510" y="356" font-size="18" fill="#1b2a3a">Ca²⁺ + CO₃²⁻ → CaCO₃(s)</text><text x="510" y="382" font-size="18" fill="#1b2a3a">forms on the hot element</text>
+</svg>

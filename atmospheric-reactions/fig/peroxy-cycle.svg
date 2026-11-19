@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="460" viewBox="0 0 980 460" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: peroxy radicals convert NO to NO2 without using O3, so the cycle makes net ozone. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+    <marker id="arb" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#2468A0"/></marker>
+    <marker id="arg" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#25713E"/></marker>
+    <marker id="aro" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#b8860b"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .sp{font-size:26px;font-weight:bold;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <text class="t" x="20" y="36">Oxidising a VOC or CO makes peroxy radicals (HO₂, RO₂)</text>
+  <text class="sp" x="120" y="110" font-size="22">VOC or CO</text>
+  <text class="lc" x="120" y="140" font-size="16">from traffic, solvents, trees</text>
+  <line class="ln" x1="210" y1="103" x2="300" y2="103" marker-end="url(#ar)"/>
+  <text class="lc" x="255" y="90" font-size="17">+ OH, O₂</text>
+  <text class="sp" x="370" y="112" fill="#AD4825">RO₂ / HO₂</text>
+  <path class="ln" d="M370,125 C370,200 380,230 420,255" marker-end="url(#ar)"/>
+  <rect x="420" y="225" width="250" height="60" rx="10" fill="#ffffff" stroke="#AD4825" stroke-width="3"/>
+  <text class="lc" x="545" y="262" font-weight="bold">RO₂ + NO → RO + NO₂</text>
+  <text class="lc" x="545" y="310" font-size="16" fill="#AD4825">NO turns into NO₂ without using O₃</text>
+  <text class="sp" x="800" y="262" fill="#25713E">NO₂</text>
+  <line class="ln" x1="672" y1="255" x2="760" y2="255" marker-end="url(#ar)"/>
+  <line class="ln" x1="800" y1="275" x2="800" y2="360" marker-end="url(#ar)"/>
+  <text class="l" x="815" y="320">light, then O + O₂</text>
+  <text class="sp" x="800" y="395" fill="#6a4c93">O₃  (net gain)</text>
+  <path class="ln" d="M790,335 C600,420 380,400 300,300 C280,270 300,255 410,262" stroke-dasharray="7 5" marker-end="url(#ar)"/>
+  <text class="lc" x="470" y="445" font-size="16">NO comes back again and again</text>
+  <text class="l" x="20" y="230" font-size="17">needs:</text>
+  <text class="l" x="20" y="255" font-size="17">• sunlight</text>
+  <text class="l" x="20" y="280" font-size="17">• NOₓ</text>
+  <text class="l" x="20" y="305" font-size="17">• VOC or CO</text>
+</svg>

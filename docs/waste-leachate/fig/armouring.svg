@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="360" viewBox="0 0 940 360" font-family="Helvetica, Arial, sans-serif">
+  <!-- Mechanism: limestone in acid, iron-rich water becomes coated (armoured) with Fe(OH)3 and gypsum; H+ can no longer reach the calcite, so the inventory remains but the realised neutralisation falls. -->
+  <defs>
+    <marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker>
+    <g id="h"><circle r="13" fill="#c0392b"/><text y="5" font-size="12" text-anchor="middle" fill="#fff" font-weight="bold">H⁺</text></g>
+  </defs>
+  <style>
+    .hd{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .t{font-size:17px;fill:#1b2a3a;text-anchor:middle}
+  </style>
+  <text class="hd" x="220" y="32">Fresh limestone</text>
+  <text class="hd" x="700" y="32">Armoured limestone</text>
+  <rect x="20" y="45" width="400" height="230" rx="12" fill="#d6e6f2"/>
+  <rect x="500" y="45" width="400" height="230" rx="12" fill="#d6e6f2"/>
+  <circle cx="220" cy="165" r="80" fill="#eee8dc" stroke="#8e9aaf" stroke-width="3"/>
+  <text class="t" x="220" y="170">CaCO₃</text>
+  <circle cx="700" cy="165" r="92" fill="#c8693a"/>
+  <circle cx="700" cy="165" r="80" fill="#eee8dc" stroke="#8e9aaf" stroke-width="3"/>
+  <text class="t" x="700" y="170">CaCO₃</text>
+  <text x="700" y="268" font-size="15" fill="#7a3b1e" text-anchor="middle" font-weight="bold">Fe(OH)₃ / gypsum coating</text>
+  <use href="#h" x="80" y="90"/><use href="#h" x="360" y="110"/><use href="#h" x="90" y="230"/>
+  <g stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)">
+    <line x1="95" y1="98" x2="148" y2="125"/><line x1="345" y1="117" x2="298" y2="140"/><line x1="105" y1="224" x2="148" y2="205"/>
+  </g>
+  <use href="#h" x="560" y="80"/><use href="#h" x="850" y="100"/><use href="#h" x="560" y="250"/>
+  <g stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)">
+    <line x1="573" y1="88" x2="608" y2="110"/><line x1="836" y1="106" x2="800" y2="122"/>
+  </g>
+  <text x="590" y="70" font-size="26" fill="#c0392b" font-weight="bold">✕</text>
+  <text class="t" x="220" y="310">H⁺ reaches calcite: CaCO₃ + 2H⁺ → Ca²⁺ + CO₂ + H₂O</text>
+  <text class="t" x="700" y="310">Calcite still there, but H⁺ cannot reach it.</text>
+  <text class="t" x="460" y="345" font-weight="bold">An inventory is a maximum, not a guarantee.</text>
+</svg>

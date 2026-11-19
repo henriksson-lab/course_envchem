@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="420" viewBox="0 0 940 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: sources of natural organic matter in a lake. Most dissolved organic matter in boreal lakes comes from catchment soils and peat (coloured); some is produced in the lake by algae (paler). -->
+  <defs><marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker><marker id="arb" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#7a5230"/></marker></defs>
+  <style>.t{font-size:18px;fill:#1b2a3a} .b{font-size:21px;font-weight:bold;fill:#1b2a3a} .s{font-size:15px;fill:#6b7785}</style>
+  <!-- hillside -->
+  <path d="M0,120 L380,250 L380,420 L0,420 Z" fill="#c9b79c"/>
+  <path d="M0,120 L380,250" stroke="#5c7a3a" stroke-width="10"/>
+  <g fill="#3f6b35"><path d="M60,60 l22,80 h-44z"/><path d="M130,85 l22,80 h-44z"/><path d="M200,110 l22,80 h-44z"/><path d="M270,135 l22,80 h-44z"/></g>
+  <rect x="0" y="330" width="380" height="90" fill="#6b4a2b" opacity="0.6"/>
+  <text class="t" x="20" y="365" style="fill:#fff">peat and humus-rich soil</text>
+  <!-- lake -->
+  <path d="M380,250 L940,250 L940,420 L380,420 Z" fill="#b58a5a" opacity="0.45"/>
+  <line x1="380" y1="250" x2="940" y2="250" stroke="#2468A0" stroke-width="3"/>
+  <g fill="#25713E"><circle cx="700" cy="285" r="6"/><circle cx="730" cy="300" r="5"/><circle cx="760" cy="280" r="6"/><circle cx="790" cy="305" r="5"/><circle cx="820" cy="288" r="6"/></g>
+  <path d="M120,300 C220,320 300,330 470,320" fill="none" stroke="#7a5230" stroke-width="5" marker-end="url(#arb)"/>
+  <text class="b" x="420" y="140" style="fill:#7a5230">From land</text>
+  <text class="t" x="420" y="166">leaves, roots, soil humus, peat</text>
+  <text class="t" x="420" y="190">washed in by rain and snowmelt</text>
+  <text class="t" x="420" y="214"><tspan font-weight="bold">coloured</tspan>, rich in aromatic acids</text>
+  <text class="b" x="690" y="345" style="fill:#25713E">Made in the lake</text>
+  <text class="t" x="690" y="371">algae and plants release</text>
+  <text class="t" x="690" y="395">paler, easily degraded</text>
+  <text class="s" x="560" y="60">Also: wastewater, farm runoff</text>
+  <circle cx="900" cy="60" r="34" fill="#f2c94c"/>
+</svg>

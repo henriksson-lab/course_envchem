@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="460" viewBox="0 0 980 460" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: catchment processes that consume or produce acidity between deposition and lake. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+    <marker id="arb" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#2468A0"/></marker>
+    <marker id="arg" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#25713E"/></marker>
+    <marker id="aro" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#b8860b"/></marker>
+      <marker id="big-ar" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#1b2a3a"/></marker><marker id="big-arr" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#AD4825"/></marker><marker id="big-arb" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#2468A0"/></marker><marker id="big-arg" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#25713E"/></marker><marker id="big-aro" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#b8860b"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .sp{font-size:26px;font-weight:bold;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <path d="M0,120 L620,260 L620,460 L0,460 Z" fill="#c9a77c"/>
+  <path d="M0,120 L620,260 L620,300 L0,170 Z" fill="#7a5a2b"/>
+  <path d="M0,300 L620,400 L620,460 L0,460 Z" fill="#8a8f96"/>
+  <path d="M620,260 L980,260 L980,460 L620,460 Z" fill="#8a8f96"/>
+  <path d="M600,262 L980,262 L980,330 C860,345 720,345 640,300 Z" fill="#9cc3e6"/>
+  <text class="h" x="820" y="300">lake</text>
+  <text x="15" y="150" font-size="16" fill="#fff" font-weight="bold">topsoil</text>
+  <text x="15" y="250" font-size="16" fill="#1b2a3a" font-weight="bold">mineral soil</text>
+  <text x="15" y="420" font-size="16" fill="#fff" font-weight="bold">bedrock</text>
+  <line x1="120" y1="20" x2="120" y2="125" stroke="#AD4825" stroke-width="5" marker-end="url(#big-arr)"/>
+  <text x="135" y="45" font-size="18" fill="#AD4825" font-weight="bold">acid deposition: H⁺, SO₄²⁻, NO₃⁻, NH₄⁺</text>
+  <rect x="250" y="70" width="330" height="62" rx="10" fill="#ffffff" fill-opacity=".9"/>
+  <text x="262" y="95" font-size="16" fill="#25713E" font-weight="bold">plants take up NH₄⁺ and NO₃⁻</text>
+  <text x="262" y="120" font-size="16" fill="#AD4825" font-weight="bold">nitrification makes H⁺</text>
+  <rect x="140" y="185" width="380" height="62" rx="10" fill="#ffffff" fill-opacity=".9"/>
+  <text x="152" y="210" font-size="16" fill="#1b2a3a" font-weight="bold">cation exchange: soil gives Ca²⁺ for H⁺</text>
+  <text x="152" y="235" font-size="15" fill="#6b7785">fast, but the store can run down</text>
+  <rect x="120" y="320" width="420" height="62" rx="10" fill="#ffffff" fill-opacity=".9"/>
+  <text x="132" y="345" font-size="16" fill="#1b2a3a" font-weight="bold">weathering: minerals use up H⁺, release Ca²⁺</text>
+  <text x="132" y="370" font-size="15" fill="#6b7785">slow on granite, fast on limestone</text>
+  <path d="M420,160 C500,190 560,230 640,275" fill="none" stroke="#2468A0" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arb)"/>
+  <path d="M300,290 C420,330 520,330 640,300" fill="none" stroke="#2468A0" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arb)"/>
+  <text x="660" y="380" font-size="16" fill="#fff" font-weight="bold">shallow flow: little contact,</text>
+  <text x="660" y="402" font-size="16" fill="#fff" font-weight="bold">deep flow: more neutralised</text>
+</svg>

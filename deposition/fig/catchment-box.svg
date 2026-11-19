@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="500" viewBox="0 0 640 500" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: the teaching catchment as a box - deposition flux times area in, water export out. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+    <marker id="arb" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#2468A0"/></marker>
+    <marker id="arg" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#25713E"/></marker>
+    <marker id="aro" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#b8860b"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .sp{font-size:26px;font-weight:bold;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <line x1="320" y1="20" x2="320" y2="120" stroke="#AD4825" stroke-width="3.5" marker-end="url(#arr)"/>
+  <text x="340" y="50" font-size="19" fill="#AD4825" font-weight="bold">0.0400 eq m⁻² yr⁻¹</text>
+  <text x="340" y="76" font-size="17" fill="#AD4825">acid deposition flux</text>
+  <path d="M90,140 L470,140 L550,230 L170,230 Z" fill="#cfe3c4" stroke="#25713E" stroke-width="2.5"/>
+  <path d="M90,140 L90,190 L170,280 L170,230" fill="#c9a77c" stroke="#7a5a2b" stroke-width="2"/>
+  <path d="M170,230 L550,230 L550,280 L170,280 Z" fill="#c9a77c" stroke="#7a5a2b" stroke-width="2"/>
+  <text class="lc" x="320" y="192" font-weight="bold">area 1.00 × 10⁶ m² (1 km²)</text>
+  <text class="lc" x="360" y="262" fill="#fff" font-weight="bold">soil</text>
+  <line x1="550" y1="260" x2="610" y2="330" stroke="#2468A0" stroke-width="3.5" marker-end="url(#arb)"/>
+  <text x="625" y="370" text-anchor="end" font-size="19" fill="#2468A0" font-weight="bold">water export</text>
+  <text x="625" y="396" text-anchor="end" font-size="17" fill="#2468A0">5.00 × 10⁸ L/yr (≈ 500 mm)</text>
+  <rect x="20" y="320" width="340" height="160" rx="12" fill="#f6efe0" stroke="#b8860b" stroke-width="2"/>
+  <text class="lc" x="190" y="352">input = flux × area</text>
+  <text class="lc" x="190" y="380">= 0.0400 × 1.00 × 10⁶</text>
+  <text class="h" x="190" y="412">= 40 000 eq/yr</text>
+  <text class="lc" x="190" y="448">÷ 5.00 × 10⁸ L/yr = 0.0800 meq/L</text>
+</svg>

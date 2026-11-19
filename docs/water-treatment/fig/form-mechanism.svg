@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="480" viewBox="0 0 1000 480" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: match the form of a pollutant to a mechanism and name where it goes -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <text x="110" y="32" font-size="18" fill="#6b7785" text-anchor="middle" font-weight="bold" >Form in the water</text>
+  <text x="480" y="32" font-size="18" fill="#6b7785" text-anchor="middle" font-weight="bold" >Mechanism</text>
+  <text x="840" y="32" font-size="18" fill="#6b7785" text-anchor="middle" font-weight="bold" >Where it goes</text>
+  <rect x="10" y="50" width="200" height="52" rx="8" fill="#8a6a3f" stroke="none" stroke-width="0"/>
+  <text x="110" y="82" font-size="18" fill="white" text-anchor="middle" font-weight="bold" >particles</text>
+  <line x1="215" y1="76" x2="300" y2="76" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="305" y="50" width="350" height="52" rx="8" fill="white" stroke="#8a6a3f" stroke-width="2.5"/>
+  <text x="480" y="82" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >settling, filtration</text>
+  <line x1="660" y1="76" x2="720" y2="76" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="725" y="50" width="230" height="52" rx="8" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <text x="840" y="82" font-size="17" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >sludge</text>
+  <rect x="10" y="115" width="200" height="52" rx="8" fill="#b8860b" stroke="none" stroke-width="0"/>
+  <text x="110" y="147" font-size="18" fill="white" text-anchor="middle" font-weight="bold" >colloids</text>
+  <line x1="215" y1="141" x2="300" y2="141" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="305" y="115" width="350" height="52" rx="8" fill="white" stroke="#b8860b" stroke-width="2.5"/>
+  <text x="480" y="147" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >coagulation, then settling</text>
+  <line x1="660" y1="141" x2="720" y2="141" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="725" y="115" width="230" height="52" rx="8" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <text x="840" y="147" font-size="17" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >sludge</text>
+  <rect x="10" y="180" width="200" height="52" rx="8" fill="#c27c3a" stroke="none" stroke-width="0"/>
+  <text x="110" y="212" font-size="18" fill="white" text-anchor="middle" font-weight="bold" >phosphate, metals</text>
+  <line x1="215" y1="206" x2="300" y2="206" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="305" y="180" width="350" height="52" rx="8" fill="white" stroke="#c27c3a" stroke-width="2.5"/>
+  <text x="480" y="212" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >precipitation, sorption</text>
+  <line x1="660" y1="206" x2="720" y2="206" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="725" y="180" width="230" height="52" rx="8" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <text x="840" y="212" font-size="17" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >sludge</text>
+  <rect x="10" y="245" width="200" height="52" rx="8" fill="#25713E" stroke="none" stroke-width="0"/>
+  <text x="110" y="277" font-size="18" fill="white" text-anchor="middle" font-weight="bold" >ammonium, nitrate</text>
+  <line x1="215" y1="271" x2="300" y2="271" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="305" y="245" width="350" height="52" rx="8" fill="white" stroke="#25713E" stroke-width="2.5"/>
+  <text x="480" y="277" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >nitrification + denitrification</text>
+  <line x1="660" y1="271" x2="720" y2="271" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="725" y="245" width="230" height="52" rx="8" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <text x="840" y="277" font-size="17" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >N₂ gas (air)</text>
+  <rect x="10" y="310" width="200" height="52" rx="8" fill="#8a5a2b" stroke="none" stroke-width="0"/>
+  <text x="110" y="342" font-size="18" fill="white" text-anchor="middle" font-weight="bold" >organic matter</text>
+  <line x1="215" y1="336" x2="300" y2="336" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="305" y="310" width="350" height="52" rx="8" fill="white" stroke="#8a5a2b" stroke-width="2.5"/>
+  <text x="480" y="342" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >biological oxidation</text>
+  <line x1="660" y1="336" x2="720" y2="336" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="725" y="310" width="230" height="52" rx="8" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <text x="840" y="342" font-size="17" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >CO₂ + new biomass</text>
+  <rect x="10" y="375" width="200" height="52" rx="8" fill="#2468A0" stroke="none" stroke-width="0"/>
+  <text x="110" y="407" font-size="18" fill="white" text-anchor="middle" font-weight="bold" >microorganisms</text>
+  <line x1="215" y1="401" x2="300" y2="401" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="305" y="375" width="350" height="52" rx="8" fill="white" stroke="#2468A0" stroke-width="2.5"/>
+  <text x="480" y="407" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >disinfection</text>
+  <line x1="660" y1="401" x2="720" y2="401" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="725" y="375" width="230" height="52" rx="8" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <text x="840" y="407" font-size="17" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >inactivated in water</text>
+  <text x="500" y="470" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >One "removal percentage" cannot describe all of these.</text>
+</svg>

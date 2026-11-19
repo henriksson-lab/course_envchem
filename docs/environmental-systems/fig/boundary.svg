@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: the boundary decides whether sorption is an output or an internal transfer. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <text class="h" x="245" y="32">Boundary A: water only</text>
+  <rect x="40" y="80" width="410" height="150" fill="#d6e6f2"/>
+  <rect x="40" y="230" width="410" height="90" fill="#e6dccb"/>
+  <text class="l" x="50" y="105">water</text><text class="l" x="50" y="310">sediment</text>
+  <circle cx="313" cy="187" r="7" fill="#AD4825"/>
+  <circle cx="367" cy="205" r="7" fill="#AD4825"/>
+  <circle cx="129" cy="162" r="7" fill="#AD4825"/>
+  <circle cx="412" cy="178" r="7" fill="#AD4825"/>
+  <circle cx="399" cy="130" r="7" fill="#AD4825"/>
+  <circle cx="265" cy="142" r="7" fill="#AD4825"/>
+  <circle cx="289" cy="172" r="7" fill="#AD4825"/>
+  <circle cx="153" cy="258" r="6" fill="#AD4825"/>
+  <circle cx="228" cy="287" r="6" fill="#AD4825"/>
+  <circle cx="365" cy="256" r="6" fill="#AD4825"/>
+  <circle cx="323" cy="254" r="6" fill="#AD4825"/>
+  <line x1="250" y1="190" x2="250" y2="262" stroke="#AD4825" stroke-width="3.5" marker-end="url(#arr)"/>
+  <text x="262" y="250" font-size="17" fill="#AD4825" font-weight="bold">sorption</text>
+  <rect x="30" y="68" width="430" height="166" fill="none" stroke="#b8860b" stroke-width="4" stroke-dasharray="12 7"/>
+  <text class="h" x="245" y="365" fill="#b8860b">sorption = OUTPUT</text>
+  <text class="h" x="735" y="32">Boundary B: water + sediment</text>
+  <rect x="530" y="80" width="410" height="150" fill="#d6e6f2"/>
+  <rect x="530" y="230" width="410" height="90" fill="#e6dccb"/>
+  <text class="l" x="540" y="105">water</text><text class="l" x="540" y="310">sediment</text>
+  <circle cx="611" cy="198" r="7" fill="#AD4825"/>
+  <circle cx="675" cy="139" r="7" fill="#AD4825"/>
+  <circle cx="915" cy="199" r="7" fill="#AD4825"/>
+  <circle cx="700" cy="207" r="7" fill="#AD4825"/>
+  <circle cx="777" cy="181" r="7" fill="#AD4825"/>
+  <circle cx="673" cy="205" r="7" fill="#AD4825"/>
+  <circle cx="824" cy="207" r="7" fill="#AD4825"/>
+  <circle cx="891" cy="262" r="6" fill="#AD4825"/>
+  <circle cx="741" cy="256" r="6" fill="#AD4825"/>
+  <circle cx="680" cy="252" r="6" fill="#AD4825"/>
+  <circle cx="724" cy="274" r="6" fill="#AD4825"/>
+  <line x1="740" y1="190" x2="740" y2="262" stroke="#AD4825" stroke-width="3.5" marker-end="url(#arr)"/>
+  <text x="752" y="250" font-size="17" fill="#AD4825" font-weight="bold">sorption</text>
+  <rect x="520" y="68" width="430" height="261" fill="none" stroke="#b8860b" stroke-width="4" stroke-dasharray="12 7"/>
+  <text class="h" x="735" y="365" fill="#b8860b">sorption = internal transfer</text>
+  <text class="n" x="490" y="405">Same lake, same process. The dashed line is a choice you write down before the balance.</text>
+</svg>

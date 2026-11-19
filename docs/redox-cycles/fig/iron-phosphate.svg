@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: an oxidised iron layer traps phosphate; when it is reduced, Fe2+ and phosphate escape to the water -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <text x="250" y="30" font-size="21" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >Oxygen in the bottom water</text>
+  <rect x="20" y="45" width="460" height="175" rx="0" fill="#cfe3f1" stroke="none" stroke-width="2"/>
+  <rect x="20" y="220" width="460" height="200" rx="0" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <rect x="20" y="220" width="460" height="28" rx="0" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <text x="470" y="240" font-size="15" fill="white" text-anchor="end" font-weight="bold" >Fe(III) oxide layer</text>
+  <path d="M60,360 L60,262" stroke="#b8860b" stroke-width="3" fill="none"/>
+  <circle cx="60" cy="253" r="8" fill="#b8860b" stroke="none" stroke-width="2"/>
+  <path d="M130,360 L130,262" stroke="#b8860b" stroke-width="3" fill="none"/>
+  <circle cx="130" cy="253" r="8" fill="#b8860b" stroke="none" stroke-width="2"/>
+  <path d="M200,360 L200,262" stroke="#b8860b" stroke-width="3" fill="none"/>
+  <circle cx="200" cy="253" r="8" fill="#b8860b" stroke="none" stroke-width="2"/>
+  <path d="M270,360 L270,262" stroke="#b8860b" stroke-width="3" fill="none"/>
+  <circle cx="270" cy="253" r="8" fill="#b8860b" stroke="none" stroke-width="2"/>
+  <path d="M340,360 L340,262" stroke="#b8860b" stroke-width="3" fill="none"/>
+  <circle cx="340" cy="253" r="8" fill="#b8860b" stroke="none" stroke-width="2"/>
+  <path d="M410,360 L410,262" stroke="#b8860b" stroke-width="3" fill="none"/>
+  <circle cx="410" cy="253" r="8" fill="#b8860b" stroke="none" stroke-width="2"/>
+  <text x="40" y="80.0" font-size="17" fill="#1b2a3a" text-anchor="start" font-weight="normal" >O₂ keeps iron as Fe(III)</text>
+  <text x="40" y="101.25" font-size="17" fill="#1b2a3a" text-anchor="start" font-weight="normal" >phosphate is sorbed in the layer</text>
+  <text x="40" y="405" font-size="15" fill="white" text-anchor="start" font-weight="normal" >phosphate from decaying matter moves up …</text>
+  <text x="250" y="300" font-size="10" fill="#1b2a3a" text-anchor="start" font-weight="normal" ></text>
+  <circle cx="120" cy="140" r="7" fill="#2468A0" stroke="none" stroke-width="2"/>
+  <circle cx="210" cy="140" r="7" fill="#2468A0" stroke="none" stroke-width="2"/>
+  <circle cx="300" cy="140" r="7" fill="#2468A0" stroke="none" stroke-width="2"/>
+  <circle cx="390" cy="140" r="7" fill="#2468A0" stroke="none" stroke-width="2"/>
+  <text x="400" y="145" font-size="16" fill="#2468A0" text-anchor="start" font-weight="bold" >O₂</text>
+  <text x="740" y="30" font-size="21" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >No oxygen in the bottom water</text>
+  <rect x="510" y="45" width="460" height="175" rx="0" fill="#9db7c9" stroke="none" stroke-width="2"/>
+  <rect x="510" y="220" width="460" height="200" rx="0" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <path d="M550,380 L550,120" stroke="#b8860b" stroke-width="3" fill="none"/>
+  <circle cx="550" cy="110" r="8" fill="#b8860b" stroke="none" stroke-width="2"/>
+  <path d="M572,380 L572,160" stroke="#AD4825" stroke-width="3" fill="none"/>
+  <circle cx="572" cy="150" r="7" fill="#AD4825" stroke="none" stroke-width="2"/>
+  <path d="M620,380 L620,120" stroke="#b8860b" stroke-width="3" fill="none"/>
+  <circle cx="620" cy="110" r="8" fill="#b8860b" stroke="none" stroke-width="2"/>
+  <path d="M642,380 L642,160" stroke="#AD4825" stroke-width="3" fill="none"/>
+  <circle cx="642" cy="150" r="7" fill="#AD4825" stroke="none" stroke-width="2"/>
+  <path d="M690,380 L690,120" stroke="#b8860b" stroke-width="3" fill="none"/>
+  <circle cx="690" cy="110" r="8" fill="#b8860b" stroke="none" stroke-width="2"/>
+  <path d="M712,380 L712,160" stroke="#AD4825" stroke-width="3" fill="none"/>
+  <circle cx="712" cy="150" r="7" fill="#AD4825" stroke="none" stroke-width="2"/>
+  <path d="M760,380 L760,120" stroke="#b8860b" stroke-width="3" fill="none"/>
+  <circle cx="760" cy="110" r="8" fill="#b8860b" stroke="none" stroke-width="2"/>
+  <path d="M782,380 L782,160" stroke="#AD4825" stroke-width="3" fill="none"/>
+  <circle cx="782" cy="150" r="7" fill="#AD4825" stroke="none" stroke-width="2"/>
+  <path d="M830,380 L830,120" stroke="#b8860b" stroke-width="3" fill="none"/>
+  <circle cx="830" cy="110" r="8" fill="#b8860b" stroke="none" stroke-width="2"/>
+  <path d="M852,380 L852,160" stroke="#AD4825" stroke-width="3" fill="none"/>
+  <circle cx="852" cy="150" r="7" fill="#AD4825" stroke="none" stroke-width="2"/>
+  <path d="M900,380 L900,120" stroke="#b8860b" stroke-width="3" fill="none"/>
+  <circle cx="900" cy="110" r="8" fill="#b8860b" stroke="none" stroke-width="2"/>
+  <path d="M922,380 L922,160" stroke="#AD4825" stroke-width="3" fill="none"/>
+  <circle cx="922" cy="150" r="7" fill="#AD4825" stroke="none" stroke-width="2"/>
+  <text x="530" y="80.0" font-size="17" fill="white" text-anchor="start" font-weight="bold" >Fe(III) is reduced to Fe²⁺, the oxide dissolves</text>
+  <text x="530" y="101.25" font-size="17" fill="white" text-anchor="start" font-weight="bold" >and phosphate is released</text>
+  <text x="530" y="405" font-size="16" fill="white" text-anchor="start" font-weight="bold" >FeOOH + 3H⁺ + e⁻ → Fe²⁺ + 2H₂O</text>
+  <circle cx="40" cy="445" r="7" fill="#b8860b" stroke="none" stroke-width="2"/>
+  <text x="54" y="451" font-size="15" fill="#1b2a3a" text-anchor="start" font-weight="normal" >phosphate</text>
+  <circle cx="170" cy="445" r="7" fill="#AD4825" stroke="none" stroke-width="2"/>
+  <text x="184" y="451" font-size="15" fill="#1b2a3a" text-anchor="start" font-weight="normal" >Fe²⁺</text>
+  <circle cx="260" cy="445" r="7" fill="#2468A0" stroke="none" stroke-width="2"/>
+  <text x="274" y="451" font-size="15" fill="#1b2a3a" text-anchor="start" font-weight="normal" >O₂</text>
+  <text x="980" y="451" font-size="16" fill="#1b2a3a" text-anchor="end" font-weight="bold" >phosphorus stays +V throughout</text>
+</svg>

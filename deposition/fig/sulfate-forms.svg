@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: the same sulfate ion can arrive with different counter-ions and different acidity. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+    <marker id="arb" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#2468A0"/></marker>
+    <marker id="arg" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#25713E"/></marker>
+    <marker id="aro" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#b8860b"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .sp{font-size:26px;font-weight:bold;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <rect x="20" y="20" width="300" height="380" rx="14" fill="#f7f9fb" stroke="#AD4825" stroke-width="3"/>
+  <text class="sp" x="170" y="65" fill="#AD4825">H₂SO₄</text><text class="lc" x="170" y="92">sulfuric acid</text>
+  <circle cx="170" cy="160" r="38" fill="#ffffff" stroke="#1b2a3a" stroke-width="2.5"/><text class="lc" x="170" y="167" font-weight="bold">SO₄²⁻</text>
+  <text class="lc" x="170" y="240">2 H⁺ per SO₄²⁻</text>
+  <text class="lc" x="170" y="266">free acid now</text>
+  <rect x="60" y="345" width="220" height="40" rx="10" fill="#AD4825"/><text class="lc" x="170" y="372" fill="#fff" font-weight="bold">2 H⁺ now</text>
+  <rect x="340" y="20" width="300" height="380" rx="14" fill="#f7f9fb" stroke="#b8860b" stroke-width="3"/>
+  <text class="sp" x="490" y="65" fill="#b8860b">(NH₄)₂SO₄</text><text class="lc" x="490" y="92">ammonium sulfate</text>
+  <circle cx="490" cy="160" r="38" fill="#ffffff" stroke="#1b2a3a" stroke-width="2.5"/><text class="lc" x="490" y="167" font-weight="bold">SO₄²⁻</text>
+  <text class="lc" x="490" y="240">no free H⁺ now;</text>
+  <text class="lc" x="490" y="266">in soil, nitrification:</text>
+  <text class="lc" x="490" y="292">NH₄⁺ + 2 O₂ →</text>
+  <text class="lc" x="490" y="318">NO₃⁻ + 2 H⁺ + H₂O</text>
+  <rect x="380" y="345" width="220" height="40" rx="10" fill="#b8860b"/><text class="lc" x="490" y="372" fill="#fff" font-weight="bold">up to 4 H⁺ later</text>
+  <rect x="660" y="20" width="300" height="380" rx="14" fill="#f7f9fb" stroke="#25713E" stroke-width="3"/>
+  <text class="sp" x="810" y="65" fill="#25713E">CaSO₄, Na₂SO₄</text><text class="lc" x="810" y="92">dust or sea salt</text>
+  <circle cx="810" cy="160" r="38" fill="#ffffff" stroke="#1b2a3a" stroke-width="2.5"/><text class="lc" x="810" y="167" font-weight="bold">SO₄²⁻</text>
+  <text class="lc" x="810" y="240">sulfate with base</text>
+  <text class="lc" x="810" y="266">cations: no acid</text>
+  <rect x="700" y="345" width="220" height="40" rx="10" fill="#25713E"/><text class="lc" x="810" y="372" fill="#fff" font-weight="bold">0 H⁺</text>
+  <g fill="#AD4825"><circle cx="110" cy="160" r="12"/><circle cx="230" cy="160" r="12"/></g>
+  <text x="110" y="166" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">H⁺</text><text x="230" y="166" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">H⁺</text>
+  <g fill="#b8860b"><circle cx="420" cy="160" r="16"/><circle cx="560" cy="160" r="16"/></g>
+  <text x="420" y="165" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">NH₄⁺</text><text x="560" y="165" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">NH₄⁺</text>
+  <circle cx="740" cy="160" r="16" fill="#25713E"/><text x="740" y="165" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">Ca²⁺</text>
+</svg>

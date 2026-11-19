@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="470" viewBox="0 0 980 470" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: infrared activity requires a vibration that changes the dipole moment. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+    <marker id="arb" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#2468A0"/></marker>
+    <marker id="arg" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#25713E"/></marker>
+    <marker id="aro" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#b8860b"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .sp{font-size:26px;font-weight:bold;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <rect x="10" y="20" width="230" height="430" rx="14" fill="#f7f9fb" stroke="#6b7785" stroke-width="1.5"/>
+  <text class="h" x="125" y="55" style="font-size:17px">N₂ stretch</text>
+  <rect x="255" y="20" width="230" height="430" rx="14" fill="#f7f9fb" stroke="#6b7785" stroke-width="1.5"/>
+  <text class="h" x="370" y="55" style="font-size:17px">CO₂ symmetric stretch</text>
+  <rect x="500" y="20" width="230" height="430" rx="14" fill="#f7f9fb" stroke="#25713E" stroke-width="3"/>
+  <text class="h" x="615" y="55" style="font-size:17px">CO₂ asymmetric stretch</text>
+  <rect x="745" y="20" width="230" height="430" rx="14" fill="#f7f9fb" stroke="#25713E" stroke-width="3"/>
+  <text class="h" x="860" y="55" style="font-size:17px">CO₂ bend</text>
+  <line x1="87" y1="150" x2="163" y2="150" stroke="#555" stroke-width="7"/><circle cx="87" cy="150" r="20" fill="#2468A0"/><text x="87" y="156" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">N</text><circle cx="163" cy="150" r="20" fill="#2468A0"/><text x="163" y="156" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">N</text>
+  <line x1="307" y1="150" x2="433" y2="150" stroke="#555" stroke-width="7"/><circle cx="307" cy="150" r="19" fill="#c0392b"/><text x="307" y="156" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">O</text><circle cx="370" cy="150" r="20" fill="#333"/><text x="370" y="156" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">C</text><circle cx="433" cy="150" r="19" fill="#c0392b"/><text x="433" y="156" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">O</text>
+  <line x1="568" y1="150" x2="678" y2="150" stroke="#555" stroke-width="7"/><circle cx="568" cy="150" r="19" fill="#c0392b"/><text x="568" y="156" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">O</text><circle cx="607" cy="150" r="20" fill="#333"/><text x="607" y="156" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">C</text><circle cx="678" cy="150" r="19" fill="#c0392b"/><text x="678" y="156" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">O</text>
+  <polyline points="805,159.0 860,132 915,159.0" fill="none" stroke="#555" stroke-width="7"/><circle cx="805" cy="159" r="19" fill="#c0392b"/><text x="805" y="165" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">O</text><circle cx="860" cy="132" r="20" fill="#333"/><text x="860" y="138" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">C</text><circle cx="915" cy="159" r="19" fill="#c0392b"/><text x="915" y="165" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">O</text>
+  <line x1="103" y1="260" x2="147" y2="260" stroke="#555" stroke-width="7"/><circle cx="103" cy="260" r="20" fill="#2468A0"/><text x="103" y="266" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">N</text><circle cx="147" cy="260" r="20" fill="#2468A0"/><text x="147" y="266" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">N</text>
+  <line x1="323" y1="260" x2="417" y2="260" stroke="#555" stroke-width="7"/><circle cx="323" cy="260" r="19" fill="#c0392b"/><text x="323" y="266" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">O</text><circle cx="370" cy="260" r="20" fill="#333"/><text x="370" y="266" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">C</text><circle cx="417" cy="260" r="19" fill="#c0392b"/><text x="417" y="266" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">O</text>
+  <line x1="552" y1="260" x2="662" y2="260" stroke="#555" stroke-width="7"/><circle cx="552" cy="260" r="19" fill="#c0392b"/><text x="552" y="266" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">O</text><circle cx="623" cy="260" r="20" fill="#333"/><text x="623" y="266" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">C</text><circle cx="662" cy="260" r="19" fill="#c0392b"/><text x="662" y="266" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">O</text>
+  <polyline points="805,251.0 860,278 915,251.0" fill="none" stroke="#555" stroke-width="7"/><circle cx="805" cy="251" r="19" fill="#c0392b"/><text x="805" y="257" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">O</text><circle cx="860" cy="278" r="20" fill="#333"/><text x="860" y="284" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">C</text><circle cx="915" cy="251" r="19" fill="#c0392b"/><text x="915" y="257" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">O</text>
+  <text class="n" x="125" y="210">stretched, then squeezed</text><text class="n" x="370" y="210">stretched, then squeezed</text><text class="n" x="615" y="210">C shifts one way, then back</text><text class="n" x="860" y="210">bent up, then down</text>
+  <text class="lc" x="125" y="340" fill="#6b7785" font-weight="bold">no dipole change</text>
+  <text class="lc" x="125" y="372" fill="#6b7785">no IR absorption</text>
+  <text x="125" y="425" text-anchor="middle" font-size="34" fill="#6b7785">✗</text>
+  <text class="lc" x="370" y="340" fill="#6b7785" font-weight="bold">dipoles cancel</text>
+  <text class="lc" x="370" y="372" fill="#6b7785">no IR absorption</text>
+  <text x="370" y="425" text-anchor="middle" font-size="34" fill="#6b7785">✗</text>
+  <text class="lc" x="615" y="340" fill="#25713E" font-weight="bold">dipole changes</text>
+  <text class="lc" x="615" y="372" fill="#25713E">absorbs near 4.3 µm</text>
+  <text x="615" y="425" text-anchor="middle" font-size="34" fill="#25713E">✓</text>
+  <text class="lc" x="860" y="340" fill="#25713E" font-weight="bold">dipole changes</text>
+  <text class="lc" x="860" y="372" fill="#25713E">absorbs near 15 µm</text>
+  <text x="860" y="425" text-anchor="middle" font-size="34" fill="#25713E">✓</text>
+</svg>

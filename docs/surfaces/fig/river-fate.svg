@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: metals sorbed on particles can settle, be resuspended by floods, or travel with colloids -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <path d="M20,90 L980,90 L980,300 Q500,330 20,300 Z" stroke="none" stroke-width="0" fill="#d6e6f2"/>
+  <path d="M20,300 Q500,330 980,300 L980,380 L20,380 Z" stroke="none" stroke-width="0" fill="#d9c08f"/>
+  <line x1="30" y1="60" x2="170" y2="60" stroke="#2468A0" stroke-width="3" marker-end="url(#arrB)"/>
+  <text x="100" y="45" font-size="17" fill="#2468A0" text-anchor="middle" font-weight="bold" >flow</text>
+  <circle cx="65" cy="194" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="101" cy="180" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="129" cy="198" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="158" cy="187" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="194" cy="229" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="221" cy="156" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="253" cy="231" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="291" cy="116" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="326" cy="255" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="355" cy="202" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="382" cy="112" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="417" cy="119" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="446" cy="146" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="476" cy="180" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="512" cy="236" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="545" cy="206" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="577" cy="209" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="609" cy="152" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="646" cy="259" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="676" cy="216" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="703" cy="144" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="735" cy="121" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="772" cy="170" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="804" cy="168" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="838" cy="237" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="860" cy="141" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="901" cy="180" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="934" cy="170" r="4" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <line x1="230" y1="170" x2="230" y2="290" stroke="#AD4825" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <circle cx="230" cy="165" r="8" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <line x1="300" y1="170" x2="300" y2="290" stroke="#AD4825" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <circle cx="300" cy="165" r="8" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <line x1="370" y1="170" x2="370" y2="290" stroke="#AD4825" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <circle cx="370" cy="165" r="8" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <text x="300" y="55" font-size="18" fill="#AD4825" text-anchor="middle" font-weight="bold" >1  settling</text>
+  <circle cx="170" cy="310" r="7" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="192" cy="318" r="7" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="214" cy="326" r="7" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="236" cy="310" r="7" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="258" cy="318" r="7" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="280" cy="326" r="7" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="302" cy="310" r="7" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="324" cy="318" r="7" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="346" cy="326" r="7" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="368" cy="310" r="7" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="390" cy="318" r="7" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="412" cy="326" r="7" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="434" cy="310" r="7" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="456" cy="318" r="7" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <text x="300" y="360" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >metal-rich bed sediment</text>
+  <path d="M640,305 C650,250 690,230 720,190" stroke="#AD4825" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+  <path d="M700,308 C710,260 740,240 770,205" stroke="#AD4825" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+  <text x="680" y="55" font-size="18" fill="#AD4825" text-anchor="middle" font-weight="bold" >2  resuspension in floods</text>
+  <text x="700" y="360" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >the bed can release metal again</text>
+  <circle cx="860" cy="200" r="5" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="866" cy="196" r="3" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <circle cx="900" cy="200" r="5" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="906" cy="196" r="3" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <circle cx="940" cy="200" r="5" fill="#c27c3a" stroke="none" stroke-width="2"/>
+  <circle cx="946" cy="196" r="3" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <line x1="850" y1="230" x2="960" y2="230" stroke="#2468A0" stroke-width="2.5" marker-end="url(#arrB)"/>
+  <text x="905" y="55" font-size="18" fill="#2468A0" text-anchor="middle" font-weight="bold" >3  colloids travel</text>
+  <text x="905" y="78" font-size="16" fill="#2468A0" text-anchor="middle" font-weight="normal" >with the water</text>
+  <text x="500" y="410" font-size="10" fill="#1b2a3a" text-anchor="start" font-weight="normal" ></text>
+</svg>

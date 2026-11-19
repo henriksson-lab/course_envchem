@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="400" viewBox="0 0 940 400" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: two origins of negative charge in soil: permanent charge from isomorphous substitution in clay, and pH-dependent charge on organic (carboxyl) groups. -->
+  <style>
+    .hd{font-size:21px;font-weight:bold;fill:#1b2a3a}
+    .t{font-size:17px;fill:#1b2a3a}
+    .s{font-size:15px;fill:#6b7785}
+    .ion{font-size:15px;font-weight:bold;fill:#fff;text-anchor:middle}
+  </style>
+  <text class="hd" x="30" y="32">1. Clay: permanent charge</text>
+  <!-- tetrahedral sheet as a row of Si -->
+  <rect x="30" y="60" width="420" height="150" rx="10" fill="#f3e6d3" stroke="#AD4825" stroke-width="2"/>
+  <g>
+    <circle cx="75" cy="105" r="22" fill="#8e9aaf"/><text class="ion" x="75" y="110">Si⁴⁺</text>
+    <circle cx="140" cy="105" r="22" fill="#8e9aaf"/><text class="ion" x="140" y="110">Si⁴⁺</text>
+    <circle cx="205" cy="105" r="22" fill="#AD4825"/><text class="ion" x="205" y="110">Al³⁺</text>
+    <circle cx="270" cy="105" r="22" fill="#8e9aaf"/><text class="ion" x="270" y="110">Si⁴⁺</text>
+    <circle cx="335" cy="105" r="22" fill="#8e9aaf"/><text class="ion" x="335" y="110">Si⁴⁺</text>
+    <circle cx="400" cy="105" r="22" fill="#8e9aaf"/><text class="ion" x="400" y="110">Si⁴⁺</text>
+    <circle cx="105" cy="170" r="22" fill="#a9b4c2"/><text class="ion" x="105" y="175">Al³⁺</text>
+    <circle cx="175" cy="170" r="22" fill="#a9b4c2"/><text class="ion" x="175" y="175">Al³⁺</text>
+    <circle cx="245" cy="170" r="22" fill="#a9b4c2"/><text class="ion" x="245" y="175">Al³⁺</text>
+    <circle cx="315" cy="170" r="22" fill="#2468A0"/><text class="ion" x="315" y="175">Mg²⁺</text>
+    <circle cx="385" cy="170" r="22" fill="#a9b4c2"/><text class="ion" x="385" y="175">Al³⁺</text>
+  </g>
+  <text x="236" y="92" font-size="26" font-weight="bold" fill="#c0392b" text-anchor="middle">−</text>
+  <text x="346" y="158" font-size="26" font-weight="bold" fill="#c0392b" text-anchor="middle">−</text>
+  <text class="t" x="30" y="268">A lower-charge ion replaces a higher-charge one</text>
+  <text class="t" x="30" y="290">when the mineral forms (Al³⁺ for Si⁴⁺, Mg²⁺ for Al³⁺).</text>
+  <text class="t" x="30" y="312">Each swap leaves <tspan font-weight="bold">one unbalanced negative charge</tspan>.</text>
+  <text class="t" x="30" y="334">It is built into the crystal: independent of pH.</text>
+
+  <line x1="480" y1="40" x2="480" y2="370" stroke="#d0d6dd" stroke-width="2"/>
+
+  <text class="hd" x="510" y="32">2. Organic matter: pH-dependent charge</text>
+  <rect x="510" y="60" width="400" height="150" rx="10" fill="#e9e1d8" stroke="#5b4636" stroke-width="2"/>
+  <path d="M530,135 C580,90 630,175 690,125 S800,95 890,140" stroke="#5b4636" stroke-width="6" fill="none"/>
+  <text x="575" y="90" font-size="17" fill="#1b2a3a" text-anchor="middle">–COOH</text>
+  <text x="690" y="175" font-size="17" fill="#1b2a3a" text-anchor="middle">–COO<tspan fill="#c0392b" font-weight="bold">⁻</tspan></text>
+  <text x="820" y="92" font-size="17" fill="#1b2a3a" text-anchor="middle">–COO<tspan fill="#c0392b" font-weight="bold">⁻</tspan></text>
+  <text x="860" y="190" font-size="15" fill="#6b7785" text-anchor="end">humus (schematic)</text>
+  <text x="710" y="268" font-size="19" fill="#1b2a3a" text-anchor="middle">–COOH ⇌ –COO⁻ + H⁺</text>
+  <text class="t" x="510" y="300">Acid groups lose H⁺ as pH rises, so</text>
+  <text class="t" x="510" y="322"><tspan font-weight="bold">charge grows with pH</tspan>. Iron and aluminium</text>
+  <text class="t" x="510" y="344">oxide surfaces behave similarly. Measured</text>
+  <text class="t" x="510" y="366">CEC therefore depends on the test pH.</text>
+</svg>

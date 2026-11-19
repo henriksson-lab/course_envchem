@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="300" viewBox="0 0 980 300" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: converting a mass concentration to charge equivalents. -->
+  <defs><marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker></defs>
+  <style>.h{font-size:26px;font-weight:bold;fill:#1b2a3a;text-anchor:middle} .v{font-size:24px;fill:#1b2a3a;text-anchor:middle} .op{font-size:19px;fill:#b8860b;text-anchor:middle;font-weight:bold} .s{font-size:16px;fill:#6b7785;text-anchor:middle}</style>
+  <rect x="20" y="60" width="230" height="170" rx="14" fill="#eef1f5" stroke="#8e9aaf" stroke-width="2"/>
+  <text class="h" x="135" y="100">mg/L</text><text class="s" x="135" y="128">mass of element</text>
+  <text class="v" x="135" y="175">Ca: 40.08</text><text class="v" x="135" y="210">Na: 22.99</text>
+  <rect x="375" y="60" width="230" height="170" rx="14" fill="#eef1f5" stroke="#8e9aaf" stroke-width="2"/>
+  <text class="h" x="490" y="100">mmol/L</text><text class="s" x="490" y="128">number of ions</text>
+  <text class="v" x="490" y="175">Ca²⁺: 1.000</text><text class="v" x="490" y="210">Na⁺: 1.000</text>
+  <rect x="730" y="60" width="230" height="170" rx="14" fill="#e3efe6" stroke="#25713E" stroke-width="2"/>
+  <text class="h" x="845" y="100">meq/L</text><text class="s" x="845" y="128">amount of charge</text>
+  <text class="v" x="845" y="175">Ca²⁺: <tspan font-weight="bold">2.000</tspan></text><text class="v" x="845" y="210">Na⁺: 1.000</text>
+  <line x1="255" y1="145" x2="368" y2="145" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <text class="op" x="312" y="40">÷ molar mass</text><text class="s" x="312" y="270">(mg/mmol = g/mol)</text>
+  <line x1="610" y1="145" x2="723" y2="145" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <text class="op" x="667" y="40">× |charge|</text><text class="s" x="667" y="270">(2 for Ca²⁺, 1 for Na⁺)</text>
+</svg>

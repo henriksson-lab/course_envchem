@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="460" viewBox="0 0 980 460" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: aerosol effects - scattering, absorption, and cloud brightening. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+    <marker id="arb" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#2468A0"/></marker>
+    <marker id="arg" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#25713E"/></marker>
+    <marker id="aro" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#b8860b"/></marker>
+      <marker id="big-ar" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#1b2a3a"/></marker><marker id="big-arr" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#AD4825"/></marker><marker id="big-arb" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#2468A0"/></marker><marker id="big-arg" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#25713E"/></marker><marker id="big-aro" markerWidth="24" markerHeight="24" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L20,9 L0,18 Z" fill="#b8860b"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .sp{font-size:26px;font-weight:bold;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <rect x="10" y="15" width="310" height="430" rx="14" fill="#f7f9fb" stroke="#2468A0" stroke-width="2"/>
+  <text class="h" x="165" y="50" fill="#2468A0">1  Scatter sunlight</text>
+  <rect x="335" y="15" width="310" height="430" rx="14" fill="#f7f9fb" stroke="#1b2a3a" stroke-width="2"/>
+  <text class="h" x="490" y="50" fill="#1b2a3a">2  Absorb sunlight</text>
+  <rect x="660" y="15" width="310" height="430" rx="14" fill="#f7f9fb" stroke="#25713E" stroke-width="2"/>
+  <text class="h" x="815" y="50" fill="#25713E">3  Change clouds</text>
+  <line x1="90" y1="80" x2="160" y2="180" stroke="#b8860b" stroke-width="6" marker-end="url(#big-aro)"/>
+  <circle cx="170" cy="195" r="14" fill="#ffffff" stroke="#2468A0" stroke-width="3"/>
+  <line x1="180" y1="180" x2="250" y2="90" stroke="#b8860b" stroke-width="4" stroke-dasharray="8 5" marker-end="url(#aro)"/>
+  <line x1="172" y1="212" x2="190" y2="290" stroke="#b8860b" stroke-width="2.5" marker-end="url(#aro)"/>
+  <text class="lc" x="165" y="335" font-weight="bold">sulfate, sea salt</text>
+  <text class="lc" x="165" y="365">reflect part of the</text><text class="lc" x="165" y="390">sunlight back to space</text>
+  <text class="lc" x="165" y="425" fill="#2468A0" font-weight="bold">cooling</text>
+  <line x1="420" y1="80" x2="480" y2="180" stroke="#b8860b" stroke-width="6" marker-end="url(#big-aro)"/>
+  <circle cx="490" cy="195" r="14" fill="#1b2a3a"/>
+  <path d="M470,230 q8,-10 16,0 t16,0 t16,0" fill="none" stroke="#AD4825" stroke-width="3"/>
+  <text x="490" y="265" text-anchor="middle" font-size="17" fill="#AD4825">heats the air layer</text>
+  <text class="lc" x="490" y="335" font-weight="bold">black carbon (soot)</text>
+  <text class="lc" x="490" y="365">absorbs sunlight;</text><text class="lc" x="490" y="390">darkens snow and ice</text>
+  <text class="lc" x="490" y="425" fill="#AD4825" font-weight="bold">warming</text>
+  <text class="lc" x="740" y="90" font-size="16">few particles</text>
+  <circle cx="710" cy="140" r="22" fill="#d6e6f2" stroke="#2468A0"/><circle cx="770" cy="150" r="22" fill="#d6e6f2" stroke="#2468A0"/>
+  <text class="lc" x="740" y="200" font-size="16">few, large</text><text class="lc" x="740" y="220" font-size="16">droplets</text>
+  <text class="lc" x="895" y="90" font-size="16">many particles</text>
+  <circle cx="850" cy="120" r="9" fill="#d6e6f2" stroke="#2468A0"/>
+  <circle cx="850" cy="145" r="9" fill="#d6e6f2" stroke="#2468A0"/>
+  <circle cx="850" cy="170" r="9" fill="#d6e6f2" stroke="#2468A0"/>
+  <circle cx="878" cy="120" r="9" fill="#d6e6f2" stroke="#2468A0"/>
+  <circle cx="878" cy="145" r="9" fill="#d6e6f2" stroke="#2468A0"/>
+  <circle cx="878" cy="170" r="9" fill="#d6e6f2" stroke="#2468A0"/>
+  <circle cx="906" cy="120" r="9" fill="#d6e6f2" stroke="#2468A0"/>
+  <circle cx="906" cy="145" r="9" fill="#d6e6f2" stroke="#2468A0"/>
+  <circle cx="906" cy="170" r="9" fill="#d6e6f2" stroke="#2468A0"/>
+  <circle cx="934" cy="120" r="9" fill="#d6e6f2" stroke="#2468A0"/>
+  <circle cx="934" cy="145" r="9" fill="#d6e6f2" stroke="#2468A0"/>
+  <circle cx="934" cy="170" r="9" fill="#d6e6f2" stroke="#2468A0"/>
+  <text class="lc" x="895" y="200" font-size="16">many, small</text><text class="lc" x="895" y="220" font-size="16">droplets</text>
+  <text class="lc" x="815" y="335" font-weight="bold">same water, more droplets</text>
+  <text class="lc" x="815" y="365">brighter cloud reflects</text><text class="lc" x="815" y="390">more sunlight</text>
+  <text class="lc" x="815" y="425" fill="#2468A0" font-weight="bold">usually cooling</text>
+</svg>

@@ -1,5 +1,6 @@
 ---
 title: "Chemical topic"
+subtitle: "Week N — Week title"
 author: "Environmental Chemistry"
 format:
   revealjs:
@@ -16,18 +17,75 @@ format:
     html-math-method: katex
 ---
 
-## Environmental question
+<!--
+Slide standard (see contentplan.md, "Slide visual coverage requirement";
+pilot: carbonate-gases/lec.qmd):
+- First slide "About this lecture", last slide "Summary" + Next.
+- One storyline; each slide answers the question the previous one raised.
+- 60–100 words per slide, ~100-word speaker notes on every slide.
+- A meaningful picture on >50% of slides: model plots from <unit>/make_lec_figures.py,
+  concept SVGs in <unit>/fig/, openly licensed photos in <unit>/img/ + CREDITS.md.
+- Check: CHECK_SLIDES_PORT=9223 python3 tools/check_slides_browser.py OUTDIR docs/<unit>/lec.html
+-->
 
-State one chemical question and the observable change it explains.
+## About this lecture
+
+:::: {.columns}
+::: {.column width="56%"}
+A real event or place that makes the chemistry matter. Why should students care?
+
+Today you will learn to:
+
+- **key idea one**;
+- **key idea two**;
+- **key idea three**.
+
+Link to the previous lecture.
+:::
+::: {.column width="44%"}
+![](img/hook-photo.jpg){width="100%"}
+[Caption. Photo: Author, Licence, Wikimedia Commons.]{.credit}
+:::
+::::
+
+::: notes
+Tell the story first. State the question the lecture will answer and what students should be able to explain at the end.
+:::
+
+## The puzzle
+
+![](fig/concept.svg){width="70%" fig-align="center"}
+
+Turn the hook into a concrete chemical question, ideally a small constructed case students can predict before calculating.
+
+::: notes
+Ask for a prediction before giving the model.
+:::
 
 ## Chemical model
 
-Introduce the reaction, quantities, units, and assumptions.
+Introduce the reaction, quantities, units and assumptions, with a diagram of the mechanism.
+
+::: notes
+Explain what the model keeps and what it deliberately leaves out.
+:::
 
 ## Worked example
 
-Calculate a small case and check its physical meaning.
+Calculate a small case, check its physical meaning, and return to the opening case.
 
-## Interpretation
+::: notes
+Show every unit. Connect the number back to the hook.
+:::
 
-Explain the environmental consequence and where the model stops applying.
+## Summary {.smaller}
+
+| Concept | Key fact |
+| --- | --- |
+| ... | ... |
+
+**Next:** [next lecture](../next-unit/lec.qmd). Then the [exercises](exercise.qmd) and [notes](notes.qmd).
+
+::: notes
+Recite the chain of ideas once and preview the next lecture.
+:::

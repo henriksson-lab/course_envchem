@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="420" viewBox="0 0 940 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- Mechanism: in oxic conditions an Fe(III) oxyhydroxide layer at the sediment surface holds phosphate; when O2 is used up, Fe(III) is reduced to dissolved Fe2+ and the sorbed phosphate is released to the water. Phosphate itself is not reduced. -->
+  <defs>
+    <marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker>
+    <g id="p"><circle r="11" fill="#25713E"/><text y="4" font-size="10" text-anchor="middle" fill="#fff" font-weight="bold">PO₄</text></g>
+    <g id="fe"><circle r="11" fill="#2468A0"/><text y="4" font-size="10" text-anchor="middle" fill="#fff" font-weight="bold">Fe²⁺</text></g>
+  </defs>
+  <style>
+    .hd{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .t{font-size:16px;fill:#1b2a3a;text-anchor:middle}
+  </style>
+  <text class="hd" x="225" y="30">Oxic: O₂ reaches the sediment</text>
+  <text class="hd" x="715" y="30">Anoxic: O₂ used up</text>
+  <!-- left -->
+  <rect x="20" y="45" width="410" height="170" fill="#d6e6f2"/>
+  <text x="35" y="70" font-size="15" fill="#2468A0">O₂ = 8.0 mg/L</text>
+  <rect x="20" y="215" width="410" height="26" fill="#c8693a"/>
+  <text x="225" y="233" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Fe(III) layer holds phosphate</text>
+  <use href="#p" x="45" y="228"/><use href="#p" x="405" y="228"/><use href="#p" x="95" y="228"/><use href="#p" x="355" y="228"/>
+  <rect x="20" y="241" width="410" height="90" fill="#6b5a45"/>
+  <use href="#p" x="120" y="285"/><use href="#p" x="220" y="300"/><use href="#p" x="320" y="280"/>
+  <use href="#fe" x="170" y="310"/><use href="#fe" x="280" y="315"/>
+  <line x1="200" y1="270" x2="200" y2="248" stroke="#fff" stroke-width="2" marker-end="url(#ar)"/>
+  <text x="225" y="350" font-size="15" fill="#1b2a3a" text-anchor="middle">rising Fe²⁺ is oxidised at the surface: a "lid"</text>
+  <!-- right -->
+  <rect x="510" y="45" width="410" height="170" fill="#c9d6e0"/>
+  <text x="525" y="70" font-size="15" fill="#2468A0">O₂ = 0.20 mg/L</text>
+  <use href="#p" x="600" y="140"/><use href="#p" x="700" y="110"/><use href="#p" x="820" y="150"/><use href="#p" x="650" y="185"/>
+  <use href="#fe" x="760" y="180"/><use href="#fe" x="560" y="170"/><use href="#fe" x="870" y="100"/>
+  <g stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)">
+    <line x1="620" y1="235" x2="620" y2="200"/><line x1="740" y1="235" x2="740" y2="200"/><line x1="850" y1="235" x2="850" y2="200"/>
+  </g>
+  <rect x="510" y="215" width="410" height="116" fill="#6b5a45"/>
+  <use href="#p" x="600" y="280"/><use href="#fe" x="700" y="290"/><use href="#p" x="800" y="300"/>
+  <text x="715" y="350" font-size="15" fill="#1b2a3a" text-anchor="middle">no lid: Fe²⁺ and phosphate diffuse up</text>
+  <!-- equation -->
+  <rect x="60" y="365" width="820" height="48" rx="10" fill="#f6efe0"/>
+  <text class="t" x="470" y="395">FeOOH(s) + 3H⁺ + e⁻ → Fe²⁺ + 2H₂O.   <tspan font-weight="bold">Iron is reduced; phosphate (P +5) is only released.</tspan></text>
+</svg>

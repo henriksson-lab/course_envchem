@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="450" viewBox="0 0 980 450" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: which ultraviolet bands are absorbed in the stratosphere and which reach the ground. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+    <marker id="arb" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#2468A0"/></marker>
+    <marker id="arg" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#25713E"/></marker>
+    <marker id="aro" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#b8860b"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:24px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .sp{font-size:26px;font-weight:bold;text-anchor:middle}
+    .l{font-size:21px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <rect x="0" y="0" width="980" height="70" fill="#eef4fa"/>
+  <rect x="0" y="70" width="980" height="150" fill="#e8dff5"/>
+  <rect x="0" y="220" width="980" height="160" fill="#d6e6f2"/>
+  <rect x="0" y="380" width="980" height="70" fill="#cfe3c4"/>
+  <text class="l" x="15" y="40" font-weight="bold">sunlight arrives</text>
+  <text class="l" x="15" y="105" font-weight="bold" fill="#6a4c93">stratosphere: ozone layer</text>
+  <text class="l" x="15" y="130" fill="#6a4c93">O₂ and O₃ absorb</text>
+  <text class="l" x="15" y="250" font-weight="bold">troposphere</text>
+  <text class="l" x="15" y="425" font-weight="bold">ground</text>
+  <text class="h" x="320" y="28" fill="#6a4c93">UV-C</text><text class="lc" x="320" y="54" font-size="18">100–280 nm</text>
+  <line x1="320" y1="62" x2="320" y2="150" stroke="#6a4c93" stroke-width="12"/>
+  <circle cx="320" cy="156" r="11" fill="none" stroke="#6a4c93" stroke-width="3"/><text x="320" y="162" text-anchor="middle" font-size="20" fill="#6a4c93" font-weight="bold">×</text>
+  <text class="h" x="500" y="28" fill="#AD4825">UV-B</text><text class="lc" x="500" y="54" font-size="18">280–315 nm</text>
+  <line x1="500" y1="62" x2="500" y2="170" stroke="#AD4825" stroke-width="12"/>
+  <line x1="500" y1="170" x2="500" y2="380" stroke="#AD4825" stroke-width="3" marker-end="url(#arr)"/>
+  <text class="h" x="680" y="28" fill="#b8860b">UV-A</text><text class="lc" x="680" y="54" font-size="18">315–400 nm</text>
+  <line x1="680" y1="62" x2="680" y2="392" stroke="#b8860b" stroke-width="12"/>
+  <text class="h" x="860" y="28" fill="#2468A0">visible</text><text class="lc" x="860" y="54" font-size="18">400–700 nm</text>
+  <line x1="860" y1="62" x2="860" y2="392" stroke="#2468A0" stroke-width="12"/>
+  <text x="336" y="200" font-size="20" fill="#6a4c93">absorbed by</text>
+  <text x="336" y="224" font-size="20" fill="#6a4c93">O₂ and O₃</text>
+  <text x="516" y="290" font-size="20" fill="#AD4825">mostly absorbed</text>
+  <text x="516" y="314" font-size="20" fill="#AD4825">by O₃; some</text>
+  <text x="516" y="338" font-size="20" fill="#AD4825">gets through</text>
+  <text x="696" y="290" font-size="20" fill="#b8860b">mostly reaches</text>
+  <text x="696" y="314" font-size="20" fill="#b8860b">the ground</text>
+  <text x="876" y="290" font-size="20" fill="#2468A0">reaches</text>
+  <text x="876" y="314" font-size="20" fill="#2468A0">the ground</text>
+</svg>

@@ -144,6 +144,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Reactions in the atmosphere</h1>
+  <p class="subtitle">Week 1 — Environmental balances and atmosphere</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -154,56 +155,514 @@ Environmental Chemistry
 </div>
 
 </section>
-<section id="chemical-question" class="slide level2">
-<h2>Chemical question</h2>
-<p>Why can ozone protect organisms in one atmospheric region and damage them near the ground? Explain the reactions and where they occur.</p>
-</section>
-<section id="what-to-explain" class="slide level2">
-<h2>What to explain</h2>
+<section id="about-this-lecture" class="slide level2">
+<h2>About this lecture</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<p>In 1985 scientists of the British Antarctic Survey reported that springtime ozone over Antarctica had fallen dramatically. Satellites soon mapped an <strong>ozone hole</strong> larger than the continent. Two years later, the <strong>Montreal Protocol</strong> began phasing out the chemicals behind it.</p>
+<p>Yet on hot summer days, health agencies across Europe warn of <strong>too much ozone</strong> at ground level.</p>
+<p><strong>Same molecule. Protective high up, harmful near the ground.</strong> Why?</p>
+<p>Today you will learn to:</p>
 <ul>
-<li>Combine reaction steps and identify a regenerated catalyst.</li>
-<li>Distinguish photolysis, reaction, and transport.</li>
-<li>Explain why the basic NO–NO₂ cycle alone does not yield sustained net ozone production.</li>
+<li>see how <strong>light selects</strong> which reactions can happen;</li>
+<li>combine steps into a <strong>catalytic cycle</strong> and cancel intermediates;</li>
+<li>explain why <strong>NO₂ and sunlight alone</strong> do not build up ozone;</li>
+<li>turn a rate constant into a <strong>lifetime</strong>.</li>
 </ul>
+</div><div class="column" style="width:42%;">
+<p><img data-src="img/ozone-hole-2012.jpg" style="width:100.0%"> <span class="credit">Antarctic ozone hole, 22 September 2012; blue and purple mark the lowest ozone. Image: NASA, public domain, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Last lecture we treated a lake or river as a compartment with inputs, outputs and reactions. Today the compartment is the atmosphere, and the reactions are driven by sunlight. Start with the ozone story. The discovery of the Antarctic ozone hole in 1985 surprised even the scientists who had predicted chlorine-driven ozone loss, because the loss was so large and so concentrated. Contrast it with summer smog, when ground-level ozone irritates lungs and damages crops. By the end of the lecture students should be able to explain both with a few reaction steps and one idea: which reactions can happen depends on where you are, because light and reaction partners change with altitude.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="light-selects-reactions" class="slide level2">
-<h2>Light selects reactions</h2>
-<p>Photolysis requires absorption.</p>
-<p><span class="math display">E=hc/\lambda</span></p>
-<p>Altitude changes the radiation field and the available reactants.</p>
+<section id="same-molecule-two-places" class="slide level2">
+<h2>Same molecule, two places</h2>
+
+<img data-src="fig/atmosphere-profile.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:82.0%"><p>Temperature falls with height through the <strong>troposphere</strong>, then rises again in the <strong>stratosphere</strong>, because ozone absorbs ultraviolet light there and warms the air. Most ozone sits at about 15–35 km. A small amount near the ground is the ozone we breathe.</p>
+<aside class="notes">
+<p>The left panel uses the standard atmosphere, a reference profile of temperature with altitude. The temperature turns around at about 11 kilometres: that is the tropopause. Above it, the stratosphere warms with height. That warming is itself a chemical signature: ozone absorbs solar ultraviolet light and converts it to heat. The right panel is a schematic of the ozone profile. Most of the ozone is in the stratosphere. The amount near the ground is small, but it is in contact with lungs and leaves. The two regions have different light, different temperatures and different reaction partners, so the chemistry differs as well.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="make-stratospheric-ozone" class="slide level2">
-<h2>Make stratospheric ozone</h2>
-<p><span class="math display">\mathrm{O_2}+h\nu\rightarrow2\mathrm{O}</span> <span class="math display">\mathrm{O+O_2+M\rightarrow O_3+M}</span></p>
-<p>M carries away excess energy and is not consumed.</p>
+<section id="light-selects-which-reactions-can-happen" class="slide level2">
+<h2>Light selects which reactions can happen</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<p><img data-src="fig/photon-energy.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:42%;">
+<p>A photon’s energy is</p>
+<p><span class="math display">E = \frac{hc}{\lambda}</span></p>
+<p>Shorter wavelength, more energy. Per mole of photons, E ≈ 119 600 / λ(nm) kJ/mol.</p>
+<p>To split O₂ (bond 498 kJ/mol) a photon needs <strong>λ &lt; 240 nm</strong>: hard ultraviolet, available only high in the atmosphere.</p>
+<p>NO₂ can be split by near-UV light below about 400 nm, which <strong>reaches the ground</strong>.</p>
+</div></div>
+<aside class="notes">
+<p>Photolysis means using absorbed light to break a molecule. The energy per photon is Planck’s constant times the speed of light divided by the wavelength. Multiplying by Avogadro’s number gives energy per mole of photons, which we can compare with bond energies. The oxygen double bond needs about 498 kilojoules per mole, so only photons shorter than about 240 nanometres can split it. Those photons are absorbed high in the atmosphere and never reach the ground. The bond holding the extra oxygen atom in nitrogen dioxide is much weaker, so near-ultraviolet sunlight at ground level can break it. That single difference explains why ozone is made in different ways in the stratosphere and near the ground.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="a-chlorine-catalytic-cycle" class="slide level2">
-<h2>A chlorine catalytic cycle</h2>
-<p>Cl + O₃ → ClO + O₂</p>
-<p>ClO + O → Cl + O₂</p>
-<p>Net: <strong>O₃ + O → 2 O₂</strong>. Chlorine is regenerated.</p>
+<section id="energy-is-not-enough-the-molecule-must-absorb" class="slide level2">
+<h2>Energy is not enough: the molecule must absorb</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="fig/uv-shield.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:40%;">
+<p>A photon can only drive a reaction if the molecule <strong>absorbs</strong> it. Energy above the bond energy is necessary but not sufficient.</p>
+<p>O₂ absorbs the shortest UV. <strong>O₃ absorbs strongly between about 200 and 310 nm</strong>, the range that damages DNA.</p>
+<p>So the ozone layer is a <strong>filter</strong>: it removes almost all UV-C and most UV-B before sunlight reaches the ground.</p>
+</div></div>
+<aside class="notes">
+<p>Photon energy only tells us what is possible. A reaction also requires that the molecule absorbs at that wavelength. Oxygen absorbs the hardest ultraviolet. Ozone has a strong absorption band in the ultraviolet, from about 200 to about 310 nanometres. That is why it matters so much: those wavelengths damage DNA and proteins. UV-C is removed completely, UV-B mostly, and UV-A mostly reaches the ground. When ozone thins, it is the UV-B that increases at the surface. Keep the idea of absorption bands in mind: it returns in the climate lecture, where infrared absorption decides which gases are greenhouse gases.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="tropospheric-cycling" class="slide level2">
-<h2>Tropospheric cycling</h2>
-<p>NO₂ + light → NO + O</p>
-<p>O + O₂ + M → O₃ + M</p>
-<p>NO + O₃ → NO₂ + O₂</p>
-<p>Peroxy chemistry provides an alternative NO-to-NO₂ pathway.</p>
+<section id="how-ozone-is-made" class="slide level2">
+<h2>How ozone is made</h2>
+
+<img data-src="fig/chapman-formation.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><p><span class="math display">\mathrm{O_2}+h\nu\rightarrow 2\,\mathrm{O}\qquad\qquad \mathrm{O+O_2+M\rightarrow O_3+M}</span></p>
+<p>M is any <strong>collision partner</strong>, usually N₂ or O₂. It carries away the extra energy and is <strong>not consumed</strong>. This is the first half of the Chapman mechanism (1930).</p>
+<aside class="notes">
+<p>This is the simplified formation sequence. In the first step, a hard ultraviolet photon splits an oxygen molecule into two oxygen atoms. In the second step, an oxygen atom combines with an oxygen molecule. The new ozone molecule is formed with too much energy and would fall apart, unless it collides with another molecule that takes the excess energy away as heat. That third body is written M. It appears on both sides of the equation, so it is not consumed: it only enables the reaction. Because the second step needs collisions, it depends on air density. The sequence is named after Sydney Chapman, who proposed it in 1930.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="rates-and-lifetime" class="slide level2">
-<h2>Rates and lifetime</h2>
-<p>At fixed OH: <span class="math inline">k'=k[OH]</span>, <span class="math inline">\tau=1/k'</span>.</p>
-<p>State the concentration and rate units. Other sinks shorten total lifetime.</p>
+<section id="ozone-is-made-and-destroyed-all-the-time" class="slide level2">
+<h2>Ozone is made and destroyed all the time</h2>
+
+<img data-src="fig/ox-cycle.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>O and O₃ convert into each other quickly: each round absorbs a UV photon and turns it into heat. Real <strong>loss</strong> happens only when O meets O₃. The ozone amount is a <strong>balance</strong> of production, loss and transport, just like the lake balance in the last lecture.</p>
+<aside class="notes">
+<p>Once ozone is made, it is split again by ultraviolet light, giving an oxygen atom, which quickly forms ozone again. This fast back-and-forth is how the ozone layer absorbs ultraviolet and warms the stratosphere. It does not change the total of O plus O3, which chemists call odd oxygen. The total changes only through the slow source, oxygen photolysis, and the slow sink, oxygen atom plus ozone. This is the balance equation from the last lecture in a new setting. Fast turnover does not mean a small inventory: the amount of ozone is set by the ratio of production to loss, plus transport by winds.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="cancel-the-intermediates" class="slide level2">
-<h2>Cancel the intermediates</h2>
-<p>One completed chlorine cycle consumes <strong>one O₃ and one O</strong>.</p>
-<p>The cycle count requires kinetics; it is not given by cancellation alone.</p>
+<section id="how-we-measure-the-ozone-layer" class="slide level2">
+<h2>How we measure the ozone layer</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/ozonesonde-south-pole.jpg" style="width:100.0%"> <span class="credit">Launching an ozonesonde at the South Pole Station. Photo: NOAA Photo Library, public domain, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:50%;">
+<p>An <strong>ozonesonde</strong> is a small balloon-borne instrument that measures ozone as it rises to about 30 km. It gives the profile in the previous figure.</p>
+<p>Ground spectrometers and satellites measure the <strong>total column</strong>: all the ozone above a point. It is reported in <strong>Dobson units</strong>. A typical column is about 300 DU, equal to a layer of pure ozone only about <strong>3 mm</strong> thick at ground pressure.</p>
+<p>The “ozone hole” is defined as columns below <strong>220 DU</strong>.</p>
+</div></div>
+<aside class="notes">
+<p>Measurements anchor the chemistry. Ozonesondes are launched on weather balloons and report ozone concentration every few metres of altitude. Spectrometers on the ground and on satellites measure how much ultraviolet light is absorbed and convert that to a total column. One Dobson unit corresponds to a layer of pure ozone one hundredth of a millimetre thick at standard temperature and pressure. So the entire ozone layer, compressed to the pressure at sea level, would be about three millimetres thick. That thin a layer protects all life at the surface from the most damaging ultraviolet. The Antarctic ozone hole is the area where the column falls below 220 Dobson units.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="check-your-explanation" class="slide level2">
-<h2>Check your explanation</h2>
-<p>An ozone measurement rises at a surface station. Can you infer increased stratospheric ozone or identify a single emission source? Explain what else is needed.</p>
-<p>Use the <a href="../atmospheric-reactions/notes.html">notes and sources</a> and <a href="../atmospheric-reactions/exercise.html">worked exercises</a>.</p>
+<section id="a-shortcut-for-ozone-loss-catalysis" class="slide level2">
+<h2>A shortcut for ozone loss: catalysis</h2>
+
+<img data-src="fig/clox-cycle.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:82.0%"><p>A chlorine atom attacks O₃; the ClO formed meets an O atom and <strong>gives Cl back</strong>. Chlorine is a <strong>catalyst</strong>: it is regenerated and can repeat the cycle many times until another reaction stops it.</p>
+<aside class="notes">
+<p>The Chapman sink alone predicts more ozone than is observed. Additional loss comes from catalytic cycles involving nitrogen oxides, hydrogen radicals and halogens. Here is the chlorine cycle. In the first step chlorine reacts with ozone and forms chlorine monoxide. In the second, chlorine monoxide reacts with an oxygen atom and releases the chlorine atom again. Follow the chlorine: it goes round the loop and comes back unchanged. That is what makes it a catalyst. Each trip destroys one ozone molecule and one oxygen atom. A single chlorine atom can go round many times before it is captured into a less reactive form. That is why small amounts of chlorine can matter.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="bookkeeping-cancel-the-intermediates" class="slide level2">
+<h2>Bookkeeping: cancel the intermediates</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Write the steps and add them:</p>
+<p><span class="math display">\mathrm{Cl+O_3\rightarrow ClO+O_2}</span> <span class="math display">\mathrm{ClO+O\rightarrow Cl+O_2}</span></p>
+<p>Sum: Cl + O₃ + ClO + O → ClO + O₂ + Cl + O₂</p>
+<p>Cancel what appears on both sides:</p>
+<p><span class="math display">\mathrm{O_3+O\rightarrow 2\,O_2}</span></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><strong>Catalyst</strong>: Cl. Consumed in step 1, regenerated in step 2.</li>
+<li><strong>Intermediate</strong>: ClO. Formed in step 1, consumed in step 2.</li>
+<li>Neither appears in the <strong>net reaction</strong>.</li>
+</ul>
+<p>The net reaction says what one cycle does. It does <strong>not</strong> say how fast the cycle runs or how many times one Cl atom goes round. That needs <strong>kinetics</strong>.</p>
+</div></div>
+<aside class="notes">
+<p>This is exercise 1, done together. Add the two steps as if they were algebraic equations. Species that appear on both sides cancel. The catalyst is the species that is used first and returned later; the intermediate is the one that is made first and used later. Both cancel, which is why neither shows up in the net reaction. A frequent mistake is to read the net equation as a complete description. It tells us the stoichiometry of one cycle only. To estimate ozone loss you would need the rates of each step, the concentrations of chlorine and of the oxygen atoms, and the competing reactions that remove chlorine.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="where-the-chlorine-came-from" class="slide level2">
+<h2>Where the chlorine came from</h2>
+
+<img data-src="fig/cfc-journey.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:86.0%"><p><strong>CFCs</strong> are so unreactive that they survive for decades in the lower atmosphere. They slowly reach the stratosphere, where hard UV splits off Cl. Most chlorine is then stored in <strong>reservoirs</strong> (HCl, ClONO₂), until the polar winter releases it.</p>
+<aside class="notes">
+<p>Chlorofluorocarbons were valued precisely because they are unreactive: non-toxic, non-flammable propellants and refrigerants. That same stability means nothing removes them in the troposphere. OH does not attack them and they are not washed out by rain. Over years they mix up into the stratosphere. Only there is the ultraviolet hard enough to break a carbon–chlorine bond and release a chlorine atom. In 1974 Molina and Rowland pointed out this pathway; with Paul Crutzen, who studied nitrogen oxide catalysis and did his doctorate at Stockholm University, they received the 1995 Nobel Prize in Chemistry. Most stratospheric chlorine is stored in reservoirs that do not destroy ozone, so the cycle runs slowly. The polar winter changes that.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-a-hole-over-antarctica" class="slide level2">
+<h2>Why a hole over Antarctica?</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p><img data-src="img/psc-oslo.jpg" style="width:100.0%"> <span class="credit">Polar stratospheric clouds over Oslo, Norway. Photo: Havardtl, CC BY 4.0, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:48%;">
+<p>In the dark polar winter the stratosphere becomes cold enough for <strong>polar stratospheric clouds</strong>.</p>
+<p>On their particle surfaces, the reservoirs HCl and ClONO₂ react to form <strong>Cl₂</strong>. When the <strong>sun returns in spring</strong>, light splits Cl₂ into Cl atoms and catalytic loss runs fast.</p>
+<p>This is a different mechanism from the simple cycle: it needs <strong>surfaces</strong> and different ClO cycles. Gas-phase chemistry alone did not predict it.</p>
+</div></div>
+<aside class="notes">
+<p>The photo shows polar stratospheric clouds, also called nacreous or mother-of-pearl clouds, occasionally seen in Scandinavia in winter. They form only at very low temperatures, which are common in the Antarctic winter stratosphere and less common in the Arctic. Reactions on these cloud particles convert chlorine from the safe reservoirs into chlorine gas. Nothing happens during the polar night. When sunlight returns in September and October, chlorine gas is photolysed and chlorine atoms destroy ozone quickly. The main polar cycles involve the ClO dimer rather than oxygen atoms, which are scarce. That is why our simple cycle is representative, not the full polar mechanism. The Montreal Protocol has reduced stratospheric chlorine, and recovery is expected over the coming decades.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="check-yourself" class="slide level2">
+<h2>Check yourself</h2>
+<div class="checkbox">
+<ol type="1">
+<li>Why can ozone be made from O₂ in the stratosphere but not directly from O₂ at ground level?</li>
+<li>In the cycle NO + O₃ → NO₂ + O₂, then NO₂ + O → NO + O₂: what is the catalyst, what is the intermediate, and what is the net reaction?</li>
+<li>M appears on both sides of O + O₂ + M → O₃ + M. Why is it written at all?</li>
+<li>True or false: “A catalyst lasts forever.”</li>
+</ol>
+</div>
+<aside class="notes">
+<p>Answers. One: splitting oxygen needs photons shorter than about 240 nanometres, which are absorbed high up and do not reach the ground. Two: nitric oxide is the catalyst, nitrogen dioxide is the intermediate, and the net reaction is again O3 plus O gives two O2. This is the nitrogen oxide cycle that Crutzen described. Three: M removes the excess energy; without the collision the new ozone falls apart, so the rate depends on air density. Four: false. A catalyst is regenerated in each cycle, but other reactions can capture it, as when chlorine is stored in HCl. It is not present in unlimited amount.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="down-to-the-ground-summer-smog" class="slide level2">
+<h2>Down to the ground: summer smog</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="img/smog-mexico-city.jpg" style="width:100.0%"> <span class="credit">Photochemical smog over Mexico City, seen from the air. Photo: Fidel Gonzalez, CC BY-SA 3.0, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:45%;">
+<p>Near the ground there is no hard UV, so O₂ is not split. Ground-level ozone must be made another way.</p>
+<p>Its ingredients are <strong>nitrogen oxides</strong> (NO + NO₂ = NOₓ, mainly from combustion), <strong>volatile organic compounds</strong> (VOCs) or CO, and <strong>sunlight</strong>.</p>
+<p>Ozone then irritates airways and damages crops and forests. Episodes are worst in <strong>hot, sunny, still weather</strong>, as in many European heatwaves.</p>
+</div></div>
+<aside class="notes">
+<p>Ground-level ozone is a secondary pollutant: it is not emitted, it is made in the air. The ingredients are nitrogen oxides from traffic and combustion, reactive organic compounds from fuels, solvents and vegetation, or carbon monoxide, and sunlight. The photo shows the brown haze of photochemical smog over a large city, where all three ingredients meet. In Europe, high ozone episodes occur during hot, sunny summers with weak winds. Ozone also travels: much of the ozone measured in Scandinavia is formed elsewhere and transported. The next two slides show which reactions link NOx and ozone, and why the organic compounds are needed.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="no₂-and-light-alone-a-null-cycle" class="slide level2">
+<h2>NO₂ and light alone: a null cycle</h2>
+
+<img data-src="fig/nox-null-cycle.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Sunlight splits NO₂; the O atom makes O₃. But NO then <strong>uses up</strong> that O₃ again. Add the three steps and everything cancels: <strong>no net ozone</strong>. In sunlight the three species reach a balance set by light and concentrations.</p>
+<aside class="notes">
+<p>This is exercise 3. Write the three reactions and add them. Nitrogen dioxide is split by near-ultraviolet sunlight into nitric oxide and an oxygen atom. The oxygen atom forms ozone, exactly as in the stratosphere. But nitric oxide reacts quickly with ozone and makes nitrogen dioxide again. Every species cancels, so the cycle redistributes nitrogen between NO and NO2 and holds some ozone at a steady level, without building it up over time. This is why freshly emitted NO near a busy road actually lowers ozone locally: it titrates it. To get net ozone production, something else must turn NO into NO2 without consuming ozone.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="peroxy-radicals-break-the-null-cycle" class="slide level2">
+<h2>Peroxy radicals break the null cycle</h2>
+
+<img data-src="fig/peroxy-cycle.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>When OH attacks a VOC or CO, peroxy radicals (<strong>HO₂, RO₂</strong>) form. They convert NO to NO₂ <strong>without using O₃</strong>. Light then splits that NO₂, and the O atom becomes a <strong>new</strong> ozone molecule. Each NO can go round many times.</p>
+<aside class="notes">
+<p>Here is the key extra step. The hydroxyl radical attacks an organic compound or carbon monoxide, and with oxygen this produces peroxy radicals: HO2 in the case of carbon monoxide, RO2 for organic compounds. A peroxy radical oxidises nitric oxide to nitrogen dioxide. Unlike the null cycle, no ozone was used to do that. When the nitrogen dioxide is photolysed, the oxygen atom forms ozone that is not consumed again. The nitrogen oxides act almost like a catalyst: NO goes round many times, and each round adds ozone. That is why controlling ground-level ozone needs control of both NOx and VOCs, and why it peaks in sunny weather.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="oh-sets-the-pace-rate-and-lifetime" class="slide level2">
+<h2>OH sets the pace: rate and lifetime</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>For a loss reaction X + OH → products, the rate is</p>
+<p><span class="math display">R = k[\mathrm{X}][\mathrm{OH}]</span></p>
+<p>Hold OH constant: <span class="math inline">k' = k[\mathrm{OH}]</span>, lifetime <span class="math inline">\tau = 1/k'</span>.</p>
+<p><strong>Worked example.</strong> k = 1.0 × 10⁻¹² cm³ molecule⁻¹ s⁻¹, OH = 1.0 × 10⁶ molecules/cm³:</p>
+<ul>
+<li>k′ = <strong>1.0 × 10⁻⁶ s⁻¹</strong></li>
+<li>τ = 1.0 × 10⁶ s ≈ <strong>11.6 days</strong></li>
+<li>half-life = 0.693 τ ≈ 8.0 days</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="fig/lifetime-decay.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>OH, the hydroxyl radical, is the main oxidant of the lower atmosphere, often called its detergent. It reacts with most organic compounds, CO, methane and many pollutants. This is exercise 2. If the OH concentration is treated as constant, the second-order rate law becomes pseudo-first order with rate constant k-prime. Its inverse is the lifetime, the time for the amount to fall to about 37 percent. Point out the units: cubic centimetres per molecule per second, times molecules per cubic centimetre, gives per second. The lifetime is an e-folding time, not a half-life. It includes only this one sink. Deposition, photolysis or transport would make the real persistence shorter.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="lifetime-decides-how-far-a-gas-travels" class="slide level2">
+<h2>Lifetime decides how far a gas travels</h2>
+
+<img data-src="fig/lifetime-scale.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:92.0%"><p>Compare a gas’s lifetime with <strong>transport times</strong>. OH lasts about a second and never leaves the air parcel where it formed. A gas lasting days to weeks is a <strong>regional</strong> problem. Methane and CFCs live long enough to spread over the <strong>whole globe</strong>.</p>
+<aside class="notes">
+<p>This connects chemistry with transport. Mixing through the lowest kilometre or two of air takes about a day. Wind carries air around the globe in a hemisphere in a few weeks. Exchange between the hemispheres takes about a year. Compare these with chemical lifetimes. OH is so reactive that it is destroyed within about a second, so its concentration reflects only local production. The exercise gas, with a lifetime of about twelve days, will spread across a region but not evenly around the world. Methane, with a lifetime of about a decade, and CFCs, around a century, become well mixed globally. That is why CFCs from the Northern Hemisphere could destroy ozone over Antarctica.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="back-to-a-surface-station" class="slide level2">
+<h2>Back to a surface station</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><img data-src="img/air-monitor-zurich.jpg" style="width:78.0%"> <span class="credit">Mobile air quality monitoring station in Zürich, Switzerland. Photo: Balise42, CC BY 4.0, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:55%;">
+<p>Ozone measured at a ground station rises. Can you conclude that stratospheric ozone increased, or name the source?</p>
+<p><strong>No.</strong> Surface ozone reflects:</p>
+<ul>
+<li>local <strong>production</strong> from NOₓ + VOC + sunlight;</li>
+<li>local <strong>loss</strong> by NO and by deposition to surfaces;</li>
+<li><strong>transport</strong> of ozone formed elsewhere, and mixing from above.</li>
+</ul>
+<p>You would need precursor measurements, weather data and altitude-resolved ozone.</p>
+</div></div>
+<aside class="notes">
+<p>This is exercise 4 and it closes the story. A rise in ground-level ozone is a local measurement with several possible causes. Sunny weather speeds production. Lower NO emissions nearby can actually raise ozone, because less ozone is titrated. Air masses can bring ozone formed hundreds of kilometres away, and occasionally air from the upper troposphere or stratosphere mixes down. The molecular formula is identical whatever its origin, so the measurement alone cannot name a source. This is the same lesson as the river last week: a concentration at one point needs a balance of production, loss and transport before you interpret it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="common-mistakes-to-avoid" class="slide level2">
+<h2>Common mistakes to avoid</h2>
+<ul>
+<li><strong>“Ozone is good” or “ozone is bad.”</strong> It depends on where it is.</li>
+<li><strong>“Enough photon energy means the reaction happens.”</strong> The molecule must also absorb that wavelength.</li>
+<li><strong>“M is a reactant.”</strong> It is a collision partner; it is not consumed.</li>
+<li><strong>“The net equation shows the mechanism and the rate.”</strong> It shows stoichiometry only.</li>
+<li><strong>“NO₂ + sunlight makes ozone pile up.”</strong> Alone, it is a null cycle; peroxy radicals are needed.</li>
+<li><strong>“The lifetime is the half-life.”</strong> τ = 1/k′; the half-life is 0.693 τ.</li>
+<li><strong>“A catalyst works forever.”</strong> Reservoir species capture it.</li>
+</ul>
+<aside class="notes">
+<p>These are the errors that appear most often for this topic. Go through them and ask students to give the correct statement in their own words. The first one is the theme of the whole lecture. The second and third concern the meaning of photolysis and of the third body. The fourth is about what an overall equation does and does not tell you; this matters for every mechanism in the course. The fifth is the tropospheric ozone point. The sixth is a units and definitions issue: lifetime and half-life differ by a factor of about 0.69. The last one explains why chlorine does not destroy all ozone.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Key fact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Photon energy</td>
+<td>E = hc/λ; splitting O₂ needs λ &lt; 240 nm</td>
+</tr>
+<tr class="even">
+<td>Absorption</td>
+<td>needed as well as energy; O₃ absorbs about 200–310 nm</td>
+</tr>
+<tr class="odd">
+<td>Ozone formation</td>
+<td>O₂ + light → 2 O; O + O₂ + M → O₃ + M; M not consumed</td>
+</tr>
+<tr class="even">
+<td>Ozone amount</td>
+<td>balance of production, loss and transport</td>
+</tr>
+<tr class="odd">
+<td>Catalytic cycle</td>
+<td>Cl + O₃ → ClO + O₂; ClO + O → Cl + O₂; net O₃ + O → 2 O₂</td>
+</tr>
+<tr class="even">
+<td>Polar ozone hole</td>
+<td>cloud surfaces release Cl₂; spring sunlight starts fast loss</td>
+</tr>
+<tr class="odd">
+<td>Ground-level ozone</td>
+<td>NOₓ + VOC/CO + sunlight; NO₂/NO/O₃ alone is a null cycle</td>
+</tr>
+<tr class="even">
+<td>Lifetime</td>
+<td>k′ = k[OH], τ = 1/k′; half-life 0.693 τ</td>
+</tr>
+<tr class="odd">
+<td>Transport</td>
+<td>short-lived: local; long-lived: global</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Next:</strong> <a href="../deposition/lec.html">atmospheric deposition and acidity</a>. OH also turns SO₂ and NO₂ into acids, and rain brings them down. Then the <a href="../atmospheric-reactions/exercise.html">exercises</a> and <a href="../atmospheric-reactions/notes.html">notes</a>.</p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="img/teaser-power-plant.jpg" style="width:100.0%"> <span class="credit">Bełchatów coal power station, Poland. Photo: Petr Štefek, CC BY 2.5, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>The summary table is the revision sheet. Recite the chain once. Light selects reactions, through both energy and absorption. In the stratosphere, oxygen photolysis makes ozone, and catalysts such as chlorine destroy it; the polar hole needs cold cloud surfaces and returning sunlight. Near the ground, nitrogen dioxide photolysis makes ozone, but net production needs peroxy radicals from organic compounds or carbon monoxide. OH controls lifetimes, and lifetime controls how far a gas travels. The photo is the teaser for the next lecture. The same OH radical that sets lifetimes also oxidises sulfur dioxide and nitrogen dioxide from power stations and traffic into sulfuric and nitric acid.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 
 
 </section>

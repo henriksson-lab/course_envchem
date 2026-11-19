@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="390" viewBox="0 0 960 390" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: proposed drivers and consequences of browning in northern lakes. Several drivers act together; their relative importance differs between catchments. -->
+  <defs><marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker></defs>
+  <style>.t{font-size:18px;fill:#1b2a3a} .b{font-size:20px;font-weight:bold;fill:#1b2a3a} .h{font-size:22px;font-weight:bold;fill:#6b7785}</style>
+  <text class="h" x="20" y="34">Drivers (acting together)</text>
+  <rect x="10" y="50" width="310" height="72" rx="10" fill="#eef1f5"/><text class="b" x="26" y="80">Less acid deposition</text><text class="t" x="26" y="106">soil organic matter more soluble</text>
+  <rect x="10" y="134" width="310" height="72" rx="10" fill="#eef1f5"/><text class="b" x="26" y="164">Wetter, warmer climate</text><text class="t" x="26" y="190">more flushing of soils and peat</text>
+  <rect x="10" y="218" width="310" height="72" rx="10" fill="#eef1f5"/><text class="b" x="26" y="248">Land use</text><text class="t" x="26" y="274">e.g. conifer forestry, drainage</text>
+  <rect x="10" y="302" width="310" height="72" rx="10" fill="#eef1f5"/><text class="b" x="26" y="332">More iron</text><text class="t" x="26" y="358">Fe adds colour of its own</text>
+  <line x1="330" y1="210" x2="400" y2="210" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <rect x="410" y="150" width="160" height="120" rx="14" fill="#7a5230"/>
+  <text x="490" y="203" font-size="23" font-weight="bold" fill="#fff" text-anchor="middle">browner</text>
+  <text x="490" y="232" font-size="23" font-weight="bold" fill="#fff" text-anchor="middle">water</text>
+  <line x1="580" y1="210" x2="640" y2="210" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <text class="h" x="650" y="34">Consequences</text>
+  <rect x="650" y="50" width="300" height="72" rx="10" fill="#f6efe0"/><text class="b" x="666" y="80">Drinking water</text><text class="t" x="666" y="106">more treatment needed</text>
+  <rect x="650" y="134" width="300" height="72" rx="10" fill="#f6efe0"/><text class="b" x="666" y="164">Less light</text><text class="t" x="666" y="190">growth confined near surface</text>
+  <rect x="650" y="218" width="300" height="72" rx="10" fill="#f6efe0"/><text class="b" x="666" y="248">More O₂ demand</text><text class="t" x="666" y="274">risk of low-O₂ bottom water</text>
+  <rect x="650" y="302" width="300" height="72" rx="10" fill="#f6efe0"/><text class="b" x="666" y="332">Metal binding</text><text class="t" x="666" y="358">more transport, less free ion</text>
+</svg>

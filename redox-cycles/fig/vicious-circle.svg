@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: eutrophication feedback in the Baltic: blooms, oxygen loss and phosphate release reinforce each other -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <line x1="508" y1="105" x2="585" y2="138" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="643" y1="212" x2="643" y2="278" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="585" y1="352" x2="508" y2="385" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="392" y1="385" x2="315" y2="352" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="257" y1="278" x2="257" y2="212" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="315" y1="138" x2="392" y2="105" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="357" y="56" width="185" height="48" rx="24" fill="white" stroke="#b8860b" stroke-width="3"/>
+  <text x="450" y="86" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >phosphate in water</text>
+  <rect x="575" y="138" width="137" height="48" rx="24" fill="white" stroke="#25713E" stroke-width="3"/>
+  <text x="643" y="168" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >algal blooms</text>
+  <rect x="534" y="304" width="217" height="48" rx="24" fill="white" stroke="#8a5a2b" stroke-width="3"/>
+  <text x="643" y="334" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >sinking organic matter</text>
+  <rect x="345" y="386" width="209" height="48" rx="24" fill="white" stroke="#2468A0" stroke-width="3"/>
+  <text x="450" y="416" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >O₂ used in deep water</text>
+  <rect x="144" y="304" width="225" height="48" rx="24" fill="white" stroke="#6c4f9c" stroke-width="3"/>
+  <text x="257" y="334" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >anoxic sediment surface</text>
+  <rect x="128" y="138" width="258" height="48" rx="24" fill="white" stroke="#c27c3a" stroke-width="3"/>
+  <text x="257" y="168" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >Fe(III) reduced, P released</text>
+  <text x="450" y="240" font-size="20" fill="#c0392b" text-anchor="middle" font-weight="bold" >self-reinforcing</text>
+  <text x="450" y="267" font-size="20" fill="#c0392b" text-anchor="middle" font-weight="bold" >loop</text>
+  <path d="M200,52 L318,74" stroke="#b8860b" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+  <text x="20" y="40.0" font-size="16" fill="#b8860b" text-anchor="start" font-weight="bold" >external load from</text>
+  <text x="20" y="60.0" font-size="16" fill="#b8860b" text-anchor="start" font-weight="bold" >land and wastewater</text>
+</svg>

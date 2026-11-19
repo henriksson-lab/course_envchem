@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="430" viewBox="0 0 940 430" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: from water, a contaminant can sorb to solids, volatilise to air, accumulate in organisms, transform, or be exported. Only transformation changes the parent's identity. -->
+  <defs>
+    <marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker>
+  </defs>
+  <style>
+    .hd{font-size:18px;font-weight:bold;text-anchor:middle}
+    .t{font-size:15px;fill:#1b2a3a;text-anchor:middle}
+  </style>
+  <!-- centre -->
+  <rect x="350" y="170" width="240" height="90" rx="14" fill="#2468A0"/>
+  <text x="470" y="207" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle">parent in water</text>
+  <text x="470" y="235" font-size="15" fill="#fff" text-anchor="middle">dissolved molecules</text>
+  <!-- air -->
+  <rect x="370" y="15" width="200" height="80" rx="12" fill="#e9eef3" stroke="#6b7785" stroke-width="2"/>
+  <text class="hd" x="470" y="45" fill="#1b2a3a">air</text>
+  <text class="t" x="470" y="70">volatilisation</text>
+  <line x1="460" y1="165" x2="460" y2="100" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <line x1="480" y1="100" x2="480" y2="165" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <!-- solids -->
+  <rect x="20" y="300" width="250" height="105" rx="12" fill="#e9dcc3" stroke="#AD4825" stroke-width="2"/>
+  <text class="hd" x="145" y="330" fill="#1b2a3a">solids, sediment</text>
+  <text class="t" x="145" y="355">sorption: K<tspan font-size="11" baseline-shift="sub">d</tspan> = f<tspan font-size="11" baseline-shift="sub">oc</tspan>K<tspan font-size="11" baseline-shift="sub">oc</tspan></text>
+  <text class="t" x="145" y="380">parent conserved</text>
+  <line x1="355" y1="262" x2="250" y2="300" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <line x1="262" y1="314" x2="365" y2="272" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <!-- biota -->
+  <rect x="670" y="300" width="250" height="105" rx="12" fill="#d8ecdc" stroke="#25713E" stroke-width="2"/>
+  <text class="hd" x="795" y="330" fill="#1b2a3a">organisms</text>
+  <text class="t" x="795" y="355">uptake into fat or protein</text>
+  <text class="t" x="795" y="380">food-chain transfer</text>
+  <line x1="585" y1="262" x2="690" y2="300" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <!-- transformation -->
+  <rect x="20" y="40" width="250" height="105" rx="12" fill="#fbe3df" stroke="#c0392b" stroke-width="2"/>
+  <text class="hd" x="145" y="70" fill="#c0392b">transformation</text>
+  <text class="t" x="145" y="95">microbes, light, hydrolysis</text>
+  <text class="t" x="145" y="120"><tspan font-weight="bold">parent becomes products</tspan></text>
+  <line x1="355" y1="180" x2="275" y2="135" stroke="#c0392b" stroke-width="3" marker-end="url(#ar)"/>
+  <!-- export -->
+  <rect x="670" y="40" width="250" height="105" rx="12" fill="#f6efe0" stroke="#b8860b" stroke-width="2"/>
+  <text class="hd" x="795" y="70" fill="#1b2a3a">export</text>
+  <text class="t" x="795" y="95">outflow, groundwater</text>
+  <text class="t" x="795" y="120">parent moves elsewhere</text>
+  <line x1="585" y1="180" x2="665" y2="135" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text x="470" y="300" font-size="15" fill="#6b7785" text-anchor="middle">Every arrow lowers the water</text>
+  <text x="470" y="320" font-size="15" fill="#6b7785" text-anchor="middle">concentration; only the red one</text>
+  <text x="470" y="340" font-size="15" fill="#6b7785" text-anchor="middle">destroys the parent.</text>
+</svg>

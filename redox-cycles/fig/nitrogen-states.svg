@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="460" viewBox="0 0 980 460" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: nitrogen species on an oxidation-state axis; nitrification and denitrification -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <line x1="80" y1="385" x2="930" y2="385" stroke="#1b2a3a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <line x1="80.0" y1="379" x2="80.0" y2="391" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="80.0" y="415" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >−III</text>
+  <line x1="182.5" y1="379" x2="182.5" y2="391" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="182.5" y="415" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" ></text>
+  <line x1="285.0" y1="379" x2="285.0" y2="391" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="285.0" y="415" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" ></text>
+  <line x1="387.5" y1="379" x2="387.5" y2="391" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="387.5" y="415" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >0</text>
+  <line x1="490.0" y1="379" x2="490.0" y2="391" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="490.0" y="415" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" ></text>
+  <line x1="592.5" y1="379" x2="592.5" y2="391" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="592.5" y="415" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" ></text>
+  <line x1="695.0" y1="379" x2="695.0" y2="391" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="695.0" y="415" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >+III</text>
+  <line x1="797.5" y1="379" x2="797.5" y2="391" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="797.5" y="415" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" ></text>
+  <line x1="900.0" y1="379" x2="900.0" y2="391" stroke="#1b2a3a" stroke-width="2"/>
+  <text x="900.0" y="415" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >+V</text>
+  <text x="490.0" y="448" font-size="17" fill="#6b7785" text-anchor="middle" font-weight="normal" >oxidation state of N</text>
+  <line x1="80.0" y1="264" x2="80.0" y2="379" stroke="#6b7785" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <line x1="387.5" y1="264" x2="387.5" y2="379" stroke="#6b7785" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <line x1="695.0" y1="264" x2="695.0" y2="379" stroke="#6b7785" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <line x1="900.0" y1="264" x2="900.0" y2="379" stroke="#6b7785" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <path d="M80.0,195 C285.0,70 695.0,70 900.0,195" stroke="#c0392b" stroke-width="4" fill="none" marker-end="url(#arrR)"/>
+  <path d="M888.0,262 C797.5,330 490.0,330 405.5,262" stroke="#2468A0" stroke-width="4" fill="none" marker-end="url(#arrB)"/>
+  <circle cx="80.0" cy="230" r="34" fill="#AD4825" stroke="none" stroke-width="2"/>
+  <text x="80.0" y="238" font-size="20" fill="white" text-anchor="middle" font-weight="bold" >NH₄⁺</text>
+  <circle cx="387.5" cy="230" r="34" fill="#6b7785" stroke="none" stroke-width="2"/>
+  <text x="387.5" y="238" font-size="20" fill="white" text-anchor="middle" font-weight="bold" >N₂</text>
+  <circle cx="695.0" cy="230" r="34" fill="#b8860b" stroke="none" stroke-width="2"/>
+  <text x="695.0" y="238" font-size="20" fill="white" text-anchor="middle" font-weight="bold" >NO₂⁻</text>
+  <circle cx="900.0" cy="230" r="34" fill="#25713E" stroke="none" stroke-width="2"/>
+  <text x="900.0" y="238" font-size="20" fill="white" text-anchor="middle" font-weight="bold" >NO₃⁻</text>
+  <text x="490.0" y="70" font-size="19" fill="#c0392b" text-anchor="middle" font-weight="bold" >nitrification: needs O₂, releases H⁺</text>
+  <text x="490.0" y="95" font-size="17" fill="#c0392b" text-anchor="middle" font-weight="normal" >loses 8 e⁻ per N</text>
+  <text x="643.75" y="350" font-size="17" fill="#2468A0" text-anchor="middle" font-weight="bold" >denitrification: no O₂, needs a donor; gains 5 e⁻ per N</text>
+</svg>

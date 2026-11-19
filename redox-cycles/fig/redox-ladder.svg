@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: order of electron acceptors used by microbes as each runs out -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <text x="150" y="30" font-size="17" fill="#6b7785" text-anchor="middle" font-weight="bold" >acceptor</text>
+  <text x="390" y="30" font-size="17" fill="#6b7785" text-anchor="middle" font-weight="bold" >product</text>
+  <text x="560" y="30" font-size="17" fill="#6b7785" text-anchor="start" font-weight="bold" >process</text>
+  <text x="790" y="30" font-size="17" fill="#6b7785" text-anchor="start" font-weight="bold" >evidence</text>
+  <rect x="60" y="50" width="180" height="50" rx="8" fill="#2468A0" stroke="none" stroke-width="0"/>
+  <text x="150" y="83" font-size="21" fill="white" text-anchor="middle" font-weight="bold" >O₂</text>
+  <line x1="245" y1="75" x2="300" y2="75" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="305" y="50" width="170" height="50" rx="8" fill="white" stroke="#2468A0" stroke-width="3"/>
+  <text x="390" y="83" font-size="20" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >H₂O</text>
+  <text x="560" y="82" font-size="18" fill="#1b2a3a" text-anchor="start" font-weight="normal" >aerobic respiration</text>
+  <text x="790" y="82" font-size="16" fill="#2468A0" text-anchor="start" font-weight="normal" >O₂ falls</text>
+  <rect x="60" y="115" width="180" height="50" rx="8" fill="#25713E" stroke="none" stroke-width="0"/>
+  <text x="150" y="148" font-size="21" fill="white" text-anchor="middle" font-weight="bold" >NO₃⁻</text>
+  <line x1="245" y1="140" x2="300" y2="140" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="305" y="115" width="170" height="50" rx="8" fill="white" stroke="#25713E" stroke-width="3"/>
+  <text x="390" y="148" font-size="20" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >N₂</text>
+  <text x="560" y="147" font-size="18" fill="#1b2a3a" text-anchor="start" font-weight="normal" >denitrification</text>
+  <text x="790" y="147" font-size="16" fill="#25713E" text-anchor="start" font-weight="normal" >nitrate falls</text>
+  <rect x="60" y="180" width="180" height="50" rx="8" fill="#7f8c9d" stroke="none" stroke-width="0"/>
+  <text x="150" y="213" font-size="21" fill="white" text-anchor="middle" font-weight="bold" >MnO₂(s)</text>
+  <line x1="245" y1="205" x2="300" y2="205" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="305" y="180" width="170" height="50" rx="8" fill="white" stroke="#7f8c9d" stroke-width="3"/>
+  <text x="390" y="213" font-size="20" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >Mn²⁺</text>
+  <text x="560" y="212" font-size="18" fill="#1b2a3a" text-anchor="start" font-weight="normal" >manganese reduction</text>
+  <text x="790" y="212" font-size="16" fill="#1b2a3a" text-anchor="start" font-weight="normal" >dissolved Mn rises</text>
+  <rect x="60" y="245" width="180" height="50" rx="8" fill="#c27c3a" stroke="none" stroke-width="0"/>
+  <text x="150" y="278" font-size="21" fill="white" text-anchor="middle" font-weight="bold" >Fe(III) solids</text>
+  <line x1="245" y1="270" x2="300" y2="270" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="305" y="245" width="170" height="50" rx="8" fill="white" stroke="#c27c3a" stroke-width="3"/>
+  <text x="390" y="278" font-size="20" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >Fe²⁺</text>
+  <text x="560" y="277" font-size="18" fill="#1b2a3a" text-anchor="start" font-weight="normal" >iron reduction</text>
+  <text x="790" y="277" font-size="16" fill="#c27c3a" text-anchor="start" font-weight="normal" >Fe²⁺ and phosphate rise</text>
+  <rect x="60" y="310" width="180" height="50" rx="8" fill="#6c4f9c" stroke="none" stroke-width="0"/>
+  <text x="150" y="343" font-size="21" fill="white" text-anchor="middle" font-weight="bold" >SO₄²⁻</text>
+  <line x1="245" y1="335" x2="300" y2="335" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="305" y="310" width="170" height="50" rx="8" fill="white" stroke="#6c4f9c" stroke-width="3"/>
+  <text x="390" y="343" font-size="20" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >HS⁻ / H₂S</text>
+  <text x="560" y="342" font-size="18" fill="#1b2a3a" text-anchor="start" font-weight="normal" >sulfate reduction</text>
+  <text x="790" y="342" font-size="16" fill="#6c4f9c" text-anchor="start" font-weight="normal" >H₂S smell, black FeS</text>
+  <rect x="60" y="375" width="180" height="50" rx="8" fill="#a08a00" stroke="none" stroke-width="0"/>
+  <text x="150" y="408" font-size="21" fill="white" text-anchor="middle" font-weight="bold" >CO₂</text>
+  <line x1="245" y1="400" x2="300" y2="400" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="305" y="375" width="170" height="50" rx="8" fill="white" stroke="#a08a00" stroke-width="3"/>
+  <text x="390" y="408" font-size="20" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >CH₄</text>
+  <text x="560" y="407" font-size="18" fill="#1b2a3a" text-anchor="start" font-weight="normal" >methanogenesis</text>
+  <text x="790" y="407" font-size="16" fill="#a08a00" text-anchor="start" font-weight="normal" >methane bubbles</text>
+  <path d="M30,60 L30,420" stroke="#1b2a3a" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+  <text x="20" y="448.0" font-size="17" fill="#1b2a3a" text-anchor="start" font-weight="normal" >more energy for microbes at the top; each step starts as the one above runs low</text>
+</svg>

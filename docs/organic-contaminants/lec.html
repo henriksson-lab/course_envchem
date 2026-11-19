@@ -144,6 +144,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Organic contaminants and environmental fate</h1>
+  <p class="subtitle">Week 4 — Soils, waste, and contaminants</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -154,60 +155,502 @@ Environmental Chemistry
 </div>
 
 </section>
-<section id="chemical-question" class="slide level2">
-<h2>Chemical question</h2>
-<p>Which molecular properties help explain where a contaminant goes, and why is disappearance from water not the same as chemical destruction?</p>
-</section>
-<section id="what-to-explain" class="slide level2">
-<h2>What to explain</h2>
+<section id="about-this-lecture" class="slide level2">
+<h2>About this lecture</h2>
+<div class="columns">
+<div class="column" style="width:56%;">
+<p>In December 2013, the town of <strong>Ronneby</strong> in southern Sweden closed one of its waterworks. Its groundwater contained <strong>PFAS</strong>, fluorinated compounds from firefighting foam used for years at a nearby air base training site. Residents had drunk the water for a long time, and blood tests later showed strongly raised PFAS levels.</p>
+<p>How did a foam sprayed on the ground end up in people’s blood?</p>
+<p>Today you will learn that:</p>
 <ul>
-<li>Relate ionisation and neutral partitioning to the stated environmental conditions.</li>
-<li>Combine a two-phase balance with a supplied first-order parent-loss model.</li>
-<li>Distinguish partitioning, persistence, exposure, and biological effect.</li>
+<li>molecular <strong>structure</strong> sets where a compound goes: water, solids, air or organisms;</li>
+<li><strong>ionisation</strong> changes that answer with pH;</li>
+<li><strong>persistence</strong> is a separate property, described by a rate;</li>
+<li><strong>disappearing from water is not destruction</strong>.</li>
 </ul>
+</div><div class="column" style="width:44%;">
+<p><img data-src="img/foam.jpg" style="width:100.0%"> <span class="credit">Sailors test a firefighting foam (AFFF) hose on an aircraft carrier, 2016. Photo: US Navy, public domain, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Open with Ronneby. The drinking water came from a groundwater source near the Blekinge air base, where firefighting foam had been used in training. The foam contained per- and polyfluoroalkyl substances, PFAS, which seeped into the ground and reached the wells. The waterworks was closed when the contamination was discovered in late 2013, and later health studies of residents became an important source of knowledge about PFAS exposure. The photo shows the same kind of foam in a different setting. Link to last lecture: we followed acid and metals out of a waste heap. Today we follow organic molecules, and we ask two questions about each one: where does it go, and how long does it last?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="structure-affects-phase-preference" class="slide level2">
-<h2>Structure affects phase preference</h2>
-<p>Kow describes a phase preference under stated conditions.</p>
-<p>log Kow does not directly give persistence, toxicity, or an environmental concentration.</p>
+<section id="why-pfas-do-not-go-away" class="slide level2">
+<h2>Why PFAS do not go away</h2>
+
+<img data-src="fig/pfas-structure.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:86.0%"><p>PFOS combines two unusual features: a fully <strong>fluorinated tail</strong> that hardly degrades, and an <strong>ionised head</strong> that keeps it in water. That combination makes it both <strong>persistent</strong> and <strong>mobile</strong>.</p>
+<aside class="notes">
+<p>Show the structure and let students find the two parts. The tail is a chain of eight carbons, each carrying fluorine instead of hydrogen. Carbon–fluorine bonds are among the strongest in organic chemistry, and microbes have essentially no pathway to break this chain under environmental conditions. The tail repels both water and oils, which is exactly why these compounds are excellent in foams and coatings. The sulfonate head is a very strong acid, so in any natural water it is present as an anion. That is important for today. It means PFOS dissolves, moves with groundwater and does not simply stick to soil. Persistence plus mobility is what brought it to the Ronneby taps.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-contrasting-story-ddt" class="slide level2">
+<h2>A contrasting story: DDT</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><img data-src="img/ddt-spray.jpg" style="width:100.0%"> <span class="credit">DDT spraying in the US malaria eradication programme, 1958. Photo: CDC, public domain, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:55%;">
+<p><strong>DDT</strong> was the most widely used insecticide of the mid-20th century, in agriculture and against malaria mosquitoes.</p>
+<p>Like PFOS it is <strong>persistent</strong>. Unlike PFOS it is <strong>neutral and very hydrophobic</strong>: it barely dissolves in water and collects in <strong>organic matter, sediments and fat</strong>.</p>
+<p>Sweden banned most uses around 1970. DDT and its product DDE are still measurable in Baltic sediments and wildlife.</p>
+<p>Two persistent compounds, two different destinations. Why?</p>
+</div></div>
+<aside class="notes">
+<p>DDT is the classic persistent organic pollutant and a useful contrast to PFAS. It was sprayed in huge quantities after the Second World War. Rachel Carson’s book Silent Spring in 1962 drew public attention to its effects on birds, and many countries banned agricultural use in the 1970s. Sweden was among the early countries to act. The key point for today is that DDT and PFOS share persistence but differ completely in where they end up. DDT goes to sediments, soil organic matter and the fatty tissue of animals. PFOS stays largely in water and binds to proteins. The difference comes from molecular properties we can describe with a few numbers. That is the rest of the lecture.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="where-can-a-molecule-go" class="slide level2">
+<h2>Where can a molecule go?</h2>
+
+<img data-src="fig/fate-map.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:82.0%"><p>From water, a contaminant can <strong>sorb</strong> to solids, <strong>volatilise</strong>, be <strong>taken up</strong> by organisms, be <strong>exported</strong>, or be <strong>transformed</strong>. Only transformation changes the parent molecule. The others just move it.</p>
+<aside class="notes">
+<p>This map organises the lecture. The central box is the dissolved parent compound. Four arrows move the same molecule to another phase or another place: sorption to particles and sediment, volatilisation to air, uptake into organisms, and export by flowing water. Each one lowers the dissolved concentration you would measure in a water sample, yet none destroys anything. Only the red arrow, transformation by microbes, sunlight or chemical reaction, changes the parent into products. This distinction will matter repeatedly. Today we quantify two arrows: sorption with a partition coefficient, and transformation with a first-order rate. Volatilisation and bioaccumulation use similar partition ideas, which we treat qualitatively.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="measuring-phase-preference-kow" class="slide level2">
+<h2>Measuring phase preference: K<sub>ow</sub></h2>
+<div class="columns">
+<div class="column" style="width:42%;">
+<p><img data-src="fig/octanol-water.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:58%;">
+<p>Shake a compound with <strong>octanol</strong> (an oily liquid standing in for fat and organic matter) and <strong>water</strong>. At equilibrium:</p>
+<p><span class="math display">K_{ow}=\frac{C_\text{octanol}}{C_\text{water}}</span></p>
+<p>The values span many orders of magnitude, so we use <strong>log K<sub>ow</sub></strong>.</p>
+<ul>
+<li>Polar groups (–OH, –COOH, charges) favour water: low K<sub>ow</sub>.</li>
+<li>Large, nonpolar, chlorinated molecules favour octanol: high K<sub>ow</sub>.</li>
+</ul>
+<p>K<sub>ow</sub> is a <strong>partition</strong> property. It is <strong>not</strong> a half-life and <strong>not</strong> a toxicity.</p>
+</div></div>
+<aside class="notes">
+<p>Octanol was chosen decades ago because it has a long hydrocarbon chain like lipids but one polar hydroxyl group, so it mimics the mixed environment of cell membranes and organic matter. In the picture, ten molecules sit in the octanol for every one in the water, so Kow is ten and log Kow is one. Real contaminants go far beyond that. Point out the warning in the last line. Students often assume a high Kow means a dangerous or persistent compound. Kow says only how the compound distributes between two liquids at equilibrium. It says nothing about how quickly the compound breaks down, or about what it does in an organism. Those are separate questions.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-kow-scale-for-real-compounds" class="slide level2">
+<h2>The K<sub>ow</sub> scale for real compounds</h2>
+
+<img data-src="fig/logkow-scale.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><p>Each unit of log K<sub>ow</sub> is a <strong>factor of ten</strong>. DDT prefers octanol over water by roughly ten million to one. Ethanol slightly prefers water. Notice what is missing: <strong>PFOS has no meaningful K<sub>ow</sub></strong>, because it is ionised and gathers at the oil–water interface.</p>
+<aside class="notes">
+<p>These are rounded literature values, for orientation. Benzene, from petrol, has log Kow around two. The herbicide atrazine is similar, which is one reason it is found in groundwater. Naphthalene and lindane are in the middle. DDT is near seven, so it is about ten million times more concentrated in octanol than in water at equilibrium. That explains its accumulation in sediments and fat. PFOS is not on the scale. Surfactants sit at the boundary between phases instead of dissolving in one, so the octanol–water experiment does not give a useful number. This is a good example of a tool with clear limits. The next slide shows the other reason: ionisation.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="ionisation-changes-the-problem" class="slide level2">
 <h2>Ionisation changes the problem</h2>
-<p>At pH two units above pKa, neutral HA is <strong>1/101 ≈ 0.00990</strong>.</p>
-<p>Neutral and charged forms need appropriate partition models.</p>
-</section>
-<section id="use-organic-carbon-normalisation-cautiously" class="slide level2">
-<h2>Use organic-carbon normalisation cautiously</h2>
-<p><span class="math display">K_d=f_{oc}K_{oc}</span></p>
-<p>Use a fraction, not a percentage number: 2% → 0.020.</p>
-<p>Check whether the neutral organic-carbon model applies.</p>
-</section>
-<section id="a-first-order-parent-loss-model" class="slide level2">
-<h2>A first-order parent-loss model</h2>
-<p>Parent remaining fraction: <span class="math inline">e^{-kt}</span>.</p>
-<p>Transformation does not guarantee complete mineralisation or harmless products.</p>
-</section>
-<section id="state-the-coupled-teaching-model" class="slide level2">
-<h2>State the coupled teaching model</h2>
-<p>Teaching model:</p>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p><img data-src="fig/ionisation.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:48%;">
+<p>For an organic acid HA:</p>
+<p><span class="math display">f_{HA}=\frac{1}{1+10^{\,\mathrm{pH}-pK_a}}</span></p>
+<p>The same form as the carbonate fractions. For pK<sub>a</sub> = 4.50:</p>
 <ul>
-<li>Rapid, constant partitioning.</li>
-<li>Same k for parent transformation in both phases.</li>
-<li>No transfer across the outer boundary.</li>
+<li>pH 4.50: neutral fraction <strong>0.500</strong></li>
+<li>pH 6.50: <strong>0.009901</strong>, about 1 %</li>
 </ul>
-<p>Then <span class="math inline">C_w(t)=M_0e^{-kt}/(V_w+K_dm_s)</span>.</p>
+<p>The anion is far more water-loving. A K<sub>ow</sub> measured for the <strong>neutral</strong> form does not describe the <strong>total</strong> at pH 6.5.</p>
+</div></div>
+<aside class="notes">
+<p>This is exercise 2. The equation is the same Henderson–Hasselbalch logic as the carbonate unit, and students should recognise the shape of the curves. Each pH unit above the pKa reduces the neutral fraction tenfold. In most natural waters, between about pH 6 and 8.5, an organic acid with pKa 4.5 is almost entirely an anion. Many pesticides and pharmaceuticals are weak acids or bases, so their behaviour changes with pH. PFOS is an extreme case: its pKa is very low, so it is ionised everywhere in the environment. The neutral-form Kow then describes only a tiny fraction of the compound, and using it for the total would overestimate sorption badly.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="partition-and-transform" class="slide level2">
-<h2>Partition and transform</h2>
-<p>After 20 days: total parent = <strong>0.250 mg</strong>.</p>
-<p>Water = <strong>0.125 mg</strong>; solid = <strong>0.125 mg</strong>.</p>
-<p>Aqueous concentration = <strong>0.125 mg/L</strong>.</p>
+<section id="ionised-does-not-mean-unsorbed" class="slide level2">
+<h2>Ionised does not mean unsorbed</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p>Charged organic compounds still bind, but by <strong>different mechanisms</strong>:</p>
+<ul>
+<li><strong>Cations</strong> (many amine drugs, some pesticides) sit on <strong>cation exchange sites</strong>, as in the soil lecture.</li>
+<li><strong>Anions</strong> such as PFOS bind to <strong>proteins</strong>, to positively charged <strong>iron oxide</strong> surfaces, and at <strong>air–water interfaces</strong>.</li>
+</ul>
+<p>So “ionised means mobile” is a tendency, not a rule.</p>
+<p><strong>Why PFOS ends up in blood, not fat:</strong> it binds to <strong>blood proteins</strong> such as albumin and is excreted slowly, over years.</p>
+</div><div class="column" style="width:45%;">
+<p><img data-src="img/pfas-foam-river.jpg" style="width:100.0%"> <span class="credit">PFAS-containing foam on the Huron River, Michigan: surfactants gather at the air–water surface. Photo: MountainFae, CC BY-SA 4.0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>The notes warn against the rule that ionised compounds never sorb. Cationic organic compounds behave like the cations in last week’s lecture. They compete for negative exchange sites on clays and organic matter and can be held quite strongly. Anionic compounds avoid negatively charged surfaces but can bind to positively charged oxide surfaces at low pH, and to proteins. PFAS also concentrate at air–water interfaces, which matters in unsaturated soil; the river foam in the photo is a visible example. The last line connects to exposure. PFOS in humans binds to proteins in blood serum and is eliminated slowly, with half-lives of several years reported in the literature. That is why Ronneby residents still had elevated levels long after the clean water supply was restored.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="check-your-explanation" class="slide level2">
-<h2>Check your explanation</h2>
-<p>Water parent concentration falls after sediment is added. What would distinguish sorption from transformation, and why does log Kow alone not answer the question?</p>
-<p>Use the <a href="../organic-contaminants/notes.html">notes and sources</a> and <a href="../organic-contaminants/exercise.html">worked exercises</a>.</p>
-<p>Explore the <a href="../interactives/week4.html">week 4 demo</a>, then explain the result chemically.</p>
+<section id="from-kow-to-sorption-on-soil-kd-fockoc" class="slide level2">
+<h2>From K<sub>ow</sub> to sorption on soil: K<sub>d</sub> = f<sub>oc</sub>K<sub>oc</sub></h2>
+
+<img data-src="fig/foc-koc.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><p>For neutral hydrophobic compounds, the <strong>organic matter</strong> of a soil or sediment does the sorbing. Only that fraction counts. Two soils with the same compound can differ in K<sub>d</sub> by a factor of 100.</p>
+<aside class="notes">
+<p>Neutral hydrophobic molecules partition into organic matter much as they partition into octanol. The coefficient Koc describes this per kilogram of organic carbon and is a property of the compound. Multiplying by the organic-carbon fraction of a particular solid gives Kd for that solid. Exercise 1 does this: 0.02 times 5000 gives 100 litres per kilogram. The trap is units. A soil described as two percent organic carbon has foc 0.02, not 2. Using 2 gives a Kd a hundred times too high. Remind students of the conditions: this works for neutral compounds where organic matter dominates sorption. It is not valid for ions, for clean mineral surfaces, or for soot-like carbon.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-much-stays-in-the-water" class="slide level2">
+<h2>How much stays in the water?</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p><img data-src="fig/phase-split.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:48%;">
+<p>At equilibrium, mass is shared between water and solid:</p>
+<p><span class="math display">M = C_w V_w + C_s m_s,\qquad C_s = K_d C_w</span></p>
+<p><span class="math display">C_w = \frac{M}{V_w + K_d\, m_s}</span></p>
+<p>With 1.00 L water and 0.0100 kg solid:</p>
+<ul>
+<li><strong>U</strong> (K<sub>d</sub> = 100): half in water, C<sub>w</sub> = 0.500 mg/L</li>
+<li><strong>V</strong> (K<sub>d</sub> = 10): 0.909 in water, C<sub>w</sub> = 0.909 mg/L</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>This is the mass balance from the surfaces unit, applied to the fictitious compounds U and V from activity C. Each starts with one milligram of parent. The denominator is an effective volume: the water itself plus the amount of solid weighted by Kd. When Kd times the solid mass equals the water volume, half the compound is on each phase. That is U’s case: one hundred times 0.01 equals one. V has a ten times smaller Kd, so most of it stays in water. The figure shows the whole curve. Emphasise that sorption moves mass but does not remove it. The sorbed parent is still there and can return to the water if conditions change.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="persistence-a-first-order-rate" class="slide level2">
+<h2>Persistence: a first-order rate</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p><img data-src="fig/first-order.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:48%;">
+<p>If transformation is first order with constant k and no new input:</p>
+<p><span class="math display">M(t)=M_0\,e^{-kt},\qquad k=\frac{\ln 2}{t_{1/2}}</span></p>
+<ul>
+<li>U: t<sub>1/2</sub> = 10 days. After 10, 20, 30 days: 0.5, 0.25, 0.125 mg.</li>
+<li>V: t<sub>1/2</sub> = 30 days.</li>
+</ul>
+<p>The half-life describes <strong>how fast the parent disappears</strong>, under stated conditions. It says nothing about where the parent is.</p>
+</div></div>
+<aside class="notes">
+<p>First-order kinetics is the simplest persistence model. The rate of loss is proportional to the amount present, so each half-life removes half of what remains, regardless of the starting amount. Students have met this in radioactive decay. The half-lives here are stipulated for the fictitious compounds. Real half-lives depend strongly on conditions: temperature, oxygen, microbes, light and whether the compound is dissolved or sorbed. A pesticide may degrade in weeks in warm topsoil and persist for years in cold, anoxic groundwater. For PFOS, no relevant environmental degradation is known, so its effective half-life in groundwater is extremely long. Note again: the half-life is about identity, not location.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="combining-the-two-the-activity-c-model" class="slide level2">
+<h2>Combining the two: the activity C model</h2>
+
+<img data-src="fig/fate-water.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><p>Assume rapid sorption equilibrium and the <strong>same</strong> k in both phases. Then the total decays exponentially and water concentration follows: <span class="math inline">C_w(t) = M(t)/(V_w + K_d m_s)</span>. V starts higher (less sorbed) <strong>and</strong> declines more slowly (longer half-life).</p>
+<aside class="notes">
+<p>This is the model in fate.R. Two simplifications make it easy. First, sorption reaches equilibrium much faster than transformation, so the phase split stays constant. Second, the parent transforms at the same rate whether dissolved or sorbed, so the total follows one exponential. Water concentration is then just the total divided by the effective volume. The curves show two separate effects that are easy to confuse. V’s curve starts higher because V sorbs less. It falls more slowly because V persists longer. If only dissolved parent degraded, or exchange were slow, we would need a different kinetic model. The figure is a model prediction, not data, and the markers match the table in the exercise.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="worked-example-compound-u-at-day-20" class="slide level2">
+<h2>Worked example: compound U at day 20</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="fig/inventory-u.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:45%;">
+<p>Start: 1.00 mg U, half on each phase, C<sub>w</sub> = 0.500 mg/L.</p>
+<p>After 20 days = <strong>two half-lives</strong>:</p>
+<ul>
+<li>total parent: 1.00 × ¼ = <strong>0.250 mg</strong></li>
+<li>water: 0.125 mg, so C<sub>w</sub> = <strong>0.125 mg/L</strong></li>
+<li>solid: 0.125 mg</li>
+<li>transformed: <strong>0.750 mg</strong></li>
+</ul>
+<p>The missing 0.750 mg is <strong>no longer U</strong>. It did not “go to the sediment”. What it became, the model does not say.</p>
+</div></div>
+<aside class="notes">
+<p>Work through the numbers from the notes. Two half-lives leave a quarter of the starting parent, 0.25 milligrams. The phase split is unchanged, so half is in water and half on the solid. The water concentration is 0.125 milligrams per litre, a quarter of the starting value. The three bands always add up to one milligram, which is the check students should do every time. The grey band is an accounting term. It records parent that has changed identity, nothing more. It is not a measured product, not proof that the compound was mineralised to carbon dioxide, and not a statement about toxicity. Exercise 3 extends this to day 30: total 0.125 milligrams and water 0.0625 milligrams per litre.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="check-yourself" class="slide level2">
+<h2>Check yourself</h2>
+<div class="checkbox">
+<ol type="1">
+<li>A soil has 3.0 % organic carbon. For K<sub>oc</sub> = 1000 L/kg OC, what is K<sub>d</sub>?</li>
+<li>An organic acid has pK<sub>a</sub> 4.50. Roughly what fraction is neutral at pH 7.0?</li>
+<li>For U, double the solid mass to 0.0200 kg. What fraction of parent is now in water? Does the half-life change?</li>
+<li>True or false: “Compound X has log K<sub>ow</sub> 6, so it will persist for decades.”</li>
+</ol>
+</div>
+<aside class="notes">
+<p>Answers. One: foc is 0.030, so Kd is 30 litres per kilogram. Two: pH 7 is 2.5 units above the pKa, so the neutral fraction is about one over 316, about 0.003. Three: the effective volume becomes 1 plus 100 times 0.02, which is 3 litres, so one third of the parent is in water. The half-life is unchanged in this model, because transformation acts equally in both phases. Changing Kd or the solid mass changes the split, not the persistence. That is exactly what the demo shows later. Four is false. Log Kow describes partitioning. Persistence needs a separate rate measurement. Some high-Kow compounds degrade quickly, and PFOS has no useful Kow at all but persists.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-falling-concentration-is-not-a-mechanism" class="slide level2">
+<h2>A falling concentration is not a mechanism</h2>
+
+<img data-src="fig/decline-ambiguity.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Three different processes give the same water result. To tell them apart, measure <strong>all phases</strong> (water, solid, gas) and look for <strong>products</strong>, with good analytical recovery, at matching times.</p>
+<aside class="notes">
+<p>This is exercise 4. A water sample shows the parent concentration falling after sediment is added. Is it degrading? Not necessarily. In jar A, the parent simply moved to the sediment. In jar B, it became products. In jar C, it escaped to the headspace. Measuring only the water cannot separate these. The test is a mass balance: extract the solid and analyse it, trap or sample the gas, and look for expected products. Recoveries matter, because sorbed compounds are often harder to extract, and a poor extraction can look like degradation. Log Kow alone cannot answer the question, because it describes a preference, not a process that happened.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="transformation-is-not-mineralisation" class="slide level2">
+<h2>Transformation is not mineralisation</h2>
+
+<img data-src="fig/products.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:82.0%"><p>A disappearing parent can leave products that are <strong>more persistent</strong> or <strong>just as harmful</strong>. Only complete <strong>mineralisation</strong> to CO₂, water and inorganic ions removes the problem.</p>
+<aside class="notes">
+<p>Two examples make this concrete. DDT loses hydrogen chloride to form DDE. DDE is more persistent than DDT in many environments and was the main cause of eggshell thinning in birds of prey. So the decline of DDT in an ecosystem did not mean the problem was solving itself. PFAS have a similar story. Some foams contained precursor compounds, which microbes or oxidation convert to terminal perfluoroalkyl acids such as PFOS and PFOA. These do not break down further under environmental conditions, so precursor transformation increases the amount of the most persistent products. The lesson: always ask what the products are before treating parent loss as good news.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="partitioning-into-organisms-the-sea-eagle" class="slide level2">
+<h2>Partitioning into organisms: the sea eagle</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p><img data-src="img/eagle.jpg" style="width:100.0%"> <span class="credit">White-tailed eagles in Färnebofjärden National Park, Sweden. Photo: LG Nyqvist, CC BY-SA 4.0, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:52%;">
+<p>Hydrophobic, persistent compounds partition into <strong>fat</strong>. Each step of a food chain eats much more than it retains, so concentrations rise up the chain: <strong>biomagnification</strong>.</p>
+<p>Around the Baltic, <strong>white-tailed eagles</strong> at the top of the chain had very poor breeding success in the 1960s and 70s. DDE and PCBs were the main causes.</p>
+<p>After bans on DDT and PCB, contaminant levels fell and the eagle population <strong>recovered</strong>. A clear case where chemistry explained, and policy fixed, a problem.</p>
+</div></div>
+<aside class="notes">
+<p>This brings partitioning into biology. An organism is partly an oily phase, so a compound with high Kow that is not metabolised accumulates in fat. Predators eat many prey and keep the persistent fraction, so concentrations increase at each level. In the Baltic the white-tailed eagle declined dramatically. Studies linked the reproductive failure to DDE and PCBs. Conservation work, including winter feeding with uncontaminated food, helped the remaining birds, but the long-term recovery followed the bans of DDT and PCBs and the gradual decline of these compounds in Baltic fish. Today the species is much more common again. It is a good story of chemistry, monitoring and policy working together.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="back-to-ronneby-putting-the-properties-together" class="slide level2">
+<h2>Back to Ronneby: putting the properties together</h2>
+
+<img data-src="fig/ronneby-pathway.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><p>Each step follows from a property: <strong>ionised</strong>, so weakly sorbed in low-carbon sand; <strong>not degraded</strong>, so it accumulates and travels for years; <strong>protein-binding</strong>, so it stays in people. A DDT-like compound would have stayed near the source.</p>
+<aside class="notes">
+<p>Return to the opening question and answer it with today’s tools. Foam was used repeatedly on a training ground. The PFAS were ionised and the sandy soils contained little organic carbon, so sorption was weak and the compounds reached groundwater. With no relevant degradation pathway, a first-order half-life is effectively infinite, so the compounds accumulated and moved with groundwater toward the wells. The waterworks pumped them into the drinking water. In people, PFOS binds to serum proteins and is excreted slowly, so blood levels stayed high for years. Contrast with DDT: neutral and hydrophobic, it would have sorbed to soil organic matter near the source. Different properties, different destinations, different exposure routes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="four-separate-questions" class="slide level2">
+<h2>Four separate questions</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Property or measurement</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Where does it go?</strong></td>
+<td>K<sub>ow</sub>, K<sub>d</sub> = f<sub>oc</sub>K<sub>oc</sub>, pK<sub>a</sub>, volatility</td>
+<td>DDT to sediment; PFOS stays in water</td>
+</tr>
+<tr class="even">
+<td><strong>How long does it last?</strong></td>
+<td>half-life under stated conditions</td>
+<td>U: 10 days; PFOS: no known degradation</td>
+</tr>
+<tr class="odd">
+<td><strong>Who is exposed?</strong></td>
+<td>pathway: water, food, air, soil</td>
+<td>Ronneby: drinking water</td>
+</tr>
+<tr class="even">
+<td><strong>What does it do?</strong></td>
+<td>toxicity, measured separately</td>
+<td>DDE: eggshell thinning</td>
+</tr>
+</tbody>
+</table>
+<p>A strong answer to one question <strong>never</strong> answers another. High K<sub>ow</sub> is not toxicity; low concentration in water is not low risk.</p>
+<aside class="notes">
+<p>This table is the conceptual summary of the lecture and a template for exam answers. Partitioning tells you where a compound will be found. Persistence tells you how long it lasts. Exposure depends on where people or organisms meet the compound. Effect depends on biology and needs toxicity data. Many weak arguments merge these. For example, a low concentration in water may hide a large amount in sediment or fish. A short half-life may hide a toxic product. Ask students to apply the four questions to a compound they know, such as a pharmaceutical in wastewater, and say which they could answer from today’s numbers and which need new data.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="common-mistakes-to-avoid" class="slide level2">
+<h2>Common mistakes to avoid</h2>
+<ul>
+<li><strong>“Gone from the water means destroyed.”</strong> It may be sorbed, volatilised or taken up.</li>
+<li><strong>“High K<sub>ow</sub> means toxic” or “means persistent.”</strong> K<sub>ow</sub> is a partition property only.</li>
+<li><strong>“Ionised means it never sorbs.”</strong> Cations exchange; anions bind proteins and oxides.</li>
+<li><strong>“f<sub>oc</sub> = 2 for 2 % organic carbon.”</strong> It is 0.02. A factor-100 error.</li>
+<li><strong>“Changing K<sub>d</sub> changes the half-life.”</strong> In our model it changes only the phase split.</li>
+<li><strong>“Parent lost = problem solved.”</strong> Ask what the products are.</li>
+</ul>
+<aside class="notes">
+<p>Run through these as a self-test. The first and last are the conceptual errors that matter most in environmental decisions. The fifth is the one the demo is built to expose. In the activity C model, transformation acts equally on both phases, so moving mass between them does not change how fast the total declines. In a real system where only dissolved parent degrades, stronger sorption would actually slow transformation, but that is a different model with different assumptions. Ask students to say which assumption they would change to make Kd affect persistence. Then move to the interactive demo, which lets them test each statement directly.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="explore" class="slide level2">
 <h2>Explore: sorption and parent transformation</h2>
@@ -220,6 +663,82 @@ Environmental Chemistry
 <p><a href="../organic-contaminants/exercise.html#explore">Change Kd alone. Does total-parent persistence change in this model?</a></p>
 <aside class="notes">
 <p>Use the reference presets, then change one variable. The complete exercise has model assumptions, a hand-check result, and a static reference for printing.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Key fact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fate map</td>
+<td>sorption, volatilisation, uptake, export move the parent; only transformation changes it</td>
+</tr>
+<tr class="even">
+<td>K<sub>ow</sub></td>
+<td>octanol/water ratio at equilibrium; log scale; partition, not persistence or toxicity</td>
+</tr>
+<tr class="odd">
+<td>Ionisation</td>
+<td><span class="math inline">f_{HA}=1/(1+10^{\mathrm{pH}-pK_a})</span>; ions need their own sorption model</td>
+</tr>
+<tr class="even">
+<td>Sorption</td>
+<td><span class="math inline">K_d=f_{oc}K_{oc}</span> for neutral compounds; f<sub>oc</sub> is a fraction, not a percent</td>
+</tr>
+<tr class="odd">
+<td>Phase split</td>
+<td><span class="math inline">C_w=M/(V_w+K_d m_s)</span>; U: half in water, V: 0.909</td>
+</tr>
+<tr class="even">
+<td>Persistence</td>
+<td><span class="math inline">M=M_0e^{-kt}</span>, <span class="math inline">k=\ln2/t_{1/2}</span>; U day 20: 0.250 mg total, 0.125 mg/L</td>
+</tr>
+<tr class="odd">
+<td>Evidence</td>
+<td>measure all phases and products before naming a mechanism</td>
+</tr>
+<tr class="even">
+<td>Products</td>
+<td>DDT → DDE; PFAS precursors → PFOS, PFOA; parent loss is not mineralisation</td>
+</tr>
+<tr class="odd">
+<td>PFOS</td>
+<td>persistent, ionised, mobile in groundwater, protein-bound in people</td>
+</tr>
+<tr class="even">
+<td>Four questions</td>
+<td>where, how long, who is exposed, what effect: separate evidence</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Next:</strong> <a href="../integrated-case/lec.html">Connecting air, catchments, and water</a>. One catchment, all the course’s chemistry at once. Then the <a href="../organic-contaminants/exercise.html">exercises</a>, the <a href="../organic-contaminants/notes.html">notes</a> and <a href="../organic-contaminants/exercise.html#activity-c-a-fate-model-in-r">activity C</a>.</p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="img/baltic-bloom.jpg" style="width:100.0%"> <span class="credit">Cyanobacteria (<em>Nodularia</em>) bloom in the Baltic Sea, August 2015, false colour. Image: NASA, public domain, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Recite the chain once. For any contaminant, first ask where it goes: partition coefficients and ionisation answer that, within their conditions. Then ask how long it lasts: a rate under stated conditions. Combine them with a mass balance, as in activity C, and keep every milligram accounted for. A falling water concentration needs evidence from all phases before it is called degradation, and degradation needs a look at the products. Ronneby and the Baltic eagles show the same tools explaining real events. The image previews the final lecture. Blooms in the Baltic are fed partly by phosphate released from sediments when oxygen runs out, which ties together redox, nutrients and catchment budgets.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;

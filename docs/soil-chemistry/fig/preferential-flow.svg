@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="440" viewBox="0 0 940 440" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: high exchange capacity in the soil matrix does not retain solute that travels through a macropore (root channel, worm burrow, crack) or on mobile colloids. -->
+  <defs>
+    <marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker>
+    <marker id="arb" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#2468A0"/></marker>
+    <pattern id="mx" width="22" height="22" patternUnits="userSpaceOnUse">
+      <rect width="22" height="22" fill="#d8bf8f"/><circle cx="6" cy="7" r="4" fill="#c9a66b"/><circle cx="16" cy="16" r="5" fill="#bf9a5c"/>
+    </pattern>
+  </defs>
+  <style>
+    .t{font-size:17px;fill:#1b2a3a}
+    .b{font-size:18px;font-weight:bold;fill:#1b2a3a}
+  </style>
+  <!-- surface and rain -->
+  <rect x="40" y="60" width="520" height="360" fill="url(#mx)" stroke="#1b2a3a" stroke-width="1.5"/>
+  <rect x="40" y="52" width="520" height="10" fill="#5b4636"/>
+  <text class="b" x="40" y="30">Contaminated rain or slurry on the surface</text>
+  <!-- macropore -->
+  <path d="M330,62 C320,120 345,170 330,230 S350,330 338,420" stroke="#f4efe6" stroke-width="22" fill="none"/>
+  <path d="M330,62 C320,120 345,170 330,230 S350,330 338,420" stroke="#5b4636" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+  <!-- fast flow arrows -->
+  <line x1="333" y1="80" x2="333" y2="400" stroke="#2468A0" stroke-width="5" marker-end="url(#arb)"/>
+  <!-- slow matrix flow -->
+  <g stroke="#2468A0" stroke-width="2.5" marker-end="url(#arb)">
+    <line x1="110" y1="80" x2="110" y2="150"/><line x1="190" y1="80" x2="190" y2="150"/><line x1="470" y1="80" x2="470" y2="150"/>
+  </g>
+  <!-- colloid -->
+  <circle cx="345" cy="300" r="8" fill="#AD4825"/>
+  <!-- labels -->
+  <rect x="52" y="168" width="160" height="74" rx="6" fill="#fff" fill-opacity="0.85"/>
+  <rect x="392" y="168" width="128" height="74" rx="6" fill="#fff" fill-opacity="0.85"/>
+  <rect x="362" y="288" width="180" height="24" rx="6" fill="#fff" fill-opacity="0.85"/>
+  <text class="t" x="60" y="190">matrix: slow flow,</text>
+  <text class="t" x="60" y="212">long contact with</text>
+  <text class="t" x="60" y="234">exchange sites</text>
+  <text class="t" x="400" y="190">root channel,</text>
+  <text class="t" x="400" y="212">worm burrow</text>
+  <text class="t" x="400" y="234">or crack</text>
+  <line x1="398" y1="200" x2="350" y2="200" stroke="#1b2a3a" stroke-width="1.5"/>
+  <!-- right-hand list -->
+  <text class="b" x="600" y="100">Retained only if solute</text>
+  <text class="b" x="600" y="124">meets the sites in time</text>
+  <text class="t" x="600" y="170">• <tspan font-weight="bold">bypass</tspan>: macropores carry</text>
+  <text class="t" x="618" y="192">water past most of the soil</text>
+  <text class="t" x="600" y="230">• <tspan font-weight="bold">anions</tspan> (NO₃⁻, SO₄²⁻ in many</text>
+  <text class="t" x="618" y="252">soils) are not held by CEC</text>
+  <text class="t" x="600" y="290">• <tspan font-weight="bold">colloids</tspan> carry sorbed metals</text>
+  <text class="t" x="618" y="312">and phosphate with them</text>
+  <text class="t" x="600" y="350">• <tspan font-weight="bold">erosion</tspan> moves the solid</text>
+  <text class="t" x="618" y="372">and its sites together</text>
+  <text x="333" y="436" font-size="16" font-weight="bold" fill="#2468A0" text-anchor="middle">fast export to drain or groundwater</text>
+  <text x="368" y="306" font-size="15" fill="#1b2a3a">colloid + sorbed metal</text>
+</svg>

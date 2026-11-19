@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: acid deposition mobilises aluminium from soil; inorganic Al deposits on fish gills -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <rect x="20" y="40" width="215" height="210" rx="10" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <text x="32" y="72" font-size="20" fill="#1b2a3a" text-anchor="start" font-weight="bold" >1  Acid input</text>
+  <text x="32" y="300.0" font-size="16" fill="#1b2a3a" text-anchor="start" font-weight="normal" >H⁺ and SO₄²⁻ arrive</text>
+  <text x="32" y="320.0" font-size="16" fill="#1b2a3a" text-anchor="start" font-weight="normal" >with rain and snowmelt</text>
+  <line x1="238" y1="145" x2="260" y2="145" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="265" y="40" width="215" height="210" rx="10" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <text x="277" y="72" font-size="20" fill="#1b2a3a" text-anchor="start" font-weight="bold" >2  Soil</text>
+  <text x="277" y="300.0" font-size="16" fill="#1b2a3a" text-anchor="start" font-weight="normal" >H⁺ dissolves Al(OH)₃ and</text>
+  <text x="277" y="320.0" font-size="16" fill="#1b2a3a" text-anchor="start" font-weight="normal" >displaces Al³⁺ from clays</text>
+  <line x1="483" y1="145" x2="505" y2="145" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="510" y="40" width="215" height="210" rx="10" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <text x="522" y="72" font-size="20" fill="#1b2a3a" text-anchor="start" font-weight="bold" >3  Stream</text>
+  <text x="522" y="300.0" font-size="16" fill="#1b2a3a" text-anchor="start" font-weight="normal" >inorganic Al³⁺, AlOH²⁺ are</text>
+  <text x="522" y="320.0" font-size="16" fill="#1b2a3a" text-anchor="start" font-weight="normal" >carried with the runoff</text>
+  <line x1="728" y1="145" x2="750" y2="145" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="755" y="40" width="215" height="210" rx="10" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <text x="767" y="72" font-size="20" fill="#1b2a3a" text-anchor="start" font-weight="bold" >4  Fish gill</text>
+  <text x="767" y="300.0" font-size="16" fill="#1b2a3a" text-anchor="start" font-weight="normal" >gill surface is less acidic:</text>
+  <text x="767" y="320.0" font-size="16" fill="#1b2a3a" text-anchor="start" font-weight="normal" >Al hydrolyses and deposits</text>
+  <path d="M60,95 l-8,30" stroke="#2468A0" stroke-width="3" fill="none"/>
+  <circle cx="50" cy="135" r="9" fill="white" stroke="#c0392b" stroke-width="2"/>
+  <text x="50" y="140" font-size="14" fill="#c0392b" text-anchor="middle" font-weight="bold" >+</text>
+  <path d="M95,95 l-8,30" stroke="#2468A0" stroke-width="3" fill="none"/>
+  <circle cx="85" cy="135" r="9" fill="white" stroke="#c0392b" stroke-width="2"/>
+  <text x="85" y="140" font-size="14" fill="#c0392b" text-anchor="middle" font-weight="bold" >+</text>
+  <path d="M130,95 l-8,30" stroke="#2468A0" stroke-width="3" fill="none"/>
+  <circle cx="120" cy="135" r="9" fill="white" stroke="#c0392b" stroke-width="2"/>
+  <text x="120" y="140" font-size="14" fill="#c0392b" text-anchor="middle" font-weight="bold" >+</text>
+  <path d="M165,95 l-8,30" stroke="#2468A0" stroke-width="3" fill="none"/>
+  <circle cx="155" cy="135" r="9" fill="white" stroke="#c0392b" stroke-width="2"/>
+  <text x="155" y="140" font-size="14" fill="#c0392b" text-anchor="middle" font-weight="bold" >+</text>
+  <path d="M200,95 l-8,30" stroke="#2468A0" stroke-width="3" fill="none"/>
+  <circle cx="190" cy="135" r="9" fill="white" stroke="#c0392b" stroke-width="2"/>
+  <text x="190" y="140" font-size="14" fill="#c0392b" text-anchor="middle" font-weight="bold" >+</text>
+  <rect x="40" y="190" width="175" height="40" rx="0" fill="#eadcc3" stroke="none" stroke-width="2"/>
+  <rect x="275" y="100" width="195" height="130" rx="6" fill="#eadcc3" stroke="none" stroke-width="0"/>
+  <rect x="295" y="160" width="60" height="45" rx="4" fill="#c7ccd4" stroke="#6b7785" stroke-width="2"/>
+  <text x="325" y="190" font-size="13" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >Al(OH)₃</text>
+  <rect x="375" y="120" width="80" height="25" rx="0" fill="#c9b48c" stroke="#6b7785" stroke-width="2"/>
+  <rect x="375" y="150" width="80" height="25" rx="0" fill="#c9b48c" stroke="#6b7785" stroke-width="2"/>
+  <text x="415" y="202" font-size="14" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >clay</text>
+  <circle cx="365" cy="115" r="8" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <text x="377" y="120" font-size="14" fill="#c0392b" text-anchor="start" font-weight="bold" >Al³⁺</text>
+  <circle cx="335" cy="130" r="10" fill="white" stroke="#c0392b" stroke-width="2"/>
+  <text x="335" y="135" font-size="14" fill="#c0392b" text-anchor="middle" font-weight="bold" >+</text>
+  <path d="M520,130 Q615,90 715,130 L715,230 L520,230 Z" stroke="none" stroke-width="0" fill="#d6e6f2"/>
+  <circle cx="550" cy="175" r="8" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <circle cx="580" cy="205" r="8" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <circle cx="610" cy="175" r="8" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <circle cx="640" cy="205" r="8" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <circle cx="670" cy="175" r="8" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <circle cx="700" cy="205" r="8" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <text x="618" y="160" font-size="15" fill="#c0392b" text-anchor="middle" font-weight="bold" >Al³⁺</text>
+  <path d="M530,120 Q615,85 705,120" stroke="#2468A0" stroke-width="3" fill="none" marker-end="url(#arrB)"/>
+  <path d="M795,105 q60,-10 130,6" stroke="#c0392b" stroke-width="9" fill="none"/>
+  <path d="M795,131 q60,-10 130,6" stroke="#d98880" stroke-width="9" fill="none"/>
+  <path d="M795,157 q60,-10 130,6" stroke="#c0392b" stroke-width="9" fill="none"/>
+  <path d="M795,183 q60,-10 130,6" stroke="#d98880" stroke-width="9" fill="none"/>
+  <path d="M795,209 q60,-10 130,6" stroke="#c0392b" stroke-width="9" fill="none"/>
+  <circle cx="825" cy="112" r="5" fill="#7f8c9d" stroke="none" stroke-width="2"/>
+  <circle cx="847" cy="120" r="5" fill="#7f8c9d" stroke="none" stroke-width="2"/>
+  <circle cx="869" cy="112" r="5" fill="#7f8c9d" stroke="none" stroke-width="2"/>
+  <circle cx="891" cy="120" r="5" fill="#7f8c9d" stroke="none" stroke-width="2"/>
+  <circle cx="913" cy="112" r="5" fill="#7f8c9d" stroke="none" stroke-width="2"/>
+  <circle cx="825" cy="172" r="5" fill="#7f8c9d" stroke="none" stroke-width="2"/>
+  <circle cx="847" cy="164" r="5" fill="#7f8c9d" stroke="none" stroke-width="2"/>
+  <circle cx="869" cy="172" r="5" fill="#7f8c9d" stroke="none" stroke-width="2"/>
+  <circle cx="891" cy="164" r="5" fill="#7f8c9d" stroke="none" stroke-width="2"/>
+  <text x="863" y="238" font-size="13" fill="#6b7785" text-anchor="middle" font-weight="normal" >grey: Al deposits (schematic)</text>
+  <text x="500" y="368" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >Fish suffer from loss of salt balance and breathing problems.</text>
+</svg>

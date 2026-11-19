@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="440" viewBox="0 0 980 440" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: precursor oxidation pathways to nitric and sulfuric acid. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+    <marker id="arb" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#2468A0"/></marker>
+    <marker id="arg" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#25713E"/></marker>
+    <marker id="aro" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#b8860b"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .sp{font-size:26px;font-weight:bold;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <rect x="10" y="10" width="470" height="200" rx="14" fill="#f7f9fb" stroke="#c9d1da"/>
+  <text class="h" x="245" y="45">Nitrogen: gas phase, daytime</text>
+  <text class="lc" x="245" y="100" font-size="22">NO₂ + OH + M → HNO₃ + M</text>
+  <text class="lc" x="245" y="140">OH from sunlight-driven chemistry</text>
+  <text class="lc" x="245" y="170">(last lecture); M = collision partner</text>
+  <rect x="500" y="10" width="470" height="200" rx="14" fill="#f7f9fb" stroke="#c9d1da"/>
+  <text class="h" x="735" y="45">Sulfur: gas phase (slower)</text>
+  <text class="lc" x="735" y="95">SO₂ + OH + M → HOSO₂ + M</text>
+  <text class="lc" x="735" y="125">HOSO₂ + O₂ → HO₂ + SO₃</text>
+  <text class="lc" x="735" y="155">SO₃ + H₂O → H₂SO₄</text>
+  <rect x="10" y="225" width="960" height="140" rx="14" fill="#eef4fa" stroke="#2468A0" stroke-width="2"/>
+  <circle cx="90" cy="295" r="52" fill="#d6e6f2" stroke="#2468A0" stroke-width="2"/>
+  <text class="lc" x="90" y="290" font-size="15">cloud</text><text class="lc" x="90" y="310" font-size="15">droplet</text>
+  <text class="h" x="540" y="260">Sulfur: inside cloud droplets (often fastest)</text>
+  <text class="lc" x="540" y="300">SO₂(g) + H₂O ⇄ HSO₃⁻ + H⁺        (dissolves)</text>
+  <text class="lc" x="540" y="335">HSO₃⁻ + H₂O₂ → SO₄²⁻ + H⁺ + H₂O</text>
+  <text class="lc" x="490" y="400" font-weight="bold">Net bookkeeping:  SO₂ + ½ O₂ + H₂O → H₂SO₄</text>
+  <text class="n" x="490" y="428">A balanced net equation is not the mechanism and gives no rate.</text>
+</svg>

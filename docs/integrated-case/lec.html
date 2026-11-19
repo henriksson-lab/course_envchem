@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-073ca42b956148f7f9761d97a475d639.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -128,6 +144,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Connecting air, catchments, and water</h1>
+  <p class="subtitle">Week 5 — Connected systems and synthesis</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -138,78 +155,610 @@ Environmental Chemistry
 </div>
 
 </section>
-<section id="chemical-question" class="slide level2">
-<h2>Chemical question</h2>
-<p>Which linked chemical explanation survives the available balances, and which parts remain hypotheses?</p>
-</section>
-<section id="what-to-explain" class="slide level2">
-<h2>What to explain</h2>
+<section id="about-this-lecture" class="slide level2">
+<h2>About this lecture</h2>
+<div class="columns">
+<div class="column" style="width:56%;">
+<p>In 1972 the United Nations held its first environment conference in <strong>Stockholm</strong>. Sweden’s own case study argued something new: <strong>sulfur emitted in other countries was acidifying Swedish lakes</strong>. The argument linked air chemistry, soils and water in one chain, and it led to the first international treaty on cross-border air pollution, in 1979.</p>
+<p>Today we build that kind of argument ourselves, with every unit of the course:</p>
 <ul>
-<li>Combine deposition, neutralisation, and water export in one equivalent budget.</li>
-<li>Use several indicators to assess a coupled sediment-redox explanation.</li>
-<li>Write a reproducible chemical explanation that separates model predictions from observations.</li>
+<li>one <strong>budget in equivalents</strong> from air to lake;</li>
+<li><strong>annual export</strong> is not a <strong>closed-water pH</strong>;</li>
+<li>a <strong>sediment redox</strong> hypothesis tested against evidence;</li>
+<li>an explanation is only as good as <strong>the test that could break it</strong>.</li>
 </ul>
+</div><div class="column" style="width:44%;">
+<p><img data-src="img/stockholm-1972.jpg" style="width:100.0%"> <span class="credit">Delegates to the UN Conference on the Human Environment cycle through Stockholm, 1972. Photo: Pressens Bild, public domain, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Start with history, because the course’s chemistry was once a political argument. In the late 1960s Swedish scientists linked acidifying lakes in the west of Sweden to sulfur emissions from industrial regions elsewhere in Europe. Sweden presented this as its case study at the 1972 Stockholm conference. Many were sceptical, and it took years of measurements of deposition, soils and lake chemistry before the case was accepted. The 1979 Convention on Long-Range Transboundary Air Pollution followed. Last lecture we followed organic contaminants through phases. Today we put every thread together for one constructed catchment, and practise building a chemical explanation that could convince a sceptic.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="the-annual-catchment-budget" class="slide level2">
-<h2>The annual catchment budget</h2>
-<p>Input 40000 − neutralisation 30000 = <strong>10000 eq/year</strong>.</p>
-<p>At 5 × 10⁸ L/year: <strong>0.0200 meq/L</strong> residual equivalent load.</p>
+<section id="one-catchment-the-whole-course" class="slide level2">
+<h2>One catchment, the whole course</h2>
+
+<img data-src="fig/catchment-threads.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:86.0%"><p>Every unit appears here: <strong>deposition</strong> brings acid, <strong>soils</strong> neutralise most of it, <strong>carbonate chemistry</strong> sets the lake’s alkalinity and pH, <strong>metals</strong> follow pH, <strong>redox</strong> controls the sediment, and <strong>contaminants</strong> partition between water and sediment.</p>
+<aside class="notes">
+<p>This is the map for today. It is a constructed teaching catchment of one square kilometre, the same one used in the deposition unit. Each numbered thread is a unit you have studied. We follow the threads in order. First, acid from the air. Second, the soils, which consume most of it. Third, the lake, where we convert an annual budget to an alkalinity. Fourth, aluminium and metals, which depend on how well the first three balance. Fifth, a separate set of sediment observations and a redox hypothesis. Sixth, the contaminant model from activity C. Keep asking at each step: what is measured, what is assumed, and what boundary does the number refer to?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="an-alkalinity-comparison-needs-a-reference" class="slide level2">
-<h2>An alkalinity comparison needs a reference</h2>
-<p>Reference alkalinity 0.100 → <strong>0.0800 meq/L</strong> in the stated comparison.</p>
-<p>Annual export and a closed-sample pulse are different problems.</p>
+<section id="thread-1-from-smokestack-to-acid-input" class="slide level2">
+<h2>Thread 1: from smokestack to acid input</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><img data-src="img/smokestack.jpg" style="width:100.0%"> <span class="credit">A coal-fired power station (Huntley Station, New York). Photo: Ken Lund, CC BY-SA 2.0, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:55%;">
+<p>SO₂ and NO<sub>x</sub> are oxidised in air to sulfuric and nitric acid, then deposited wet or dry.</p>
+<p>Deposition unit, worked example:</p>
+<ul>
+<li>HNO₃: 0.0200 mol m⁻² yr⁻¹ × 1 eq/mol</li>
+<li>H₂SO₄: 0.0100 mol m⁻² yr⁻¹ × 2 eq/mol</li>
+<li>total: <strong>0.0400 eq m⁻² yr⁻¹</strong></li>
+</ul>
+<p>Over 1.00 × 10⁶ m²: <strong>40 000 eq/year</strong> of acid.</p>
+<p>Counting in <strong>equivalents</strong> lets us add acids of different charge.</p>
+</div></div>
+<aside class="notes">
+<p>Recall the deposition unit. Sulfur dioxide and nitrogen oxides are precursors; oxidation in gas and droplets turns them into sulfuric and nitric acid. Sulfuric acid supplies two equivalents per mole, nitric acid one. Multiplying the flux per square metre by the catchment area gives the annual input. Remind students of the caveat from that unit: deposited sulfate does not always arrive as free acid. Ammonia can neutralise it in the air, and ammonium deposition can later generate acidity through nitrification. In our budget we use the stated convention that all of it counts as acid. The power station photo is a reminder that this budget starts with fuel chemistry, and that cutting sulfur emissions was the effective long-term remedy.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="a-separate-sediment-observation-set" class="slide level2">
-<h2>A separate sediment observation set</h2>
+<section id="close-the-annual-budget" class="slide level2">
+<h2>Close the annual budget</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="fig/budget.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:45%;">
+<p><span class="math display">\text{residual}=\text{input}-\text{neutralised}</span></p>
+<p>40 000 − 30 000 = <strong>10 000 eq/year</strong></p>
+<p>Convert to a flow-weighted concentration with the annual water export:</p>
+<p><span class="math display">\frac{10\,000\ \text{eq/yr}}{5.00\times10^{8}\ \text{L/yr}}=2.00\times10^{-5}\ \text{eq/L}</span></p>
+<p>= <strong>0.0200 meq/L</strong></p>
+<p>Work in <strong>annual amounts first</strong>, then divide by water.</p>
+</div></div>
+<aside class="notes">
+<p>This is exercise 1, part one. The neutralisation term, 30 000 equivalents per year, is stipulated in this teaching budget. In a real catchment it would be estimated from weathering rates, changes in soil exchangeable cations and stream chemistry, each with uncertainty. The order of operations matters. First close the balance in annual amounts, where addition and subtraction are valid. Only then divide by the annual water volume. The units cancel to equivalents per litre, and multiplying by a thousand gives milliequivalents. Warn against a common shortcut: do not silently add an unmeasured retention or biological term to make a budget match an observation. If a budget does not close, that is information.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="thread-2-where-the-30-000-eq-went" class="slide level2">
+<h2>Thread 2: where the 30 000 eq went</h2>
+
+<img data-src="../soil-chemistry/fig/acid-pathways.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:66.0%"><p>The soil lecture’s three pathways: <strong>carbonate</strong> dissolution, <strong>cation exchange</strong>, and <strong>aluminium</strong> release. Exchange and weathering supply base cations, which leave with sulfate. Each pathway draws on a <strong>finite inventory</strong>.</p>
+<aside class="notes">
+<p>Bring back the soil lecture. Most of the acid entering a catchment never reaches the lake as acid, because soils neutralise it. In a granite catchment without carbonate, the main terms are silicate weathering, which is slow, and cation exchange, which is fast but finite. The calcium and magnesium released leave in drainage together with sulfate, so stream chemistry records the process: base cations and sulfate rise together. At Hubbard Brook this is what depleted the soil’s exchangeable calcium. The budget treats 30 000 equivalents per year as fixed. A key exam idea is that this term is not a constant of nature. It declines as the exchanger is depleted, which is why the residual acid can grow even when deposition is constant.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="an-annual-budget-is-not-a-pulse" class="slide level2">
+<h2>An annual budget is not a pulse</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p>The carbonate lecture added a <strong>single acid dose</strong> to a <strong>closed</strong> beaker: alkalinity fell by the dose, C<sub>T</sub> stayed fixed, and a pH followed.</p>
+<p>The catchment budget is different:</p>
+<ul>
+<li>it is a <strong>flux over a year</strong>, spread over 5.00 × 10⁸ L of water;</li>
+<li>the water exchanges CO₂ with air and soil;</li>
+<li>the lake is continuously <strong>flushed and replaced</strong>.</li>
+</ul>
+<p>0.0200 meq/L is a <strong>flow-weighted annual average</strong>, not the result of pouring acid into a lake.</p>
+</div><div class="column" style="width:45%;">
+<div class="checkbox">
+<p><strong>Same units, different meanings</strong></p>
+<ul>
+<li>eq/year: an <strong>amount per time</strong> (budget)</li>
+<li>meq/L: a <strong>concentration</strong> (after dividing by water)</li>
+<li>pH: a <strong>present state</strong> (needs C<sub>T</sub> and CO₂)</li>
+</ul>
+<p>Before combining two numbers, check that they refer to the same boundary and time.</p>
+</div>
+</div></div>
+<aside class="notes">
+<p>Students often carry the carbonate lecture’s model into the catchment without noticing that the boundary has changed. Water A and Water B were closed: nothing entered or left except the acid dose. A lake is an open, flushed system. Its water is replaced over its residence time, it exchanges carbon dioxide with the air, and inflow chemistry varies with season and flow. The annual budget averages over all of that. It is useful for comparing catchments and scenarios, but it does not tell you the pH on any particular day. The box is a checklist students can use in the exam: ask what kind of quantity each number is before you add, subtract or compare it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="thread-3-alkalinity-needs-a-reference" class="slide level2">
+<h2>Thread 3: alkalinity needs a reference</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p><img data-src="fig/alkalinity-reference.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:52%;">
+<p>“Lower alkalinity” only means something <strong>compared with a reference</strong>.</p>
+<p>Suppose that without the added acid, the catchment would export <strong>50 000 eq/year</strong> of alkalinity: 0.100 meq/L.</p>
+<p>The residual acid consumes alkalinity one-for-one:</p>
+<p>50 000 − 10 000 = <strong>40 000 eq/year = 0.0800 meq/L</strong></p>
+<p>As in the carbonate lecture, strong acid lowers alkalinity by exactly its amount in equivalents.</p>
+</div></div>
+<aside class="notes">
+<p>This is exercise 1, part two. The reference alkalinity export is stipulated, and it must be stated explicitly. Without a reference, a statement like the lake lost alkalinity has no number attached to it. The logic is the same as the carbonate lecture’s strong-acid rule: each equivalent of strong acid removes one equivalent of alkalinity. Here we apply it to annual amounts and then divide by water. The third bar anticipates the worked example: if the soils neutralised less, the alkalinity export would be lower. Ask students to connect this to the granite and limestone lakes from week 2: a granite catchment starts with a small reference alkalinity, so the same residual acid takes a much larger fraction of it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="alkalinity-alone-does-not-give-a-ph" class="slide level2">
+<h2>Alkalinity alone does not give a pH</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="fig/alkalinity-ph.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:45%;">
+<p>Model: carbonate system in equilibrium with a given CO₂ pressure, 25 °C, constants from the carbonate reference sheet.</p>
+<p>With A<sub>T</sub> = 0.0800 meq/L:</p>
+<ul>
+<li>in equilibrium with <strong>air</strong>: pH ≈ <strong>7.1</strong></li>
+<li>with <strong>10 × air</strong> CO₂, typical of soil water and groundwater: pH ≈ <strong>6.1</strong></li>
+</ul>
+<p>Same alkalinity, <strong>one pH unit apart</strong>. To get a pH you need A<sub>T</sub> <strong>and</strong> C<sub>T</sub> or the CO₂ pressure.</p>
+</div></div>
+<aside class="notes">
+<p>This slide proves the notes’ warning with a calculation. For a fixed alkalinity, the pH depends on how much dissolved carbon dioxide is present, which depends on gas exchange. Stream water fed by groundwater is often supersaturated in carbon dioxide because soil respiration raises its partial pressure, so its pH is lower than the same water after it degasses in a lake. The two lines show that the difference between our base case and the reference alkalinity changes pH by only about 0.1 units at fixed CO2, much less than the effect of CO2 itself. The model ignores organic acids, which matter in brown Swedish waters. The point stands: alkalinity is a capacity, pH a state.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="which-term-controls-the-budget" class="slide level2">
+<h2>Which term controls the budget?</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p><img data-src="fig/sensitivity.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:48%;">
+<p><strong>Worked example:</strong> suppose soils neutralise only <strong>20 000</strong> eq/year.</p>
+<ul>
+<li>residual: 40 000 − 20 000 = 20 000 eq/year = 0.0400 meq/L</li>
+<li>alkalinity: 50 000 − 20 000 = 30 000 eq/year = <strong>0.0600 meq/L</strong></li>
+</ul>
+<p>Each 10 000 eq/year less neutralisation lowers alkalinity export by 0.0200 meq/L.</p>
+<p>This is a <strong>sensitivity</strong> test: it shows which term matters, not which process actually changed.</p>
+</div></div>
+<aside class="notes">
+<p>This is the worked example from the notes. Change one term, hold the others fixed, and see how much the result moves. The line is straight because the budget is linear: every equivalent of acid not neutralised in the soil removes one equivalent of alkalinity from the lake. The calculation tells us the lake’s alkalinity is very sensitive to the soil term, which is exactly what made thin, granite-dominated catchments so vulnerable. It does not tell us why neutralisation might fall. Exhausted exchange sites, less weathering, more water bypassing the soil, or forestry removing base cations are all possible. Distinguishing them needs other measurements, such as soil base saturation trends and stream base cations.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="amount-or-dilution" class="slide level2">
+<h2>Amount or dilution?</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="fig/dilution.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:45%;">
+<p><strong>Exercise 2:</strong> double the water export to 1.00 × 10⁹ L/year, holding the acid amounts fixed.</p>
+<ul>
+<li>residual amount: still <strong>10 000 eq/year</strong></li>
+<li>residual concentration: <strong>0.0100 meq/L</strong></li>
+</ul>
+<p>The concentration halved, but <strong>nothing chemical changed</strong>. That is dilution.</p>
+<p>In a real catchment, more water also changes contact time, flow paths and weathering, so “everything else fixed” is an <strong>assumption</strong>.</p>
+</div></div>
+<aside class="notes">
+<p>This is exercise 2, and it is the same lesson as load versus concentration in the waste lecture and the very first unit. A wet year can lower concentrations simply by spreading the same amount over more water. A dry year can do the opposite. If you compared only concentrations between two years, you might wrongly conclude that the catchment’s chemistry had improved. The second caution is real hydrology. More water often means more flow through shallow soil layers and macropores, as in the soil lecture, which reduces contact with weathering minerals and exchange sites. Then the neutralisation term would also change. The demo at the end lets you compare these two cases directly.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="thread-4-when-the-balance-tips-aluminium-moves" class="slide level2">
+<h2>Thread 4: when the balance tips, aluminium moves</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="../soil-chemistry/fig/al-solubility.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:50%;">
+<p>If acid input outruns neutralisation for long enough, alkalinity approaches <strong>zero</strong> and pH falls below about 5.5.</p>
+<p>Then the soil’s <strong>aluminium buffer</strong> takes over, and Al³⁺ leaves with the drainage water. Free Al³⁺ rises about <strong>1000-fold per pH unit</strong>.</p>
+<p>The metals unit adds the next step: in <strong>brown, humus-rich</strong> water, organic ligands bind much of the aluminium, so the <strong>free ion</strong>, which harms fish gills, is lower than the total suggests.</p>
+</div></div>
+<aside class="notes">
+<p>This links the budget to biology. As long as the residual acid is small compared with the reference alkalinity, the lake keeps a positive alkalinity and a pH where aluminium stays mostly in the soil. Once the balance tips, aluminium dissolves in the soil and is carried to the stream. The figure is the gibbsite model from the soil lecture. The metals unit showed why total aluminium is not the whole story. Dissolved organic matter complexes aluminium, so the toxic inorganic fraction in a brown lake can be much lower than in a clear one at the same pH. In Swedish acidified lakes, fish deaths correlated better with inorganic aluminium than with pH alone. Speciation again decides the effect.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="check-yourself" class="slide level2">
+<h2>Check yourself</h2>
+<div class="checkbox">
+<ol type="1">
+<li>Acid input 40 000 eq/year, neutralisation 35 000 eq/year, water 5.00 × 10⁸ L/year. Residual acid in meq/L?</li>
+<li>With reference alkalinity 50 000 eq/year, what alkalinity export (meq/L) follows from question 1?</li>
+<li>A lake’s alkalinity export halves between a dry and a wet year, with the same deposition. Name two explanations and a measurement to tell them apart.</li>
+<li>Can you state the lake’s pH from your answer to question 2? What else would you need?</li>
+</ol>
+</div>
+<aside class="notes">
+<p>Answers. One: the residual is 5000 equivalents per year, divided by 5.00 times ten to the eight litres gives 1.00 times ten to the minus five equivalents per litre, 0.0100 meq per litre. Two: 50 000 minus 5000 is 45 000 equivalents per year, which is 0.0900 meq per litre. Three: either dilution only, with the same annual alkalinity amount in twice the water, or a real fall in the annual amount, for example because wet-year water bypassed the soil. Measure flow and calculate annual loads: if the load is unchanged, it was dilution. Four: no. You need the dissolved inorganic carbon or the carbon dioxide pressure, and any organic acids.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="thread-5-a-separate-set-of-observations" class="slide level2">
+<h2>Thread 5: a separate set of observations</h2>
+<div class="columns">
+<div class="column" style="width:42%;">
+<p><img data-src="img/sediment-core.jpg" style="width:100.0%"> <span class="credit">A lake sediment core, Forlorn Lakes, Washington, USA. Photo: Molly McKnight, US Forest Service, public domain, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:58%;">
+<p>Now a <strong>different question</strong> in the same lake. Water just above the sediment is sampled before and during a period of <strong>oxygen depletion</strong> (constructed observations):</p>
 <table class="caption-top">
 <thead>
 <tr class="header">
 <th>Indicator</th>
 <th style="text-align: right;">Before</th>
-<th style="text-align: right;">During depletion</th>
+<th style="text-align: right;">During</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>O₂, mg/L</td>
+<td>O₂ (mg/L)</td>
 <td style="text-align: right;">8.0</td>
 <td style="text-align: right;">0.20</td>
 </tr>
 <tr class="even">
-<td>Filtered Fe, mg/L</td>
+<td>filtered Fe (mg/L)</td>
 <td style="text-align: right;">0.020</td>
 <td style="text-align: right;">1.00</td>
 </tr>
 <tr class="odd">
-<td>Phosphate-P, mg P/L</td>
+<td>filtered PO₄-P (mg P/L)</td>
 <td style="text-align: right;">0.010</td>
 <td style="text-align: right;">0.200</td>
 </tr>
 </tbody>
 </table>
-<p>A pattern supports a hypothesis, not a unique causal proof.</p>
+<p>These are <strong>observations</strong>, not model outputs. What chemistry could explain them?</p>
+</div></div>
+<aside class="notes">
+<p>Change gear. This is not part of the acid budget. It is a second, independent evidence set, so it needs its own boundary and its own explanation. Sediment cores like the one in the photo show layers of mineral and organic material deposited over years. Bacteria in the upper sediment consume oxygen while decomposing organic matter. In summer, when a lake is stratified, the bottom water is cut off from the atmosphere and its oxygen can run out. The numbers are invented for teaching but realistic in direction. Ask students to propose an explanation before showing the next slide. Most will recall the redox unit and suggest iron reduction. Then we test that idea.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-changed-and-by-how-much" class="slide level2">
+<h2>What changed, and by how much</h2>
+
+<img data-src="fig/sediment-indicators.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:76.0%"><p>Oxygen fell <strong>40-fold</strong> while filtered iron rose <strong>50-fold</strong> and phosphate-P <strong>20-fold</strong>. All three changed <strong>together</strong>, in the same water, at the same time. That pattern is what a hypothesis has to explain.</p>
+<aside class="notes">
+<p>Plotting on a log scale lets us compare changes of very different size. Oxygen dropped from 8.0 to 0.20 milligrams per litre, a factor of 40. Iron rose by a factor of 50, and phosphate-P by 20. The co-occurrence is the key observation. Remind students what the redox ladder from the redox unit predicts. After oxygen is used up, microbes turn to nitrate, then to manganese and iron oxides, then to sulfate. Rising dissolved iron fits that sequence. But a coincidence in time does not prove a mechanism. Two separate processes could be triggered by the same event, or a different water mass could have moved in. We first write the mechanism, then look for alternatives.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-mechanism-iron-reduction-releases-phosphate" class="slide level2">
+<h2>A mechanism: iron reduction releases phosphate</h2>
+
+<img data-src="fig/fe-p-interface.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Under oxic conditions, an <strong>Fe(III) oxyhydroxide</strong> layer at the sediment surface holds phosphate. When O₂ runs out, Fe(III) is <strong>reduced</strong> and dissolves, and the phosphate it held is <strong>released</strong>. Phosphorus itself does not change oxidation state.</p>
+<aside class="notes">
+<p>This is the classic iron–phosphate mechanism from the redox unit. Phosphate binds strongly to iron(III) oxyhydroxide surfaces. While the bottom water has oxygen, any iron(II) diffusing up from deeper sediment is oxidised at the surface and forms a fresh iron(III) layer, which acts as a lid for phosphate. When oxygen is gone, microbes use the iron(III) as an electron acceptor. The half-reaction is in the box. The solid dissolves, and its phosphate is released. Stress the last line: phosphate is not reduced. It is a passenger. This is the same idea as the waste lecture’s warning that metals held on iron hydroxide return when conditions change.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-same-chemistry-on-a-sea-wide-scale" class="slide level2">
+<h2>The same chemistry, on a sea-wide scale</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="img/baltic-bloom.jpg" style="width:100.0%"> <span class="credit">Cyanobacteria bloom in the Baltic Sea, July 2025, Landsat. Image: NASA Earth Observatory, public domain, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:45%;">
+<p>The deep Baltic Sea has <strong>large areas of oxygen-free bottom water</strong>.</p>
+<p>There, iron-bound phosphate is released from sediments, as in our lake. This <strong>internal loading</strong> adds to the phosphorus from rivers and helps sustain <strong>summer cyanobacteria blooms</strong> like this one.</p>
+<p>Cutting nutrient inputs from land is necessary, but the sediments keep releasing phosphate for years. Recovery is slow for the same reason as at Hubbard Brook: a <strong>stored inventory</strong>.</p>
+</div></div>
+<aside class="notes">
+<p>The Baltic is a large-scale version of our lake. Its deep basins are poorly ventilated because salty, dense water sits below fresher surface water, so oxygen-free bottoms are common and have expanded since the mid-twentieth century as nutrient inputs increased. Iron-bound phosphate released from those sediments contributes substantially to the phosphorus available for summer blooms of nitrogen-fixing cyanobacteria. Keep the numbers qualitative here; the point is the mechanism. Draw the parallel with the soil lecture. In both cases, decades of input built up a stored inventory, base-cation depletion in one case and phosphorus-rich sediments in the other, and that inventory delays recovery after the inputs are reduced.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="consistent-is-not-proven" class="slide level2">
+<h2>Consistent is not proven</h2>
+
+<img data-src="fig/alternatives.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Our data are <strong>consistent with</strong> iron reduction, but they do not identify it uniquely. Each alternative predicts something different. A good explanation names the <strong>measurement that would tell them apart</strong>.</p>
+<aside class="notes">
+<p>This is exercise 3. The observations fit the iron reduction mechanism, but they also fit other explanations. Mixing: if a different water mass, for example porewater-rich water stirred up from deeper sediment, moved past the sampling point, iron and phosphate would rise together without any new reaction. Conservative tracers, such as chloride or temperature, would change at the same time. Organic matter decomposition releases phosphate from biomass directly; then phosphate would rise with ammonium and carbon dioxide, even where iron stays low. Supporting evidence for iron reduction includes iron(II) speciation, porewater profiles with peaks just below the surface, and a fall in iron-bound phosphorus in the solid. Several processes can act together.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="keep-forms-and-units-aligned" class="slide level2">
 <h2>Keep forms and units aligned</h2>
-<p>Check species, element basis, phase, units, time, and boundary.</p>
-<p>Do not treat filtered Fe as free Fe²⁺ or pH as acid equivalents.</p>
+<div class="columns">
+<div class="column" style="width:55%;">
+<ul>
+<li><strong>Phosphate-P</strong> is reported as mass of <strong>phosphorus</strong>. 0.200 mg P/L = 6.46 µmol/L = 0.613 mg PO₄³⁻/L. Mixing the two bases gives a factor-3 error.</li>
+<li><strong>Filtered Fe</strong> is an <strong>operational</strong> fraction. It can include Fe(III) colloids and organic complexes, not just Fe²⁺.</li>
+<li><strong>eq/year</strong> (budget), <strong>meq/L</strong> (concentration) and <strong>pH</strong> (state) are three different kinds of quantity.</li>
+</ul>
+<p>Before you combine two numbers, check they refer to the <strong>same water, time and fraction</strong>.</p>
+</div><div class="column" style="width:45%;">
+<div class="checkbox">
+<p><strong>Quick conversion check</strong></p>
+<p>1.00 mg/L Fe ÷ 55.85 g/mol = <strong>17.9 µmol/L</strong></p>
+<p>0.200 mg P/L ÷ 30.97 g/mol = <strong>6.46 µmol/L</strong></p>
+<p>Molar ratio Fe : P released ≈ 18 : 6.5, about <strong>3 : 1</strong>. Does that fit the Fe : P ratio of the sediment’s iron oxides? Only a solid-phase measurement can say.</p>
+</div>
+</div></div>
+<aside class="notes">
+<p>These are the bookkeeping traps that ruin otherwise good arguments. Phosphorus is conventionally reported as phosphorus mass, so the phosphate ion mass is about three times larger. Always check which convention a dataset uses. Filtered iron passes through a filter, typically 0.45 micrometres, which lets through small colloids and organic complexes. It is not automatically dissolved iron(II), which is why a speciation measurement is part of the test. The molar ratio in the box is a useful habit: converting to moles lets you ask whether the amounts fit a proposed reaction. Whether three iron per phosphorus fits depends on how much phosphate the sediment’s iron oxides actually held, which needs a solid-phase measurement. Also, some released iron(II) may be reoxidised or precipitate as sulfide before sampling. The ratio is a check, not a proof.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="build-an-explanation-with-a-test" class="slide level2">
-<h2>Build an explanation with a test</h2>
-<p>Claim → chemical mechanism → numerical support → limitation → discriminating measurement.</p>
-<p>Use the model to make a testable prediction, not to label every correlation causal.</p>
+<section id="thread-6-the-contaminant-in-the-same-lake" class="slide level2">
+<h2>Thread 6: the contaminant in the same lake</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="../organic-contaminants/fig/inventory-u.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:45%;">
+<p>Activity C’s compound U behaves like this in a closed water–sediment system: half sorbed (K<sub>d</sub> = 100 L/kg), half-life 10 days.</p>
+<p>In the real lake, this is a <strong>separate argument</strong> with its <strong>own boundary</strong>:</p>
+<ul>
+<li>outflow and inflow would add terms;</li>
+<li>if sorbed U is <strong>buried</strong>, it leaves the active system without being destroyed;</li>
+<li>anoxic sediment may change both K<sub>d</sub> and the rate.</li>
+</ul>
+<p>Keep the compound model and the budget in <strong>separate sections</strong> of your report.</p>
+</div></div>
+<aside class="notes">
+<p>The contaminant model from activity C is the last thread. It describes a closed system with fixed Kd and one first-order rate, and it accounts for every milligram. In a real lake, the boundary is open. Water flows out, carrying dissolved parent. Sediment accumulates and buries sorbed parent, which removes it from contact with the water without transforming it. And the redox change we just discussed can change both sorption, for example if the compound was bound to iron oxides, and degradation rates. The report template asks students to keep the compound model and the catchment and sediment arguments in clearly identified sections, so a reader can see which numbers come from which model.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="compare-alternative-neutralisation" class="slide level2">
-<h2>Compare alternative neutralisation</h2>
-<p>Less neutralisation → residual <strong>0.0400 meq/L</strong>.</p>
-<p>Reference alkalinity export 50000 − 20000 = 30000 eq/year → <strong>0.0600 meq/L</strong>.</p>
+<section id="anatomy-of-a-chemical-explanation" class="slide level2">
+<h2>Anatomy of a chemical explanation</h2>
+
+<img data-src="fig/explanation-chain.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%"><p>Every strong argument in this course had these six parts. The <strong>test</strong> is what makes it science: a measurement that <strong>could have proved the claim wrong</strong>. The <strong>limits</strong> say what the numbers do not show.</p>
+<aside class="notes">
+<p>This is the structure the integrated exercise and the exam expect. Walk through the example in the figure, which uses today’s worked case. The claim is a sentence a non-chemist could understand. The reaction chain shows how it happens. The balance gives a number, here 0.0600 meq per litre. The prediction says what else must be true if the claim holds; here, base-cation export should fall while sulfate stays the same. The test names a measurement that could contradict the prediction. And the limits state the boundaries: an annual budget, no pH without carbon data, other terms held fixed. Students should be able to fill these six boxes for any unit in the course.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="check-your-explanation" class="slide level2">
-<h2>Check your explanation</h2>
-<p>Write a short report using activity C and the catchment/sediment evidence. Include one reaction, one hand-checked balance, one model figure, and an explanation of what is still uncertain.</p>
-<p>Use the <a href="../integrated-case/notes.html">notes and sources</a> and <a href="../integrated-case/exercise.html">worked exercises</a>.</p>
-<p>Explore the <a href="../interactives/week5.html">week 5 demo</a>, then explain the result chemically.</p>
+<section id="back-to-sweden-what-happened-next" class="slide level2">
+<h2>Back to Sweden: what happened next</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><img data-src="img/forest-liming.jpg" style="width:100.0%"> <span class="credit">Liming by helicopter, Kungsbacka, Sweden. Photo: Bulver, CC BY-SA 3.0, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:55%;">
+<p>The 1972 argument was eventually accepted. International agreements cut sulfur emissions across Europe, and <strong>sulfur deposition over Sweden has fallen to a small fraction</strong> of its 1980s peak.</p>
+<p>Many lakes are recovering, but <strong>slowly</strong>:</p>
+<ul>
+<li>soils must rebuild <strong>exchangeable base cations</strong> by weathering;</li>
+<li>forestry removes base cations in harvested wood;</li>
+<li>thousands of lakes are still <strong>limed</strong> to bridge the gap.</li>
+</ul>
+<p>The chemistry of every unit was needed to understand both the damage and the slow recovery.</p>
+</div></div>
+<aside class="notes">
+<p>Close the historical loop. Following the 1979 convention and later protocols, sulfur emissions in Europe fell dramatically, and sulfur deposition in Sweden is now far below its peak. Lake chemistry has responded: sulfate concentrations fell and alkalinity rose in many lakes. But recovery is slower than the cut in deposition, for the reasons this course has developed. Soil exchange sites lost base cations and refill slowly. Whole-tree harvesting removes additional base cations. Nitrogen deposition remains. Liming continues in many sensitive waters, as shown in the carbonate lecture. Students should see that the course’s chemistry is not abstract: it was the evidence base for one of Europe’s most successful environmental agreements.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="preparing-for-the-exam" class="slide level2">
+<h2>Preparing for the exam</h2>
+<div class="checkbox">
+<p>For any synthesis question, work through the same steps:</p>
+<ol type="1">
+<li><strong>Draw the boundary.</strong> Which water, solid or air volume, and over what time?</li>
+<li><strong>List the quantities</strong> and their kind: amount, flux, concentration, state.</li>
+<li><strong>Write the reactions</strong> and check element and charge balance.</li>
+<li><strong>Close the budget</strong> in amounts or equivalents before converting.</li>
+<li><strong>Separate</strong> model predictions, constructed data and real observations.</li>
+<li><strong>Name an alternative</strong> explanation and the measurement that would distinguish it.</li>
+<li><strong>State the limits</strong>: what your numbers cannot tell you.</li>
+</ol>
+</div>
+<p><a href="../overview.html">Course overview and unit list</a> · <a href="../integrated-case/exercise.html">Integrated exercises</a> · <a href="../organic-contaminants/fate-report.Rmd">Activity C report template</a></p>
+<aside class="notes">
+<p>Give students a reusable procedure. These seven steps condense the habits from all units. Drawing the boundary first prevents most errors in this course: mixing an annual budget with a closed-water pulse, or a water concentration with a total inventory. Listing quantities by kind catches unit errors. Balancing reactions catches stoichiometry errors, like forgetting the second pair of hydrogen ions from pyrite. Closing budgets in amounts first avoids dilution traps. Separating model output from observations is required in the report. Naming an alternative and a test is what distinguishes an explanation from a story. And stating limits shows understanding, not weakness. Encourage students to practise on each unit’s exercises.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="common-mistakes-to-avoid" class="slide level2">
+<h2>Common mistakes to avoid</h2>
+<ul>
+<li><strong>“0.0200 meq/L of residual acid gives pH X.”</strong> Not without C<sub>T</sub>, CO₂ and other acids.</li>
+<li><strong>“Lower concentration this year, so less acid.”</strong> Check the annual amount: dilution is not chemistry.</li>
+<li><strong>“Neutralisation is a fixed property of the catchment.”</strong> It draws on finite inventories that change.</li>
+<li><strong>“Fe and P rose together, so iron reduction released P.”</strong> Consistent is not proven; test alternatives.</li>
+<li><strong>“Phosphate-P and phosphate are the same number.”</strong> Factor of about 3.</li>
+<li><strong>“One model covers the whole lake.”</strong> The budget, the sediment and the contaminant need separate boundaries.</li>
+</ul>
+<aside class="notes">
+<p>These mistakes collect the course’s main traps in their synthesis form. Ask students which unit each mistake comes from. The first comes from the carbonate unit: pH needs more than alkalinity. The second from the very first unit and the waste lecture: concentration is not load. The third from soils: inventories are finite. The fourth from redox, sharpened today: a pattern is not a mechanism. The fifth from units and forms, and the sixth from activity C: models have boundaries. If students can explain each correction with a number or a reaction, they are well prepared. Then use the interactive demo to check the budget reasoning one more time.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="explore" class="slide level2">
 <h2>Explore: catchment acid budget</h2>
@@ -222,6 +771,77 @@ Environmental Chemistry
 <p><a href="../integrated-case/exercise.html#explore">Compare less neutralisation with double water export. Which annual quantities change?</a></p>
 <aside class="notes">
 <p>Use the reference presets, then change one variable. The complete exercise has model assumptions, a hand-check result, and a static reference for printing.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Thread</th>
+<th>Key fact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Deposition</td>
+<td>0.0200 HNO₃ + 2 × 0.0100 H₂SO₄ = 0.0400 eq m⁻² yr⁻¹ → 40 000 eq/year</td>
+</tr>
+<tr class="even">
+<td>Soils</td>
+<td>neutralise 30 000 eq/year from finite inventories; base cations leave with SO₄²⁻</td>
+</tr>
+<tr class="odd">
+<td>Budget</td>
+<td>residual 10 000 eq/year ÷ 5.00 × 10⁸ L/year = 0.0200 meq/L</td>
+</tr>
+<tr class="even">
+<td>Alkalinity</td>
+<td>needs a reference: 50 000 − 10 000 = 40 000 eq/year = 0.0800 meq/L</td>
+</tr>
+<tr class="odd">
+<td>pH</td>
+<td>not fixed by alkalinity: needs C<sub>T</sub> or CO₂ pressure (≈ 7.1 vs 6.1 here)</td>
+</tr>
+<tr class="even">
+<td>Sensitivity</td>
+<td>20 000 neutralised → 0.0600 meq/L; double water → dilution only</td>
+</tr>
+<tr class="odd">
+<td>Metals</td>
+<td>below pH ≈ 5.5, Al³⁺ rises steeply; organic ligands lower the free ion</td>
+</tr>
+<tr class="even">
+<td>Sediment</td>
+<td>O₂ ↓ 40×, Fe ↑ 50×, PO₄-P ↑ 20×: consistent with Fe(III) reduction, not proof</td>
+</tr>
+<tr class="odd">
+<td>Mechanism</td>
+<td>FeOOH + 3H⁺ + e⁻ → Fe²⁺ + 2H₂O; phosphate released, not reduced</td>
+</tr>
+<tr class="even">
+<td>Explanation</td>
+<td>claim, reaction, balance, prediction, test, limits</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Next:</strong> the <a href="../overview.html">course overview</a> for exam preparation: revisit each unit’s summary slide and exercises. Then the <a href="../integrated-case/exercise.html">integrated exercises</a>, the <a href="../integrated-case/notes.html">notes</a> and the <a href="../organic-contaminants/exercise.html#activity-c-a-fate-model-in-r">activity C report</a>.</p>
+<aside class="notes">
+<p>This is the last summary of the course, so recite the whole chain. Emissions become acid deposition, counted in equivalents. Soils neutralise most of it from finite inventories, so their capacity can decline. The residual, divided by water export, lowers the lake’s alkalinity relative to a stated reference, but pH needs carbon dioxide and dissolved carbon too. If the balance tips, aluminium moves. A separate sediment observation set is consistent with iron reduction releasing phosphate, and the Baltic shows the same chemistry at sea scale. Every step needs a boundary, a balance and a test. For revision, use the overview page: each unit’s summary table and exercises cover the facts this synthesis relied on.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;

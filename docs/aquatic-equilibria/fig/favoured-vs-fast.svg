@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: equilibrium (thermodynamics) says which state is lower in energy; kinetics depends on the barrier between them. -->
+  <defs><marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker>
+  <marker id="ar2" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#b8860b"/></marker></defs>
+  <style>.t{font-size:19px;fill:#1b2a3a} .b{font-size:21px;font-weight:bold;fill:#1b2a3a} .g{font-size:17px;fill:#6b7785}</style>
+  <line x1="70" y1="380" x2="70" y2="40" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+  <text class="g" x="40" y="220" transform="rotate(-90 40 220)" text-anchor="middle">energy</text>
+  <line x1="70" y1="380" x2="860" y2="380" stroke="#1b2a3a" stroke-width="2" marker-end="url(#ar)"/>
+  <text class="g" x="640" y="405">progress of reaction</text>
+  <path d="M90,180 C170,180 200,180 260,170 C340,150 360,60 420,60 C480,60 500,220 560,300 C600,330 640,330 830,330" fill="none" stroke="#2468A0" stroke-width="5"/>
+  <text class="b" x="95" y="160">start</text>
+  <text class="t" x="95" y="215">organic matter + O₂</text>
+  <text class="b" x="660" y="310">end: CO₂ + H₂O</text>
+  <line x1="300" y1="180" x2="300" y2="62" stroke="#b8860b" stroke-width="3" marker-start="url(#ar2)" marker-end="url(#ar2)"/>
+  <text class="b" x="160" y="90" fill="#b8860b" style="fill:#b8860b">barrier</text>
+  <text class="t" x="160" y="114">sets the rate</text>
+  <text class="g" x="160" y="136">(kinetics)</text>
+  <line x1="640" y1="182" x2="640" y2="326" stroke="#25713E" stroke-width="3" stroke-dasharray="6 5"/>
+  <line x1="600" y1="182" x2="680" y2="182" stroke="#25713E" stroke-width="2" stroke-dasharray="6 5"/>
+  <text class="b" x="660" y="230" style="fill:#25713E">downhill</text>
+  <text class="t" x="660" y="254">sets which side</text>
+  <text class="t" x="660" y="278">is favoured (equilibrium)</text>
+</svg>

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="430" viewBox="0 0 940 430" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: a dissolved metal ion is a complex with water; a bound water can release H+ (hydrolysis) -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <line x1="180" y1="205" x2="180" y2="123" stroke="#6b7785" stroke-width="3"/>
+  <line x1="180" y1="205" x2="180" y2="287" stroke="#6b7785" stroke-width="3"/>
+  <line x1="180" y1="205" x2="98" y2="205" stroke="#6b7785" stroke-width="3"/>
+  <line x1="180" y1="205" x2="262" y2="205" stroke="#6b7785" stroke-width="3"/>
+  <line x1="180" y1="205" x2="134.9" y2="250.1" stroke="#6b7785" stroke-width="3" stroke-dasharray="5 4"/>
+  <line x1="180" y1="205" x2="225.1" y2="159.9" stroke="#6b7785" stroke-width="3" stroke-dasharray="5 4"/>
+  <circle cx="180" cy="205" r="24" fill="#7f8c9d" stroke="none" stroke-width="2"/>
+  <text x="180" y="212" font-size="20" fill="white" text-anchor="middle" font-weight="bold" >Al</text>
+  <line x1="180" y1="123" x2="167.89627188527922" y2="107.07832402901889" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="167.9" cy="107.1" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <line x1="180" y1="123" x2="192.10372811472078" y2="107.07832402901889" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="192.1" cy="107.1" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <circle cx="180" cy="123" r="13" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <line x1="180" y1="287" x2="192.10372811472078" y2="302.92167597098114" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="192.1" cy="302.9" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <line x1="180" y1="287" x2="167.89627188527922" y2="302.92167597098114" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="167.9" cy="302.9" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <circle cx="180" cy="287" r="13" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <line x1="98" y1="205" x2="82.07832402901889" y2="217.10372811472078" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="82.1" cy="217.1" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <line x1="98" y1="205" x2="82.07832402901889" y2="192.89627188527922" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="82.1" cy="192.9" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <circle cx="98" cy="205" r="13" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <line x1="262" y1="205" x2="277.92167597098114" y2="192.89627188527922" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="277.9" cy="192.9" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <line x1="262" y1="205" x2="277.92167597098114" y2="217.10372811472078" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="277.9" cy="217.1" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <circle cx="262" cy="205" r="13" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <line x1="134.9" y1="250.1" x2="132.2003031806217" y2="269.916953274493" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="132.2" cy="269.9" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <line x1="134.9" y1="250.1" x2="115.08304672550702" y2="252.7996968193783" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="115.1" cy="252.8" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <circle cx="134.9" cy="250.1" r="13" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <line x1="225.1" y1="159.9" x2="227.7996968193783" y2="140.08304672550702" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="227.8" cy="140.1" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <line x1="225.1" y1="159.9" x2="244.91695327449298" y2="157.2003031806217" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="244.9" cy="157.2" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <circle cx="225.1" cy="159.9" r="13" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <text x="180" y="345" font-size="24" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >[Al(H₂O)₆]³⁺</text>
+  <text x="180" y="378.0" font-size="16" fill="#6b7785" text-anchor="middle" font-weight="normal" >six water ligands donate electron</text>
+  <text x="180" y="398.0" font-size="16" fill="#6b7785" text-anchor="middle" font-weight="normal" >pairs to the metal ion</text>
+  <line x1="345" y1="205" x2="560" y2="205" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="452" y="190" font-size="20" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >hydrolysis</text>
+  <text x="452" y="232" font-size="18" fill="#c0392b" text-anchor="middle" font-weight="normal" >releases H⁺</text>
+  <line x1="730" y1="205" x2="730" y2="123" stroke="#6b7785" stroke-width="3"/>
+  <line x1="730" y1="205" x2="730" y2="287" stroke="#6b7785" stroke-width="3"/>
+  <line x1="730" y1="205" x2="648" y2="205" stroke="#6b7785" stroke-width="3"/>
+  <line x1="730" y1="205" x2="812" y2="205" stroke="#6b7785" stroke-width="3"/>
+  <line x1="730" y1="205" x2="684.9" y2="250.1" stroke="#6b7785" stroke-width="3" stroke-dasharray="5 4"/>
+  <line x1="730" y1="205" x2="775.1" y2="159.9" stroke="#6b7785" stroke-width="3" stroke-dasharray="5 4"/>
+  <circle cx="730" cy="205" r="24" fill="#7f8c9d" stroke="none" stroke-width="2"/>
+  <text x="730" y="212" font-size="20" fill="white" text-anchor="middle" font-weight="bold" >Al</text>
+  <line x1="730" y1="123" x2="717.8962718852792" y2="107.07832402901889" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="717.9" cy="107.1" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <line x1="730" y1="123" x2="742.1037281147208" y2="107.07832402901889" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="742.1" cy="107.1" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <circle cx="730" cy="123" r="13" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <line x1="730" y1="287" x2="742.1037281147208" y2="302.92167597098114" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="742.1" cy="302.9" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <line x1="730" y1="287" x2="717.8962718852792" y2="302.92167597098114" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="717.9" cy="302.9" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <circle cx="730" cy="287" r="13" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <line x1="648" y1="205" x2="632.0783240290189" y2="217.10372811472078" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="632.1" cy="217.1" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <line x1="648" y1="205" x2="632.0783240290189" y2="192.89627188527922" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="632.1" cy="192.9" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <circle cx="648" cy="205" r="13" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <line x1="812" y1="205" x2="833.0" y2="205.0" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="833.0" cy="205.0" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <circle cx="812" cy="205" r="13" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <line x1="684.9" y1="250.1" x2="682.2003031806216" y2="269.916953274493" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="682.2" cy="269.9" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <line x1="684.9" y1="250.1" x2="665.083046725507" y2="252.7996968193783" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="665.1" cy="252.8" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <circle cx="684.9" cy="250.1" r="13" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <line x1="775.1" y1="159.9" x2="777.7996968193784" y2="140.08304672550702" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="777.8" cy="140.1" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <line x1="775.1" y1="159.9" x2="794.916953274493" y2="157.2003031806217" stroke="#6b7785" stroke-width="3"/>
+  <circle cx="794.9" cy="157.2" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <circle cx="775.1" cy="159.9" r="13" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <circle cx="812" cy="205" r="24" fill="none" stroke="#b8860b" stroke-width="3"/>
+  <text x="730" y="345" font-size="24" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >[Al(H₂O)₅(OH)]²⁺</text>
+  <text x="730" y="378.0" font-size="16" fill="#6b7785" text-anchor="middle" font-weight="normal" >one bound water has become OH⁻;</text>
+  <text x="730" y="398.0" font-size="16" fill="#6b7785" text-anchor="middle" font-weight="normal" >the oxidation state is still +III</text>
+  <circle cx="40" cy="35" r="8" fill="#c0392b" stroke="none" stroke-width="2"/>
+  <text x="54" y="41" font-size="16" fill="#1b2a3a" text-anchor="start" font-weight="normal" >O</text>
+  <circle cx="90" cy="35" r="7" fill="white" stroke="#6b7785" stroke-width="2"/>
+  <text x="104" y="41" font-size="16" fill="#1b2a3a" text-anchor="start" font-weight="normal" >H</text>
+  <line x1="140" y1="35" x2="175" y2="35" stroke="#6b7785" stroke-width="3" stroke-dasharray="5 4"/>
+  <text x="182" y="41" font-size="16" fill="#6b7785" text-anchor="start" font-weight="normal" >bond toward / away from viewer</text>
+</svg>

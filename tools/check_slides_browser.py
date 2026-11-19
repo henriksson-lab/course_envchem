@@ -3,7 +3,7 @@
 Usage (after `make render`):
   google-chrome --headless=new --remote-debugging-port=9223 \
       --user-data-dir="$(mktemp -d)" --window-size=1280,720 about:blank &
-  python3 tools/check_slides_browser.py OUTDIR docs/carbonate-gases/lec.html [...]
+  [CHECK_SLIDES_PORT=9223] python3 tools/check_slides_browser.py OUTDIR docs/carbonate-gases/lec.html [...]
 
 Writes OUTDIR/<deck>/sNN.png and prints, per deck, the slide count, the share of
 slides containing a picture (img/svg/demo), and slides whose content is taller
@@ -11,6 +11,7 @@ than the 720 px slide. Requires the optional websocket-client package.
 """
 from pathlib import Path
 import base64
+import os
 import json
 import sys
 import time
@@ -84,7 +85,7 @@ def check_deck(browser, html, outdir):
 
 def main():
     out = Path(sys.argv[1])
-    browser = Browser()
+    browser = Browser(int(os.environ.get('CHECK_SLIDES_PORT', '9223')))
     ok = all([check_deck(browser, html, out / Path(html).parent.name / Path(html).stem)
               for html in sys.argv[2:]])
     sys.exit(0 if ok else 1)

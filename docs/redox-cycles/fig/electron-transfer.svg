@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="380" viewBox="0 0 980 380" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: organic carbon donates electrons; oxygen accepts them -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <rect x="20" y="30" width="940" height="140" rx="10" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <text x="40" y="65" font-size="21" fill="#1b2a3a" text-anchor="start" font-weight="bold" >Oxidation (electron donor)</text>
+  <text x="60" y="125" font-size="26" fill="#1b2a3a" text-anchor="start" font-weight="normal" >CH₂O + H₂O → CO₂ + 4H⁺ + 4e⁻</text>
+  <text x="560" y="105" font-size="22" fill="#AD4825" text-anchor="start" font-weight="bold" >C:  0  →  +IV</text>
+  <text x="560" y="140" font-size="18" fill="#AD4825" text-anchor="start" font-weight="normal" >loses 4 electrons</text>
+  <rect x="20" y="210" width="940" height="140" rx="10" fill="#f4f6f8" stroke="none" stroke-width="0"/>
+  <text x="40" y="245" font-size="21" fill="#1b2a3a" text-anchor="start" font-weight="bold" >Reduction (electron acceptor)</text>
+  <text x="60" y="305" font-size="26" fill="#1b2a3a" text-anchor="start" font-weight="normal" >O₂ + 4H⁺ + 4e⁻ → 2H₂O</text>
+  <text x="560" y="285" font-size="22" fill="#2468A0" text-anchor="start" font-weight="bold" >O:  0  →  −II</text>
+  <text x="560" y="320" font-size="18" fill="#2468A0" text-anchor="start" font-weight="normal" >gains 4 electrons (2 per O)</text>
+  <path d="M880,150 C930,175 930,215 880,240" stroke="#b8860b" stroke-width="4" fill="none" marker-end="url(#arr)"/>
+  <text x="870" y="200" font-size="22" fill="#b8860b" text-anchor="end" font-weight="bold" >4 e⁻</text>
+  <text x="490" y="375" font-size="20" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >Sum: CH₂O + O₂ → CO₂ + H₂O    (electrons cancel)</text>
+</svg>

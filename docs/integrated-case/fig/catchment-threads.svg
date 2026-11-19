@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: one catchment cross-section linking the course units: emission and deposition, soil neutralisation, lake alkalinity and pH, aluminium and metals, sediment redox and phosphate, organic contaminants. -->
+  <defs>
+    <marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#c0392b"/></marker>
+  </defs>
+  <style>
+    .n{font-size:15px;font-weight:bold;fill:#fff;text-anchor:middle}
+    .t{font-size:15px;fill:#1b2a3a}
+    .b{font-size:16px;font-weight:bold;fill:#1b2a3a}
+  </style>
+  <!-- sky -->
+  <rect x="0" y="0" width="960" height="300" fill="#eef3f8"/>
+  <!-- hillslope soil -->
+  <path d="M0,170 L380,300 L380,470 L0,470 Z" fill="#c9a66b"/>
+  <path d="M0,170 L380,300 L380,320 L0,195 Z" fill="#5b4636"/>
+  <!-- lake -->
+  <path d="M380,300 L900,300 L900,470 L380,470 Z" fill="#2468A0"/>
+  <path d="M380,420 Q640,470 900,420 L900,470 L380,470 Z" fill="#6b5a45"/>
+  <rect x="900" y="300" width="60" height="170" fill="#c9a66b"/>
+  <!-- stack -->
+  <rect x="70" y="40" width="34" height="110" fill="#8e9aaf"/>
+  <path d="M87,38 C100,10 150,20 190,8" stroke="#a9b4c2" stroke-width="16" fill="none" opacity="0.7"/>
+  <!-- deposition arrows -->
+  <g stroke="#c0392b" stroke-width="3" marker-end="url(#arr)">
+    <line x1="210" y1="40" x2="200" y2="210"/><line x1="260" y1="40" x2="250" y2="225"/><line x1="310" y1="40" x2="300" y2="245"/>
+  </g>
+  <!-- numbered threads -->
+  <circle cx="135" cy="105" r="16" fill="#c0392b"/><text class="n" x="135" y="110">1</text>
+  <text class="b" x="345" y="50">1 Emission → deposition</text>
+  <text class="t" x="345" y="70">SO₂, NOₓ oxidised; 40 000 eq/year</text>
+
+  <circle cx="160" cy="300" r="16" fill="#b8860b"/><text class="n" x="160" y="305">2</text>
+  <text class="b" x="40" y="360">2 Soil neutralisation</text>
+  <text class="t" x="40" y="380">exchange, weathering:</text>
+  <text class="t" x="40" y="400">30 000 eq/year consumed</text>
+  <text class="t" x="40" y="430">Al³⁺ released if bases run out</text>
+  <text class="t" x="40" y="450">(soil and metals units)</text>
+
+  <!-- flow arrow -->
+  <path d="M250,330 C300,360 340,350 390,340" stroke="#1b2a3a" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+
+  <circle cx="560" cy="340" r="16" fill="#25713E"/><text class="n" x="560" y="345">3</text>
+  <text x="585" y="335" font-size="16" font-weight="bold" fill="#fff">3 Lake water</text>
+  <text x="585" y="355" font-size="15" fill="#fff">alkalinity, C<tspan font-size="11" baseline-shift="sub">T</tspan>, pH (carbonate unit)</text>
+  <text x="585" y="375" font-size="15" fill="#fff">residual 0.0200 meq/L</text>
+
+  <circle cx="560" cy="440" r="16" fill="#6b4c9a"/><text class="n" x="560" y="445">4</text>
+  <text x="585" y="438" font-size="16" font-weight="bold" fill="#fff">4 Sediment redox:</text>
+  <text x="585" y="458" font-size="15" fill="#fff">Fe(III) → Fe²⁺, phosphate release</text>
+
+  <circle cx="622" cy="210" r="16" fill="#AD4825"/><text class="n" x="622" y="215">5</text>
+  <text class="b" x="648" y="215">5 Contaminants</text>
+  <text class="t" x="648" y="235">water ⇄ sediment, parent loss</text>
+  <text class="t" x="648" y="255">(activity C)</text>
+  <!-- outflow -->
+  <line x1="880" y1="320" x2="950" y2="320" stroke="#fff" stroke-width="3" marker-end="url(#ar)"/>
+  <text class="t" x="840" y="150">outflow:</text>
+  <text class="t" x="840" y="170">5.00 × 10⁸ L/year</text>
+  <line x1="900" y1="178" x2="925" y2="310" stroke="#1b2a3a" stroke-width="1.2"/>
+</svg>

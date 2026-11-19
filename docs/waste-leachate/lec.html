@@ -30,6 +30,22 @@
     }
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-073ca42b956148f7f9761d97a475d639.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -128,6 +144,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Waste materials and leachate chemistry</h1>
+  <p class="subtitle">Week 4 — Soils, waste, and contaminants</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -138,52 +155,609 @@ Environmental Chemistry
 </div>
 
 </section>
-<section id="chemical-question" class="slide level2">
-<h2>Chemical question</h2>
-<p>Why can a waste material continue producing acidity after the initial dissolved acid has been washed away?</p>
-</section>
-<section id="what-to-explain" class="slide level2">
-<h2>What to explain</h2>
+<section id="about-this-lecture" class="slide level2">
+<h2>About this lecture</h2>
+<div class="columns">
+<div class="column" style="width:56%;">
+<p>Copper was mined at <strong>Falun</strong> in central Sweden for roughly a thousand years, until 1992. The mine is now a UNESCO World Heritage Site. Its waste heaps are still chemically active: water draining them carries <strong>acid, sulfate and metals</strong> toward the lakes downstream.</p>
+<p>Why does old rock keep making acid long after mining stops?</p>
+<p>Today you will learn to:</p>
 <ul>
-<li>Balance sulfide oxidation and subsequent iron hydrolysis.</li>
-<li>Distinguish present pH from potential acid-generating inventory.</li>
-<li>Close a neutralisation budget and track the residual solids.</li>
+<li>balance <strong>pyrite oxidation</strong>: 4 H⁺ per FeS₂;</li>
+<li>separate <strong>present pH</strong> from <strong>future acid-generating inventory</strong>;</li>
+<li>close a <strong>neutralisation budget</strong> with a stated endpoint;</li>
+<li>tell <strong>concentration</strong> from <strong>load</strong>.</li>
 </ul>
+<p>Last lecture, soils <em>consumed</em> acid from finite stocks. Today a solid <em>produces</em> it.</p>
+</div><div class="column" style="width:44%;">
+<p><img data-src="img/falun-mine.jpg" style="width:100.0%"> <span class="credit">The Great Pit at Falun copper mine, Sweden. Photo: Pudelek, CC BY-SA 4.0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Open with Falun. The mine was one of Europe’s most important copper sources for centuries, and the great open pit formed when old workings collapsed in 1687. The ore contained copper sulfides together with a great deal of pyrite, iron disulfide. Mining and roasting left large volumes of sulfide-rich waste around the town. That waste is the reason why water draining the area is still acidic and metal-rich today, decades after the mine closed. The striking point is the time scale: acid production does not stop when people leave. Contrast with last week’s soil lecture, where acid arrived from the air and soil inventories consumed it. Here the solid itself is the acid source.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="expose-a-reactive-mineral" class="slide level2">
-<h2>Expose a reactive mineral</h2>
-<p>FeS₂ + 3½ O₂ + H₂O → Fe²⁺ + 2 SO₄²⁻ + 2 H⁺.</p>
-<p>Exposure changes reaction access; stoichiometry alone does not give the rate.</p>
+<section id="the-colour-of-swedish-houses-is-mine-chemistry" class="slide level2">
+<h2>The colour of Swedish houses is mine chemistry</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/falu-red.jpg" style="width:100.0%"> <span class="credit">A Falu red cottage, Lysekil, Sweden. Photo: W.carter, CC0, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:50%;">
+<p>The classic red paint, <strong>Falu rödfärg</strong>, is made from pigment recovered from the Falun mine’s weathered waste.</p>
+<p>The pigment is mainly <strong>iron oxides</strong>. They formed when iron sulfide in the waste reacted with <strong>oxygen and water</strong> over centuries.</p>
+<p>So the reactions that gave Swedish cottages their colour are the same ones that produce acid in the mine drainage.</p>
+<p><strong>Today’s question:</strong> what exactly happens when pyrite meets air and water, and how much acid does it make?</p>
+</div></div>
+<aside class="notes">
+<p>This is a nice way to make the chemistry familiar. Falu red paint has been produced from the Falun mine’s waste for centuries. The pigment consists largely of iron oxides formed by weathering of the iron sulfides in the waste. Ask students: if iron sulfide turns into iron oxide, where did the sulfur go, and what happened to the hydrogen balance? Some will guess sulfate, and that is right. The point of the lecture is to make that conversion quantitative. Two oxidations happen, sulfur and then iron, and both release hydrogen ions. Once the bookkeeping is clear, we can compare acid production with the neutralising minerals in the waste and see why the balance can shift over decades.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="iron-oxidation-can-release-more-acid" class="slide level2">
-<h2>Iron oxidation can release more acid</h2>
-<p>Fe²⁺ oxidation + hydroxide formation → 2 more H⁺ per Fe.</p>
-<p>Combined endpoint: <strong>4 acid equivalents per mole FeS₂</strong>.</p>
+<section id="pyrite-stable-underground-reactive-in-air" class="slide level2">
+<h2>Pyrite: stable underground, reactive in air</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p><img data-src="img/pyrite.jpg" style="width:100.0%"> <span class="credit">Pyrite (FeS₂) crystals on a glass, photographed in Visby, Gotland. Photo: W.carter, CC BY-SA 4.0, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:52%;">
+<p><strong>Pyrite, FeS₂</strong>, “fool’s gold”, is the most common sulfide mineral. Sulfur sits as the disulfide ion S₂²⁻, oxidation state <strong>−1</strong> per S.</p>
+<p>Deep in bedrock or under water, there is almost <strong>no oxygen</strong>, so pyrite can persist for millions of years.</p>
+<p>Mining, road cuts and drained wetlands crush the rock and <strong>expose it to air and water</strong>. Crushing also creates vast new surface area.</p>
+<p>Pyrite is common in <strong>ore waste</strong>, in some black shales, and in drained coastal <strong>acid sulfate soils</strong> around the Baltic.</p>
+</div></div>
+<aside class="notes">
+<p>Pyrite forms under reducing conditions, for example in marine sediments where sulfate reduction produces sulfide, the process you met in the redox unit. As long as it stays away from oxygen it is stable. The trouble starts when we move it. Crushing ore to recover copper and zinc leaves fine-grained waste with enormous surface area, piled in heaps exposed to air and rain. Mention that the same chemistry appears outside mining. Along the Swedish and Finnish Baltic coast, land uplift and drainage have exposed sulfide-bearing sediments, forming acid sulfate soils that release acid and metals to rivers. Road and tunnel construction through black shale can do the same. The chemistry is identical; only the setting changes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="neutralisation-is-another-reaction" class="slide level2">
-<h2>Neutralisation is another reaction</h2>
-<p>At the CO₂* endpoint, 1 mol CaCO₃ consumes 2 acid equivalents.</p>
-<p>Inventory, accessibility, and rate all matter.</p>
+<section id="inside-a-waste-heap" class="slide level2">
+<h2>Inside a waste heap</h2>
+
+<img data-src="fig/waste-heap.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><p>Pyrite oxidation needs <strong>oxygen and water together</strong>. Both enter from the surface, so most reaction happens in an outer <strong>oxidation zone</strong>. The products leave the heap as <strong>seepage</strong>.</p>
+<aside class="notes">
+<p>Walk through the cross-section. Oxygen enters the heap mainly by diffusion and air flow through the pores. Rain and snowmelt infiltrate from the top. Where the two meet pyrite, it oxidises. Deep inside, oxygen is used up before it gets there, so pyrite survives. This geometry is the reason for one of the main remediation strategies: cover the waste with a dense layer such as compacted till, or flood it under water, to keep oxygen out. Seepage collects at the base and carries hydrogen ions, sulfate, iron and other metals released as the sulfide minerals dissolve. Copper and zinc sulfides in ore waste are usually less abundant than pyrite, but their metals ride along in the acid water.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="present-acidity-and-future-generation" class="slide level2">
-<h2>Present acidity and future generation</h2>
-<p>Current pH ≠ future acid-generating inventory.</p>
-<p>Compare sulfide extent, neutralisation, and flow-weighted export.</p>
+<section id="two-oxidations-four-hydrogen-ions" class="slide level2">
+<h2>Two oxidations, four hydrogen ions</h2>
+
+<img data-src="fig/pyrite-chain.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:86.0%"><p>Each step is a <strong>redox reaction</strong> that also releases H⁺. Step 1 makes 2 H⁺ and dissolved Fe²⁺. Step 2 oxidises the iron and precipitates it, releasing <strong>2 more</strong>.</p>
+<aside class="notes">
+<p>Go slowly through the two steps. In step 1, the sulfur in pyrite is oxidised from minus one to plus six in sulfate. Oxygen is the electron acceptor, and two hydrogen ions are released per pyrite. Iron is still in the plus two state and dissolved. In step 2, iron(II) is oxidised to iron(III). Iron(III) is very insoluble at all but low pH, so it hydrolyses and precipitates. The hydrolysis is what releases the extra hydrogen ions: water molecules bound to iron(III) give up protons. Fe(OH)3 is a teaching formula; real precipitates are ferrihydrite, goethite or schwertmannite. The overall result, four hydrogen ions per pyrite, is the number to remember for acid budgets.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="immobilisation-can-be-reversible" class="slide level2">
-<h2>Immobilisation can be reversible</h2>
-<p>Retention depends on future pH and redox.</p>
-<p>Track contaminants in both water and residual solid phases.</p>
+<section id="check-the-balance-exercise-1" class="slide level2">
+<h2>Check the balance: exercise 1</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><span class="math display">\mathrm{FeS_2+\tfrac72O_2+H_2O\rightarrow Fe^{2+}+2SO_4^{2-}+2H^+}</span> <span class="math display">\mathrm{Fe^{2+}+\tfrac14O_2+\tfrac52H_2O\rightarrow Fe(OH)_3+2H^+}</span></p>
+<p>Add them and cancel Fe²⁺:</p>
+<p><span class="math display">\mathrm{FeS_2+\tfrac{15}{4}O_2+\tfrac72H_2O\rightarrow Fe(OH)_3+2SO_4^{2-}+4H^+}</span></p>
+</div><div class="column" style="width:45%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Check</th>
+<th style="text-align: right;">Left</th>
+<th style="text-align: right;">Right</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fe</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td>S</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td>O</td>
+<td style="text-align: right;">7.5 + 3.5 = 11</td>
+<td style="text-align: right;">3 + 8 = 11</td>
+</tr>
+<tr class="even">
+<td>H</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3 + 4 = 7</td>
+</tr>
+<tr class="odd">
+<td>Charge</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">−4 + 4 = 0</td>
+</tr>
+</tbody>
+</table>
+<p>Always check <strong>all five</strong> before using a reaction in a budget.</p>
+</div></div>
+<aside class="notes">
+<p>This is exercise 1, done together. Adding the equations and cancelling iron(II) gives fifteen quarters of oxygen and seven halves of water. Then check each row. Oxygen is the one students usually get wrong: on the left, fifteen quarters of O2 is seven and a half oxygen atoms, plus three and a half from water, eleven in total. On the right, three oxygen atoms in the hydroxide plus eight in two sulfates. Hydrogen: seven on the left from water, three in the hydroxide and four free ions on the right. Charge: two sulfates carry minus four, four hydrogen ions plus four. Encourage students to do this check every time they write a budget reaction.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="a-complete-endpoint-budget" class="slide level2">
-<h2>A complete endpoint budget</h2>
-<p>0.0100 mol pyrite → <strong>0.0400 mol acid eq</strong>.</p>
-<p>At 2 eq/mol calcite: <strong>0.0200 mol</strong>, or <strong>2.00 g CaCO₃</strong>.</p>
+<section id="ironiii-speeds-it-up" class="slide level2">
+<h2>Iron(III) speeds it up</h2>
+
+<img data-src="fig/ferric-cycle.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:82.0%"><p>Once drainage is acidic, dissolved Fe³⁺ itself oxidises pyrite, and iron-oxidising microbes regenerate Fe³⁺ from Fe²⁺. Acid drainage can <strong>accelerate itself</strong>.</p>
+<aside class="notes">
+<p>The two-step equations give the stoichiometry, not the mechanism. At low pH, iron(III) remains dissolved and is a strong oxidant for pyrite. It reacts at the grain surface without oxygen being present there. The iron(II) produced is oxidised back to iron(III) by acid-loving microbes, such as Acidithiobacillus species, which gain energy from the reaction and need oxygen. Abiotic oxidation of iron(II) is slow at low pH, so the microbes greatly speed up the cycle. The net reaction is unchanged, so our four hydrogen ions per pyrite still holds. The practical lesson: it is much easier to prevent acid drainage from starting than to stop it once the waste has acidified.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="check-your-explanation" class="slide level2">
-<h2>Check your explanation</h2>
-<p>A treated waste initially gives neutral-pH water. What evidence is needed before concluding that future metal and acid release will stay low?</p>
-<p>Use the <a href="../waste-leachate/notes.html">notes and sources</a> and <a href="../waste-leachate/exercise.html">worked exercises</a>.</p>
+<section id="what-the-end-point-looks-like" class="slide level2">
+<h2>What the end point looks like</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="img/rio-tinto.jpg" style="width:100.0%"> <span class="credit">Iron-stained stream bed of the Río Tinto, Spain. Photo: Carol Stoker, NASA, public domain, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:45%;">
+<p>The <strong>Río Tinto</strong> in southwest Spain drains a sulfide belt that has been mined for thousands of years.</p>
+<p>Its water is strongly acidic, often around <strong>pH 2</strong>, and rich in dissolved iron(III), which colours it red.</p>
+<p>Few organisms beyond specialised microbes live there. The river is studied as an analogue for <strong>life in extreme environments</strong>.</p>
+<p>This is the iron cycle of the previous slide running at full speed.</p>
+</div></div>
+<aside class="notes">
+<p>The Río Tinto is the textbook image of acid mine drainage. The Iberian Pyrite Belt has been mined since antiquity, and the river’s acidity and iron load are a mixture of natural sulfide weathering and the effects of mining. At pH around 2, iron(III) stays in solution and gives the deep red colour. NASA scientists have studied the river’s microbes because they live on iron and sulfur chemistry in conditions that resemble what might be found on other planets. Use the photo to emphasise that at this pH almost all neutralising capacity has gone, and the iron cycle runs freely. Falun’s drainage is far less extreme, but the same chemistry is at work.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="orange-streams-iron-precipitates-downstream" class="slide level2">
+<h2>Orange streams: iron precipitates downstream</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="img/iron-stream.jpg" class="quarto-figure quarto-figure-center" height="470"> <span class="credit">Iron hydroxide precipitate in a stream receiving acid drainage, Missouri. Photo: D. Hardesty, USGS, public domain, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:60%;">
+<p>Where acid drainage mixes with less acidic stream water, pH rises and <strong>Fe³⁺ precipitates</strong> as orange iron hydroxide (“yellow boy”).</p>
+<p>Two consequences:</p>
+<ul>
+<li><strong>Step 2 releases its acid here</strong>, in the stream, not in the heap. A seep can leave the heap at moderate pH and still acidify the stream.</li>
+<li>The orange coating smothers the stream bed, and the fresh precipitate <strong>binds metals</strong> such as Cu, Zn and As.</li>
+</ul>
+<p>Removing the orange solid does not remove the acid already released.</p>
+</div></div>
+<aside class="notes">
+<p>This photo shows step 2 happening in the open. Water from a mine seep can contain plenty of dissolved iron(II) at modest pH. As it flows downstream, it picks up oxygen, iron oxidises and precipitates, and the stream becomes orange. Each mole of iron that precipitates releases two moles of hydrogen ions into the stream. This is why pH alone at the seep can mislead. The water’s acidity includes the dissolved iron that has not yet precipitated, sometimes called mineral acidity. The precipitate is ecologically damaging because it coats gravel where invertebrates and fish eggs live. It also sorbs metals, which is useful but, as we will see, not necessarily permanent.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="present-ph-is-a-snapshot" class="slide level2">
+<h2>Present pH is a snapshot</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>A leachate pH tells you about the water <strong>now</strong>. It says nothing about:</p>
+<ul>
+<li>the <strong>pyrite still unreacted</strong> in the waste (acid potential);</li>
+<li>the <strong>calcite and other buffers</strong> still present (neutralisation potential);</li>
+<li>how fast oxygen and water reach either.</li>
+</ul>
+<p>Mine-waste assessment therefore compares two <strong>inventories</strong>, usually in kg CaCO₃ per tonne of waste: acid potential versus neutralisation potential.</p>
+</div><div class="column" style="width:50%;">
+<div class="checkbox">
+<p><strong>Same pH, different futures.</strong> Two heaps both drain at pH 7 today. Heap 1 contains abundant calcite and little pyrite. Heap 2 contains the reverse, and its calcite is being spent. Only an inventory, not a pH reading, tells them apart.</p>
+</div>
+</div></div>
+<aside class="notes">
+<p>This is the core idea of the lecture and mirrors last week’s soils. pH is a state. The acid potential and neutralisation potential are inventories. In practice, mining companies and regulators estimate them from total sulfur and from a titration of the waste with acid, a procedure called acid–base accounting. The unit, kilograms of calcium carbonate equivalent per tonne of waste, lets both sides be compared directly. A waste with neutralisation potential well above acid potential is unlikely to generate acid drainage; one with the reverse ratio probably will, eventually. The word eventually matters, and the next slide shows why a waste can look harmless for decades.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="neutral-today-acid-tomorrow" class="slide level2">
+<h2>Neutral today, acid tomorrow</h2>
+
+<img data-src="fig/lag-time.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:76.0%"><p>While calcite lasts, it neutralises the acid as fast as pyrite makes it, and drainage looks harmless. When calcite runs out, the <strong>acid potential that was there all along</strong> appears in the water.</p>
+<aside class="notes">
+<p>This is a constructed illustration, not a model of Falun. One tonne of waste with one percent pyrite has an acid potential of about 333 equivalents. We gave it 150 equivalents of calcite and chose a slow first-order oxidation rate purely for illustration. For the first thirty years the drainage is neutral, because calcite consumes the acid as fast as it forms. Then calcite is exhausted and acid drainage begins, with most of the pyrite still unreacted. In reality rates depend on grain size, oxygen supply and temperature, and calcite can be used up locally along flow paths long before it is gone overall. The general lesson is robust: a neutral leachate today is not proof of a stable waste.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="neutralisation-depends-on-the-endpoint" class="slide level2">
+<h2>Neutralisation depends on the endpoint</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p>For the <strong>CO₂* endpoint</strong> (acidic final water, carbon leaves as CO₂):</p>
+<p><span class="math display">\mathrm{CaCO_3+2H^+\rightarrow Ca^{2+}+CO_2^*+H_2O}</span></p>
+<p>For a <strong>near-neutral endpoint</strong>, bicarbonate stays in the water:</p>
+<p><span class="math display">\mathrm{CaCO_3+H^+\rightarrow Ca^{2+}+HCO_3^-}</span></p>
+<p>The same calcite can neutralise <strong>2 or 1</strong> equivalents per mole. Mine-waste schemes differ in which they assume, so <strong>always state the endpoint</strong> before you use a coefficient.</p>
+</div><div class="column" style="width:45%;">
+<p><img data-src="fig/endpoints.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>Students have seen the first reaction in the carbonate and soil lectures. The second one is new here and matters for mine waste. If the final water is near neutral, carbon remains as bicarbonate and each calcium carbonate takes up only one hydrogen ion. That is the same chemistry as the carbonate lecture’s predominance diagram: at pH 7 most dissolved carbon is bicarbonate, not CO2-star. Assessment schemes differ in which endpoint they assume, and the answer can change by a factor of two, so always state it. Ask students which endpoint is more cautious for judging whether a waste is safe. The near-neutral one is, because it credits each mole of calcite with less neutralisation.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="calcite-present-is-not-calcite-available" class="slide level2">
+<h2>Calcite present is not calcite available</h2>
+
+<img data-src="fig/armouring.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>In acid, iron-rich water, limestone grains become <strong>coated</strong> with iron hydroxide or gypsum. The calcite is still there, but H⁺ cannot reach it. Calcite in a layer the water does not pass through is equally useless.</p>
+<aside class="notes">
+<p>This is a practical limit on any neutralisation inventory. When acid, iron-rich drainage meets limestone, the calcite dissolves at first, raising the pH. That pH rise makes iron(III) precipitate, and it precipitates on the nearest surface: the limestone itself. Sulfate-rich water can also deposit gypsum. The coating, called armouring, slows further dissolution dramatically. Passive treatment systems therefore try to keep oxygen out of limestone drains so that iron stays as dissolved iron(II) until the water has left the limestone. The same logic applies inside a heap: calcite away from the flow paths, or coated, is counted in an inventory but contributes little in practice. An inventory is a maximum, not a guarantee.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="worked-example-closing-the-budget" class="slide level2">
+<h2>Worked example: closing the budget</h2>
+<div class="columns">
+<div class="column" style="width:44%;">
+<p>0.0100 mol FeS₂ oxidises completely:</p>
+<ul>
+<li>acid: 4 × 0.0100 = <strong>0.0400 mol H⁺ eq</strong></li>
+<li>sulfate: 2 × 0.0100 = <strong>0.0200 mol</strong></li>
+<li>CaCO₃ needed (CO₂* endpoint): 0.0400 / 2 = 0.0200 mol = <strong>2.00 g</strong></li>
+</ul>
+<p><strong>Exercise 2:</strong> only 0.0150 mol CaCO₃ is accessible. It neutralises 0.0300 eq, leaving <strong>0.0100 mol eq</strong> of acid.</p>
+</div><div class="column" style="width:56%;">
+<p><img data-src="fig/acid-budget.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>This is the worked example from the notes, followed by exercise 2. Walk through the left panel: forty millimoles of acid, half from each step, fully neutralised by twenty millimoles of calcite. With a molar mass of 100 grams per mole, that is two grams of calcium carbonate. The right panel is the shortfall: fifteen millimoles of calcite neutralise thirty millimoles of acid, and ten millimoles remain. Two cautions from the exercise. First, the residual is an amount, not a pH; to get a pH you need the water volume and the remaining acid–base equilibria. Second, this is a stoichiometric comparison, not a design dose. Real treatment adds a safety margin because rates, access and mixing are imperfect.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="check-yourself" class="slide level2">
+<h2>Check yourself</h2>
+<div class="checkbox">
+<ol type="1">
+<li>How many moles of H⁺ equivalents can 0.0050 mol FeS₂ generate, oxidised completely to Fe(OH)₃ and sulfate?</li>
+<li>A seep leaves a heap at pH 6 with 20 mg/L dissolved Fe²⁺. Will the stream downstream necessarily stay at pH 6? Why?</li>
+<li>A waste contains enough calcite to neutralise its acid potential at the CO₂* endpoint. Is it safe if the final water will be near neutral?</li>
+<li>Name two reasons why calcite present in a heap might not neutralise the acid produced there.</li>
+</ol>
+</div>
+<aside class="notes">
+<p>Answers. One: four times 0.0050, so 0.020 mol of hydrogen ion equivalents. Two: no. The iron(II) will oxidise and precipitate downstream, releasing two hydrogen ions per iron. Twenty milligrams per litre of iron is about 0.36 millimoles per litre, so up to about 0.7 millimoles per litre of acid can appear in the stream, depending on its alkalinity. Three: not necessarily. At a near-neutral endpoint each calcite neutralises only one equivalent, so the same inventory covers only half the acid potential. Four: armouring by coatings, and calcite located away from the flow paths where acid is produced. Slow dissolution relative to flow is a third acceptable answer.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="concentration-is-not-load" class="slide level2">
+<h2>Concentration is not load</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="fig/load-vs-concentration.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:45%;">
+<p><strong>Load</strong> = flow × concentration.</p>
+<ul>
+<li>Discharge A: 10.0 L/s × 2.00 mg/L = <strong>20.0 mg/s</strong> Fe</li>
+<li>Discharge B: 40.0 L/s × 1.00 mg/L = <strong>40.0 mg/s</strong> Fe</li>
+</ul>
+<p>B looks cleaner but exports <strong>twice as much</strong> iron, about 1.3 tonnes a year.</p>
+<p>During <strong>snowmelt</strong>, concentrations often fall while loads rise. Judge a waste by its load to the receiving lake.</p>
+</div></div>
+<aside class="notes">
+<p>This is exercise 3, and it repeats the very first unit of the course: concentration and load answer different questions. A regulator who samples only concentration might judge discharge B as the smaller problem, yet it delivers twice the iron to the lake. Forty milligrams per second over a year is about 1.3 tonnes. Seasonal flow matters in Sweden. Snowmelt flushes the heaps, diluting the water, but the larger volume can carry out salts and metals that accumulated during the winter, so the annual load is often dominated by a few high-flow weeks. Remind students that these are dissolved loads. Iron leaving as suspended precipitate is a separate term that needs its own measurement.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="immobilised-is-not-destroyed" class="slide level2">
+<h2>Immobilised is not destroyed</h2>
+
+<img data-src="fig/sorbed-release.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Treatment often moves metals <strong>from water onto solids</strong>. The solid then needs conditions that keep it stable: enough <strong>alkalinity</strong> to keep pH up, and enough <strong>oxygen</strong> to keep iron oxidised.</p>
+<aside class="notes">
+<p>Return to the water-treatment unit: precipitation and sorption transfer contaminants to solids, which become residuals. Here we ask how stable those residuals are. Iron hydroxide surfaces bind copper, zinc, lead and also anions such as arsenate and phosphate. If pH falls, hydrogen ions compete for surface sites and cationic metals desorb. If the solid becomes waterlogged and oxygen runs out, microbes reduce iron(III) to dissolved iron(II), and the carrier itself dissolves, releasing everything it held. This links ahead to the redox processes in the synthesis lecture. Any claim that a waste or sludge is safely immobilised must state the chemical conditions that keep it so, and how long those conditions will last.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="back-to-falun-a-worked-estimate" class="slide level2">
+<h2>Back to Falun: a worked estimate</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Constructed:</strong> one tonne of waste rock with <strong>1 % pyrite</strong> by mass.</p>
+<ul>
+<li>FeS₂: 10 kg / 120 g/mol ≈ <strong>83 mol</strong></li>
+<li>acid potential: 4 × 83 ≈ <strong>333 mol H⁺ eq</strong></li>
+<li>sulfate: 2 × 83 ≈ 167 mol</li>
+<li>CaCO₃ to neutralise: <strong>≈ 17 kg</strong> (CO₂* endpoint) or <strong>≈ 33 kg</strong> (near-neutral endpoint)</li>
+</ul>
+<p>Multiply by the millions of tonnes of waste at an old mining district, and the century-long drainage makes sense.</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="img/falun-heaps.jpg" style="width:100.0%"> <span class="credit">The Great Pit at Falun with its weathered, iron-stained rock and the town beyond. Photo: Arild Vågen, CC BY-SA 4.0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Bring the numbers back to the opening case. The calculation is constructed, with round numbers, but it shows the scale. Ten kilograms of pyrite in a tonne of rock generates about 333 moles of hydrogen ion equivalents, which would need about seventeen kilograms of limestone at the carbon dioxide endpoint, or twice that if the water is to end near neutral. At Falun, centuries of mining left very large waste volumes. Oxygen reaches the pyrite slowly, from the surface inward, so the inventory is used up over centuries rather than years. That is the honest answer to the opening question: the acid comes from an inventory that is still far from exhausted, released at a rate set by access to oxygen and water.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="beyond-mines-other-leachates" class="slide level2">
+<h2>Beyond mines: other leachates</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The same reasoning, <strong>inventory + access + reaction</strong>, applies to other wastes:</p>
+<ul>
+<li><strong>Landfills:</strong> organic waste consumes oxygen. Leachate becomes <strong>reducing</strong>, rich in ammonium, dissolved organic carbon, Fe²⁺ and Mn²⁺.</li>
+<li><strong>Ash and slag:</strong> often strongly <strong>alkaline</strong>, with metals such as lead or chromium whose solubility depends on pH.</li>
+<li><strong>Acid sulfate soils:</strong> drained sulfide sediments behave like mine waste.</li>
+</ul>
+<p>In every case, ask what is still in the solid, and what controls its release.</p>
+</div><div class="column" style="width:50%;">
+<div class="checkbox">
+<p><strong>A useful template for any leachate</strong></p>
+<ol type="1">
+<li>Which reactive solids are present, and how much?</li>
+<li>What lets them react: O₂, water, low pH, microbes?</li>
+<li>What neutralises or retains the products?</li>
+<li>What flow carries the products out, and when?</li>
+<li>What could change in 10 or 100 years?</li>
+</ol>
+</div>
+</div></div>
+<aside class="notes">
+<p>Broaden the view so students see a method, not just a mine. Municipal landfills contain degradable organic matter. Microbes consume the oxygen, and leachate becomes strongly reducing, so iron and manganese dissolve and ammonium accumulates. Old landfills are therefore a reducing, not an acid, problem. Incineration ash is often very alkaline because of lime and oxides, and some metals, such as lead, are amphoteric and can dissolve at high pH as well as at low pH. Acid sulfate soils along the Baltic coast are a natural version of mine waste. The five-step template on the right works for all of them. It is also a good structure for the exam questions on leachate.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="common-mistakes-to-avoid" class="slide level2">
+<h2>Common mistakes to avoid</h2>
+<ul>
+<li><strong>“Pyrite gives 2 H⁺.”</strong> Only step 1. Iron oxidation and precipitation add 2 more: <strong>4 H⁺ per FeS₂</strong>.</li>
+<li><strong>“Neutral leachate means a safe waste.”</strong> Calcite may simply not be exhausted yet.</li>
+<li><strong>“CaCO₃ always neutralises 2 H⁺.”</strong> That depends on the endpoint: 1 at near-neutral pH.</li>
+<li><strong>“Calcite present = calcite available.”</strong> Armouring and flow paths limit access.</li>
+<li><strong>“Lower concentration = smaller problem.”</strong> Compare loads.</li>
+<li><strong>“Metals on iron hydroxide are gone.”</strong> Low pH or reducing conditions can release them.</li>
+</ul>
+<aside class="notes">
+<p>Go through these as a self-test, and ask students to justify each correction with a reaction or a number from today. The first mistake is the most common in budget calculations, often because students stop at the first equation in a textbook. The second and the last are the most important for environmental decisions: both treat a present state as if it were permanent. Mention that the same structure of mistakes reappears in the next lecture on organic contaminants. There, disappearance of a compound from water is often mistaken for destruction, when it may simply have moved to another phase. Keeping track of inventories in all phases is the shared habit.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Key fact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pyrite</td>
+<td>FeS₂, S at −1; stable without O₂, reacts when exposed to air and water</td>
+</tr>
+<tr class="even">
+<td>Step 1</td>
+<td>FeS₂ + 7/2 O₂ + H₂O → Fe²⁺ + 2SO₄²⁻ + 2H⁺</td>
+</tr>
+<tr class="odd">
+<td>Step 2</td>
+<td>Fe²⁺ + 1/4 O₂ + 5/2 H₂O → Fe(OH)₃ + 2H⁺, often downstream</td>
+</tr>
+<tr class="even">
+<td>Total</td>
+<td><strong>4 H⁺ and 2 SO₄²⁻ per FeS₂</strong></td>
+</tr>
+<tr class="odd">
+<td>Fe³⁺ cycle</td>
+<td>at low pH Fe³⁺ oxidises pyrite; microbes regenerate Fe³⁺</td>
+</tr>
+<tr class="even">
+<td>Inventories</td>
+<td>acid potential vs neutralisation potential; pH is a snapshot</td>
+</tr>
+<tr class="odd">
+<td>Lag</td>
+<td>drainage can stay neutral for decades, then acidify</td>
+</tr>
+<tr class="even">
+<td>Endpoint</td>
+<td>CaCO₃ neutralises 2 eq (CO₂*) or 1 eq (HCO₃⁻)</td>
+</tr>
+<tr class="odd">
+<td>Load</td>
+<td>flow × concentration; dilution can hide a large export</td>
+</tr>
+<tr class="even">
+<td>Immobilisation</td>
+<td>sorbed metals return if pH falls or Fe(III) is reduced</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Next:</strong> <a href="../organic-contaminants/lec.html">Organic contaminants and environmental fate</a>. Where does a molecule go, and is “gone from the water” the same as “destroyed”? Then the <a href="../waste-leachate/exercise.html">exercises</a> and the <a href="../waste-leachate/notes.html">notes</a>.</p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="img/foam.jpg" style="width:100.0%"> <span class="credit">Sailors in firefighting foam (AFFF) during a sprinkler test, 2006. Photo: US Navy, public domain, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Recite the chain once. Exposing pyrite to oxygen and water oxidises sulfur and then iron, giving four hydrogen ions and two sulfates per pyrite. At low pH, dissolved iron(III) and microbes accelerate the process. Whether drainage turns acidic depends on comparing two inventories, acid potential and neutralisation potential, and on access to them. A neutral leachate can hide a declining neutralising reserve. State the endpoint when you use calcite in a budget, judge discharges by load, and treat immobilised metals as conditionally stored. The photo previews the next lecture: firefighting foam contained PFAS compounds, which contaminated drinking water in Ronneby, Sweden. There the question is not acid but where an organic molecule goes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 
 
 </section>

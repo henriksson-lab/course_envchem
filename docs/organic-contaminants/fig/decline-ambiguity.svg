@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="400" viewBox="0 0 940 400" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: the same drop in dissolved parent can come from sorption (parent on sediment), transformation (products) or volatilisation (parent in air). Only a balance over all phases tells them apart. -->
+  <style>
+    .hd{font-size:19px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .t{font-size:16px;fill:#1b2a3a;text-anchor:middle}
+  </style>
+  <defs>
+    <g id="p"><circle r="7" fill="#AD4825"/></g>
+    <g id="q"><rect x="-6" y="-6" width="12" height="12" fill="#25713E"/></g>
+    <g id="jar">
+      <rect x="0" y="0" width="200" height="200" rx="12" fill="#ffffff" stroke="#1b2a3a" stroke-width="2.5"/>
+      <rect x="2" y="70" width="196" height="100" fill="#d6e6f2"/>
+      <rect x="2" y="170" width="196" height="28" fill="#c9a66b"/>
+    </g>
+  </defs>
+  <text class="hd" x="150" y="30">A. Sorption</text>
+  <text class="hd" x="470" y="30">B. Transformation</text>
+  <text class="hd" x="790" y="30">C. Volatilisation</text>
+  <use href="#jar" x="50" y="50"/><use href="#jar" x="370" y="50"/><use href="#jar" x="690" y="50"/>
+  <!-- each jar: 2 parent left in water -->
+  <use href="#p" x="120" y="160"/><use href="#p" x="170" y="185"/>
+  <use href="#p" x="440" y="160"/><use href="#p" x="490" y="185"/>
+  <use href="#p" x="760" y="160"/><use href="#p" x="810" y="185"/>
+  <!-- A: 6 parent in sediment -->
+  <use href="#p" x="75" y="234"/><use href="#p" x="105" y="236"/><use href="#p" x="135" y="233"/><use href="#p" x="165" y="236"/><use href="#p" x="195" y="234"/><use href="#p" x="225" y="236"/>
+  <!-- B: 6 products in water -->
+  <use href="#q" x="400" y="140"/><use href="#q" x="470" y="135"/><use href="#q" x="530" y="150"/><use href="#q" x="410" y="200"/><use href="#q" x="530" y="200"/><use href="#q" x="470" y="210"/>
+  <!-- C: 6 parent in headspace -->
+  <use href="#p" x="720" y="75"/><use href="#p" x="760" y="95"/><use href="#p" x="800" y="72"/><use href="#p" x="840" y="98"/><use href="#p" x="870" y="78"/><use href="#p" x="740" y="108"/>
+  <text class="t" x="150" y="285">parent moved to sediment</text>
+  <text class="t" x="470" y="285">parent became products</text>
+  <text class="t" x="790" y="285">parent moved to air</text>
+  <rect x="60" y="310" width="820" height="76" rx="10" fill="#f6efe0"/>
+  <text class="t" x="470" y="340">In all three jars the water has 2 parent molecules left out of 8.</text>
+  <text class="t" x="470" y="366"><tspan font-weight="bold">Measure every phase and the products</tspan> before naming a mechanism.</text>
+  <circle cx="720" cy="396" r="0" fill="none"/>
+</svg>

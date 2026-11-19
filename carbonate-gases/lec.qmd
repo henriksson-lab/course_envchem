@@ -274,7 +274,7 @@ Alkalinity counts how many hydrogen ions the water can take up before its carbon
 ::: {.column width="45%"}
 Charge balance forces
 
-$$A_T\approx\sum\text{base cations}-\sum\text{strong-acid anions}$$
+$$A_T\approx(\text{total base cations})-(\text{total strong-acid anions})$$
 
 Base cations: Ca²⁺, Mg²⁺, Na⁺, K⁺. Strong-acid anions: SO₄²⁻, Cl⁻, NO₃⁻.
 

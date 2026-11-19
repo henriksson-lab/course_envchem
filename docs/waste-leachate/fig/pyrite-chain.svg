@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="380" viewBox="0 0 940 380" font-family="Helvetica, Arial, sans-serif">
+  <!-- Mechanism: two-stage acid generation. Step 1 oxidises disulfide to sulfate (2 H+), step 2 oxidises Fe2+ and precipitates Fe(OH)3 (2 more H+). Total 4 H+ per FeS2. -->
+  <defs>
+    <marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker>
+    <g id="h"><circle r="15" fill="#c0392b"/><text y="5" font-size="13" text-anchor="middle" fill="#fff" font-weight="bold">H⁺</text></g>
+  </defs>
+  <style>
+    .box{font-size:21px;font-weight:bold;text-anchor:middle}
+    .t{font-size:16px;fill:#1b2a3a;text-anchor:middle}
+    .eq{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+  </style>
+  <!-- species boxes -->
+  <rect x="20" y="40" width="170" height="80" rx="10" fill="#d4b13a" stroke="#6b5a12" stroke-width="2"/>
+  <text class="box" x="105" y="78" fill="#1b2a3a">FeS₂</text>
+  <text class="t" x="105" y="102">pyrite (solid)</text>
+  <rect x="380" y="40" width="170" height="80" rx="10" fill="#cfe3d4" stroke="#25713E" stroke-width="2"/>
+  <text class="box" x="465" y="78" fill="#25713E">Fe²⁺</text>
+  <text class="t" x="465" y="102">dissolved, colourless</text>
+  <rect x="740" y="40" width="180" height="80" rx="10" fill="#c8693a" stroke="#7a3b1e" stroke-width="2"/>
+  <text class="box" x="830" y="78" fill="#fff">Fe(OH)₃</text>
+  <text x="830" y="102" font-size="16" fill="#fff" text-anchor="middle">orange precipitate</text>
+  <!-- arrows -->
+  <line x1="195" y1="80" x2="372" y2="80" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <line x1="555" y1="80" x2="732" y2="80" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <text class="t" x="285" y="68">+ 7/2 O₂ + H₂O</text>
+  <text class="t" x="645" y="68">+ 1/4 O₂ + 5/2 H₂O</text>
+  <!-- products -->
+  <text class="t" x="285" y="120">+ 2 SO₄²⁻</text>
+  <use href="#h" x="265" y="150"/><use href="#h" x="305" y="150"/>
+  <use href="#h" x="625" y="150"/><use href="#h" x="665" y="150"/>
+  <text class="t" x="285" y="190" font-weight="bold">Step 1: S oxidised (−1 → +6)</text>
+  <text class="t" x="645" y="190" font-weight="bold">Step 2: Fe oxidised (+2 → +3),</text>
+  <text class="t" x="645" y="210" font-weight="bold">then hydrolysed and precipitated</text>
+  <!-- total -->
+  <rect x="60" y="245" width="820" height="120" rx="12" fill="#f6efe0"/>
+  <text class="eq" x="470" y="282">Sum: FeS₂ + 15/4 O₂ + 7/2 H₂O → Fe(OH)₃ + 2 SO₄²⁻ + <tspan fill="#c0392b" font-weight="bold">4 H⁺</tspan></text>
+  <text class="t" x="470" y="315">Half the acid appears only when the iron oxidises and precipitates,</text>
+  <text class="t" x="470" y="339">often downstream, after the water has left the heap.</text>
+</svg>

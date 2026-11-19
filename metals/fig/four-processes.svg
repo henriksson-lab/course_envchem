@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="495" viewBox="0 0 1000 495" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: complexation, hydrolysis and precipitation keep the oxidation state; only redox changes it -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <rect x="40" y="30" width="320" height="120" rx="10" fill="#f4f6f8" stroke="#25713E" stroke-width="2.5"/>
+  <text x="56" y="62" font-size="22" fill="#1b2a3a" text-anchor="start" font-weight="bold" >Complexation</text>
+  <text x="56" y="94" font-size="20" fill="#1b2a3a" text-anchor="start" font-weight="normal" >M²⁺ + L ⇌ ML²⁺</text>
+  <text x="56" y="120" font-size="16" fill="#6b7785" text-anchor="start" font-weight="normal" >a ligand replaces water</text>
+  <text x="56" y="141" font-size="16" fill="#25713E" text-anchor="start" font-weight="bold" >oxidation state +II → +II</text>
+  <rect x="640" y="30" width="320" height="120" rx="10" fill="#f4f6f8" stroke="#25713E" stroke-width="2.5"/>
+  <text x="656" y="62" font-size="22" fill="#1b2a3a" text-anchor="start" font-weight="bold" >Hydrolysis</text>
+  <text x="656" y="94" font-size="20" fill="#1b2a3a" text-anchor="start" font-weight="normal" >M²⁺ + H₂O ⇌ MOH⁺ + H⁺</text>
+  <text x="656" y="120" font-size="16" fill="#6b7785" text-anchor="start" font-weight="normal" >a bound water loses H⁺</text>
+  <text x="656" y="141" font-size="16" fill="#25713E" text-anchor="start" font-weight="bold" >oxidation state +II → +II</text>
+  <rect x="40" y="320" width="320" height="120" rx="10" fill="#f4f6f8" stroke="#25713E" stroke-width="2.5"/>
+  <text x="56" y="352" font-size="22" fill="#1b2a3a" text-anchor="start" font-weight="bold" >Precipitation</text>
+  <text x="56" y="384" font-size="20" fill="#1b2a3a" text-anchor="start" font-weight="normal" >M²⁺ + 2OH⁻ → M(OH)₂(s)</text>
+  <text x="56" y="410" font-size="16" fill="#6b7785" text-anchor="start" font-weight="normal" >a new solid phase forms</text>
+  <text x="56" y="431" font-size="16" fill="#25713E" text-anchor="start" font-weight="bold" >oxidation state +II → +II</text>
+  <rect x="640" y="320" width="320" height="120" rx="10" fill="#f4f6f8" stroke="#c0392b" stroke-width="2.5"/>
+  <text x="656" y="352" font-size="22" fill="#1b2a3a" text-anchor="start" font-weight="bold" >Redox</text>
+  <text x="656" y="384" font-size="20" fill="#1b2a3a" text-anchor="start" font-weight="normal" >Fe²⁺ → Fe³⁺ + e⁻</text>
+  <text x="656" y="410" font-size="16" fill="#6b7785" text-anchor="start" font-weight="normal" >an electron is transferred</text>
+  <text x="656" y="431" font-size="16" fill="#c0392b" text-anchor="start" font-weight="bold" >oxidation state +II → +III</text>
+  <circle cx="500" cy="235" r="48" fill="#7f8c9d" stroke="none" stroke-width="2"/>
+  <text x="500" y="244" font-size="22" fill="white" text-anchor="middle" font-weight="bold" >M²⁺(aq)</text>
+  <line x1="457" y1="205" x2="365" y2="140" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="543" y1="205" x2="635" y2="140" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="457" y1="265" x2="365" y2="330" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="543" y1="265" x2="635" y2="330" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="500" y="482" font-size="19" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >Mobility can change in all four. Only one of them is redox.</text>
+</svg>

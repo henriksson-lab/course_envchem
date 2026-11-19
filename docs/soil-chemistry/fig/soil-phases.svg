@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="430" viewBox="0 0 940 430" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: soil as four phases (idealised loam by volume) and the exchanges between them that set soil-water chemistry. -->
+  <defs>
+    <marker id="ar" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,5 L0,10 Z" fill="#1b2a3a"/></marker>
+  </defs>
+  <style>
+    .hd{font-size:20px;font-weight:bold;fill:#1b2a3a}
+    .t{font-size:17px;fill:#1b2a3a}
+    .s{font-size:15px;fill:#6b7785}
+    .w{font-size:18px;fill:#fff;font-weight:bold;text-anchor:middle}
+  </style>
+  <text class="hd" x="30" y="30">An idealised loam, by volume</text>
+  <!-- column 360 px tall: 45/5/25/25 -->
+  <rect x="60" y="50" width="170" height="90" fill="#e9eef3" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="145" y="92" font-size="18" font-weight="bold" fill="#1b2a3a" text-anchor="middle">air ≈ 25 %</text>
+  <text x="145" y="118" font-size="15" fill="#1b2a3a" text-anchor="middle">N₂, O₂, CO₂</text>
+  <rect x="60" y="140" width="170" height="90" fill="#2468A0" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text class="w" x="145" y="182">water ≈ 25 %</text>
+  <text x="145" y="205" font-size="15" fill="#fff" text-anchor="middle">soil solution</text>
+  <rect x="60" y="230" width="170" height="18" fill="#5b4636" stroke="#1b2a3a" stroke-width="1.5"/>
+  <rect x="60" y="248" width="170" height="162" fill="#c9a66b" stroke="#1b2a3a" stroke-width="1.5"/>
+  <text x="145" y="320" font-size="18" font-weight="bold" fill="#1b2a3a" text-anchor="middle">minerals ≈ 45 %</text>
+  <text x="145" y="343" font-size="15" text-anchor="middle" fill="#1b2a3a">sand, silt, clay,</text>
+  <text x="145" y="360" font-size="15" fill="#1b2a3a" text-anchor="middle">oxides, carbonates</text>
+  <line x1="232" y1="239" x2="262" y2="239" stroke="#5b4636" stroke-width="2"/>
+  <text x="266" y="245" font-size="17" font-weight="bold" fill="#5b4636">organic matter ≈ 5 %</text>
+
+  <!-- exchanges with the soil solution -->
+  <rect x="520" y="150" width="210" height="70" rx="12" fill="#d6e6f2" stroke="#2468A0" stroke-width="2.5"/>
+  <text x="625" y="183" font-size="19" font-weight="bold" fill="#2468A0" text-anchor="middle">soil solution</text>
+  <text x="625" y="206" class="s" text-anchor="middle">what plants and streams see</text>
+
+  <line x1="625" y1="80" x2="625" y2="144" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <line x1="610" y1="144" x2="610" y2="80" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <text class="t" x="640" y="70">gas: CO₂ dissolves, O₂ consumed</text>
+
+  <line x1="514" y1="198" x2="410" y2="285" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <line x1="420" y1="300" x2="524" y2="212" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <text class="t" x="290" y="330">minerals: weathering,</text>
+  <text class="t" x="290" y="352">dissolution, precipitation</text>
+
+  <line x1="680" y1="226" x2="760" y2="300" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <line x1="770" y1="290" x2="692" y2="222" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <text class="t" x="680" y="330">clay + organic surfaces:</text>
+  <text class="t" x="680" y="352">cation exchange, sorption</text>
+
+  <line x1="736" y1="185" x2="800" y2="185" stroke="#1b2a3a" stroke-width="2.2" marker-end="url(#ar)"/>
+  <text class="t" x="806" y="180">drainage:</text>
+  <text class="t" x="806" y="202">export</text>
+
+  <text class="s" x="290" y="400">Proportions vary widely with soil and wetness; the reactions are the point.</text>
+</svg>

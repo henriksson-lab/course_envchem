@@ -144,6 +144,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Environmental amounts and balances</h1>
+  <p class="subtitle">Week 1 — Environmental balances and atmosphere</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -154,55 +155,441 @@ Environmental Chemistry
 </div>
 
 </section>
-<section id="chemical-question" class="slide level2">
-<h2>Chemical question</h2>
-<p>If a pollutant concentration falls downstream, has the pollutant been destroyed? Follow the amount before proposing a reaction.</p>
-</section>
-<section id="what-to-explain" class="slide level2">
-<h2>What to explain</h2>
+<section id="about-this-lecture" class="slide level2">
+<h2>About this lecture</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p>In January 2000 a tailings dam at a gold mine near <strong>Baia Mare, Romania</strong>, failed. About 100 000 m³ of cyanide-laden water entered the rivers and travelled down the Someș, the <strong>Tisza</strong> and the Danube. Fish died along hundreds of kilometres.</p>
+<p>Downstream, the measured cyanide concentration fell. <strong>Was the poison destroyed, or only spread out?</strong></p>
+<p>Today you will learn to:</p>
 <ul>
-<li>Convert concentration to amount or load with explicit units.</li>
-<li>Close a compartment balance and distinguish transfer from transformation.</li>
-<li>Choose a system boundary and recognise when steady state is an assumption.</li>
+<li>tell <strong>concentration</strong> apart from <strong>amount</strong> and <strong>load</strong>;</li>
+<li>draw a <strong>boundary</strong> and write a <strong>balance</strong>;</li>
+<li>separate <strong>mixing</strong>, <strong>transfer</strong> and <strong>reaction</strong>;</li>
+<li>estimate a <strong>timescale</strong> from volume and flow.</li>
 </ul>
+<p>This is the first lecture of the course. Every later unit uses these tools.</p>
+</div><div class="column" style="width:45%;">
+<p><img data-src="img/tisza-cyanide-fish.jpg" style="width:100.0%"> <span class="credit">Dead fish collected on the Tisza after the 2000 cyanide spill, Hungary. Photo: Délmagyarország/Karnok Csaba, CC BY-SA 3.0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Welcome to the course. Start with the story. In early 2000 a dam holding mining waste near Baia Mare failed, and water contaminated with cyanide flowed into the river system that drains into the Tisza and then the Danube. The images of dead fish were shown across Europe. The question for today sounds simple: when the measured concentration downstream was lower, had nature removed the cyanide? To answer, we need to count amounts, not just read concentrations, and we need to decide where we draw the line around our system. These are the habits that every later lecture relies on, from lake acidification to contaminant fate.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="define-the-quantity" class="slide level2">
-<h2>Define the quantity</h2>
-<p>Inventory = concentration × volume.</p>
-<p>Load = concentration × flow.</p>
-<p>Always state whether mass is reported as an element or a compound.</p>
+<section id="a-concentration-falls-downstream.-why" class="slide level2">
+<h2>A concentration falls downstream. Why?</h2>
+
+<img data-src="fig/three-explanations.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:86.0%"><p>A lower number at station B has at least <strong>three explanations</strong>. Water joined the river (<strong>dilution</strong>). The substance moved into sediment or air (<strong>transfer</strong>). Or it reacted to something else (<strong>transformation</strong>). Only the third is chemical destruction, and even then the atoms remain.</p>
+<aside class="notes">
+<p>This slide sets the question for the whole lecture. Draw students’ attention to the dots. In the dilution panel the number of dots is unchanged; only the water volume grew. In the transfer panel the dots are still in the system, but some now sit in the sediment or have escaped to the air. Only in the transformation panel do the original molecules disappear, and they are replaced by products. A concentration measurement at A and at B cannot by itself tell these three cases apart. Our job today is to find the extra information that can: volumes, flows, other compartments and products.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="choose-a-boundary" class="slide level2">
-<h2>Choose a boundary</h2>
-<p>Water-only boundary: sorption is an output.</p>
-<p>Water + sediment boundary: sorption is internal transfer.</p>
-<p>Parent loss and elemental loss are different balances.</p>
+<section id="concentration-is-not-amount" class="slide level2">
+<h2>Concentration is not amount</h2>
+
+<img data-src="fig/conc-vs-amount.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><p><strong>Amount = concentration × volume.</strong> A dilute large sample can hold more solute than a concentrated small one. Also state <strong>what you count</strong>: mg of nitrate and mg of nitrogen are different numbers for the same water.</p>
+<aside class="notes">
+<p>Concentration is amount divided by volume. It describes how crowded the solute is, not how much exists. Sample 2 has a fifth of the concentration of sample 1 but twice the solute, because its volume is ten times larger. The box on the right is a common reporting trap. Nitrate results are reported either as mass of nitrate ion or as mass of nitrogen. The molar mass of nitrate is about 62 grams per mole and nitrogen contributes 14 of those, so the two numbers differ by a factor of about 4.4. Always check the label, mg NO3 per litre or mg N per litre, before comparing data from different sources.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="write-a-balance" class="slide level2">
-<h2>Write a balance</h2>
-<p><span class="math display">dM/dt=I-O+P-R</span></p>
-<p>For a mixed outflow, <span class="math inline">O=QC</span>.</p>
-<p>At steady state, <span class="math inline">dM/dt=0</span>; inputs may still be substantial.</p>
+<section id="load-amount-carried-per-time" class="slide level2">
+<h2>Load: amount carried per time</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p><img data-src="img/usgs-streamgage.jpg" style="width:100.0%"> <span class="credit">A US Geological Survey streamgage that records river flow. Photo: U.S. Geological Survey, public domain, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:52%;">
+<p>A river does not hold a fixed amount; it <strong>carries</strong> one. The rate is the <strong>load</strong>:</p>
+<p><span class="math display">\text{load} = Q \times C</span></p>
+<p><strong>Worked example.</strong> A stream carries Q = 0.200 m³/s at C = 0.500 mg/L.</p>
+<ul>
+<li>Q = 200 L/s</li>
+<li>load = 200 L/s × 0.500 mg/L = 100 mg/s = <strong>0.100 g/s</strong></li>
+<li>per day: 0.100 g/s × 86 400 s = <strong>8.64 kg/day</strong></li>
+</ul>
+<p>A load needs <strong>both</strong> a concentration and a flow measurement.</p>
+</div></div>
+<aside class="notes">
+<p>For a flowing water, the useful quantity is the load: amount per time. It is concentration times flow. This is why monitoring stations such as this streamgage measure water flow continuously, and why chemistry samples are taken at gauged sites. Walk through the units: convert cubic metres to litres first, then milligrams per second, then grams per day. The daily figure assumes flow and concentration stay constant over the day, which is rarely true in a real river. Students repeat this in exercise 2. Point out that a river with low concentration but very high flow can carry a larger load than a polluted small stream.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="separate-mixing-from-reaction" class="slide level2">
-<h2>Separate mixing from reaction</h2>
-<p><span class="math display">C_{mix}=\frac{C_1V_1+C_2V_2}{V_1+V_2}</span></p>
-<p>Use flows instead of volumes for a steady river junction.</p>
+<section id="choose-the-boundary-first" class="slide level2">
+<h2>Choose the boundary first</h2>
+
+<img data-src="fig/boundary.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:84.0%"><p>A <strong>compartment</strong> is a volume you define: a lake, a sample bottle, or water plus sediment. A <strong>flux</strong> crosses the boundary. A <strong>reaction</strong> happens inside it. Sorption to sediment is an output from the water, but only an internal move for the lake as a whole.</p>
+<aside class="notes">
+<p>Before writing any balance, write down what is inside your boundary. The same physical process can be a loss or no loss at all, depending on that choice. If the boundary is drawn around the water only, sorption to the sediment removes the compound and appears as an output. If the boundary includes the sediment, sorption just moves the compound from one part of the system to another, and the total is unchanged. Neither choice is wrong. Problems arise when the boundary is not stated, and someone reports “removal” that is really a transfer. Many disagreements in environmental reports come down to unstated boundaries.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="a-timescale-is-a-model" class="slide level2">
-<h2>A timescale is a model</h2>
-<p>Hydraulic replacement scale: <span class="math inline">\tau=V/Q</span>.</p>
-<p>It is different from reaction half-life. Both can affect observed persistence.</p>
+<section id="write-the-balance" class="slide level2">
+<h2>Write the balance</h2>
+
+<img data-src="fig/balance-box.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>For a well-mixed water body of constant volume, the outflow term is <strong>Q × C</strong>: outflow water times the outlet concentration. Inflow and outflow water must also balance if the volume stays fixed.</p>
+<aside class="notes">
+<p>This is the general balance, written in words: the change of the amount per unit time equals inputs minus outputs plus production minus consumption. Inputs and outputs cross the boundary. Production and consumption are reactions inside it. Check that every term has the same units, amount per time. If one term is in milligrams per litre and another in kilograms per day, something is missing, usually a volume or a flow. For a well mixed lake, the outlet concentration equals the lake concentration, so the advective output is flow times lake concentration. We will use exactly this form when we discuss flushing and steady state.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="mix-a-sample" class="slide level2">
-<h2>Mix a sample</h2>
-<p>2.00 L × 3.00 mg/L + 1.00 L × 0.600 mg/L = 6.60 mg.</p>
-<p>Divide by 3.00 L: <strong>2.20 mg/L</strong>. The solute inventory is conserved.</p>
+<section id="transfer-or-transformation" class="slide level2">
+<h2>Transfer or transformation?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="fig/two-phase-bottle.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:50%;">
+<p>A sealed bottle starts with <strong>10.0 mg</strong> of a parent compound in water. Later the water holds 4.0 mg and the sediment 5.0 mg.</p>
+<ul>
+<li>Water alone: 6.0 mg “lost”.</li>
+<li>Water + sediment: only <strong>1.0 mg</strong> missing.</li>
+</ul>
+<p>The missing 1.0 mg may be <strong>transformation</strong>, loss to the bottle wall, or <strong>analytical error</strong>. The balance tells you how much to explain, not what happened to it.</p>
+</div></div>
+<aside class="notes">
+<p>This is exercise 3, and it shows why the boundary matters. If you only measure the water, it looks as if most of the compound has gone. Once the sediment is measured, most of it is accounted for, and the real question shrinks to one milligram. That remaining milligram is not automatically degradation. It could be stuck to the glass, it could be a measurement error of ten percent, or it could have been transformed. To claim transformation you need positive evidence, such as measured products. Also note that transformation of the parent does not destroy its elements. A balance on carbon or chlorine atoms is a different balance from one on the parent molecule.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="check-your-explanation" class="slide level2">
-<h2>Check your explanation</h2>
-<p>A lake concentration falls while its volume rises. What measurements would distinguish dilution, export, and chemical transformation?</p>
-<p>Use the <a href="../environmental-systems/notes.html">notes and sources</a> and <a href="../environmental-systems/exercise.html">worked exercises</a>.</p>
+<section id="steady-state-does-not-mean-nothing-happens" class="slide level2">
+<h2>Steady state does not mean nothing happens</h2>
+
+<img data-src="fig/steady-state.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:92.0%"><p>A constructed lake (V = 10⁶ m³, Q = 10⁴ m³/day) receives 1.0 kg/day of a conservative solute. The inventory rises and levels off when <strong>output = input</strong>. At steady state the amount stops changing, but <strong>both fluxes keep running</strong>.</p>
+<aside class="notes">
+<p>Steady state is one of the most misunderstood words in this course. It means that accumulation is zero: the amount in the compartment no longer changes. It does not mean that inputs have stopped. In this constructed lake, one kilogram enters every day and one kilogram leaves every day at steady state. The level of 100 kilograms is set by the balance: input divided by flow gives the steady concentration, 0.1 milligram per litre, times the volume. Ask students: if the input doubled, what would the steady inventory be? It doubles. Also note that real lakes are often not at steady state, so treat it as an assumption to be checked, not a fact.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="mixing-without-reaction" class="slide level2">
+<h2>Mixing without reaction</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="fig/mixing-line.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:50%;">
+<p>Mix 2.00 L at 3.00 mg/L with 1.00 L at 0.600 mg/L.</p>
+<ul>
+<li>amounts: 6.00 mg + 0.600 mg = <strong>6.60 mg</strong></li>
+<li>volume: 3.00 L</li>
+<li>concentration: 6.60 / 3.00 = <strong>2.20 mg/L</strong></li>
+</ul>
+<p>Add <strong>amounts</strong>, then divide by total volume. Never average concentrations.</p>
+<p>All conservative mixtures of two waters fall on a <strong>straight mixing line</strong>. A point off the line needs another explanation.</p>
+</div></div>
+<aside class="notes">
+<p>This is the worked example from the notes. The concentration fell from 3.00 to 2.20 milligrams per litre, yet no solute was lost: all 6.60 milligrams are in the mixture. The method is always the same: convert to amounts, add, divide by total volume. A simple average of the two concentrations would give 1.80, which is wrong because the volumes differ. The mixing line is a powerful field tool. Plot measured concentration against the fraction of each water, often estimated from a conservative tracer such as chloride. If the sample lies below the line, something removed solute, or the sampling, timing or measurement needs checking.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="rivers-mix-by-load" class="slide level2">
+<h2>Rivers mix by load</h2>
+
+<img data-src="fig/junction.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>At a junction, add <strong>loads</strong>, then divide by total flow. The tributary is four times more concentrated, yet the mixed river is only 0.80 mg/L. Nothing reacted; the solute was <strong>diluted</strong>.</p>
+<aside class="notes">
+<p>The same logic applies to flowing water, with flows in place of volumes and loads in place of amounts. The main river carries 20 grams per second and so does the tributary. Below the junction 40 grams per second flow in 50 cubic metres per second, which gives 0.80 milligrams per litre. Remind students that one milligram per litre equals one gram per cubic metre, which makes the unit arithmetic clean. In the Tisza case, every tributary and the Danube itself added water to the plume. That alone lowered concentration a great deal, without any chemical destruction.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="check-yourself" class="slide level2">
+<h2>Check yourself</h2>
+<div class="checkbox">
+<ol type="1">
+<li>Mix 4.00 L at 2.00 mg/L with 1.00 L of clean water. What is the final concentration? Was solute destroyed?</li>
+<li>A lake is at steady state. Does that mean no pollutant enters it?</li>
+<li>A report says “60% of the pesticide was removed from the pond water within a week.” What would you ask before calling it degradation?</li>
+<li>Is 5 mg NO₃⁻/L more or less nitrogen than 5 mg N/L?</li>
+</ol>
+</div>
+<aside class="notes">
+<p>Answers. One: 8.00 milligrams in 5.00 litres gives 1.60 milligrams per litre; nothing was destroyed, it is dilution. This is exercise 1. Two: no, steady state only means inputs and outputs balance, so the amount does not change. Three: ask about the boundary. Was the sediment measured? Were plants, the air and the container considered? Were products measured? Was the water volume constant? Four: less. Five milligrams of nitrate contains only about 1.1 milligrams of nitrogen, whereas 5 milligrams of nitrogen per litre corresponds to about 22 milligrams of nitrate per litre.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-long-does-the-water-stay" class="slide level2">
+<h2>How long does the water stay?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/vattern-visingso.jpg" style="width:100.0%"> <span class="credit">Lake Vättern with the island of Visingsö, Sweden, from the air. Photo: acediscovery, CC BY 4.0, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:50%;">
+<p>The <strong>hydraulic replacement time</strong> is</p>
+<p><span class="math display">\tau = V / Q</span></p>
+<p><strong>Lake Vättern</strong>, Sweden’s second-largest lake: V ≈ 77 km³, outflow Q ≈ 40 m³/s.</p>
+<p>τ ≈ 77 × 10⁹ m³ ÷ 40 m³/s ≈ 1.9 × 10⁹ s ≈ <strong>60 years</strong>.</p>
+<p>A conservative pollutant that enters Vättern today can stay for decades. A small forest pond may be replaced in days.</p>
+</div></div>
+<aside class="notes">
+<p>The ratio of volume to flow gives a timescale: how long the outflow would take to replace the lake’s water. For Vättern, with its large volume and modest outflow through Motala ström, the answer is around 60 years. These are rounded values; the exact figure depends on the source. The message is that big, slowly flushed lakes have long memories. That is why persistent pollutants are a special concern there. Be careful with the interpretation: tau is a replacement scale for the water. It is not the age of every water molecule, and it is not the chemical lifetime of a solute that also reacts or sorbs.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="flushing-and-reaction-act-together" class="slide level2">
+<h2>Flushing and reaction act together</h2>
+
+<img data-src="fig/flushing.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:68.0%"><p>Clean water flushes a well-mixed lake: a conservative solute falls as <span class="math inline">C = C_0e^{-t/\tau}</span>. After one τ about <strong>37%</strong> remains, not zero. A solute that also reacts with rate constant k disappears faster: the two loss rates <strong>add</strong>, 1/τ + k.</p>
+<aside class="notes">
+<p>Under the well-mixed model, flushing an initially contaminated lake with clean water gives an exponential decline. After one replacement time, about 37 percent is left, because new clean water mixes with the old water rather than pushing it out like a piston. If the solute also reacts with a first-order rate constant, the losses add: the total rate constant is one over tau plus k. In the plot k equals one over tau, so the reactive solute falls twice as fast. Here is the important consequence: if you only see the concentration fall, you cannot know how much was flushing and how much was reaction without knowing tau.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="back-to-the-tisza-a-pulse-moving-downstream" class="slide level2">
+<h2>Back to the Tisza: a pulse moving downstream</h2>
+
+<img data-src="fig/plume.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%"><p>A <strong>constructed</strong> 100 kg pulse of a conservative tracer. As tributaries join, flow rises and the pulse spreads out. The peak falls about 50-fold, yet the area under each curve times Q gives <strong>100 kg at every station</strong>.</p>
+<aside class="notes">
+<p>Now return to the opening case with a model. This is not the measured Tisza plume. It is a constructed pulse that cannot react at all. Each curve is what a sampler at one station would see as the pulse passes. The peak concentration collapses downstream for two physical reasons: more water joins the river, and the pulse is stretched along the channel. But if you multiply flow by concentration and add up over the whole passage, you recover the same 100 kilograms each time. This is the test that separates dilution from destruction. For the real cyanide plume, some cyanide was also lost by reaction and volatilisation, but much of the drop was dilution.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="closing-the-balance-in-the-field" class="slide level2">
+<h2>Closing the balance in the field</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><img data-src="img/usgs-beach-sampling.jpg" style="width:100.0%"> <span class="credit">USGS team taking baseline water and sediment samples at Gulf Shores, Alabama, before oil from the 2010 Deepwater Horizon spill arrived. Photo: U.S. Geological Survey, public domain, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:55%;">
+<p>A lake’s concentration falls while its volume rises. To tell dilution, export and transformation apart, measure over the same period:</p>
+<ul>
+<li><strong>volume</strong> and total <strong>inventory</strong> in the water;</li>
+<li><strong>inflow and outflow loads</strong>;</li>
+<li>amounts in <strong>sediment</strong>, biota or air;</li>
+<li>likely <strong>transformation products</strong>.</li>
+</ul>
+<p>A concentration time series alone cannot close the balance.</p>
+</div></div>
+<aside class="notes">
+<p>This is exercise 4. The general lesson is that a closed balance needs several kinds of measurement, collected over a consistent period. Volume and inventory tell you whether the amount actually changed. Loads at the inlet and outlet tell you about export. Solid phases tell you about transfer. Products are the positive evidence for transformation. If any of these are missing, say which explanation remains open. The photo shows routine field sampling; field teams plan exactly this: which compartments and which species, at which times. In later units we will add sorption, redox reactions and biodegradation, but the bookkeeping stays the same.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="common-mistakes-to-avoid" class="slide level2">
+<h2>Common mistakes to avoid</h2>
+<ul>
+<li><strong>“The concentration fell, so the pollutant was destroyed.”</strong> Check dilution and transfer first.</li>
+<li><strong>“Average the concentrations.”</strong> Add amounts or loads; then divide by total volume or flow.</li>
+<li><strong>“Steady state means no input.”</strong> It means input and output balance.</li>
+<li><strong>“τ = V/Q is how long every molecule stays.”</strong> It is a replacement scale for the water, not a chemical lifetime.</li>
+<li><strong>“Removed from the water” = “gone.”</strong> Name the boundary; sorption may be internal transfer.</li>
+<li><strong>“mg/L nitrate equals mg/L N.”</strong> State the basis; they differ by a factor of about 4.4.</li>
+</ul>
+<aside class="notes">
+<p>These are the errors that appear most often in exercises and in real environmental reports. Ask students to explain in their own words why each statement is wrong. The first is the central lesson of the lecture. The second is an arithmetic error that only works when the volumes are equal. The third and fourth concern the meaning of words: steady state and residence time sound like they describe processes stopping or molecules waiting, but they describe balances. The fifth is about boundaries. The last is about units, and it causes real confusion when comparing data sets from different countries or laboratories.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Key fact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Amount</td>
+<td>concentration × volume; state the basis (mg N or mg NO₃⁻)</td>
+</tr>
+<tr class="even">
+<td>Load</td>
+<td>flow × concentration; 1 mg/L = 1 g/m³</td>
+</tr>
+<tr class="odd">
+<td>Boundary</td>
+<td>decides whether a process is an output or an internal transfer</td>
+</tr>
+<tr class="even">
+<td>Balance</td>
+<td>change in M per time = I − O + P − R; same units in every term</td>
+</tr>
+<tr class="odd">
+<td>Steady state</td>
+<td>accumulation zero; fluxes still run</td>
+</tr>
+<tr class="even">
+<td>Mixing</td>
+<td>add amounts or loads, then divide; points off the mixing line need explaining</td>
+</tr>
+<tr class="odd">
+<td>Timescale</td>
+<td>τ = V/Q; about 37% of a conservative solute left after one τ</td>
+</tr>
+<tr class="even">
+<td>Losses add</td>
+<td>flushing (1/τ) and reaction (k) combine</td>
+</tr>
+<tr class="odd">
+<td>Opening case</td>
+<td>falling concentration downstream: mostly dilution unless the load also falls</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Next:</strong> <a href="../atmospheric-reactions/lec.html">reactions in the atmosphere</a>. The air is a compartment too, and there light drives the reactions. Then the <a href="../environmental-systems/exercise.html">exercises</a> and <a href="../environmental-systems/notes.html">notes</a>.</p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="img/teaser-ozone-hole.jpg" style="width:100.0%"> <span class="credit">Antarctic ozone hole, 22 September 2012. Image: NASA, public domain, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>The summary table is the revision sheet. Recite the chain once. Convert concentrations to amounts or loads. Draw a boundary. Write the balance with consistent units. Ask whether a change is dilution, transfer or transformation, and what measurement would tell them apart. Then return to the opening: the falling cyanide concentration along the Tisza and Danube was largely dilution, so the load, not the concentration, is the quantity to follow. The image is the teaser for the next lecture. In the atmosphere we apply the same balance thinking, but now sunlight drives chemical production and loss, and ozone is both made and destroyed.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 
 
 </section>

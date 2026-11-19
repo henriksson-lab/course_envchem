@@ -144,6 +144,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Metal speciation and mobility</h1>
+  <p class="subtitle">Week 3 — Metals, surfaces, redox, and treatment</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -154,58 +155,429 @@ Environmental Chemistry
 </div>
 
 </section>
-<section id="chemical-question" class="slide level2">
-<h2>Chemical question</h2>
-<p>What does a dissolved metal total conceal, and how can complexation change solubility without changing the metal oxidation state?</p>
-</section>
-<section id="what-to-explain" class="slide level2">
-<h2>What to explain</h2>
+<section id="about-this-lecture" class="slide level2">
+<h2>About this lecture</h2>
+<div class="columns">
+<div class="column" style="width:56%;">
+<p>When acid rain fell on southern Scandinavia, <strong>brown trout and salmon disappeared from many lakes and rivers</strong>. Researchers found that the acid itself was often not the main killer. The fish died from <strong>aluminium</strong>, washed out of the soil by the acid.</p>
+<p>Yet in brown, humic lakes with the same pH and the same aluminium, fish often survived.</p>
+<p>Today you will learn to:</p>
 <ul>
-<li>Use a one-ligand equilibrium with an explicit free-ligand approximation.</li>
-<li>Distinguish complexation, hydrolysis, precipitation, and redox.</li>
-<li>Check a free-ion solubility condition before interpreting a metal total.</li>
+<li>see that a <strong>dissolved total is not the free ion</strong>;</li>
+<li>describe <strong>complexation</strong> and <strong>hydrolysis</strong>, and tell them apart from redox;</li>
+<li>use a <strong>one-ligand model</strong> to find the free metal;</li>
+<li>test <strong>mineral saturation</strong> with the free ion, not the total.</li>
 </ul>
+<p>Last lecture showed that dissolved organic matter carries binding groups. Today we use them.</p>
+</div><div class="column" style="width:44%;">
+<p><img data-src="img/brown-trout.jpg" style="width:100.0%"> <span class="credit">Brown trout (<em>Salmo trutta</em>), a species lost from many acidified Scandinavian lakes. Photo: Sam Stukel, USFWS, public domain, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Start with the story. In the acid-rain decades, fish populations collapsed across southern Norway and Sweden. Field and laboratory work showed that aluminium, mobilised from soils by the acid, was a main cause of fish death, often more important than the low pH itself. Then add the twist that makes this a speciation lecture: in brown, humic lakes, fish often survived at the same pH and the same measured aluminium. The total was the same, so something else differed. That something is the chemical form of the metal. Remind students that the previous lecture introduced dissolved organic matter and its carboxyl and phenol groups. Today those groups become ligands.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="specify-the-species" class="slide level2">
-<h2>Specify the species</h2>
-<p>Metal total ≠ free metal ion.</p>
-<p>Coordination change ≠ necessarily redox.</p>
-<p>Name the oxidation state and the ligand where relevant.</p>
+<section id="same-total-different-danger" class="slide level2">
+<h2>Same total, different danger</h2>
+
+<img data-src="fig/two-lakes-al.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Two <strong>constructed</strong> lakes have the same pH (5.0) and the same total dissolved aluminium. In the clear lake, most aluminium is present as small inorganic ions. In the brown lake, most is held by <strong>dissolved organic matter</strong>.</p>
+<p><strong>Question for this lecture:</strong> how can the same total hide such different chemistry, and how do we calculate the part that matters?</p>
+<aside class="notes">
+<p>Present this as the puzzle that the rest of the lecture solves. The numbers are constructed but realistic: an acidified lake at pH 5 can carry several micromoles per litre of aluminium. Both lakes would give the same number on a standard laboratory report of filtered aluminium. The difference is what the aluminium is bound to. In the clear lake, the aluminium is mostly the hydrated ion and its first hydrolysis products. In the brown lake, organic matter binds most of it. Ask students to predict which lake is more dangerous for fish, and why. Most will guess correctly. The task today is to make that intuition quantitative.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="a-transparent-binding-model" class="slide level2">
-<h2>A transparent binding model</h2>
-<p><span class="math display">[M]=\frac{M_T}{1+\beta[L]_{free}}</span></p>
-<p>Only M and ML are included. Check ligand excess before replacing free ligand with a supplied value.</p>
+<section id="what-does-dissolved-metal-contain" class="slide level2">
+<h2>What does “dissolved metal” contain?</h2>
+
+<img data-src="fig/dissolved-pool.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:88.0%"><p>“Dissolved” usually means <strong>whatever passes a 0.45 µm filter</strong>. It is an operational definition. The filtrate holds the free ion, several kinds of complexes and even small colloids. One number sums them all.</p>
+<aside class="notes">
+<p>Walk through the figure from left to right. The laboratory filters the sample, often through 0.45 micrometres, and reports everything in the filtrate as dissolved. That number is useful for mass balances. It does not tell you which species are present. The free aqua ion, hydroxo complexes, inorganic complexes with chloride, sulfate, carbonate or fluoride, complexes with organic matter, and nanoparticles small enough to pass the filter all count. For aluminium in acid waters, fluoride and organic complexes are important. When you read a metal concentration in a report, ask: which fraction is this, and which species might it contain? The rest of the lecture gives you tools to estimate the split.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="ph-changes-coordination" class="slide level2">
-<h2>pH changes coordination</h2>
-<p>Hydrolysis releases H⁺.</p>
-<p>pH also changes ligand protonation and surface binding.</p>
-<p>A mobility change can occur without redox.</p>
+<section id="a-metal-ion-in-water-is-already-a-complex" class="slide level2">
+<h2>A metal ion in water is already a complex</h2>
+
+<img data-src="fig/aqua-ion.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:74.0%"><p>A dissolved Al³⁺ ion is surrounded by <strong>six water molecules</strong>. Each donates an electron pair to the metal: the waters are <strong>ligands</strong>, the whole unit is a <strong>complex</strong>. Another ligand can <strong>replace</strong> a water (complexation), or a bound water can <strong>lose H⁺</strong> (hydrolysis). In both cases aluminium stays at +III.</p>
+<aside class="notes">
+<p>This picture is the foundation of the lecture. Writing Al3+ is shorthand. In water the ion is really hexaaqua-aluminium, with six water molecules arranged around it in an octahedron. The metal is an electron-pair acceptor, the water molecules are electron-pair donors. Two things can now happen. Another ligand, such as fluoride or a carboxylate group, can push out a water: complexation. Or a bound water can give up a proton to the solution, leaving a hydroxide ligand on the metal: hydrolysis. The highly charged metal pulls electron density from the water, which makes its protons easier to lose. Neither change involves electron transfer to or from the metal.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="test-mineral-saturation-with-free-ions" class="slide level2">
-<h2>Test mineral saturation with free ions</h2>
-<p><span class="math display">[M^{2+}]_{sat}=K_{sp}/[OH^-]^2</span></p>
-<p>Complexed metal contributes to dissolved total but not directly to this free-ion product.</p>
+<section id="ligands-that-compete-with-water" class="slide level2">
+<h2>Ligands that compete with water</h2>
+
+<img data-src="fig/ligands.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:92.0%"><p>Natural waters offer <strong>inorganic ligands</strong> that bind with one atom, and <strong>organic ligands</strong> that can bind with two or more. A ligand that grips the metal with two arms forms a ring, a <strong>chelate</strong>. Chelates usually bind much more strongly. Dissolved organic matter carries many such groups.</p>
+<aside class="notes">
+<p>Give the cast of ligands. Hydroxide, chloride, fluoride, sulfate and carbonate are common inorganic ligands. Each binds through one atom. Oxalate is a small organic example that binds through two oxygen atoms and closes a five-membered ring with the metal. That ring makes the complex much more stable, which is called the chelate effect. Humic and fulvic substances, the bulk of dissolved organic matter, carry many carboxyl and phenol groups. Pairs of neighbouring groups can act like chelating ligands. Their binding depends on pH, because the groups must lose their protons before they bind well, and on competition from other metals such as calcium. This is why the brown lake could hold most of its aluminium.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="mobility-and-exposure-are-separate-questions" class="slide level2">
-<h2>Mobility and exposure are separate questions</h2>
-<p>Ask where the binding partner goes.</p>
-<p>Dissolved complex: possible mobile carrier.</p>
-<p>Solid binding: possible retention.</p>
-<p>Neither alone establishes biological effect.</p>
+<section id="four-ways-a-metal-changes-form" class="slide level2">
+<h2>Four ways a metal changes form</h2>
+
+<img data-src="fig/four-processes.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:74.0%"><p>Complexation, hydrolysis and precipitation all <strong>keep the oxidation state</strong>. Only redox moves electrons. Each process can change how mobile a metal is, so a change in mobility is <strong>not</strong> evidence of redox by itself.</p>
+<aside class="notes">
+<p>Students often call every change in a metal “oxidation” or “reaction”. Separate four processes clearly. Complexation exchanges ligands. Hydrolysis is a special case where water itself becomes hydroxide by losing a proton. Precipitation forms a new solid phase. Redox transfers electrons and changes the oxidation state, as when iron(II) becomes iron(III). Only the last one changes the oxidation state, but all four can change whether a metal travels with water. Sorption to surfaces, the topic of the next lecture, is a fifth process that also keeps the oxidation state. When you explain a field observation, name the process and check whether an oxidation state actually changed.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="one-ligand-calculation" class="slide level2">
-<h2>One-ligand calculation</h2>
-<p>β[L] = 10.0.</p>
-<p>Free M = 2.00/11 = <strong>0.1818 µmol/L</strong>.</p>
-<p>ML = <strong>1.818 µmol/L</strong>; total conserved.</p>
+<section id="a-one-ligand-model" class="slide level2">
+<h2>A one-ligand model</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p>For one complex, <span class="math inline">\mathrm{M+L\rightleftharpoons ML}</span>:</p>
+<p><span class="math display">\beta=\frac{[\mathrm{ML}]}{[\mathrm{M}][\mathrm{L}]}</span></p>
+<p>The metal balance is <span class="math inline">M_T=[\mathrm{M}]+[\mathrm{ML}]=[\mathrm{M}](1+\beta[\mathrm{L}])</span>, so</p>
+<p><span class="math display">[\mathrm{M}]=\frac{M_T}{1+\beta[\mathrm{L}]}</span></p>
+<p>Here [L] is the <strong>free</strong> ligand. The product β[L] decides the split: at β[L] = 1, half the metal is free.</p>
+</div><div class="column" style="width:55%;">
+<p><img data-src="fig/binding-fraction.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>This is the one calculation model of the lecture. We keep only two metal species, the free ion M and one complex ML. The constant beta has units of litres per mole, so beta times the free ligand concentration is dimensionless. Write the mass balance for the metal, factor out the free metal, and divide. The curve shows the free fraction, one divided by one plus beta L, against free ligand on a log axis. Point out the midpoint at beta L equal to one, and that one more factor of ten in ligand leaves only about nine percent free. The constants are concentration-based teaching values; activity corrections are ignored in dilute water.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="check-your-explanation" class="slide level2">
-<h2>Check your explanation</h2>
-<p>A filtered metal concentration rises as pH falls, but oxidation-state measurements stay unchanged. Name plausible chemical mechanisms and what would distinguish them.</p>
-<p>Use the <a href="../metals/notes.html">notes and sources</a> and <a href="../metals/exercise.html">worked exercises</a>.</p>
-<p>Explore the <a href="../interactives/week3.html">week 3 demo</a>, then explain the result chemically.</p>
+<section id="worked-example-how-much-metal-is-free" class="slide level2">
+<h2>Worked example: how much metal is free?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>A fictitious metal: M<sub>T</sub> = 2.00 µmol/L, β = 1.00 × 10⁶ L/mol, free ligand [L] = 1.00 × 10⁻⁵ mol/L.</p>
+<ol type="1">
+<li>β[L] = 10⁶ × 10⁻⁵ = <strong>10.0</strong></li>
+<li>[M] = 2.00 / (1 + 10.0) = <strong>0.1818 µmol/L</strong></li>
+<li>[ML] = 2.00 − 0.1818 = <strong>1.818 µmol/L</strong></li>
+</ol>
+<p>Check: 0.1818 + 1.818 = 2.00. Nothing was lost.</p>
+<p>With ten times less ligand, β[L] = 1.00 and the metal splits <strong>1.00 : 1.00</strong>.</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="fig/worked-split.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>Do the calculation slowly with the class. First form the dimensionless product: ten. Then divide the total by eleven to get the free metal, 0.1818 micromoles per litre. The complex is the rest. Always close the balance: free plus complexed must return the total you started with. The right-hand bar is exercise 1: reduce the free ligand tenfold and the product becomes one, so the metal is split evenly. The total metal is identical in both bars, but the free metal differs by a factor of five and a half. Connect this to the opening: a laboratory total of two micromoles per litre would look the same in both cases.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="check-the-ligand-before-you-trust-the-answer" class="slide level2">
+<h2>Check the ligand before you trust the answer</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p><img data-src="fig/ligand-check.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:52%;">
+<p>The model asks for <strong>free</strong> ligand. That is safe only if the ligand is in large excess, so binding hardly uses it up.</p>
+<p>Suppose total ligand L<sub>T</sub> is only 0.500 µmol/L. A claim of 1.818 µmol/L ML is then <strong>impossible</strong>: each ML uses one ligand. At most 0.500 µmol/L can be complexed, and at least 1.50 µmol/L of metal stays outside ML.</p>
+<p>When ligand is scarce, write a second balance, <span class="math inline">L_T=[\mathrm{L}]+[\mathrm{ML}]</span>, and solve both together.</p>
+</div></div>
+<aside class="notes">
+<p>This is exercise 2 and an important habit. The simple formula hides an approximation: it treats the free ligand concentration as known and fixed. That works when ligand is plentiful compared with the metal, for example organic matter in a brown lake. When the ligand is scarce, the complex uses it up and the free ligand falls. A quick bookkeeping check catches the error. Every complex contains one ligand, so the complex can never exceed the total ligand. If someone substitutes the total ligand for the free ligand without checking, they can overestimate binding. Solving the coupled balances exactly is beyond today, but recognising the impossible answer is required.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="hydrolysis-makes-metal-ions-acids" class="slide level2">
+<h2>Hydrolysis makes metal ions acids</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/rio-tinto.jpg" style="width:100.0%"> <span class="credit">Río Tinto, Huelva, Spain. Photo: David Mata Verdejo, CC BY-SA 4.0, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\mathrm{[Al(H_2O)_6]^{3+}\rightleftharpoons[Al(H_2O)_5OH]^{2+}+H^+}</span></p>
+<p>The more charged and smaller the ion, the more strongly it pulls on its water, and the easier the proton leaves. For Al³⁺ the pK<sub>a</sub> is about 5. For Fe³⁺ it is about 2.</p>
+<p>Spain’s <strong>Río Tinto</strong> drains sulfide ores that have been mined for thousands of years. Its water has a pH near 2 and carries iron(III), whose hydrolysis products colour the river red.</p>
+</div></div>
+<aside class="notes">
+<p>Hydrolysis means a metal ion behaves like a weak acid. Hexaaqua-aluminium has a first acid constant near ten to the minus five, similar to acetic acid. Iron(III) is a much stronger acid, with a pK near 2. This explains two everyday observations. Solutions of iron(III) or aluminium salts are acidic, which matters again in the water-treatment lecture, when we add these salts as coagulants. And when acidic, iron-rich water meets less acidic conditions, iron hydrolyses further and precipitates as red and orange oxyhydroxides. The Río Tinto is an extreme natural and mining-affected example, with very low pH. The colours are iron(III) species and their precipitates. Notice that hydrolysis releases protons: the water becomes more acidic as the metal hydrolyses.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-acid-water-carries-so-much-aluminium" class="slide level2">
+<h2>Why acid water carries so much aluminium</h2>
+
+<img data-src="fig/al-solubility.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><p>In equilibrium with solid Al(OH)₃, dissolved aluminium is lowest near <strong>pH 6</strong>. Below that, every pH unit raises Al³⁺ a <strong>thousandfold</strong>, because the solid takes up three H⁺. In this model, pH 5 water holds about <strong>thirty times</strong> more Al than at the minimum.</p>
+<aside class="notes">
+<p>This is the key aluminium figure. Dissolving aluminium hydroxide uses three protons per aluminium, so the free Al3+ concentration in equilibrium with the solid rises by a factor of one thousand for each unit drop in pH. That is the steep red line. At high pH the solid dissolves instead as the aluminate anion. The total, the black curve, has a minimum near pH 6. The constants are approximate, and real soils hold aluminium in several solids and on clay exchange sites, so read the shape rather than exact numbers. The message for the lakes is clear. Acidification from pH 6.5 to 5 moves the water from the bottom of the curve onto the steep acid branch. Aluminium that stayed in the soil now comes out with the water.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="test-saturation-with-the-free-ion" class="slide level2">
+<h2>Test saturation with the free ion</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<p>For a fictitious hydroxide, <span class="math inline">\mathrm{M(OH)_2(s)\rightleftharpoons M^{2+}+2OH^-}</span>:</p>
+<p><span class="math display">[\mathrm{M^{2+}}]_{sat}=\frac{K_{sp}}{[\mathrm{OH^-}]^2}</span></p>
+<p>With K<sub>sp</sub> = 1.00 × 10⁻¹⁶ and pH 9 ([OH⁻] = 10⁻⁵ mol/L): [M²⁺]<sub>sat</sub> = <strong>1.00 µmol/L</strong>.</p>
+<p>A water holds <strong>10.0 µmol/L</strong> total with β[L] = 9.00. Free M = 10.0 / 10.0 = <strong>1.00 µmol/L</strong>: exactly saturated.</p>
+<p>Using the total would wrongly suggest a <strong>tenfold</strong> excess.</p>
+</div><div class="column" style="width:42%;">
+<p><img data-src="img/gibbsite.jpg" style="width:100.0%"> <span class="credit">Gibbsite, Al(OH)₃, the natural aluminium hydroxide mineral (museum specimen). Photo: TheUltimateGrass, CC0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>This is exercise 3. The solubility product only contains free ions, because only free M2+ and hydroxide take part in the equilibrium with the solid. Complexed metal is dissolved, but it is not M2+. First compute the free saturation concentration: ten to the minus sixteen divided by ten to the minus ten gives one micromole per litre. Then compute the free metal in the sample from the binding model. Ten divided by one plus nine is one, so the water is exactly at saturation. If you had compared the total, ten, with the saturation value, you would have predicted heavy precipitation that does not happen. The photo shows gibbsite, the real mineral form of aluminium hydroxide.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="complexation-raises-the-dissolved-total" class="slide level2">
+<h2>Complexation raises the dissolved total</h2>
+
+<img data-src="fig/saturation-total.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:64.0%"><p>At saturation the <strong>free</strong> ion is fixed by K<sub>sp</sub> and pH. Each line adds complexed metal on top: dissolved total = [M²⁺]<sub>sat</sub> × (1 + β[L]). A strong ligand lets far more metal stay in solution beside the same solid.</p>
+<aside class="notes">
+<p>Turn the previous result into a general picture. For each pH, the solid fixes the free ion. The complex adds more dissolved metal in proportion to beta L. With beta L equal to 99, the water can hold one hundred times more metal in solution than without ligand, even though the free ion is the same. This is why organic-rich waters often carry high dissolved iron and aluminium. It also explains why the brown lake can have the same total aluminium as the clear lake while having much less free aluminium. The lines fall steeply with pH because hydroxide is squared. The figure ignores hydrolysis and precipitation kinetics; it compares equilibrium states only.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="check-yourself" class="slide level2">
+<h2>Check yourself</h2>
+<div class="checkbox">
+<p>Use the one-ligand model and the saturation rule.</p>
+<ol type="1">
+<li>M<sub>T</sub> = 5.0 µmol/L and β[L] = 4.0. What are free M and ML?</li>
+<li>A report says “dissolved copper 3 µg/L”. Name three forms that could make up this number.</li>
+<li>Iron changes from a dissolved complex to a solid hydroxide. Is this redox?</li>
+<li>Two waters at pH 9 contain 10 µmol/L total M. One has β[L] = 0, the other β[L] = 9. Which is supersaturated with M(OH)₂?</li>
+</ol>
+</div>
+<aside class="notes">
+<p>Answers. One: free M is 5 divided by 5, so 1.0 micromole per litre, and ML is 4.0. Two: any three of the free aqua ion, hydroxo or carbonate complexes, organic complexes, and small colloids that pass the filter. Three: not necessarily. If iron stays iron(III), this is precipitation, not redox. Only if the oxidation state changes is it redox. Four: the water without ligand. Its free metal is 10 micromoles per litre, ten times the saturation value of one. The other water has a free metal of exactly one, so it is just saturated. Ask students to say which numbers they needed for each answer.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="back-to-the-lakes-how-aluminium-harms-fish" class="slide level2">
+<h2>Back to the lakes: how aluminium harms fish</h2>
+
+<img data-src="fig/acid-al-pathway.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:88.0%"><p>Acid input dissolves aluminium from soil minerals and clays. Runoff carries <strong>inorganic Al</strong> to the stream. At the fish gill the water is less acidic, so aluminium hydrolyses and <strong>deposits on the gill surface</strong>, disturbing salt balance and breathing.</p>
+<aside class="notes">
+<p>Now we can explain the opening story. Acid deposition supplies protons to the soil. They dissolve aluminium hydroxides and exchange aluminium off clay minerals, exactly the steep branch of the solubility curve. Runoff delivers inorganic aluminium to streams and lakes, often in pulses during snowmelt. The gill is the critical site. The fish’s gill surface has a different, typically higher pH than the acidic water, so the inorganic aluminium hydrolyses and polymerises right there and binds to the gill. Fish then lose control of their salt balance and have trouble taking up oxygen. Speak of a main mechanism rather than the only one; low pH itself also stresses fish. Aluminium bound to organic matter is far less able to do this.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-the-brown-lake-was-safer" class="slide level2">
+<h2>Why the brown lake was safer</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Return to the two lakes. Use the model with the lake numbers, treating organic matter as one ligand with β[L] ≈ 10 (constructed):</p>
+<ul>
+<li>clear lake: β[L] ≈ 0, so nearly <strong>all 6 µmol/L</strong> Al is inorganic;</li>
+<li>brown lake: free fraction = 1/11, about <strong>0.5 µmol/L</strong> inorganic Al.</li>
+</ul>
+<p>Same total, about <strong>ten times less</strong> of the harmful form.</p>
+<p>Biological effect also depends on the organism, calcium and other ions. The model compares chemistry, not risk.</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="fig/binding-fraction.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>Close the loop with the same model we used for the fictitious metal. Treat organic matter as a single ligand with beta L of about ten; that is a constructed value chosen to show the effect, not a measured constant for humic aluminium. In the clear lake there is almost no organic ligand, so the six micromoles per litre are essentially all inorganic. In the brown lake one eleventh remains inorganic, about half a micromole per litre. The figure shows where each lake sits on the free-fraction curve. Stress the limits. Real toxicity depends on calcium, which protects gills, on fish species and life stage, and on fluoride and other complexes. The model ranks the lakes chemically; it does not predict how many fish die.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-filtered-metal-rises-as-ph-falls" class="slide level2">
+<h2>A filtered metal rises as pH falls</h2>
+
+<img data-src="fig/acid-release.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:86.0%"><p>The oxidation state stays the same, so redox is not needed. Acid can <strong>desorb</strong> metal from particles, <strong>dissolve</strong> a metal-bearing solid, or <strong>protonate a ligand</strong> and shift the binding. Each mechanism predicts a different measurement.</p>
+<aside class="notes">
+<p>This is exercise 4 and a typical exam question. Students should first rule out the assumption that something was oxidised or reduced, because the oxidation state was measured and stayed the same. Then list mechanisms that do not involve electron transfer. Protons compete with metal ions for surface sites, so acid pushes metal off particles. Protons dissolve hydroxides and carbonates, as in the aluminium curve. Protons also bind to the carboxyl and phenol groups of organic ligands, which weakens their hold on the metal. A good answer names a test for each: metal on the particles, the solid phase, and free versus total metal together with organic carbon. Correlation with pH alone cannot tell the three apart.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="metals-from-mines-a-swedish-legacy" class="slide level2">
+<h2>Metals from mines: a Swedish legacy</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p><img data-src="img/falun-mine.jpg" style="width:100.0%"> <span class="credit">Stora Stöten, the great pit of the Falun copper mine, Sweden. Photo: Pudelek, CC BY-SA 4.0, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:48%;">
+<p>Copper was mined at <strong>Falun</strong> for about a thousand years. Today the mine is a World Heritage Site.</p>
+<p>When sulfide ore meets air and water, it oxidises and releases <strong>acid and dissolved metals</strong>. Downstream, as the water is neutralised, iron and aluminium <strong>hydrolyse and precipitate</strong> as orange and white solids.</p>
+<p>Those fresh solids have large, reactive surfaces that bind copper, zinc and lead. That is the next lecture.</p>
+</div></div>
+<aside class="notes">
+<p>Bring the chemistry home to Sweden. The Falun mine produced much of Europe’s copper in the seventeenth century, and its waste rock and slag still release metals to local waters. The red Falu paint used on Swedish houses is made from iron-rich mine residues, a reminder of how much iron oxide such sites produce. The chain is the same as in the Río Tinto. Oxidation of sulfide minerals produces sulfuric acid, which keeps metals dissolved. As the drainage mixes with other water, the pH rises, iron and aluminium hydrolyse, and their hydroxides precipitate. Those precipitates bind other metals on their surfaces, which can retain them or carry them downstream. Note that sulfide oxidation is redox, but the precipitation that follows is not.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="common-mistakes-to-avoid" class="slide level2">
+<h2>Common mistakes to avoid</h2>
+<ul>
+<li><strong>“Dissolved means free.”</strong> A filtered total includes complexes and small colloids.</li>
+<li><strong>“The metal changed form, so it was oxidised.”</strong> Complexation, hydrolysis and precipitation keep the oxidation state.</li>
+<li><strong>“Put total ligand into β[L].”</strong> The model needs free ligand; check that ligand is in excess.</li>
+<li><strong>“Compare the total with K<sub>sp</sub>.”</strong> Saturation is tested with the free ion.</li>
+<li><strong>“Bound metal is harmless.”</strong> A dissolved complex can still travel, and it can release metal if conditions change.</li>
+<li><strong>“A free-ion calculation predicts toxicity.”</strong> It compares chemistry; biological effect needs more information.</li>
+</ul>
+<aside class="notes">
+<p>These are the errors seen most often in exercises on this topic. Go through them and ask students to explain each correction in their own words, ideally with an example from today. The second one is the most persistent: students see colour changes or precipitates and call them oxidation. The fifth is subtle. Complexation can lower the free ion and reduce immediate toxicity, but a mobile complex can carry metal far downstream, where a change in pH or competition can release it again. The last reminds us that the free-ion idea is a good chemical guide, but toxicity depends on the organism, on competing ions such as calcium, and on exposure time.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="explore" class="slide level2">
 <h2>Explore: metal binding and saturation</h2>
@@ -218,6 +590,82 @@ Environmental Chemistry
 <p><a href="../metals/exercise.html#explore">Compare the exactly saturated case with the same total and no ligand.</a></p>
 <aside class="notes">
 <p>Use the reference presets, then change one variable. The complete exercise has model assumptions, a hand-check result, and a static reference for printing.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Key fact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dissolved total</td>
+<td>operational (filter); includes free ion, complexes, small colloids</td>
+</tr>
+<tr class="even">
+<td>Aqua ion</td>
+<td>a metal ion in water is a complex with water ligands</td>
+</tr>
+<tr class="odd">
+<td>Complexation</td>
+<td>ligand replaces water; oxidation state unchanged</td>
+</tr>
+<tr class="even">
+<td>Chelate</td>
+<td>ligand with two or more binding atoms; binds more strongly</td>
+</tr>
+<tr class="odd">
+<td>One-ligand model</td>
+<td><span class="math inline">[\mathrm{M}]=M_T/(1+\beta[\mathrm{L}])</span>, with <strong>free</strong> L in excess</td>
+</tr>
+<tr class="even">
+<td>Ligand check</td>
+<td>ML can never exceed L<sub>T</sub></td>
+</tr>
+<tr class="odd">
+<td>Hydrolysis</td>
+<td>bound water loses H⁺; Al³⁺ pK<sub>a</sub> ≈ 5, Fe³⁺ ≈ 2</td>
+</tr>
+<tr class="even">
+<td>Al solubility</td>
+<td>lowest near pH 6; rises steeply in acid water</td>
+</tr>
+<tr class="odd">
+<td>Saturation</td>
+<td>compare the <strong>free</strong> ion with K<sub>sp</sub>/[OH⁻]²</td>
+</tr>
+<tr class="even">
+<td>Acid lakes</td>
+<td>inorganic Al harms fish gills; organic binding lowers it</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Next:</strong> <a href="../surfaces/lec.html">Colloids, surfaces, and sorption</a>. Where do metals go when they leave the water? Then the <a href="../metals/exercise.html">exercises</a> and the <a href="../metals/notes.html">notes</a>.</p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="img/goethite.jpg" style="width:100.0%"> <span class="credit">Iron oxyhydroxides (limonite and goethite). Photo: Darla Sondrol, CC0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>The table is the revision sheet. Read the chain once more. A dissolved total is a sum of forms. The free ion is the part that takes part in mineral equilibria and that many organisms respond to most directly. Ligands, including dissolved organic matter, lower the free ion while keeping metal in solution. Hydrolysis and acidity control aluminium and iron. For the acid lakes, low pH released inorganic aluminium, and organic matter offered protection. The teaser photo shows iron oxyhydroxides, the orange solids that form when iron hydrolyses. Their surfaces bind metals, phosphate and organic molecules. The next lecture asks whether a metal that leaves the water has been removed, or has only moved onto a particle.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;

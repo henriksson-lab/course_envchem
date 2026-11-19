@@ -144,6 +144,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Carbon dioxide exchange and carbonate minerals</h1>
+  <p class="subtitle">Week 2 — Aquatic composition and carbonate chemistry</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -154,58 +155,24 @@ Environmental Chemistry
 </div>
 
 </section>
-<section id="what-changes-when-the-water-meets-air" class="slide level2">
-<h2>What changes when the water meets air?</h2>
-<p>The closed acid example held dissolved inorganic carbon fixed.</p>
-<p>Gas exchange allows carbon to enter or leave. Does it change alkalinity in the same way as strong acid?</p>
-</section>
-<section id="specify-the-gas-equilibrium-convention" class="slide level2">
-<h2>Specify the gas equilibrium convention</h2>
-<p><span class="math display">[\mathrm{CO_2^*}]=K_Hp_{\mathrm{CO_2}}</span></p>
-<p>Here <span class="math inline">K_H=0.034</span> mol L<span class="math inline">^{-1}</span> atm<span class="math inline">^{-1}</span> at 25 °C.</p>
-<p>Partial pressure in atm gives dissolved carbon dioxide in mol/L. A coefficient defined as pressure divided by concentration would require a different equation.</p>
-</section>
-<section id="a-worked-henry-calculation" class="slide level2">
-<h2>A worked Henry calculation</h2>
-<p>Take a supplied gas pressure <span class="math inline">p_{\mathrm{CO_2}}=4.00\times10^{-4}</span> atm.</p>
-<p><span class="math display">[\mathrm{CO_2^*}]=0.034(4.00\times10^{-4})=
-1.36\times10^{-5}\ \mathrm{mol/L}=13.6\ \mathrm{\mu mol/L}.</span></p>
-<p>This is the carbon dioxide pool, not total inorganic carbon. The gas pressure is an exercise input, not a claim about today’s atmosphere.</p>
-</section>
-<section id="from-the-gas-pool-to-total-carbon" class="slide level2">
-<h2>From the gas pool to total carbon</h2>
-<p>If the equilibrated water is also specified to have pH 8.35,</p>
-<p><span class="math display">C_T=[\mathrm{CO_2^*}](1+r_1+r_1r_2).</span></p>
-<p>Using <span class="math inline">r_1=100</span> and <span class="math inline">r_2\approx0.01047</span>:</p>
-<p><span class="math display">C_T\approx13.6(102.047)=1388\ \mathrm{\mu mol/L}.</span></p>
-<p>This describes a state with that pH and gas pressure. It does not predict the pH of arbitrary water exposed to the gas.</p>
-</section>
-<section id="carbon-dioxide-uptake-and-acid-addition-differ" class="slide level2">
-<h2>Carbon dioxide uptake and acid addition differ</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Process acting alone</th>
-<th>Dissolved inorganic carbon</th>
-<th>Alkalinity</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>CO₂ uptake</td>
-<td>Increases</td>
-<td>Conserved</td>
-</tr>
-<tr class="even">
-<td>Strong acid added to closed water</td>
-<td>Conserved</td>
-<td>Decreases</td>
-</tr>
-</tbody>
-</table>
-<p>Both can lower pH. The constraints and chemical balances differ.</p>
+<section id="about-this-lecture" class="slide level2">
+<h2>About this lecture</h2>
+<div class="columns">
+<div class="column" style="width:56%;">
+<p>In parts of Skåne and on Gotland, where the bedrock contains limestone, tap water is <strong>hard</strong>. Kettles there grow a white crust within weeks. In much of northern Sweden, on granite, they hardly scale at all.</p>
+<p>The crust is <strong>calcite</strong>, CaCO₃: the same mineral that liming adds to lakes. Why does it come <strong>out</strong> of the water when you boil it?</p>
+<p>Today you will learn to:</p>
+<ul>
+<li>use <strong>Henry’s law</strong> to connect dissolved CO₂ to the air;</li>
+<li>explain why <strong>CO₂ uptake</strong> raises C<sub>T</sub> but <strong>not alkalinity</strong>, unlike strong acid;</li>
+<li>judge mineral stability with the <strong>saturation state Ω</strong>;</li>
+<li>separate what is <strong>favoured</strong> from what is <strong>fast</strong>.</li>
+</ul>
+</div><div class="column" style="width:44%;">
+<p><img data-src="img/kettle-limescale.jpg" style="width:72.0%"> <span class="credit">Limescale (CaCO₃) from a kettle. Photo: Alexander Davronov, CC BY-SA 4.0, Wikimedia Commons.</span></p>
+</div></div>
 <aside class="notes">
-<p>The statements exclude mineral reactions, biological transformations, and volume changes. CO2 creates H+ and bicarbonate together: their alkalinity contributions cancel. A finite headspace needs a gas-plus-water carbon balance rather than a fixed pressure assumption.</p>
+<p>Pick up exactly where the last lecture stopped. We ended with two open questions: what happens when the water meets the air, and why does a kettle scale up? We also saw that carbon dioxide uptake by the ocean is not the same as adding strong acid. Today we answer all three. The kettle is a good hook because every student has seen limescale, and the same chemistry builds stalactites, tufa waterfalls and the shells of marine plankton. Point out that the regional difference in Sweden is the same bedrock story as the lakes last time: limestone supplies calcium and alkalinity, granite does not.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -218,59 +185,595 @@ Environmental Chemistry
           display:block!important;
       }</style></aside>
 </section>
-<section id="minerals-introduce-another-reaction" class="slide level2">
-<h2>Minerals introduce another reaction</h2>
-<p><span class="math display">\mathrm{CaCO_3(s)\rightleftharpoons Ca^{2+}+CO_3^{2-}}</span></p>
-<p>Calcite dissolution adds dissolved calcium and carbon. One mole dissolved adds two alkalinity equivalents.</p>
-<p>The closed acid calculation excluded this possible source of neutralisation.</p>
+<section id="opening-the-box" class="slide level2">
+<h2>Opening the box</h2>
+
+<img data-src="fig/gases-pathways.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:76.0%"><p>Last lecture we worked <strong>inside the dashed box</strong>: C<sub>T</sub> was fixed and carbon only changed form. Today we open two of the doors: <strong>gas exchange</strong> with the air and <strong>dissolution and precipitation</strong> of calcite. Each changes C<sub>T</sub>, alkalinity, or both, in a definite way.</p>
+<aside class="notes">
+<p>Show the familiar diagram from the previous lecture. Inside the box we had a closed water, and strong acid only redistributed carbon among the three species. Real waters are open. Carbon dioxide can enter from the air or from respiration and leave again by degassing or photosynthesis. Calcite can dissolve from rocks and soils, or precipitate. The aim of today is bookkeeping: for each process, say what happens to total dissolved carbon and what happens to alkalinity. Once that is clear, pH follows from the tools of last lecture. By the end we will put all processes on one map.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="check-the-current-saturation-state" class="slide level2">
-<h2>Check the current saturation state</h2>
-<p><span class="math display">\Omega=\frac{[\mathrm{Ca^{2+}}][\mathrm{CO_3^{2-}}]}{K_{sp}}</span></p>
-<p>Use free ions and <span class="math inline">K_{sp}=3.3\times10^{-9}</span> in our approximation.</p>
+<section id="water-meets-air-henrys-law" class="slide level2">
+<h2>Water meets air: Henry’s law</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<p><img data-src="fig/gases-interface.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:42%;">
+<p>CO₂ molecules cross the water surface in both directions. At equilibrium the two fluxes are equal and</p>
+<p><span class="math display">[\mathrm{CO_2^*}]=K_H\,p_{\mathrm{CO_2}}</span></p>
+<p>with <span class="math inline">K_H=0.034</span> mol L⁻¹ atm⁻¹ at 25 °C and <span class="math inline">p</span> in atm.</p>
+<p>Henry’s law fixes <strong>only the CO₂* pool</strong>. Bicarbonate and carbonate ions cannot leave the water; they follow through the acid–base equilibria.</p>
+</div></div>
+<aside class="notes">
+<p>Henry’s law is a simple proportionality: the more carbon dioxide in the gas, the more dissolves. Check units with students: mol per litre per atmosphere times atmospheres gives mol per litre. Warn them that Henry coefficients are published in several conventions, some as pressure divided by concentration, so the number and the equation must come from the same source. We use the convention from the reference sheet. The most important sentence is the last one. Only the neutral dissolved carbon dioxide exchanges with the air. Bicarbonate is an ion; it stays in the water and is connected to carbon dioxide only through the equilibria we studied last time.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-worked-henry-calculation" class="slide level2">
+<h2>A worked Henry calculation</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p>Take <span class="math inline">p_{\mathrm{CO_2}}=4.00\times10^{-4}</span> atm (the exercise value):</p>
+<p><span class="math display">[\mathrm{CO_2^*}]=0.034\times4.00\times10^{-4}=1.36\times10^{-5}\ \mathrm{mol/L}</span></p>
+<p>That is <strong>13.6 µmol/L</strong>. The atm units cancel.</p>
+<p>The relation is linear: ten times more CO₂ in the gas gives ten times more CO₂*. Soil air often holds around 1% CO₂, so soil water can carry far more CO₂* than water at the surface.</p>
+</div><div class="column" style="width:55%;">
+<p><img data-src="fig/gases-henry.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>This is exercise three, part one. Today’s atmosphere is a little above four times ten to the minus four atmospheres, about 420 parts per million, but the exercise uses a round supplied value so that everyone gets the same answer. Point to the three markers on the line. Pre-industrial air gave about 9.5 micromoles per litre. Soil air, enriched by root and microbial respiration, is typically ten to a hundred times richer in carbon dioxide than the atmosphere; one percent is a common round figure. Water that percolates through soil therefore picks up a lot of carbon dioxide. Keep that in mind: it is the start of the cave and kettle story.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="henry-gives-co₂-not-total-carbon" class="slide level2">
+<h2>Henry gives CO₂*, not total carbon</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p>If the same water is <strong>also specified</strong> to have pH 8.35, the ratio rule from last lecture gives the rest:</p>
+<p><span class="math display">C_T=[\mathrm{CO_2^*}](1+r_1+r_1r_2)</span></p>
+<p>With <span class="math inline">r_1=100</span> and <span class="math inline">r_2\approx0.0105</span>:</p>
+<p><span class="math inline">C_T\approx13.6\times102.05\approx</span> <strong>1388 µmol/L</strong></p>
+<p>The gas pool is only <strong>1%</strong> of the dissolved carbon. Applying Henry’s law to C<sub>T</sub> would be off by a factor of 100.</p>
+</div><div class="column" style="width:48%;">
+<p><img data-src="fig/gases-ct-vs-co2.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>This is exercise three, part three. Students must notice the word “specified”. Henry’s law alone does not tell us the pH; we supplied it as an extra piece of information. With the pH given, the proportions 1 to r1 to r1 r2 from last lecture convert the CO2-star pool into the total. At pH 8.35 almost all carbon is bicarbonate, so the total is about a hundred times the gas-controlled pool. The bar chart makes that visible: the slim blue sliver is all that Henry’s law describes. If you fix gas pressure, pH and total carbon independently, you will usually overconstrain the system and get a contradiction.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-clean-rain-is-acidic" class="slide level2">
+<h2>Why clean rain is acidic</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p>Pure water in contact with air has no alkalinity. The only source of H⁺ is dissolved CO₂:</p>
+<p><span class="math display">\mathrm{CO_2^*+H_2O\rightleftharpoons H^++HCO_3^-}</span></p>
+<p>With no other ions, [H⁺] ≈ [HCO₃⁻], so</p>
+<p><span class="math display">[\mathrm{H^+}]^2\approx K_1[\mathrm{CO_2^*}]=10^{-6.35}\times1.36\times10^{-5}</span></p>
+<p>[H⁺] ≈ 2.5 × 10⁻⁶ mol/L, <strong>pH ≈ 5.6</strong>.</p>
+<p>This is why “acid rain” means rain <strong>below</strong> about 5.6.</p>
+</div><div class="column" style="width:45%;">
+<p><img data-src="img/rain.jpg" style="width:100.0%"> <span class="credit">Raindrops on a puddle. Photo: Jean-Marie Vugnon, CC BY-SA 4.0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>This short calculation explains a number students met in the pilot lecture and in the deposition unit. In pure water the charge balance is simply hydrogen ion equals bicarbonate, because there are no other ions and carbonate is negligible at this pH. Substituting into the first acid equilibrium gives hydrogen ion squared equals K1 times the dissolved carbon dioxide. With our constants and the exercise gas pressure the answer is pH 5.61; with today’s 420 parts per million it is 5.60. Natural rain varies around this value. Sulfuric and nitric acids from pollution push it lower, which is the acid deposition that damaged lakes and forests in the opening story of the last lecture.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="co₂-uptake-versus-strong-acid" class="slide level2">
+<h2>CO₂ uptake versus strong acid</h2>
+
+<img data-src="fig/gases-co2-vs-acid-tokens.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Both inputs lower the HCO₃⁻ : CO₂* ratio, so <strong>both lower pH</strong>. But CO₂ <strong>adds carbon</strong> and leaves alkalinity unchanged, while strong acid <strong>removes alkalinity</strong> and leaves carbon unchanged.</p>
+<aside class="notes">
+<p>Use the token picture the same way as last time. Start: ten bicarbonate and two CO2-star, so carbon twelve, alkalinity ten. Add three carbon dioxide molecules: carbon becomes fifteen, alkalinity is still ten, the ratio drops from five to two. Add three hydrogen ions instead: three bicarbonates become CO2-star, carbon stays twelve, alkalinity falls to seven, the ratio drops to 1.4. Both waters become more acidic, but by different bookkeeping. This is the key distinction for ocean acidification, for respiration in lakes, and for acid deposition. Ask students why the acid case has the lower ratio even though the same number of particles was added.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-alkalinity-ignores-co₂" class="slide level2">
+<h2>Why alkalinity ignores CO₂</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p>Dissolved CO₂ that reacts makes <strong>one H⁺ and one HCO₃⁻ together</strong>:</p>
+<p><span class="math display">\mathrm{CO_2+H_2O\rightarrow H^++HCO_3^-}</span></p>
+<p>In <span class="math inline">A_T=[\mathrm{HCO_3^-}]+2[\mathrm{CO_3^{2-}}]+[\mathrm{OH^-}]-[\mathrm{H^+}]</span> they cancel: +1 − 1 = 0.</p>
+<p>So added CO₂ can push pH down, but it <strong>never removes the reserve</strong>. The blue curve has no cliff; the red one does.</p>
+</div><div class="column" style="width:55%;">
+<p><img data-src="fig/gases-co2-vs-acid.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>This is exercise three, part four, and the reason for the contrast in the last lecture’s ocean slide. Carbon dioxide is an acid only in a limited sense: every hydrogen ion it releases arrives together with a bicarbonate ion, which can take the hydrogen ion back. The alkalinity sum therefore does not change. The model curves start from Water A of last lecture. Adding one millimole per litre of strong acid uses up all its alkalinity and pH collapses to about four. Adding one millimole per litre of carbon dioxide doubles total carbon but only brings pH down to about 6.3. These are closed-bottle model results, not field data.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="which-way-does-co₂-move" class="slide level2">
+<h2>Which way does CO₂ move?</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p>Compare the water’s own CO₂* with <span class="math inline">K_H\,p_{\mathrm{CO_2}}</span> of the air above it:</p>
 <ul>
-<li><span class="math inline">\Omega&lt;1</span>: undersaturated.</li>
-<li><span class="math inline">\Omega=1</span>: saturated.</li>
-<li><span class="math inline">\Omega&gt;1</span>: supersaturated.</li>
+<li><strong>Water higher:</strong> CO₂ escapes (<strong>degassing</strong>). C<sub>T</sub> falls, A<sub>T</sub> stays, pH <strong>rises</strong>.</li>
+<li><strong>Water lower:</strong> CO₂ enters (<strong>uptake</strong>). C<sub>T</sub> rises, pH falls.</li>
 </ul>
-<p>The full thermodynamic expression uses activities.</p>
+<p>Many lakes and streams, especially in the boreal zone, are <strong>supersaturated</strong> with CO₂. They receive CO₂-rich soil water and respiring organic matter, and release CO₂ to the air.</p>
+</div><div class="column" style="width:45%;">
+<p><img data-src="img/boreal-lake.jpg" style="width:100.0%"> <span class="credit">Forest lake, Reivo nature reserve, Norrbotten. Photo: GeorgeInsjon, CC BY-SA 4.0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Gas exchange always runs towards equilibrium with the air. Most water bodies are not at equilibrium, because the water was charged with carbon dioxide somewhere else, in soil or groundwater, or by respiration in the water itself. Northern lakes and streams are commonly net sources of carbon dioxide to the atmosphere, fed by soil water and by decomposition of organic matter from their catchments; this is part of the next lecture. Photosynthesis works in the opposite direction: it removes carbon dioxide during the day and can raise pH. The key observation for the rest of today: when carbon dioxide leaves at constant alkalinity, pH rises, and so does carbonate ion.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="minerals-calcite-dissolves-and-precipitates" class="slide level2">
+<h2>Minerals: calcite dissolves and precipitates</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><span class="math display">\mathrm{CaCO_3(s)\rightleftharpoons Ca^{2+}+CO_3^{2-}}</span></p>
+<p>In natural water, with dissolved CO₂:</p>
+<p><span class="math display">\mathrm{CaCO_3+CO_2+H_2O\rightleftharpoons Ca^{2+}+2HCO_3^-}</span></p>
+<p>Each mole dissolved adds <strong>1 mol C<sub>T</sub></strong> and <strong>2 eq alkalinity</strong>. Precipitation removes the same.</p>
+<p>Read <strong>forward</strong>: CO₂-rich soil water dissolves limestone. Read <strong>backward</strong>: water that <strong>loses CO₂</strong> deposits calcite.</p>
+</div><div class="column" style="width:45%;">
+<p><img data-src="img/calcite-crystal.jpg" style="width:100.0%"> <span class="credit">Calcite (CaCO₃) crystal, about 6 cm. Photo: James St.&nbsp;John, CC BY 2.0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>This is the mineral door of the box. Write the simple dissolution first, then the version that includes carbon dioxide, which is how limestone weathering really happens. Count the bookkeeping: one calcium, two bicarbonates, so alkalinity rises by two equivalents and total carbon by one mole per mole of calcite. The second equation is reversible, and that is the whole story of today in one line. Forward, carbon dioxide-rich soil water attacks limestone and becomes hard. Backward, when that hard water loses carbon dioxide, the equilibrium shifts left and calcite comes out. Liming, from last lecture, is the forward reaction used deliberately.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="is-calcite-stable-here-the-saturation-state" class="slide level2">
+<h2>Is calcite stable here? The saturation state</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><span class="math display">\Omega=\frac{[\mathrm{Ca^{2+}}][\mathrm{CO_3^{2-}}]}{K_{sp}},\quad K_{sp}=3.3\times10^{-9}</span></p>
+<ul>
+<li><strong>Ω &lt; 1:</strong> undersaturated, calcite can dissolve</li>
+<li><strong>Ω = 1:</strong> saturated, at equilibrium</li>
+<li><strong>Ω &gt; 1:</strong> supersaturated, calcite can form</li>
+</ul>
+<p>Use <strong>free</strong> ion concentrations. At fixed Ca²⁺ and C<sub>T</sub>, Ω rises about <strong>tenfold per pH unit</strong> in this range, because carbonate ion does.</p>
+</div><div class="column" style="width:55%;">
+<p><img data-src="fig/gases-omega-ph.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>The saturation state compares the actual ion product with the product at equilibrium. It is the mineral version of asking which direction a reaction can go. Use the free ion concentrations: ion pairs such as calcium sulfate reduce free calcium below the dissolved total. The plot fixes calcium at 0.5 millimoles per litre and total carbon at 1 millimole per litre and varies pH. Because carbonate is a small fraction that grows tenfold per pH unit below pK2, Omega does too. This water crosses saturation near pH 8.2. So anything that raises pH, such as losing carbon dioxide, can tip a water from dissolving calcite to depositing it. The strict expression uses activities; we use concentrations.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="a-worked-saturation-comparison" class="slide level2">
 <h2>A worked saturation comparison</h2>
-<p>Given free calcium = <span class="math inline">5.00\times10^{-4}</span> mol/L:</p>
+<p>Two water states, each with free Ca²⁺ = 5.00 × 10⁻⁴ mol/L:</p>
 <table class="caption-top">
 <thead>
 <tr class="header">
-<th>Free carbonate</th>
-<th>Concentration product</th>
-<th style="text-align: right;"><span class="math inline">\Omega</span></th>
+<th>State</th>
+<th>Free CO₃²⁻ (mol/L)</th>
+<th>Product</th>
+<th style="text-align: right;">Ω</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">1.00\times10^{-6}</span> mol/L</td>
-<td><span class="math inline">5.00\times10^{-10}</span></td>
-<td style="text-align: right;">0.152</td>
+<td>X</td>
+<td>1.00 × 10⁻⁶</td>
+<td>5.00 × 10⁻¹⁰</td>
+<td style="text-align: right;"><strong>0.152</strong></td>
 </tr>
 <tr class="even">
-<td><span class="math inline">1.00\times10^{-5}</span> mol/L</td>
-<td><span class="math inline">5.00\times10^{-9}</span></td>
-<td style="text-align: right;">1.52</td>
+<td>Y</td>
+<td>1.00 × 10⁻⁵</td>
+<td>5.00 × 10⁻⁹</td>
+<td style="text-align: right;"><strong>1.52</strong></td>
 </tr>
 </tbody>
 </table>
-<p>More carbonate can change the saturation state. Supersaturation does not specify how fast precipitation occurs.</p>
+<p>X could <strong>dissolve</strong> calcite if calcite is present. In Y precipitation is <strong>favoured</strong>.</p>
+<p>Ω does <strong>not</strong> give a rate or a final mass of calcite. Precipitation itself removes Ca²⁺ and CO₃²⁻, so Ω falls back towards 1 as calcite forms; the amount needs a mass balance.</p>
+<aside class="notes">
+<p>This is exercise four. Multiply, divide by the solubility product, compare with one. A tenfold change in carbonate ion moves the water across saturation. Then discuss what the number cannot tell us. It cannot say how fast calcite forms, because precipitation needs nucleation sites and can be slow. It cannot say how much forms, because precipitation itself removes calcium and carbonate, lowers Omega and stops at saturation; a mass balance is needed for that. And it says nothing about dissolution if no calcite is present. Students also need to remember that replacing free calcium by total dissolved calcium overestimates Omega when ion pairs are important.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="a-field-explanation-needs-the-boundaries" class="slide level2">
-<h2>A field explanation needs the boundaries</h2>
-<p>A water can exchange gas, receive acid, dissolve minerals, and support biological carbon transformations at the same time.</p>
-<p>Before calculating, identify which processes are included and what is fixed. Do not impose a fixed dissolved carbon total while also allowing unlimited gas exchange without a balancing constraint.</p>
+<section id="the-kettle-explained" class="slide level2">
+<h2>The kettle, explained</h2>
+
+<img data-src="fig/gases-kettle.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:72.0%"><p>Hard water starts near saturation. Heating drives CO₂ out, the carbonate equilibria shift, CO₃²⁻ rises and Ω passes 1. Calcite also becomes <strong>less</strong> soluble as temperature rises. The hot element provides the surface where crystals start.</p>
+<aside class="notes">
+<p>Now the opening question has an answer. Follow the chain. Gases are less soluble in hot water, so heating drives carbon dioxide out as bubbles. With carbon dioxide leaving, the second equation on the minerals slide runs backward: bicarbonate re-forms carbon dioxide and carbonate ion. Alkalinity stays the same, but carbon falls, so pH and carbonate ion rise until the water is supersaturated. Calcite is unusual in being less soluble when hot, which adds to the effect. Crystals start on the heating element, where temperature is highest and a surface is available. Soft water from granite areas contains too little calcium and alkalinity to get far.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="check-your-explanation" class="slide level2">
-<h2>Check your explanation</h2>
-<p>Why can CO₂ uptake lower pH while conserving alkalinity?</p>
-<p>Why can a mineral saturation calculation indicate a possible reaction without predicting its rate or final amount?</p>
-<p>Work through the <a href="../carbonate-gases/exercise.html">exercise</a>. Constants, limitations, and sources are on the <a href="../carbonate-gases/reference.html">reference sheet</a>.</p>
+<section id="a-model-groundwater-meets-the-air" class="slide level2">
+<h2>A model: groundwater meets the air</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<p><img data-src="fig/gases-degassing.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:42%;">
+<p><strong>Constructed water:</strong> dissolves calcite to saturation under soil air at 0.01 atm CO₂. It ends up with A<sub>T</sub> ≈ 2.8 meq/L and Ca²⁺ ≈ 1.4 mmol/L, pH ≈ 7.3.</p>
+<p>It then emerges and loses CO₂ towards the atmosphere (4.0 × 10⁻⁴ atm) at constant alkalinity:</p>
+<ul>
+<li>pH rises to about <strong>8.6</strong></li>
+<li>Ω rises to about <strong>23</strong></li>
+</ul>
+<p>Nature’s kettle needs <strong>no heating</strong>, only degassing.</p>
+</div></div>
+<aside class="notes">
+<p>This model is generated by the figure script for this lecture, with our 25 degree constants and no temperature effect. It is constructed, but the numbers are realistic for limestone groundwater. In the soil, water is in contact with air that is rich in carbon dioxide, so it can dissolve a lot of calcite before reaching saturation. When the water emerges at a spring, in a cave or in a waterfall, it equilibrates towards the much lower carbon dioxide of the atmosphere. Alkalinity stays constant, carbon falls, pH rises by more than a unit, and Omega rises from one to over twenty. Turbulence speeds the degassing. The curve stops before any calcite forms; precipitation would then pull Omega back down.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="natures-kettle-tufa-at-plitvice" class="slide level2">
+<h2>Nature’s kettle: tufa at Plitvice</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="img/plitvice-tufa.jpg" style="width:100.0%"> <span class="credit">Tufa coating submerged branches, Plitvice Lakes, Croatia. Photo: Alessandro Caproni, CC BY 2.0, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:45%;">
+<p>At the <strong>Plitvice Lakes</strong> in Croatia, water from limestone springs flows over a staircase of lakes and waterfalls.</p>
+<p>Turbulent water loses CO₂, becomes <strong>supersaturated with calcite</strong>, and deposits it as <strong>tufa</strong>, a porous limestone. Mosses, algae and sunken branches provide surfaces; plants also take up CO₂.</p>
+<p>Over thousands of years the tufa has built natural dams that hold the lakes in place.</p>
+</div></div>
+<aside class="notes">
+<p>Plitvice is a UNESCO World Heritage site and a spectacular example of exactly the model on the previous slide. Karst springs deliver hard water with high carbon dioxide. As it tumbles over falls and cascades, carbon dioxide escapes, pH and Omega rise, and calcite precipitates on surfaces. Mosses and algae help in two ways: they offer surfaces for crystals to start on, and their photosynthesis removes carbon dioxide. The barriers grow and the lakes are held behind them. Students can contrast this with the kettle: same chemistry, but degassing at constant temperature instead of heating. Similar deposits occur at many karst springs across Europe.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="underground-stalactites" class="slide level2">
+<h2>Underground: stalactites</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p>Rainwater passes through soil, picks up CO₂ and dissolves limestone on its way down. When a drop reaches the open cave, it meets cave air with <strong>less CO₂</strong> than the soil.</p>
+<p>The drop degasses, Ω rises above 1, and a thin ring of calcite is left behind. Drop by drop this builds <strong>stalactites</strong>, and the water that falls builds <strong>stalagmites</strong>.</p>
+<p>Growth is slow, often fractions of a millimetre per year, so speleothems are used as <strong>climate archives</strong>.</p>
+</div><div class="column" style="width:55%;">
+<p><img data-src="img/cave-stalactites.jpg" style="width:100.0%"> <span class="credit">Stalactites in a limestone cave, Mallorca, Spain. Photo: Killarnee, CC BY-SA 4.0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>The cave is the same chemistry once more, with a nice extra lesson. The dissolving part happens in the soil and rock above the cave, under high carbon dioxide; the depositing part happens where the drip water meets cave air. Growth rates vary widely, which is why I give only an order of magnitude. Because they grow slowly and in layers, and because their chemistry records conditions at the time of growth, cave formations are dated and used to reconstruct past climate. On Gotland, Lummelunda is a limestone cave students can visit. The general point: dissolution and precipitation of calcite are controlled by carbon dioxide as much as by calcium.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="supersaturated-is-not-the-same-as-precipitating" class="slide level2">
+<h2>Supersaturated is not the same as precipitating</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="img/coccolithophore-bloom.jpg" style="width:100.0%"> <span class="credit">Coccolithophore bloom colouring Hardangerfjord, Norway, 2020 (NASA Terra MODIS). Public domain, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:45%;">
+<p>Surface seawater is <strong>several times supersaturated</strong> with calcite, yet calcite does not simply fall out of the sea. Forming a new crystal needs a <strong>nucleation</strong> step, and ions such as Mg²⁺ slow crystal growth.</p>
+<p>Organisms do it instead: plankton such as <strong>coccolithophores</strong> build calcite plates. Their blooms turn the sea milky blue.</p>
+<p>CO₂ uptake lowers CO₃²⁻ and so <strong>lowers Ω</strong>, making shell building harder.</p>
+</div></div>
+<aside class="notes">
+<p>This slide connects the thermodynamic idea to kinetics and to the ocean. Omega above one says precipitation is favoured, but a crystal has to start somewhere, and in the open ocean spontaneous nucleation is very slow. Magnesium ions in seawater also inhibit calcite growth. Marine organisms overcome these barriers biologically, and most calcium carbonate in the ocean is made by organisms. The satellite image shows a coccolithophore bloom: the calcite plates scatter light and colour the water. This links back to the pteropod image of the last lecture. Ocean uptake of carbon dioxide keeps alkalinity but converts carbonate to bicarbonate, so Omega falls. Do not quantify seawater with our freshwater constants.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="all-the-processes-on-one-map" class="slide level2">
+<h2>All the processes on one map</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<p><img data-src="fig/gases-process-map.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:42%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Process</th>
+<th style="text-align: center;">C<sub>T</sub></th>
+<th style="text-align: center;">A<sub>T</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CO₂ uptake, respiration</td>
+<td style="text-align: center;">up</td>
+<td style="text-align: center;">same</td>
+</tr>
+<tr class="even">
+<td>Degassing, photosynthesis</td>
+<td style="text-align: center;">down</td>
+<td style="text-align: center;">same</td>
+</tr>
+<tr class="odd">
+<td>Strong acid</td>
+<td style="text-align: center;">same</td>
+<td style="text-align: center;">down</td>
+</tr>
+<tr class="even">
+<td>Calcite dissolves</td>
+<td style="text-align: center;">+1</td>
+<td style="text-align: center;">+2</td>
+</tr>
+<tr class="odd">
+<td>Calcite forms</td>
+<td style="text-align: center;">−1</td>
+<td style="text-align: center;">−2</td>
+</tr>
+</tbody>
+</table>
+<p>Dotted lines show pH. <strong>Know which arrow you are on before you calculate.</strong></p>
+</div></div>
+<aside class="notes">
+<p>This map summarises the bookkeeping of the week. Each process moves the water in a fixed direction in the space of total carbon and alkalinity, and the background contours show where pH ends up. Carbon dioxide processes move horizontally. Strong acid moves straight down. Calcite moves along a slope of two. Photosynthesis and respiration are shown as pure carbon dioxide processes, which ignores small alkalinity changes from nutrient uptake. A field explanation must first decide which processes act and what is held fixed. Never fix total carbon in a calculation that also allows unlimited gas exchange; the reference sheet table lists what each example holds fixed. Real waters often move along several arrows at once.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="check-yourself" class="slide level2">
+<h2>Check yourself</h2>
+<div class="checkbox">
+<ol type="1">
+<li>A water’s CO₂* is 50 µmol/L. Air above it gives <span class="math inline">K_Hp=13.6</span> µmol/L. Which way does CO₂ move, and what happens to pH?</li>
+<li>A lake takes up CO₂ from the air. What happens to C<sub>T</sub>, to A<sub>T</sub>, to pH?</li>
+<li>Calcite dissolves into a closed bottle of water. By how much do C<sub>T</sub> and A<sub>T</sub> change per mole?</li>
+<li>Ω = 0.4 in a stream with no calcite in its bed. Will the stream dissolve calcite?</li>
+<li>Why is Henry’s law not enough to give pH on its own?</li>
+</ol>
+</div>
+<aside class="notes">
+<p>Answers. One: the water is supersaturated, so carbon dioxide escapes; at constant alkalinity pH rises. Two: total carbon rises, alkalinity is unchanged, pH falls. Three: plus one mole of carbon and plus two equivalents of alkalinity. Four: no; undersaturation means dissolution would be favoured if calcite were available, but there is none to dissolve. A thermodynamic driving force needs a reactant. Five: Henry’s law fixes only the carbon dioxide pool. To find pH you need one more piece of information, such as alkalinity or total carbon. Let students discuss question four in pairs; it catches many people.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="common-mistakes-to-avoid" class="slide level2">
+<h2>Common mistakes to avoid</h2>
+<ul>
+<li><strong>Applying Henry’s law to C<sub>T</sub>.</strong> It gives CO₂* only.</li>
+<li><strong>“CO₂ is an acid, so it lowers alkalinity.”</strong> H⁺ and HCO₃⁻ form together; A<sub>T</sub> is unchanged.</li>
+<li><strong>Fixing p<sub>CO₂</sub>, pH and C<sub>T</sub> independently.</strong> Usually two fix the third.</li>
+<li><strong>“Ω &gt; 1, so calcite forms now.”</strong> Ω gives direction, not rate or amount.</li>
+<li><strong>Using total Ca for free Ca²⁺.</strong> Ion pairs lower the free ion.</li>
+<li><strong>Forgetting temperature.</strong> Gases and calcite are both less soluble in hot water.</li>
+<li><strong>Using freshwater constants for seawater.</strong></li>
+</ul>
+<aside class="notes">
+<p>Run through these quickly and ask for the reason behind each one. The second is the most important conceptual point of the lecture and is examined every year in some form. The third is the source of many contradictory calculations: in an open carbonate system, choosing two of gas pressure, pH, total carbon and alkalinity fixes the rest. The sixth reminds students that our constants are for 25 degrees; real waters are colder or hotter, and the direction of the temperature effect matters for kettles and for cold northern lakes. Ask students to add one more mistake from their own exercise work.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Key fact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Henry’s law</td>
+<td>[CO₂*] = K<sub>H</sub> p<sub>CO₂</sub>; K<sub>H</sub> = 0.034 mol L⁻¹ atm⁻¹ at 25 °C</td>
+</tr>
+<tr class="even">
+<td>Gas versus total</td>
+<td>Henry fixes CO₂* only; C<sub>T</sub> needs pH or A<sub>T</sub> too</td>
+</tr>
+<tr class="odd">
+<td>Clean rain</td>
+<td>pure water + air CO₂ → pH ≈ 5.6</td>
+</tr>
+<tr class="even">
+<td>CO₂ uptake</td>
+<td>C<sub>T</sub> up, A<sub>T</sub> unchanged, pH down, no alkalinity cliff</td>
+</tr>
+<tr class="odd">
+<td>Strong acid</td>
+<td>C<sub>T</sub> unchanged, A<sub>T</sub> down by the dose</td>
+</tr>
+<tr class="even">
+<td>Degassing</td>
+<td>C<sub>T</sub> down, pH and CO₃²⁻ up</td>
+</tr>
+<tr class="odd">
+<td>Calcite</td>
+<td>dissolving adds 1 mol C<sub>T</sub> and 2 eq A<sub>T</sub> per mol</td>
+</tr>
+<tr class="even">
+<td>Saturation</td>
+<td>Ω = [Ca²⁺][CO₃²⁻]/K<sub>sp</sub>; above 1 favours calcite forming</td>
+</tr>
+<tr class="odd">
+<td>Kinetics</td>
+<td>supersaturation can persist; surfaces and organisms help</td>
+</tr>
+<tr class="even">
+<td>Kettle, cave, tufa</td>
+<td>CO₂ loss raises Ω until calcite precipitates</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Next:</strong> <a href="../aquatic-organic-matter/lec.html">Organic matter in water</a>. Why are many Swedish lakes turning brown? Then the <a href="../carbonate-gases/exercise.html">exercises</a> and the <a href="../carbonate-gases/reference.html">reference sheet</a>.</p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="img/brown-water.jpg" style="width:100.0%"> <span class="credit">Brown, humic river water, Korkeakoskenjoki, Finland. Photo: Anna Reponen, CC BY 4.0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Recite the bookkeeping once more. Gas exchange moves carbon but not alkalinity. Strong acid moves alkalinity but not carbon. Calcite moves both, one to two. Omega tells us whether calcite can dissolve or form, not how fast. The kettle, the cave and the tufa waterfall are one mechanism: carbon dioxide loss raises carbonate ion. The next lecture leaves carbonate chemistry and turns to the other big pool of carbon in natural water, dissolved organic matter. It also gives the reason many boreal lakes are supersaturated with carbon dioxide. The teaser photo shows a brown, humic forest river in Finland; its colour comes from organic matter washed in from soils and peat.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 
 
 </section>

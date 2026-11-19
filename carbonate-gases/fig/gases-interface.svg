@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: gas-water exchange of CO2. Molecules cross the surface both ways; at equilibrium the two fluxes are equal and dissolved CO2* is proportional to the partial pressure. Only CO2* is set by Henry's law; bicarbonate and carbonate do not leave the water. -->
+  <defs>
+    <g id="co2"><circle cx="-11" r="6" fill="#c0392b"/><circle r="7" fill="#1b2a3a"/><circle cx="11" r="6" fill="#c0392b"/></g>
+    <g id="hco3"><circle r="9" fill="#25713E"/><text y="4" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">−</text></g>
+    <marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker>
+  </defs>
+  <style>.t{font-size:19px;fill:#1b2a3a} .b{font-size:22px;font-weight:bold;fill:#1b2a3a} .s{font-size:16px;fill:#6b7785}</style>
+  <rect x="20" y="20" width="560" height="170" fill="#f4f7fa"/>
+  <text class="b" x="36" y="50">Air: CO₂ partial pressure p</text>
+  <use href="#co2" x="70" y="95"/><use href="#co2" x="150" y="140"/><use href="#co2" x="215" y="85"/><use href="#co2" x="300" y="160"/><use href="#co2" x="390" y="95"/><use href="#co2" x="470" y="140"/><use href="#co2" x="540" y="80"/><use href="#co2" x="110" y="165"/><use href="#co2" x="430" y="175"/>
+  <rect x="20" y="190" width="560" height="230" fill="#d6e6f2"/>
+  <line x1="20" y1="190" x2="580" y2="190" stroke="#2468A0" stroke-width="3"/>
+  <use href="#co2" x="80" y="230"/><use href="#co2" x="170" y="265"/><use href="#co2" x="420" y="225"/><use href="#co2" x="500" y="270"/><use href="#co2" x="560" y="235"/><use href="#co2" x="290" y="275"/>
+  <use href="#hco3" x="90" y="330"/><use href="#hco3" x="160" y="370"/><use href="#hco3" x="230" y="320"/><use href="#hco3" x="300" y="380"/><use href="#hco3" x="370" y="335"/><use href="#hco3" x="440" y="375"/><use href="#hco3" x="510" y="325"/><use href="#hco3" x="120" y="400"/><use href="#hco3" x="400" y="405"/><use href="#hco3" x="540" y="395"/>
+  <text class="b" x="36" y="300" style="fill:#1b2a3a">Water</text>
+  <line x1="250" y1="120" x2="250" y2="230" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <line x1="330" y1="235" x2="330" y2="125" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <text class="s" x="180" y="215">in</text><text class="s" x="342" y="215">out</text>
+  <use href="#co2" x="625" y="70"/><text class="t" x="648" y="77">CO₂ molecule</text>
+  <text class="t" x="610" y="118">exchanges with the air</text>
+  <use href="#hco3" x="625" y="170"/><text class="t" x="648" y="177">HCO₃⁻ ion</text>
+  <text class="t" x="610" y="210">stays in the water</text>
+  <rect x="600" y="250" width="290" height="160" rx="10" fill="#f6efe0"/>
+  <text class="t" x="616" y="282">At equilibrium, in = out:</text>
+  <text class="b" x="616" y="322">[CO₂*] = K<tspan baseline-shift="sub" font-size="15">H</tspan> · p</text>
+  <text class="t" x="616" y="360">sets the CO₂* pool only,</text>
+  <text class="t" x="616" y="388">not total carbon C<tspan baseline-shift="sub" font-size="14">T</tspan></text>
+</svg>

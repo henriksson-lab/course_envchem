@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="470" viewBox="0 0 980 470" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: three reasons a concentration can fall downstream. Dots = pollutant, triangles = product. -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#1b2a3a"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#AD4825"/></marker>
+  </defs>
+  <style>
+    .t{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .h{font-size:21px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .l{font-size:18px;fill:#1b2a3a}
+    .lc{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .n{font-size:16px;fill:#6b7785;font-style:italic;text-anchor:middle}
+    .ln{stroke:#1b2a3a;stroke-width:2.5;fill:none}
+  </style>
+  <path d="M0,40 C200,20 380,70 560,50 S860,30 980,45 L980,120 C860,105 700,135 560,125 S200,100 0,115 Z" fill="#d6e6f2"/>
+  <text class="l" x="20" y="28">river flow</text><line class="ln" x1="115" y1="22" x2="190" y2="22" marker-end="url(#ar)"/>
+  <circle cx="160" cy="80" r="15" fill="#fff" stroke="#1b2a3a" stroke-width="2.5"/><text class="h" x="160" y="87">A</text>
+  <circle cx="820" cy="80" r="15" fill="#fff" stroke="#1b2a3a" stroke-width="2.5"/><text class="h" x="820" y="87">B</text>
+  <text class="l" x="190" y="86">upstream: high concentration</text>
+  <text class="l" x="505" y="86">downstream: lower</text>
+  <text class="t" x="490" y="170" text-anchor="middle">Was the pollutant destroyed? Three different answers:</text>
+  <rect x="20" y="190" width="300" height="270" rx="12" fill="#f7f9fb" stroke="#c9d1da"/>
+  <text class="h" x="170" y="222">1  Dilution</text>
+  <rect x="340" y="190" width="300" height="270" rx="12" fill="#f7f9fb" stroke="#c9d1da"/>
+  <text class="h" x="490" y="222">2  Transfer</text>
+  <rect x="660" y="190" width="300" height="270" rx="12" fill="#f7f9fb" stroke="#c9d1da"/>
+  <text class="h" x="810" y="222">3  Transformation</text>
+  <rect x="35" y="245" width="90" height="120" fill="#d6e6f2"/>
+  <circle cx="62" cy="309" r="7" fill="#AD4825"/>
+  <circle cx="89" cy="262" r="7" fill="#AD4825"/>
+  <circle cx="46" cy="339" r="7" fill="#AD4825"/>
+  <circle cx="63" cy="278" r="7" fill="#AD4825"/>
+  <circle cx="115" cy="302" r="7" fill="#AD4825"/>
+  <circle cx="89" cy="342" r="7" fill="#AD4825"/>
+  <circle cx="98" cy="314" r="7" fill="#AD4825"/>
+  <circle cx="66" cy="258" r="7" fill="#AD4825"/>
+  <line class="ln" x1="132" y1="305" x2="160" y2="305" marker-end="url(#ar)"/>
+  <rect x="168" y="245" width="140" height="120" fill="#d6e6f2"/>
+  <circle cx="282" cy="302" r="7" fill="#AD4825"/>
+  <circle cx="264" cy="343" r="7" fill="#AD4825"/>
+  <circle cx="225" cy="335" r="7" fill="#AD4825"/>
+  <circle cx="283" cy="265" r="7" fill="#AD4825"/>
+  <circle cx="194" cy="277" r="7" fill="#AD4825"/>
+  <circle cx="253" cy="285" r="7" fill="#AD4825"/>
+  <circle cx="220" cy="314" r="7" fill="#AD4825"/>
+  <circle cx="281" cy="354" r="7" fill="#AD4825"/>
+  <text class="lc" x="170" y="395">8 dots before, 8 dots after</text><text class="n" x="170" y="425">same amount, more water</text>
+  <rect x="360" y="245" width="260" height="30" fill="#eef4fa"/><text class="l" x="368" y="266" font-size="15">air</text>
+  <rect x="360" y="275" width="260" height="70" fill="#d6e6f2"/>
+  <circle cx="544" cy="293" r="7" fill="#AD4825"/>
+  <circle cx="582" cy="333" r="7" fill="#AD4825"/>
+  <circle cx="591" cy="313" r="7" fill="#AD4825"/>
+  <circle cx="467" cy="288" r="7" fill="#AD4825"/>
+  <rect x="360" y="345" width="260" height="35" fill="#e6dccb"/>
+  <circle cx="581" cy="371" r="6" fill="#AD4825"/>
+  <circle cx="427" cy="368" r="6" fill="#AD4825"/>
+  <circle cx="492" cy="357" r="6" fill="#AD4825"/>
+  <circle cx="520" cy="258" r="6" fill="#AD4825"/>
+  <text class="l" x="368" y="300" font-size="15">water</text><text class="l" x="368" y="370" font-size="15">sediment</text>
+  <text class="lc" x="490" y="410">still in the system,</text><text class="n" x="490" y="435">in another compartment</text>
+  <rect x="680" y="245" width="260" height="120" fill="#d6e6f2"/>
+  <circle cx="768" cy="270" r="7" fill="#AD4825"/>
+  <circle cx="846" cy="262" r="7" fill="#AD4825"/>
+  <circle cx="819" cy="292" r="7" fill="#AD4825"/>
+  <path d="M704,298 L712,313 L696,313 Z" fill="#25713E"/>
+  <path d="M707,256 L715,271 L699,271 Z" fill="#25713E"/>
+  <path d="M792,330 L800,345 L784,345 Z" fill="#25713E"/>
+  <path d="M720,269 L728,284 L712,284 Z" fill="#25713E"/>
+  <path d="M841,342 L849,357 L833,357 Z" fill="#25713E"/>
+  <text class="lc" x="810" y="395">less parent, atoms remain</text><text class="n" x="810" y="425">a chemical change</text>
+</svg>

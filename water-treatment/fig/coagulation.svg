@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: negatively charged colloids repel; Fe3+ hydrolyses to hydroxide flocs that neutralise and sweep them -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <rect x="20" y="20" width="310" height="300" rx="10" fill="#d6e6f2" stroke="none" stroke-width="0"/>
+  <text x="175" y="50" font-size="21" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >Stable colloids</text>
+  <circle cx="70" cy="100" r="12" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <text x="70" y="105" font-size="16" fill="white" text-anchor="middle" font-weight="bold" >−</text>
+  <circle cx="140" cy="100" r="12" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <text x="140" y="105" font-size="16" fill="white" text-anchor="middle" font-weight="bold" >−</text>
+  <circle cx="210" cy="100" r="12" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <text x="210" y="105" font-size="16" fill="white" text-anchor="middle" font-weight="bold" >−</text>
+  <circle cx="280" cy="100" r="12" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <text x="280" y="105" font-size="16" fill="white" text-anchor="middle" font-weight="bold" >−</text>
+  <circle cx="70" cy="170" r="12" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <text x="70" y="175" font-size="16" fill="white" text-anchor="middle" font-weight="bold" >−</text>
+  <circle cx="140" cy="170" r="12" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <text x="140" y="175" font-size="16" fill="white" text-anchor="middle" font-weight="bold" >−</text>
+  <circle cx="210" cy="170" r="12" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <text x="210" y="175" font-size="16" fill="white" text-anchor="middle" font-weight="bold" >−</text>
+  <circle cx="280" cy="170" r="12" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <text x="280" y="175" font-size="16" fill="white" text-anchor="middle" font-weight="bold" >−</text>
+  <circle cx="70" cy="240" r="12" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <text x="70" y="245" font-size="16" fill="white" text-anchor="middle" font-weight="bold" >−</text>
+  <circle cx="140" cy="240" r="12" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <text x="140" y="245" font-size="16" fill="white" text-anchor="middle" font-weight="bold" >−</text>
+  <circle cx="210" cy="240" r="12" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <text x="210" y="245" font-size="16" fill="white" text-anchor="middle" font-weight="bold" >−</text>
+  <circle cx="280" cy="240" r="12" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <text x="280" y="245" font-size="16" fill="white" text-anchor="middle" font-weight="bold" >−</text>
+  <text x="175" y="300" font-size="16" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >same charge: they repel</text>
+  <line x1="332" y1="170" x2="348" y2="170" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="350" y="20" width="310" height="300" rx="10" fill="#d6e6f2" stroke="none" stroke-width="0"/>
+  <text x="505" y="50" font-size="21" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >Add Fe³⁺: hydrolysis</text>
+  <circle cx="444" cy="105" r="10" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <circle cx="481" cy="113" r="10" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <circle cx="405" cy="150" r="10" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <circle cx="601" cy="210" r="10" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <circle cx="566" cy="123" r="10" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <circle cx="513" cy="132" r="10" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <circle cx="430" cy="106" r="10" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <circle cx="439" cy="229" r="10" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <circle cx="574" cy="211" r="14" fill="none" stroke="#c27c3a" stroke-width="3"/>
+  <circle cx="568" cy="119" r="14" fill="none" stroke="#c27c3a" stroke-width="3"/>
+  <circle cx="465" cy="184" r="14" fill="none" stroke="#c27c3a" stroke-width="3"/>
+  <circle cx="554" cy="218" r="14" fill="none" stroke="#c27c3a" stroke-width="3"/>
+  <circle cx="585" cy="103" r="14" fill="none" stroke="#c27c3a" stroke-width="3"/>
+  <circle cx="527" cy="191" r="14" fill="none" stroke="#c27c3a" stroke-width="3"/>
+  <text x="505" y="280" font-size="16" fill="#c27c3a" text-anchor="middle" font-weight="bold" >Fe³⁺ + 3H₂O → Fe(OH)₃(s) + 3H⁺</text>
+  <text x="505" y="302" font-size="15" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >charge neutralised, H⁺ released</text>
+  <line x1="662" y1="170" x2="678" y2="170" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="680" y="20" width="310" height="300" rx="10" fill="#d6e6f2" stroke="none" stroke-width="0"/>
+  <text x="835" y="50" font-size="21" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >Flocs settle</text>
+  <path d="M700,300 Q835,270 970,300 L970,320 L700,320 Z" stroke="none" stroke-width="0" fill="#8a6a3f"/>
+  <ellipse cx="740" cy="230" rx="26" ry="18" fill="#c27c3a" opacity="0.85"/>
+  <circle cx="732" cy="228" r="6" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <circle cx="749" cy="233" r="6" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <path d="M740,252 L740,272" stroke="#1b2a3a" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+  <ellipse cx="805" cy="170" rx="26" ry="18" fill="#c27c3a" opacity="0.85"/>
+  <circle cx="797" cy="168" r="6" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <circle cx="814" cy="173" r="6" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <path d="M805,192 L805,212" stroke="#1b2a3a" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+  <ellipse cx="870" cy="230" rx="26" ry="18" fill="#c27c3a" opacity="0.85"/>
+  <circle cx="862" cy="228" r="6" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <circle cx="879" cy="233" r="6" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <path d="M870,252 L870,272" stroke="#1b2a3a" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+  <ellipse cx="935" cy="170" rx="26" ry="18" fill="#c27c3a" opacity="0.85"/>
+  <circle cx="927" cy="168" r="6" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <circle cx="944" cy="173" r="6" fill="#b59a6e" stroke="none" stroke-width="2"/>
+  <path d="M935,192 L935,212" stroke="#1b2a3a" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+  <text x="835" y="312" font-size="16" fill="white" text-anchor="middle" font-weight="bold" >sludge</text>
+  <text x="500" y="360" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="bold" >The coagulant does not destroy anything: it moves particles and itself into the sludge.</text>
+</svg>

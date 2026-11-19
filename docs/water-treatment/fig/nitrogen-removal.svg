@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="400" viewBox="0 0 1000 400" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: pre-denitrification: nitrate from the aerated tank is recycled to an anoxic tank where wastewater carbon is the donor -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a3a"/></marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2468A0"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25713E"/></marker>
+  </defs>
+  <rect x="120" y="120" width="300" height="170" rx="10" fill="#dbe6f0" stroke="#2468A0" stroke-width="3"/>
+  <rect x="500" y="120" width="330" height="170" rx="10" fill="#e3f0e3" stroke="#25713E" stroke-width="3"/>
+  <text x="270" y="150" font-size="19" fill="#2468A0" text-anchor="middle" font-weight="bold" >anoxic tank (no O₂)</text>
+  <text x="665" y="150" font-size="19" fill="#25713E" text-anchor="middle" font-weight="bold" >aerated tank (O₂)</text>
+  <text x="270" y="205" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >4NO₃⁻ + 5CH₂O + 4H⁺</text>
+  <text x="270" y="232" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >→ 2N₂ + 5CO₂ + 7H₂O</text>
+  <text x="665" y="205" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >NH₄⁺ + 2O₂</text>
+  <text x="665" y="232" font-size="18" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >→ NO₃⁻ + 2H⁺ + H₂O</text>
+  <text x="270" y="272" font-size="15" fill="#6b7785" text-anchor="middle" font-weight="normal" >donor: organic matter in the sewage</text>
+  <text x="665" y="272" font-size="15" fill="#6b7785" text-anchor="middle" font-weight="normal" >uses O₂ and alkalinity</text>
+  <line x1="20" y1="205" x2="115" y2="205" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="20" y="190.0" font-size="15" fill="#1b2a3a" text-anchor="start" font-weight="normal" >sewage:</text>
+  <text x="20" y="230" font-size="15" fill="#1b2a3a" text-anchor="start" font-weight="normal" >NH₄⁺ + CH₂O</text>
+  <line x1="422" y1="205" x2="497" y2="205" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="832" y1="205" x2="975" y2="205" stroke="#1b2a3a" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="900" y="190" font-size="15" fill="#1b2a3a" text-anchor="middle" font-weight="normal" >to settling</text>
+  <path d="M665,292 C665,370 270,370 270,294" stroke="#25713E" stroke-width="3" fill="none" marker-end="url(#arrG)"/>
+  <text x="468" y="362" font-size="16" fill="#25713E" text-anchor="middle" font-weight="bold" >internal recycle carries nitrate back</text>
+  <path d="M270,118 L270,50" stroke="#6b7785" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+  <text x="285" y="55" font-size="17" fill="#1b2a3a" text-anchor="start" font-weight="bold" >N₂ to air: nitrogen removed</text>
+  <path d="M600,118 L600,70" stroke="#2468A0" stroke-width="3" fill="none" marker-end="url(#arrB)"/>
+  <text x="600" y="60" font-size="10" fill="#1b2a3a" text-anchor="start" font-weight="normal" ></text>
+  <text x="615" y="85" font-size="15" fill="#2468A0" text-anchor="start" font-weight="normal" >air blown in</text>
+</svg>
