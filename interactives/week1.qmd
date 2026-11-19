@@ -53,4 +53,3 @@ The fluxes are **supplied acid inputs**, not sulfate or nitrate measurements ass
 
 Why is the week 1 value 0.0800 meq/L different from the residual acidity in the integrated catchment example? Identify the process omitted here.
 
-[All weekly demos](index.qmd)

@@ -55,4 +55,3 @@ This is a constructed **annual** equivalent budget, not a dynamic lake model. Ac
 
 What additional measurements would you need to connect this annual budget to a lake’s pH response and test whether neutralisation really changed?
 
-[All weekly demos](index.qmd)

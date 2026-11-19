@@ -34,7 +34,7 @@ requirements. Exact subsection and page assignments await book review.
 
 ## Weekly interactive demos
 
-Use the [five weekly demos](interactives/index.qmd) to change chemical conditions
+Use the five interactive demos, listed in orange under each week in the sidebar, to change chemical conditions
 and check the consequences before returning to a hand calculation. The working
 study-week grouping is atmosphere and balances; aquatic composition and carbonate;
 metals and surfaces; soils and contaminants; then synthesis. The pages link back

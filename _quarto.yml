@@ -48,8 +48,6 @@ website:
             href: overview.qmd
           - text: Glossary
             href: glossary.qmd
-          - text: Interactive demo guide
-            href: interactives/index.qmd
       # As in Quantitative Biology, the five week blocks occupy top-level
       # positions 3–7. styles.css assigns their stripes and tinted headers.
       - section: "Week 1: Environmental balances and atmosphere"

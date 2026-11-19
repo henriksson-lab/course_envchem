@@ -51,4 +51,3 @@ These are fictitious neutral compounds under rapid equilibrium with constant Kd.
 
 Under what change of model assumptions could stronger sorption affect the apparent parent persistence, rather than only the phase split?
 
-[All weekly demos](index.qmd)

@@ -51,4 +51,3 @@ Use dilute freshwater at 25 °C, pK₁ = 6.35, pK₂ = 10.33, and Kw = 10⁻¹�
 
 Explain why moving along a species curve is insufficient to simulate a specified acid addition unless the carbon and alkalinity constraints are also applied.
 
-[All weekly demos](index.qmd)

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: alkalinity counts how many H+ each species can still take up before reaching the CO2* / H2O reference state. -->
+  <defs>
+    <g id="slot"><circle r="17" fill="#fff" stroke="#c0392b" stroke-width="3" stroke-dasharray="5 4"/><text y="7" font-size="18" text-anchor="middle" fill="#c0392b" font-weight="bold">H⁺</text></g>
+    <g id="minus"><circle r="17" fill="#c0392b"/><text y="7" font-size="18" text-anchor="middle" fill="#fff" font-weight="bold">H⁺</text></g>
+  </defs>
+  <style>
+    .hd{font-size:18px;fill:#6b7785;font-weight:bold}
+    .sp{font-size:26px;font-weight:bold}
+    .rx{font-size:18px;fill:#1b2a3a}
+    .eq{font-size:24px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+  </style>
+  <text class="hd" x="30" y="30">SPECIES</text>
+  <text class="hd" x="200" y="30">H⁺ IT CAN STILL TAKE UP</text>
+  <text class="hd" x="470" y="30">ON THE WAY TO</text>
+  <text class="hd" x="790" y="30" text-anchor="middle">COUNTS AS</text>
+  <line x1="30" y1="42" x2="870" y2="42" stroke="#c9d1da" stroke-width="2"/>
+
+  <text class="sp" x="30" y="92" fill="#25713E">HCO₃⁻</text>
+  <use href="#slot" x="225" y="84"/>
+  <text class="rx" x="470" y="91">CO₂* + H₂O</text>
+  <text class="eq" x="790" y="93">+1</text>
+
+  <text class="sp" x="30" y="162" fill="#AD4825">CO₃²⁻</text>
+  <use href="#slot" x="225" y="154"/><use href="#slot" x="268" y="154"/>
+  <text class="rx" x="470" y="161">HCO₃⁻, then CO₂* + H₂O</text>
+  <text class="eq" x="790" y="163">+2</text>
+
+  <text class="sp" x="30" y="232" fill="#1b2a3a">OH⁻</text>
+  <use href="#slot" x="225" y="224"/>
+  <text class="rx" x="470" y="231">H₂O</text>
+  <text class="eq" x="790" y="233">+1</text>
+
+  <text class="sp" x="30" y="302" fill="#c0392b">H⁺</text>
+  <use href="#minus" x="225" y="294"/>
+  <text class="rx" x="270" y="301" fill="#c0392b">already free: uses up capacity</text>
+  <text class="eq" x="790" y="303">−1</text>
+
+  <rect x="30" y="335" width="840" height="52" rx="10" fill="#f6efe0"/>
+  <text x="450" y="369" text-anchor="middle" font-size="20" fill="#1b2a3a">CO₂* counts 0. It is the reference state: it cannot neutralise any more acid.</text>
+</svg>

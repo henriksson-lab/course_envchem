@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="380" viewBox="0 0 940 380" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: strong acid converts bicarbonate to CO2* in a closed water. Carbon is conserved; alkalinity falls by the dose. -->
+  <defs>
+    <g id="b"><circle r="15" fill="#25713E"/><text y="5" font-size="12" text-anchor="middle" fill="#fff" font-weight="bold">−</text></g>
+    <g id="c"><circle r="15" fill="#2468A0"/></g>
+    <g id="h"><circle r="13" fill="#c0392b"/><text y="5" font-size="13" text-anchor="middle" fill="#fff" font-weight="bold">H⁺</text></g>
+    <marker id="ar" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,6 L0,12 Z" fill="#1b2a3a"/></marker>
+  </defs>
+  <style>
+    .hd{font-size:22px;font-weight:bold;fill:#1b2a3a;text-anchor:middle}
+    .ct{font-size:18px;fill:#1b2a3a;text-anchor:middle}
+    .k{font-size:17px;fill:#1b2a3a}
+  </style>
+  <!-- before -->
+  <text class="hd" x="170" y="30">Before</text>
+  <rect x="30" y="45" width="280" height="200" rx="12" fill="#d6e6f2" stroke="#1b2a3a" stroke-width="2"/>
+  <use href="#b" x="70" y="85"/><use href="#b" x="125" y="80"/><use href="#b" x="180" y="92"/><use href="#b" x="235" y="82"/><use href="#b" x="275" y="110"/>
+  <use href="#b" x="80" y="145"/><use href="#b" x="140" y="150"/><use href="#b" x="200" y="140"/><use href="#b" x="255" y="165"/>
+  <use href="#b" x="100" y="205"/>
+  <use href="#c" x="170" y="205"/><use href="#c" x="235" y="215"/>
+  <text class="ct" x="170" y="275">10 HCO₃⁻ + 2 CO₂*</text>
+
+  <!-- acid -->
+  <use href="#h" x="400" y="110"/><use href="#h" x="440" y="110"/><use href="#h" x="480" y="110"/>
+  <text class="ct" x="440" y="80" fill="#c0392b" font-weight="bold">+ 3 H⁺ (strong acid)</text>
+  <line x1="350" y1="150" x2="530" y2="150" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <text class="ct" x="440" y="182">HCO₃⁻ + H⁺ → CO₂* + H₂O</text>
+
+  <!-- after -->
+  <text class="hd" x="710" y="30">After</text>
+  <rect x="570" y="45" width="280" height="200" rx="12" fill="#d6e6f2" stroke="#1b2a3a" stroke-width="2"/>
+  <use href="#b" x="610" y="85"/><use href="#b" x="665" y="80"/><use href="#b" x="720" y="92"/><use href="#b" x="775" y="82"/>
+  <use href="#b" x="620" y="145"/><use href="#b" x="680" y="150"/><use href="#b" x="740" y="140"/>
+  <use href="#c" x="815" y="110"/><use href="#c" x="795" y="165"/><use href="#c" x="640" y="205"/>
+  <use href="#c" x="710" y="205"/><use href="#c" x="775" y="215"/>
+  <text class="ct" x="710" y="275">7 HCO₃⁻ + 5 CO₂*</text>
+
+  <!-- bookkeeping -->
+  <rect x="30" y="300" width="880" height="70" rx="10" fill="#f6efe0"/>
+  <text class="k" x="60" y="330"><tspan font-weight="bold">Carbon:</tspan> 12 → 12 (conserved: C<tspan font-size="13" baseline-shift="sub">T</tspan> unchanged)</text>
+  <text class="k" x="60" y="356"><tspan font-weight="bold">Alkalinity:</tspan> 10 → 7 (falls by exactly the acid added)</text>
+  <text class="k" x="530" y="343"><tspan font-weight="bold">pH:</tspan> falls, because the HCO₃⁻ : CO₂* ratio fell</text>
+</svg>

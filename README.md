@@ -7,7 +7,6 @@ timetabling, and formal examination design remain outside scope.
 
 - [Rendered course home](docs/index.html)
 - [Course sequence and chapter map](overview.qmd)
-- [Five weekly interactive demos](interactives/index.qmd)
 - [Content plan and scope](contentplan.md)
 - [Instructor notes](instructor/README.md)
 - [Capability and practice map](instructor/coverage.md)

@@ -50,4 +50,3 @@ The fictitious metal has only free M²⁺ and one complex ML. **Free ligand** is
 
 Why would substituting dissolved total metal for free M²⁺ in the ion product give the wrong saturation check?
 
-[All weekly demos](index.qmd)

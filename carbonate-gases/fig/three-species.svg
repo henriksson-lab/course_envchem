@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="360" viewBox="0 0 980 360" font-family="Helvetica, Arial, sans-serif">
+  <!-- Concept: the three dissolved inorganic carbon forms as ball-and-stick sketches (not to scale). -->
+  <defs>
+    <radialGradient id="gC" cx=".35" cy=".35"><stop offset="0" stop-color="#777"/><stop offset="1" stop-color="#222"/></radialGradient>
+    <radialGradient id="gO" cx=".35" cy=".35"><stop offset="0" stop-color="#ff8a7a"/><stop offset="1" stop-color="#c0392b"/></radialGradient>
+    <radialGradient id="gH" cx=".35" cy=".35"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c9d1da"/></radialGradient>
+    <g id="C"><circle r="24" fill="url(#gC)"/></g>
+    <g id="O"><circle r="22" fill="url(#gO)"/></g>
+    <g id="H"><circle r="13" fill="url(#gH)" stroke="#8a96a3" stroke-width="1"/></g>
+    <marker id="ar" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,5 L0,10 Z" fill="#1b2a3a"/></marker>
+  </defs>
+  <style>
+    .b{stroke:#555;stroke-width:9;stroke-linecap:round}
+    .name{font-size:28px;font-weight:bold;text-anchor:middle}
+    .sub{font-size:17px;fill:#1b2a3a;text-anchor:middle}
+    .chg{font-size:24px;font-weight:bold;fill:#1b2a3a}
+    .step{font-size:20px;fill:#c0392b;font-weight:bold;text-anchor:middle}
+  </style>
+
+  <!-- CO2 -->
+  <g transform="translate(150,150)">
+    <line class="b" x1="-60" y1="0" x2="60" y2="0"/>
+    <use href="#O" x="-62" y="0"/><use href="#C" x="0" y="0"/><use href="#O" x="62" y="0"/>
+  </g>
+  <text class="name" x="150" y="255" fill="#2468A0">CO₂*</text>
+  <text class="sub" x="150" y="283">dissolved CO₂ (+ a little H₂CO₃)</text>
+  <text class="sub" x="150" y="306">no charge</text>
+
+  <!-- arrow 1 -->
+  <line x1="262" y1="150" x2="358" y2="150" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <text class="step" x="310" y="135">− H⁺</text>
+  <text class="sub" x="310" y="180">pK₁ = 6.35</text>
+
+  <!-- HCO3- -->
+  <g transform="translate(490,150)">
+    <line class="b" x1="0" y1="0" x2="0" y2="-66"/>
+    <line class="b" x1="0" y1="0" x2="-58" y2="34"/>
+    <line class="b" x1="0" y1="0" x2="58" y2="34"/>
+    <line class="b" x1="58" y1="34" x2="92" y2="10"/>
+    <use href="#O" x="0" y="-68"/><use href="#O" x="-60" y="35"/><use href="#O" x="60" y="35"/>
+    <use href="#H" x="94" y="8"/><use href="#C" x="0" y="0"/>
+    <text class="chg" x="-100" y="52">−</text>
+  </g>
+  <text class="name" x="490" y="255" fill="#25713E">HCO₃⁻</text>
+  <text class="sub" x="490" y="283">bicarbonate</text>
+  <text class="sub" x="490" y="306">charge −1</text>
+
+  <!-- arrow 2 -->
+  <line x1="612" y1="150" x2="708" y2="150" stroke="#1b2a3a" stroke-width="3" marker-end="url(#ar)"/>
+  <text class="step" x="660" y="135">− H⁺</text>
+  <text class="sub" x="660" y="180">pK₂ = 10.33</text>
+
+  <!-- CO3 2- -->
+  <g transform="translate(830,150)">
+    <line class="b" x1="0" y1="0" x2="0" y2="-66"/>
+    <line class="b" x1="0" y1="0" x2="-58" y2="34"/>
+    <line class="b" x1="0" y1="0" x2="58" y2="34"/>
+    <use href="#O" x="0" y="-68"/><use href="#O" x="-60" y="35"/><use href="#O" x="60" y="35"/>
+    <use href="#C" x="0" y="0"/>
+    <text class="chg" x="-102" y="52">−</text><text class="chg" x="86" y="52">−</text>
+  </g>
+  <text class="name" x="830" y="255" fill="#AD4825">CO₃²⁻</text>
+  <text class="sub" x="830" y="283">carbonate</text>
+  <text class="sub" x="830" y="306">charge −2</text>
+
+  <text x="490" y="345" text-anchor="middle" font-size="18" fill="#6b7785" font-style="italic">Same carbon atom throughout. Only hydrogen ions and charge change.</text>
+</svg>

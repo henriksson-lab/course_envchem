@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-413db55ba770fe0fb6d28e20abfdc651.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-073ca42b956148f7f9761d97a475d639.css">
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
@@ -144,6 +144,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Carbonate species and alkalinity</h1>
+  <p class="subtitle">Week 2 — Aquatic composition and carbonate chemistry</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -154,17 +155,24 @@ Environmental Chemistry
 </div>
 
 </section>
-<section id="same-ph-different-response" class="slide level2">
-<h2>Same pH, different response</h2>
-<p>Two constructed waters start at pH 7.50.</p>
+<section id="about-this-lecture" class="slide level2">
+<h2>About this lecture</h2>
+<div class="columns">
+<div class="column" style="width:56%;">
+<p>In the 1970s and 1980s, acid rain from European industry fell on southern Scandinavia. <strong>Thousands of lakes lost their fish.</strong> Yet other lakes that received the same rain hardly changed.</p>
+<p>The difference was not the rain. It was the <strong>chemistry already dissolved in the water</strong>, above all its dissolved inorganic carbon.</p>
+<p>Today you will learn to:</p>
 <ul>
-<li>Water A: total dissolved inorganic carbon = 1.00 mmol/L.</li>
-<li>Water B: total dissolved inorganic carbon = 0.100 mmol/L.</li>
-<li>Each receives 0.050 mmol/L of strong acid, with negligible dilution.</li>
+<li>name the <strong>three dissolved carbon species</strong> and predict which dominates at a given pH;</li>
+<li>tell a <strong>fraction</strong> apart from an <strong>amount</strong>;</li>
+<li>use <strong>alkalinity</strong>, the water’s acid-neutralising reserve, to predict how pH responds to acid.</li>
 </ul>
-<p>Which water changes more? What does pH alone leave out?</p>
+<p>Last lecture you met charge balance and a simple acid distribution. Today you apply both to the most important acid–base system in natural water.</p>
+</div><div class="column" style="width:44%;">
+<p><img data-src="img/acid-rain-woods.jpg" style="width:100.0%"> <span class="credit">Forest damaged by acid deposition, Jizera Mountains, Czech Republic. Photo: Lovecz, public domain, Wikimedia Commons.</span></p>
+</div></div>
 <aside class="notes">
-<p>This is a closed-water thought experiment: no gas exchange, minerals, biological carbon transformations, or noncarbonate buffers. Background counterions provide electroneutrality; this is not a recipe for preparing a solution from CO2 alone.</p>
+<p>Open with the story, not the equations. Acid deposition damaged forests across central Europe and acidified lakes across southern Norway and Sweden. The striking fact is the patchiness: two lakes a few kilometres apart could receive the same acidic rain, and one lost its fish while the other barely changed. By the end of the lecture students should be able to explain that difference with one quantity, alkalinity, and to understand why it is not the same thing as pH. Mention that this lecture is the first of a pair. The second deck adds gas exchange and minerals. Everything today is a closed-water model at 25 °C.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -177,28 +185,141 @@ Environmental Chemistry
           display:block!important;
       }</style></aside>
 </section>
-<section id="three-questions-for-this-lecture" class="slide level2">
-<h2>Three questions for this lecture</h2>
-<ol type="1">
-<li>Which dissolved carbon species dominate at a given pH?</li>
-<li>How do species fractions differ from concentrations?</li>
-<li>Why do pH and alkalinity describe different aspects of water?</li>
-</ol>
-<p>Use 25 °C and the dilute freshwater approximation throughout.</p>
-</section>
-<section id="one-element-three-dissolved-pools" class="slide level2">
-<h2>One element, three dissolved pools</h2>
-<p><span class="math display">C_T=[\mathrm{CO_2^*}]+[\mathrm{HCO_3^-}]+[\mathrm{CO_3^{2-}}]</span></p>
-<p><span class="math inline">\mathrm{CO_2^*}</span> groups dissolved carbon dioxide and carbonic acid.</p>
-<p>Changing species redistributes carbon. It does not itself remove dissolved carbon.</p>
-</section>
-<section id="carbonate-reactions-release-hydrogen-ions" class="slide level2">
-<h2>Carbonate reactions release hydrogen ions</h2>
-<p><span class="math display">\mathrm{CO_2^*+H_2O\rightleftharpoons H^++HCO_3^-}</span> <span class="math display">\mathrm{HCO_3^-\rightleftharpoons H^++CO_3^{2-}}</span></p>
-<p>Use effective <span class="math inline">pK_1=6.35</span> and <span class="math inline">pK_2=10.33</span>.</p>
-<p>Adding acid shifts both equilibria toward the left.</p>
+<section id="a-puzzle-from-the-swedish-forests" class="slide level2">
+<h2>A puzzle from the Swedish forests</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/norra-kvill-lake.jpg" style="width:100.0%"> <span class="credit">Forest lake, Norra Kvill National Park, Småland. Photo: Pudelek, CC BY-SA 4.0, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:50%;">
+<p>Much of Sweden sits on <strong>granite and gneiss</strong>. These rocks weather slowly and release few dissolved ions. Lakes on them are clear and <strong>soft</strong>: they contain little dissolved material.</p>
+<p>Where the bedrock or soil contains <strong>limestone</strong> (calcium carbonate), the water carries much more dissolved calcium and carbonate species.</p>
+<p>Both kinds of lake received similar acid deposition. The soft-water lakes acidified. The limestone lakes did not.</p>
+<p><strong>Question for this lecture:</strong> what is it about dissolved carbonate that lets a lake absorb acid?</p>
+</div></div>
 <aside class="notes">
-<p>CO2* is a combined analytical pool. The first displayed reaction is shorthand for dissolution/hydration followed by acid dissociation, not an elementary reaction. All constants and the model definition are on the reference sheet.</p>
+<p>Ask students to look at the photo: a beautiful, clear forest lake. Clarity here is partly a sign of low dissolved content. Explain that the bedrock sets the starting composition of the water. Granite is mostly silicate minerals that weather slowly; limestone dissolves comparatively quickly and supplies calcium and carbonate species. Do not explain the mechanism yet. Pose the question and leave it open: the rest of the lecture builds the tools to answer it. If students already say “buffering”, ask them what is doing the buffering and how much of it there is. That is exactly the distinction between pH and alkalinity we will make.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="two-lakes-two-ion-signatures" class="slide level2">
+<h2>Two lakes, two ion signatures</h2>
+
+<img data-src="fig/ion-balance-lakes.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:88.0%"><p>Each column adds up charge (µeq/L). Cations and anions must balance, as in the last lecture. In the <strong>limestone lake</strong>, most negative charge is carried by <strong>bicarbonate (HCO₃⁻)</strong>. In the <strong>granite lake</strong>, bicarbonate is almost absent and sulfate from acid rain dominates.</p>
+<aside class="notes">
+<p>These are constructed compositions, but in the typical range for a soft-water lake and a hard-water lake. Point out three things. First, the scales differ by about a factor of ten: the limestone lake simply contains much more dissolved material. Second, in the limestone lake bicarbonate is the dominant anion. Third, in the granite lake sulfate, largely from deposition, takes the place of bicarbonate, and a little free hydrogen ion appears among the cations. Remind students of the charge balance from the previous lecture: every column pair must sum to the same charge. We will return to this figure when we define alkalinity, because alkalinity can be read from exactly this kind of balance.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="swedens-response-add-limestone" class="slide level2">
+<h2>Sweden’s response: add limestone</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><img data-src="img/forest-liming.jpg" style="width:100.0%"> <span class="credit">Forest liming by helicopter, Kungsbacka, Sweden. Photo: Bulver, CC BY-SA 3.0, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:55%;">
+<p>Since the late 1970s, Sweden has spread finely ground <strong>limestone (CaCO₃)</strong> on thousands of lakes, streams, wetlands and forest soils. Sweden has run one of the largest liming programmes in the world.</p>
+<p>Liming does not remove the acid rain. It adds something to the water that <strong>takes up hydrogen ions</strong>.</p>
+<p>To understand why it works and how much is needed, we need to know:</p>
+<ol type="1">
+<li>what forms carbon takes when it is dissolved;</li>
+<li>how those forms trade hydrogen ions;</li>
+<li>how to count the water’s capacity to neutralise acid.</li>
+</ol>
+</div></div>
+<aside class="notes">
+<p>Liming is a large and long-running chemical intervention, and a good example of chemistry used for management. Lime is spread from boats, from helicopters as in this photo, or on wetlands upstream so that it dissolves gradually. Ask the class: why would adding a rock help? Some will say “it is basic”. Push further: what does basic mean in terms of species, and how much rock is enough? Those questions motivate the three numbered steps. We answer the dosing question near the end of the lecture with a back-of-the-envelope calculation.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-laboratory-version-of-the-puzzle" class="slide level2">
+<h2>A laboratory version of the puzzle</h2>
+
+<img data-src="fig/two-beakers.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:62.0%"><p>Two <strong>constructed</strong> waters both start at <strong>pH 7.50</strong>. Water A contains ten times more dissolved inorganic carbon than Water B. Each receives the same small dose of strong acid, with negligible dilution.</p>
+<p><strong>Predict before we calculate:</strong> which pH falls more? What does a pH reading alone leave out?</p>
+<aside class="notes">
+<p>This is the lake puzzle stripped down to its chemistry: same starting pH, different carbon inventory, same acid input. Give students thirty seconds to commit to a prediction, and ask for a show of hands. Many will say they change equally, because they have learned that pH describes acidity. The model assumptions: closed water, so no gas exchange; no minerals, organic acids or other buffers; 25 °C; background counter-ions keep the solution electrically neutral. This is not a recipe for preparing either water. We return to these two beakers with numbers about two thirds of the way through the lecture.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="where-dissolved-carbon-comes-from" class="slide level2">
+<h2>Where dissolved carbon comes from</h2>
+
+<img data-src="fig/carbon-pathways.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:82.0%"><p>Carbon enters water from the <strong>air</strong> (carbon dioxide), from <strong>rocks</strong> (carbonate minerals) and from <strong>organisms</strong> (respiration). Once dissolved, it is shared between three forms that convert into each other by gaining or losing H⁺. <strong>Today we work inside the dashed box.</strong></p>
+<aside class="notes">
+<p>Give the big picture once so that later details have a place. Carbon dioxide from the air dissolves. Carbonate minerals dissolve or precipitate. Organisms respire carbon dioxide into the water or remove it by photosynthesis. Inside the water, three forms interconvert very quickly by proton exchange. In this lecture we hold the total amount of dissolved carbon fixed, a closed system, and study only the exchange inside the box. The next deck opens the box: gas exchange with the atmosphere and the calcite mineral. Separating these processes is a key skill. Many wrong environmental explanations mix up “carbon changed form” with “carbon was added or lost”.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="one-element-three-dissolved-forms" class="slide level2">
+<h2>One element, three dissolved forms</h2>
+
+<img data-src="fig/three-species.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:78.0%"><p><span class="math display">C_T=[\mathrm{CO_2^*}]+[\mathrm{HCO_3^-}]+[\mathrm{CO_3^{2-}}]</span></p>
+<p><strong>C<sub>T</sub></strong> is the total dissolved inorganic carbon. CO₂* groups dissolved CO₂ with the small amount of carbonic acid (H₂CO₃). When one species converts to another, carbon is <strong>redistributed</strong>, not removed.</p>
+<aside class="notes">
+<p>Show the structures so the formulas become molecules. CO2 is neutral and linear. Bicarbonate carries one negative charge and still has one hydrogen it can lose. Carbonate carries two negative charges. The star in CO2-star is a bookkeeping convention: true carbonic acid is a small fraction of the dissolved pool, so we group it with dissolved CO2 and treat the sum as one species. C_T is the conserved quantity in a closed water. Stress the sentence at the bottom. When acid converts bicarbonate to CO2-star, the carbon is still in the bottle. That will matter when we explain why the two waters behave differently.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="each-step-trades-a-hydrogen-ion" class="slide level2">
+<h2>Each step trades a hydrogen ion</h2>
+<p><span class="math display">\mathrm{CO_2^*+H_2O\rightleftharpoons H^++HCO_3^-}\qquad pK_1=6.35</span> <span class="math display">\mathrm{HCO_3^-\rightleftharpoons H^++CO_3^{2-}}\qquad pK_2=10.33</span></p>
+
+<img data-src="fig/predominance.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:85.0%"><p>Low pH (many H⁺) pushes both equilibria to the left; high pH pushes them to the right. Natural freshwaters (pH ≈ 6–8.5) sit mostly in the <strong>bicarbonate</strong> region.</p>
+<aside class="notes">
+<p>These are effective constants for 25 °C dilute freshwater, taken from the reference sheet. The first reaction is shorthand: it combines dissolution, hydration and acid dissociation. It is not an elementary step. The predominance bar is the one picture to remember. Below pK1 the neutral CO2 pool dominates. Between the two pK values bicarbonate dominates. Above pK2 carbonate dominates. Adding acid pushes species left: hydrogen ions are bound into bicarbonate and CO2-star instead of staying free. That binding is the molecular meaning of buffering. Point out that ordinary lakes and rivers sit in the green region, so bicarbonate is the workhorse species of freshwater chemistry.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -213,29 +334,111 @@ Environmental Chemistry
 </section>
 <section id="from-an-equilibrium-expression-to-a-ratio" class="slide level2">
 <h2>From an equilibrium expression to a ratio</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <p><span class="math display">K_1=\frac{[\mathrm{H^+}][\mathrm{HCO_3^-}]}{[\mathrm{CO_2^*}]}</span></p>
-<p>Since <span class="math inline">[\mathrm{H^+}]\approx10^{-\mathrm{pH}}</span> mol/L,</p>
-<p><span class="math display">\frac{[\mathrm{HCO_3^-}]}{[\mathrm{CO_2^*}]}=10^{\mathrm{pH}-6.35}.</span></p>
-<p>At pH 7.35 the ratio is 10. At pH 6.35 it is 1.</p>
-</section>
-<section id="include-the-second-dissociation" class="slide level2">
-<h2>Include the second dissociation</h2>
-<p><span class="math display">r_1=10^{\mathrm{pH}-6.35},\qquad r_2=10^{\mathrm{pH}-10.33}</span></p>
-<p>The three proportions are <span class="math inline">1:r_1:r_1r_2</span>.</p>
-<p>At pH 8.35 they are approximately <span class="math inline">1:100:1.047</span>.</p>
-<p>Divide each by their sum to obtain fractions: <span class="math inline">0.00980</span>, <span class="math inline">0.97994</span>, <span class="math inline">0.01026</span>.</p>
-</section>
-<section id="read-the-distribution-diagram" class="slide level2">
-<h2>Read the distribution diagram</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="speciation.svg" height="430"></p>
-<figcaption>Model species fractions at prescribed pH values, 25 °C.</figcaption>
-</figure>
-</div>
-<p>Which species dominates near pH 8? Where do adjacent fractions cross?</p>
+<p>Rearrange, and use <span class="math inline">[\mathrm{H^+}]\approx10^{-\mathrm{pH}}</span> mol/L:</p>
+<p><span class="math display">\frac{[\mathrm{HCO_3^-}]}{[\mathrm{CO_2^*}]}=\frac{K_1}{[\mathrm{H^+}]}=10^{\,\mathrm{pH}-6.35}</span></p>
+<ul>
+<li>pH 6.35: ratio <strong>1</strong> (equal amounts)</li>
+<li>pH 7.35: ratio <strong>10</strong></li>
+<li>pH 8.35: ratio <strong>100</strong></li>
+</ul>
+<p>The ratio depends only on pH, not on how much carbon there is.</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="fig/ratio-line.svg" style="width:100.0%"></p>
+</div></div>
 <aside class="notes">
-<p>At each pKa the corresponding adjacent species are equal. Neither is exactly half of all carbon because the third species still exists. The horizontal axis is supplied pH, not acid dose or elapsed time.</p>
+<p>This is the most useful single calculation in the lecture, and it can be done in your head. Dividing K1 by the hydrogen-ion concentration gives the ratio of the two neighbouring species. In logarithmic form it is a straight line of slope one: every pH unit multiplies the ratio by ten. Have students say the ratios aloud for pH 5.35 and 8.35. Emphasise the last line. The ratio contains no information about the total amount of carbon, which is the seed of today’s main point. We use the approximation that hydrogen-ion activity equals its concentration, appropriate for dilute freshwater. The reference sheet states it explicitly.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="add-the-second-step-and-normalise" class="slide level2">
+<h2>Add the second step and normalise</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">r_1=10^{\mathrm{pH}-6.35},\qquad r_2=10^{\mathrm{pH}-10.33}</span></p>
+<p>The three species stand in proportion</p>
+<p><span class="math display">[\mathrm{CO_2^*}]:[\mathrm{HCO_3^-}]:[\mathrm{CO_3^{2-}}]=1:r_1:r_1r_2</span></p>
+<p><strong>Worked example, pH 8.35:</strong> <span class="math inline">r_1=100</span>, <span class="math inline">r_2=0.01047</span>, so 1 : 100 : 1.047.</p>
+<p>Divide each by the sum, 102.047, to get <strong>fractions α</strong>:</p>
+<p>α₀ = 0.0098 · α₁ = 0.9799 · α₂ = 0.0103</p>
+<p>Check: they sum to 1.</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="fig/fractions-835.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>Chain the two ratios. Bicarbonate relative to CO2-star is r1. Carbonate relative to bicarbonate is r2. So carbonate relative to CO2-star is r1 times r2. Dividing by the sum converts the proportions to fractions that add to one. These are written alpha-zero, alpha-one and alpha-two after the number of protons lost. At pH 8.35, almost all carbon is bicarbonate and the other two are about one percent each. This pH is near the bicarbonate maximum, halfway between the two pK values on the log scale. Students will repeat this exact calculation in exercise 1. Encourage them to always check that the fractions sum to one.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-distribution-diagram" class="slide level2">
+<h2>The distribution diagram</h2>
+
+<img data-src="fig/speciation-annotated.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:88.0%"><p>Repeat the calculation at every pH and you get this diagram. <strong>Where curves cross, pH = pK.</strong> Each species dominates across about four pH units. The x-axis is a <em>prescribed</em> pH, not an amount of acid added and not time.</p>
+<aside class="notes">
+<p>This is the same calculation as the previous slide, repeated across the pH axis by the R script in the activity. Read it with the students. Find pH 8.35 and confirm the green curve is near 0.98. Find the crossing points: at pH 6.35 CO2-star equals bicarbonate, and at 10.33 bicarbonate equals carbonate. At each crossing the two species are equal, but neither is exactly one half, because the third species is still present in a small amount. A common misreading treats the x-axis as acid added or as time. It is neither: each vertical slice is a separate water with that pH. To find what pH a water reaches after acid, we need alkalinity.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="where-real-waters-sit" class="slide level2">
+<h2>Where real waters sit</h2>
+
+<img data-src="fig/real-waters.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:88.0%"><p>Clean rain (about 5.6) is acidic just from dissolved CO₂. Most lakes and rivers lie between 6.5 and 8.3, where <strong>bicarbonate dominates</strong>. Surface seawater is near 8.1. An acidified soft-water lake can fall below pH 5, where nearly all carbon is CO₂*.</p>
+<aside class="notes">
+<p>Anchor the abstract diagram in real waters; the ranges are approximate. Rain in equilibrium with atmospheric carbon dioxide is around pH 5.6 even without pollution, so acid rain means rain well below that. Most freshwaters and the surface ocean sit in the bicarbonate region. An acidified lake at pH 4.5 to 5 has almost no bicarbonate left. Students should notice that this is the same situation as the granite lake’s ion bar, where bicarbonate had nearly vanished. The diagram explains which species is present. It does not yet explain why one water reaches pH 5 and another stays at 7.5. For that we need amounts.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="check-yourself" class="slide level2">
+<h2>Check yourself</h2>
+<div class="checkbox">
+<p>Use the distribution diagram and the ratio rule. No calculator needed.</p>
+<ol type="1">
+<li>At pH 5.35, what is [HCO₃⁻] / [CO₂*]?</li>
+<li>At pH 10.33, which two species are equal? Is either exactly half of C<sub>T</sub>?</li>
+<li>A lake is at pH 7.35 with C<sub>T</sub> = 0.50 mmol/L. Roughly how much of the carbon is bicarbonate?</li>
+<li>True or false: “At pH 8 a water has a lot of bicarbonate.”</li>
+</ol>
+</div>
+<aside class="notes">
+<p>Answers. One: 0.1, so one bicarbonate for every ten CO2-star. Two: bicarbonate and carbonate are equal at pK2. Neither is exactly one half, because a small CO2-star fraction remains, though at this pH it is tiny. Three: the ratio is ten, so about ten elevenths, roughly 0.45 mmol/L of bicarbonate. Four is the trap. At pH 8 a large fraction of the carbon is bicarbonate, but whether that is a lot depends on how much carbon there is. Use the trap to move to the next slide: fractions are not amounts.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -250,62 +453,20 @@ Environmental Chemistry
 </section>
 <section id="fractions-do-not-give-the-amount" class="slide level2">
 <h2>Fractions do not give the amount</h2>
-<p>At pH 8.35, bicarbonate is about 0.980 of <span class="math inline">C_T</span>.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="fig/fraction-vs-amount.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:50%;">
+<p>Both waters are at pH 7.50, so they have <strong>identical fractions</strong>: about 93% bicarbonate and 7% CO₂*.</p>
+<p>But the amount of bicarbonate is</p>
 <ul>
-<li>If <span class="math inline">C_T=1.00</span> mmol/L, bicarbonate is about 0.980 mmol/L.</li>
-<li>If <span class="math inline">C_T=0.100</span> mmol/L, bicarbonate is about 0.0980 mmol/L.</li>
+<li>Water A: 0.93 mmol/L</li>
+<li>Water B: 0.093 mmol/L</li>
 </ul>
-<p>The fraction is the same. The acid-neutralising inventories differ.</p>
-</section>
-<section id="alkalinity-counts-charge-equivalents" class="slide level2">
-<h2>Alkalinity counts charge equivalents</h2>
-<p><span class="math display">A_T=[\mathrm{HCO_3^-}]+2[\mathrm{CO_3^{2-}}]
-+[\mathrm{OH^-}]-[\mathrm{H^+}]</span></p>
-<p>One mole of bicarbonate contributes one equivalent; carbonate contributes two.</p>
-<p>pH describes the current hydrogen-ion activity. Alkalinity describes an acid-neutralising balance. Buffer capacity describes resistance to a small pH change.</p>
-</section>
-<section id="acid-changes-the-balance" class="slide level2">
-<h2>Acid changes the balance</h2>
-<p><span class="math display">\mathrm{HCO_3^-+H^+\rightarrow CO_2^*+H_2O}</span></p>
-<p>For a strong-acid input <span class="math inline">q</span> eq/L:</p>
-<p><span class="math display">A_{T,\mathrm{after}}=A_{T,\mathrm{before}}-q.</span></p>
-<p>In our closed example <span class="math inline">C_T</span> stays fixed. pH must adjust to the new balance. Do not subtract an acid dose directly from a pH value.</p>
-</section>
-<section id="return-to-the-two-waters" class="slide level2">
-<h2>Return to the two waters</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 26%">
-<col style="width: 26%">
-<col style="width: 26%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Constructed water</th>
-<th style="text-align: right;">Initial alkalinity (meq/L)</th>
-<th style="text-align: right;">After acid (meq/L)</th>
-<th style="text-align: right;">Final model pH</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>A</td>
-<td style="text-align: right;">0.9356</td>
-<td style="text-align: right;">0.8856</td>
-<td style="text-align: right;">7.235</td>
-</tr>
-<tr class="even">
-<td>B</td>
-<td style="text-align: right;">0.09382</td>
-<td style="text-align: right;">0.04382</td>
-<td style="text-align: right;">6.252</td>
-</tr>
-</tbody>
-</table>
-<p>The same acid dose consumes a much larger fraction of B’s alkalinity. Final pH values solve the carbon and alkalinity balances together.</p>
+<p><strong>pH sets the shape of the column; C<sub>T</sub> sets its height.</strong> Each bicarbonate ion can take up one H⁺. Water A has ten times as many to offer.</p>
+</div></div>
 <aside class="notes">
-<p>Students calculate the alkalinity changes and interpret the supplied final pHs. They are not required to implement a numerical equilibrium solver. The instructor verification script checks the final states. These are model results, not field data.</p>
+<p>This is the turning point of the lecture. A pH measurement fixes the proportions but not the amount. Only the amount of bicarbonate and carbonate determines how much acid can be absorbed before the species run out. Make the physical picture concrete: each bicarbonate ion is a site that can bind one incoming hydrogen ion. Water A has ten times as many of those sites per litre. In the lake story, the granite lake is Water B, or worse, and the limestone lake is Water A. We now need a quantity that counts these sites properly, including the fact that carbonate can take up two hydrogen ions. That quantity is alkalinity.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -318,16 +479,296 @@ Environmental Chemistry
           display:block!important;
       }</style></aside>
 </section>
-<section id="explain-before-computing" class="slide level2">
-<h2>Explain before computing</h2>
+<section id="alkalinity-counts-the-acid-neutralising-capacity" class="slide level2">
+<h2>Alkalinity counts the acid-neutralising capacity</h2>
+
+<img data-src="fig/alkalinity-tokens.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:62.0%"><p><span class="math display">A_T=[\mathrm{HCO_3^-}]+2[\mathrm{CO_3^{2-}}]+[\mathrm{OH^-}]-[\mathrm{H^+}]</span></p>
+<p>Units: equivalents per litre (eq/L). Water A at pH 7.50: A<sub>T</sub> = 0.9356 meq/L. Water B: 0.0938 meq/L.</p>
+<aside class="notes">
+<p>Alkalinity counts how many hydrogen ions the water can take up before its carbonate species are pushed all the way to CO2-star. Bicarbonate takes up one, carbonate two, hydroxide one. Free hydrogen ions are already there and count negatively. CO2-star is the reference state and counts zero. That is why the units are equivalents, not moles. The two waters’ values follow directly from their fractions and C_T; check the numbers with the class. This carbonate-only definition ignores borate, organic acids, phosphate and other contributors. It is appropriate for our dilute freshwater model but needs checking for real samples, as the reference sheet notes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="alkalinity-is-the-charge-balance-gap" class="slide level2">
+<h2>Alkalinity is the charge-balance gap</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="fig/ion-balance-lakes.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:45%;">
+<p>Charge balance forces</p>
+<p><span class="math display">A_T\approx\sum\text{base cations}-\sum\text{strong-acid anions}</span></p>
+<p>Base cations: Ca²⁺, Mg²⁺, Na⁺, K⁺. Strong-acid anions: SO₄²⁻, Cl⁻, NO₃⁻.</p>
 <ul>
-<li>Predict how acid shifts species.</li>
-<li>Calculate one ratio and check its units.</li>
-<li>Use a diagram to see the whole pH range.</li>
-<li>State what is fixed before predicting a pH change.</li>
+<li><strong>Weathering of limestone</strong> adds Ca²⁺ with HCO₃⁻: alkalinity rises.</li>
+<li><strong>Acid deposition</strong> adds SO₄²⁻ with H⁺: alkalinity falls.</li>
 </ul>
-<p>Continue with <a href="../carbonate-gases/gases-lec.html">gas exchange and minerals</a> and the <a href="../carbonate-gases/exercise.html">exercise</a>. Constants and model sources are on the <a href="../carbonate-gases/reference.html">reference sheet</a>.</p>
-<p>Explore the <a href="../interactives/week2.html">week 2 demo</a>, then explain the result chemically.</p>
+<p>The lake’s acid reserve is set by its catchment.</p>
+</div></div>
+<aside class="notes">
+<p>Return to the two lakes from the start. Because cations and anions balance, whatever positive charge from calcium, magnesium, sodium and potassium is not matched by sulfate, chloride and nitrate must be matched by bicarbonate and carbonate, minus free hydrogen ion. That excess is alkalinity. This view links today to last lecture’s charge balance. It also explains the catchment story chemically. Limestone weathering supplies calcium balanced by bicarbonate. Sulfuric acid deposition supplies sulfate balanced by hydrogen ion, which consumes bicarbonate. In the granite lake the base cations barely exceed the strong-acid anions, so alkalinity is near zero or negative. The deposition unit develops this budget further.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-quantities-three-questions" class="slide level2">
+<h2>Three quantities, three questions</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Answers the question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>pH</strong></td>
+<td>How acidic is the water <em>now</em>?</td>
+</tr>
+<tr class="even">
+<td><strong>Alkalinity A<sub>T</sub></strong></td>
+<td>How much strong acid can it neutralise?</td>
+</tr>
+<tr class="odd">
+<td><strong>Buffer capacity β</strong></td>
+<td>How much acid moves pH by one unit, <em>here</em>?</td>
+</tr>
+</tbody>
+</table>
+<p>At pH 7.50, Water A’s buffer capacity is about <strong>ten times</strong> Water B’s.</p>
+</div><div class="column" style="width:52%;">
+<p><img data-src="fig/buffer-capacity.svg" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>Students often merge these three ideas into the word “buffering”. Separate them clearly. pH is a state: the current hydrogen-ion level. Alkalinity is an inventory: the total acid-neutralising capacity. Buffer capacity is a local slope: how much acid is needed per unit pH change at the current state. The plot shows buffer capacity across pH for both waters. It peaks near the pK values and has a minimum near pH 8.3. Water A’s curve lies about ten times above Water B’s in the freshwater range, because buffer capacity scales with C_T. We will not ask students to calculate beta by hand; the figure is for interpretation.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="acid-consumes-alkalinity-not-carbon" class="slide level2">
+<h2>Acid consumes alkalinity, not carbon</h2>
+
+<img data-src="fig/acid-before-after.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:72.0%"><p>For a strong-acid dose <span class="math inline">q</span> (eq/L) in our closed water: <span class="math inline">\;A_{T,\text{after}}=A_{T,\text{before}}-q\;</span> and <span class="math inline">C_T</span> is unchanged.</p>
+<p><strong>Do not subtract an acid dose from a pH value.</strong> pH must be recalculated from the new A<sub>T</sub> and C<sub>T</sub>.</p>
+<aside class="notes">
+<p>Walk through the cartoon. Three hydrogen ions arrive. Three bicarbonate ions become CO2-star. Carbon is conserved, twelve before and twelve after. Alkalinity falls by exactly three. The pH falls because the bicarbonate-to-CO2-star ratio fell, and we know from the ratio rule how to turn a ratio into a pH. The key bookkeeping statement is the equation: strong acid lowers alkalinity one-for-one and leaves C_T unchanged in a closed water. The typical error is to treat pH as additive: pH is a logarithm of a concentration that is itself set by equilibria, so a dose cannot simply be subtracted from it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="finding-the-new-ph" class="slide level2">
+<h2>Finding the new pH</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p><img data-src="fig/alkalinity-reading.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:48%;">
+<p>At fixed C<sub>T</sub>, alkalinity rises steadily with pH. <strong>Each alkalinity value has exactly one pH.</strong></p>
+<ol type="1">
+<li>Start at pH 7.50 on the curve.</li>
+<li>Lower A<sub>T</sub> by 0.050 meq/L.</li>
+<li>Read off the new pH.</li>
+</ol>
+<p>The same step down is a <strong>small</strong> fraction of Water A’s alkalinity and a <strong>large</strong> fraction of Water B’s (note the log axis).</p>
+</div></div>
+<aside class="notes">
+<p>This is the graphical solution to the problem. For a fixed C_T, alkalinity is a monotonic function of pH, so we can invert it: given the new alkalinity, there is one pH. The arrows show the move for each water. On a logarithmic axis, an equal absolute step down looks tiny near the top of Water A’s curve and large on Water B’s. You do not need to implement a numerical solver; the supplied final pH values were found exactly this way by the instructor script. The exam-relevant skill is the bookkeeping, alkalinity minus dose with C_T fixed, plus the ability to explain why the pH outcome differs.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="return-to-the-two-waters" class="slide level2">
+<h2>Return to the two waters</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Constructed water</th>
+<th style="text-align: right;">C<sub>T</sub> (mmol/L)</th>
+<th style="text-align: right;">A<sub>T</sub> before (meq/L)</th>
+<th style="text-align: right;">A<sub>T</sub> after (meq/L)</th>
+<th style="text-align: right;">Final pH</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.9356</td>
+<td style="text-align: right;">0.8856</td>
+<td style="text-align: right;"><strong>7.235</strong></td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td style="text-align: right;">0.100</td>
+<td style="text-align: right;">0.09382</td>
+<td style="text-align: right;">0.04382</td>
+<td style="text-align: right;"><strong>6.252</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Water A lost about <strong>5%</strong> of its alkalinity and dropped <strong>0.27</strong> pH units.</li>
+<li>Water B lost about <strong>53%</strong> and dropped <strong>1.25</strong> pH units: over ten times more H⁺.</li>
+</ul>
+<p>Same starting pH, same dose, very different outcome. <strong>The difference is the carbon inventory, which a pH reading cannot show.</strong></p>
+<aside class="notes">
+<p>Go back to the predictions students made with the two beakers. The numbers resolve the puzzle. The dose consumed a small part of A’s alkalinity and more than half of B’s. A pH drop of 1.25 means the free hydrogen-ion concentration rose by a factor of about eighteen. These are model results from the stated assumptions, not field data. In exercise 2 students reproduce the alkalinity changes by hand and interpret the supplied final pH values. If time allows, ask: what single measurement would have warned you that Water B was vulnerable? The answer is alkalinity, or C_T, not pH.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-whole-acid-response" class="slide level2">
+<h2>The whole acid response</h2>
+
+<img data-src="fig/titration.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><p>Keep adding acid. Water B’s pH collapses once its small alkalinity is used up (about 0.09 mmol/L). Water A holds above pH 6 until roughly 0.6 mmol/L, then also falls once <strong>its</strong> reserve runs out near 0.94.</p>
+<aside class="notes">
+<p>This curve extends the single dose to a whole titration, model pH against cumulative strong acid. Both curves show the same shape: a gentle slope while bicarbonate remains, then a cliff when alkalinity reaches zero. The position of the cliff equals the starting alkalinity. Translate back to the lakes. Years of acid deposition act like a slow titration. A soft-water lake with a small reserve reaches its cliff quickly and drops into the pH range harmful to fish and invertebrates. Low pH also releases toxic aluminium from soils, covered in the metals unit. A limestone lake has a reserve large enough that it never gets there.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="why-liming-works" class="slide level2">
+<h2>Why liming works</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><span class="math display">\mathrm{CaCO_3(s)+2H^+\rightarrow Ca^{2+}+CO_2^*+H_2O}</span></p>
+<p>Each mole of dissolved calcite neutralises <strong>2 equivalents</strong> of acid, adding 2 eq of alkalinity.</p>
+<p><strong>Back of the envelope:</strong> raise a 1.0 × 10⁶ m³ lake from A<sub>T</sub> = 0.044 to 0.20 meq/L.</p>
+<ul>
+<li>Needed: 0.156 meq/L = 0.078 mmol/L CaCO₃</li>
+<li>= 7.8 g CaCO₃ per m³ → <strong>≈ 8 tonnes</strong>, if all dissolves</li>
+</ul>
+<p>Real liming uses more, because not all the lime dissolves and the lake water is gradually replaced: hydraulic residence time, as in unit 1.</p>
+</div><div class="column" style="width:45%;">
+<p><img data-src="img/calcite-crystal.jpg" style="width:100.0%"> <span class="credit">Calcite (CaCO₃) crystal, about 6 cm. Photo: James St.&nbsp;John, CC BY 2.0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>Now we can answer the question from the start. Calcite dissolves by taking up two hydrogen ions per formula unit, so it adds two equivalents of alkalinity per mole. The calculation uses Water B’s post-acid alkalinity as the starting point and a target of 0.2 meq/L, a typical liming goal for restoring sensitive species, chosen here as round numbers. Molar mass of calcium carbonate is about 100 g/mol, so 0.078 mmol/L is about 7.8 mg/L, or 7.8 grams per cubic metre. In practice more is needed. Dissolution is incomplete, and the lake is flushed by inflowing acidic water. That is why liming has to be repeated, and it ties back to residence time from the first lecture.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-same-chemistry-on-a-bigger-stage" class="slide level2">
+<h2>The same chemistry, on a bigger stage</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<p><img data-src="img/pteropod-dissolving.jpg" style="width:100.0%"> <span class="credit">NOAA illustration, public domain, Wikimedia Commons.</span></p>
+</div><div class="column" style="width:42%;">
+<p>The ocean absorbs about a quarter of human CO₂ emissions.</p>
+<p>Adding CO₂ <strong>raises C<sub>T</sub> but not alkalinity</strong>:</p>
+<p><span class="math display">\mathrm{CO_2+H_2O+CO_3^{2-}\rightarrow 2HCO_3^-}</span></p>
+<p>pH falls (by about 0.1 since pre-industrial times) and <strong>carbonate ion is consumed</strong>. Shell-building organisms such as pteropods find it harder to build and keep calcium carbonate.</p>
+<p>This is <strong>not</strong> the same as adding strong acid. Next lecture shows why.</p>
+</div></div>
+<aside class="notes">
+<p>Show that the tools from today apply directly to a global problem. Ocean uptake of carbon dioxide adds carbon without adding or removing alkalinity, which is different from our strong-acid case where alkalinity fell and C_T stayed fixed. The result is still a lower pH and less carbonate ion, which matters for organisms that build calcium carbonate shells and skeletons. The pteropod image is a widely used NOAA illustration of shell dissolution under lower pH. The numbers quoted are rounded, well-established figures. Do not develop ocean chemistry further here: seawater needs other constants and includes borate. The contrast between CO2 uptake and strong-acid addition is the opening of the next deck.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="common-mistakes-to-avoid" class="slide level2">
+<h2>Common mistakes to avoid</h2>
+<ul>
+<li><strong>“Same pH means same water.”</strong> pH fixes the fractions, not the amounts.</li>
+<li><strong>“Acid destroys carbonate carbon.”</strong> In a closed water it only converts HCO₃⁻ to CO₂*. C<sub>T</sub> is unchanged.</li>
+<li><strong>“Subtract the dose from the pH.”</strong> Subtract the dose from alkalinity, then find the pH.</li>
+<li><strong>“At pH = pK each species is 50%.”</strong> The two neighbours are equal; the third species is still present.</li>
+<li><strong>“Alkalinity is how basic the water is.”</strong> It is a capacity in eq/L, not a pH. Acidic waters can have positive alkalinity.</li>
+<li><strong>“The distribution diagram shows a titration.”</strong> Its x-axis is prescribed pH, not acid added.</li>
+</ul>
+<aside class="notes">
+<p>These are the errors that appear most often in exercises and exams for this topic. Go through them quickly and ask students to say why each is wrong in their own words. The fifth one is subtle: a water at pH 6.5 can still have positive alkalinity, because bicarbonate is present in substantial amounts. Alkalinity becomes zero only around pH 4.5 for typical freshwater carbon contents, when nearly all carbon is CO2-star. This is why alkalinity titrations end near that pH. Encourage students to use this list as a self-check while doing the exercises.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="explore" class="slide level2">
 <h2>Explore: carbonate response to acid</h2>
@@ -339,7 +780,83 @@ Environmental Chemistry
 <script src="../demos/carbonate.js"></script>
 <p><a href="../carbonate-gases/exercise.html#explore">Compare Water A and Water B: same initial pH and acid dose, different carbon inventories.</a></p>
 <aside class="notes">
-<p>Use the reference presets, then change one variable. The complete exercise has model assumptions, a hand-check result, and a static reference for printing.</p>
+<p>Use the reference presets first and confirm the table values from the “Return to the two waters” slide. Then change one variable at a time. Raise C_T in Water B until it behaves like Water A. Increase the dose until Water A’s alkalinity is exhausted and watch the pH cliff. Ask students to explain each change in words before reading the plot. The exercise page has the model assumptions, a hand-check result and a static reference for printing.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="summary" class="slide level2 smaller">
+<h2>Summary</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Key fact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>C<sub>T</sub></td>
+<td>CO₂* + HCO₃⁻ + CO₃²⁻; conserved when species interconvert</td>
+</tr>
+<tr class="even">
+<td>Ratio rule</td>
+<td><span class="math inline">[\mathrm{HCO_3^-}]/[\mathrm{CO_2^*}]=10^{\mathrm{pH}-6.35}</span>; one pH unit = factor 10</td>
+</tr>
+<tr class="odd">
+<td>Fractions α</td>
+<td>from pH alone; sum to 1; curves cross at pH = pK</td>
+</tr>
+<tr class="even">
+<td>Freshwater</td>
+<td>pH 6.5–8.3: bicarbonate dominates</td>
+</tr>
+<tr class="odd">
+<td>Amount</td>
+<td>concentration = α × C<sub>T</sub>; pH does not give C<sub>T</sub></td>
+</tr>
+<tr class="even">
+<td>Alkalinity A<sub>T</sub></td>
+<td>HCO₃⁻ + 2CO₃²⁻ + OH⁻ − H⁺ (eq/L): acid-neutralising capacity</td>
+</tr>
+<tr class="odd">
+<td>Charge balance</td>
+<td>A<sub>T</sub> ≈ base cations − strong-acid anions</td>
+</tr>
+<tr class="even">
+<td>Strong acid</td>
+<td>A<sub>T</sub> falls by the dose; C<sub>T</sub> unchanged; pH recalculated</td>
+</tr>
+<tr class="odd">
+<td>Lakes</td>
+<td>granite → small A<sub>T</sub> → acidifies; limestone → large A<sub>T</sub> → resists</td>
+</tr>
+<tr class="even">
+<td>Liming</td>
+<td>CaCO₃ adds 2 eq alkalinity per mol</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Next:</strong> <a href="../carbonate-gases/gases-lec.html">gas exchange and minerals</a>. What happens when the water meets the air, and why does a kettle scale up? Then the <a href="../carbonate-gases/exercise.html">exercises</a> and the <a href="../carbonate-gases/reference.html">reference sheet</a>.</p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="img/kettle-limescale.jpg" style="width:100.0%"> <span class="credit">Limescale (CaCO₃) from a kettle. Photo: Alexander Davronov, CC BY-SA 4.0, Wikimedia Commons.</span></p>
+</div></div>
+<aside class="notes">
+<p>The summary table is the revision sheet. Recite the chain once. pH gives the fractions. C_T turns fractions into amounts. Alkalinity counts acid-neutralising capacity. Strong acid lowers alkalinity one-for-one with C_T fixed, and pH follows. Then connect back to the opening: lakes on granite have a small reserve and acidified, lakes on limestone have a large one and resisted, and liming adds the missing reserve. The limescale photo is the teaser for the next deck. Heating drives carbon dioxide out of hard water, the carbonate equilibria shift, and calcite precipitates on the kettle element. Explaining that needs gas exchange and mineral saturation, the topics of the next lecture.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
