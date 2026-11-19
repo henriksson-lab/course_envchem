@@ -4,7 +4,6 @@ title: "Carbonate chemistry exercises"
 
 Use the [model sheet](reference.qmd) throughout: 25 °C, dilute freshwater,
 $pK_1=6.35$, $pK_2=10.33$, and the supplied Henry and calcite constants.
-All waters and gas inputs below are constructed teaching examples.
 
 ## 1. Predict, then calculate a species distribution
 

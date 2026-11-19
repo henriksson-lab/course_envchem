@@ -4,7 +4,7 @@
     "href": "water-treatment/notes.html",
     "title": "Water pollution and treatment chemistry",
     "section": "",
-    "text": "Which treatment process changes a pollutant’s chemical form, and which transfers it into a stream that still needs to be managed?\nRead these notes with the lecture, then complete the exercises. Numerical examples are constructed teaching cases unless explicitly described otherwise.",
+    "text": "Which treatment process changes a pollutant’s chemical form, and which transfers it into a stream that still needs to be managed?",
     "crumbs": [
       "Home",
       "Week 3: Metals, surfaces, redox, and treatment",
@@ -104,11 +104,11 @@
     ]
   },
   {
-    "objectID": "water-treatment/notes.html#reading-focus-and-further-explanation",
-    "href": "water-treatment/notes.html#reading-focus-and-further-explanation",
+    "objectID": "water-treatment/notes.html#reading",
+    "href": "water-treatment/notes.html#reading",
     "title": "Water pollution and treatment chemistry",
-    "section": "Reading focus and further explanation",
-    "text": "Reading focus and further explanation\nBook: vanLoon and Duffy, fourth edition, chapter(s) 16. Focus on precipitation, coagulation, sorption, and balanced nutrient transformations. Defer plant engineering, dosing instructions, and a catalogue of disinfection technologies.\nEPA wastewater nutrient overview: Why treatment goals distinguish nitrogen and phosphorus pathways.\nUSGS phosphorus chemistry: The difference between adsorption, mineral formation, and transport.\nEPA nutrient-control chemistry: the net oxidation and alkalinity balances in chapter 4 support the reaction examples; reactor-design sections are beyond this unit.",
+    "section": "Reading",
+    "text": "Reading\nvanLoon and Duffy, 4th edition. Chapter 16: precipitation, coagulation, sorption, and balanced nutrient transformations.\nEPA wastewater nutrient overview: Why treatment goals distinguish nitrogen and phosphorus pathways.\nUSGS phosphorus chemistry: The difference between adsorption, mineral formation, and transport.\nEPA nutrient-control chemistry: the net oxidation and alkalinity balances in chapter 4 support the reaction examples; reactor-design sections are beyond this unit.",
     "crumbs": [
       "Home",
       "Week 3: Metals, surfaces, redox, and treatment",
@@ -121,7 +121,7 @@
     "href": "water-treatment/exercise.html",
     "title": "Water pollution and treatment chemistry exercises",
     "section": "",
-    "text": "Use the notes. All numerical inputs below are constructed teaching examples; use the stated assumptions rather than looking up extra constants. Predict the direction of change before calculating.",
+    "text": "Use the values given; do not look up other constants. Predict the direction of change before calculating.",
     "crumbs": [
       "Home",
       "Week 3: Metals, surfaces, redox, and treatment",
@@ -459,7 +459,7 @@
     "href": "surfaces/notes.html",
     "title": "Colloids, surfaces, and sorption",
     "section": "",
-    "text": "If a contaminant disappears from water, is it removed from the environmental system or transferred onto a mobile particle?\nRead these notes with the lecture, then complete the exercises. Numerical examples are constructed teaching cases unless explicitly described otherwise.",
+    "text": "If a contaminant disappears from water, is it removed from the environmental system or transferred onto a mobile particle?",
     "crumbs": [
       "Home",
       "Week 3: Metals, surfaces, redox, and treatment",
@@ -559,11 +559,11 @@
     ]
   },
   {
-    "objectID": "surfaces/notes.html#reading-focus-and-further-explanation",
-    "href": "surfaces/notes.html#reading-focus-and-further-explanation",
+    "objectID": "surfaces/notes.html#reading",
+    "href": "surfaces/notes.html#reading",
     "title": "Colloids, surfaces, and sorption",
-    "section": "Reading focus and further explanation",
-    "text": "Reading focus and further explanation\nBook: vanLoon and Duffy, fourth edition, chapter(s) 14. Focus on surface protonation, a transparent linear balance, finite capacity, and colloidal mobility. Defer fitting complex isotherms or surface-complexation software.\nUSGS phosphate retention: Mineral surfaces, finite adsorption, and phosphorus transport.\nEPA sorption coefficients: Definitions and conditions for distribution coefficients.",
+    "section": "Reading",
+    "text": "Reading\nvanLoon and Duffy, 4th edition. Chapter 14: surface protonation, a transparent linear balance, finite capacity, and colloidal mobility.\nUSGS phosphate retention: Mineral surfaces, finite adsorption, and phosphorus transport.\nEPA sorption coefficients: Definitions and conditions for distribution coefficients.",
     "crumbs": [
       "Home",
       "Week 3: Metals, surfaces, redox, and treatment",
@@ -576,7 +576,7 @@
     "href": "surfaces/exercise.html",
     "title": "Colloids, surfaces, and sorption exercises",
     "section": "",
-    "text": "Use the notes. All numerical inputs below are constructed teaching examples; use the stated assumptions rather than looking up extra constants. Predict the direction of change before calculating.",
+    "text": "Use the values given; do not look up other constants. Predict the direction of change before calculating.",
     "crumbs": [
       "Home",
       "Week 3: Metals, surfaces, redox, and treatment",
@@ -914,7 +914,7 @@
     "href": "redox-cycles/notes.html",
     "title": "Redox and environmental cycles",
     "section": "",
-    "text": "When oxygen runs low, why can iron, nitrogen, sulfur, and phosphorus change together even though not every element changes oxidation state?\nRead these notes with the lecture, then complete the exercises. Numerical examples are constructed teaching cases unless explicitly described otherwise.",
+    "text": "When oxygen runs low, why can iron, nitrogen, sulfur, and phosphorus change together even though not every element changes oxidation state?",
     "crumbs": [
       "Home",
       "Week 3: Metals, surfaces, redox, and treatment",
@@ -1014,11 +1014,11 @@
     ]
   },
   {
-    "objectID": "redox-cycles/notes.html#reading-focus-and-further-explanation",
-    "href": "redox-cycles/notes.html#reading-focus-and-further-explanation",
+    "objectID": "redox-cycles/notes.html#reading",
+    "href": "redox-cycles/notes.html#reading",
     "title": "Redox and environmental cycles",
-    "section": "Reading focus and further explanation",
-    "text": "Reading focus and further explanation\nBook: vanLoon and Duffy, fourth edition, chapter(s) 10, 13, 15. Focus on balanced reactions and coupled carbon, nitrogen, iron, and sulfur examples. Read supplied redox evidence; defer full Eh–pH diagram construction.\nUSGS redox framework: Electron-acceptor patterns and the need for several indicators.\nUSGS organic-contaminant geochemistry: How organic inputs couple microbial electron transfer with changing water chemistry.",
+    "section": "Reading",
+    "text": "Reading\nvanLoon and Duffy, 4th edition. Chapters 10, 13, 15: balanced reactions and coupled carbon, nitrogen, iron, and sulfur examples.\nUSGS redox framework: Electron-acceptor patterns and the need for several indicators.\nUSGS organic-contaminant geochemistry: How organic inputs couple microbial electron transfer with changing water chemistry.",
     "crumbs": [
       "Home",
       "Week 3: Metals, surfaces, redox, and treatment",
@@ -1031,7 +1031,7 @@
     "href": "redox-cycles/exercise.html",
     "title": "Redox and environmental cycles exercises",
     "section": "",
-    "text": "Use the notes. All numerical inputs below are constructed teaching examples; use the stated assumptions rather than looking up extra constants. Predict the direction of change before calculating.",
+    "text": "Use the values given; do not look up other constants. Predict the direction of change before calculating.",
     "crumbs": [
       "Home",
       "Week 3: Metals, surfaces, redox, and treatment",
@@ -1668,7 +1668,7 @@
     "href": "interactives/week5.html",
     "title": "Week 5 demo: the connected catchment budget",
     "section": "",
-    "text": "How do atmospheric acid input, accessible neutralisation, reference alkalinity, and water export combine in an annual budget?\nUse with the integrated case and its exercises. This working week revisits earlier reactions in a connected chemical explanation."
+    "text": "How do atmospheric acid input, accessible neutralisation, reference alkalinity, and water export combine in an annual budget?\nUse with the integrated case and its exercises."
   },
   {
     "objectID": "interactives/week5.html#predict-first",
@@ -1717,7 +1717,7 @@
     "href": "interactives/week3.html",
     "title": "Week 3 demo: metal binding and saturation",
     "section": "",
-    "text": "Can two waters with the same dissolved metal total have different free-ion concentrations and saturation states?\nUse with metal speciation and its worked problems. This working week groups metals, interfaces, redox, and treatment."
+    "text": "Can two waters with the same dissolved metal total have different free-ion concentrations and saturation states?\nUse with metal speciation and its worked problems."
   },
   {
     "objectID": "interactives/week3.html#predict-first",
@@ -1766,7 +1766,7 @@
     "href": "interactives/week1.html",
     "title": "Week 1 demo: deposition and dilution",
     "section": "",
-    "text": "How can an acid-equivalent concentration fall while the annual acid load stays unchanged?\nUse after the deposition exercises, alongside environmental amounts. This working week groups foundations and the atmospheric units."
+    "text": "How can an acid-equivalent concentration fall while the annual acid load stays unchanged?\nUse after the deposition exercises, alongside environmental amounts."
   },
   {
     "objectID": "interactives/week1.html#predict-first",
@@ -2140,7 +2140,7 @@
     "href": "environmental-systems/notes.html",
     "title": "Environmental amounts and balances",
     "section": "",
-    "text": "If a pollutant concentration falls downstream, has the pollutant been destroyed? Follow the amount before proposing a reaction.\nRead these notes with the lecture, then complete the exercises. Numerical examples are constructed teaching cases unless explicitly described otherwise.",
+    "text": "If a pollutant concentration falls downstream, has the pollutant been destroyed? Follow the amount before proposing a reaction.",
     "crumbs": [
       "Home",
       "Week 1: Environmental balances and atmosphere",
@@ -2240,11 +2240,11 @@
     ]
   },
   {
-    "objectID": "environmental-systems/notes.html#reading-focus-and-further-explanation",
-    "href": "environmental-systems/notes.html#reading-focus-and-further-explanation",
+    "objectID": "environmental-systems/notes.html#reading",
+    "href": "environmental-systems/notes.html#reading",
     "title": "Environmental amounts and balances",
-    "section": "Reading focus and further explanation",
-    "text": "Reading focus and further explanation\nBook: vanLoon and Duffy, fourth edition, chapter(s) 1. Focus on environmental composition, sources, sinks, and chemical processes. Practise small balances; defer a general transport model.\nUSGS water chemistry: Background on water properties and chemical quantities.",
+    "section": "Reading",
+    "text": "Reading\nvanLoon and Duffy, 4th edition. Chapter 1: environmental composition, sources, sinks, and chemical processes.\nUSGS water chemistry: Background on water properties and chemical quantities.",
     "crumbs": [
       "Home",
       "Week 1: Environmental balances and atmosphere",
@@ -2257,7 +2257,7 @@
     "href": "environmental-systems/exercise.html",
     "title": "Environmental amounts and balances exercises",
     "section": "",
-    "text": "Use the notes. All numerical inputs below are constructed teaching examples; use the stated assumptions rather than looking up extra constants. Predict the direction of change before calculating.",
+    "text": "Use the values given; do not look up other constants. Predict the direction of change before calculating.",
     "crumbs": [
       "Home",
       "Week 1: Environmental balances and atmosphere",
@@ -2595,7 +2595,7 @@
     "href": "climate-chemistry/notes.html",
     "title": "Molecules, radiation, and climate",
     "section": "",
-    "text": "Why does adding one gas affect outgoing radiation while adding another gas can have little direct infrared effect?\nRead these notes with the lecture, then complete the exercises. Numerical examples are constructed teaching cases unless explicitly described otherwise.",
+    "text": "Why does adding one gas affect outgoing radiation while adding another gas can have little direct infrared effect?",
     "crumbs": [
       "Home",
       "Week 1: Environmental balances and atmosphere",
@@ -2695,11 +2695,11 @@
     ]
   },
   {
-    "objectID": "climate-chemistry/notes.html#reading-focus-and-further-explanation",
-    "href": "climate-chemistry/notes.html#reading-focus-and-further-explanation",
+    "objectID": "climate-chemistry/notes.html#reading",
+    "href": "climate-chemistry/notes.html#reading",
     "title": "Molecules, radiation, and climate",
-    "section": "Reading focus and further explanation",
-    "text": "Reading focus and further explanation\nBook: vanLoon and Duffy, fourth edition, chapter(s) 8, selected. Focus on molecular absorption, spectral interpretation, and persistence. Defer global climate model calculations and current concentration or emission rankings.\nNASA greenhouse mechanisms: Radiation and the role of greenhouse gases.\nNASA aerosol and forcing explanation: The distinction between radiation changes and different atmospheric influences.",
+    "section": "Reading",
+    "text": "Reading\nvanLoon and Duffy, 4th edition. Chapter 8: molecular absorption, spectral interpretation, and persistence.\nNASA greenhouse mechanisms: Radiation and the role of greenhouse gases.\nNASA aerosol and forcing explanation: The distinction between radiation changes and different atmospheric influences.",
     "crumbs": [
       "Home",
       "Week 1: Environmental balances and atmosphere",
@@ -2712,7 +2712,7 @@
     "href": "climate-chemistry/exercise.html",
     "title": "Molecules, radiation, and climate exercises",
     "section": "",
-    "text": "Use the notes. All numerical inputs below are constructed teaching examples; use the stated assumptions rather than looking up extra constants. Predict the direction of change before calculating.",
+    "text": "Use the values given; do not look up other constants. Predict the direction of change before calculating.",
     "crumbs": [
       "Home",
       "Week 1: Environmental balances and atmosphere",
@@ -2777,7 +2777,7 @@
     "href": "carbonate-gases/notes.html",
     "title": "Carbonate and gas chemistry",
     "section": "",
-    "text": "Why can two waters with the same pH respond differently to an acid input? Carbonate equilibria connect dissolved carbon, acid neutralisation, gas exchange, and mineral stability. We will use a deliberately simple freshwater model to separate these effects.\nStart with carbonate species and alkalinity, then gas exchange and minerals. Work through the exercises, including a short R activity. The model and reference sheet supplies all constants and assumptions. The reading context is chapters 10–11 of vanLoon and Duffy, fourth edition; precise subsection assignments remain to be selected.",
+    "text": "Why can two waters with the same pH respond differently to an acid input? Carbonate equilibria connect dissolved carbon, acid neutralisation, gas exchange, and mineral stability.\nStart with carbonate species and alkalinity, then gas exchange and minerals. Work through the exercises, including a short R activity. The model and reference sheet supplies all constants and assumptions. Reading: vanLoon and Duffy, 4th edition, chapters 10–11.",
     "crumbs": [
       "Home",
       "Week 2: Aquatic composition and carbonate chemistry",
@@ -3115,7 +3115,7 @@
     "href": "atmospheric-reactions/notes.html",
     "title": "Reactions in the atmosphere",
     "section": "",
-    "text": "Why can ozone protect organisms in one atmospheric region and damage them near the ground? Explain the reactions and where they occur.\nRead these notes with the lecture, then complete the exercises. Numerical examples are constructed teaching cases unless explicitly described otherwise.",
+    "text": "Why can ozone protect organisms in one atmospheric region and damage them near the ground? Explain the reactions and where they occur.",
     "crumbs": [
       "Home",
       "Week 1: Environmental balances and atmosphere",
@@ -3215,11 +3215,11 @@
     ]
   },
   {
-    "objectID": "atmospheric-reactions/notes.html#reading-focus-and-further-explanation",
-    "href": "atmospheric-reactions/notes.html#reading-focus-and-further-explanation",
+    "objectID": "atmospheric-reactions/notes.html#reading",
+    "href": "atmospheric-reactions/notes.html#reading",
     "title": "Reactions in the atmosphere",
-    "section": "Reading focus and further explanation",
-    "text": "Reading focus and further explanation\nBook: vanLoon and Duffy, fourth edition, chapter(s) 2–4. Focus on photolysis, one stratospheric catalytic cycle, and the NO–NO₂–ozone cycle. Defer exhaustive radical mechanisms and quantitative polar modelling.\nNOAA ozone assessment: Formation, catalytic destruction, and the role of atmospheric region.\nNASA photochemical explanation: How nitrogen oxides and organic chemistry participate in ground-level ozone formation.",
+    "section": "Reading",
+    "text": "Reading\nvanLoon and Duffy, 4th edition. Chapters 2–4: photolysis, one stratospheric catalytic cycle, and the NO–NO₂–ozone cycle.\nNOAA ozone assessment: Formation, catalytic destruction, and the role of atmospheric region.\nNASA photochemical explanation: How nitrogen oxides and organic chemistry participate in ground-level ozone formation.",
     "crumbs": [
       "Home",
       "Week 1: Environmental balances and atmosphere",
@@ -3232,7 +3232,7 @@
     "href": "atmospheric-reactions/exercise.html",
     "title": "Reactions in the atmosphere exercises",
     "section": "",
-    "text": "Use the notes. All numerical inputs below are constructed teaching examples; use the stated assumptions rather than looking up extra constants. Predict the direction of change before calculating.",
+    "text": "Use the values given; do not look up other constants. Predict the direction of change before calculating.",
     "crumbs": [
       "Home",
       "Week 1: Environmental balances and atmosphere",
@@ -3544,7 +3544,7 @@
     "href": "aquatic-equilibria/notes.html",
     "title": "Aquatic composition and equilibrium",
     "section": "",
-    "text": "Before interpreting a water analysis, can its reported concentrations satisfy charge balance, and which quantities belong in an equilibrium expression?\nRead these notes with the lecture, then complete the exercises. Numerical examples are constructed teaching cases unless explicitly described otherwise.",
+    "text": "Before interpreting a water analysis, can its reported concentrations satisfy charge balance, and which quantities belong in an equilibrium expression?",
     "crumbs": [
       "Home",
       "Week 2: Aquatic composition and carbonate chemistry",
@@ -3644,11 +3644,11 @@
     ]
   },
   {
-    "objectID": "aquatic-equilibria/notes.html#reading-focus-and-further-explanation",
-    "href": "aquatic-equilibria/notes.html#reading-focus-and-further-explanation",
+    "objectID": "aquatic-equilibria/notes.html#reading",
+    "href": "aquatic-equilibria/notes.html#reading",
     "title": "Aquatic composition and equilibrium",
-    "section": "Reading focus and further explanation",
-    "text": "Reading focus and further explanation\nBook: vanLoon and Duffy, fourth edition, chapter(s) 9–10. Focus on composition, mass and charge balance, activity, and simple acid speciation. Use carbonate chemistry next for a coupled natural-water system.\nBureau of Reclamation ion balance: Charge-equivalent conversions and cation–anion comparison.\nIUPAC activity: The thermodynamic activity concept.",
+    "section": "Reading",
+    "text": "Reading\nvanLoon and Duffy, 4th edition. Chapters 9–10: composition, mass and charge balance, activity, and simple acid speciation.\nBureau of Reclamation ion balance: Charge-equivalent conversions and cation–anion comparison.\nIUPAC activity: The thermodynamic activity concept.",
     "crumbs": [
       "Home",
       "Week 2: Aquatic composition and carbonate chemistry",
@@ -3674,7 +3674,7 @@
     "href": "aquatic-equilibria/exercise.html",
     "title": "Aquatic composition and equilibrium exercises",
     "section": "",
-    "text": "Use the notes. All numerical inputs below are constructed teaching examples; use the stated assumptions rather than looking up extra constants. Predict the direction of change before calculating.",
+    "text": "Use the values given; do not look up other constants. Predict the direction of change before calculating.",
     "crumbs": [
       "Home",
       "Week 2: Aquatic composition and carbonate chemistry",
@@ -3764,37 +3764,17 @@
     "href": "index.html",
     "title": "Environmental Chemistry",
     "section": "",
-    "text": "How do molecular properties and reactions determine what happens to substances in air, water, and soil? This course connects equilibrium, reaction rates, partitioning, and chemical balances to transport and potential exposure.\nStart with environmental amounts and balances, or use the course content to find a topic. The sequence follows atmosphere, water, soils, and contaminants, with particular depth in aquatic chemistry. The glossary links common terms to their explanations.",
+    "text": "How do molecular properties and reactions decide what happens to substances in air, water and soil? This 7.5 ECTS course follows chemistry from the atmosphere through lakes and rivers to soils and contaminants.\nCourse book: vanLoon and Duffy, Environmental Chemistry: A Global Perspective, 4th edition (2017). See course content and reading.",
     "crumbs": [
       "Home"
     ]
   },
   {
-    "objectID": "index.html#work-through-a-unit",
-    "href": "index.html#work-through-a-unit",
+    "objectID": "index.html#topics",
+    "href": "index.html#topics",
     "title": "Environmental Chemistry",
-    "section": "Work through a unit",
-    "text": "Work through a unit\nRead the chemical question and learning goals. Use the notes with the short lecture, then try the exercises before opening their hints and worked solutions. State units, assumptions, and the system boundary in every calculation. Explain what a numerical answer means chemically and what it cannot establish.\nThree short R activities reuse table handling, plotting, and reproducible reports from introductory computing. Their downloads include starting code and a report template. Hand calculations provide a check before the code is used.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#explore-chemical-predictions",
-    "href": "index.html#explore-chemical-predictions",
-    "title": "Environmental Chemistry",
-    "section": "Explore chemical predictions",
-    "text": "Explore chemical predictions\nThe interactive demos, listed in orange under each week in the sidebar, let you vary deposition, carbon inventories, ligand conditions, sorption, transformation, and catchment neutralisation. Each has a hand-check reference and questions that connect the plot to a chemical balance.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#connect-the-chemical-systems",
-    "href": "index.html#connect-the-chemical-systems",
-    "title": "Environmental Chemistry",
-    "section": "Connect the chemical systems",
-    "text": "Connect the chemical systems\nThe recurring constructed catchment links deposition, soil reactions, and water alkalinity. A second constructed sediment case links oxygen depletion, iron, and phosphorus. The integrated case brings these mechanisms and their evidence together in a short chemical argument.\nThese materials form a first teaching draft. The working reference is vanLoon and Duffy, Environmental Chemistry: A Global Perspective, fourth edition.",
+    "section": "Topics",
+    "text": "Topics\nWork through the sidebar from top to bottom. Each topic has a lecture, notes and exercises.\n\nWeek 1: Environmental balances and atmosphere: amounts and balances, atmospheric reactions and ozone, acid deposition, molecules and climate.\nWeek 2: Aquatic composition and carbonate chemistry: water composition, carbonate species and alkalinity, gas exchange and minerals, organic matter in water.\nWeek 3: Metals, surfaces, redox and treatment: metal speciation, sorption, redox cycles, water treatment.\nWeek 4: Soils, waste and contaminants: soil chemistry, mine waste and leachate, organic contaminants.\nWeek 5: Connected systems: a case that links air, catchment and water.",
     "crumbs": [
       "Home"
     ]
@@ -3804,7 +3784,7 @@
     "href": "overview.html",
     "title": "Course content",
     "section": "",
-    "text": "The course follows chemical processes from air through water to soils and contaminants. Water chemistry receives the most quantitative depth. Each unit has notes, a short lecture, and exercises with worked solutions. Start with a chemical prediction, calculate a small case, and explain the result’s limits.",
+    "text": "The course runs from air through water to soils and contaminants, with most depth in water chemistry.",
     "crumbs": [
       "Home",
       "Course info",
@@ -3816,19 +3796,7 @@
     "href": "overview.html#topic-sequence-and-reading",
     "title": "Course content",
     "section": "Topic sequence and reading",
-    "text": "Topic sequence and reading\nChapter references are to vanLoon and Duffy, Environmental Chemistry: A Global Perspective, fourth edition (2017). The notes specify the topics to select within those chapters and what to defer; these are not whole-chapter reading requirements. Exact subsection and page assignments await book review.\n\n\n\nUnit\nBook chapters\nChemical focus\n\n\n\n\n1. Environmental amounts and balances\n1\nConcentration, load, boundaries, and conservation.\n\n\n2. Reactions in the atmosphere\n2–4\nPhotolysis, ozone cycles, catalysts, and rates.\n\n\n3. Atmospheric deposition and acidity\n5–7\nOxidation, wet/dry transfer, and equivalent budgets.\n\n\n4. Molecules, radiation, and climate\n8\nInfrared absorption, spectra, particles, and persistence.\n\n\n5. Aquatic composition and equilibrium\n9–10\nCharge balance, activity, and simple speciation; activity A.\n\n\n6. Carbonate and gas chemistry\n10–11\nCarbonate, alkalinity, gas exchange, calcite; activity B.\n\n\n7. Organic matter in water\n12\nBinding, colour, carbon, and oxygen demand.\n\n\n8. Metal speciation and mobility\n13\nLigands, hydrolysis, free ions, and solubility.\n\n\n9. Colloids, surfaces, and sorption\n14\nSurface charge, partition balances, and mobility.\n\n\n10. Redox and environmental cycles\n10, 13, 15\nElectron balances, nitrogen, iron, sulfur, and phosphate.\n\n\n11. Water pollution and treatment chemistry\n16\nChemical transformations, separation, and residuals.\n\n\n12. Soil chemistry and retention\n17–18\nExchange charge, mineral inventories, and acid response.\n\n\n13. Waste materials and leachate chemistry\n19\nSulfide oxidation, acidity, and neutralisation.\n\n\n14. Organic contaminants and environmental fate\n20\nIonisation, partitioning, parent loss; activity C.\n\n\n15. Connecting air, catchments, and water\n21 and earlier\nA chemical argument supported by budgets and evidence.",
-    "crumbs": [
-      "Home",
-      "Course info",
-      "Course content and reading"
-    ]
-  },
-  {
-    "objectID": "overview.html#weekly-interactive-demos",
-    "href": "overview.html#weekly-interactive-demos",
-    "title": "Course content",
-    "section": "Weekly interactive demos",
-    "text": "Weekly interactive demos\nUse the five interactive demos, listed in orange under each week in the sidebar, to change chemical conditions and check the consequences before returning to a hand calculation. The working study-week grouping is atmosphere and balances; aquatic composition and carbonate; metals and surfaces; soils and contaminants; then synthesis. The pages link back to the relevant units and include static reference results.",
+    "text": "Topic sequence and reading\nChapters refer to vanLoon and Duffy, Environmental Chemistry: A Global Perspective, 4th edition (2017). Each unit’s notes say which parts to read.\n\n\n\nUnit\nBook chapters\nChemical focus\n\n\n\n\n1. Environmental amounts and balances\n1\nConcentration, load, boundaries, and conservation.\n\n\n2. Reactions in the atmosphere\n2–4\nPhotolysis, ozone cycles, catalysts, and rates.\n\n\n3. Atmospheric deposition and acidity\n5–7\nOxidation, wet/dry transfer, and equivalent budgets.\n\n\n4. Molecules, radiation, and climate\n8\nInfrared absorption, spectra, particles, and persistence.\n\n\n5. Aquatic composition and equilibrium\n9–10\nCharge balance, activity, and simple speciation; activity A.\n\n\n6. Carbonate and gas chemistry\n10–11\nCarbonate, alkalinity, gas exchange, calcite; activity B.\n\n\n7. Organic matter in water\n12\nBinding, colour, carbon, and oxygen demand.\n\n\n8. Metal speciation and mobility\n13\nLigands, hydrolysis, free ions, and solubility.\n\n\n9. Colloids, surfaces, and sorption\n14\nSurface charge, partition balances, and mobility.\n\n\n10. Redox and environmental cycles\n10, 13, 15\nElectron balances, nitrogen, iron, sulfur, and phosphate.\n\n\n11. Water pollution and treatment chemistry\n16\nChemical transformations, separation, and residuals.\n\n\n12. Soil chemistry and retention\n17–18\nExchange charge, mineral inventories, and acid response.\n\n\n13. Waste materials and leachate chemistry\n19\nSulfide oxidation, acidity, and neutralisation.\n\n\n14. Organic contaminants and environmental fate\n20\nIonisation, partitioning, parent loss; activity C.\n\n\n15. Connecting air, catchments, and water\n21 and earlier\nA chemical argument supported by budgets and evidence.",
     "crumbs": [
       "Home",
       "Course info",
@@ -3840,19 +3808,7 @@
     "href": "overview.html#three-supporting-computing-activities",
     "title": "Course content",
     "section": "Three supporting computing activities",
-    "text": "Three supporting computing activities\nUse the same R and R Markdown workflow as introductory computing. These activities support chemical interpretation; no new statistical methods are introduced. The site uses Quarto, while student reports remain .Rmd files.\n\n\n\nActivity\nFiles\nResult\n\n\n\n\nA: water analysis\nDownload ZIP\nAn ion table, charge checks, and a documented correction\n\n\nB: carbonate species\nDownload ZIP\nA hand-checked distribution curve at prescribed pH\n\n\nC: contaminant fate\nDownload ZIP\nA two-phase parent balance and reproducible chemical explanation\n\n\n\nExtract an activity ZIP into its own folder, open that folder as the working project, and keep its report next to its script and data. Activities A and C use readr, dplyr, and ggplot2; B uses ggplot2. All reports use rmarkdown. Use the package installation workflow from introductory computing if needed. The scripts and data are also available individually from the activity pages.",
-    "crumbs": [
-      "Home",
-      "Course info",
-      "Course content and reading"
-    ]
-  },
-  {
-    "objectID": "overview.html#reading-reference",
-    "href": "overview.html#reading-reference",
-    "title": "Course content",
-    "section": "Reading reference",
-    "text": "Reading reference\nThe publisher’s contents provide the book sequence. Sources linked in each unit support its chemical concepts; the supplied fictitious compounds and constructed datasets are identified explicitly. The course does not use invented results as field evidence.",
+    "text": "Three supporting computing activities\nThree short activities in R, using the workflow from introductory computing.\n\n\n\nActivity\nFiles\nResult\n\n\n\n\nA: water analysis\nDownload ZIP\nAn ion table, charge checks, and a documented correction\n\n\nB: carbonate species\nDownload ZIP\nA hand-checked distribution curve at prescribed pH\n\n\nC: contaminant fate\nDownload ZIP\nA two-phase parent balance and reproducible chemical explanation\n\n\n\nExtract each ZIP into its own folder and open it as a project. Packages: readr, dplyr, ggplot2, rmarkdown.",
     "crumbs": [
       "Home",
       "Course info",
@@ -3864,7 +3820,7 @@
     "href": "aquatic-equilibria/data-dictionary.html",
     "title": "Activity A data dictionary",
     "section": "",
-    "text": "These values are constructed teaching data. They are not measurements from a real site. Each row is one reported ion in one near-neutral sample. Three sample identities have six rows each. Samples A and C are designed to share the same correct composition, but C includes a known decimal transcription error. The identifiers A, B, and C are local to this activity and do not identify the separate carbonate-unit example waters. The six ions form the complete major-ion set for this approximation; tiny H⁺ and OH⁻ terms and other species are omitted. No pH or metal speciation can be inferred from these six totals alone.",
+    "text": "These values are constructed teaching data. They are not measurements from a real site. Each row is one reported ion in one near-neutral sample. Three sample identities have six rows each. Samples A and C are designed to share the same correct composition, but C includes a known decimal transcription error. The six ions form the complete major-ion set for this approximation; tiny H⁺ and OH⁻ terms and other species are omitted. No pH or metal speciation can be inferred from these six totals alone.",
     "crumbs": [
       "Home",
       "Week 2: Aquatic composition and carbonate chemistry",
@@ -3877,7 +3833,7 @@
     "href": "aquatic-equilibria/data-dictionary.html#origin-and-scope",
     "title": "Activity A data dictionary",
     "section": "",
-    "text": "These values are constructed teaching data. They are not measurements from a real site. Each row is one reported ion in one near-neutral sample. Three sample identities have six rows each. Samples A and C are designed to share the same correct composition, but C includes a known decimal transcription error. The identifiers A, B, and C are local to this activity and do not identify the separate carbonate-unit example waters. The six ions form the complete major-ion set for this approximation; tiny H⁺ and OH⁻ terms and other species are omitted. No pH or metal speciation can be inferred from these six totals alone.",
+    "text": "These values are constructed teaching data. They are not measurements from a real site. Each row is one reported ion in one near-neutral sample. Three sample identities have six rows each. Samples A and C are designed to share the same correct composition, but C includes a known decimal transcription error. The six ions form the complete major-ion set for this approximation; tiny H⁺ and OH⁻ terms and other species are omitted. No pH or metal speciation can be inferred from these six totals alone.",
     "crumbs": [
       "Home",
       "Week 2: Aquatic composition and carbonate chemistry",
@@ -4202,7 +4158,7 @@
     "href": "aquatic-organic-matter/exercise.html",
     "title": "Organic matter in water exercises",
     "section": "",
-    "text": "Use the notes. All numerical inputs below are constructed teaching examples; use the stated assumptions rather than looking up extra constants. Predict the direction of change before calculating.",
+    "text": "Use the values given; do not look up other constants. Predict the direction of change before calculating.",
     "crumbs": [
       "Home",
       "Week 2: Aquatic composition and carbonate chemistry",
@@ -4267,7 +4223,7 @@
     "href": "aquatic-organic-matter/notes.html",
     "title": "Organic matter in water",
     "section": "",
-    "text": "How can two waters contain the same dissolved total metal while differing in free metal, light penetration, and oxygen demand?\nRead these notes with the lecture, then complete the exercises. Numerical examples are constructed teaching cases unless explicitly described otherwise.",
+    "text": "How can two waters contain the same dissolved total metal while differing in free metal, light penetration, and oxygen demand?",
     "crumbs": [
       "Home",
       "Week 2: Aquatic composition and carbonate chemistry",
@@ -4367,11 +4323,11 @@
     ]
   },
   {
-    "objectID": "aquatic-organic-matter/notes.html#reading-focus-and-further-explanation",
-    "href": "aquatic-organic-matter/notes.html#reading-focus-and-further-explanation",
+    "objectID": "aquatic-organic-matter/notes.html#reading",
+    "href": "aquatic-organic-matter/notes.html#reading",
     "title": "Organic matter in water",
-    "section": "Reading focus and further explanation",
-    "text": "Reading focus and further explanation\nBook: vanLoon and Duffy, fourth edition, chapter(s) 12. Focus on organic-matter fractions, binding, light, and oxygen demand. Defer detailed structural characterisation and instrument methods.\nUSGS organic-matter processes: Adsorption, biodegradation, and chemical controls on organic-matter transport.\nCanada copper chemistry: How water chemistry and organic binding modify metal exposure; use the chemistry discussion, not regulatory thresholds.",
+    "section": "Reading",
+    "text": "Reading\nvanLoon and Duffy, 4th edition. Chapter 12: organic-matter fractions, binding, light, and oxygen demand.\nUSGS organic-matter processes: Adsorption, biodegradation, and chemical controls on organic-matter transport.\nCanada copper chemistry: How water chemistry and organic binding modify metal exposure; use the chemistry discussion, not regulatory thresholds.",
     "crumbs": [
       "Home",
       "Week 2: Aquatic composition and carbonate chemistry",
@@ -4644,7 +4600,7 @@
     "href": "carbonate-gases/exercise.html",
     "title": "Carbonate chemistry exercises",
     "section": "",
-    "text": "Use the model sheet throughout: 25 °C, dilute freshwater, \\(pK_1=6.35\\), \\(pK_2=10.33\\), and the supplied Henry and calcite constants. All waters and gas inputs below are constructed teaching examples.",
+    "text": "Use the model sheet throughout: 25 °C, dilute freshwater, \\(pK_1=6.35\\), \\(pK_2=10.33\\), and the supplied Henry and calcite constants.",
     "crumbs": [
       "Home",
       "Week 2: Aquatic composition and carbonate chemistry",
@@ -5411,7 +5367,7 @@
     "href": "deposition/exercise.html",
     "title": "Atmospheric deposition and acidity exercises",
     "section": "",
-    "text": "Use the notes. All numerical inputs below are constructed teaching examples; use the stated assumptions rather than looking up extra constants. Predict the direction of change before calculating.",
+    "text": "Use the values given; do not look up other constants. Predict the direction of change before calculating.",
     "crumbs": [
       "Home",
       "Week 1: Environmental balances and atmosphere",
@@ -5489,7 +5445,7 @@
     "href": "deposition/notes.html",
     "title": "Atmospheric deposition and acidity",
     "section": "",
-    "text": "How does an atmospheric emission become an acid input to a catchment, and why does rain pH alone not give the annual acid load?\nRead these notes with the lecture, then complete the exercises. Numerical examples are constructed teaching cases unless explicitly described otherwise.",
+    "text": "How does an atmospheric emission become an acid input to a catchment, and why does rain pH alone not give the annual acid load?",
     "crumbs": [
       "Home",
       "Week 1: Environmental balances and atmosphere",
@@ -5589,11 +5545,11 @@
     ]
   },
   {
-    "objectID": "deposition/notes.html#reading-focus-and-further-explanation",
-    "href": "deposition/notes.html#reading-focus-and-further-explanation",
+    "objectID": "deposition/notes.html#reading",
+    "href": "deposition/notes.html#reading",
     "title": "Atmospheric deposition and acidity",
-    "section": "Reading focus and further explanation",
-    "text": "Reading focus and further explanation\nBook: vanLoon and Duffy, fourth edition, chapter(s) 5–7, selected. Focus on acid formation and wet/dry fluxes. Use aerosols as reaction and transport phases; defer an indoor-pollutant catalogue.\nEPA acid deposition: Wet/dry transfer and precursor oxidation.\nEPA effects of acid rain: Links between deposition, catchment buffering, and aquatic response.",
+    "section": "Reading",
+    "text": "Reading\nvanLoon and Duffy, 4th edition. Chapters 5–7: acid formation and wet/dry fluxes.\nEPA acid deposition: Wet/dry transfer and precursor oxidation.\nEPA effects of acid rain: Links between deposition, catchment buffering, and aquatic response.",
     "crumbs": [
       "Home",
       "Week 1: Environmental balances and atmosphere",
@@ -5840,7 +5796,7 @@
     "href": "integrated-case/exercise.html",
     "title": "Connecting air, catchments, and water exercises",
     "section": "",
-    "text": "Use the notes. All numerical inputs below are constructed teaching examples; use the stated assumptions rather than looking up extra constants. Predict the direction of change before calculating.",
+    "text": "Use the values given; do not look up other constants. Predict the direction of change before calculating.",
     "crumbs": [
       "Home",
       "Week 5: Connected systems and synthesis",
@@ -5931,7 +5887,7 @@
     "href": "integrated-case/notes.html",
     "title": "Connecting air, catchments, and water",
     "section": "",
-    "text": "Which linked chemical explanation survives the available balances, and which parts remain hypotheses?\nRead these notes with the lecture, then complete the exercises. Numerical examples are constructed teaching cases unless explicitly described otherwise.",
+    "text": "Which linked chemical explanation survives the available balances, and which parts remain hypotheses?",
     "crumbs": [
       "Home",
       "Week 5: Connected systems and synthesis",
@@ -6031,11 +5987,11 @@
     ]
   },
   {
-    "objectID": "integrated-case/notes.html#reading-focus-and-further-explanation",
-    "href": "integrated-case/notes.html#reading-focus-and-further-explanation",
+    "objectID": "integrated-case/notes.html#reading",
+    "href": "integrated-case/notes.html#reading",
     "title": "Connecting air, catchments, and water",
-    "section": "Reading focus and further explanation",
-    "text": "Reading focus and further explanation\nBook: vanLoon and Duffy, fourth edition, chapter(s) 21 and earlier selections. Revisit the selected reaction and partition sections from earlier chapters. Use the final chapter for synthesis; defer broad policy surveys and new analytical methods.\nUSGS coupled organic-input chemistry: Coupled redox changes provide context for the sediment hypothesis.\nEPA catchment response: Why deposition effects depend on environmental buffering.",
+    "section": "Reading",
+    "text": "Reading\nvanLoon and Duffy, 4th edition. Chapter 21.\nUSGS coupled organic-input chemistry: Coupled redox changes provide context for the sediment hypothesis.\nEPA catchment response: Why deposition effects depend on environmental buffering.",
     "crumbs": [
       "Home",
       "Week 5: Connected systems and synthesis",
@@ -6061,7 +6017,7 @@
     "href": "interactives/week2.html",
     "title": "Week 2 demo: carbonate response to acid",
     "section": "",
-    "text": "Why can two waters at pH 7.50 respond so differently to the same acid dose?\nUse with carbonate species and alkalinity, the reference sheet, and exercise 2. This working week groups aquatic composition, carbonate, and organic matter."
+    "text": "Why can two waters at pH 7.50 respond so differently to the same acid dose?\nUse with carbonate species and alkalinity, the reference sheet, and exercise 2."
   },
   {
     "objectID": "interactives/week2.html#predict-first",
@@ -6110,7 +6066,7 @@
     "href": "interactives/week4.html",
     "title": "Week 4 demo: sorption and parent transformation",
     "section": "",
-    "text": "When parent concentration falls in water, how much has moved onto solids and how much has transformed?\nUse with organic contaminants and activity C. This working week groups soils, waste chemistry, and contaminant fate."
+    "text": "When parent concentration falls in water, how much has moved onto solids and how much has transformed?\nUse with organic contaminants and activity C."
   },
   {
     "objectID": "interactives/week4.html#predict-first",
@@ -6159,7 +6115,7 @@
     "href": "metals/exercise.html",
     "title": "Metal speciation and mobility exercises",
     "section": "",
-    "text": "Use the notes. All numerical inputs below are constructed teaching examples; use the stated assumptions rather than looking up extra constants. Predict the direction of change before calculating.",
+    "text": "Use the values given; do not look up other constants. Predict the direction of change before calculating.",
     "crumbs": [
       "Home",
       "Week 3: Metals, surfaces, redox, and treatment",
@@ -6237,7 +6193,7 @@
     "href": "metals/notes.html",
     "title": "Metal speciation and mobility",
     "section": "",
-    "text": "What does a dissolved metal total conceal, and how can complexation change solubility without changing the metal oxidation state?\nRead these notes with the lecture, then complete the exercises. Numerical examples are constructed teaching cases unless explicitly described otherwise.",
+    "text": "What does a dissolved metal total conceal, and how can complexation change solubility without changing the metal oxidation state?",
     "crumbs": [
       "Home",
       "Week 3: Metals, surfaces, redox, and treatment",
@@ -6337,11 +6293,11 @@
     ]
   },
   {
-    "objectID": "metals/notes.html#reading-focus-and-further-explanation",
-    "href": "metals/notes.html#reading-focus-and-further-explanation",
+    "objectID": "metals/notes.html#reading",
+    "href": "metals/notes.html#reading",
     "title": "Metal speciation and mobility",
-    "section": "Reading focus and further explanation",
-    "text": "Reading focus and further explanation\nBook: vanLoon and Duffy, fourth edition, chapter(s) 13. Focus on coordination, hydrolysis, a one-ligand balance, and a free-ion mineral test. Defer multi-ligand numerical speciation and formal toxicity modelling.\nIUPAC formation constants: Stepwise and overall metal–ligand formation conventions.\nEPA metal bioavailability research: Why dissolved totals and chemical conditions do not define a single biological exposure.",
+    "section": "Reading",
+    "text": "Reading\nvanLoon and Duffy, 4th edition. Chapter 13: coordination, hydrolysis, a one-ligand balance, and a free-ion mineral test.\nIUPAC formation constants: Stepwise and overall metal–ligand formation conventions.\nEPA metal bioavailability research: Why dissolved totals and chemical conditions do not define a single biological exposure.",
     "crumbs": [
       "Home",
       "Week 3: Metals, surfaces, redox, and treatment",
@@ -6367,7 +6323,7 @@
     "href": "organic-contaminants/exercise.html",
     "title": "Organic contaminants and environmental fate exercises",
     "section": "",
-    "text": "Use the notes. All numerical inputs below are constructed teaching examples; use the stated assumptions rather than looking up extra constants. Predict the direction of change before calculating.",
+    "text": "Use the values given; do not look up other constants. Predict the direction of change before calculating.",
     "crumbs": [
       "Home",
       "Week 4: Soils, waste, and contaminants",
@@ -6458,7 +6414,7 @@
     "href": "organic-contaminants/notes.html",
     "title": "Organic contaminants and environmental fate",
     "section": "",
-    "text": "Which molecular properties help explain where a contaminant goes, and why is disappearance from water not the same as chemical destruction?\nRead these notes with the lecture, then complete the exercises. Numerical examples are constructed teaching cases unless explicitly described otherwise.",
+    "text": "Which molecular properties help explain where a contaminant goes, and why is disappearance from water not the same as chemical destruction?",
     "crumbs": [
       "Home",
       "Week 4: Soils, waste, and contaminants",
@@ -6558,11 +6514,11 @@
     ]
   },
   {
-    "objectID": "organic-contaminants/notes.html#reading-focus-and-further-explanation",
-    "href": "organic-contaminants/notes.html#reading-focus-and-further-explanation",
+    "objectID": "organic-contaminants/notes.html#reading",
+    "href": "organic-contaminants/notes.html#reading",
     "title": "Organic contaminants and environmental fate",
-    "section": "Reading focus and further explanation",
-    "text": "Reading focus and further explanation\nBook: vanLoon and Duffy, fourth edition, chapter(s) 20. Focus on property-to-process reasoning, ionisation, a phase balance, and one first-order model. Defer chemical catalogues and quantitative risk assessment.\nEPA organic-carbon partition model: Definition of the foc–Koc approximation.\nATSDR fate and transport: Why property-based predictions need environmental and pathway context.",
+    "section": "Reading",
+    "text": "Reading\nvanLoon and Duffy, 4th edition. Chapter 20: property-to-process reasoning, ionisation, a phase balance, and one first-order model.\nEPA organic-carbon partition model: Definition of the foc–Koc approximation.\nATSDR fate and transport: Why property-based predictions need environmental and pathway context.",
     "crumbs": [
       "Home",
       "Week 4: Soils, waste, and contaminants",
@@ -6848,7 +6804,7 @@
     "href": "soil-chemistry/exercise.html",
     "title": "Soil chemistry and retention exercises",
     "section": "",
-    "text": "Use the notes. All numerical inputs below are constructed teaching examples; use the stated assumptions rather than looking up extra constants. Predict the direction of change before calculating.",
+    "text": "Use the values given; do not look up other constants. Predict the direction of change before calculating.",
     "crumbs": [
       "Home",
       "Week 4: Soils, waste, and contaminants",
@@ -6913,7 +6869,7 @@
     "href": "soil-chemistry/notes.html",
     "title": "Soil chemistry and retention",
     "section": "",
-    "text": "Why can two soils at the same pH differ in their response to acid or a contaminant input?\nRead these notes with the lecture, then complete the exercises. Numerical examples are constructed teaching cases unless explicitly described otherwise.",
+    "text": "Why can two soils at the same pH differ in their response to acid or a contaminant input?",
     "crumbs": [
       "Home",
       "Week 4: Soils, waste, and contaminants",
@@ -7013,11 +6969,11 @@
     ]
   },
   {
-    "objectID": "soil-chemistry/notes.html#reading-focus-and-further-explanation",
-    "href": "soil-chemistry/notes.html#reading-focus-and-further-explanation",
+    "objectID": "soil-chemistry/notes.html#reading",
+    "href": "soil-chemistry/notes.html#reading",
     "title": "Soil chemistry and retention",
-    "section": "Reading focus and further explanation",
-    "text": "Reading focus and further explanation\nBook: vanLoon and Duffy, fourth edition, chapter(s) 17–18. Focus on reacting soil phases, charge-based exchange, acid inventories, and transport limitations. Defer a detailed soil-classification survey.\nFAO soil chemical properties: The meaning of exchange capacity and the role of organic matter.\nUSDA CEC teaching note: Charge sites in clay and organic matter.",
+    "section": "Reading",
+    "text": "Reading\nvanLoon and Duffy, 4th edition. Chapters 17–18: reacting soil phases, charge-based exchange, acid inventories, and transport limitations.\nFAO soil chemical properties: The meaning of exchange capacity and the role of organic matter.\nUSDA CEC teaching note: Charge sites in clay and organic matter.",
     "crumbs": [
       "Home",
       "Week 4: Soils, waste, and contaminants",
@@ -7277,7 +7233,7 @@
     "href": "waste-leachate/exercise.html",
     "title": "Waste materials and leachate chemistry exercises",
     "section": "",
-    "text": "Use the notes. All numerical inputs below are constructed teaching examples; use the stated assumptions rather than looking up extra constants. Predict the direction of change before calculating.",
+    "text": "Use the values given; do not look up other constants. Predict the direction of change before calculating.",
     "crumbs": [
       "Home",
       "Week 4: Soils, waste, and contaminants",
@@ -7342,7 +7298,7 @@
     "href": "waste-leachate/notes.html",
     "title": "Waste materials and leachate chemistry",
     "section": "",
-    "text": "Why can a waste material continue producing acidity after the initial dissolved acid has been washed away?\nRead these notes with the lecture, then complete the exercises. Numerical examples are constructed teaching cases unless explicitly described otherwise.",
+    "text": "Why can a waste material continue producing acidity after the initial dissolved acid has been washed away?",
     "crumbs": [
       "Home",
       "Week 4: Soils, waste, and contaminants",
@@ -7442,11 +7398,11 @@
     ]
   },
   {
-    "objectID": "waste-leachate/notes.html#reading-focus-and-further-explanation",
-    "href": "waste-leachate/notes.html#reading-focus-and-further-explanation",
+    "objectID": "waste-leachate/notes.html#reading",
+    "href": "waste-leachate/notes.html#reading",
     "title": "Waste materials and leachate chemistry",
-    "section": "Reading focus and further explanation",
-    "text": "Reading focus and further explanation\nBook: vanLoon and Duffy, fourth edition, chapter(s) 19, selected. Focus on one sulfide-waste example, neutralisation, and phase stability. Use this chemistry to interpret other leachates; defer waste regulations and treatment design.\nEPA mine-drainage chemistry: Stoichiometric acid generation and the role of iron oxidation/precipitation.\nBLM passive-treatment technical note: How flow, neutralisation, and residual phases constrain treatment.",
+    "section": "Reading",
+    "text": "Reading\nvanLoon and Duffy, 4th edition. Chapter 19: one sulfide-waste example, neutralisation, and phase stability.\nEPA mine-drainage chemistry: Stoichiometric acid generation and the role of iron oxidation/precipitation.\nBLM passive-treatment technical note: How flow, neutralisation, and residual phases constrain treatment.",
     "crumbs": [
       "Home",
       "Week 4: Soils, waste, and contaminants",

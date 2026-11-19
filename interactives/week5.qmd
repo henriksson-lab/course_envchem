@@ -4,7 +4,7 @@ title: "Week 5 demo: the connected catchment budget"
 
 How do atmospheric acid input, accessible neutralisation, reference alkalinity, and water export combine in an annual budget?
 
-Use with the [integrated case](../integrated-case/notes.qmd) and its [exercises](../integrated-case/exercise.qmd). This working week revisits earlier reactions in a connected chemical explanation.
+Use with the [integrated case](../integrated-case/notes.qmd) and its [exercises](../integrated-case/exercise.qmd).
 
 ## Predict first
 

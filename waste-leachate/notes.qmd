@@ -4,10 +4,6 @@ title: "Waste materials and leachate chemistry"
 
 Why can a waste material continue producing acidity after the initial dissolved acid has been washed away?
 
-Read these notes with the [lecture](lec.qmd), then complete the
-[exercises](exercise.qmd). Numerical examples are constructed teaching cases
-unless explicitly described otherwise.
-
 ## Learning goals
 
 - Balance sulfide oxidation and subsequent iron hydrolysis.
@@ -44,9 +40,9 @@ Iron precipitates can retain metals or phosphate, but changed pH or redox can de
 
 Assume 0.0100 mol FeS₂ oxidises completely to sulfate and Fe(OH)₃ as represented above. It generates **0.0400 mol acid equivalents** and **0.0200 mol sulfate**. Neutralising that acidity to the stated CO₂* endpoint needs 0.0200 mol CaCO₃, or **2.00 g** with supplied molar mass 100 g/mol. This is a stoichiometric comparison, not a field treatment dose: rates, mixing, other reactions, and residuals are omitted.
 
-## Reading focus and further explanation
+## Reading
 
-Book: vanLoon and Duffy, fourth edition, chapter(s) 19, selected. Focus on one sulfide-waste example, neutralisation, and phase stability. Use this chemistry to interpret other leachates; defer waste regulations and treatment design.
+vanLoon and Duffy, 4th edition. Chapter 19: one sulfide-waste example, neutralisation, and phase stability.
 
 [EPA mine-drainage chemistry](https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=20007H0I.TXT): Stoichiometric acid generation and the role of iron oxidation/precipitation.
 

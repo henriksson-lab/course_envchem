@@ -4,10 +4,6 @@ title: "Atmospheric deposition and acidity"
 
 How does an atmospheric emission become an acid input to a catchment, and why does rain pH alone not give the annual acid load?
 
-Read these notes with the [lecture](lec.qmd), then complete the
-[exercises](exercise.qmd). Numerical examples are constructed teaching cases
-unless explicitly described otherwise.
-
 ## Learning goals
 
 - Trace oxidation and wet/dry transfer from air to a catchment.
@@ -38,9 +34,9 @@ Weathering, mineral availability, soil exchange, plant uptake, and flow paths mo
 
 Assume the catchment receives $0.0200$ mol m⁻² yr⁻¹ of HNO₃ and $0.0100$ mol m⁻² yr⁻¹ of H₂SO₄, with full neutralisation of both protons in the stated accounting convention. The acid-equivalent flux is $0.0200+2(0.0100)=0.0400$ eq m⁻² yr⁻¹. Over $1.00\times10^6$ m², that is **40000 eq/year**. If an identified catchment neutralisation process consumes 30000 eq/year and no other acid terms act, the residual is **10000 eq/year**. Dividing by $5.00\times10^8$ L/year gives **0.0200 meq/L** of residual equivalent load. This budget is constructed; it does not predict pH without carbonate and other constraints.
 
-## Reading focus and further explanation
+## Reading
 
-Book: vanLoon and Duffy, fourth edition, chapter(s) 5–7, selected. Focus on acid formation and wet/dry fluxes. Use aerosols as reaction and transport phases; defer an indoor-pollutant catalogue.
+vanLoon and Duffy, 4th edition. Chapters 5–7: acid formation and wet/dry fluxes.
 
 [EPA acid deposition](https://www.epa.gov/acidrain/what-acid-rain): Wet/dry transfer and precursor oxidation.
 

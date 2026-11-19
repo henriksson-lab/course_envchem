@@ -4,10 +4,6 @@ title: "Connecting air, catchments, and water"
 
 Which linked chemical explanation survives the available balances, and which parts remain hypotheses?
 
-Read these notes with the [lecture](lec.qmd), then complete the
-[exercises](exercise.qmd). Numerical examples are constructed teaching cases
-unless explicitly described otherwise.
-
 ## Learning goals
 
 - Combine deposition, neutralisation, and water export in one equivalent budget.
@@ -38,9 +34,9 @@ An explanation should give the proposed reaction chain, a supporting balance or 
 
 If neutralisation were only 20000 instead of 30000 eq/year, the residual input would be 20000 eq/year = 0.0400 meq/L at the stated export. Under the same 50000 eq/year reference alkalinity, export would be 30000 eq/year = **0.0600 meq/L**. This is a sensitivity calculation: it shows which term controls the budget. It does not establish which catchment process changed or predict a unique pH.
 
-## Reading focus and further explanation
+## Reading
 
-Book: vanLoon and Duffy, fourth edition, chapter(s) 21 and earlier selections. Revisit the selected reaction and partition sections from earlier chapters. Use the final chapter for synthesis; defer broad policy surveys and new analytical methods.
+vanLoon and Duffy, 4th edition. Chapter 21.
 
 [USGS coupled organic-input chemistry](https://water.usgs.gov/ogw/pubs/ofr0289/imc_organic.htm): Coupled redox changes provide context for the sediment hypothesis.
 

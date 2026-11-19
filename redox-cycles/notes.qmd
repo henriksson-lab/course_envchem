@@ -4,10 +4,6 @@ title: "Redox and environmental cycles"
 
 When oxygen runs low, why can iron, nitrogen, sulfur, and phosphorus change together even though not every element changes oxidation state?
 
-Read these notes with the [lecture](lec.qmd), then complete the
-[exercises](exercise.qmd). Numerical examples are constructed teaching cases
-unless explicitly described otherwise.
-
 ## Learning goals
 
 - Balance a redox reaction using electron transfer.
@@ -46,9 +42,9 @@ A common conceptual progression is oxygen use, nitrate reduction, manganese/iron
 
 In the supplied CH₂O–nitrate reaction, each nitrate N goes from +V to 0 and gains five electrons. Four nitrate ions therefore accept 20 electrons. Carbon goes from 0 in CH₂O to +IV in CO₂ and loses four electrons; five CH₂O units donate 20. Both sides contain 4 N, 5 C, 14 H, and 17 O atoms and have net charge zero. The donor ratio is **1.25 mol CH₂O carbon per mol nitrate** in this model.
 
-## Reading focus and further explanation
+## Reading
 
-Book: vanLoon and Duffy, fourth edition, chapter(s) 10, 13, 15. Focus on balanced reactions and coupled carbon, nitrogen, iron, and sulfur examples. Read supplied redox evidence; defer full Eh–pH diagram construction.
+vanLoon and Duffy, 4th edition. Chapters 10, 13, 15: balanced reactions and coupled carbon, nitrogen, iron, and sulfur examples.
 
 [USGS redox framework](https://pubs.usgs.gov/fs/2009/3041/pdf/FS09-3041.pdf): Electron-acceptor patterns and the need for several indicators.
 

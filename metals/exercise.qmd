@@ -2,9 +2,7 @@
 title: "Metal speciation and mobility exercises"
 ---
 
-Use the [notes](notes.qmd). All numerical inputs below are constructed
-teaching examples; use the stated assumptions rather than looking up extra
-constants. Predict the direction of change before calculating.
+Use the values given; do not look up other constants. Predict the direction of change before calculating.
 
 ## 1. Reduce ligand
 

@@ -4,10 +4,6 @@ title: "Colloids, surfaces, and sorption"
 
 If a contaminant disappears from water, is it removed from the environmental system or transferred onto a mobile particle?
 
-Read these notes with the [lecture](lec.qmd), then complete the
-[exercises](exercise.qmd). Numerical examples are constructed teaching cases
-unless explicitly described otherwise.
-
 ## Learning goals
 
 - Explain pH-dependent surface charge and specific binding.
@@ -42,9 +38,9 @@ Sorption onto settling solids can retain a solute locally, but sorption onto mob
 
 Distribute 1.00 mg between 1.00 L water and 0.0100 kg dry solid, with $K_d=100$ L/kg. Then $K_dm_s=1.00$ L, $C_w=1.00/(1.00+1.00)=\mathbf{0.500}$ mg/L, and $q=50.0$ mg/kg. Water contains 0.500 mg and solid contains 0.500 mg. The total stays 1.00 mg. Half is sorbed; none has been destroyed.
 
-## Reading focus and further explanation
+## Reading
 
-Book: vanLoon and Duffy, fourth edition, chapter(s) 14. Focus on surface protonation, a transparent linear balance, finite capacity, and colloidal mobility. Defer fitting complex isotherms or surface-complexation software.
+vanLoon and Duffy, 4th edition. Chapter 14: surface protonation, a transparent linear balance, finite capacity, and colloidal mobility.
 
 [USGS phosphate retention](https://pubs.usgs.gov/fs/2012/3004/): Mineral surfaces, finite adsorption, and phosphorus transport.
 

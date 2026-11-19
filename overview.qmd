@@ -2,17 +2,13 @@
 title: "Course content"
 ---
 
-The course follows chemical processes from air through water to soils and
-contaminants. Water chemistry receives the most quantitative depth. Each unit
-has notes, a short lecture, and exercises with worked solutions. Start with a
-chemical prediction, calculate a small case, and explain the result's limits.
+The course runs from air through water to soils and contaminants, with most
+depth in water chemistry.
 
 ## Topic sequence and reading
 
-Chapter references are to vanLoon and Duffy, *Environmental Chemistry: A Global
-Perspective*, fourth edition (2017). The notes specify the topics to select
-within those chapters and what to defer; these are not whole-chapter reading
-requirements. Exact subsection and page assignments await book review.
+Chapters refer to vanLoon and Duffy, *Environmental Chemistry: A Global
+Perspective*, 4th edition (2017). Each unit's notes say which parts to read.
 
 | Unit | Book chapters | Chemical focus |
 | --- | --- | --- |
@@ -32,19 +28,10 @@ requirements. Exact subsection and page assignments await book review.
 | [14. Organic contaminants and environmental fate](organic-contaminants/notes.qmd) | 20 | Ionisation, partitioning, parent loss; activity C. |
 | [15. Connecting air, catchments, and water](integrated-case/notes.qmd) | 21 and earlier | A chemical argument supported by budgets and evidence. |
 
-## Weekly interactive demos
-
-Use the five interactive demos, listed in orange under each week in the sidebar, to change chemical conditions
-and check the consequences before returning to a hand calculation. The working
-study-week grouping is atmosphere and balances; aquatic composition and carbonate;
-metals and surfaces; soils and contaminants; then synthesis. The pages link back
-to the relevant units and include static reference results.
 
 ## Three supporting computing activities
 
-Use the same R and R Markdown workflow as introductory computing. These
-activities support chemical interpretation; no new statistical methods are
-introduced. The site uses Quarto, while student reports remain `.Rmd` files.
+Three short activities in R, using the workflow from introductory computing.
 
 | Activity | Files | Result |
 | --- | --- | --- |
@@ -52,15 +39,5 @@ introduced. The site uses Quarto, while student reports remain `.Rmd` files.
 | [B: carbonate species](carbonate-gases/exercise.qmd#plot-the-chemical-prediction-in-r) | [Download ZIP](downloads/carbonate-speciation.zip) | A hand-checked distribution curve at prescribed pH |
 | [C: contaminant fate](organic-contaminants/exercise.qmd#activity-c-a-fate-model-in-r) | [Download ZIP](downloads/contaminant-fate.zip) | A two-phase parent balance and reproducible chemical explanation |
 
-Extract an activity ZIP into its own folder, open that folder as the working
-project, and keep its report next to its script and data. Activities A and C
-use `readr`, `dplyr`, and `ggplot2`; B uses `ggplot2`. All reports use `rmarkdown`.
-Use the package installation workflow from introductory computing if needed.
-The scripts and data are also available individually from the activity pages.
+Extract each ZIP into its own folder and open it as a project. Packages: `readr`, `dplyr`, `ggplot2`, `rmarkdown`.
 
-## Reading reference
-
-The [publisher's contents](https://www.oup.com.au/books/higher-education/chemistry/9780198749974)
-provide the book sequence. Sources linked in each unit support its chemical
-concepts; the supplied fictitious compounds and constructed datasets are
-identified explicitly. The course does not use invented results as field evidence.

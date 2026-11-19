@@ -4,7 +4,7 @@ title: "Week 3 demo: metal binding and saturation"
 
 Can two waters with the same dissolved metal total have different free-ion concentrations and saturation states?
 
-Use with [metal speciation](../metals/notes.qmd) and its [worked problems](../metals/exercise.qmd). This working week groups metals, interfaces, redox, and treatment.
+Use with [metal speciation](../metals/notes.qmd) and its [worked problems](../metals/exercise.qmd).
 
 ## Predict first
 

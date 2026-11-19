@@ -4,10 +4,6 @@ title: "Organic contaminants and environmental fate"
 
 Which molecular properties help explain where a contaminant goes, and why is disappearance from water not the same as chemical destruction?
 
-Read these notes with the [lecture](lec.qmd), then complete the
-[exercises](exercise.qmd). Numerical examples are constructed teaching cases
-unless explicitly described otherwise.
-
 ## Learning goals
 
 - Relate ionisation and neutral partitioning to the stated environmental conditions.
@@ -42,9 +38,9 @@ In activity C, a closed water–solid system equilibrates rapidly at fixed Kd. P
 
 For fictitious neutral compound U, take $M_0=1.00$ mg, $V_w=1.00$ L, $m_s=0.0100$ kg, $K_d=100$ L/kg, and half-life 10.0 days. Initially half the parent is in water and $C_w=0.500$ mg/L. After 20.0 days the total parent is 0.250 mg; water and solid each contain 0.125 mg, so $C_w=\mathbf{0.125}$ mg/L. The missing 0.750 mg parent has transformed under this stipulated model. It has not simply moved to the sorbed parent pool.
 
-## Reading focus and further explanation
+## Reading
 
-Book: vanLoon and Duffy, fourth edition, chapter(s) 20. Focus on property-to-process reasoning, ionisation, a phase balance, and one first-order model. Defer chemical catalogues and quantitative risk assessment.
+vanLoon and Duffy, 4th edition. Chapter 20: property-to-process reasoning, ionisation, a phase balance, and one first-order model.
 
 [EPA organic-carbon partition model](https://www3.epa.gov/ceampubl/learn2model/part-two/onsite/rsorb2_onsite.html): Definition of the foc–Koc approximation.
 

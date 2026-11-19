@@ -4,7 +4,7 @@ title: "Week 4 demo: sorption and parent transformation"
 
 When parent concentration falls in water, how much has moved onto solids and how much has transformed?
 
-Use with [organic contaminants](../organic-contaminants/notes.qmd) and [activity C](../organic-contaminants/exercise.qmd#activity-c-a-fate-model-in-r). This working week groups soils, waste chemistry, and contaminant fate.
+Use with [organic contaminants](../organic-contaminants/notes.qmd) and [activity C](../organic-contaminants/exercise.qmd#activity-c-a-fate-model-in-r).
 
 ## Predict first
 

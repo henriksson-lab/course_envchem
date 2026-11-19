@@ -4,10 +4,6 @@ title: "Soil chemistry and retention"
 
 Why can two soils at the same pH differ in their response to acid or a contaminant input?
 
-Read these notes with the [lecture](lec.qmd), then complete the
-[exercises](exercise.qmd). Numerical examples are constructed teaching cases
-unless explicitly described otherwise.
-
 ## Learning goals
 
 - Connect mineral and organic surfaces with exchange and buffering.
@@ -38,9 +34,9 @@ A soil with many potential sites may still transmit solute through fast pathways
 
 A dry soil has CEC 10.0 cmolc/kg. In 0.200 kg, the exchange charge inventory is $10.0\times0.01\times0.200=\mathbf{0.0200}$ mol of charge. If half is occupied by Ca²⁺, calcium carries 0.0100 mol charge and corresponds to **0.00500 mol Ca**, not 0.0100 mol Ca. This capacity accounting is not a prediction that all that calcium immediately enters porewater.
 
-## Reading focus and further explanation
+## Reading
 
-Book: vanLoon and Duffy, fourth edition, chapter(s) 17–18. Focus on reacting soil phases, charge-based exchange, acid inventories, and transport limitations. Defer a detailed soil-classification survey.
+vanLoon and Duffy, 4th edition. Chapters 17–18: reacting soil phases, charge-based exchange, acid inventories, and transport limitations.
 
 [FAO soil chemical properties](https://www.fao.org/soils-portal/data-hub/soil-classification/numerical-systems/chemical-properties/en/): The meaning of exchange capacity and the role of organic matter.
 

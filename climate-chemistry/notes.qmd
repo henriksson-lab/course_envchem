@@ -4,10 +4,6 @@ title: "Molecules, radiation, and climate"
 
 Why does adding one gas affect outgoing radiation while adding another gas can have little direct infrared effect?
 
-Read these notes with the [lecture](lec.qmd), then complete the
-[exercises](exercise.qmd). Numerical examples are constructed teaching cases
-unless explicitly described otherwise.
-
 ## Learning goals
 
 - Connect molecular absorption to changing dipole moment.
@@ -38,9 +34,9 @@ Aerosols can scatter sunlight, absorb radiation, and affect cloud droplet format
 
 For a constructed beam with 100 W/m² incident in one band, transmission 0.20 and no reflection imply 20 W/m² transmitted and **80 W/m² absorbed**. This is a single-band beam calculation. It is not an estimate of whole-Earth forcing, which requires spectral integration and atmospheric structure.
 
-## Reading focus and further explanation
+## Reading
 
-Book: vanLoon and Duffy, fourth edition, chapter(s) 8, selected. Focus on molecular absorption, spectral interpretation, and persistence. Defer global climate model calculations and current concentration or emission rankings.
+vanLoon and Duffy, 4th edition. Chapter 8: molecular absorption, spectral interpretation, and persistence.
 
 [NASA greenhouse mechanisms](https://science.nasa.gov/climate-change/causes/): Radiation and the role of greenhouse gases.
 

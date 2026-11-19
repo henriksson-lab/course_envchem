@@ -4,7 +4,7 @@ title: "Week 1 demo: deposition and dilution"
 
 How can an acid-equivalent concentration fall while the annual acid load stays unchanged?
 
-Use after the [deposition exercises](../deposition/exercise.qmd), alongside [environmental amounts](../environmental-systems/notes.qmd). This working week groups foundations and the atmospheric units.
+Use after the [deposition exercises](../deposition/exercise.qmd), alongside [environmental amounts](../environmental-systems/notes.qmd).
 
 ## Predict first
 

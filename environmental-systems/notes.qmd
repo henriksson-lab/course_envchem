@@ -4,10 +4,6 @@ title: "Environmental amounts and balances"
 
 If a pollutant concentration falls downstream, has the pollutant been destroyed? Follow the amount before proposing a reaction.
 
-Read these notes with the [lecture](lec.qmd), then complete the
-[exercises](exercise.qmd). Numerical examples are constructed teaching cases
-unless explicitly described otherwise.
-
 ## Learning goals
 
 - Convert concentration to amount or load with explicit units.
@@ -40,8 +36,8 @@ The hydraulic replacement time is $V/Q$ for constant volume and flow. It estimat
 
 Mix 2.00 L at 3.00 mg/L with 1.00 L at 0.600 mg/L. The inventories are 6.00 and 0.600 mg. With additive volumes, no reaction, and no loss, the final inventory is 6.60 mg in 3.00 L, so the concentration is **2.20 mg/L**. It is lower than 3.00 mg/L because of dilution; none of the tracked solute was destroyed.
 
-## Reading focus and further explanation
+## Reading
 
-Book: vanLoon and Duffy, fourth edition, chapter(s) 1. Focus on environmental composition, sources, sinks, and chemical processes. Practise small balances; defer a general transport model.
+vanLoon and Duffy, 4th edition. Chapter 1: environmental composition, sources, sinks, and chemical processes.
 
 [USGS water chemistry](https://www.usgs.gov/special-topics/water-science-school/science/water-properties-information-topic): Background on water properties and chemical quantities.

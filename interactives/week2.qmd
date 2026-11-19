@@ -4,7 +4,7 @@ title: "Week 2 demo: carbonate response to acid"
 
 Why can two waters at pH 7.50 respond so differently to the same acid dose?
 
-Use with [carbonate species and alkalinity](../carbonate-gases/lec.qmd), the [reference sheet](../carbonate-gases/reference.qmd), and [exercise 2](../carbonate-gases/exercise.qmd#same-ph-different-acid-response). This working week groups aquatic composition, carbonate, and organic matter.
+Use with [carbonate species and alkalinity](../carbonate-gases/lec.qmd), the [reference sheet](../carbonate-gases/reference.qmd), and [exercise 2](../carbonate-gases/exercise.qmd#same-ph-different-acid-response).
 
 ## Predict first
 

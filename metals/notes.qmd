@@ -4,10 +4,6 @@ title: "Metal speciation and mobility"
 
 What does a dissolved metal total conceal, and how can complexation change solubility without changing the metal oxidation state?
 
-Read these notes with the [lecture](lec.qmd), then complete the
-[exercises](exercise.qmd). Numerical examples are constructed teaching cases
-unless explicitly described otherwise.
-
 ## Learning goals
 
 - Use a one-ligand equilibrium with an explicit free-ligand approximation.
@@ -42,9 +38,9 @@ Strong dissolved binding can reduce free-ion concentration while allowing metal 
 
 For a fictitious M, use $M_T=2.00$ µmol/L, $\beta=1.00\times10^6$ L/mol, and prescribed free ligand $[L]=1.00\times10^{-5}$ mol/L. Then $\beta[L]=10.0$, so free M is **0.1818 µmol/L** and ML is **1.818 µmol/L**. The two forms sum to 2.00 µmol/L. These supplied values are a generic teaching model, not measured constants for a named environmental metal.
 
-## Reading focus and further explanation
+## Reading
 
-Book: vanLoon and Duffy, fourth edition, chapter(s) 13. Focus on coordination, hydrolysis, a one-ligand balance, and a free-ion mineral test. Defer multi-ligand numerical speciation and formal toxicity modelling.
+vanLoon and Duffy, 4th edition. Chapter 13: coordination, hydrolysis, a one-ligand balance, and a free-ion mineral test.
 
 [IUPAC formation constants](https://goldbook.iupac.org/terms/view/F02485): Stepwise and overall metal–ligand formation conventions.
 

@@ -4,10 +4,6 @@ title: "Organic matter in water"
 
 How can two waters contain the same dissolved total metal while differing in free metal, light penetration, and oxygen demand?
 
-Read these notes with the [lecture](lec.qmd), then complete the
-[exercises](exercise.qmd). Numerical examples are constructed teaching cases
-unless explicitly described otherwise.
-
 ## Learning goals
 
 - Distinguish organic carbon amount from its molecular composition and reactivity.
@@ -40,9 +36,9 @@ When oxygen demand exceeds replenishment, oxygen can decline. Other electron acc
 
 Assume 3.00 mg C/L of an added CH₂O-like substrate is completely oxidised aerobically. With molar masses 12.0 g/mol for carbon and 32.0 g/mol for O₂, the demand is $3.00(32.0/12.0)=\mathbf{8.00}$ mg O₂/L. That is an ultimate stoichiometric demand for this substrate. It is not a measured five-day biochemical oxygen demand, nor a prediction that all of a lake's DOC is consumed immediately.
 
-## Reading focus and further explanation
+## Reading
 
-Book: vanLoon and Duffy, fourth edition, chapter(s) 12. Focus on organic-matter fractions, binding, light, and oxygen demand. Defer detailed structural characterisation and instrument methods.
+vanLoon and Duffy, 4th edition. Chapter 12: organic-matter fractions, binding, light, and oxygen demand.
 
 [USGS organic-matter processes](https://water.usgs.gov/ogw/pubs/ofr0289/jal_processes.htm): Adsorption, biodegradation, and chemical controls on organic-matter transport.
 

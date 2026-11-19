@@ -7,9 +7,7 @@ title: "Activity A data dictionary"
 These values are constructed teaching data. They are not measurements from a
 real site. Each row is one reported ion in one near-neutral sample. Three sample
 identities have six rows each. Samples A and C are designed to share the same
-correct composition, but C includes a known decimal transcription error.
-The identifiers A, B, and C are local to this activity and do not identify the
-separate carbonate-unit example waters. The six ions form the complete major-ion set for this approximation; tiny H⁺
+correct composition, but C includes a known decimal transcription error. The six ions form the complete major-ion set for this approximation; tiny H⁺
 and OH⁻ terms and other species are omitted. No pH or metal speciation can be
 inferred from these six totals alone.
 
